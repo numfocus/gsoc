@@ -64,6 +64,7 @@ http://en.flossmanuals.net/melange/org-application-period/.
 [Spyder]: http://deeplearning.net/software/theano/
 [Statmodels]: http://numfocus.org/projects/index.html#statsmodels
 [SymPy]: http://sympy.org/en/index.html
+[Theano]: http://deeplearning.net/software/theano/
 [pandas]: http://pandas.pydata.org/
 [rOpenSci]: http://ropensci.org/
 [scikit-image]: http://scikit-image.org/
