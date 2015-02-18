@@ -37,6 +37,7 @@ All the projects listed [here][NumFOCUS-Projects]:
 
 - [Organization Profile][OA]
 - [Organization Questionnaire][OQ]
+- [Organization Team][OT]
 
 For informations, check
 http://en.flossmanuals.net/melange/org-application-period/.
@@ -53,6 +54,7 @@ http://en.flossmanuals.net/melange/org-application-period/.
 [NumPy]: http://numpy.scipy.org/
 [OA]: organization-profile.md
 [OQ]: organization-questionnaire.md
+[OT]: organization-team.md
 [PyTables]: http://pytables.github.com/
 [PythonXY]: http://code.google.com/p/pythonxy/wiki/Welcome
 [SCF]: http://software-carpentry.org/scf/index.html
