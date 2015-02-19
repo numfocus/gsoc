@@ -2,7 +2,7 @@
 
 ## Mentors
 
-To be a mentor goes to [GSoC homepage][GSoC]
+To be a mentor go to [GSoC homepage][GSoC]
 and create a profile for you.
 If you need help, please check
 http://en.flossmanuals.net/melange/creating-and-editing/.
@@ -11,9 +11,18 @@ http://en.flossmanuals.net/melange/creating-and-editing/.
 open a issue for this
 or send a pull request adding your username at [organization-team.md][OT].**
 
+### Proposal summary
+
+If you have a proposal,
+please create a issue for it.
+
 ## Students
 
-Open a issue to discuss your proposal
+Projects proposed by mentors are listed at
+https://github.com/swcarpentry/gsoc2015/issues.
+
+You are welcome to proposal a project by your own.
+If this is the case, please open a issue to discuss your proposal
 or send a pull request with it.
 
 ### Proposal draft

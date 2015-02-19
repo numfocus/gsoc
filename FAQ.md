@@ -9,5 +9,5 @@
     If you have questions,
     please send a email to one of [admins][]
 
-[admins]: organization-team.md
 [NumFOCUS-Projects]: http://numfocus.org/projects/index.html
+[admins]: organization-team.md
