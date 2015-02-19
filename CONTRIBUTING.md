@@ -8,8 +8,8 @@ If you need help, please check
 http://en.flossmanuals.net/melange/creating-and-editing/.
 
 **After you create your profile,
-open a issue for this
-or send a pull request adding your username at [organization-team.md][OT].**
+open a issue requesting that your username be add at [organization-team.md][OT]
+or send a pull request with this change.**
 
 ### Proposal summary
 
