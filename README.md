@@ -61,7 +61,6 @@ http://en.flossmanuals.net/melange/org-application-period/.
 [SciPy]: http://www.scipy.org/
 [SoftwareCarpentry]: http://software-carpentry.org/
 [Spyder]: http://code.google.com/p/spyderlib/
-[Spyder]: http://deeplearning.net/software/theano/
 [Statmodels]: http://numfocus.org/projects/index.html#statsmodels
 [SymPy]: http://sympy.org/en/index.html
 [Theano]: http://deeplearning.net/software/theano/
