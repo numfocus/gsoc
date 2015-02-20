@@ -11,3 +11,4 @@ organizing Google Summer of Code 2015 for NumFOCUS.
 ## Mentor
 
 - ethanwhite
+- wking
