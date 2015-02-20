@@ -11,29 +11,14 @@ about NumFOCUS' Google Summer of Code 2015 application.
 
 Read [this document][CONTRIBUTING] to know how you can contribute.
 
-## Projects Under NumFOCUS Umbrella
+## Projects Confirmed Under NumFOCUS Umbrella
 
-All the projects listed [here][NumFOCUS-Projects]:
-
-- [AstroPy][]
-- [Cython][]
-- [Data Carpentry][DataCarpentry]
-- [IPython][]
-- [Julia][]
-- [Matplotlib][]
-- [NumPy][]
-- [PyTables][]
-- [Python(X,Y)][PythonXY]
-- [SciPy][]
 - [Software Carpentry][SoftwareCarpentry]
 - [Spyder][]
-- [Statmodels][]
-- [SymPy][]
-- [Theano][]
-- [pandas][]
-- [scikit-image][]
-- [scikit-learn][]
-- [yt][]
+
+## Projects Eligibility to NumFOCUS Umbrella
+
+All the projects listed [here][NumFOCUS-Projects].
 
 ## Organization Application
 
