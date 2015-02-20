@@ -11,20 +11,20 @@ about NumFOCUS' Google Summer of Code 2015 application.
 
 Read [this document][CONTRIBUTING] to know how you can contribute.
 
-## Projects Confirmed Under NumFOCUS Umbrella
+## Organizations Confirmed Under NumFOCUS Umbrella
 
 - [Software Carpentry][SoftwareCarpentry]
 - [Spyder][]
 
-## Projects Eligibility to NumFOCUS Umbrella
+## Organizations Eligibility to NumFOCUS Umbrella
 
 All the projects listed [here][NumFOCUS-Projects].
 
-## Organization Application
+## NumFOCUS Application
 
-- [Organization Profile][OA]
-- [Organization Questionnaire][OQ]
-- [Organization Team][OT]
+- [NumFOCUS Profile][OA]
+- [NumFOCUS Questionnaire][OQ]
+- [NumFOCUS Team][OT]
 
 For informations, check
 http://en.flossmanuals.net/melange/org-application-period/.
