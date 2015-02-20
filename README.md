@@ -9,7 +9,8 @@ Software Carpentry Foundation will help handle the application.
 This Git repository store all the related information
 about NumFOCUS' Google Summer of Code 2015 application.
 
-Read [this document][CONTRIBUTING] to know how you can contribute.
+Read [this document][CONTRIBUTING] to know how you can contribute
+and also check our [ideas list][IL].
 
 ## Organizations Confirmed Under NumFOCUS Umbrella
 
@@ -34,6 +35,7 @@ http://en.flossmanuals.net/melange/org-application-period/.
 [Cython]: http://cython.org/
 [DataCarpentry]: http://datacarpentry.org/
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
+[IL]: ideas-list.md
 [IPython]: http://ipython.org/
 [Julia]: http://julialang.org/
 [Matplotlib]: http://matplotlib.sourceforge.net/
