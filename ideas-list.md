@@ -61,7 +61,9 @@ GitHub.
 
 ## Mentors
 
-* @ethanwhite 
+* @ethanwhite
+* @bendmorris
+* @sckott
 
 # Improving reproducibility in science by adding provenance tracking to the EcoData Retriever
 
@@ -119,7 +121,8 @@ GitHub.
 
 ## Mentors
 
-* @ethanwhite 
+* @ethanwhite
+* @bendmorris
 
 # Write a result-aggregation server for the installation-test scripts
 
