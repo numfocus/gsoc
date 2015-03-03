@@ -25,6 +25,9 @@ You are welcome to proposal a project by your own.
 If this is the case, please open a issue to discuss your proposal
 or send a pull request with it.
 
+If you are going to propose your own idea you will need to find
+a mentor for it. **Proposal without a mentor will not be considered.**
+
 ### Proposal draft
 
 1.  Fork https://github.com/swcarpentry/gsoc2015
