@@ -6,9 +6,10 @@ organizing Google Summer of Code 2015 for NumFOCUS.
 ## Admin
 
 - r.gaia.cs
-- tpoisot
+- ethanwhite
 
 ## Mentor
 
-- ethanwhite
+- andy.terrel
+- mjsottile
 - wking
