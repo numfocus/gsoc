@@ -11,5 +11,6 @@ organizing Google Summer of Code 2015 for NumFOCUS.
 ## Mentor
 
 - andy.terrel
+- gvwilson
 - mjsottile
 - wking
