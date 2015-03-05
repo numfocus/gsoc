@@ -12,6 +12,9 @@ about NumFOCUS' Google Summer of Code 2015 application.
 Read [this document][CONTRIBUTING] to know how you can contribute
 and also check our [ideas list][IL].
 
+**Please DON'T email discuss@lists.software-carpentry.org.**
+For any questions use https://github.com/swcarpentry/gsoc2015/issues.
+
 ## Organizations Confirmed Under NumFOCUS Umbrella
 
 - [Software Carpentry][SoftwareCarpentry]
