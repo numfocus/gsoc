@@ -2,6 +2,8 @@ Here are the projects we offer to mentor this summer:
 
 # Add taxonomic name resolution to the EcoData Retriever to facilitate data science approaches to ecology
 
+<https://github.com/swcarpentry/gsoc2015/issues/1>
+
 ## Rationale
 
 The [EcoData Retriever](http://ecodataretriever.org) is a Python based tool
@@ -67,6 +69,8 @@ GitHub.
 
 # Improving reproducibility in science by adding provenance tracking to the EcoData Retriever
 
+<https://github.com/swcarpentry/gsoc2015/issues/2>
+
 ## Rationale
 
 The [EcoData Retriever](http://ecodataretriever.org) is a Python based tool
@@ -126,9 +130,11 @@ GitHub.
 
 # Write a result-aggregation server for the installation-test scripts
 
+<https://github.com/swcarpentry/gsoc2015/issues/3>
+
 ## Background
 
-[Software Carpentry has][1] [installation-test scripts][2] so students can check
+[Software Carpentry][swc] has [installation-test scripts][swc-install] so students can check
 that they've successfully installed any software required by their workshop.
 However, we don't collect the results of student tests, which makes a number of
 things more difficult than they need to be.  Statistics about installed versions
@@ -138,7 +144,7 @@ would make it easy to:
   given workshop or in general).
 * Make informed decisions about deprecating older versions of our various
   dependencies (see swcarpentry/bc#724, swcarpentry/sql-novice-survey#13,
-  swcarpentry/git-novice#32, and [here][3]) or modernizing our lessons to
+  swcarpentry/git-novice#32, and [here][git-novice-pull-comment]) or modernizing our lessons to
   catch up with current systems (see swcarpentry/workshop-template#157 and
   swcarpentry/workshop-template#159).
 
@@ -206,9 +212,49 @@ list][discuss].  There's also [an IRC channel][irc].
 
 Thanks to @xuf12 for the initial idea behind this project.
 
-[1]: https://github.com/swcarpentry/workshop-template/tree/gh-pages/setup
-[2]: https://github.com/wking/swc-setup-installation-test
-[3]: https://github.com/swcarpentry/git-novice/pull/43#issuecomment-74177654
+# Amy: A Web-Based Tool for Managing Workshops
+
+<https://github.com/swcarpentry/gsoc2015/issues/6>
+
+[Software Carpentry][swc] workshops are currently managed by hand
+using a complex (and fragile) mix that includes SQL files stored in GitHub,
+regional mailing lists,
+and other bits and pieces that have been cobbled together over the last five years.
+Learning how to drive all of this takes a lot of time,
+and is a major barrier to partner organizations getting more involved in workshop setup,
+so we have started building [Amy][amy],
+a Django application for managing workshops.
+Basic functionality is in place,
+but many features have not yet been implemented,
+and it needs a lot of improvements in usability
+(not to mention a lot more testing).
+
+## Technical Details
+
+Amy is a straightforward [Django][Django] application;
+experience with that framework (and with Python) is required.
+Some of the features we would like to add require Javascript,
+so familiarity with [JQuery][jquery] and other frameworks is an asset.
+
+Amy will manage personal identifying information,
+so applicants should also have a basic understanding of security engineering.
+Experience with deploying and maintaining applications is also an asset.
+
+## Mentors
+
+* @gvwilson
+* @wking
+* @r-gaia-cs
+
+## Acknowledgments
+
+Thanks to everyone who has helped get [Amy][amy] this far.
+
+## Appendix
+
+[swc]: https://github.com/swcarpentry/workshop-template/tree/gh-pages/setup
+[swc-install]: https://github.com/wking/swc-setup-installation-test
+[git-novice-pull-comment]: https://github.com/swcarpentry/git-novice/pull/43#issuecomment-74177654
 [Django]: https://www.djangoproject.com/
 [Flask]: http://flask.pocoo.org/
 [RoR]: http://rubyonrails.org/
@@ -216,3 +262,5 @@ Thanks to @xuf12 for the initial idea behind this project.
 [github]: https://github.com/swcarpentry
 [discuss]: http://software-carpentry.org/pages/join.html
 [irc]: http://www.mozillascience.org/join-the-sciencelab-on-irc
+[amy]: http://github.com/swcarpentry/amy
+[jquery]: http://jquery.com/
