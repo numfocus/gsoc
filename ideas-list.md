@@ -1,7 +1,7 @@
 # Table of Contents
 
-- [Software Carpentry][#software-carpentry]
-- [SymPy][#sympy]
+- [Software Carpentry](#software-carpentry)
+- [SymPy](#sympy)
 
 # Software Carpentry
 
