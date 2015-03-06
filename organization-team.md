@@ -8,9 +8,9 @@ organizing Google Summer of Code 2015 for NumFOCUS.
 - r.gaia.cs
 - ethanwhite
 
-## Mentor
+## Mentors
 
-# Software Carpentry
+### Software Carpentry
 
 - andy.terrel
 - gvwilson
