@@ -19,6 +19,7 @@ For any questions use https://github.com/swcarpentry/gsoc2015/issues.
 
 - [Software Carpentry][SoftwareCarpentry]
 - [Spyder][]
+- [SymPy][SymPy]
 
 ## Organizations Eligibility to NumFOCUS Umbrella
 
@@ -55,7 +56,7 @@ http://en.flossmanuals.net/melange/org-application-period/.
 [SoftwareCarpentry]: http://software-carpentry.org/
 [Spyder]: http://code.google.com/p/spyderlib/
 [Statmodels]: http://statsmodels.sourceforge.net/
-[SymPy]: http://sympy.org/en/index.html
+[SymPy]: http://sympy.org
 [Theano]: http://deeplearning.net/software/theano/
 [pandas]: http://pandas.pydata.org/
 [rOpenSci]: http://ropensci.org/
