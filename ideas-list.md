@@ -1,10 +1,47 @@
+# Table of Contents
+
+Organizations are in alphabetic order.
+
+- [Julia](#julia)
+- [Software Carpentry](#software-carpentry)
+- [SymPy](#sympy)
+
+# Julia
+
+## JuliaWeb: The Networking / Web framework for the [Julia Programming Language](http://www.julialang.org).
+
+<https://github.com/swcarpentry/gsoc2015/issues/9>
+<https://github.com/JuliaWeb/Roadmap/issues>
+
+Julia is a high-level, high-performance dynamic programming language for technical computing and has seen significant adoption in various fields/areas of practice. One of the current deficiencies in the language is the lack of a robust networking / data exchange framework for obtaining and exporting data using standard network protocols. Existing efforts have relied on unstable/minimally-supported external packages; as a result, there is an underlying fragility to the network and web stacks.
+
+We would like to improve the robustness of the Julia network/web framework by initially focusing on the sound implementation of a TLS package that would underpin secure communications between Julia programs and the general internet community. It is our hope that the TLS package would be the official way to develop secure higher level network interfaces such as LDAPS, HTTPS, FTPS, etc. The non-secure versions of these interfaces/protocols will also need some work.
+
+### Technical Details
+
+Experience with networking and network protocols from OSI layers 3 (Network) through 7 (Application) will be required, as will an ability to read and understand relevant internet standards (RFCs). Familiarity with both Julia and C / C++ will also be required. Formal software development and support experience would be beneficial but is not a firm requirement.
+
+### Mentors
+
+* @sbromberger
+* (a few more pending)
+
+### Acknowledgements
+
+* The entire Julia core team
+* The members of [JuliaWeb](https://github.com/JuliaWeb)
+
+
+# Software Carpentry
+
 Here are the projects we offer to mentor this summer:
 
-# Add taxonomic name resolution to the EcoData Retriever to facilitate data science approaches to ecology
+## Add taxonomic name resolution to the EcoData Retriever to facilitate data
+science approaches to ecology
 
 <https://github.com/swcarpentry/gsoc2015/issues/1>
 
-## Rationale
+### Rationale
 
 The [EcoData Retriever](http://ecodataretriever.org) is a Python based tool
 for automatically downloading, cleaning up,
@@ -19,7 +56,7 @@ different species names as part of the process of accessing the data in the
 first place it will become much easier
 to combine diverse datasets and in new and interesting ways.
 
-## Approach
+### Approach
 
 This project would extendthe EcoData Retriever using Python to access one
 or more of the existing web
@@ -33,7 +70,7 @@ would involve:
 * Object oriented programming in Python
 * Using Python to query web service APIs
 
-## Challenges
+### Challenges
 
 Scientific names are stored inconsistently across datasets, so it will be
 necessary to either modifying the scripts
@@ -41,7 +78,7 @@ that hold information on each dataset to indicate the location of the
 species information or use an existing ontology
 to automatically identify the location.
 
-## Involved toolkits or projects
+### Involved toolkits or projects
 
 * The [EcoData Retriever](http://ecodataretriever.org)
 * Python
@@ -49,29 +86,29 @@ to automatically identify the location.
 * Relational database management systems (RDBMS) including MySQL,
 PostgreSQL, SQLite
 
-## Degree of difficulty and needed skills
+### Degree of difficulty and needed skills
 
 * Moderate Difficulty
 * Knowledge of Python
 * Knowledge of interacting with web services via APIs is a plus, but could
 be learned during the project
 
-## Involved developer communities
+### Involved developer communities
 
 The EcoData Retriever primarily interacts via issues and pull requests on
 GitHub.
 
-## Mentors
+### Mentors
 
 * @ethanwhite
 * @bendmorris
 * @sckott
 
-# Improving reproducibility in science by adding provenance tracking to the EcoData Retriever
+## Improving reproducibility in science by adding provenance tracking to the EcoData Retriever
 
 <https://github.com/swcarpentry/gsoc2015/issues/2>
 
-## Rationale
+### Rationale
 
 The [EcoData Retriever](http://ecodataretriever.org) is a Python based tool
 for automatically downloading, cleaning up,
@@ -90,7 +127,7 @@ these problems, but it doesn't currently keep track of exactly what has
 been done and therefore fails to support
 full reproducible workflows.
 
-## Approach
+### Approach
 
 This project would extend the EcoData Retriever using Python to store all
 of the metadata necessary for
@@ -104,7 +141,7 @@ existing framework (e.g,. http://code.google.com/p/core-provenance-library/)
 * Implement checks to make sure that the data is in the same form created
 by the Retriever when retrieving provenance information
 
-## Involved toolkits or projects
+### Involved toolkits or projects
 
 * The [EcoData Retriever](http://ecodataretriever.org)
 * Python
@@ -112,27 +149,27 @@ by the Retriever when retrieving provenance information
 PostgreSQL, SQLite
 * Potentially an existing provenance library
 
-## Degree of difficulty and needed skills
+### Degree of difficulty and needed skills
 
 * Moderate Difficulty
 * Knowledge of Python
 * Some experience with SQL
 
-## Involved developer communities
+### Involved developer communities
 
 The EcoData Retriever primarily interacts via issues and pull requests on
 GitHub.
 
-## Mentors
+### Mentors
 
 * @ethanwhite
 * @bendmorris
 
-# Write a result-aggregation server for the installation-test scripts
+## Write a result-aggregation server for the installation-test scripts
 
 <https://github.com/swcarpentry/gsoc2015/issues/3>
 
-## Background
+### Background
 
 [Software Carpentry][swc] has [installation-test scripts][swc-install] so students can check
 that they've successfully installed any software required by their workshop.
@@ -148,7 +185,7 @@ would make it easy to:
   catch up with current systems (see swcarpentry/workshop-template#157 and
   swcarpentry/workshop-template#159).
 
-## Approach
+### Approach
 
 This project would:
 
@@ -167,14 +204,14 @@ server, but I have the most experience with [Django][] and
 anything that takes care of the boilerplate and lets you focus on
 the high-level tasks.
 
-## Challenges
+### Challenges
 
 Designing and implementing a simple API for storing test results,
 error messages, diagnostic system information, etc.  We want a
 robust, flexible system that's small and easy to maintain going
 forward.
 
-## Involved toolkits or projects
+### Involved toolkits or projects
 
 * Python, for extending the existing installation test scripts.
 * A web framework like [Django][], [Flask][], [RoR][], [Express][],
@@ -182,7 +219,7 @@ forward.
 * Relational database management systems (RDBMS) including MySQL,
   PostgreSQL, SQLite.
 
-## Degree of difficulty and needed skills
+### Degree of difficulty and needed skills
 
 * Moderate difficulty.  This will be a simple server
   application, but you'll be designing and writing it from
@@ -197,22 +234,22 @@ Any of these skills could be learned during the project,
 but you probably can't learn *all* of them during the
 project ;).
 
-## Involved developer communities
+### Involved developer communities
 
 The Software Carpentry community primarily interacts via
 [issues and pull requests on
 GitHub][github] and the [`discuss@` mailing
 list][discuss].  There's also [an IRC channel][irc].
 
-## Mentors
+### Mentors
 
 * @wking
 
-## Acknowlegements
+### Acknowlegements
 
 Thanks to @xuf12 for the initial idea behind this project.
 
-# Amy: A Web-Based Tool for Managing Workshops
+## Amy: A Web-Based Tool for Managing Workshops
 
 <https://github.com/swcarpentry/gsoc2015/issues/6>
 
@@ -229,7 +266,7 @@ but many features have not yet been implemented,
 and it needs a lot of improvements in usability
 (not to mention a lot more testing).
 
-## Technical Details
+### Technical Details
 
 Amy is a straightforward [Django][Django] application;
 experience with that framework (and with Python) is required.
@@ -240,17 +277,21 @@ Amy will manage personal identifying information,
 so applicants should also have a basic understanding of security engineering.
 Experience with deploying and maintaining applications is also an asset.
 
-## Mentors
+### Mentors
 
 * @gvwilson
 * @wking
 * @r-gaia-cs
 
-## Acknowledgments
+### Acknowledgments
 
 Thanks to everyone who has helped get [Amy][amy] this far.
 
-## Appendix
+# SymPy
+
+See the GSoC Ideas list on the SymPy Wiki:
+
+https://github.com/sympy/sympy/wiki/GSoC-2015-Ideas
 
 [swc]: https://github.com/swcarpentry/workshop-template/tree/gh-pages/setup
 [swc-install]: https://github.com/wking/swc-setup-installation-test
@@ -264,26 +305,3 @@ Thanks to everyone who has helped get [Amy][amy] this far.
 [irc]: http://www.mozillascience.org/join-the-sciencelab-on-irc
 [amy]: http://github.com/swcarpentry/amy
 [jquery]: http://jquery.com/
-
-# JuliaWeb: The Networking / Web framework for the [Julia Programming Language](http://www.julialang.org).
-
-<https://github.com/swcarpentry/gsoc2015/issues/9>
-<https://github.com/JuliaWeb/Roadmap/issues>
-
-Julia is a high-level, high-performance dynamic programming language for technical computing and has seen significant adoption in various fields/areas of practice. One of the current deficiencies in the language is the lack of a robust networking / data exchange framework for obtaining and exporting data using standard network protocols. Existing efforts have relied on unstable/minimally-supported external packages; as a result, there is an underlying fragility to the network and web stacks.
-
-We would like to improve the robustness of the Julia network/web framework by initially focusing on the sound implementation of a TLS package that would underpin secure communications between Julia programs and the general internet community. It is our hope that the TLS package would be the official way to develop secure higher level network interfaces such as LDAPS, HTTPS, FTPS, etc. The non-secure versions of these interfaces/protocols will also need some work.
-
-## Technical Details
-
-Experience with networking and network protocols from OSI layers 3 (Network) through 7 (Application) will be required, as will an ability to read and understand relevant internet standards (RFCs). Familiarity with both Julia and C / C++ will also be required. Formal software development and support experience would be beneficial but is not a firm requirement.
-
-## Mentors
-* @sbromberger
-* (a few more pending)
-
-## Acknowledgements
-* The entire Julia core team
-* The members of [JuliaWeb](https://github.com/JuliaWeb)
- 
-
