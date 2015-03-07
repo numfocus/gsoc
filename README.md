@@ -1,22 +1,26 @@
 # Google Summer of Code 2015
 
-[Software Carpentry Foundation][SCF] suggest [NumFOCUS][NumFOCUS]
-to apply to be a (umbrella) mentoring organization
+NumFOCUS][NumFOCUS]
+apply to be a (umbrella) mentoring organization
 for [Google Summer of Code 2015][GSoC].
-Since NumFOCUS accept to apply,
-Software Carpentry Foundation will help handle the application.
 
 This Git repository store all the related information
 about NumFOCUS' Google Summer of Code 2015 application.
 
 Read [this document][CONTRIBUTING] to know how you can contribute
+as a mentor and a student
 and also check our [ideas list][IL].
 
-**Please DON'T email discuss@lists.software-carpentry.org.**
-For any questions use https://github.com/swcarpentry/gsoc2015/issues.
+If you have questions you can send a email to gsoc@numfocus.org,
+it is a mailing list address that you can subscribe
+from https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc,
+or use https://github.com/numfocus/gsoc/issues.
 
 ## Organizations Confirmed Under NumFOCUS Umbrella
 
+In alphabetic order.
+
+- [Julia][]
 - [Software Carpentry][SoftwareCarpentry]
 - [Spyder][]
 - [SymPy][SymPy]

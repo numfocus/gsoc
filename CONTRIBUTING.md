@@ -14,12 +14,20 @@ or send a pull request with this change.**
 ### Proposal summary
 
 If you have a proposal,
-please create a issue for it.
+
+1.  copy `YYYY/ideas/skeleton.md` to `YYYY/ideas/title-of-my-proposal.md`
+    where `YYYY` is the currently year
+    and `title-of-my-proposal` is a sort version of the title of your proposal.
+2.  add a link to `YYYY/ideas/title-of-my-proposal.md` at `YYYY/ideas-list.md`.
+3.  send a pull request with the changes at `YYYY`.
+4.  [create a issue](https://github.com/numfocus/gsoc/issues/new)
+    where students can ask questions.
 
 ## Students
 
 Projects proposed by mentors are listed at
-https://github.com/swcarpentry/gsoc2015/issues.
+our [ideas list][IL] and questions can be ask at
+https://github.com/numfocus/gsoc/issues.
 
 You are welcome to proposal a project by your own.
 If this is the case, please open a issue to discuss your proposal
@@ -30,7 +38,7 @@ a mentor for it. **Proposal without a mentor will not be considered.**
 
 ### Proposal draft
 
-1.  Fork https://github.com/swcarpentry/gsoc2015
+1.  Fork https://github.com/numfocus/gsoc
 
 2.  Clone your fork:
 
@@ -43,17 +51,17 @@ a mentor for it. **Proposal without a mentor will not be considered.**
     In my case is `r-gaia-cs`, so I will use
 
     ~~~
-    $ git clone https://github.com/r-gaia-cs/gsoc2015.git
+    $ git clone https://github.com/r-gaia-cs/gsoc.git
     ~~~
 
-2.  Copy `proposals/skeleton.md` to `proposals/your-name.md`
-    where `your` is your last name, all lowercase,
+2.  Copy `YYYY/proposals/skeleton.md` to `YYYY/proposals/your-name.md`
+    where `YYYY` is the currently year, `your` is your last name, all lowercase,
     and `name` is your firts name, all lowercase.
 
     For example, my name is Raniere Silva so I need to
-    copy `proposals/skeleton.md` to `proposals/silva-raniere.md`.
+    copy `YYYY/proposals/skeleton.md` to `YYYY/proposals/silva-raniere.md`.
 
-3.  Edit `proposals/your-name.md` filling all sections.
+3.  Edit `YYYY/proposals/your-name.md` filling all sections.
 
     If you need you can create new sections.
 
@@ -75,7 +83,7 @@ a mentor for it. **Proposal without a mentor will not be considered.**
 
 6.  Create a pull request.
 
-7.  Edit `proposals/your-name.md` to address the comments.
+7.  Edit `YYYY/proposals/your-name.md` to address the comments.
 
 8.  Update your pull request:
 
@@ -92,4 +100,5 @@ Your final proposal need to submitted to [GSoC][]
 **before March 27th 19:00 UTC**.
 
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
+[IL]: 2015/ideas-list.md
 [OT]: organization-team.md
