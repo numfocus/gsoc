@@ -8,6 +8,6 @@ For informations, check
 http://en.flossmanuals.net/melange/org-application-period/.
 
 
-[OA]: organization-profile.md
-[OQ]: organization-questionnaire.md
-[OT]: organization-team.md
+[OA]: profile.md
+[OQ]: questionnaire.md
+[OT]: team.md
