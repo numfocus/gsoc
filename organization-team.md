@@ -5,29 +5,38 @@ organizing Google Summer of Code 2015 for NumFOCUS.
 
 ## Admin
 
-- r.gaia.cs
-- ethanwhite
+| Name            | Melange Profile | GitHub Profile | Project/Organization |
+|-----------------|-----------------|----------------|----------------------|
+|                 | andy.terrel     | atarrel        | NumFOCUS             |
+|                 | ethanwhite      | ethanwhite     | Software Carpentry   |
+| Jason Moore     | moorepants      | moorepants     | SymPy                |
+| Raniere Silva   | r.gaia.cs       | r-gaia-cs      | Software Carpentry   |
 
 ## Mentors
 
 ### Software Carpentry
 
-- andy.terrel
-- gvwilson
-- mjsottile
-- wking
+| Name            | Melange Profile | GitHub Profile |
+|-----------------|-----------------|----------------|
+|                 | ethanwhite      | ethanwhite     |
+|                 | gvwilson        | gvwilson       |
+|                 | mjsottile       | mjsottile      |
+| Raniere Silva   | r.gaia.cs       | r-gaia-cs      |
+|                 | wking           | wking          |
 
 ### SymPy
 
-- Aaron Meurer (asmeurer)
-- Mateusz Paprocki (mattpap)
-- Jim Crist (jcrist)
-- Ondřej Čertík (certik)
-- Tim Lahey (tjlahey)
-- Thilina Rathnayake (thilinarmtb)
-- Harsh Gupta (hargup)
-- David Li (lidavidm96)
-- Sean Vig (flacjacket)
-- Jason Moore (moorepants)
-- Gilbert Gede (gilbertgede)
-- Sachin Joglekar (srjoglekar246)
+| Name               | Melange Profile | GitHub Profile |
+|--------------------|-----------------|----------------|
+| Aaron Meurer       | asmeurer        | asmeurer       |
+| David Li           |                 | lidavidm96     |
+| Gilbert Gede       |                 | gilbertgede    |
+| Harsh Gupta        |                 | hargup         |
+| Jason Moore        | moorepants      | moorepants     |
+| Jim Crist          |                 | jcrist         |
+| Mateusz Paprocki   |                 | mattpap        |
+| Ondřej Čertík      | certik          | certik         |
+| Sachin Joglekar    |                 | srjoglekar246  |
+| Sean Vig           | flacjacket      | flacjacket     |
+| Thilina Rathnayake | thilinarmtb     | thilinarmtb    |
+| Tim Lahey          |                 | tjlahey        |
