@@ -1,19 +1,14 @@
 # Google Summer of Code 2015
 
-[Software Carpentry Foundation][SCF] suggest [NumFOCUS][NumFOCUS]
-to apply to be a (umbrella) mentoring organization
-for [Google Summer of Code 2015][GSoC].
-Since NumFOCUS accept to apply,
-Software Carpentry Foundation will help handle the application.
+[NumFOCUS][NumFOCUS] is an (umbrella) mentoring organization for [Google Summer
+of Code 2015][GSoC].  This Git repository stores all the related information
+about NumFOCUS' Google Summer of Code 2015 program.
 
-This Git repository store all the related information
-about NumFOCUS' Google Summer of Code 2015 application.
+## Students and Mentors
 
-Read [this document][CONTRIBUTING] to know how you can contribute
-and also check our [ideas list][IL].
-
-**Please DON'T email discuss@lists.software-carpentry.org.**
-For any questions use https://github.com/swcarpentry/gsoc2015/issues.
+Read [this document][CONTRIBUTING] to know how you can apply for the program
+and also check our [ideas list][IL].  For any questions please open an issue in
+our [issue tracker][issues].
 
 ## Organizations Confirmed Under NumFOCUS Umbrella
 
@@ -24,15 +19,6 @@ For any questions use https://github.com/swcarpentry/gsoc2015/issues.
 ## Organizations Eligibility to NumFOCUS Umbrella
 
 All the projects listed [here][NumFOCUS-Projects].
-
-## NumFOCUS Application
-
-- [NumFOCUS Profile][OA]
-- [NumFOCUS Questionnaire][OQ]
-- [NumFOCUS Team][OT]
-
-For informations, check
-http://en.flossmanuals.net/melange/org-application-period/.
 
 [AstroPy]: http://www.astropy.org/
 [CONTRIBUTING]: CONTRIBUTING.md
@@ -46,9 +32,6 @@ http://en.flossmanuals.net/melange/org-application-period/.
 [NumFOCUS-Projects]: http://numfocus.org/projects/index.html
 [NumFOCUS]: http://numfocus.org/
 [NumPy]: http://numpy.scipy.org/
-[OA]: organization-profile.md
-[OQ]: organization-questionnaire.md
-[OT]: organization-team.md
 [PyTables]: http://pytables.github.com/
 [PythonXY]: http://code.google.com/p/pythonxy/wiki/Welcome
 [SCF]: http://software-carpentry.org/scf/index.html
@@ -63,3 +46,4 @@ http://en.flossmanuals.net/melange/org-application-period/.
 [scikit-image]: http://scikit-image.org/
 [scikit-learn]: http://scikit-learn.org/stable/
 [yt]: http://yt-project.org/
+[issues]: https://github.com/numfocus/gsoc/issues
