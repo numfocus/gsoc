@@ -10,8 +10,8 @@ Organizations are in alphabetic order.
 
 ## JuliaWeb: The Networking / Web framework for the [Julia Programming Language](http://www.julialang.org).
 
-<https://github.com/swcarpentry/gsoc2015/issues/9>
-<https://github.com/JuliaWeb/Roadmap/issues>
+**Please ask questions [here](https://github.com/swcarpentry/gsoc2015/issues/9)**
+or [here](https://github.com/JuliaWeb/Roadmap/issues).
 
 Julia is a high-level, high-performance dynamic programming language for technical computing and has seen significant adoption in various fields/areas of practice. One of the current deficiencies in the language is the lack of a robust networking / data exchange framework for obtaining and exporting data using standard network protocols. Existing efforts have relied on unstable/minimally-supported external packages; as a result, there is an underlying fragility to the network and web stacks.
 
@@ -31,15 +31,11 @@ Experience with networking and network protocols from OSI layers 3 (Network) thr
 * The entire Julia core team
 * The members of [JuliaWeb](https://github.com/JuliaWeb)
 
-
 # Software Carpentry
 
-Here are the projects we offer to mentor this summer:
+## Add taxonomic name resolution to the EcoData Retriever to facilitate data science approaches to ecology
 
-## Add taxonomic name resolution to the EcoData Retriever to facilitate data
-science approaches to ecology
-
-<https://github.com/swcarpentry/gsoc2015/issues/1>
+**Please ask questions [here](https://github.com/swcarpentry/gsoc2015/issues/1).**
 
 ### Rationale
 
@@ -106,7 +102,7 @@ GitHub.
 
 ## Improving reproducibility in science by adding provenance tracking to the EcoData Retriever
 
-<https://github.com/swcarpentry/gsoc2015/issues/2>
+**Please ask questions [here](https://github.com/swcarpentry/gsoc2015/issues/2).**
 
 ### Rationale
 
@@ -167,7 +163,7 @@ GitHub.
 
 ## Write a result-aggregation server for the installation-test scripts
 
-<https://github.com/swcarpentry/gsoc2015/issues/3>
+**Please as questions [here](https://github.com/swcarpentry/gsoc2015/issues/3).**
 
 ### Background
 
@@ -234,13 +230,6 @@ Any of these skills could be learned during the project,
 but you probably can't learn *all* of them during the
 project ;).
 
-### Involved developer communities
-
-The Software Carpentry community primarily interacts via
-[issues and pull requests on
-GitHub][github] and the [`discuss@` mailing
-list][discuss].  There's also [an IRC channel][irc].
-
 ### Mentors
 
 * @wking
@@ -251,7 +240,7 @@ Thanks to @xuf12 for the initial idea behind this project.
 
 ## Amy: A Web-Based Tool for Managing Workshops
 
-<https://github.com/swcarpentry/gsoc2015/issues/6>
+**Please ask questions [here](https://github.com/swcarpentry/gsoc2015/issues/6).**
 
 [Software Carpentry][swc] workshops are currently managed by hand
 using a complex (and fragile) mix that includes SQL files stored in GitHub,
