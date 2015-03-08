@@ -2,20 +2,19 @@
 
 ## Mentors
 
-To be a mentor go to [GSoC homepage][GSoC]
-and create a profile for you.
+To be a mentor go to [GSoC homepage][GSoC] and create your profile.
 If you need help, please check
 http://en.flossmanuals.net/melange/creating-and-editing/.
 
-**After you create your profile,
-open a [issue][issues] requesting that your username be add at [organization-team.md][OT]
-or send a pull request with this change.**
+**After creating your profile, open an [issue][issues] requesting that your
+username be added at [organization-team.md][OT] or send a pull request with
+your addition.**
 
-### Proposal summary
+### Proposal summary (Mentors)
 
 **Short Version**
 
-If you have a proposal, please create a [issue][issues] for it.
+If you have a proposal, please create an [issue][issues] for it.
 
 **Long Version**
 
@@ -26,21 +25,20 @@ If you have a proposal,
     and `title-of-my-proposal` is a sort version of the title of your proposal.
 2.  add a link to `YYYY/ideas/title-of-my-proposal.md` at `YYYY/ideas-list.md`.
 3.  send a pull request with the changes at `YYYY`.
-4.  [create a issue](https://github.com/numfocus/gsoc/issues/new)
+4.  [create an issue](https://github.com/numfocus/gsoc/issues/new)
     where students can ask questions.
 
 ## Students
 
-Projects proposed by mentors are listed at
-our [ideas list][IL] and questions can be ask at
-[our issue tracker][issues].
+Projects proposed by mentors are listed at our [ideas list][IL] and
+questions can be asked at [our issue tracker][issues].
 
-You are welcome to proposal a project by your own.
-If this is the case, please open a issue to discuss your proposal
-or send a pull request with it.
+You are welcome to propose your own project. If you wish to do so, please
+open an issue to discuss your proposal and/or send a pull request with it.
 
-If you are going to propose your own idea you will need to find
-a mentor for it. **Proposal without a mentor will not be considered.**
+If you choose to propose your own project idea you will need to find
+a mentor for the project. **Proposals without a mentor will not be
+considered.**
 
 ### Proposal draft
 
@@ -102,7 +100,7 @@ a mentor for it. **Proposal without a mentor will not be considered.**
 
 ### Final Proposal
 
-Your final proposal need to submitted to [GSoC][]
+Your final proposal must be submitted to [GSoC][]
 **before March 27th 19:00 UTC**.
 
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
