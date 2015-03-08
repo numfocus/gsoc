@@ -8,10 +8,16 @@ If you need help, please check
 http://en.flossmanuals.net/melange/creating-and-editing/.
 
 **After you create your profile,
-open a issue requesting that your username be add at [organization-team.md][OT]
+open a [issue][issues] requesting that your username be add at [organization-team.md][OT]
 or send a pull request with this change.**
 
 ### Proposal summary
+
+**Short Version**
+
+If you have a proposal, please create a [issue][issues] for it.
+
+**Long Version**
 
 If you have a proposal,
 
@@ -27,7 +33,7 @@ If you have a proposal,
 
 Projects proposed by mentors are listed at
 our [ideas list][IL] and questions can be ask at
-https://github.com/numfocus/gsoc/issues.
+[our issue tracker][issues].
 
 You are welcome to proposal a project by your own.
 If this is the case, please open a issue to discuss your proposal
@@ -102,3 +108,4 @@ Your final proposal need to submitted to [GSoC][]
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
 [IL]: 2015/ideas-list.md
 [OT]: organization-team.md
+[issues]: https://github.com/numfocus/gsoc/issues
