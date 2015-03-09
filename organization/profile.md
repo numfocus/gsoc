@@ -30,9 +30,11 @@ for information about the fields.
 
 -   Ideas list
 
-    https://github.com/swcarpentry/gsoc2015
+    https://github.com/numfocus/gsoc/blob/master/2015/ideas-list.md
 
 -   Mailing list
+
+    https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc
 
 -   Organization website
 
