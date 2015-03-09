@@ -14,13 +14,19 @@ organizing Google Summer of Code 2015 for NumFOCUS.
 
 ## Mentors
 
+### Julia
+
+| Name            | Melange Profile | GitHub Profile |
+|-----------------|-----------------|----------------|
+|                 | mjsottile       | mjsottile      |
+|                 | bromberger      | sbromberger    |
+
 ### Software Carpentry
 
 | Name            | Melange Profile | GitHub Profile |
 |-----------------|-----------------|----------------|
 |                 | ethanwhite      | ethanwhite     |
 |                 | gvwilson        | gvwilson       |
-|                 | mjsottile       | mjsottile      |
 | Raniere Silva   | r.gaia.cs       | r-gaia-cs      |
 |                 | wking           | wking          |
 
