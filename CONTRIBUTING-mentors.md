@@ -5,7 +5,7 @@ If you need help, please check
 http://en.flossmanuals.net/melange/creating-and-editing/.
 
 **After creating your profile, open an [issue][issues] requesting that your
-username be added at [organization-team.md][OT] or send a pull request with
+username be added at [organization/team.md][OT] or send a pull request with
 your addition.**
 
 ### Proposal summary (Mentors)
@@ -28,3 +28,4 @@ If you have a proposal,
 
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
 [issues]: https://github.com/numfocus/gsoc/issues
+[OT]: organization/team.md
