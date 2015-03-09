@@ -35,7 +35,7 @@ All the projects listed [here][NumFOCUS-Projects].
 [Cython]: http://cython.org/
 [DataCarpentry]: http://datacarpentry.org/
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
-[IL]: ideas-list.md
+[IL]: 2015/ideas-list.md
 [IPython]: http://ipython.org/
 [Julia]: http://julialang.org/
 [Matplotlib]: http://matplotlib.sourceforge.net/
