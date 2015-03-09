@@ -1,19 +1,21 @@
 # Google Summer of Code 2015
 
-[NumFOCUS][NumFOCUS] is an (umbrella) mentoring organization for [Google Summer
-of Code 2015][GSoC].  This Git repository stores all the related information
-about NumFOCUS' Google Summer of Code 2015 program.
+[NumFOCUS][] is a mentoring organization for [Google Summer
+of Code 2015][GSoC]. [NumFOCUS][], an umbrella organization, supports and
+promotes world-class, innovative, open source scientific software.
+
+This Git repository stores information about NumFOCUS' participation in
+Google Summer of Code 2015 program.
 
 ## Students and Mentors
 
-Read [this document][CONTRIBUTING] to know how you can apply for the program
-and also check our [ideas list][IL].
+Read [this document][CONTRIBUTING] to know how you can apply for the
+GSoC program. Please also check our [ideas list][IL].
 
-For any questions please open an issue in
-our [issue tracker][issues]
-or send a email to gsoc@numfocus.org,
-it is a mailing list address that you can subscribe
-from https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc.
+For any questions please open an issue in our [issue tracker][issues].
+Or send a email to gsoc@numfocus.org, our mailing list address, and
+please consider subscribing to the mailing list at
+https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc.
 
 ## Organizations Confirmed Under NumFOCUS Umbrella
 
@@ -22,9 +24,9 @@ In alphabetic order.
 - [Julia][]
 - [Software Carpentry][SoftwareCarpentry]
 - [Spyder][]
-- [SymPy][SymPy]
+- [SymPy][]
 
-## Organizations Eligibility to NumFOCUS Umbrella
+## Organizations Eligible Under NumFOCUS Umbrella
 
 All the projects listed [here][NumFOCUS-Projects].
 
