@@ -42,7 +42,7 @@ for information about the fields.
 -   What is your plan for dealing with disappearing students?
 
     We will to try to pick students who will not disappear
-    by require all students to have submitted at least one patch
+    by requiring all students to have submitted at least one patch
     that passes review and is pushed into the code base in order to be
     considered.
     
