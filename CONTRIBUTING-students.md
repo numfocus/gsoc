@@ -75,3 +75,4 @@ Your final proposal must be submitted to [GSoC][]
 
 [IL]: 2015/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
+[GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
