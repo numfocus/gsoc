@@ -46,7 +46,7 @@ for information about the fields.
     that passes review and is pushed into the code base in order to be
     considered.
     
-    To avoid the student disappears we will require each student
+    To avoid the disappearing students we will require each student
     to (1) blog once a week about their progress
     and (2) keep their work updated in GitHub by,
     at least, one push a week.
