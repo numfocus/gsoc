@@ -1,7 +1,5 @@
 # NumFOCUS GSOC Operations
 
-**This is a draft.**
-
 [NumFOCUS](http://numfocus.org/)
 will apply to Google Summer of Code (GSoC)
 as a umbrella organization.
