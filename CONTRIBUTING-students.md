@@ -1,5 +1,26 @@
 # Contributing Guide for Students
 
+Please use the instructions of the project/organization
+you are interested in work with.
+
+## Julia
+
+Read [default instructions](#default-instructions).
+
+## Software Carpentry
+
+Read [default instructions](#default-instructions).
+
+## Sympy
+
+Read https://github.com/sympy/sympy/wiki/GSoC-2015-Application-Template.
+
+## Default Instructions
+
+**This are a general guide.
+Projects/Organizations can have different instructions
+and you must follow their instructions.**
+
 Projects proposed by mentors are listed at our [ideas list][IL] and
 questions can be asked at [our issue tracker][issues].
 
@@ -73,6 +94,17 @@ considered.**
 Your final proposal must be submitted to [GSoC][]
 **before March 27th 19:00 UTC**.
 
+You can use [Pandoc][] to convert your proposal in Markdown
+to HTML and paste the HTML at [GSoC][].
+For example, you can
+
+~~~
+$ pandoc -f markdown -t html YYYY/proposals/your-name.md | xclip -selection clipboard
+~~~
+
+and `CTRL+v` your proposal at [GSoC][].
+
 [IL]: 2015/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
+[Pandoc]: http://pandoc.org/
