@@ -57,7 +57,14 @@ Students proposals will be scoring following the description bellow.
 **Coordinators** and **mentors** should vote **only** in proposals
 related with the project/organization they are involved.
 
+**Organization administrator** will request one slot for every
+proposal with at least one star.
+
 ## Guidelines to Select Accept Students Proposals
+
+**Note**: Slots are requested after students submission
+and will be done based on the number of stars that
+**coordinators** and **mentors** assign to each proposal.
 
 **Organization administrator** and **coordinators** will
 discuss and accept/reject students proposal based on:
@@ -77,6 +84,8 @@ will considere
 1.  which project/organization can only apply under NumFOCUS umbrella;
 2.  if the project/organization has enough mentors for the proposal;
 3.  if the project/organization receive proposals from strong candidates.
+4.  If the organization already has plenty of slots from another umbrella
+    organization.
 
 **If** NumFOCUS received few slots than requested,
 **organization administrator** and **coordinators**
