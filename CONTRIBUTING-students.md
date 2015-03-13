@@ -1,5 +1,26 @@
 # Contributing Guide for Students
 
+Please use the instructions of the project/organization
+you are interested in work with.
+
+## Julia
+
+Read [default instructions](#default-instructions).
+
+## Software Carpentry
+
+Read [default instructions](#default-instructions).
+
+## Sympy
+
+Read https://github.com/sympy/sympy/wiki/GSoC-2015-Application-Template.
+
+## Default Instructions
+
+**This are a general guide.
+Projects/Organizations can have different instructions
+and you must follow their instructions.**
+
 Projects proposed by mentors are listed at our [ideas list][IL] and
 questions can be asked at [our issue tracker][issues].
 
