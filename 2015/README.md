@@ -1,4 +1,7 @@
-Organizations are in alphabetic order.
+Welcome to the NumFOCUS 2015 Google Summer of Code information page. NumFOCUS
+is an umbrella organization under the GSoC. You will find information on how on
+each groups' projects in the table below. Organizations are in alphabetic
+order.
 
 <table>
 
@@ -8,9 +11,11 @@ Organizations are in alphabetic order.
     </td>
     <td>
        <h1>Julia</h1>
-       <p>Type description here</p>
+       <p>Julia is a high-level, high-performance dynamic programming language
+         for technical computing, with syntax that is familiar to users of
+         other technical computing environments.</p>
        <p>
-         <a href="http://julialang.org">Website</a> | Mailing List | Chat | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-julia.md">Ideas Page</a>
+         <a href="http://julialang.org">Website</a> | <a href="https://groups.google.com/forum/?fromgroups=#!forum/julia-dev">Mailing List</a> | <a href="http://webchat.freenode.net/?channels=julia">Chat</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-julia.md">Ideas Page</a>
        </p>
     </td>
   </tr>
@@ -22,9 +27,9 @@ Organizations are in alphabetic order.
     </td>
     <td>
        <h1>Software Carpentry</h1>
-       <p>Type description here</p>
+       <p>Teaching technical skills for scientific computing</p>
        <p>
-         <a href="http://software-carpenpy.org">Website</a> | Mailing List | Chat | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-swc.md">Ideas Page</a>
+         <a href="http://software-carpenpy.org">Website</a> | <a href="https://github.com/numfocus/gsoc/issues">Project Discussions</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-swc.md">Ideas Page</a>
        </p>
     </td>
   </tr>
