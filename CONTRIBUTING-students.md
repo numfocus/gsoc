@@ -94,6 +94,17 @@ considered.**
 Your final proposal must be submitted to [GSoC][]
 **before March 27th 19:00 UTC**.
 
+You can use [Pandoc][] to convert your proposal in Markdown
+to HTML and paste the HTML at [GSoC][].
+For example, you can
+
+~~~
+$ pandoc -f markdown -t html YYYY/proposals/your-name.md | xclip -selection clipboard
+~~~
+
+and `CTRL+v` your proposal at [GSoC][].
+
 [IL]: 2015/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
+[Pandoc]: http://pandoc.org/
