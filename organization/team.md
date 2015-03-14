@@ -43,7 +43,7 @@ organizing Google Summer of Code for NumFOCUS.
 | Gilbert Gede       |                 | gilbertgede    |
 | Harsh Gupta        |                 | hargup         |
 | Jason Moore        | moorepants      | moorepants     |
-| Jim Crist          |                 | jcrist         |
+| Jim Crist          | jcrist          | jcrist         |
 | Mateusz Paprocki   |                 | mattpap        |
 | Ondřej Čertík      | certik          | certik         |
 | Sachin Joglekar    |                 | srjoglekar246  |
