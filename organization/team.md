@@ -1,9 +1,11 @@
 # Organization Team
 
 This is the list of people helping
-organizing Google Summer of Code 2015 for NumFOCUS.
+organizing Google Summer of Code for NumFOCUS.
 
-## Admin
+## 2015
+
+### Admin
 
 | Name            | Melange Profile | GitHub Profile | Project/Organization |
 |-----------------|-----------------|----------------|----------------------|
@@ -12,25 +14,27 @@ organizing Google Summer of Code 2015 for NumFOCUS.
 | Jason Moore     | moorepants      | moorepants     | SymPy                |
 | Raniere Silva   | r.gaia.cs       | r-gaia-cs      | Software Carpentry   |
 
-## Mentors
+### Mentors
 
-### Julia
+#### Julia
 
 | Name            | Melange Profile | GitHub Profile |
 |-----------------|-----------------|----------------|
 |                 | mjsottile       | mjsottile      |
 |                 | bromberger      | sbromberger    |
 
-### Software Carpentry
+#### Software Carpentry
 
 | Name            | Melange Profile | GitHub Profile |
 |-----------------|-----------------|----------------|
 |                 | ethanwhite      | ethanwhite     |
 |                 | gvwilson        | gvwilson       |
 | Raniere Silva   | r.gaia.cs       | r-gaia-cs      |
+|                 | scottcha        | sckott         |
+|                 | willingc        | willingc       |
 |                 | wking           | wking          |
 
-### SymPy
+#### SymPy
 
 | Name               | Melange Profile | GitHub Profile |
 |--------------------|-----------------|----------------|

@@ -28,8 +28,9 @@ You are welcome to propose your own project. If you wish to do so, please
 open an issue to discuss your proposal and/or send a pull request with it.
 
 If you choose to propose your own project idea you will need to find
-a mentor for the project. **Proposals without a mentor will not be
-considered.**
+a mentor for the project
+and you can start with [our mentor list][ML].
+**Proposals without a mentor will not be considered.**
 
 ### Proposal draft
 
@@ -107,4 +108,5 @@ and `CTRL+v` your proposal at [GSoC][].
 [IL]: 2015/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
+[ML]: organization/team.md
 [Pandoc]: http://pandoc.org/
