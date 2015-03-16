@@ -243,6 +243,143 @@ Experience with deploying and maintaining applications is also an asset.
 
 Thanks to everyone who has helped get [Amy][amy] this far.
 
+# Lessons as Packages
+
+<https://github.com/swcarpentry/gsoc2015/issues/25>
+
+There has been a great deal of interest lately in using virtual
+machine technologies such as Docker to improve the reproducibility of
+computational results in scientific research.  There has been much
+less discussion of whether the same end could be achieved just as
+well, or better, using another technology: package managers.  This
+project will explore the extent to which cross-platform, open source
+package managers can aid reproducible research, both on their own and
+in conjunction with other tools, by building and evaluating a
+prototype of such a system.
+
+## Technical Details
+
+A package manager is a collection of software tools that automates the
+process of installing, upgrading, configuring, and removing software
+packages for a computer's operating system in a consistent manner. It
+typically maintains a database of software dependencies and version
+information to prevent software mismatches and missing prerequisites.
+
+Packages are distributions of software, applications and data.  A
+package typically contains metadata such as a description of its
+purpose, its version, and a list of dependencies necessary for the
+software to run properly.  Upon installation, this metadata is stored
+in a local package database, so that the package manager can detect
+and handle dependencies and conflicts between different packages
+(e.g., figure out what to do when Package A needs one version of
+Library X, but Package B is using an older one or needs a newer one).
+
+The existence of packaging tools has fostered the foundation and
+growth of archive sites such as CPAN (the Comprehensive Perl Archive
+Network), CRAN (which serves the same role for R), and PyPI (the
+Python Package Index).  Many of these sites host scientific software,
+but this software is divorced from the papers that use it (which at
+best are hosted on sites such as arxiv.org with links embedded in
+their LaTeX or Word source, or published PDFs, pointing at a few key
+libraries).  Further, much of the "last ten yards" of computational
+research --- the small scripts that use those libraries to produce
+specific figures and tables --- are in random locations in verison
+control repositories if they are publicly available at all.
+
+### Proposal
+
+Programmers think of a package as being software that might be
+accompanied by some text (such as a reference manual) and data (such
+as configuration files or icon images).  We propose to invert this
+point of view and consider a package as text (such as a research
+paper) and data (the paper's raw material) that is accompanied by some
+software (the scripts used to turn that data into that paper).
+
+If a scientist has gone to the trouble of creating a manifest for a
+particular research paper for conda, brew, or bower, anyone who wants
+to "install" that paper --- i.e., configure a computer so that it can
+reproduce the work presented in the paper --- will be able to do so by
+typing something like:
+
+    $ conda install some-identifier-for-the-paper
+
+After this, the package user will have the same libraries, programs,
+data sets (or links to data sets), style files, and other artifacts
+used to produce the paper.  With a bit more work on our part, the
+package user should even be able to type:
+
+    $ conda install doi://1234.5678/v2
+
+to set up an environment in which she can reproduce the work presented
+in Version 2 of the paper with the specified DOI.
+
+We believe this approach merits exploration because:
+
+1.  It leverages tools that scientific programmers don't have to build
+    or maintain (and which many of them already have installed).
+
+2.  It is auditable: a package manifest is a testable description of
+    what is needed to reproduce a particular piece of work.
+
+3.  It directly addresses the twin issues of extension and remixing.
+
+This last point bears further discussion.  Researchers often want to
+reproduce a colleague's computational setup in order to do further
+work on top of it, or to combine its tooling with that used in some
+other paper or papers.  Virtual machines are not well suited to this:
+if, for example, a researcher wants to create a new pipeline by
+pushing data through the environments created by three other people,
+she must either hope that their VMs come with usable web service APIs,
+or use some sort of spooling system to move data between them via the
+filesystem.  If, on the other hand, those three papers's computational
+enviornments could be installed in one OS image using an off-the-shelf
+package manager, the effort needed to remix them would probably be
+substantially less.
+
+### A Use Case
+
+One particular use case for this system is paper review.  Many
+advocates of open science believe that reviewers should re-run the
+calculations used to produce the papers they are reviewing.  Setting
+up a machine to do this can take anywhere from a few minutes forever,
+depending on how well the computational environment is documented and
+how openly available the software is.  By reducing this effort, a
+system such as the one we propose could increase the frequency with
+which reviewers do more than just read their colleagues's work when
+reviewing it.
+
+### Plan
+
+Today's package managers can be used to create re-runnable versions of
+papers right now.  In practice, though, creating a package manifest
+for each paper would require more effort than most scientists would be
+willing to put in, and the results of installation would seem odd.
+(Most people wouldn't think to look for a paper in /usr/share/man.)
+Off-the-shelf package managers also don't cater for "installing"
+remote data, which is likely to be a common use case for researchers.
+
+We therefore propose that a GSoC student should:
+
+1.  Extend an open source off-the-shelf package manager in ways that
+    simplify the creation of per-paper packages by the average
+    scientist.
+
+2.  Conduct a small-scale user study of that tool to determine whether
+    a full-scale version might be adopted, and if so, what changes
+    would be needed to increase the likelihood of that happening.
+
+3.  Explore ways in which this approach could complement others that
+    are currently being explored, particularly VM-based approaches.
+
+A very simple proof-of-concept system exists at <https://github.com/swcarpentry/installable-lesson-demo-01>.
+
+## Mentors
+
+* @gvwilson
+* @r-gaia-cs
+
+## Appendix
+
 [swc]: https://github.com/swcarpentry/workshop-template/tree/gh-pages/setup
 [swc-install]: https://github.com/wking/swc-setup-installation-test
 [git-novice-pull-comment]: https://github.com/swcarpentry/git-novice/pull/43#issuecomment-74177654
