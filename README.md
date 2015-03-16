@@ -1,50 +1,47 @@
 # Google Summer of Code 2015
 
-[Software Carpentry Foundation][SCF] suggest [NumFOCUS][NumFOCUS]
-to apply to be a (umbrella) mentoring organization
-for [Google Summer of Code 2015][GSoC].
-Since NumFOCUS accept to apply,
-Software Carpentry Foundation will help handle the application.
+[NumFOCUS][] is a mentoring organization for [Google Summer
+of Code 2015][GSoC]. [NumFOCUS][], an umbrella organization, supports and
+promotes world-class, innovative, open source scientific software.
 
-This Git repository store all the related information
-about NumFOCUS' Google Summer of Code 2015 application.
+This Git repository stores information about NumFOCUS' participation in
+Google Summer of Code 2015 program.
 
-Read [this document][CONTRIBUTING] to know how you can contribute
-and also check our [ideas list][IL].
+## Students and Mentors
+
+Read [this document][CONTRIBUTING] to know how you can apply for the
+GSoC program. Please also check our [ideas list][IL].
+
+For any questions please open an issue in our [issue tracker][issues].
+Or send a email to gsoc@numfocus.org, our mailing list address, and
+please consider subscribing to the mailing list at
+https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc.
 
 ## Organizations Confirmed Under NumFOCUS Umbrella
 
+In alphabetic order.
+
+- [Julia][]
 - [Software Carpentry][SoftwareCarpentry]
 - [Spyder][]
+- [SymPy][]
 
-## Organizations Eligibility to NumFOCUS Umbrella
+## Organizations Eligible Under NumFOCUS Umbrella
 
 All the projects listed [here][NumFOCUS-Projects].
-
-## NumFOCUS Application
-
-- [NumFOCUS Profile][OA]
-- [NumFOCUS Questionnaire][OQ]
-- [NumFOCUS Team][OT]
-
-For informations, check
-http://en.flossmanuals.net/melange/org-application-period/.
 
 [AstroPy]: http://www.astropy.org/
 [CONTRIBUTING]: CONTRIBUTING.md
 [Cython]: http://cython.org/
 [DataCarpentry]: http://datacarpentry.org/
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
-[IL]: ideas-list.md
+[IL]: 2015/ideas-list.md
 [IPython]: http://ipython.org/
 [Julia]: http://julialang.org/
 [Matplotlib]: http://matplotlib.sourceforge.net/
 [NumFOCUS-Projects]: http://numfocus.org/projects/index.html
 [NumFOCUS]: http://numfocus.org/
 [NumPy]: http://numpy.scipy.org/
-[OA]: organization-profile.md
-[OQ]: organization-questionnaire.md
-[OT]: organization-team.md
 [PyTables]: http://pytables.github.com/
 [PythonXY]: http://code.google.com/p/pythonxy/wiki/Welcome
 [SCF]: http://software-carpentry.org/scf/index.html
@@ -52,8 +49,9 @@ http://en.flossmanuals.net/melange/org-application-period/.
 [SoftwareCarpentry]: http://software-carpentry.org/
 [Spyder]: http://code.google.com/p/spyderlib/
 [Statmodels]: http://statsmodels.sourceforge.net/
-[SymPy]: http://sympy.org/en/index.html
+[SymPy]: http://sympy.org
 [Theano]: http://deeplearning.net/software/theano/
+[issues]: https://github.com/numfocus/gsoc/issues
 [pandas]: http://pandas.pydata.org/
 [rOpenSci]: http://ropensci.org/
 [scikit-image]: http://scikit-image.org/

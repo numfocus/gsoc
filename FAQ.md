@@ -10,4 +10,4 @@
     please send a email to one of [admins][]
 
 [NumFOCUS-Projects]: http://numfocus.org/projects/index.html
-[admins]: organization-team.md
+[admins]: organization/team.md

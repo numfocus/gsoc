@@ -1,10 +1,10 @@
-Here are the projects we offer to mentor this summer:
+# Software Carpentry
 
-# Add taxonomic name resolution to the EcoData Retriever to facilitate data science approaches to ecology
+## Add taxonomic name resolution to the EcoData Retriever to facilitate data science approaches to ecology
 
-<https://github.com/swcarpentry/gsoc2015/issues/1>
+**Please ask questions [here](https://github.com/swcarpentry/gsoc2015/issues/1).**
 
-## Rationale
+### Rationale
 
 The [EcoData Retriever](http://ecodataretriever.org) is a Python based tool
 for automatically downloading, cleaning up,
@@ -19,7 +19,7 @@ different species names as part of the process of accessing the data in the
 first place it will become much easier
 to combine diverse datasets and in new and interesting ways.
 
-## Approach
+### Approach
 
 This project would extendthe EcoData Retriever using Python to access one
 or more of the existing web
@@ -33,7 +33,7 @@ would involve:
 * Object oriented programming in Python
 * Using Python to query web service APIs
 
-## Challenges
+### Challenges
 
 Scientific names are stored inconsistently across datasets, so it will be
 necessary to either modifying the scripts
@@ -41,7 +41,7 @@ that hold information on each dataset to indicate the location of the
 species information or use an existing ontology
 to automatically identify the location.
 
-## Involved toolkits or projects
+### Involved toolkits or projects
 
 * The [EcoData Retriever](http://ecodataretriever.org)
 * Python
@@ -49,29 +49,29 @@ to automatically identify the location.
 * Relational database management systems (RDBMS) including MySQL,
 PostgreSQL, SQLite
 
-## Degree of difficulty and needed skills
+### Degree of difficulty and needed skills
 
 * Moderate Difficulty
 * Knowledge of Python
 * Knowledge of interacting with web services via APIs is a plus, but could
 be learned during the project
 
-## Involved developer communities
+### Involved developer communities
 
 The EcoData Retriever primarily interacts via issues and pull requests on
 GitHub.
 
-## Mentors
+### Mentors
 
 * @ethanwhite
 * @bendmorris
 * @sckott
 
-# Improving reproducibility in science by adding provenance tracking to the EcoData Retriever
+## Improving reproducibility in science by adding provenance tracking to the EcoData Retriever
 
-<https://github.com/swcarpentry/gsoc2015/issues/2>
+**Please ask questions [here](https://github.com/swcarpentry/gsoc2015/issues/2).**
 
-## Rationale
+### Rationale
 
 The [EcoData Retriever](http://ecodataretriever.org) is a Python based tool
 for automatically downloading, cleaning up,
@@ -90,7 +90,7 @@ these problems, but it doesn't currently keep track of exactly what has
 been done and therefore fails to support
 full reproducible workflows.
 
-## Approach
+### Approach
 
 This project would extend the EcoData Retriever using Python to store all
 of the metadata necessary for
@@ -104,7 +104,7 @@ existing framework (e.g,. http://code.google.com/p/core-provenance-library/)
 * Implement checks to make sure that the data is in the same form created
 by the Retriever when retrieving provenance information
 
-## Involved toolkits or projects
+### Involved toolkits or projects
 
 * The [EcoData Retriever](http://ecodataretriever.org)
 * Python
@@ -112,27 +112,27 @@ by the Retriever when retrieving provenance information
 PostgreSQL, SQLite
 * Potentially an existing provenance library
 
-## Degree of difficulty and needed skills
+### Degree of difficulty and needed skills
 
 * Moderate Difficulty
 * Knowledge of Python
 * Some experience with SQL
 
-## Involved developer communities
+### Involved developer communities
 
 The EcoData Retriever primarily interacts via issues and pull requests on
 GitHub.
 
-## Mentors
+### Mentors
 
 * @ethanwhite
 * @bendmorris
 
-# Write a result-aggregation server for the installation-test scripts
+## Write a result-aggregation server for the installation-test scripts
 
-<https://github.com/swcarpentry/gsoc2015/issues/3>
+**Please as questions [here](https://github.com/swcarpentry/gsoc2015/issues/3).**
 
-## Background
+### Background
 
 [Software Carpentry][swc] has [installation-test scripts][swc-install] so students can check
 that they've successfully installed any software required by their workshop.
@@ -148,7 +148,7 @@ would make it easy to:
   catch up with current systems (see swcarpentry/workshop-template#157 and
   swcarpentry/workshop-template#159).
 
-## Approach
+### Approach
 
 This project would:
 
@@ -167,14 +167,14 @@ server, but I have the most experience with [Django][] and
 anything that takes care of the boilerplate and lets you focus on
 the high-level tasks.
 
-## Challenges
+### Challenges
 
 Designing and implementing a simple API for storing test results,
 error messages, diagnostic system information, etc.  We want a
 robust, flexible system that's small and easy to maintain going
 forward.
 
-## Involved toolkits or projects
+### Involved toolkits or projects
 
 * Python, for extending the existing installation test scripts.
 * A web framework like [Django][], [Flask][], [RoR][], [Express][],
@@ -182,7 +182,7 @@ forward.
 * Relational database management systems (RDBMS) including MySQL,
   PostgreSQL, SQLite.
 
-## Degree of difficulty and needed skills
+### Degree of difficulty and needed skills
 
 * Moderate difficulty.  This will be a simple server
   application, but you'll be designing and writing it from
@@ -197,24 +197,17 @@ Any of these skills could be learned during the project,
 but you probably can't learn *all* of them during the
 project ;).
 
-## Involved developer communities
-
-The Software Carpentry community primarily interacts via
-[issues and pull requests on
-GitHub][github] and the [`discuss@` mailing
-list][discuss].  There's also [an IRC channel][irc].
-
-## Mentors
+### Mentors
 
 * @wking
 
-## Acknowlegements
+### Acknowlegements
 
 Thanks to @xuf12 for the initial idea behind this project.
 
-# Amy: A Web-Based Tool for Managing Workshops
+## Amy: A Web-Based Tool for Managing Workshops
 
-<https://github.com/swcarpentry/gsoc2015/issues/6>
+**Please ask questions [here](https://github.com/swcarpentry/gsoc2015/issues/6).**
 
 [Software Carpentry][swc] workshops are currently managed by hand
 using a complex (and fragile) mix that includes SQL files stored in GitHub,
@@ -229,7 +222,7 @@ but many features have not yet been implemented,
 and it needs a lot of improvements in usability
 (not to mention a lot more testing).
 
-## Technical Details
+### Technical Details
 
 Amy is a straightforward [Django][Django] application;
 experience with that framework (and with Python) is required.
@@ -240,13 +233,13 @@ Amy will manage personal identifying information,
 so applicants should also have a basic understanding of security engineering.
 Experience with deploying and maintaining applications is also an asset.
 
-## Mentors
+### Mentors
 
 * @gvwilson
 * @wking
 * @r-gaia-cs
 
-## Acknowledgments
+### Acknowledgments
 
 Thanks to everyone who has helped get [Amy][amy] this far.
 
