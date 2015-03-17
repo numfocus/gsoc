@@ -41,7 +41,7 @@ organizing Google Summer of Code for NumFOCUS.
 | Aaron Meurer       | asmeurer        | asmeurer       |
 | David Li           |                 | lidavidm96     |
 | Gilbert Gede       | gilbertgede     | gilbertgede    |
-| Harsh Gupta        |                 | hargup         |
+| Harsh Gupta        | harsh_gupta     | hargup         |
 | Jason Moore        | moorepants      | moorepants     |
 | Jim Crist          | jcrist          | jcrist         |
 | Mateusz Paprocki   |                 | mattpap        |
