@@ -41,7 +41,7 @@ Rough database structure:
 
 * system information table
     * operating system family (Windows / MacOSX / Linux / Other)
-    * OS version (8.1 / 10.9 / Ubuntu / ?)
+    * OS version (8.1 / 10.9 / Ubuntu 14.04 / ?)
     * Hardware architecture (x86_64 / x86 / Other)
 * package checks table
     * package name
@@ -152,7 +152,3 @@ LabView certificate (CLAD).
 
 Because I liked it. :) And I know the resulting server will be quite useful
 for Software Carpentry.
-
-## Appendix
-
------
