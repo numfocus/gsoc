@@ -46,7 +46,7 @@ organizing Google Summer of Code for NumFOCUS.
 | Jim Crist          | jcrist          | jcrist         |
 | Mateusz Paprocki   |                 | mattpap        |
 | Ondřej Čertík      | certik          | certik         |
-| Sachin Joglekar    |                 | srjoglekar246  |
+| Sachin Joglekar    | srjoglekar246   | srjoglekar246  |
 | Sean Vig           | flacjacket      | flacjacket     |
 | Thilina Rathnayake | thilinarmtb     | thilinarmtb    |
-| Tim Lahey          |                 | tjlahey        |
+| Tim Lahey          | tjlahey         | tjlahey        |
