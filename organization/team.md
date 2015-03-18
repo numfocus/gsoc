@@ -23,6 +23,17 @@ organizing Google Summer of Code for NumFOCUS.
 |                 | mjsottile       | mjsottile      |
 |                 | bromberger      | sbromberger    |
 
+#### PyDy
+
+| Name               | Melange Profile | GitHub Profile |
+|--------------------|-----------------|----------------|
+| Gilbert Gede       | gilbertgede     | gilbertgede    |
+| Jason Moore        | moorepants      | moorepants     |
+| Jim Crist          | jcrist          | jcrist         |
+| Sachin Joglekar    | srjoglekar246   | srjoglekar246  |
+| Tarun Gaba         | tarzzz          | tarzzz         |
+| Ondřej Čertík      | certik          | certik         |
+
 #### Software Carpentry
 
 | Name            | Melange Profile | GitHub Profile |
@@ -50,14 +61,3 @@ organizing Google Summer of Code for NumFOCUS.
 | Sean Vig           | flacjacket      | flacjacket     |
 | Thilina Rathnayake | thilinarmtb     | thilinarmtb    |
 | Tim Lahey          | tjlahey         | tjlahey        |
-
-#### PyDy
-
-| Name               | Melange Profile | GitHub Profile |
-|--------------------|-----------------|----------------|
-| Gilbert Gede       | gilbertgede     | gilbertgede    |
-| Jason Moore        | moorepants      | moorepants     |
-| Jim Crist          | jcrist          | jcrist         |
-| Sachin Joglekar    | srjoglekar246   | srjoglekar246  |
-| Tarun Gaba         | tarzzz          | tarzzz         |
-| Ondřej Čertík      | certik          | certik         |
