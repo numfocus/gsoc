@@ -38,19 +38,6 @@ In alphabetic order.
     </td>
   </tr>
 
-  <tr>
-    <td>
-      <img width="300px" src="http://www.pydy.org/_static/logo.svg">
-    </td>
-    <td>
-       <h1>PyDy</h1>
-       <p>Multibody Dynamics with Python</p>
-       <p>
-         <a href="http://www.pydy.org/">Website</a> | <a href="https://groups.google.com/d/forum/pydy">Mailing List</a> | <a href="https://gitter.im/pydy/pydy">Chat</a> | <a href="https://github.com/pydy/pydy/wiki/GSoC-2015-Ideas">Ideas Page</a>
-       </p>
-    </td>
-  </tr>
-
 
   <tr>
     <td>
