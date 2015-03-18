@@ -17,7 +17,7 @@ Read https://github.com/sympy/sympy/wiki/GSoC-2015-Application-Template.
 
 ## Default Instructions
 
-**This are a general guide.
+**This is a general guide.
 Projects/Organizations can have different instructions
 and you must follow their instructions.**
 
