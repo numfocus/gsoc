@@ -79,10 +79,10 @@ My exams are not scheduled yet, but the timeslot for them is
 However, most likely I'll be over with the exams by the end of June - in that
 case I'll resume working on the project as soon as I pass everything.
 
-First I want to start with installation testing script. I want to enhance its
-capabilities in collecting diagnostic data from the system.
+First I want to start by editing the installation testing script. I want to
+enhance its capabilities in collecting diagnostic data from the system.
 
-Currently, diagnostic output from the script looks like this on my system:
+Currently, diagnostic output from the script on my system looks like this:
 
 ```
 ==================
@@ -101,7 +101,14 @@ version            : 2.7.9 |Anaconda 2.1.0 (64-bit)| (default, Dec 15 2014, 10:3
 ```
 
 It's very close to what I suggest in the database layout, but it's not entirely
-the same.
+the same. To cover differences:
+
+* for operating system family I'd use `platform.system()` instead of `os.name`
+  or `platform.name()` (to avoid matching, for example, "posix" to "Linux")
+* to discover exact system version I'd use `platform.linux_distribution()` or
+  `platform.release()` unless a better way exists)
+* to discover CPU architecture: `platform.processor()` instead of
+  `platform.uname()`.
 
 ### May 25th - June 7th
 
@@ -111,8 +118,8 @@ boxes as possible.
 
 ### June 8th - June 21st
 
-Continue testing. Implement sending diagnostic data in installation testing
-script. Change database schema if required.
+Continue testing. Implement sending diagnostic data in the installation testing
+script. Change the database schema if required.
 
 ### June 22nd - July 5th
 
@@ -120,7 +127,7 @@ I'm unavailable due to exams.
 
 ### July 6th - July 19th
 
-Implement REST API. Provide good (100%) test coverage. Start working on
+Implement the REST API. Provide good (100%) test coverage. Start working on
 a front end for Software Carpentry admins. Most likely graphs, charts, and so
 on will take the biggest amount of work at this point.
 
@@ -130,7 +137,7 @@ Finish up UI, probably have a round of UX testing with Software Carpentry admins
 
 ### August 3rd - August 16th
 
-Finish up testing and UX-testing. Write documentation.
+Finish up automated testing and UX-testing. Write documentation.
 
 ### August 17th - August 21th 19:00 UTC
 
