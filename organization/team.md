@@ -22,6 +22,7 @@ organizing Google Summer of Code for NumFOCUS.
 |-----------------|-----------------|----------------|
 |                 | mjsottile       | mjsottile      |
 |                 | bromberger      | sbromberger    |
+| Alexander Croy  | acroy           | acroy          |
 
 #### Software Carpentry
 
