@@ -119,7 +119,7 @@ you need to paste your proposal as source code and for this
 you need to select `Tools -> Source Code`
 to open a window where you can paste your HTML code.
 
-![Showing Source Code Option](img/gsoc-tool.png)
+![Showing Source Code Option](img/gsoc-tools.png)
 
 [IL]: 2015/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
