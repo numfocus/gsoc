@@ -139,7 +139,7 @@ Finish up UI, probably have a round of UX testing with Software Carpentry admins
 
 Finish up automated testing and UX-testing. Write documentation.
 
-### August 17th - August 21th 19:00 UTC
+### August 17th - August 21st 19:00 UTC
 
 In case the project finishes up earlier, I want to spend my time working on
 installation script (see
