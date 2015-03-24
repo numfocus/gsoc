@@ -104,7 +104,7 @@ Your final proposal must be submitted to [GSoC][]
 
 You proposal form should look like
 
-![Blank Proposal Form](../img/gsoc-main.png)
+![Blank Proposal Form](img/gsoc-main.png)
 
 You can use [Pandoc][] to convert your proposal in Markdown
 to HTML and paste the HTML at [GSoC][].
@@ -119,7 +119,7 @@ you need to paste your proposal as source code and for this
 you need to select `Tools -> Source Code`
 to open a window where you can paste your HTML code.
 
-![Showing Source Code Option](../img/gsoc-tool.png)
+![Showing Source Code Option](img/gsoc-tool.png)
 
 [IL]: 2015/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
