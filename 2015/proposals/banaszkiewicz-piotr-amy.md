@@ -2,12 +2,18 @@
 
 ## Abstract
 
-The number of Software Carpentry's workshops run weekly dynamically grows. All
-the management for these workshops is currently being done by 1-2 persons and
-in very rough conditions (via files and text notes).  That's why Amy was
-created in December 2014: to help Software Carpentry admins schedule
-workshops, assign instructors to workshops, and even coordinate training for
-new instructors.
+The number of Software Carpentry's workshops run weekly is growing rapidly
+(see Fig. 1 below).  All the management for these workshops is currently being
+done by 1-2 persons and in very rough conditions (via files and text notes).
+That's why Amy was created in December 2014: to help Software Carpentry admins
+schedule workshops, assign instructors to workshops, and even coordinate
+training for new instructors.
+
+![Cumulative enrolment and workshops](./cum_enrolment_workshops.png)
+Fig. 1: Cumulative workshops' enrolment.
+
+![Cumulative workshops](./cum_workshops.png)
+Fig. 2: Cumulative number of workshops.
 
 The aim of this project is to continue enhancing Amy.  Many people
 [suggested great ideas](https://github.com/swcarpentry/amy/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement+-label%3Aessential) for Amy,
