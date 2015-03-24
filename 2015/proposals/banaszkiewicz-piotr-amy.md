@@ -12,7 +12,7 @@ new instructors.
 The aim of this project is to continue enhancing Amy.  Many people
 [suggested great ideas](https://github.com/swcarpentry/amy/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement+-label%3Aessential) for Amy,
 some even [implemented them](https://github.com/swcarpentry/amy/pulls?q=is%3Apr+is%3Aopen+sort%3Acreated-asc), but not much was actually
-merged in -- and, as a result, in March
+merged.  As a result, in March
 [we can see a drop in new commits](https://github.com/swcarpentry/amy/graphs/contributors).
 
 ## Features
@@ -21,13 +21,13 @@ Integration that will allow Amy admins to easy control workshop-related
 services:
 
 * integration with Eventbrite
-    * checking if event's registration exists
-    * checking if event's registration is running
-    * maybe bulk-loading event attendees
+    * check if an event's registration exists
+    * check if an event's registration is running
+    * maybe bulk-load event attendees
 * integration with Mailman
-    * listing people signed up for a specific list
-    * listing lists person is signed up to
-    * creating lists for workshops for instructors and helpers and hosts
+    * list people signed up for a specific list
+    * list lists person is signed up to
+    * create per-workshop lists for instructors, helpers, and hosts
 * integration with GitHub
     * OAuth login
 
@@ -42,7 +42,7 @@ New functionality this project should bring into Amy:
     6. how many times an instructor has taught
     7. list of instructors who have never taught
     8. number of instructor trainees per cohort
-    9. new instructors from within N last months
+    9. instructors who have been badged in the last N months
 * charts - some of the reports above could use nice visualization, for example:
     * line chart: number of people taught
     * line chart: number of instructors
@@ -58,7 +58,7 @@ several long-standing issues. I selected a few that I think are important:
   but it has not been merged
 * Continuous Integration and coverage reporting [#166](https://github.com/swcarpentry/amy/issues/166)
 * Developer guidelines [#108](https://github.com/swcarpentry/amy/issues/108) -
-  personall I think we need to establish some explicit rules (e.g. who's
+  personally I think we need to establish some explicit rules (e.g. who's
   responsible for merging, what code style we should follow, etc.)
 * Event enhancements ([Allow hosts, instructors, and helpers to be selected on event details page #16](https://github.com/swcarpentry/amy/issues/16),
   [Use calendar pop-up for picking dates for workshops #18](https://github.com/swcarpentry/amy/issues/18),
@@ -73,7 +73,7 @@ Additionally, if enough time is given, I can work on other issues.
 
 For Eventbrite integration I'll use
 [Eventbrite REST API](https://developer.eventbrite.com/docs/).  It should be
-straighforward -- we only want to know if event is available.
+straighforward — we only want to know if an event is available.
 
 Integration with Mailman will be possible if:
 
@@ -123,8 +123,9 @@ My exams are not scheduled yet, but the timeslot for them is
 However, most likely I'll be over with the exams by the end of June - in that
 case I'll resume working on the project as soon as I pass everything.
 
-Unless Developer guidelines aren't ready in time for GSoC 2015, I want to start
-with them so that I know what I can and cannot do.
+If the [Developer guidelines](https://github.com/swcarpentry/amy/issues/108)
+aren't ready in time for GSoC 2015, I want to start with them so that I know
+what I can and cannot do.
 
 Additionally I want to point out that anyone can start working on issues this
 project will focus on during GSoC 2015.  Hence changes to the schedule below
@@ -171,7 +172,7 @@ I'm unavailable due to exams.
 
 * Work on remaining issues for Amy like test fixtures or event enhancements.
 
-### August 17th - August 21th 19:00 UTC
+### August 17th - August 21st 19:00 UTC
 
 * Work on remaining issues for Amy like test fixtures or event enhancements.
 
