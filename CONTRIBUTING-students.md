@@ -102,6 +102,10 @@ and you can start with [our mentor list][ML].
 Your final proposal must be submitted to [GSoC][]
 **before March 27th 19:00 UTC**.
 
+You proposal form should look like
+
+![Blank Proposal Form](../img/gsoc-main.png)
+
 You can use [Pandoc][] to convert your proposal in Markdown
 to HTML and paste the HTML at [GSoC][].
 For example, you can
@@ -110,9 +114,12 @@ For example, you can
 $ pandoc -f markdown -t html YYYY/proposals/your-name.md | xclip -selection clipboard
 ~~~
 
-and `CTRL+v` your proposal at [GSoC][].
+and `CTRL+v` your proposal at [GSoC][]. If you are going to do this
+you need to paste your proposal as source code and for this
+you need to select `Tools -> Source Code`
+to open a window where you can paste your HTML code.
 
-You need to select `Tools -> Source Code` before paste your proposal.
+![Showing Source Code Option](../img/gsoc-tool.png)
 
 [IL]: 2015/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
