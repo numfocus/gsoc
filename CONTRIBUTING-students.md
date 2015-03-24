@@ -1,7 +1,14 @@
 # Contributing Guide for Students
 
-Please use the instructions of the project/organization
-you are interested in work with.
+**Your proposal can only be accepted if you submit it
+at [GSoC][] before the deadline,
+before March 27th 19:00 UTC.
+There will be NO extended to the deadline.**
+Once you submit your proposal you can change it
+many times as you want until the deadline.
+
+**Please use the instructions of the project/organization
+you are interested in work with.**
 
 ## Julia
 
@@ -104,6 +111,8 @@ $ pandoc -f markdown -t html YYYY/proposals/your-name.md | xclip -selection clip
 ~~~
 
 and `CTRL+v` your proposal at [GSoC][].
+
+You need to select `Tools -> Source Code` before paste your proposal.
 
 [IL]: 2015/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
