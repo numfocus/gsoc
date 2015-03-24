@@ -116,10 +116,13 @@ $ pandoc -f markdown -t html YYYY/proposals/your-name.md | xclip -selection clip
 
 and `CTRL+v` your proposal at [GSoC][]. If you are going to do this
 you need to paste your proposal as source code and for this
-you need to select `Tools -> Source Code`
-to open a window where you can paste your HTML code.
+you need to select `Tools -> Source Code`.
 
 ![Showing Source Code Option](img/gsoc-tools.png)
+
+A window will open where you can paste your HTML code.
+
+![Source Code Window](img/gsoc-source-code.png)
 
 [IL]: 2015/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
