@@ -2,7 +2,7 @@
 Enhance Amy, a Django application for managing workshops
 
 ## Abstract
-Amy is a web-based application built using django framework, for management and administration of workshops. The number of workshops run by Software Carpentry are increasing dynamically and currently the organization of workshops is done by volunteers in bits and pieces. So, Amy was started to simplify workshop management. The main focus is to make it easy for administrators to create workshops, keep track of what workshops are being arranged, who are the instructors and what they can teach, who are the learners and so on.
+Amy is a web-based application built using django framework, for management and administration of workshops. The number of workshops run by Software Carpentry are increasing and currently the organization of workshops is done by volunteers in bits and pieces. So, Amy was started to simplify workshop management. The main focus is to make it easy for administrators to create workshops, keep track of what workshops are being arranged, who are the instructors and what they can teach, who are the learners and so on.
 Currently, basic functionality for Amy is in place. 
 
 This project deals with enhancing Amy by adding many new features to it and make it use a lot more testing.
