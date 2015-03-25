@@ -58,7 +58,7 @@ In alphabetic order.
     </td>
     <td>
        <h1>Spyder</h1>
-       <p>Symbolic mathematics (computer algebra system)</p>
+       <p>Spyder is the Scientific PYthon Development EnviRonment</p>
        <p>
          <a href="http://spyder-ide.blogspot.com">Website</a> | <a href="http://groups.google.com/group/spyderlib">Mailing List</a> | Ideas Page
        </p>
