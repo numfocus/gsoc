@@ -41,6 +41,9 @@ and you can start with [our mentor list][ML].
 
 ### Proposal draft
 
+**You should avoid add some personal/private information
+like phone number and address, at your proposal.**
+
 1.  Fork https://github.com/numfocus/gsoc
 
 2.  Clone your fork:
