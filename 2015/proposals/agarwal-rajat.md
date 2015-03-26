@@ -1,6 +1,4 @@
-# Title
-
-Add taxonomic name resolution to the EcoData Retriever to facilitate data-intensive ecology
+# Add taxonomic name resolution to the EcoData Retriever to facilitate data-intensive ecology
 
 ## Abstract
 
@@ -62,7 +60,7 @@ Week to scrub code, write tests, improve documentation, etc.
 ## Future works
 
 1. Adding more reliable name resolution APIs.
-2. Improving the accuracy the best name deciding algorithm.
+2. Improving the accuracy of the best name deciding algorithm.
 3. Bug fixing the existing and adding more engines for different formats of data. For example - JSON, XML etc.
 4. Adding more features to the user interface like giving the option to the user to update the names from a specific source.
 5. Support for the existing code base.
@@ -75,7 +73,7 @@ I am currently working with Prof. Sharad Goel from Stanford University doing res
 
 I have also worked with a start-up from MIT Media Lab which involved modifying and tweaking open source tools and collaborating with other developers in the team using GitHub (The repository is private).
 
-I also like to use git for version control and put up any projects that I do on my GitHub account.
+I also like to use Git for version control and put up any projects that I do on my GitHub account.
 
 
 ## Academic Experience
