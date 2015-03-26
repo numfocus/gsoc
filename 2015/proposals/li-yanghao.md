@@ -67,7 +67,7 @@ Week to scrub code, write tests, improve documentation, etc.
 
 Although I don't have much open source development experience before, I'm always looking forward to have a chance to contribute more. 
 
-* I have implemented some image processing projects in my research work and putted them on the github, such as [NRSR](https://github.com/lyttonhao/NRSR) and [FH-Eigen](https://github.com/lyttonhao/FH-Eigen).
+* I have implemented some image processing projects in my research work and put them on the github, such as [NRSR](https://github.com/lyttonhao/NRSR) and [FH-Eigen](https://github.com/lyttonhao/FH-Eigen).
 * I also begin to contribute to the Retriever and pytaxize by some pull requests.
 
 ## Academic Experience
