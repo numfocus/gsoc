@@ -1,8 +1,7 @@
-# Title
 Enhance Amy, a Django application for managing workshops
 
 ## Abstract
-Amy is a web-based application built using django framework, for management and administration of workshops. The number of workshops run by Software Carpentry are increasing and currently the organization of workshops is done by volunteers in bits and pieces. So, Amy was started to simplify workshop management. The main focus is to make it easy for administrators to create workshops, keep track of what workshops are being arranged, who are the instructors and what they can teach, who are the learners and so on.
+Amy is a web-based application built using Django framework, for management and administration of workshops. The number of workshops run by Software Carpentry are increasing and currently the organization of workshops is done by volunteers in bits and pieces. So, Amy was started to simplify workshop management. The main focus is to make it easy for administrators to create workshops, keep track of what workshops are being arranged, who are the instructors and what they can teach, who are the learners and so on.
 Currently, basic functionality for Amy is in place. 
 
 This project deals with enhancing Amy by adding many new features to it and make it use a lot more testing.
@@ -55,11 +54,11 @@ The project consists of two main sections:
 	-Getting the domain and creating mailing lists for each workshop as required and adding members to it.
 	-Following the syntax and direct commands of mailman.client to display lists a member is signed up to and to display members subscribed to a list.
 	-Changing the moderators and owners of a list accordingly for allowing hosts to co-manage the workshops.
-4) For the introduction of Data Tables in the Amy for the display of all the tables, as discussed and implemented in https://github.com/swcarpentry/amy/pull/134 , I will use the jquery plugin and pass data as JSON and have Data Tables render only the data you can see. I would also try to use Data Tables server-side processing as suggested by wking.
+4) For the introduction of Data Tables in the Amy for the display of all the tables, as discussed and implemented in https://github.com/swcarpentry/amy/pull/134 , I will use the jQuery plugin and pass data as JSON and have Data Tables render only the data you can see. I would also try to use Data Tables server-side processing as suggested by W. Trevor King.
 5) For the implementation of Reports, to retrieve the data I will be using Django database-abstraction API to query the database and for visualisation in form of graphs I would like to use Google Charts which uses HTML5/SVG technology to visualise the data. Though I am also open to any other technology for it.
 6) UI features will be added using Bootstrap3.
-7) For implementation of backups of data on server, as discussed in https://github.com/swcarpentry/amy/issues/168 and suggested wiking will implement btrfs for high-frequency backups which seems reliable enough and  every 24 hours a snapshot of database can be copied to a remote location.
-8) For calendar popup, the calendar widget ‘AdminDateWidget’ which django uses on it’s admin pages can be used
+7) For implementation of backups of data on server, as discussed in https://github.com/swcarpentry/amy/issues/168 and suggested by W. Trevor King, I will implement btrfs for high-frequency backups which seems reliable enough and  every 24 hours a snapshot of database can be copied to a remote location.
+8) For calendar popup, the calendar widget ‘AdminDateWidget’ which Django uses on it’s admin pages can be used.
 9) Add one more field - ‘seats’ to the Event Table to check how many seats were available.
 10) I would prefer adding a ‘Sponsorship’ field to the Event table, which can take multiple values instead of having a separate Event_sponsor table.
 
@@ -76,14 +75,12 @@ Push the existing pull requests after testing it thoroughly.
 Closing the corresponding issues for the pull requests which are merged.
 Github Authentication Integration
 
-**You need to accomplish this to mid-term.**
 
 ### June 8th - June 21th
 Eventbrite Integration
 Data Tables for all table views.
 Writing unit Tests for the Eventbrite and Github integration. 
 
-**You need to accomplish this to mid-term.**
 
 ### June 22th - July 5th
 Upgrading to Mailman3 and adding the features mentioned above using REST API.
@@ -106,7 +103,6 @@ Displaying Map of known Airports.
 ### August 17th - August 21th 19:00 UTC
 Working on other issues and trying to resolve them.
 
-**Week to scrub code, write tests, improve documentation, etc.**
 
 ## Future works
 My experience till now with Software Carpentry has been great. It has been a great benefit for me to contribute to Software Carpentry. Apart from professional growth, I have improved my technical and communication skills. I have learnt many small details on how to develop in a distributed environment, which I had missed on before. I would stay in Software Carpentry as a long time contributor for my own benefits in continuing on this learning curve. In the future, I would like to add features to Amy, so that it becomes usable for instructors and hosts also.
