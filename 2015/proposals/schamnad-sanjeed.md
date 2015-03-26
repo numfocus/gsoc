@@ -1,5 +1,4 @@
-# Title
-JuliaWeb: A secure Web framework for the Julia Programming Language.
+# JuliaWeb: A secure Web framework for the Julia Programming Language.
 
 ## Abstract
 This Project aims to implement a robust and complete TLS package in Julia with a minimum objective to successfully complete a TLS negotiation via HTTPS, with a simple set of methods (get, post) that demonstrates success. The juliaTLS package will provide the Julia community with:
