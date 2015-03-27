@@ -7,46 +7,47 @@ Currently, basic functionality for Amy is in place.
 
 This project deals with enhancing Amy by adding many new features to it and make it use a lot more testing.
 The project consists of two main sections:
-	1. Thorough unit testing of existing application and fixing any bugs that the tests turn up.
-	2. Adding following features for easy management of events:
-		* Integration with GitHub for authentication.
-		* Integration with Eventbrite to check :
-			* If the registration of the event exists
-			* If the registration of the event is up and running 
-	3. Integration with Mailman
-		* Create a mailing lists for each workshop with instructors, helpers and hosts on it.
-		* Displaying which lists a person belongs to.
-		* Displaying members signed up to a list.
-		* Displaying lists per workshop.
-		* Allowing hosts to co-manage the mailing lists for the workshops along with admins. 
-	4. Reports (with graphs visualisation):
-		* Number of workshops held in the last month/year/day.
-		* Number of people taught in the last month/year/day.
-		* Number of instructors who have taught in the last month/year/day.
-		* Number/List of instructors who have not taught in the last month/year/day.
-		* Number/List of instructors who are about to teach in the next month/year/day.
-		* Event with the most people/instructors in the last month/year/day.
-		* Sites where most number of workshops were held in the last month/year/day.
-		* Sites with the most workshops held in the last month/year/day.
-		* Hosts with the most events in the last month/year/day.
-		* Hosts that have not hosted events in the last month/year/day.
-		* Number of hosts who have hosted their first event in the last month/year/day.
-		* Number/List of events with fee waiver.
-		* Number/List of events hosted by partners.
-		* List of events and the corresponding fees received by it.
-	5. DataTables for quick in-table search #129 (https://github.com/swcarpentry/amy/issues/129)
-	6. Display map of known airports #82 (https://github.com/swcarpentry/amy/issues/82)
-	7. Use calendar popup for picking dates for workshops #18 (https://github.com/swcarpentry/amy/issues/18)
-	8. Improvement in UI by handling the following issues and adding other features as needed:
-		* Add alphabetized "jump to" links for sites and people  (https://github.com/swcarpentry/amy/issues/189)
-		* Extended navigation bar #221 (https://github.com/swcarpentry/amy/issues/221): improvising this feature by implementing full menu collapse according to screen size.
-		* Autocomplete form fields #233 (https://github.com/swcarpentry/amy/issues/233)
-		* Add CSS to make display less ugly #10 (https://github.com/swcarpentry/amy/issues/10)
-		* Headings hierarchy #99 (https://github.com/swcarpentry/amy/issues/99)
-	9. Implement backups of data on server #168 (https://github.com/swcarpentry/amy/issues/168)
-	10. Keep track of sponsorships for the workshops [Event_sponsor table #74](https://github.com/swcarpentry/amy/issues/74)
-	11. [Additional event attendance information (slots and applicants)? #64](https://github.com/swcarpentry/amy/issues/64)
-	12. [Event details page should allow validation of Eventbrite link #19](https://github.com/swcarpentry/amy/issues/19)
+
+  1. Thorough unit testing of existing application and fixing any bugs that the tests turn up.
+  2. Adding following features for easy management of events:
+    * Integration with GitHub for authentication.
+    * Integration with Eventbrite to check :
+    * If the registration of the event exists
+    * If the registration of the event is up and running.
+  3. Integration with Mailman
+    * Create a mailing lists for each workshop with instructors, helpers and hosts on it.
+    * Displaying which lists a person belongs to.
+    * Displaying members signed up to a list.
+    * Displaying lists per workshop.
+    * Allowing hosts to co-manage the mailing lists for the workshops along with admins. 
+  4. Reports (with graphs visualisation):
+    * Number of workshops held in the last month/year/day.
+    * Number of people taught in the last month/year/day.
+    * Number of instructors who have taught in the last month/year/day.
+    * Number/List of instructors who have not taught in the last month/year/day.
+    * Number/List of instructors who are about to teach in the next month/year/day.
+    * Event with the most people/instructors in the last month/year/day.
+    * Sites where most number of workshops were held in the last month/year/day.
+    * Sites with the most workshops held in the last month/year/day.
+    * Hosts with the most events in the last month/year/day.
+    * Hosts that have not hosted events in the last month/year/day.
+    * Number of hosts who have hosted their first event in the last month/year/day.
+    * Number/List of events with fee waiver.
+    * Number/List of events hosted by partners.
+    * List of events and the corresponding fees received by it.
+  5. DataTables for quick in-table search #129 (https://github.com/swcarpentry/amy/issues/129)
+  6. Display map of known airports #82 (https://github.com/swcarpentry/amy/issues/82)
+  7. Use calendar popup for picking dates for workshops #18 (https://github.com/swcarpentry/amy/issues/18)
+  8. Improvement in UI by handling the following issues and adding other features as needed:
+    * Add alphabetized "jump to" links for sites and people  (https://github.com/swcarpentry/amy/issues/189)
+    * Extended navigation bar #221 (https://github.com/swcarpentry/amy/issues/221): improvising this feature by implementing full menu collapse according to screen size.
+    * Autocomplete form fields #233 (https://github.com/swcarpentry/amy/issues/233)
+    * Add CSS to make display less ugly #10 (https://github.com/swcarpentry/amy/issues/10)
+    * Headings hierarchy #99 (https://github.com/swcarpentry/amy/issues/99)
+  9. Implement backups of data on server #168 (https://github.com/swcarpentry/amy/issues/168)
+  10. Keep track of sponsorships for the workshops [Event_sponsor table #74](https://github.com/swcarpentry/amy/issues/74)
+  11. [Additional event attendance information (slots and applicants)? #64](https://github.com/swcarpentry/amy/issues/64)
+  12. [Event details page should allow validation of Eventbrite link #19](https://github.com/swcarpentry/amy/issues/19)
 
 ## Technical Details
 * For the integration of Github or any social authentication I would be using Django Social Auth following the [Django Social Auth Backend System Docs](http://django-social-auth.readthedocs.org/en/latest/backends/github.html)  for which it will first require much configuration after installing the App as mentioned  [here](http://django-social-auth.readthedocs.org/en/latest/configuration.html).
@@ -81,10 +82,10 @@ Eventbrite Integration
 Data Tables for all table views.
 Writing unit Tests for the Eventbrite and GitHub integration. 
 
-
 ### June 22th - July 5th
 Upgrading to Mailman3 and adding the features mentioned above using REST API.
 Writing unit Tests for the features added which uses Mailman 3.  
+
 ### July 6th - July 19th
 Retrieving the data by querying the database for reports page.
 Representation of data using graphs/charts by using Google Charts.
@@ -109,21 +110,24 @@ My experience till now with Software Carpentry has been great. It has been a gre
 
 ## Open Source Development Experience
 Software-Carpentry is my first and only FOSS organization at the moment. My contributions have been towards the development of Amy. I have written unit tests for the module ‘bulk add people’  and created a pull request for it:
-	* [Updated test_util.py #225](https://github.com/swcarpentry/amy/pull/225),
+* [Updated test_util.py #225](https://github.com/swcarpentry/amy/pull/225).
+
 I have found out bugs in the application and created issues on Github for the corresponding bugs:
-	* [Bulk-upload: Not checking whether it is a valid csv file #231](https://github.com/swcarpentry/amy/issues/231)
-	* [Bulk-upload: New User added even in case of existing user #226](https://github.com/swcarpentry/amy/issues/226)
-I have resolved one of those bugs and had created a pull request for it:
-	* [Case-insensitive matching of email #227](https://github.com/swcarpentry/amy/pull/227)
+* [Bulk-upload: Not checking whether it is a valid csv file #231](https://github.com/swcarpentry/amy/issues/231)
+* [Bulk-upload: New User added even in case of existing user #226](https://github.com/swcarpentry/amy/issues/226)
+
+I have resolved one of these bugs and had created a pull request for it:
+* [Case-insensitive matching of email #227](https://github.com/swcarpentry/amy/pull/227)
 
 
 ## Academic Experience
 I am a third year Computer Science Undergraduate at IIIT Hyderabad and pursuing research in the field of Computational Linguistics. I have written a large number of small programs/applications as part of my course work. Some of my major hosted projects are:
-	* [Docker Application](https://github.com/darshan95/Docker-Django-app) : We as a team of 3 members, developed a web interface using various docker remote APIs to create, delete, restart, etc. any docker container. Our application also kept record of current user containers, volume storage, network, etc. We also provided the facility of using linux terminal on our application.
-	* [Cycle Run](http://buildinprogress.media.mitedu/projects/.2303/steps) : Developed an Android application at MIT Media Labs Workshop that gamifies and socialises the Real life Cycling Experience! We map the real life cycling data to an event(real life) based narrative game.
-	* [Grade Portal](https://github.com/darshan95/View-Grades) : Developed a secure online portal using web2py  to view the grades and courses taken by a particular student.
-	* [Readit](https://github.com/darshan95/Readit) : This Application is developed in web2py to post and rank links to online news items, similar to [reddit](http://www.reddit.com/) website. 
-	* [Handwritten Digit Recognition](https://github.com/darshan95/HandWrittenDigitRecognition) : Classification and recognition of hand-written digits using mathematical morphology.
+* [Docker Application](https://github.com/darshan95/Docker-Django-app) : We as a team of 3 members, developed a web interface using various docker remote APIs to create, delete, restart, etc. any docker container. Our application also kept record of current user containers, volume storage, network, etc. We also provided the facility of using linux terminal on our application.
+* [Cycle Run](http://buildinprogress.media.mitedu/projects/.2303/steps) : Developed an Android application at MIT Media Labs Workshop that gamifies and socialises the Real life Cycling Experience! We map the real life cycling data to an event(real life) based narrative game.
+* [Grade Portal](https://github.com/darshan95/View-Grades) : Developed a secure online portal using web2py  to view the grades and courses taken by a particular student.
+* [Readit](https://github.com/darshan95/Readit) : This Application is developed in web2py to post and rank links to online news items, similar to [reddit](http://www.reddit.com/) website. 
+* [Handwritten Digit Recognition](https://github.com/darshan95/HandWrittenDigitRecognition) : Classification and recognition of hand-written digits using mathematical morphology.
+
 Apart from my projects, I have industrial experience too, I have done two internships in the past year. In the last summer, I worked at [mintables](http://www.mintables.com/) as a full-stack web developer. There I built an e-commerce platform using PHP, HTML5 and MYSQL. Also I have worked at Unorthodox as a member of web developer. Unorthodox is a startup which deals with image processing and computer vision. There, I worked as a web developer and developed an application in Django.
 
 ## Why this project?
