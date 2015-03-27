@@ -57,4 +57,4 @@ organizing Google Summer of Code for NumFOCUS.
 | Name               | Melange Profile | GitHub Profile |
 |--------------------|-----------------|----------------|
 | Mark Wiebe         | mwiebe          | mwiebe         |
-| Irwin Zaid         |                 | izaid          |
+| Irwin Zaid         | izaid           | izaid          |
