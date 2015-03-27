@@ -25,28 +25,27 @@ Currently there are limited Cython wrappers in DyND, but they are not a part of 
 
 ### May 25 -  June 7
 Modify the existing wrappers in DyND's python wrappers to make the C++ objects in DyND accessible to external Cython modules.
-Make overloaded arithmetic and indexing operators properly handle exceptions.
-**You need to accomplish this to mid-term.**
+Make overloaded arithmetic and indexing operators properly handle exceptions in Cython.
+Use the overloaded arithmetic operators at the Cython level.
 
 ### June 8 - June 21
 Add support for the overloaded assignment operator to the Cython API.
 Overloading the assignment operator isn't currently supported in Cython, so this can be added by either adding the feature to Cython or by using Cython's support for user-specified C-names for functions.
 
-**You need to accomplish this to mid-term.**
-
 ### June 22 - July 5
 Provide externally available wrappers for types, arrfunc manipulation, math functions, and array iterators.
 
 ### July 6 - July 19
-Make Python wrapper classes publicly available for Cython modules as well.
+Make Python wrapper classes publicly available for Cython modules.
 Make conversion routines to and from PEP 3118 compliant objects publically available as well.
-I will be at the SciPy conference for part of the week of July 6th, but I'll start working before May 25 to make up for it.
+I will be at the SciPy conference for part of the week of July 6th, but I'll start working a few days before May 25 to make up for it.
 
 ### July 20 - August 2
 Make and test wrappers for take and groupby operations.
 
 ### August 3 - August 16
-Make conversions to and from Python functions and numpy gufuncs work properly for external modules.
+Make conversions to and from Python functions and numpy gufuncs work properly within Cython.
+Provide a public API for them.
 
 ### August 17 - August 21 19:00 UTC
 Simplify API as much as possible.
@@ -76,14 +75,13 @@ When I was first learning to interface with other programming languages from Pyt
 Though it is cumbersome as a language, its support for array operations is incredible.
 I was troubled by the fact that, as good as it is, NumPy can't do all that Fortran does.
 NumPy's array object is inseparably connected to the Python C API.
-This makes it hard to perform fast vector operations on small arrays inside loops and it makes it so that programmers have to do things like expression analysis and common subexpression elimination by hand when working with large arrays.
+This makes it hard to perform fast vector operations on small arrays inside loops and it prevents improvements in vector libraries from providing any improvement to Cython extension modules.
 I searched around to see if C++ had any sort of numpy-like options and found that most of the main vector math libraries in C++ (Eigen, Armadillo, Blaze-lib) only support operations on arrays with, at most, 3 dimensions.
 What would be ideal is a library that supports a variety of memory layouts and can still statically optimize code evaluated using those arrays.
-Other C++ vector libraries that do that sort of thing (like blitz++) are no longer maintained. 
+Other C++ vector libraries that handle high dimensional arrays (like blitz++) are no longer maintained. 
 
 It was after reading about many of these other array libraries that I found DyND.
-Its design is ideal since it allows for static expression analysis on n-dimensional arrays at compile time and fast operations with small arrays.
-I am very happy with the idea that everything is a view, since the view vs. copy dichotomy tends to lead to trouble when working with numpy.
+Its design is ideal since it allows for compile-time optimization for n-dimensional arrays at compile time and fast operations with small arrays.
 NumPy's gufunc machinery is a remarkable work in its own right and I'm impressed by the fact that DyND is developing its own ArrFuncs.
 I have little experience with writing a library that does static analysis like this since most of my experience has been in numerical methods, but I want to contribute because I see the massive kinds of benefits it will have.
 As I learn more about the mechanics of how to use DyND, it makes me all the more anxious to help.
@@ -92,10 +90,11 @@ Adding a Cython API for DyND will make it possible to write extension modules fo
 Using DyND for this also makes it so that operations on arrays in Cython can be optimized at compile time at the library level rather than being confined to one particular way of looping through an array.
 Much of the Python scientific stack is written in Cython, and providing a Cython API for DyND will make it much easier for developers to use the features of DyND in extension modules for Python.
 With a Cython API in place, developers will no longer have to implement array operations in C++ and then wrap them separately.
-The Cython API will make it so that little or no new C++ code is required to perform array operations within Python extension modules.
+This will make it so that little or no new C++ code is required to perform array operations within Python extension modules.
 
 ## Appendix
 Cython: https://github.com/cython/cython
 DyND: https://github.com/libdynd/libdynd
 DyND Python Wrappers: https://github.com/libdynd/dynd-python
 Cython API for BLAS and LAPACK (Previous work providing related functionality): https://github.com/scipy/scipy/pull/4021
+BYU Applied Math Lab Manuals: https://github.com/byuimpact/numerical_computing
