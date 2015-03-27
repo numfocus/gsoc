@@ -9,7 +9,7 @@ It is proposed that the Python wrapper for DyND be modified to provide an API fo
 ## Technical Details
 Cython is language used to automatically generate C and C++ extension modules for Python.
 It augments Python's syntax with optional explicit type declarations that can be used to make code more efficient on a localized basis.
-Cython is commonly used for both accelerating computations that are difficult to perfom efficiently in Python and for interfacing with existing libraries written in other languages via their C and C++ APIs.
+Cython is commonly used for both accelerating computations that are difficult to perform efficiently in Python and for interfacing with existing libraries written in other languages via their C and C++ APIs.
 Currently, Cython has good support for NumPy arrays and other array-like objects supporting Python's buffer protocol.
 In Cython these kinds of objects can be declared as memory views.
 They are required to have a fixed data type and a fixed number of dimensions.
@@ -30,7 +30,7 @@ Make overloaded arithmetic and indexing operators properly handle exceptions.
 
 ### June 8 - June 21
 Add support for the overloaded assignment operator to the Cython API.
-Overloading the assignment operator isn't currently supported in Cython, so this can be added by either adding the feature to Cython or by using Cython's suport for user-specified C-names for functions.
+Overloading the assignment operator isn't currently supported in Cython, so this can be added by either adding the feature to Cython or by using Cython's support for user-specified C-names for functions.
 
 **You need to accomplish this to mid-term.**
 
@@ -38,7 +38,7 @@ Overloading the assignment operator isn't currently supported in Cython, so this
 Provide externally available wrappers for types, arrfunc manipulation, math functions, and array iterators.
 
 ### July 6 - July 19
-Make Python wrapper classes publicallay available for Cython modules as well.
+Make Python wrapper classes publicly available for Cython modules as well.
 Make conversion routines to and from PEP 3118 compliant objects publically available as well.
 
 ### July 20 - August 2
@@ -71,7 +71,7 @@ My contribution there involves creating better refinement and evaluation techniq
 
 ## Why this project?
 I'm interested in DyND primarily because of the problems it solves.
-When I was first learning to interface with other programming languages from Python, I was amazed by Fortran's ability to perform static expression analysis and optimization on array operations.
+When I was first learning to interface with other programming languages from Python, I was amazed by Fortran's ability to perform static expression analysis and optimization of array operations.
 Though it is cumbersome as a language, its support for array operations is incredible.
 I was troubled by the fact that, as good as it is, NumPy can't do all that Fortran does.
 NumPy's array object is inseparably connected to the Python C API.
