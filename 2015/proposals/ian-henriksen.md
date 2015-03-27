@@ -52,7 +52,7 @@ Simplify API as much as possible.
 Improve Documentation.
 Clean up code further.
 
-## Future works
+## Future work
 Future work will be focused on expanding the number of matrix and linear algebra operations that are available in DyND.
 Once finished, the Cython API should also be kept up-to-date with the features that are finished in C++
 
@@ -65,7 +65,7 @@ The Cython API for BLAS and LAPACK makes it so that extension modules generated 
 ## Academic Experience
 I graduated from BYU in 2013 with an undergraduate degree in mathematics after attending for the 2009 and 2012 academic years.
 I have been in the masters program here since August of 2013 and expect to be defending my thesis shortly before the GSOC program begins.
-I am planning to begin the PhD program here in the fall.
+I am planning to begin the PhD program at BYU in the fall.
 My research involves finite element analysis on spline curves.
 My contribution there involves creating better refinement and evaluation techniques for certain classes of generalized spline curves.
 
@@ -87,4 +87,5 @@ NumPy's gufunc machinery is a remarkable work in its own right and I'm impressed
 I have little experience with writing a library that does static analysis like this since most of my experience has been in numerical methods, but I want to contribute because I see the massive kinds of benefits it will have.
 As I learn more about the mechanics of how to use DyND, it makes me all the more anxious to help.
 
-## Appendix
+Adding a Cython API for DyND will make it possible to write extension modules for Python without having to go through the trouble of manually looping through each portion of an array.
+Using DyND for this also makes it so that operations on arrays in Cython can be optimized at compile time at the library level rather than being confined to one particular way of looping through an array.
