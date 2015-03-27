@@ -25,6 +25,20 @@ In alphabetic order.
 
   <tr>
     <td>
+    </td>
+    <td>
+       <h1>DyND</h1>
+       <p>DyND is a C++ library for dynamic multidimensional arrays, with both C++ and Python as first-class targets, and with GPU support.
+         It is inspired by NumPy, aiming to provide a platform for the evolution of dynamic array programming ideas.
+         </p>
+       <p>
+         <a href="https://github.com/libdynd/libdynd">Website</a> | <a href="https://groups.google.com/forum/#!forum/libdynd-dev">Mailing List</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="300px" src="https://camo.githubusercontent.com/e1ae5c7f6fe275a50134d5889a68f0acdd09ada8/687474703a2f2f6a756c69616c616e672e6f72672f696d616765732f6c6f676f5f68697265732e706e67"/>
     </td>
     <td>
