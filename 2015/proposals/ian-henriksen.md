@@ -16,10 +16,10 @@ They are required to have a fixed data type and a fixed number of dimensions.
 They can be sliced and passed between functions in Cython without any calls to the Python C API, but any array arithmetic must be performed by explicitly looping through these arrays element-by-element.
 NumPy arrays are usable within Cython, but the NumPy array object is inexorably tied to its Python API and operations on NumPy arrays cannot be performed easily without the Python API.
 
-DyND, on the other hand, allows these sorts of aritmetic operations within C++ and without any dependency on operations involving python objects.
-In addition, it's design allows for better expression analysis and optimization at compile time.
-The evaluation of array entries can be deferred and whole expressions can be processed at once.
-Adding a Cython API for DyND will address the limitations that are currently a part of array arithmetic in Cython and make things like static expression analysis for arrays and lazy evaluation of array expressions much easier to access when writing Python C extension modules.
+DyND, on the other hand, allows these sorts of arithmetic operations within C++ and without any dependency on operations involving python objects.
+In addition, its design allows for better expression analysis and optimization at compile time.
+Adding a Cython API for DyND will address the limitations that are currently a part of array arithmetic in Cython and make things like static expression analysis for arrays much easier to access when writing Python C extension modules.
+Currently there are limited Cython wrappers in DyND, but they are not a part of the public API and only cover a portion of the features present.
 
 ## Schedule of Deliverables
 
@@ -35,26 +35,26 @@ Overloading the assignment operator isn't currently supported in Cython, so this
 **You need to accomplish this to mid-term.**
 
 ### June 22 - July 5
-Povide externally available wrappers for public math functions, reduction operators, and array iterators.
+Provide externally available wrappers for types, arrfunc manipulation, math functions, and array iterators.
 
 ### July 6 - July 19
 Make Python wrapper classes publicallay available for Cython modules as well.
-Make conversion routines to and from PEP 3118 compliant objects publically available as well
+Make conversion routines to and from PEP 3118 compliant objects publically available as well.
 
 ### July 20 - August 2
 Make and test wrappers for take and groupby operations.
 
 ### August 3 - August 16
-Make conversions to and from Python functions and numpy gufuncs work properly for external mosules
+Make conversions to and from Python functions and numpy gufuncs work properly for external modules.
 
 ### August 17 - August 21 19:00 UTC
 Simplify API as much as possible.
-Improve Documentation.
+Improve documentation.
 Clean up code further.
 
 ## Future work
 Future work will be focused on expanding the number of matrix and linear algebra operations that are available in DyND.
-Once finished, the Cython API should also be kept up-to-date with the features that are finished in C++
+Once finished, the Cython API should also be kept up-to-date with the features that are finished in C++.
 
 ## Open Source Development Experience
 I worked for over two years as a primary contributor to BYU's lab manuals for their new applied math emphasis.
@@ -89,3 +89,12 @@ As I learn more about the mechanics of how to use DyND, it makes me all the more
 
 Adding a Cython API for DyND will make it possible to write extension modules for Python without having to go through the trouble of manually looping through each portion of an array.
 Using DyND for this also makes it so that operations on arrays in Cython can be optimized at compile time at the library level rather than being confined to one particular way of looping through an array.
+Much of the Python scientific stack is written in Cython, and providing a Cython API for DyND will make it much easier for developers to use the features of DyND in extension modules for Python.
+With a Cython API in place, developers will no longer have to implement array operations in C++ and then wrap them separately.
+The Cython API will make it so that little or no new C++ code is required to perform array operations within Python extension modules.
+
+## Appendix
+Cython: https://github.com/cython/cython
+DyND: https://github.com/libdynd/libdynd
+DyND Python Wrappers: https://github.com/libdynd/dynd-python
+Cython API for BLAS and LAPACK (Previous work providing related functionality): https://github.com/scipy/scipy/pull/4021
