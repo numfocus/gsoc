@@ -51,3 +51,10 @@ organizing Google Summer of Code for NumFOCUS.
 | Sean Vig           | flacjacket      | flacjacket     |
 | Thilina Rathnayake | thilinarmtb     | thilinarmtb    |
 | Tim Lahey          | tjlahey         | tjlahey        |
+
+#### DyND
+
+| Name               | Melange Profile | GitHub Profile |
+|--------------------|-----------------|----------------|
+| Mark Wiebe         | mwiebe          | mwiebe         |
+| Irwin Zaid         |                 | izaid          |
