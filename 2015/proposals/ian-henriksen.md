@@ -40,6 +40,7 @@ Provide externally available wrappers for types, arrfunc manipulation, math func
 ### July 6 - July 19
 Make Python wrapper classes publicly available for Cython modules as well.
 Make conversion routines to and from PEP 3118 compliant objects publically available as well.
+I will be at the SciPy conference for part of the week of July 6th, but I'll start working before May 25 to make up for it.
 
 ### July 20 - August 2
 Make and test wrappers for take and groupby operations.
