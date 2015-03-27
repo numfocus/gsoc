@@ -9,7 +9,7 @@ organizing Google Summer of Code for NumFOCUS.
 
 | Name            | Melange Profile | GitHub Profile | Project/Organization |
 |-----------------|-----------------|----------------|----------------------|
-|                 | andy.terrel     | atarrel        | NumFOCUS             |
+|                 | andy.terrel     | aterrel        | NumFOCUS             |
 | Ethan White     | ethanwhite      | ethanwhite     | Software Carpentry   |
 | Jason Moore     | moorepants      | moorepants     | SymPy                |
 | Raniere Silva   | r.gaia.cs       | r-gaia-cs      | Software Carpentry   |
