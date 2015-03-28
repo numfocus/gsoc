@@ -25,6 +25,7 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="300px" src="https://raw.githubusercontent.com/libdynd/libdynd/master/docs/logo/dynd_logo_300px.png"/>
     </td>
     <td>
        <h1>DyND</h1>
