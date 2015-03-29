@@ -91,8 +91,9 @@ I liked this project while going through the list of organization and their idea
 
 ## Appendix
 
-I submitted patches for follwing isses in pytaxize:
+I submitted patches for follwing issues in pytaxize:
 
 [https://github.com/sckott/pytaxize/issues/10](https://github.com/sckott/pytaxize/issues/10)
+
 [https://github.com/sckott/pytaxize/issues/12](https://github.com/sckott/pytaxize/issues/12)
 
