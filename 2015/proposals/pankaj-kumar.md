@@ -91,9 +91,11 @@ I liked this project while going through the list of organization and their idea
 
 ## Appendix
 
-I submitted patches for follwing issues in pytaxize:
+I submitted patches for following issues in pytaxize:
 
-[https://github.com/sckott/pytaxize/issues/10](https://github.com/sckott/pytaxize/issues/10)
+[#8](https://github.com/sckott/pytaxize/issues/8) Name resolution ([pull request](https://github.com/sckott/pytaxize/pull/19))
 
-[https://github.com/sckott/pytaxize/issues/12](https://github.com/sckott/pytaxize/issues/12)
+[#10](https://github.com/sckott/pytaxize/issues/10) Fix names_list() fxn that reads local csv files ([pull request](https://github.com/sckott/pytaxize/pull/18))
+
+[#12](https://github.com/sckott/pytaxize/issues/12) Support multiple names for gnr_resolve() ([pull request](https://github.com/sckott/pytaxize/pull/19))
 
