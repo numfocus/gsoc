@@ -91,11 +91,19 @@ I liked this project while going through the list of organization and their idea
 
 ## Appendix
 
-I submitted patches for following issues in pytaxize:
+I submitted patches for following issues
+
+### pytaxize:
 
 [#8](https://github.com/sckott/pytaxize/issues/8) Name resolution ([pull request](https://github.com/sckott/pytaxize/pull/19))
 
 [#10](https://github.com/sckott/pytaxize/issues/10) Fix names_list() fxn that reads local csv files ([pull request](https://github.com/sckott/pytaxize/pull/18))
 
 [#12](https://github.com/sckott/pytaxize/issues/12) Support multiple names for gnr_resolve() ([pull request](https://github.com/sckott/pytaxize/pull/19))
+
+
+### retriever
+
+[#275](https://github.com/weecology/retriever/issues/275) Add Global Wood Density Database ([pull request](https://github.com/weecology/retriever/pull/284))
+
 
