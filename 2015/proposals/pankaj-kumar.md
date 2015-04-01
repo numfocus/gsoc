@@ -95,15 +95,17 @@ I submitted patches for following issues
 
 ### pytaxize:
 
-[#8](https://github.com/sckott/pytaxize/issues/8) Name resolution ([pull request](https://github.com/sckott/pytaxize/pull/19))
+[#8](https://github.com/sckott/pytaxize/issues/8) Name resolution ([pull request](https://github.com/sckott/pytaxize/pull/19) and [pull request](https://github.com/sckott/pytaxize/pull/28))
 
 [#10](https://github.com/sckott/pytaxize/issues/10) Fix names_list() fxn that reads local csv files ([pull request](https://github.com/sckott/pytaxize/pull/18))
 
-[#12](https://github.com/sckott/pytaxize/issues/12) Support multiple names for gnr_resolve() ([pull request](https://github.com/sckott/pytaxize/pull/19))
+[#12](https://github.com/sckott/pytaxize/issues/12) Support multiple names for gnr_resolve() ([pull request](https://github.com/sckott/pytaxize/pull/19) and [pull request](https://github.com/sckott/pytaxize/pull/20))
 
 
 ### retriever
 
 [#275](https://github.com/weecology/retriever/issues/275) Add Global Wood Density Database ([pull request](https://github.com/weecology/retriever/pull/284))
+
+[#205](https://github.com/weecology/retriever/issues/205) download command should probably fail when specified path does not exist ([pull request](https://github.com/weecology/retriever/pull/287))
 
 
