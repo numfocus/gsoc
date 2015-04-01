@@ -117,9 +117,41 @@ This project will improve the functionality of the retriever and benefit the use
 
 ## Contributions to the project
 
+### Retriever
+
 * [281](https://github.com/weecology/retriever/pull/281) Started working on adding
   an XML engine to the retriever. This has helped me in gaining insights to the core
   codebase.
 
 * [283](https://github.com/weecology/retriever/pull/283) Removed trailing white
   spaces in the entire codebase.
+
+* [286](https://github.com/weecology/retriever/pull/286) Added eBird observation dataset.
+
+* [288](https://github.com/weecology/retriever/pull/288) Added a few docstrings
+  and refactored a small code
+
+* [289](https://github.com/weecology/retriever/pull/289) Refactored the entire Json
+  format_insert_value()
+
+### pytaxize
+
+* [15](https://github.com/sckott/pytaxize/pull/15) Changed raise_for_status to
+raise_for_status()
+
+* [17](https://github.com/sckott/pytaxize/pull/17) Input validation for ubio_search
+
+* [21](https://github.com/sckott/pytaxize/pull/21) Input validation to col_children
+
+* [22](https://github.com/sckott/pytaxize/pull/22) Added tests to gni module
+
+* [23](https://github.com/sckott/pytaxize/pull/23) Tests for Ubio module
+
+* [24](https://github.com/sckott/pytaxize/pull/24) Added tests for tnrs module
+
+* [25](https://github.com/sckott/pytaxize/pull/25) Input validation for gbif_parse
+
+* [26](https://github.com/sckott/pytaxize/pull/26) Input validation for itis functions
+
+* [29](https://github.com/sckott/pytaxize/pull/29) Refactored requests code throughout
+  the codebase.
