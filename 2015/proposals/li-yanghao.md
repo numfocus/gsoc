@@ -87,4 +87,6 @@ I have been using Python for over one year and I think I have the capability to 
 
 * [pytaxize #13](https://github.com/sckott/pytaxize/pull/13) Return [] for each query with no result returned instead of Raise NoResultException.
 
+* [pytaxize #27](https://github.com/sckott/pytaxize/pull/27) Delete temporary name list file in _gnr_resolve().
 
+* [pytaxize #33](https://github.com/sckott/pytaxize/pull/33) No matching results warning should be checked in gnr_resolve instead of _gnr_resolve.
