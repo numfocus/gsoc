@@ -43,7 +43,6 @@ We will send you another email with informations specific to your project soon.
 
         This way we and the rest of the project can see how you are doing
         and help you if need.
-        about the status of 
 
 Good luck.
 
