@@ -1,0 +1,68 @@
+[NumFOCUS](http://numfocus.org/)
+is a public charity in the United States
+that supports and promotes world-class, innovative, open source scientific software
+(specially the scientific Python stack, [Julia](http://julialang.org/) and [rOpenSci](http://ropensci.org/)).
+
+This is the first time that NumFOCUS participated in Google Summer of Code (GSoC)
+although many of the projects that NumFOCUS support participated in many
+previous edition as mentoring organization or under the umbrella of one
+mentoring organization (for example the [Python Software
+Foundation](https://www.python.org/psf/)).
+
+The students working with us completed three projects
+and we are grateful for their incredible work,
+the many hours that their mentors spent during the summer
+and the amazing people that helped us with the GSoC application.
+
+#   Cython API for DyND
+
+[DyND](https://github.com/libdynd/libdynd) is a C++ library for dynamic, multidimensional arrays.
+The motivation for this project was make DyND available
+for the Python scientific stack,
+that uses Cython extensively,
+without having to go through the trouble of manually looping through each portion of an array.
+
+If you have at least once try to use Cython you know that this was not a easy
+project to developed. We are happy that Ian completed the project
+even he spent many hours hunting bugs and reorganizing code
+(something that he did not expected).
+
+Read more about it at [Ian's post](https://insertinterestingnamehere.github.io/posts/gsoc-concluding-thoughts.html).
+
+#   Enhance AMY, a workshop-management platform for Software Carpentry
+
+The [Software Carpentry Foundation](http://software-carpentry.org/scf/index.html) (SCF)
+is a non-profit volunteer organization
+whose members teach researchers basic software skills.
+SCF started to run over a hundred workshops worldwide a year
+and manage the workshops became a problem.
+
+During the summer, Piotr worked to enhance [AMY](https://github.com/swcarpentry/amy/),
+a Django application that manage SCF's workshops,
+adding many new features, fixing bugs
+and helping SCF's program coordinators to keep updated
+with all the changes in AMY.
+
+The option for create yet another tool from the scratch
+instead of use an CRM solution like [CiviCRM](https://civicrm.org/)
+was based on the fact that (1) most of the SCF members have some knowledge of
+Python so they could help maintain AMY in the long run
+and (2) an small Django application could fit better for
+others organizations running software training like
+[PyLadies](http://www.pyladies.com/) and [Django Girls](http://www.pyladies.com/).
+
+Read more about it at [Piotr's post](http://piotr.banaszkiewicz.org/blog/2015/08/15/amy-update-6/).
+
+#   JuliaQuantum: Framework for solvers
+
+[Julia](http://julialang.org/) is a high-level,
+high-performance dynamic programming language for technical computing,
+with syntax that is familiar to users of other technical computing environments.
+In the last few years Julia got many third party libraries
+and one of those are [Julia Quantum](https://juliaquantum.github.io/).
+
+During the summer Amit worked
+to integrate Quantum Monte-Carlo Wave Function Method as one of the solvers
+available at Julia Quantum.
+
+Read more about it at [Amit's post](https://juliaquantum.github.io/news/2015/08/GSoC2015-Wrap-up-and-Outlook).
