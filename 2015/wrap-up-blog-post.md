@@ -51,7 +51,7 @@ and (2) an small Django application could fit better for
 others organizations running software training like
 [PyLadies](http://www.pyladies.com/) and [Django Girls](http://www.pyladies.com/).
 
-Read more about it at [Piotr's post](http://piotr.banaszkiewicz.org/blog/2015/08/15/amy-update-6/).
+Read more about it at [Piotr's post](http://piotr.banaszkiewicz.org/blog/2015/09/05/amy-update-7/).
 
 #   JuliaQuantum: Framework for solvers
 
