@@ -58,11 +58,16 @@ Read more about it at [Piotr's post](http://piotr.banaszkiewicz.org/blog/2015/09
 [Julia](http://julialang.org/) is a high-level,
 high-performance dynamic programming language for technical computing,
 with syntax that is familiar to users of other technical computing environments.
-In the last few years Julia got many third party libraries
-and one of those is [Julia Quantum](https://juliaquantum.github.io/).
+In the last few years Julia got many third party libraries,
+which integrate external libraries or use native implementations in Julia.
+One of those efforts is [JuliaQuantum](https://juliaquantum.github.io/),
+which aims to provide tools and frameworks for dealing with problems
+from quantum mechanics and quantum information science.
 
 During the summer Amit worked
-to integrate the Quantum Monte-Carlo Wave Function Method as one of the solvers
-available at Julia Quantum.
+on a framework for solving dynamical equations for JuliaQuantum.
+He integrated several solvers like the Quantum Monte-Carlo Wave Function Method.
+The [new interface](https://github.com/JuliaQuantum/QuDynamics.jl) makes it easy to add new solvers
+and to test different methods for a given problem.
 
 Read more about it at [Amit's post](https://juliaquantum.github.io/news/2015/08/GSoC2015-Wrap-up-and-Outlook).
