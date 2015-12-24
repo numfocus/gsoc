@@ -73,7 +73,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="https://matplotlib.org/_static/logo2.png" />
+      <img width="300px" src="http://matplotlib.org/_static/logo2.png" />
     </td>
     <td>
        <h1>matplotlib</h1>
