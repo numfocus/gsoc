@@ -1,11 +1,12 @@
-# Google Summer of Code 2015
+# Google Summer of Code 2016
 
-[NumFOCUS][] is a mentoring organization for [Google Summer
-of Code 2015][GSoC]. [NumFOCUS][], an umbrella organization, supports and
+[NumFOCUS][] will apply to be a mentoring organization for
+[Google Summer of Code 2016][GSoC].
+[NumFOCUS][], an umbrella organization, supports and
 promotes world-class, innovative, open source scientific software.
 
 This Git repository stores information about NumFOCUS' participation in
-Google Summer of Code 2015 program.
+Google Summer of Code 2016 program and previous editions.
 
 ## Students and Mentors
 
@@ -23,6 +24,7 @@ In alphabetic order.
 
 <table>
 
+  <!-- Uncomment after contact DyND
   <tr>
     <td>
       <img width="300px" src="https://raw.githubusercontent.com/libdynd/libdynd/master/docs/logo/dynd_logo_300px.png"/>
@@ -37,7 +39,9 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+  -->
 
+  <!-- Uncomment after contact Julia
   <tr>
     <td>
       <img width="300px" src="https://camo.githubusercontent.com/e1ae5c7f6fe275a50134d5889a68f0acdd09ada8/687474703a2f2f6a756c69616c616e672e6f72672f696d616765732f6c6f676f5f68697265732e706e67"/>
@@ -52,6 +56,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+  -->
 
   <tr>
     <td>
@@ -68,6 +73,22 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="300px" src="matplotlib.org/_static/logo2.png" />
+    </td>
+    <td>
+       <h1>matplotlib</h1>
+       <p>matplotlib is a Python 2D plotting library which produces publication
+       quality figures in a variety of hardcopy formats and interactive
+       environments across platforms.</p>
+       <p>
+         <a href="https://matplotlib.org/">Website</a> | <a href="https://github.com/matplotlib/matplotlib/issues">Project Discussions</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-matplotlib.md">Ideas Page</a>
+       </p>
+    </td>
+  </tr>
+
+  <!-- Uncomment after contact Julia
+  <tr>
+    <td>
       <img width="300px"
       src="http://spyderlib.googlecode.com/files/banner.png">
     </td>
@@ -79,7 +100,9 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+  -->
 
+  <!-- Uncomment after contact Julia
   <tr>
     <td>
       <img width="300px" src="http://www.sympy.org/static/images/logo.png">
@@ -92,6 +115,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+  -->
 
 </table>
 
@@ -103,8 +127,8 @@ All the projects listed [here][NumFOCUS-Projects].
 [CONTRIBUTING]: CONTRIBUTING.md
 [Cython]: http://cython.org/
 [DataCarpentry]: http://datacarpentry.org/
-[GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
-[IL]: 2015/ideas-list.md
+[GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2016
+[IL]: 2016/ideas-list.md
 [IPython]: http://ipython.org/
 [Julia]: http://julialang.org/
 [Matplotlib]: http://matplotlib.sourceforge.net/
