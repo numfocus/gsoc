@@ -1,26 +1,25 @@
 # Contributing Guide for Students
 
-**Your proposal can only be accepted if you submit it
-at [GSoC][] before the deadline,
-before March 27th 19:00 UTC.
-There will be NO extended to the deadline.**
-Once you submit your proposal you can change it
-many times as you want until the deadline.
+## Getting Started Early
+
+The 2016 student application window is March 14th to 25th.
+**We don't know if NumFOCUS will be accepted to participate until 29 February**
+but if you are interested in start work early on your application,
+[the Python Software Foundation Wiki](https://wiki.python.org/moin/SummerOfCode/2016#Students)
+lists a few things you can do to get started in free and open source software.
+
+## Getting Started
 
 **Please use the instructions of the project/organization
 you are interested in work with.**
-
-## Julia
-
-Read [default instructions](#default-instructions).
 
 ## Software Carpentry
 
 Read [default instructions](#default-instructions).
 
-## Sympy
+## matplotlib
 
-Read https://github.com/sympy/sympy/wiki/GSoC-2015-Application-Template.
+Read [default instructions](#default-instructions).
 
 ## Default Instructions
 
@@ -103,7 +102,7 @@ like phone number and address, at your proposal.**
 ### Final Proposal
 
 Your final proposal must be submitted to [GSoC][]
-**before March 27th 19:00 UTC**.
+**before March 25th 19:00 UTC**.
 
 You proposal form should look like
 

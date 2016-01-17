@@ -122,6 +122,16 @@ In alphabetic order.
 ## Organizations Eligible Under NumFOCUS Umbrella
 
 All the projects listed [here][NumFOCUS-Projects].
+Other projects should send a email to gsoc@numfocus.org.
+
+To participate under the NumFOCUS umbrella,
+a sub-org must:
+
+1.  Have one sub-org admin
+    and at least two mentors (**the sub-org admin can be one of the mentors**)
+    who are willing to commit to the full GSoC period.
+
+2.  Have a good ideas page.
 
 [AstroPy]: http://www.astropy.org/
 [CONTRIBUTING]: CONTRIBUTING.md
