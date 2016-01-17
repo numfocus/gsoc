@@ -22,7 +22,7 @@ organizing Google Summer of Code for NumFOCUS.
 | Name            | Melange Profile | GitHub Profile |
 |-----------------|-----------------|----------------|
 |                 | gvwilson        | gvwilson       |
-| Raniere Silva   | r.gaia.cs       | rgaiacs      |
+| Raniere Silva   | r.gaia.cs       | rgaiacs        |
 
 ## 2015
 
@@ -33,7 +33,7 @@ organizing Google Summer of Code for NumFOCUS.
 |                 | andy.terrel     | aterrel        | NumFOCUS             |
 | Ethan White     | ethanwhite      | ethanwhite     | Software Carpentry   |
 | Jason Moore     | moorepants      | moorepants     | SymPy                |
-| Raniere Silva   | r.gaia.cs       | rgaiacs      | Software Carpentry   |
+| Raniere Silva   | r.gaia.cs       | rgaiacs        | Software Carpentry   |
 
 ### Mentors
 
@@ -51,7 +51,7 @@ organizing Google Summer of Code for NumFOCUS.
 |-----------------|-----------------|----------------|
 | Ethan White     | ethanwhite      | ethanwhite     |
 |                 | gvwilson        | gvwilson       |
-| Raniere Silva   | r.gaia.cs       | rgaiacs      |
+| Raniere Silva   | r.gaia.cs       | rgaiacs        |
 |                 | scottcha        | sckott         |
 |                 | willingc        | willingc       |
 |                 | wking           | wking          |
