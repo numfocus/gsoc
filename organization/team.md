@@ -5,6 +5,8 @@ organizing Google Summer of Code for NumFOCUS.
 
 ## 2016
 
+**NumFOCUS Administrator for GSoC**: Raniere Silva
+
 ### Admin
 
 | Name            | Melange Profile | GitHub Profile | Project/Organization |
