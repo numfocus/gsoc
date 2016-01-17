@@ -237,7 +237,7 @@ Experience with deploying and maintaining applications is also an asset.
 
 * @gvwilson
 * @wking
-* @r-gaia-cs
+* @rgaiacs
 
 ### Acknowledgments
 
@@ -376,7 +376,7 @@ A very simple proof-of-concept system exists at <https://github.com/swcarpentry/
 ## Mentors
 
 * @gvwilson
-* @r-gaia-cs
+* @rgaiacs
 
 ## Appendix
 

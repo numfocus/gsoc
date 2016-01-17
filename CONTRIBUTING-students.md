@@ -53,10 +53,10 @@ like phone number and address, at your proposal.**
 
     where `username` is your GitHub username.
 
-    In my case is `r-gaia-cs`, so I will use
+    In my case is `rgaiacs`, so I will use
 
     ~~~
-    $ git clone https://github.com/r-gaia-cs/gsoc.git
+    $ git clone https://github.com/rgaiacs/gsoc.git
     ~~~
 
 2.  Copy `YYYY/proposals/skeleton.md` to `YYYY/proposals/your-name.md`
