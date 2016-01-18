@@ -11,9 +11,18 @@ organizing Google Summer of Code for NumFOCUS.
 
 | Name            | Melange Profile | GitHub Profile | Project/Organization |
 |-----------------|-----------------|----------------|----------------------|
-| Raniere Silva   | r.gaia.cs       | rgaiacs      | Software Carpentry   |
+| Raniere Silva   | r.gaia.cs       | rgaiacs        | Software Carpentry   |
+| Irwin Zaid      | izaid           | izaid          | DyND                 |
 
 ### Mentors
+
+#### DyND
+
+| Name               | Melange Profile | GitHub Profile |
+|--------------------|-----------------|----------------|
+| Ian Henriksen      |                 |                |
+| Irwin Zaid         | izaid           | izaid          |
+| Mark Wiebe         | mwiebe          | mwiebe         |
 
 #### matplotlib
 
@@ -21,7 +30,6 @@ organizing Google Summer of Code for NumFOCUS.
 
 | Name            | Melange Profile | GitHub Profile |
 |-----------------|-----------------|----------------|
-|                 | gvwilson        | gvwilson       |
 | Raniere Silva   | r.gaia.cs       | rgaiacs        |
 
 ## 2015
