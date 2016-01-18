@@ -24,7 +24,6 @@ In alphabetic order.
 
 <table>
 
-  <!-- Uncomment after contact DyND
   <tr>
     <td>
       <img width="300px" src="https://raw.githubusercontent.com/libdynd/libdynd/master/docs/logo/dynd_logo_300px.png"/>
@@ -39,7 +38,6 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-  -->
 
   <!-- Uncomment after contact Julia
   <tr>
