@@ -133,6 +133,23 @@ a sub-org must:
 
 2.  Have a good ideas page.
 
+## NumFOCUS' Fiscally Sponsored Projects GSoC Status
+
+| Project | Status |
+| ------- | ------ |
+| AstroPy | Unknow |
+| Data Carpentry | Unknow |
+| IPython | Unknow |
+| Julia | Unknow |
+| Matplotlib | Applying under NumFOCUS umbrella |
+| NumPy | Unknow |
+| Project Jupyter  | Unknow |
+| pandas | Unknow |
+| PyTables | Unknow |
+| rOpenSci  | Unknow |
+| Software Carpentry | Applying under NumFOCUS umbrella |
+| SymPy | Unknow |
+
 [AstroPy]: http://www.astropy.org/
 [CONTRIBUTING]: CONTRIBUTING.md
 [Cython]: http://cython.org/
