@@ -135,18 +135,18 @@ a sub-org must:
 
 | Project | Status |
 | ------- | ------ |
-| AstroPy | Unknow |
-| Data Carpentry | Unknow |
-| IPython | Unknow |
-| Julia | Unknow |
+| AstroPy | Unknown |
+| Data Carpentry | Unknown |
+| IPython | Unknown |
+| Julia | Unknown |
 | Matplotlib | Applying under NumFOCUS umbrella |
-| NumPy | Unknow |
-| Project Jupyter  | Unknow |
-| pandas | Unknow |
-| PyTables | Unknow |
-| rOpenSci  | Unknow |
+| NumPy | Unknown |
+| Project Jupyter  | Unknown |
+| pandas | Unknown |
+| PyTables | Unknown |
+| rOpenSci  | Unknown |
 | Software Carpentry | Applying under NumFOCUS umbrella |
-| SymPy | Unknow |
+| SymPy | Unknown |
 
 [AstroPy]: http://www.astropy.org/
 [CONTRIBUTING]: CONTRIBUTING.md
