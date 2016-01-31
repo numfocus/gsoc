@@ -1,0 +1,46 @@
+# JuliaOpt
+
+## Develop a Julia interface to the [SCIP](http://scip.zib.de/) solver
+
+
+### Abstract
+
+SCIP is a powerful noncommerical solver for [mixed-integer programming](https://en.wikipedia.org/wiki/Integer_programming) and
+[constraint programming](https://en.wikipedia.org/wiki/Constraint_programming).
+It provides advanced features like [callbacks](http://jump.readthedocs.org/en/latest/callbacks.html) which are used to attack challenging combinatorial problems
+like the [TSP](https://en.wikipedia.org/wiki/Travelling_salesman_problem).
+The goal of this project is to develop a fully featured and documented
+interface to SCIP through its C API, which will enable
+users to access SCIP and all of its advanced features from Julia,
+and in particular from the modeling interfaces
+[JuMP](https://github.com/JuliaOpt/JuMP.jl)
+and [Convex.jl](https://github.com/JuliaOpt/Convex.jl).
+
+### Motivation
+
+Julia already has wrappers for many optimization solvers (listed [here](http://www.juliaopt.org/)). Compared with the open-source mixed-integer programming solvers currently supported (GLPK, Cbc), SCIP is faster and still provides access to its source code for research purposes (although unfortunately not under an open-source license). Compared with the commerical solvers, SCIP has a much lower barrier to entry in terms of licensing costs. Google itself has chosen to use SCIP internally and supports it through its [or-tools](https://github.com/google/or-tools) package.
+
+Providing first-class access to SCIP from Julia will enable new applications of 
+integer programming, made easier by Julia and JuMP's high-level syntax and abstractions
+over solvers. SCIP will be suitable for use in courses, research, and industrial applications.
+
+### Technical details
+
+SCIP has quite a large API, so it is a good idea to generate
+the Julia wrappers automatically. There was a
+[previous attempt](https://github.com/ryanjoneil/SCIP.jl) at wrapping
+SCIP which may serve as a useful starting point. Since then,
+the ``Ref{}`` syntax in Julia 0.4 may make some of the wrapping
+easier than before.
+
+This project requires knowledge of basic linear programming, experience with C, and ideally experience with JuMP or another algebraic modeling language.
+
+### Mentors
+
+* [@mlubin](https://github.com/mlubin)
+* [@joehuchette](https://github.com/joehuchette/) (not confirmed yet)
+
+### Contact
+
+[NumFocus GSOC list](https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc)
+[JuliaOpt list](https://groups.google.com/forum/#!forum/julia-opt)
