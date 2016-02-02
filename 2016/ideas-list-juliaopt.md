@@ -38,9 +38,10 @@ This project requires knowledge of basic linear programming, experience with C, 
 ### Mentors
 
 * [@mlubin](https://github.com/mlubin)
-* [@joehuchette](https://github.com/joehuchette/) (not confirmed yet)
+* [@joehuchette](https://github.com/joehuchette/)
 
 ### Contact
 
 [NumFocus GSOC list](https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc)
+
 [JuliaOpt list](https://groups.google.com/forum/#!forum/julia-opt)
