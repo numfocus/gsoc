@@ -148,25 +148,63 @@ a sub-org must:
 | [Software Carpentry](SoftwareCarpentry) | Applying under NumFOCUS umbrella |
 | [SymPy] | Unknown |
 
+## NumFOCUS' Affiliated Projects GSoC Status
+
+| Project | Status |
+| ------- | ------ |
+| [Bokeh] | Unknown |
+| [Cython] | Unknown |
+| [Dask] | Unknown |
+| [DyND] | Unknown |
+| [Gensim] | Unknown |
+| [Numba] | Unknown |
+| [Orange] | Unknown |
+| [PythonXY] | Unknown |
+| [scikit-bio] | Unknown |
+| [scikit-image] | Unknown |
+| [scikit-learn] | Unknown |
+| [SciPy] | Unknown |
+| [Spyder] | Unknown |
+| [Statmodels] | Unknown |
+| [Theano] | Unknown |
+| [yt] | Unknown |
+
+## Other Projects GSoC Status
+
+**This session intend to help students to find mentoring organizations that
+could receive their applications.**
+
+| Project | Status |
+| ------- | ------ |
+| [JuliaOpt] | Applying under NumFOCUS umbrella |
+
 [AstroPy]: http://www.astropy.org/
+[Bokeh]: http://bokeh.pydata.org/
 [CONTRIBUTING]: CONTRIBUTING.md
 [Cython]: http://cython.org/
+[Dask]: http://dask.pydata.org/
 [DataCarpentry]: http://datacarpentry.org/
+[DyND]: http://libdynd.org/
+[Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2016
 [IL]: 2016/ideas-list.md
 [IPython]: http://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: http://julialang.org/
+[JuliaOpt]: http://www.juliaopt.org/
 [Jupyter]: http://jupyter.org/
 [Matplotlib]: http://matplotlib.sourceforge.net/
+[Numba]: http://numba.pydata.org/
 [NumFOCUS-Projects]: http://numfocus.org/projects/index.html
 [NumFOCUS]: http://numfocus.org/
 [NumPy]: http://numpy.scipy.org/
+[Orange]: http://orange.biolab.si/
 [pandas]: http://pandas.pydata.org/
 [PyTables]: http://pytables.github.com/
 [PythonXY]: http://code.google.com/p/pythonxy/wiki/Welcome
 [rOpenSci]: http://ropensci.org/
 [SCF]: http://software-carpentry.org/scf/index.html
+[scikit-bio]: http://scikit-bio.org/
 [scikit-image]: http://scikit-image.org/
 [scikit-learn]: http://scikit-learn.org/stable/
 [SciPy]: http://www.scipy.org/
@@ -175,4 +213,5 @@ a sub-org must:
 [Statmodels]: http://statsmodels.sourceforge.net/
 [SymPy]: http://sympy.org
 [Theano]: http://deeplearning.net/software/theano/
+[xarray]: http://xarray.pydata.org/
 [yt]: http://yt-project.org/
