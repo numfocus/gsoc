@@ -140,11 +140,11 @@ a sub-org must:
 | [IPython] | Unknow |
 | [Julia] | Applying as separate organization |
 | [Matplotlib] | Applying under NumFOCUS umbrella |
-| [NumPy] | Unknown |
+| [NumPy] | Applying under PSF umbrella |
 | [pandas] | Unknown |
 | [Project Jupyter](Jupyter) | Unknown |
 | [PyTables] | Unknown |
-| [rOpenSci]  | Unknown |
+| [rOpenSci]  | Not going to participate |
 | [Software Carpentry](SoftwareCarpentry) | Applying under NumFOCUS umbrella |
 | [SymPy] | Unknown |
 
@@ -176,6 +176,7 @@ could receive their applications.**
 
 | Project | Status |
 | ------- | ------ |
+| [Dipy] | Applying under PSF umbrella |
 | [JuliaOpt] | Applying under NumFOCUS umbrella |
 
 [AstroPy]: http://www.astropy.org/
@@ -184,6 +185,7 @@ could receive their applications.**
 [Cython]: http://cython.org/
 [Dask]: http://dask.pydata.org/
 [DataCarpentry]: http://datacarpentry.org/
+[Dipy]: http://dipy.org/
 [DyND]: http://libdynd.org/
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2016
