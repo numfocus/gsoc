@@ -135,18 +135,18 @@ a sub-org must:
 
 | Project | Status |
 | ------- | ------ |
-| AstroPy | Unknown |
-| Data Carpentry | Unknown |
-| IPython | Unknown |
-| Julia | Unknown |
-| Matplotlib | Applying under NumFOCUS umbrella |
-| NumPy | Unknown |
-| Project Jupyter  | Unknown |
-| pandas | Unknown |
-| PyTables | Unknown |
-| rOpenSci  | Unknown |
-| Software Carpentry | Applying under NumFOCUS umbrella |
-| SymPy | Unknown |
+| [AstroPy] | Under [OpenAstronomy](http://openastronomy.org/) |
+| [Data Carpentry](DataCarpentry) | Not going to participate |
+| [IPython] | Unknow |
+| [Julia] | Applying as separate organization |
+| [Matplotlib] | Applying under NumFOCUS umbrella |
+| [NumPy] | Unknown |
+| [pandas] | Unknown |
+| [Project Jupyter](Jupyter) | Unknown |
+| [PyTables] | Unknown |
+| [rOpenSci]  | Unknown |
+| [Software Carpentry](SoftwareCarpentry) | Applying under NumFOCUS umbrella |
+| [SymPy] | Unknown |
 
 [AstroPy]: http://www.astropy.org/
 [CONTRIBUTING]: CONTRIBUTING.md
@@ -155,23 +155,24 @@ a sub-org must:
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2016
 [IL]: 2016/ideas-list.md
 [IPython]: http://ipython.org/
+[issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: http://julialang.org/
+[Jupyter]: http://jupyter.org/
 [Matplotlib]: http://matplotlib.sourceforge.net/
 [NumFOCUS-Projects]: http://numfocus.org/projects/index.html
 [NumFOCUS]: http://numfocus.org/
 [NumPy]: http://numpy.scipy.org/
+[pandas]: http://pandas.pydata.org/
 [PyTables]: http://pytables.github.com/
 [PythonXY]: http://code.google.com/p/pythonxy/wiki/Welcome
+[rOpenSci]: http://ropensci.org/
 [SCF]: http://software-carpentry.org/scf/index.html
+[scikit-image]: http://scikit-image.org/
+[scikit-learn]: http://scikit-learn.org/stable/
 [SciPy]: http://www.scipy.org/
 [SoftwareCarpentry]: http://software-carpentry.org/
 [Spyder]: http://code.google.com/p/spyderlib/
 [Statmodels]: http://statsmodels.sourceforge.net/
 [SymPy]: http://sympy.org
 [Theano]: http://deeplearning.net/software/theano/
-[issues]: https://github.com/numfocus/gsoc/issues
-[pandas]: http://pandas.pydata.org/
-[rOpenSci]: http://ropensci.org/
-[scikit-image]: http://scikit-image.org/
-[scikit-learn]: http://scikit-learn.org/stable/
 [yt]: http://yt-project.org/
