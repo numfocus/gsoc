@@ -155,7 +155,7 @@ a sub-org must:
 | [Bokeh] | Unknown | |
 | [Cython] | Unknown | |
 | [Dask] | Unknown | |
-| [DyND] |  Applying under NumFOCUS umbrella | |
+| [DyND] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-dynd.md |
 | [Gensim] | Unknown |
 | [Numba] | Unknown |
 | [Orange] | Unknown | |
@@ -163,7 +163,7 @@ a sub-org must:
 | [scikit-bio] | Unknown | |
 | [scikit-image] | Unknown | |
 | [scikit-learn] | Unknown | |
-| [SciPy] | pplying under PSF umbrella | |
+| [SciPy] | Applying under PSF umbrella | https://wiki.python.org/moin/SummerOfCode/2016 |
 | [Spyder] | Unknown | |
 | [Statmodels] | Applying as separate organization | https://github.com/statsmodels/statsmodels/wiki/Google-Summer-of-Code-2016 |
 | [Theano] | Unknown |
@@ -178,7 +178,7 @@ could receive their applications.**
 | ------- | ------ | ----------- |
 | [Dipy] | Applying under PSF umbrella | https://wiki.python.org/moin/SummerOfCode/2016 |
 | [JuliaOpt] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaopt.md |
-| [JuliaQuantum] | Applying under NumFOCUS umbrella | |
+| [JuliaQuantum] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaquantum.md |
 
 [AstroPy]: http://www.astropy.org/
 [Bokeh]: http://bokeh.pydata.org/
@@ -195,6 +195,7 @@ could receive their applications.**
 [issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: http://julialang.org/
 [JuliaOpt]: http://www.juliaopt.org/
+[JuliaQuantum]: http://juliaquantum.github.io/
 [Jupyter]: http://jupyter.org/
 [Matplotlib]: http://matplotlib.sourceforge.net/
 [Numba]: http://numba.pydata.org/
