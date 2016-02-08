@@ -133,39 +133,39 @@ a sub-org must:
 
 ## NumFOCUS' Fiscally Sponsored Projects GSoC Status
 
-| Project | Status |
-| ------- | ------ |
-| [AstroPy] | Under [OpenAstronomy](http://openastronomy.org/) |
-| [Data Carpentry](DataCarpentry) | Not going to participate |
-| [IPython] | Unknow |
-| [Julia] | Applying as separate organization |
-| [Matplotlib] | Applying under NumFOCUS umbrella |
-| [NumPy] | Applying under PSF umbrella |
-| [pandas] | Unknown |
-| [Project Jupyter](Jupyter) | Unknown |
-| [PyTables] | Unknown |
-| [rOpenSci]  | Not going to participate |
-| [Software Carpentry](SoftwareCarpentry) | Applying under NumFOCUS umbrella |
-| [SymPy] | Unknown |
+| Project | Status | Ideas Pages |
+| ------- | ------ | ----------- |
+| [AstroPy] | Under [OpenAstronomy](http://openastronomy.org/) |http://openastronomy.org/gsoc/gsoc2016/ideas.html |
+| [Data Carpentry](DataCarpentry) | Not going to participate | N/A |
+| [IPython] | Unknow | |
+| [Julia] | Applying as separate organization | |
+| [Matplotlib] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-matplotlib.md |
+| [NumPy] | Applying under PSF umbrella | https://wiki.python.org/moin/SummerOfCode/2016 |
+| [pandas] | Unknown | |
+| [Project Jupyter](Jupyter) | Unknown | |
+| [PyTables] | Unknown | |
+| [rOpenSci]  | Not going to participate | N/A |
+| [Software Carpentry](SoftwareCarpentry) | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-swc.md |
+| [SymPy] | Applying as separate organization | https://github.com/sympy/sympy/wiki/GSoC-2016-Ideas |
 
 ## NumFOCUS' Affiliated Projects GSoC Status
 
-| Project | Status |
-| ------- | ------ |
-| [Bokeh] | Unknown |
-| [Cython] | Unknown |
-| [Dask] | Unknown |
-| [DyND] | Unknown |
+| Project | Status | Ideas Pages |
+| ------- | ------ | ----------- |
+| [Bokeh] | Unknown | |
+| [Cython] | Unknown | |
+| [Dask] | Unknown | |
+| [DyND] |  Applying under NumFOCUS umbrella | |
 | [Gensim] | Unknown |
 | [Numba] | Unknown |
-| [Orange] | Unknown |
-| [PythonXY] | Unknown |
-| [scikit-bio] | Unknown |
-| [scikit-image] | Unknown |
-| [scikit-learn] | Unknown |
-| [SciPy] | Unknown |
-| [Spyder] | Unknown |
-| [Statmodels] | Unknown |
+| [Orange] | Unknown | |
+| [PythonXY] | Unknown | |
+| [scikit-bio] | Unknown | |
+| [scikit-image] | Unknown | |
+| [scikit-learn] | Unknown | |
+| [SciPy] | pplying under PSF umbrella | |
+| [Spyder] | Unknown | |
+| [Statmodels] | Applying as separate organization | https://github.com/statsmodels/statsmodels/wiki/Google-Summer-of-Code-2016 |
 | [Theano] | Unknown |
 | [yt] | Unknown |
 
@@ -174,10 +174,11 @@ a sub-org must:
 **This session intend to help students to find mentoring organizations that
 could receive their applications.**
 
-| Project | Status |
-| ------- | ------ |
-| [Dipy] | Applying under PSF umbrella |
-| [JuliaOpt] | Applying under NumFOCUS umbrella |
+| Project | Status | Ideas Pages |
+| ------- | ------ | ----------- |
+| [Dipy] | Applying under PSF umbrella | https://wiki.python.org/moin/SummerOfCode/2016 |
+| [JuliaOpt] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaopt.md |
+| [JuliaQuantum] | Applying under NumFOCUS umbrella | |
 
 [AstroPy]: http://www.astropy.org/
 [Bokeh]: http://bokeh.pydata.org/
