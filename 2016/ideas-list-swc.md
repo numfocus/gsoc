@@ -63,6 +63,21 @@ Finally, SurveyMonkey API uses
 [OAuth](https://developer.surveymonkey.com/docs/guides/oauth-guide/) for
 authentication.  Prospect students should get to know this method (see below).
 
+### Degree of difficulty and needed skills
+
+Difficulty: moderate. This will be a single application, but you'll be
+designing and writing it from scratch.
+
+Skills required to complete the project (you can apply without some of them):
+
+* Knowledge of [Python][] and basics of [Django][].
+* Basic knowledge of how to use JavaScript plotting library of your choice
+* Knowledge of [Git][] for storing your work on [GitHub][]
+* Knowledge of SurveyMonkey OAuth.
+
+Any of these skills could be learned during the project and I will help you
+with them, but you probably can't learn *all* of them during GSOC.
+
 ### Mentors
 
 * [@pbanaszkiewicz](https://github.com/pbanaszkiewicz)
@@ -86,12 +101,7 @@ to share the tokens publicly.
 
 Finally, please contact with us and let us know the link to your repository.
 
-### TL;DR: requirements
 
-* suggested: Django, Python
-* research: best fitting JavaScript plotting library
-* OAuth authentication of SurveyMonkey API requests
-* a demo application to show us you're interested in the project
 
 ### Mentoring process
 
