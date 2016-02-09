@@ -1,6 +1,6 @@
 # Software Carpentry
 
-## Produce a SurveyMonkey responses analyzer application
+## A survey responses visualizer application
 
 **Please ask questions as issues [here](https://github.com/numfocus/gsoc/issues).**
 
