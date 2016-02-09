@@ -2,7 +2,7 @@
 
 ## A survey responses visualizer application
 
-**Please ask questions as issues [here](https://github.com/numfocus/gsoc/issues).**
+**Please ask questions as issues [here][gsoc-issues].**
 
 ### Abstract
 
@@ -19,12 +19,13 @@ The key features are:
   a text display),
 * caching of the results (we only have about 15000 API queries a day)
 * a view for workshop hosts to see the survey results,
-* if time allows, integration with [AMY](https://github.com/swcarpentry/amy)
-  (workshop management tool for Software-Carpentry).
+* if time allows, integration with [AMY][]   (workshop management tool for
+  [Software Carpentry][]).
 
 ### Background
 
-For every Software-Carpentry workshop, the organization hosts attendee surveys:
+For every [Software Carpentry][] workshop, the organization hosts attendee
+surveys:
 
 1. "pre-workshop" anonymous survey that helps instructors get insight into
    attendees computing experience, and details of their machines like operating
@@ -47,10 +48,9 @@ task, but thanks to their API we can do this automatically in our application.
 
 ### Technical details
 
-Due to the fact that [AMY](https://github.com/swcarpentry/amy) is
-a [Django](http://djangoproject.com/) application, it is suggested:
+Due to the fact that [AMY][] is a [Django][] application, it is suggested:
 
-* to have experience with Django and Python
+* to have experience with [Django][] and [Python][]
 * to create the project as [Django application](https://docs.djangoproject.com/en/1.9/ref/applications/#projects-and-applications)
 
 This will allow for faster integration with AMY, if the there's time left in
@@ -103,13 +103,29 @@ project.
 
 ### Additional perks
 
-If you're interested in what Software-Carpentry does, we may be able to offer
-you a place at online
+If you're interested in what [Software Carpentry][] does, we may be able to
+offer you a place at online
 [instructor training](http://software-carpentry.org/join/), if there is one
 taking place during Google Summer of Code 2016.
 
 ### Contact
 
-Questions: please create an issue [here](https://github.com/numfocus/gsoc/issues).
+Questions: please create an issue [here][gsoc-issues].
+
 Project proposal: please create a pull request to this repository.
-Other: please use our [mailing list](https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc).
+
+Other: please use our [mailing list][].
+
+  [Software Carpentry]: https://software-carpentry.org/
+  [gsoc-issues]: https://github.com/numfocus/gsoc/issues
+  [swc]: https://github.com/swcarpentry/workshop-template/tree/gh-pages/setup
+  [swc-install]: https://github.com/wking/swc-setup-installation-test
+  [Python]: https://www.python.org/
+  [Django]: https://www.djangoproject.com/
+  [AMY]: https://github.com/swcarpentry/amy
+  [Flask]: http://flask.pocoo.org/
+  [SQLite]: https://www.sqlite.org/
+  [python-requests]: http://docs.python-requests.org/en/master/
+  [Git]: http://git-scm.com/
+  [GitHub]: https://github.com/
+  [mailing list]: https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc
