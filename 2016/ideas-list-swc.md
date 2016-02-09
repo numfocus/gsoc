@@ -89,6 +89,8 @@ with them, but you probably can't learn *all* of them during GSOC.
 
 * [@pbanaszkiewicz](https://github.com/pbanaszkiewicz)
   (timezone: UTC+1h [Poland])
+* [@rgaiasc](https://github.com/rgaiacs)
+  (timezone: UTC+0h [UK])
 
 ### Interested in making this project? Here's what you should do
 
@@ -205,6 +207,8 @@ with them, but you probably can't learn *all* of them during GSOC.
 
 * [@pbanaszkiewicz](https://github.com/pbanaszkiewicz)
   (timezone: UTC+1h [Poland])
+* [@rgaiasc](https://github.com/rgaiacs)
+  (timezone: UTC+0h [UK])
 
 ### Interested in making this project? Here's what you should do
 
