@@ -99,9 +99,7 @@ You'll need:
 Please make sure your account doesn't store any real information as you'll have
 to share the tokens publicly.
 
-Finally, please contact with us and let us know the link to your repository.
-
-
+Finally, please contact us and let us know the link to your repository.
 
 ### Mentoring process
 
