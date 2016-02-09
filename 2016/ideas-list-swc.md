@@ -1,5 +1,12 @@
 # Software Carpentry
 
+## Table of contents
+
+1. [A survey responses visualizer application](#a-survey-responses-visualizer-application)
+2. [Write a result-aggregation server for the installation-test scripts](#write-a-result-aggregation-server-for-the-installation-test-scripts)
+
+---------
+
 ## A survey responses visualizer application
 
 **Please ask questions as issues [here][gsoc-issues].**
