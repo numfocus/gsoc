@@ -1,16 +1,42 @@
 # Organization Profile
 
-Visit
-http://en.flossmanuals.net/melange/org-application-period/
-for information about the fields.
+## Public Profile
 
--   Organization ID
+-   Website URL
 
-    numfocus
+    http://numfocus.org/
 
--   Organization name
+-   Tagline
 
-    NumFOCUS
+    NumFOCUS promotes open source scientific software.
+
+-   Logo
+
+    http://www.numfocus.org/uploads/6/0/6/9/60696727/3761816.png
+
+-   Primary Open Source License
+
+    MIT
+
+-   Organization Category
+
+    Science and Medicine
+
+-   Technology Tags
+
+    python, javacript, julia, r
+
+-   Topic Tags
+
+    scientific computing, numerical computation, graphics, data science
+
+-   Ideas List
+
+    https://github.com/numfocus/gsoc/blob/master/2015/ideas-list.md
+
+## Descriptions
+
+-   Short Description
 
 -   Description
 
@@ -20,29 +46,27 @@ for information about the fields.
     to bear. NumFOCUS provides a critical service as an umbrella organization
     for this projects.
 
--   Tags
+## Proposals
 
-    scientific software,numerical computation
+-   Application Instructions
 
--   Main license
+    [CONTRIBUTING-students.md]
 
-    MIT license
+-   Proposal Tags
 
--   Ideas list
+## Contact Methods
 
-    https://github.com/numfocus/gsoc/blob/master/2015/ideas-list.md
+-   IRC Channel
 
 -   Mailing list
 
     https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc
 
--   Organization website
+-   General Email
 
-    http://numfocus.org/
+    info@numfocus.org
 
--   IRC Channel
-
--   Feed URL
+## Links
 
 -   Google+ URL
 
@@ -52,8 +76,6 @@ for information about the fields.
 
     https://twitter.com/numfocus
 
--   Blog page
+-   Blog URL
 
--   Facebook URL
-
--   Veteran organization
+    http://www.numfocus.org/blog
