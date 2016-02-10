@@ -45,3 +45,66 @@ This project requires knowledge of basic linear programming, experience with C, 
 [NumFocus GSOC list](https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc)
 
 [JuliaOpt list](https://groups.google.com/forum/#!forum/julia-opt)
+
+
+## Solve complex SDPs with the [Convex.jl](https://github.com/JuliaOpt/Convex.jl/i) modeling language
+
+### Abstract
+
+**Convex.jl** is a [Julia](http://julialang.org) package for [Disciplined Convex Programming](http://dcp.stanford.edu/). Convex.jl makes it easy to describe optimization problems in a natural, mathematical syntax, and to solve those problems using a variety of different (commercial and open-source) solvers, through the [MathProgBase](http://mathprogbasejl.readthedocs.org/en/latest/) interface.
+This project would add support for solving complex semidefinite programs (SDP) to Convex.jl.
+
+### Motivation
+
+Convex.jl is widely used in industry and research to solve structured 
+convex optimization problems, including LP, SOCP, and SDP with real variables and data.
+This project extends the problem types that can be solved using Convex.jl.
+
+Many problems in applied mathematics, engineering, and physics are most
+naturally posed as convex optimization problems over complex valued
+variables and with complex valued data. These include
+
+a) Phase retrieval from sparse measurements.
+b) Optimization problems in AC power systems
+c) Frequency domain analysis in signal processing and control theory
+
+While optimization over complex numbers can always be encoded as
+optimization over real variables through transformations, this often
+results in significant overhead (both in user effort and computation
+time) in many applications. Support for complex convex
+optimization in Convex.jl would boost the usage of Julia
+as a language of choice for users working on these and other
+applications.
+
+### Technical details
+
+This project would add support for complex variables and data to Convex.jl.
+This work entails writing functions to transform complex SDPs into equivalent
+real valued SDPs, and to transform the solutions back from real to complex
+variables. 
+
+Students with further background and motivation could continue to improve
+the SDP solver itself. In particular, the transformations used by Convex.jl
+to write a problem as an SDP often introduce many extra variables and constraints
+than are necessary, and may result in poor conditioning. A presolve routine,
+eliminating redundant variables and constraints and improving conditioning before
+passing the problem to a solver, would be a welcome addition to the Convex.jl library.
+While many tricks for presolving LPs are well known, there is significant room for 
+imagination in writing a presolve for SDP; the project might well lead to a publication
+were the GSOC student so inclined.
+
+This project requires knowledge of basic linear algebra, convex optimization, 
+and Julia programming.
+
+### Mentors
+
+* [@madeleineudell](https://github.com/madeleineudell)
+* [@mlubin](https://github.com/mlubin)
+* [@dvij](https://github.com/dvij)
+
+### Contact
+
+[NumFocus GSOC list](https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc)
+
+[JuliaOpt list](https://groups.google.com/forum/#!forum/julia-opt)
+
