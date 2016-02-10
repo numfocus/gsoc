@@ -26,6 +26,20 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="300px" src="https://avatars1.githubusercontent.com/u/6241857?v=3&s=200"/>
+    </td>
+    <td>
+       <h1>biocore</h1>
+       <p>biocore is a collection of collaboratively developed bioinformatics packages, including <a href="http://www.qiime.org">QIIME</a>, <a href="http://qiita.microbio.me">Qiita</a>, and <a href="http://scikit-bio.org">scikit-bio</a>, with development happening primarily in the <a href="http://caporasolab.us">Caporaso Lab</a> and <a href="https://knightlab.ucsd.edu/">Knight Lab</a>.
+         </p>
+       <p>
+         <a href="https://github.com/biocore">GitHub</a> | <a href="https://gitter.im/biocore?utm_source=share-link&utm_medium=link&utm_campaign=share-link">Chat</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-biocore.md">Project Ideas</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="300px" src="https://raw.githubusercontent.com/libdynd/libdynd/master/docs/logo/dynd_logo_300px.png"/>
     </td>
     <td>
