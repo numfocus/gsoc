@@ -72,7 +72,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="https://camo.githubusercontent.com/e1ae5c7f6fe275a50134d5889a68f0acdd09ada8/687474703a2f2f6a756c69616c616e672e6f72672f696d616765732f6c6f676f5f68697265732e706e67"/>
+      <img width="300px" src="http://www.juliaopt.org/images/juliaopt.svg"/>
     </td>
     <td>
        <h1>JuliaOpt</h1>
