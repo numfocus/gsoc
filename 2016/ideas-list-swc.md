@@ -1,11 +1,11 @@
-# Software Carpentry
+# Software Carpentry's Idea Page
+
+To be clear, your own ideas are most welcome!
 
 ## Table of contents
 
 1. [A survey responses visualizer application](#a-survey-responses-visualizer-application)
 2. [Write a result-aggregation server for the installation-test scripts](#write-a-result-aggregation-server-for-the-installation-test-scripts)
-
----------
 
 ## A survey responses visualizer application
 

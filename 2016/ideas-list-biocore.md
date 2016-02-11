@@ -1,4 +1,4 @@
-# biocore
+# biocore's Idea Page
 
 ## A general purpose next-generation sequence pre-processor for QIIME 2
 
