@@ -72,13 +72,17 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="http://software-carpentry.org/img/software-carpentry-banner.png" />
+      <img width="300px" src="https://camo.githubusercontent.com/e1ae5c7f6fe275a50134d5889a68f0acdd09ada8/687474703a2f2f6a756c69616c616e672e6f72672f696d616765732f6c6f676f5f68697265732e706e67"/>
     </td>
     <td>
-       <h1>Software Carpentry</h1>
-       <p>Teaching technical skills for scientific computing</p>
+       <h1>JuliaOpt</h1>
+       <p>JuliaOpt is an organization that brings together packages written in
+       Julia that are related to optimization. All JuliaOpt packages should be
+       high-quality, documented, tested, support the main operating systems, and
+       interact with each other.
+       </p>
        <p>
-         <a href="http://software-carpenpy.org">Website</a> | <a href="https://github.com/numfocus/gsoc/issues">Project Discussions</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-swc.md">Ideas Page</a>
+         <a href="http://juliaopt.org">Website</a> | <a href="https://groups.google.com/forum/?fromgroups=#!forum/julia-opt">Mailing List</a> | <a href="http://webchat.freenode.net/?channels=julia">Chat</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-juliaopt.md">Ideas Page</a>
        </p>
     </td>
   </tr>
@@ -98,7 +102,21 @@ In alphabetic order.
     </td>
   </tr>
 
-  <!-- Uncomment after contact Julia
+  <tr>
+    <td>
+      <img width="300px" src="http://software-carpentry.org/img/software-carpentry-banner.png" />
+    </td>
+    <td>
+       <h1>Software Carpentry</h1>
+       <p>Teaching technical skills for scientific computing</p>
+       <p>
+         <a href="http://software-carpenpy.org">Website</a> | <a href="https://github.com/numfocus/gsoc/issues">Project Discussions</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-swc.md">Ideas Page</a>
+       </p>
+    </td>
+  </tr>
+
+
+  <!-- Uncomment after contact Spyder
   <tr>
     <td>
       <img width="300px"
@@ -114,7 +132,7 @@ In alphabetic order.
   </tr>
   -->
 
-  <!-- Uncomment after contact Julia
+  <!-- Uncomment after contact Sumpy
   <tr>
     <td>
       <img width="300px" src="http://www.sympy.org/static/images/logo.png">

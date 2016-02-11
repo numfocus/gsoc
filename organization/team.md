@@ -11,10 +11,18 @@ organizing Google Summer of Code for NumFOCUS.
 
 | Name            | Melange Profile | GitHub Profile | Project/Organization |
 |-----------------|-----------------|----------------|----------------------|
-| Raniere Silva   | r.gaia.cs       | rgaiacs        | Software Carpentry   |
 | Irwin Zaid      | izaid           | izaid          | DyND                 |
+| Lynn Brubaker   |                 |                | NumFOCUS             |
+| Miles Lubin     |                 | mlubin         | JuliaOpt             |
+| Raniere Silva   | r.gaia.cs       | rgaiacs        | Software Carpentry   |
 
 ### Mentors
+
+#### biocore
+
+| Name               | Melange Profile | GitHub Profile |
+|--------------------|-----------------|----------------|
+| Greg Caporaso      |                 | gregcaporaso   |
 
 #### DyND
 
@@ -24,13 +32,30 @@ organizing Google Summer of Code for NumFOCUS.
 | Irwin Zaid         | izaid           | izaid          |
 | Mark Wiebe         | mwiebe          | mwiebe         |
 
+#### JuliaOpt
+
+| Name               | Melange Profile | GitHub Profile |
+|--------------------|-----------------|----------------|
+|                    |                 | dvij           |
+| Joey Huchettell    |                 | joehuchette    |
+| Madeleine Udell    |                 | madeleineudell |
+| Miles Lubin        |                 | mlubin         |
+
 #### matplotlib
+
+| Name               | Melange Profile | GitHub Profile |
+|--------------------|-----------------|----------------|
+| Eric Firing        |                 |                |
+| Michael Droettboom |                 |                |
+| Phil Elson         |                 |                |
+| Thomas Caswell     |                 |                |
 
 #### Software Carpentry
 
-| Name            | Melange Profile | GitHub Profile |
-|-----------------|-----------------|----------------|
-| Raniere Silva   | r.gaia.cs       | rgaiacs        |
+| Name                | Melange Profile | GitHub Profile |
+|---------------------|-----------------|----------------|
+| Piotr Banaszkiewicz |                 | pbanaszkiewicz |
+| Raniere Silva       | r.gaia.cs       | rgaiacs        |
 
 ## 2015
 
