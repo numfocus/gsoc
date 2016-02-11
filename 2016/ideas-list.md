@@ -1,5 +1,6 @@
 # Ideas Pages
 
+- biocore: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-biocore.md
 - DyND: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-dynd.md
 - JuliaOpt: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaopt.md
 - matplotlib: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-matplotlib.md
