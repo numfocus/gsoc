@@ -76,9 +76,6 @@ authentication.  Prospect students should get to know this method (see below).
 
 ## Open Source Development Experience
 
-This will be a single application,
-but you'll be designing and writing it from scratch.
-
 Skills required to complete the project (you can apply without some of them):
 
 * Knowledge of [Python][] and basics of [Django][].
@@ -180,9 +177,6 @@ We like [SQLite][] database system, but it may be inefficient when ~40--80
 people (a worst-case scenario estimate) try to send their results at once.
 
 ## Open Source Development Experience
-
-This will be a single server application, but you'll be
-designing and writing it from scratch.
 
 Skills required to complete the project (you can apply without some of them):
 
