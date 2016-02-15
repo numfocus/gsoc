@@ -1,7 +1,8 @@
 # JuliaOpt
 
-## Develop a Julia interface to the [SCIP](http://scip.zib.de/) solver
+To be clear, your own ideas are most welcome!
 
+## Develop a Julia interface to the [SCIP](http://scip.zib.de/) solver
 
 ### Abstract
 
@@ -16,9 +17,13 @@ and in particular from the modeling interfaces
 [JuMP](https://github.com/JuliaOpt/JuMP.jl)
 and [Convex.jl](https://github.com/JuliaOpt/Convex.jl).
 
+| **Intensity** | Moderate |
+| **Involves** | Julia, C, SCIP, Linear and Integer Programming, Combinatorial Optimization |
+| **Mentors** | [@mlubin][], [@joehuchette][], [@rgaiacs][] |
+
 ### Motivation
 
-Julia already has wrappers for many optimization solvers (listed [here](http://www.juliaopt.org/)). Compared with the open-source mixed-integer programming solvers currently supported (GLPK, Cbc), SCIP is faster and still provides access to its source code for research purposes (although unfortunately not under an open-source license). Compared with the commerical solvers, SCIP has a much lower barrier to entry in terms of licensing costs. Google itself has chosen to use SCIP internally and supports it through its [or-tools](https://github.com/google/or-tools) package.
+Julia already has wrappers for many optimization solvers (listed [here](http://www.juliaopt.org/)). Compared with the open-source mixed-integer programming solvers currently supported (GLPK, Cbc), SCIP is faster and still provides access to its source code for research purposes (although unfortunately not under an open-source license). Compared with the commercial solvers, SCIP has a much lower barrier to entry in terms of licensing costs. Google itself has chosen to use SCIP internally and supports it through its [or-tools](https://github.com/google/or-tools) package.
 
 Providing first-class access to SCIP from Julia will enable new applications of 
 integer programming, made easier by Julia and JuMP's high-level syntax and abstractions
@@ -33,18 +38,15 @@ SCIP which may serve as a useful starting point. Since then,
 the ``Ref{}`` syntax in Julia 0.4 may make some of the wrapping
 easier than before.
 
+## Open Source Development Experience
+
 This project requires knowledge of basic linear programming, experience with C, and ideally experience with JuMP or another algebraic modeling language.
-
-### Mentors
-
-* [@mlubin](https://github.com/mlubin)
-* [@joehuchette](https://github.com/joehuchette/)
 
 ### Contact
 
-[NumFocus GSOC list](https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc)
-
 [JuliaOpt list](https://groups.google.com/forum/#!forum/julia-opt)
+
+[NumFocus GSOC list](https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc)
 
 
 ## Solve complex SDPs with the [Convex.jl](https://github.com/JuliaOpt/Convex.jl/i) modeling language
@@ -53,6 +55,10 @@ This project requires knowledge of basic linear programming, experience with C, 
 
 **Convex.jl** is a [Julia](http://julialang.org) package for [Disciplined Convex Programming](http://dcp.stanford.edu/). Convex.jl makes it easy to describe optimization problems in a natural, mathematical syntax, and to solve those problems using a variety of different (commercial and open-source) solvers, through the [MathProgBase](http://mathprogbasejl.readthedocs.org/en/latest/) interface.
 This project would add support for solving complex semidefinite programs (SDP) to Convex.jl.
+
+| **Intensity** | Moderate |
+| **Involves** | Julia, Convex Programming |
+| **Mentors** | [@madeleineudell][], [@mlubin][], [@dvij][] |
 
 ### Motivation
 
@@ -91,20 +97,21 @@ eliminating redundant variables and constraints and improving conditioning befor
 passing the problem to a solver, would be a welcome addition to the Convex.jl library.
 While many tricks for presolving LPs are well known, there is significant room for 
 imagination in writing a presolve for SDP; the project might well lead to a publication
-were the GSOC student so inclined.
+were the GSoC student so inclined.
+
+## Open Source Development Experience
 
 This project requires knowledge of basic linear algebra, convex optimization, 
 and Julia programming.
 
-### Mentors
-
-* [@madeleineudell](https://github.com/madeleineudell)
-* [@mlubin](https://github.com/mlubin)
-* [@dvij](https://github.com/dvij)
-
 ### Contact
-
-[NumFocus GSOC list](https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc)
 
 [JuliaOpt list](https://groups.google.com/forum/#!forum/julia-opt)
 
+[NumFocus GSOC list](https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc)
+
+[@dvij]: https://github.com/dvij
+[@joehuchette]: https://github.com/joehuchette
+[@madeleineudell]: https://github.com/madeleineudell
+[@mlubin]: https://github.com/mlubin
+[@rgaiacs]: https://github.com/rgaiacs
