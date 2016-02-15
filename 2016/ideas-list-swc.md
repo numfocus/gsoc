@@ -196,7 +196,7 @@ writing from scratch, and you'll also make changes to existing scripts too.
 ### First steps
 
 Have a look at [Software Carpentry][swc]'s [installation-test scripts][swc-install]
-and make suggestions of how to improve it.
+and make suggestions of how to improve them.
 
 As a bonus, you can implement
 a demo consisting of a client and web server,
