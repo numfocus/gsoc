@@ -4,24 +4,9 @@
 
 Very short description of the project.
 
-<table>
-
-<tr>
-    <td>Intensity</td>
-    <td>Trivial | Easy | Moderate | Hard</td>
-</tr>
-
-<tr>
-    <td>Involves</td>
-    <td></td>
-</tr>
-
-<tr>
-    <td>Mentors</td>
-    <td>[@foo], [@bar]</td>
-</tr>
-
-</table>
+| **Intensity** | Trivial - Easy - Moderate - Hard |
+| **Involves** | |
+| **Mentors** | [@foo][], [@bar][] |
 
 ## Technical Details
 
