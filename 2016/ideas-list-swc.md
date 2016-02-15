@@ -31,24 +31,9 @@ The key features are:
 * if time allows, integration with [AMY][]   (workshop management tool for
   [Software Carpentry][]).
 
-<table>
-
-<tr>
-    <td>Intensity</td>
-    <td>Moderate</td>
-</tr>
-
-<tr>
-    <td>Involves</td>
-    <td>Python, Django, REST API, HTML, CSS</td>
-</tr>
-
-<tr>
-    <td>Mentors</td>
-    <td>[@pbanaszkiewicz], [@rgaiacs]</td>
-</tr>
-
-</table>
+| **Intensity** | Moderate |
+| **Involves** | Python, Django, REST API, HTML, CSS |
+| **Mentors** | [@pbanaszkiewicz][], [@rgaiacs][] |
 
 ### Background
 
@@ -77,12 +62,12 @@ task, but thanks to their API we can do this automatically in our application.
 ### Technical details
 
 Due to the fact that [AMY][] is a [Django][] application, it is suggested
-to have experience with [Django][] and [Python][]
-since create the project as [Django application](https://docs.djangoproject.com/en/1.9/ref/applications/#projects-and-applications)
-will allow faster integration with AMY and easy maintenance of the code.
+to have experience with both [Django][] and [Python][]
+since creating the project as [Django application](https://docs.djangoproject.com/en/1.9/ref/applications/#projects-and-applications)
+will allow faster integration with AMY and easier maintenance in the future.
 
 Project's interface will probably use one of many JavaScript plotting
-libraries, e.g. [D3js](http://d3js.org/) or [plotly.js](https://plot.ly/javascript/),
+libraries, e.g. [Metrics-Graphics](http://metricsgraphicsjs.org/) or [plotly.js](https://plot.ly/javascript/),
 so it is required to research them and select one most promising.
 
 Finally, SurveyMonkey API uses
@@ -104,13 +89,15 @@ Skills required to complete the project (you can apply without some of them):
 Any of these skills could be learned during the project and we will help you
 with them, but you probably can't learn *all* of them during GSoC.
 
+This project will be a single application,
+but you'll be designing and writing it from scratch.
+
 ### First steps
 
 If you want to show interest in making this project,
-we expect you to have at lest a Django application somewhere on the internet.
-If the Django application grabs responses from your
-SurveyMonkey survey and present them on the web
-you will get a bonus.
+we would like to see your sample Django project.
+As a bonus, you can implement grabbing responses from your SurveyMonkey survey
+and presenting them.
 
 ### Mentoring process
 
@@ -148,24 +135,9 @@ platform people use, which software dependency worked and which didn't).
 Enhance the testing scripts by adding an option for users to collect results
 and send them to the server.
 
-<table>
-
-<tr>
-    <td>Intensity</td>
-    <td>Hard</td>
-</tr>
-
-<tr>
-    <td>Involves</td>
-    <td>Python, REST API, Testing, Statistics</td>
-</tr>
-
-<tr>
-    <td>Mentors</td>
-    <td>[@pbanaszkiewicz], [@rgaiacs]</td>
-</tr>
-
-</table>
+| **Intensity** | Hard |
+| **Involves** | Python, REST API, Testing, Statistics |
+| **Mentors** | [@pbanaszkiewicz][], [@rgaiacs][] |
 
 ### Background
 
@@ -224,15 +196,18 @@ Skills required to complete the project (you can apply without some of them):
 Any of these skills could be learned during the project and we will help you
 with them, but you probably can't learn *all* of them during GSOC.
 
+This project will consist of single server application you'll be designing and
+writing from scratch, and you'll also make changes to existing scripts too.
+
 ### First steps
 
 Have a look at [Software Carpentry][swc]'s [installation-test scripts][swc-install]
 and make suggestions of how to improve it.
 
-A demo that consist of client and web server
-where the client sends the platform used to the server,
-and server stores it in the database
-will give you a bonus.
+As a bonus, you can implement
+a demo consisting of a client and web server,
+where the client sends platform (e.g. operating system)
+details to the server, and servers stores that in the database.
 
 ### Mentoring process
 
@@ -262,16 +237,18 @@ Other: please use our [mailing list][].
 Thanks to @xuf12 for the initial idea behind this project and for @wking for
 providing this idea for GSOC'15.
 
-[Software Carpentry]: https://software-carpentry.org/
-[gsoc-issues]: https://github.com/numfocus/gsoc/issues
-[swc]: https://github.com/swcarpentry/workshop-template/tree/gh-pages/setup
-[swc-install]: https://github.com/wking/swc-setup-installation-test
-[Python]: https://www.python.org/
-[Django]: https://www.djangoproject.com/
+[@pbanaszkiewicz]: https://github.com/pbanaszkiewicz/
+[@rgaiacs]: https://github.com/rgaiacs/
 [AMY]: https://github.com/swcarpentry/amy
+[Django]: https://www.djangoproject.com/
 [Flask]: http://flask.pocoo.org/
-[SQLite]: https://www.sqlite.org/
-[python-requests]: http://docs.python-requests.org/en/master/
 [Git]: http://git-scm.com/
 [GitHub]: https://github.com/
+[gsoc-issues]: https://github.com/numfocus/gsoc/issues
 [mailing list]: https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc
+[python-requests]: http://docs.python-requests.org/en/master/
+[Python]: https://www.python.org/
+[Software Carpentry]: https://software-carpentry.org/
+[SQLite]: https://www.sqlite.org/
+[swc-install]: https://github.com/wking/swc-setup-installation-test
+[swc]: https://github.com/swcarpentry/workshop-template/tree/gh-pages/setup
