@@ -22,24 +22,39 @@
 
 -   How will you keep mentors engaged with their students?
 
-    
+    We will contact mentors and students every two weeks to check if they are
+    having any problem and if we could help solving the issue.
+
+    As a umbrella organization we will not enforce any police between mentors
+    and students because every community has its onw rules and we respect those.
 
 -   How will you help your students stay on schedule to complete their projects?
 
-    Request that students have at least one pull request accepted
-    is one way to students interact with the community.
+    Request that students be as much as possible open about their progress.
+    This will involve that at least during the program the students blog their progress
+    to the community every two weeks.
+    We will also suggest that the students keep the issues/tickets on the
+    bugtrack system used for the project updated.
 
-    During the program, the blog posts will advertise students progress
-    to the community and they can always ask questions to the community.
+    For the cases of students behind the schedule we will request a video
+    conference and discuss ways to back to the schedule.
 
 -   How will you get your students involved in your community during GSoC?
 
+    We will ask mentors to introduce the students to the community
+    and the suggestions to get involved, e.g. local groups, virtual meetings, ...
+
+    We will request that students blog every two weeks about their progress
+    so that the community knows of the project and provide feedback if they want.
+    Students' blog should be included on the community blog aggregator.
+
 -   How will you keep students involved in your community after GSoC?
 
-    We will encourage all accepted students to join
-    Software Carpentry Foundation instructors team.
-    That way students can transmit the knowledge gain during
-    Google Summer of Code to their colleges.
+    Every community have their own way to keep the students involved in the
+    community after GSoC and we will respect their way of work.
+    As a umbrella organization we will do our best to provide a enjoyable summer
+    experience for all the students and if possible help they find ways to get
+    some revenue that facilitates their involvement with the community.
 
 -   Has your org been accepted as a mentoring org in Google Summer of Code before?
 
