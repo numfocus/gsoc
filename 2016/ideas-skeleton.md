@@ -4,9 +4,11 @@
 
 Very short description of the project.
 
+| ------------- | -------------------------------- |
 | **Intensity** | Trivial - Easy - Moderate - Hard |
-| **Involves** | |
-| **Mentors** | [@foo][], [@bar][] |
+| **Involves**  |                                  |
+| **Mentors**   | [@foo][], [@bar][]               |
+| ------------- | -------------------------------- |
 
 ## Technical Details
 
