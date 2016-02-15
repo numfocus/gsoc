@@ -17,25 +17,9 @@ and in particular from the modeling interfaces
 [JuMP](https://github.com/JuliaOpt/JuMP.jl)
 and [Convex.jl](https://github.com/JuliaOpt/Convex.jl).
 
-<table>
-
-<tr>
-    <td>Intensity</td>
-    <td>Moderate</td>
-</tr>
-
-<tr>
-    <td>Involves</td>
-    <td>Julia, C, SCIP, Linear and Integer Programming, Combinatorial Optimization</td>
-</tr>
-
-<tr>
-    <td>Mentors</td>
-    <td>[@mlubin], [@joehuchette], [@rgaiacs]</td>
-</tr>
-
-</table>
-
+| **Intensity** | Moderate |
+| **Involves** | Julia, C, SCIP, Linear and Integer Programming, Combinatorial Optimization |
+| **Mentors** | [@mlubin][], [@joehuchette][], [@rgaiacs][] |
 
 ### Motivation
 
@@ -72,24 +56,9 @@ This project requires knowledge of basic linear programming, experience with C, 
 **Convex.jl** is a [Julia](http://julialang.org) package for [Disciplined Convex Programming](http://dcp.stanford.edu/). Convex.jl makes it easy to describe optimization problems in a natural, mathematical syntax, and to solve those problems using a variety of different (commercial and open-source) solvers, through the [MathProgBase](http://mathprogbasejl.readthedocs.org/en/latest/) interface.
 This project would add support for solving complex semidefinite programs (SDP) to Convex.jl.
 
-<table>
-
-<tr>
-    <td>Intensity</td>
-    <td>Moderate</td>
-</tr>
-
-<tr>
-    <td>Involves</td>
-    <td>Julia, Convex Programming</td>
-</tr>
-
-<tr>
-    <td>Mentors</td>
-    <td>[@madeleineudell], [@mlubin], [@dvij]</td>
-</tr>
-
-</table>
+| **Intensity** | Moderate |
+| **Involves** | Julia, Convex Programming |
+| **Mentors** | [@madeleineudell][], [@mlubin][], [@dvij][] |
 
 ### Motivation
 
@@ -140,3 +109,9 @@ and Julia programming.
 [JuliaOpt list](https://groups.google.com/forum/#!forum/julia-opt)
 
 [NumFocus GSOC list](https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc)
+
+[@dvij]: https://github.com/dvij
+[@joehuchette]: https://github.com/joehuchette
+[@madeleineudell]: https://github.com/madeleineudell
+[@mlubin]: https://github.com/mlubin
+[@rgaiacs]: https://github.com/rgaiacs
