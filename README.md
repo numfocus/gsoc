@@ -167,7 +167,7 @@ a sub-org must:
 
 | Project | Status | Ideas Pages |
 | ------- | ------ | ----------- |
-| [AstroPy] | Under [OpenAstronomy](http://openastronomy.org/) |http://openastronomy.org/gsoc/gsoc2016/ideas.html |
+| [AstroPy] | Under [OpenAstronomy](http://openastronomy.org/) | http://openastronomy.org/gsoc/gsoc2016/ideas.html |
 | [Data Carpentry](DataCarpentry) | Not going to participate | N/A |
 | [IPython] | Unknow | |
 | [Julia] | Applying as separate organization | |
@@ -199,7 +199,7 @@ a sub-org must:
 | [Spyder] | Unknown | |
 | [Statmodels] | Applying as separate organization | https://github.com/statsmodels/statsmodels/wiki/Google-Summer-of-Code-2016 |
 | [Theano] | Unknown |
-| [yt] | Unknown |
+| [yt] | Under [OpenAstronomy](http://openastronomy.org/) | http://openastronomy.org/gsoc/gsoc2016/ideas.html |
 
 ## Other Projects GSoC Status
 
