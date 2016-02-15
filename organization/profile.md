@@ -6,10 +6,10 @@
 
     Since NumFOCUS promotes and supports
     the ongoing research and development of open-source computing tools,
-    e.g. AstroPy, IPython, Julia, rOpenSci, SymPy, ...,
+    e.g. AstroPy, Jupyter, IPython, Julia, rOpenSci, SymPy, ...,
     through educational, community, and public channels
     we thought that applying to participate in
-    Google Summer of Code 2015 as a umbrella organization
+    Google Summer of Code 2016 as a umbrella organization
     will be another way do our job.
 
     By participating we hope to offer to a great chance
@@ -21,6 +21,8 @@
     10.
 
 -   How will you keep mentors engaged with their students?
+
+    
 
 -   How will you help your students stay on schedule to complete their projects?
 

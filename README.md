@@ -190,9 +190,9 @@ a sub-org must:
 | [DyND] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-dynd.md |
 | [Gensim] | Unknown |
 | [Numba] | Unknown |
-| [Orange] | Unknown | |
+| [Orange] | Applying as separate organization | https://github.com/biolab/orange3/wiki/GSoC-2016#project-ideas |
 | [PythonXY] | Unknown | |
-| [scikit-bio] | Unknown | |
+| [scikit-bio] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-biocore.md |
 | [scikit-image] | Unknown | |
 | [scikit-learn] | Unknown | |
 | [SciPy] | Applying under PSF umbrella | https://wiki.python.org/moin/SummerOfCode/2016 |
