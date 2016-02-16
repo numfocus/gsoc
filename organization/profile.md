@@ -4,17 +4,18 @@
 
 -   Why does your org want to participate in Google Summer of Code?
 
-    Since NumFOCUS promotes and supports
-    the ongoing research and development of open-source computing tools,
-    e.g. AstroPy, Jupyter, IPython, Julia, rOpenSci, SymPy, ...,
-    through educational, community, and public channels
-    we thought that applying to participate in
-    Google Summer of Code 2016 as a umbrella organization
-    will be another way do our job.
+    NumFOCUS promotes and supports research and development of open-source
+    computing tools. It is the fiscal sponsor for cutting-edge,
+    high-profile
+    data science and numeric computing tools such as numpy, pandas,
+    Jupyter, Julia, and rOpenSci.
 
-    By participating we hope to offer to a great chance
-    for novice users of open-source computating tools to
-    become involved with the community.
+    NumFOCUS would like to participate in Google Summer of Code 2016 as an
+    umbrella organization for these tools in continuance of its mission.
+    By participating, we hope to provide our community with another
+    opportunity
+    to help develop critical pieces of the open-source data science and
+    numeric computing ecosystem.
 
 -   How many potential mentors have agreed to mentor this year?
 
@@ -22,39 +23,76 @@
 
 -   How will you keep mentors engaged with their students?
 
-    We will contact mentors and students every two weeks to check if they are
-    having any problems and if we could help with solving them.
+    We plan to engage our project leaders and students on a regular basis to
+    ensure that measurable, achievable goals are set for their Summer of
+    Code projects, that progress is being made toward their completion,
+    and that there is clear communication of expectations and adequate
+    knowledge-sharing between mentors and students.
 
-    As an umbrella organization we will not enforce any policy between mentors
-    and students because every community has its own rules and we respect those.
+    Our individual projects have different organizing strategies, and we
+    intend to respect these, relying on our board of directors and project
+    management staff to also guarantee that Summer of Code participants
+    will have a positive and rewarding experience and ensure that their
+    participation in these projects will have clear, tangible results.
 
 -   How will you help your students stay on schedule to complete their projects?
 
-    Request that students be as open as possible about their progress.
-    This will involve that at least during the program the students blog their progress
-    to the community every two weeks.
-    We will also suggest that the students keep the issues/tickets on the
-    bugtrack system used for the project updated.
+    The NumFOCUS board of directors and individual project leaders have a
+    wealth of experience as mentors and in managing volunteer
+    contributions
+    to their work from students.
 
-    For cases where students are behind schedule we will request a video
-    conference and discuss ways to get back on schedule.
+    We believe that measurable, achievable goals and clear, transparent
+    expectations are necessary in order to ensure that both students and
+    the
+    projects have a positive experience with the Summer of Code program.
+    To
+    facilitate this, we intend to meet with project leaders and students
+    on
+    a regular basis to allow them to report any issues they have
+    encountered. Of course, for day-to-day progress on issues, we intend
+    to
+    use industry-standard tools (such as GitHub and Bugtraq.)
+
+    Furthermore, we offer students some unique opportunities to share
+    their
+    work and their progress with the broader open source scientific and
+    numeric computing community. We believe that these will also serve as
+    incentives to keep their projects on track with tangible, presentable
+    results. We intend to offer students the opportunity to present their
+    medium-term and long-term progress to the entire NumFOCUS community
+    via
+    blog posts hosted and distributed on NumFOCUS.org, via sections in our
+    regular newsletter, and via speaking opportunities at a PyData
+    conference (http://pydata.org) and at one of our many, global PyData
+    chapter meetups.
 
 -   How will you get your students involved in your community during GSoC?
 
-    We will ask mentors to introduce the students to the community
-    and offer suggestions to get involved, e.g. local groups, virtual meetings, ...
+    The NumFOCUS and PyData community is passionate, engaged, and growing.
+    We have eleven world-wide conferences planned for 2016 and chapters
+    (meetups) popping up in every major city. We will offer students the
+    opportunity to present their work at both PyData conferences and at
+    PyData chapter meetups and facilitate connections to allow them to
+    present their work at other, non-affiliated open source numeric,
+    scientific computing, and data science events (e.g., SciPy, Strata,
+    Dato
+    Machine Learning Summit, etc.)
 
-    We will request that students blog every two weeks about their progress
-    so that the community knows of the project and provides feedback if they want.
-    The students' blog should be included on the community blog aggregator.
+    Furthermore, we intend to ask students to present their progress to
+    our
+    community on a regular basis. We will promote these progress reports
+    via
+    the NumFOCUS newsletter, Twitter feed, and our public blog.
 
 -   How will you keep students involved in your community after GSoC?
 
-    Every community has their own way of keeping the students involved in the
-    community after GSoC and we will respect their way of work.
-    As a umbrella organization we will do our best to provide an enjoyable summer
-    experience for all the students and if possible help them find ways to get
-    some revenue that facilitates their involvement with the community.
+    We intend to invite GSoC participants to present their work at future
+    PyData conferences and chapter meetups. Additionally, individual
+    projects under NumFOCUS have their own respective communities, and
+    have
+    historically had great experiences involving and engaging volunteer
+    contributors.
 
 -   Has your org been accepted as a mentoring org in Google Summer of Code before?
 
@@ -66,13 +104,16 @@
 
 -   What is your success/fail rate per year?
 
-    All the students that participated in 2015 succeeded in their projects.
+    All of the students that participated in GSoC 2015 succeeded in their
+    project.
 
 -   Are you part of a foundation/umbrella organization?
 
     No.
 
 -   What year was your project started?
+
+    NumFOCUS started on 2012.
 
 -   Anything else we should know?
 
@@ -126,7 +167,7 @@
 
 -   Application Instructions
 
-    [CONTRIBUTING-students.md]
+    [CONTRIBUTING-students.md](../CONTRIBUTING-students.md)
 
 -   Proposal Tags
 
