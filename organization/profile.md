@@ -63,21 +63,19 @@
     medium-term and long-term progress to the entire NumFOCUS community
     via
     blog posts hosted and distributed on NumFOCUS.org, via sections in our
-    regular newsletter, and via speaking opportunities at a PyData
-    conference (http://pydata.org) and at one of our many, global PyData
-    chapter meetups.
+    regular newsletter, and via speaking opportunities at conferences that we
+    support as such as PyData, PyCon, SciPy, JuliaCon.
 
 -   How will you get your students involved in your community during GSoC?
 
-    The NumFOCUS and PyData community is passionate, engaged, and growing.
-    We have eleven world-wide conferences planned for 2016 and chapters
-    (meetups) popping up in every major city. We will offer students the
-    opportunity to present their work at both PyData conferences and at
-    PyData chapter meetups and facilitate connections to allow them to
-    present their work at other, non-affiliated open source numeric,
-    scientific computing, and data science events (e.g., SciPy, Strata,
-    Dato
-    Machine Learning Summit, etc.)
+    The NumFOCUS community is passionate, engaged, and growing.
+    We have many conferences and chapters (meetups) planned for 2016
+    around the world.
+    We will offer students the
+    opportunity to present their work at one of those conferences
+    or chapter meetups
+    and facilitate connections to allow them to
+    present their work at other non-affiliated events.
 
     Furthermore, we intend to ask students to present their progress to
     our
@@ -88,7 +86,7 @@
 -   How will you keep students involved in your community after GSoC?
 
     We intend to invite GSoC participants to present their work at future
-    PyData conferences and chapter meetups. Additionally, individual
+    conferences and chapter meetups that we support. Additionally, individual
     projects under NumFOCUS have their own respective communities, and
     have
     historically had great experiences involving and engaging volunteer
@@ -113,7 +111,7 @@
 
 -   What year was your project started?
 
-    NumFOCUS started on 2012.
+    2012
 
 -   Anything else we should know?
 
