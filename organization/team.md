@@ -26,11 +26,11 @@ organizing Google Summer of Code for NumFOCUS.
 
 #### DyND
 
-| Name               | Melange Profile | GitHub Profile |
-|--------------------|-----------------|----------------|
-| Ian Henriksen      |                 |                |
-| Irwin Zaid         | izaid           | izaid          |
-| Mark Wiebe         | mwiebe          | mwiebe         |
+| Name               | Melange Profile | GitHub Profile            |
+|--------------------|-----------------|---------------------------|
+| Ian Henriksen      |                 | insertinterestingnamehere |
+| Irwin Zaid         | izaid           | izaid                     |
+| Mark Wiebe         | mwiebe          | mwiebe                    |
 
 #### JuliaOpt
 

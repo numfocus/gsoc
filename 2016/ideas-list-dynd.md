@@ -18,6 +18,10 @@
 
 Complete DyND's string type implementation and develop the supporting string library. Explore how string processing and NumPy-style array programming interact.
 
+| **Intensity** | **Involves**  | **Mentors**        |
+| ------------- | --------------|------------------- |
+| Moderate | | Irwin Zaid, Mark Wiebe, Ian Henriksen |
+
 ### Technical Details
 
 DyND's string type and supporting library are incomplete. A project could involve completing the implementation of the basic string type, fleshing out the supporting string function API, connecting DyND strings to the Numba JIT, and exploring how string API choices interact with the array programming ideas and typical data ingest and analysis workflows.
@@ -43,6 +47,10 @@ C\++ development experience, particularly with C\++11 or C\++14, is necessary. F
 ### Abstract
 
 Implement binary serialization for DyND array data, and corresponding data hashing that's useful for building Merkle DAG-based systems.
+
+| **Intensity** | **Involves**  | **Mentors**        |
+| ------------- | --------------|------------------- |
+| Moderate | | Irwin Zaid, Mark Wiebe, Ian Henriksen |
 
 ### Technical Details
 
@@ -74,6 +82,10 @@ A project tackling this functionality could begin with implementing the serializ
 
 Implement an associative array type for DyND as a hash map.
 
+| **Intensity** | **Involves**  | **Mentors**        |
+| ------------- | --------------|------------------- |
+| Hard     | | Irwin Zaid, Mark Wiebe, Ian Henriksen |
+
 ### Technical Details
 
 This idea overlaps slightly with [Serialization and Data Hashing](#serialization), but focuses on the implementation of a hash map type instead of the hashing its built on. The idea would be for the type to be named like `map[S, T]`, and be a hash table with keys of type `S` and values of type `T`.
@@ -101,6 +113,10 @@ C\++ development experience, particularly with C\++11 or C\++14, is necessary. A
 ### Abstract
 
 Improve DyND's support for missing data via its `option[T]` type, targetting DyND's ability to be used by projects like [pandas](http://pandas.pydata.org/).
+
+| **Intensity** | **Involves**  | **Mentors**        |
+| ------------- | --------------|------------------- |
+| Hard     | | Irwin Zaid, Mark Wiebe, Ian Henriksen |
 
 ### Technical Details
 
@@ -133,6 +149,10 @@ C\++ development experience, particularly with C\++11 or C\++14, is necessary. E
 ### Abstract
 
 Integrate robust conversions of float point values to/from strings.
+
+| **Intensity** | **Involves**  | **Mentors**        |
+| ------------- | --------------|------------------- |
+| Hard     | | Irwin Zaid, Mark Wiebe, Ian Henriksen |
 
 ### Technical Details
 
