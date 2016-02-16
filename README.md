@@ -48,7 +48,7 @@ In alphabetic order.
          It is inspired by NumPy, aiming to provide a platform for the evolution of dynamic array programming ideas.
          </p>
        <p>
-         <a href="https://github.com/libdynd/libdynd">Website</a> | <a href="https://groups.google.com/forum/#!forum/libdynd-dev">Mailing List</a>
+         <a href="http://libdynd.org/gsoc">Website</a>  | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-dynd.md">Ideas Page</a> | <a href="https://groups.google.com/forum/#!forum/libdynd-dev">Mailing List</a>
        </p>
     </td>
   </tr>
