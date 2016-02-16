@@ -181,6 +181,41 @@ Some of this work has already been begun in
 This work should be 100% in Python.  Understanding of duck-typing and
 operator overloading in Python is a must.
 
+## GUI improvements
+
+### Abstract
+
+Many of matplotlib's GUI backends have existed for 10 years at this
+point.  For this reason, they don't always handle modern technologies
+very well.  This task would involve some combination of the following:
+
+1. Improve support for HiDPI (Retina) displays
+
+1. Add touch support (e.g. two-finger zooming etc.) through the web
+   browser for mobile devices (e.g. iPad), and natively
+   (e.g. Microsoft Surface).
+
+1. Add support for scrollable figures (i.e. where the GUI window and
+   the figure size are not the same)
+
+| **Intensity** | **Involves**  | **Mentors** |
+| ------------- | --------------|------------ |
+| Intermediate | Python, Javascript, GUI frameworks | [@mdboom][] |
+
+### Technical Details
+
+One of the challenges of this task is that matplotlib supports so many
+GUI frameworks, including Tk, Gtk, Qt, Wx and Cocoa.  This task will
+need to keep features in parity across these frameworks wherever
+possible.
+
+### Open Source Development Experience
+
+This work should be mostly in Python with some Javascript and
+understanding of browser technologies.  Understanding of multiple GUI
+frameworks a must.  Access to multiple operating systems (as many as
+possible of Linux, Mac, Windows, iOS, and Android), is very helpful.
+
 # Contact
 
 [matplotlib-devel list](https://mail.python.org/mailman/listinfo/matplotlib-devel)
