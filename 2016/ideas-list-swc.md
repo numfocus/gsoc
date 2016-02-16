@@ -6,6 +6,7 @@ To be clear, your own ideas are most welcome!
 
 1. [A survey responses visualizer application](#a-survey-responses-visualizer-application)
 2. [Write a result-aggregation server for the installation-test scripts](#write-a-result-aggregation-server-for-the-installation-test-scripts)
+3. [Manage workflow for instructor training](#manage-workflow-for-instructor-training)
 
 ---------
 
@@ -98,7 +99,7 @@ and presenting them.
 
 ### Mentoring process
 
-You'll meet with mentor every week on Skype/Hangouts. He'll review all your
+You'll meet with your mentor(s) every week on Skype/Hangouts. They'll review all your
 changes, and suggest project design.
 
 Weekly or biweekly you'll have to provide a blog post with updates on your
@@ -205,7 +206,7 @@ details to the server, and servers stores that in the database.
 
 ### Mentoring process
 
-You'll meet with mentor every week on Skype/Hangouts. He'll review all your
+You'll meet with your mentor(s) every week on Skype/Hangouts. They'll review all your
 changes, and suggest project design.
 
 Weekly or biweekly you'll have to provide a blog post with updates on your
@@ -231,14 +232,100 @@ Other: please use our [mailing list][].
 Thanks to @xuf12 for the initial idea behind this project and for @wking for
 providing this idea for GSOC'15.
 
+---------
+
+## Manage workflow for instructor training
+
+**Please ask questions as issues [here][gsoc-issues].**
+
+### Abstract
+
+Extend [AMY][] to manage the process of training people to be instructors.
+
+| **Intensity** | **Involves**  | **Mentors** |
+| ------------- | --------------|------------ |
+| Moderate | Workflow Design, Interface Design, Python, Django, Testing | [@pbanaszkiewicz][] |
+
+### Background
+
+[Software Carpentry][swc] has built a Django-based web application called [AMY][]
+to keep track of who's qualified to teach,
+what workshops have run,
+who taught and attended,
+and so on.
+This project will extend it to manage all aspects of instructor training,
+and will replace the current mish-mash of Etherpads and Google Docs spreadsheets
+that we use for this purpose.
+The main requirements are:
+
+* recording applications from individuals and groups who wish to become trainers
+* matching those applications to upcoming instructor training workshops
+* keeping track of which stages of instructor training have been completed by specific individuals
+
+### Technical details
+
+Challenges for this project: analyzing the current workflow
+(which relies on a lot of email, some Etherpads, and a Google Docs spreadsheet)
+to determine what we're actually doing;
+translating that workflow into new pages in [AMY][]
+that can be used by administrators, trainers, and mentors;
+making that workflow's implementation flexible so that it can easily be reconfigured as our process evolves;
+testing both the usability and functionality of the new interface.
+
+The software stack for this project is [Python][], [Django][], and [JQuery][].
+
+## Open Source Development Experience
+
+Skills required to complete the project (you can apply without all of them):
+
+* Knowledge of [Python][].
+* Knowledge of [Django][] or a similar three-tier web application framework.
+* Knowledge of [JQuery][] or a similar front-end Javascript UI toolkit.
+* Familiarity with [GitHub][] workflows.
+
+Any of these skills could be learned during the project and we will help you
+with them, but you probably can't learn *all* of them during GSOC.
+
+### First steps
+
+1. Have a look at [AMY][]'s existing code.
+2. Get it running on your own machine.
+3. Submit a [pull request][amy-pr] with a small fix or addition...
+4. ...*or* file a bug report if you find something that doesn't work.
+
+### Mentoring process
+
+You'll meet with your mentor(s) every week on Skype/Hangouts. They'll
+review all your changes and make project design suggestions.
+
+Weekly or biweekly you'll have to provide a blog post with updates on your
+project.
+
+### Additional perks
+
+If you're interested in what [Software Carpentry][] does, we may be able to
+offer you a place at online
+[instructor training](http://software-carpentry.org/join/), if there is one
+taking place during Google Summer of Code 2016.
+
+### Contact
+
+Questions: please create an issue [here][gsoc-issues].
+
+Project proposal: please create a pull request to this repository.
+
+Other: please use our [mailing list][].
+
 [@pbanaszkiewicz]: https://github.com/pbanaszkiewicz/
 [@rgaiacs]: https://github.com/rgaiacs/
 [AMY]: https://github.com/swcarpentry/amy
+[amy-pr]: https://github.com/swcarpentry/amy/pulls
 [Django]: https://www.djangoproject.com/
 [Flask]: http://flask.pocoo.org/
 [Git]: http://git-scm.com/
 [GitHub]: https://github.com/
 [gsoc-issues]: https://github.com/numfocus/gsoc/issues
+[JQuery]: http://jquery.com/
 [mailing list]: https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc
 [python-requests]: http://docs.python-requests.org/en/master/
 [Python]: https://www.python.org/
