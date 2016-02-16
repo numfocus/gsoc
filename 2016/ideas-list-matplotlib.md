@@ -7,8 +7,17 @@ Any questions or comments should be asked on
 
 ## Table of contents
 
+* [Layout manager](#layout)
+* [Documentation improvements](#documentation)
+* [International text handling](#text)
+* [Categorical axes](#categorical)
+* [New Mac OSX backent](#macosx)
+* [Compound artists](#compound)
+* [GUI Improvements](#gui)
+
 ---------
 
+<a name="layout"></a>
 ## Layout manager
 
 ### Abstract
@@ -40,6 +49,7 @@ This project involves experience with Python and and understanding of
 linear constraint solvers.  Computer graphics concepts, particularly
 text layout, would also be an asset.
 
+<a name="documentation"></a>
 ## Documentation improvements
 
 ### Abstract
@@ -74,6 +84,7 @@ matplotlib and Python and have good technical writing skills.  A deep
 understanding of Sphinx, including writing extensions, would also be a
 major asset.
 
+<a name="text"></a>
 ## International text handling
 
 ### Abstract
@@ -107,6 +118,7 @@ Python/C API if the existing wrappers are found to be insufficient.
 Deep understanding of or willingness to learn font technologies, the
 Unicode Standard and text layout algorithms is required.
 
+<a name="categorical"></a>
 ## Categorical axes
 
 ### Abstract
@@ -129,7 +141,8 @@ to more automatically deal with certain types of data.
 
 This work will be done in Python.  Pandas experience would be very helpful.
 
-## New Mac OX backend
+<a name="macosx"></a>
+## New Mac OSX backend
 
 ### Abstract
 
@@ -153,6 +166,7 @@ backends.
 This will involve adapting an existing Python extension written in
 Objective-C, and will require access to a Macintosh.
 
+<a name="compound"></a>
 ## Compound Artists
 
 ### Abstract
@@ -181,6 +195,7 @@ Some of this work has already been begun in
 This work should be 100% in Python.  Understanding of duck-typing and
 operator overloading in Python is a must.
 
+<a name="gui"></a>
 ## GUI improvements
 
 ### Abstract
