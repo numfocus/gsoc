@@ -31,9 +31,11 @@ The key features are:
 * if time allows, integration with [AMY][]   (workshop management tool for
   [Software Carpentry][]).
 
-| **Intensity** | Moderate |
-| **Involves** | Python, Django, REST API, HTML, CSS |
-| **Mentors** | [@pbanaszkiewicz][], [@rgaiacs][] |
+| ------------- | -------------------------------- |
+| **Intensity** | Moderate                         |
+| **Involves**  | Python, Django, REST API, HTML, CSS |
+| **Mentors**   | [@pbanaszkiewicz][], [@rgaiacs][] |
+| ------------- | -------------------------------- |
 
 ### Background
 
@@ -132,9 +134,11 @@ platform people use, which software dependency worked and which didn't).
 Enhance the testing scripts by adding an option for users to collect results
 and send them to the server.
 
-| **Intensity** | Hard |
-| **Involves** | Python, REST API, Testing, Statistics |
-| **Mentors** | [@pbanaszkiewicz][], [@rgaiacs][] |
+| ------------- | -------------------------------- |
+| **Intensity** | Hard                             |
+| **Involves**  | Python, REST API, Testing, Statistics |
+| **Mentors**   | [@pbanaszkiewicz][], [@rgaiacs][] |
+| ------------- | -------------------------------- |
 
 ### Background
 
