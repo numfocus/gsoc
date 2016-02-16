@@ -17,11 +17,9 @@ and in particular from the modeling interfaces
 [JuMP](https://github.com/JuliaOpt/JuMP.jl)
 and [Convex.jl](https://github.com/JuliaOpt/Convex.jl).
 
-| ------------- | -------------------------------- |
-| **Intensity** | Moderate                         |
-| **Involves**  | Julia, C, SCIP, Linear and Integer Programming, Combinatorial Optimization |
-| **Mentors**   | [@mlubin][], [@joehuchette][], [@rgaiacs][] |
-| ------------- | -------------------------------- |
+| **Intensity** | **Involves**  | **Mentors** |
+| ------------- | --------------|------------ |
+| Moderate | Julia, C, SCIP, Linear and Integer Programming, Combinatorial Optimization | [@mlubin][], [@joehuchette][], [@rgaiacs][] |
 
 ### Motivation
 
@@ -58,11 +56,9 @@ This project requires knowledge of basic linear programming, experience with C, 
 **Convex.jl** is a [Julia](http://julialang.org) package for [Disciplined Convex Programming](http://dcp.stanford.edu/). Convex.jl makes it easy to describe optimization problems in a natural, mathematical syntax, and to solve those problems using a variety of different (commercial and open-source) solvers, through the [MathProgBase](http://mathprogbasejl.readthedocs.org/en/latest/) interface.
 This project would add support for solving complex semidefinite programs (SDP) to Convex.jl.
 
-| ------------- | -------------------------------- |
-| **Intensity** | Moderate                         |
-| **Involves**  |  Julia, Convex Programming       |
-| **Mentors**   | [@madeleineudell][], [@mlubin][], [@dvij][] |
-| ------------- | -------------------------------- |
+| **Intensity** | **Involves**  | **Mentors** |
+| ------------- | --------------|------------ |
+| Moderate | Julia, Convex Programming | [@madeleineudell][], [@mlubin][], [@dvij][] |
 
 ### Motivation
 

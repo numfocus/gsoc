@@ -6,7 +6,7 @@ Very short description of the project.
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
-| Trivial - Easy - Moderate - Hard | [@foo][], [@bar][] |
+| Trivial - Easy - Moderate - Hard | | [@foo][], [@bar][] |
 
 ## Technical Details
 
