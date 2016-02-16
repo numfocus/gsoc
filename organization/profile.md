@@ -13,8 +13,8 @@
     will be another way do our job.
 
     By participating we hope to offer to a great chance
-    to novice users of open-source computating tools
-    became involved with the community.
+    for novice users of open-source computating tools to
+    become involved with the community.
 
 -   How many potential mentors have agreed to mentor this year?
 
@@ -23,37 +23,37 @@
 -   How will you keep mentors engaged with their students?
 
     We will contact mentors and students every two weeks to check if they are
-    having any problem and if we could help solving the issue.
+    having any problems and if we could help with solving them.
 
-    As a umbrella organization we will not enforce any police between mentors
-    and students because every community has its onw rules and we respect those.
+    As an umbrella organization we will not enforce any policy between mentors
+    and students because every community has its own rules and we respect those.
 
 -   How will you help your students stay on schedule to complete their projects?
 
-    Request that students be as much as possible open about their progress.
+    Request that students be as open as possible about their progress.
     This will involve that at least during the program the students blog their progress
     to the community every two weeks.
     We will also suggest that the students keep the issues/tickets on the
     bugtrack system used for the project updated.
 
-    For the cases of students behind the schedule we will request a video
-    conference and discuss ways to back to the schedule.
+    For cases where students are behind schedule we will request a video
+    conference and discuss ways to get back on schedule.
 
 -   How will you get your students involved in your community during GSoC?
 
     We will ask mentors to introduce the students to the community
-    and the suggestions to get involved, e.g. local groups, virtual meetings, ...
+    and offer suggestions to get involved, e.g. local groups, virtual meetings, ...
 
     We will request that students blog every two weeks about their progress
-    so that the community knows of the project and provide feedback if they want.
-    Students' blog should be included on the community blog aggregator.
+    so that the community knows of the project and provides feedback if they want.
+    The students' blog should be included on the community blog aggregator.
 
 -   How will you keep students involved in your community after GSoC?
 
-    Every community have their own way to keep the students involved in the
+    Every community has their own way of keeping the students involved in the
     community after GSoC and we will respect their way of work.
-    As a umbrella organization we will do our best to provide a enjoyable summer
-    experience for all the students and if possible help they find ways to get
+    As a umbrella organization we will do our best to provide an enjoyable summer
+    experience for all the students and if possible help them find ways to get
     some revenue that facilitates their involvement with the community.
 
 -   Has your org been accepted as a mentoring org in Google Summer of Code before?
@@ -66,7 +66,7 @@
 
 -   What is your success/fail rate per year?
 
-    All the students that participate in 2015 succeed in their projects.
+    All the students that participated in 2015 succeeded in their projects.
 
 -   Are you part of a foundation/umbrella organization?
 
@@ -108,7 +108,7 @@
 
 -   Ideas List
 
-    https://github.com/numfocus/gsoc/blob/master/2015/ideas-list.md
+    https://github.com/numfocus/gsoc/blob/master/2016/ideas-list.md
 
 ## Descriptions
 
