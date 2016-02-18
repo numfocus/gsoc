@@ -244,7 +244,7 @@ Extend [AMY][] to manage the process of training people to be instructors.
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
-| Moderate | Workflow Design, Interface Design, Python, Django, Testing | [@pbanaszkiewicz][] |
+| Moderate | Workflow Design, Interface Design, Python, Django, Testing | [@pbanaszkiewicz][], [@gvwilson][] |
 
 ### Background
 
@@ -253,10 +253,14 @@ to keep track of who's qualified to teach,
 what workshops have run,
 who taught and attended,
 and so on.
-This project will extend it to manage all aspects of instructor training,
-and will replace the current mish-mash of Etherpads and Google Docs spreadsheets
-that we use for this purpose.
-The main requirements are:
+This project will extend it to manage all aspects of our instructor training course,
+an intensive two-day workshop that introduces people to basic ideas in educational psychology and instructional design
+and shows them how to apply those ideas to teaching basic coding skills to researchers.
+For more information on the instructor training program,
+see [the course notes][instructor-training] (under construction).
+
+Instructor training is currently managed using a mish-mash of Etherpads and Google Docs spreadsheets.
+The main requirements for its replacement are:
 
 * recording applications from individuals and groups who wish to become trainers
 * matching those applications to upcoming instructor training workshops
@@ -272,15 +276,15 @@ that can be used by administrators, trainers, and mentors;
 making that workflow's implementation flexible so that it can easily be reconfigured as our process evolves;
 testing both the usability and functionality of the new interface.
 
-The software stack for this project is [Python][], [Django][], and [JQuery][].
+The software stack for this project is [Python][], [Django][], and [Javascript][].
 
-## Open Source Development Experience
+### Open Source Development Experience
 
 Skills required to complete the project (you can apply without all of them):
 
 * Knowledge of [Python][].
 * Knowledge of [Django][] or a similar three-tier web application framework.
-* Knowledge of [JQuery][] or a similar front-end Javascript UI toolkit.
+* Knowledge of [Javascript][] for front-end user interface development.
 * Familiarity with [GitHub][] workflows.
 
 Any of these skills could be learned during the project and we will help you
@@ -316,6 +320,7 @@ Project proposal: please create a pull request to this repository.
 
 Other: please use our [mailing list][].
 
+[@gvwilson]: https://github.com/gvwilson/
 [@pbanaszkiewicz]: https://github.com/pbanaszkiewicz/
 [@rgaiacs]: https://github.com/rgaiacs/
 [AMY]: https://github.com/swcarpentry/amy
@@ -325,7 +330,8 @@ Other: please use our [mailing list][].
 [Git]: http://git-scm.com/
 [GitHub]: https://github.com/
 [gsoc-issues]: https://github.com/numfocus/gsoc/issues
-[JQuery]: http://jquery.com/
+[instructor-training]: https://swcarpentry.github.io/instructor-training/
+[Javascript]: https://en.wikipedia.org/wiki/JavaScript
 [mailing list]: https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc
 [python-requests]: http://docs.python-requests.org/en/master/
 [Python]: https://www.python.org/
