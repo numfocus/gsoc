@@ -19,7 +19,7 @@
 
 -   How many potential mentors have agreed to mentor this year?
 
-    10.
+    11-15
 
 -   How will you keep mentors engaged with their students?
 
@@ -37,34 +37,22 @@
 
 -   How will you help your students stay on schedule to complete their projects?
 
-    The NumFOCUS board of directors and individual project leaders have a
-    wealth of experience as mentors and in managing volunteer
-    contributions
-    to their work from students.
-
     We believe that measurable, achievable goals and clear, transparent
-    expectations are necessary in order to ensure that both students and
-    the
-    projects have a positive experience with the Summer of Code program.
-    To
-    facilitate this, we intend to meet with project leaders and students
-    on
-    a regular basis to allow them to report any issues they have
-    encountered. Of course, for day-to-day progress on issues, we intend
-    to
-    use industry-standard tools (such as GitHub and Bugtraq.)
+    expectations are necessary in order to ensure that both students and the
+    projects have a positive experience with the Summer of Code program. To
+    facilitate this, we intend to meet with project leaders and students on a
+    regular basis to allow them to report any issues they have encountered. Of
+    course, for day-to-day progress on issues, we intend to use tools like
+    GitHub and Bugtrack.
 
-    Furthermore, we offer students some unique opportunities to share
-    their
-    work and their progress with the broader open source scientific and
-    numeric computing community. We believe that these will also serve as
-    incentives to keep their projects on track with tangible, presentable
-    results. We intend to offer students the opportunity to present their
-    medium-term and long-term progress to the entire NumFOCUS community
-    via
-    blog posts hosted and distributed on NumFOCUS.org, via sections in our
-    regular newsletter, and via speaking opportunities at conferences that we
-    support as such as PyData, PyCon, SciPy, JuliaCon.
+    Furthermore, we offer students some unique opportunities to share their work
+    and their progress with the broader open source scientific and numeric
+    computing community. We believe that these will also serve as incentives to
+    keep their projects on track with tangible, presentable results. We intend
+    to offer students the opportunity to present their progress to the entire
+    NumFOCUS community via blog posts hosted and distributed on NumFOCUS.org,
+    via sections in our regular newsletter, and via speaking opportunities at
+    conferences.
 
 -   How will you get your students involved in your community during GSoC?
 
@@ -152,6 +140,9 @@
 ## Descriptions
 
 -   Short Description
+
+    NumFOCUS supports and promotes world-class, innovative, open source
+    scientific software.
 
 -   Description
 
