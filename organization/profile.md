@@ -160,6 +160,15 @@
 
 -   Proposal Tags
 
+    -   biocore
+    -   dynd
+    -   ecodata retriever
+    -   juliaopt
+    -   juliaquatum
+    -   matplotlib
+    -   software carpentry
+
+
 ## Contact Methods
 
 -   IRC Channel
