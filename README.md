@@ -110,7 +110,7 @@ In alphabetic order.
        <h1>Software Carpentry</h1>
        <p>Teaching technical skills for scientific computing</p>
        <p>
-         <a href="http://software-carpenpy.org">Website</a> | <a href="https://github.com/numfocus/gsoc/issues">Project Discussions</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-swc.md">Ideas Page</a>
+         <a href="http://software-carpentry.org/">Website</a> | <a href="https://github.com/numfocus/gsoc/issues">Project Discussions</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-swc.md">Ideas Page</a>
        </p>
     </td>
   </tr>
