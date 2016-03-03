@@ -82,7 +82,7 @@ In alphabetic order.
        interact with each other.
        </p>
        <p>
-         <a href="http://juliaopt.org">Website</a> | <a href="https://groups.google.com/forum/?fromgroups=#!forum/julia-opt">Mailing List</a> | <a href="http://webchat.freenode.net/?channels=julia">Chat</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-juliaopt.md">Ideas Page</a>
+         <a href="http://juliaopt.org">Website</a> | <a href="https://groups.google.com/forum/?fromgroups=#!forum/julia-opt">Mailing List</a> | <a href="http://webchat.freenode.net/?channels=julia">Chat</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaopt.md">Ideas Page</a>
        </p>
     </td>
   </tr>
@@ -221,7 +221,7 @@ could receive their applications.**
 [Dipy]: http://dipy.org/
 [DyND]: http://libdynd.org/
 [Gensim]: https://radimrehurek.com/gensim/
-[GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2016
+[GSoC]: https://summerofcode.withgoogle.com/
 [IL]: 2016/ideas-list.md
 [IPython]: http://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
