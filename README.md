@@ -70,6 +70,19 @@ In alphabetic order.
     </td>
   </tr>
 
+  <tr>
+    <td>
+      <img width="300px" src=""/>
+    </td>
+    <td>
+       <h1>Gensim</h1>
+       <p>
+       </p>
+       <p>
+         <a href="https://radimrehurek.com/gensim/">Website</a>  | <a href="https://github.com/piskvorky/gensim/wiki/Student-Projects">Ideas Page</a>
+       </p>
+    </td>
+  </tr>
 
   <!-- Uncomment after contact Julia
   <tr>
