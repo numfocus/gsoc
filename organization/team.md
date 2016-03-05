@@ -50,6 +50,12 @@ organizing Google Summer of Code for NumFOCUS.
 | Phil Elson         |                 |                |
 | Thomas Caswell     |                 |                |
 
+#### Pandas
+
+| Name                | Melange Profile | GitHub Profile |
+|---------------------|-----------------|----------------|
+| Jeff Reback         |                 |                |
+
 #### Software Carpentry
 
 | Name                | Melange Profile | GitHub Profile |

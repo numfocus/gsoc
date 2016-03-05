@@ -120,6 +120,23 @@ In alphabetic order.
     </td>
   </tr>
 
+
+  <tr>
+    <td>
+      <img width="300px" src="" />
+    </td>
+    <td>
+       <h1>Pandas</h1>
+       <p>Flexible and powerful data analysis / manipulation library for Python,
+       providing labeled data structures similar to R data.frame objects,
+       statistical functions, and much more</p>
+       <p>
+         <a href="http://pandas.pydata.org/">Website</a> | <a href="https://github.com/pydata/pandas/wiki/Google-Summer-of-Code">Ideas Page</a>
+       </p>
+    </td>
+  </tr>
+
+
   <tr>
     <td>
       <img width="300px" src="http://software-carpentry.org/img/software-carpentry-banner.png" />
