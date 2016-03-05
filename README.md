@@ -53,6 +53,19 @@ In alphabetic order.
     </td>
   </tr>
 
+  <tr>
+    <td>
+      <img width="300px" src=""/>
+    </td>
+    <td>
+       <h1>EcoData Retriever</h1>
+       <p>
+         <a href="https://github.com/weecology/retriever">Website</a>  | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-ecodata-retriever.md">Ideas Page</a>
+       </p>
+    </td>
+  </tr>
+
+
   <!-- Uncomment after contact Julia
   <tr>
     <td>
