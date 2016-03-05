@@ -1,5 +1,7 @@
 # Result aggregation server for installation-scripts
 
+## Abstract
+
 Software is indispensable for any modern scientists irrespective of their field
 of work. However, many scientists lack or have limited exposure to tools and
 practices that would allow them to write more reliable and maintainable code
@@ -11,8 +13,6 @@ scientific disciplines by teaching necessary computing skills.
 
 Software Carpentry works in this direction by organizing workshops, lessons or
 simply through discussions. 
-
-## Abstract
 
 An important part of the workshop is to ensure that participants have installed
 all the necessary software. Software Carpentry has [installation-test]() scripts
@@ -103,7 +103,6 @@ The following steps are involved in the process:
 
 ### User interface
 
-* Authorization though a simple login system (Optional)
 * An easily navigable HTML report of diagnostic data 
 
 * Add simple in-browser visualizations
@@ -111,6 +110,14 @@ The following steps are involved in the process:
   > Bokeh or rendered on the client using d3 (or equivalent) library. I prefer the
   > latter approach.
 
+### Testing
+
+The client-side needs to work reliably across different systems, mainly Linux,
+Windows and OSX machines.
+
+By default, I will develop and test the scripts on my Linux system. For Windows
+and OSX, however, I will have to take help of mentors/community members or my
+college friends.
 
 ### Updating installation scripts
 
