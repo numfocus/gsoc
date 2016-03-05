@@ -236,6 +236,9 @@ will us answer a few of those questions and reduce the gap between disciplines.
 
 ## Appendix
 
+Relevant interaction with mentor and community can be found at
+[swc-setup-instllation-test](https://github.com/wking/swc-setup-installation-test/issues/12).
+
 ### Sample code
 
 A demo consisting of a client and web server, where the client sends platform
