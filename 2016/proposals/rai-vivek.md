@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Software is indispensable for any modern scientists irrespective of their field
+Software is indispensable for any modern scientist irrespective of their field
 of work. However, many scientists lack or have limited exposure to tools and
 practices that would allow them to write more reliable and maintainable code
 with less effort.
@@ -15,16 +15,17 @@ Software Carpentry works in this direction by organizing workshops, lessons or
 simply through discussions. 
 
 An important part of the workshop is to ensure that participants have installed
-all the necessary software. Software Carpentry has [installation-test]() scripts
-that enables one to check if they’ve successfully installed any software
-required by their workshop. As an improvement to the these scripts, the proposal
-lays out following objectives:
+all the necessary software. Software Carpentry has
+[installation-test](https://github.com/wking/swc-setup-installation-test)
+scripts that enables one to check if they have successfully installed the
+software required by their workshop. As an improvement to the these scripts, the
+proposal lays out following objectives:
 
-* implement a server to store the results of installation-testing scripts (i.e.
-platform people use, which software dependency worked and which didn't, error
+* Implement a server to store the results of installation-testing scripts (i.e.
+platform people use, which software dependency worked and which did not, error
 logs)
-* enhance the installation-test scripts by adding an option for users to collect results and send
-them to the server
+* Enhance the installation-test scripts by adding an option for users to collect
+ results and send them to a server.
 
 ## Technical Details
 
@@ -39,11 +40,11 @@ The technical details of the project can be organized into following:
 ### Collectable information
 
 In this section, we discuss the parameters that can be collected by the SwC’s
-installation-scripts to help us analyze and improve installation setup for future
-workshops.
+installation-test scripts to help us analyze and improve installation setup for
+future workshops.
 
-The goal is to collect - anonymized, non-identifiable machine information and
-status report of the installation-script.
+The goal is to collect anonymized, non-identifiable machine information and
+status report of the installation-test scripts.
 
 #### Machine information
 
@@ -91,8 +92,6 @@ The following steps are involved in the process:
 * Server verifies the data, open database connection, updates the record.
   > As suggested in the ideas sections, SQLite will be a low-barrier, easier to
   > maintain database, appropriate for our needs.
-  > TODO: Investigate the worst case scenario of using SQLite.
-  > TODO: Database schema
 
 * Send a status response back to the client. The response can contain feedback,
   suggestions or perhaps link to some survey.
@@ -103,9 +102,9 @@ The following steps are involved in the process:
 
 ### User interface
 
-* An easily navigable HTML report of diagnostic data 
+* An easily navigable HTML report of diagnostic data. 
 
-* Add simple in-browser visualizations
+* Add simple in-browser visualizations.
   > These visualizations can be served via backend using Python library like
   > Bokeh or rendered on the client using d3 (or equivalent) library. I prefer the
   > latter approach.
@@ -117,11 +116,15 @@ Windows and OSX machines.
 
 By default, I will develop and test the scripts on my Linux system. For Windows
 and OSX, however, I will have to take help of mentors/community members or my
-college friends.
+friends.
 
 ### Updating installation scripts
 
-> TODO
+Modify the installation-test scripts to generate a diagnostic report containing
+machine information and status report as described before. The script should:
+
+* catch abrupt halts (SIGINT, for example) and report it to the server.
+* should create a local copy of report log if submission fails.
 
 ## Schedule of Deliverables
 
@@ -141,15 +144,15 @@ Set up repository. Automated coverage and integration test building using
 [coveralls](https://coveralls.io) and [tavis-ci](https://travis-ci.org/). Will
 follow a test-driven development style.
 
-Also, finalize the collectable information, design database schema, freeze
-component options.
+Also, finalize the collectable information, decide database and investigate its
+worse case behavior, design schema, freeze component options.
 
 ### June 8th - June 21th
 
 Setup server. Implement report collection, and database store, update and
 retrieval operations.
 
-Basic UI.
+Basic user-interface.
 
 Write a secondary demo script that posts to server.
 
@@ -162,7 +165,7 @@ Update installation-test scripts. Test rigorously.
 ### July 6th - July 19th
 
 Add API endpoints to obtain report data in JSON format (whether other formats
-required, to be decided later)
+required, to be decided later).
 
 ### July 20th - August 2rd
 
@@ -177,10 +180,10 @@ Allow downloading data (using the endpoint developed week before).
 Implement a few client-side visualization. Or alternatively, write scripts to
 analyse the data, helping us answer a few questions like:
 
-* Which dependency is most likely to be missing?
-* Which step is most problematic for users?
-* Which systems are used most commonly in a workshop? Whether the
-  lessons/tutorials appropriately cover those cases?
+* *Which dependency is most likely to be missing?*
+* *Which step is most problematic for users?*
+* *Which systems are used most commonly in a workshop?*
+* *Whether the lessons/tutorials appropriately cover those cases?*
 
 ### August 17th - August 21th 19:00 UTC
 
@@ -200,12 +203,12 @@ The report generated through this tool might as well be linked to (anonymous)
 survey responses. It might help us answer some really interesting questions
 like:
 
-* Do Windows (or any platform) users found it more difficult to manage through
-  the workshop than the others?
+* *Do some platform users find it more difficult to manage through the workshop
+  than the others?*
 
 ## Open Source Development Experience
 
-Collaborator in many open-source projects. A few that I’m personally fond of:
+Collaborator in many open-source projects. A few that I am personally fond of:
 
 * [Sequenceserver](https://github.com/wurmlab/sequenceserver):  > 115+ commits,
     bioinformatics software, developed in Ruby, Frontend and backend design
@@ -217,11 +220,12 @@ statistical analysis, visualization, used Python and JavaScript. See it in [acti
     interface.
 
 Please see all my contributions at [GitHub](https://github.com/vivekiitkgp).
+I also blog occasionally at [shorts](https://vivekiitkgp.github.io).
 
 ## Academic Experience
 
 I am a Biology enthusiast with a wide spectrum of interests in computing. I am
-inclined towards developing or improve software tools in the field of of
+inclined towards developing or improving software tools in the field of
 computational biology.
 
 ## Why this project?
@@ -244,7 +248,8 @@ will us answer a few of those questions and reduce the gap between disciplines.
 ## Appendix
 
 Relevant interaction with mentor and community can be found at
-[swc-setup-instllation-test](https://github.com/wking/swc-setup-installation-test/issues/12).
+[swc-setup-instllation-test](https://github.com/wking/swc-setup-installation-test/issues/12)
+and [numfocus/gsoc](https://github.com/numfocus/gsoc/issues/79).
 
 ### Sample code
 
