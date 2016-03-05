@@ -55,12 +55,17 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src=""/>
+      <img width="300px" src="img/ecodata-retriever.png"/>
     </td>
     <td>
        <h1>EcoData Retriever</h1>
        <p>
-         <a href="https://github.com/weecology/retriever">Website</a>  | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-ecodata-retriever.md">Ideas Page</a>
+       The EcoData Retriever automates the tasks of finding, downloading, and
+       cleaning up ecological data files, and then stores them in a local
+       database.
+       </p>
+       <p>
+         <a href="http://www.ecodataretriever.org/">Website</a>  | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-ecodata-retriever.md">Ideas Page</a>
        </p>
     </td>
   </tr>
