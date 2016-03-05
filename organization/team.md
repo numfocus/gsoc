@@ -54,7 +54,8 @@ organizing Google Summer of Code for NumFOCUS.
 
 | Name                | Melange Profile | GitHub Profile |
 |---------------------|-----------------|----------------|
-| Jeff Reback         |                 |                |
+| Jeff Reback         |                 | jreback        |
+| Stephan Hoyer       |                 | shoyer         |
 
 #### Software Carpentry
 
