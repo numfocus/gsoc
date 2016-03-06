@@ -14,11 +14,11 @@
 
 **You need to accomplish this to mid-term.**
 
-### June 22th - July 5th
+### June 22nd - July 5th
 
 ### July 6th - July 19th
 
-### July 20th - August 2rd
+### July 20th - August 2nd
 
 ### August 3rd - August 16th
 
