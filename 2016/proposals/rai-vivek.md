@@ -31,11 +31,15 @@ logs)
 
 The technical details of the project can be organized into following:
 
-* Collectable information - machine information, report
-* Backend - design of RESTful API, framework, database, schema
-* Frontend - import data, HTML reports, visualizations
-* Upgrading installation-test scripts
-* Documentation and integration tests
+* Collectable information   : machine information, report
+* Backend                   : design of REST API, framework, database, schema
+* Frontend                  : import data, HTML reports, visualizations
+* installation-test scripts : update the scripts to collect info and send request
+* Documentation             : use travis-ci automated build system, follow pep8
+* Testing                   : use travis-ci, coveralls for coverage
+
+An additional objective of this section is to keep the design sweet and simple
+(KISS).
 
 ### Collectable information
 
@@ -50,14 +54,14 @@ status report of the installation-test scripts.
 
 * Platform (or System)
 * Architecture (or Machine)
-* Node, Processor
+* Node (Hostname), Processor
 * OS (or Distribution), Release version, Name
 
 Most of this information can be collected using the `platform` Python module.
 A snippet of useful commands is shown below.
 
 ```
-import platform 
+import platform
 platform.uname() # cross platform
 platform.win32_ver() # windows
 platform.mac_ver() # mac
@@ -73,12 +77,17 @@ platform.linux_distribution() # linux
 * Timestamp
 * (Optional) User email
 
+
+The current installation-test script implementation already collects the list of
+*successful* and *failed* checks along with version information and error
+message as available.
+
 ### Server
 
 The server will collect the diagnostic report submitted by installation-scripts
 when they are run on the user machine.
 
-A simple design of the server is shown below:
+A simple design of the setup is discussed below:
 
 #### API
 
@@ -100,13 +109,87 @@ The following steps are involved in the process:
   > It’ll allow us to separate the user interface from backend creating a modular
   > setup.
 
+#### Database
+
+Based on the current nature of collectable information, write-volume and
+functionality required SQLite seems to be a fit choice. In this regard, the
+database schema is an important component that determines how we are going to
+store the collected data in the database.
+
+The following illustrates a typical schema that might be used:
+
+```
+TABLE machine_info {
+  id PRIMARY KEY AUTO,
+  system VARCHAR,
+  hostname VARCHAR,
+  release VARCHAR,
+  version VARCHAR,
+  machine VARCHAR,
+  processor VARCHAR,
+  email VARCHAR,
+  time VARCHAR,
+  exit_status INT
+}
+
+
+TABLE software_version {
+  id PRIMARY KEY AUTO,
+  software VARCHAR,
+  installed BOOL,
+  version VARCHAR,
+  log VARCHAR
+}
+```
+
+Since we are obtaining the platform information using Python `platform` module
+which is same across all platforms, the same database schema can accommodate all
+systems.
+
+A typical example of the database entry then may look like:
+
+```
+(TABLE machine_info)
+
+id | system  | hostname    | release             | version                                               | machine  | processor | email       | time                      | exit_status
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1  | ‘Linux’ | ‘ghostbook’ | ‘3.19.0-47-generic’ | ‘#53~14.04.1-Ubuntu SMP Mon Jan 18 16:09:14 UTC 2016’ | ‘x86_64’ | ‘x86_64’  | foo@bar.com | ‘Tue Mar 8 00:52:35 2016’ | 0
+
+(TABLE software_version)
+
+id | software | installed | version | log
+-----------------------------------------
+1  | python   | True      | 3.5.1   | ‘’
+1  | git      | True      | 1.9.1   | ‘’
+1  | hg       | False     | ‘’      | ‘’
+1  | pip      | True      | 7.9     | ‘A newer version of pip is available.’
+```
+
+Complex queries can be performed by `JOINING` the two tables and querying for
+corresponding field of interest.
+
+#### Concerns
+Both tables share the unique identity given to a particular report.  There is
+a possibility that same user may submit a report twice possibly because there
+were some errors or something else causing duplication.
+
+There might be a couple of ways to tackle this:
+
+1. One way to avoid it would be to generate a unique `machine-id` and use
+   that as a primary identifier key. This key will act as foreign key for key
+   for other table and maintain consistency.
+2. Just execute a SELECT statement on table `machine-info` and see if that
+   information is already record. If yes, then update the records in
+   `software_version` table. Essentially, all the attributes of `machine-info`
+   table may constitute a `UNIQUE_KEY` constraint.
+
 ### User interface
 
-* An easily navigable HTML report of diagnostic data. 
+* An easily navigable HTML report of diagnostic data.
 
 * Add simple in-browser visualizations.
   > These visualizations can be served via backend using Python library like
-  > Bokeh or rendered on the client using d3 (or equivalent) library. I prefer the
+  > Bokeh or rendered on the client using D3 (or equivalent) library. I prefer the
   > latter approach.
 
 ### Testing
@@ -123,7 +206,7 @@ friends.
 Modify the installation-test scripts to generate a diagnostic report containing
 machine information and status report as described before. The script should:
 
-* catch abrupt halts (SIGINT, for example) and report it to the server.
+* catch abrupt halts (`SIGINT`, for example) and report it to the server.
 * should create a local copy of report log if submission fails.
 
 ## Schedule of Deliverables
@@ -264,6 +347,8 @@ database.
 Vivek Rai
 
 vivekraiiitkgp@gmail.com
+
+Indian Standard Time (+5.30 UTC)
 
 vivekrai@freenode (IRC)
 
