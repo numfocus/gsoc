@@ -72,11 +72,16 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src=""/>
+      <img width="300px" src="http://radimrehurek.com/gensim/_static/images/logo-gensim.png"/>
     </td>
     <td>
        <h1>Gensim</h1>
        <p>
+       Topic Modelling for Humans". Gensim is an open-source Python library for
+       topic modelling, document indexing and similarity retrieval with large
+       corpora. Target audience is the natural language processing (NLP) and
+       information retrieval (IR) community. Memory-independent and distributed
+       algorithms.
        </p>
        <p>
          <a href="https://radimrehurek.com/gensim/">Website</a>  | <a href="https://github.com/piskvorky/gensim/wiki/Student-Projects">Ideas Page</a>
