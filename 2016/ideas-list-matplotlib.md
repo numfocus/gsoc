@@ -137,9 +137,28 @@ important one is detecting when plotting categorical data
 More broadly, this task will involve designed new user-friendly APIs
 to more automatically deal with certain types of data.
 
+This work may include:
+
+- implementing categorical axis in top of the mpl units framework (this may or
+  may not be possible / make sense)
+- implement improved / combined API for bar plots
+    - this API should cover all of the styles currently exposed by hist
+- implement proper 2D heat map API
+    - based on imshow or pcolormesh?
+    - move hinton demo into main API?
+- ensuring that the interactive features are categorical aware
+- sort out how / if multiple categorical artists should interact with
+  each other. This may interact with the Compound Artists project.
+- implement API for categorical color mapping
+- possible interactions with
+    - altair
+    - seaborn
+    - pandas
+
 ### Open Source Development Experience
 
-This work will be done in Python.  Pandas experience would be very helpful.
+This work will be done in Python.  Pandas experience would be very helpful.  Domain
+expertise working with categorical data helpful but not required.
 
 <a name="macosx"></a>
 ## New Mac OSX backend
