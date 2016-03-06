@@ -37,6 +37,7 @@ organizing Google Summer of Code for NumFOCUS.
 | Name                 | Melange Profile | GitHub Profile            |
 |----------------------|-----------------|---------------------------|
 | Lev Konstantinovskiy |                 | tmylk                     |
+| Radim Rehurek        |                 | piskvorky                 |
 
 #### JuliaOpt
 
