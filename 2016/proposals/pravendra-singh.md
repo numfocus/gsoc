@@ -1,13 +1,13 @@
 # A survey responses visualizer application
 
+## Abstract
+
 Software Carpentry has been educating multidisciplinary researchers with the necessary computing skills to help them in their venture. It enables the same via workshops for different fields, community discussion between volunteers, and curated readings etc.
 
 The number of people attending the workshops itself is sufficient enough to help us imagine the impact Software Carpentry Foundation has been making since its foundation.
 
 ![number-of-learners](http://software-carpentry.org/files/graphs/learners-2015-10.png)
 [credits: software-carpentry.org]
-
-## Abstract
 
 Software Carpentry maintains a set of tools that help them manage their workshop events. For example, the project [AMY](https://github.com/numfocus/amy) is a workshop management tool for the organization.
 
@@ -21,7 +21,7 @@ It has an additional benefit here, as we (Software Carpentry) believe in opennes
 
 ## Technical Details
 
-The application will be powered by Django, as we also want it to work with AMY. It will use Plotly.js for visualizing different response types.
+The application will be powered by Django, as we also want it to work with AMY. It will use Plotly.js for visualizing different response types, which is a open source [project](https://plot.ly/javascript/open-source-announcement/).
 
 Going by the "*Object-oriented analysis and design*" approach for system design, we can categorize the application in the following sections.
 
