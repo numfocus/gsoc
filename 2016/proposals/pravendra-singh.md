@@ -15,7 +15,7 @@ There are *pre* and *post* workshop surveys also. They support in the proper eve
 
 The following proposal talks down an application which can "*Represent the survey responses in a comprehensible manner, assisting the workshop organizers (hosts) to plan the event according to the feedback from attendees*".
 
-The application will be a relieve from the current cumbersome method we use for data aggregation.
+The application will be a relieve from the current method we use for data aggregation, which is difficult because of the hurdles imposed by SurveyMonkey's user interface. It needs to filter through multiple options to reach to the responses for a particular survey.
 
 It has an additional benefit here, as we (Software Carpentry) believe in openness, the resultant application can be open sourced for the great good of others who want to utilize the SurveyMonkey survey responses in an interactive fashion.
 
@@ -25,7 +25,7 @@ The application will be powered by Django, as we also want it to work with AMY. 
 
 Going by the "*Object-oriented analysis and design*" approach for system design, we can categorize the application in the following sections.
 
-###### 1. Visual representation of the survey questions
+1. Visual representation of the survey questions
 
 Both the type of surveys have multiple questions of varying classes. Ideally, a good visualizer should respect the inherent attributes of the dataset. That's why the application will employ suitable visualization for different types of questions.
 
@@ -39,7 +39,7 @@ According to this [explanation](https://github.com/numfocus/gsoc/issues/77#issue
 | Matrix type  | Heatmap Matrix chart  | How would you rate your motivation to learn about these topics? |
 | Text as an input  | Text-Cloud OR Table OR Semantic Analysis | In a few words, what is your most important reason for attending this workshop? |
 
-###### 2. Response-Cache service
+2. Response-Cache service
 
 As we are already aware of the order of total responses we get from our attendees, having a "*Data Cache Layer*" is an intelligent solution. Rate Limitations exposed by SurveyMonkey API is another reason behind implementing a cache service.
 
@@ -85,7 +85,7 @@ This service consists of two elements "Cache Storage" [CS] and "Permanent Storag
 
 If any change is measured in "Cache Storage" during the invalidation process, it is also replicated to the "Permanent Storage" which will be used to serve browser requests.
 
-###### 3. Application's backend services
+3. Application's backend services
 
 This section is responsible for all the Models to serve the client requests.
 
@@ -93,17 +93,17 @@ This section is responsible for all the Models to serve the client requests.
 * Model to retrieve data from "permanent storage" according to the selected workshop 
 
 
-###### 4. Frontend services
+4. Frontend services
 
 It deals with the "Template Views" that will show the visualizations for a particular workshop, also, it will provide the interface to select a workshop.
 
-###### 5. Documentation
+5. Documentation
 
 I believe in the "README Driven Development", this is something I have learned from my seniors at SDSLabs. It's an ideal way of development if we are working in a team, giving the members an early viewpoint on the work.
 
 The documentation for the application will be rich and expressive, therefore, it will be easy to extend the project for future developers.
 
-###### 6. Test suits
+6. Test suits
 
 Following the "Test Driven Development", test suits will be implemented along with the application.
 
