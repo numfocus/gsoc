@@ -84,7 +84,7 @@ In alphabetic order.
        algorithms.
        </p>
        <p>
-         <a href="https://github.com/piskvorky/gensim">Website</a>  | <a href="https://github.com/piskvorky/gensim/wiki/Student-Projects">Ideas Page</a>| <a href="https://groups.google.com/forum/#!forum/gensim">Mailing List</a> 
+         <a href="https://github.com/piskvorky/gensim">Website</a>  | <a href="https://github.com/piskvorky/gensim/wiki/Student-Projects">Ideas Page</a> | <a href="https://groups.google.com/forum/#!forum/gensim">Mailing List</a> 
        </p>
     </td>
   </tr>
