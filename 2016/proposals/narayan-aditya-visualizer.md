@@ -194,11 +194,13 @@ SurveyMonkey API during the proposal phase and I am aware of the
 difficulties that I would face during the project.
 Some of them include:
  *  SurveyMonkey API:
-    Custom variables are not included as a part of the response
-    fields for [get_responses] and [get_respondent_list] API calls.
-    Responses can only be filtered by the answer to the question
-    *Please select the workshop you attended?*.  
-    Any workshops listed in the above question would have different
+    With reference to the [conversation] in the issue thread,
+    `workshop_id` custom variable will be listed as a question
+    in the [get_responses] API response. This should allow easier
+    filtering as compared to explicitly asking the question
+    *Which workshop did you attend?*.
+    However, any workshops listed as a custom variable or as an
+    answer to the above question would have different
     `answer_id` in different surveys. Thus, the many-to-many
     relationship between surveys and workshops would require an
     additional [through field] to track the `answer_id`s.
@@ -235,6 +237,8 @@ listed in the [sample survey] can be viewed [here].
 [get_response_counts]: https://developer.surveymonkey.com/docs/methods/get_response_counts/
 [get_respondent_list]: https://developer.surveymonkey.com/docs/methods/get_respondent_list/
 [get_responses]: https://developer.surveymonkey.com/docs/methods/get_responses/
+[conversation]: https://github.com/numfocus/gsoc/issues/91#issuecomment-194137475
+[through field]: https://docs.djangoproject.com/en/1.9/ref/models/fields/#django.db.models.ManyToManyField.through
 [DjangoCMS Cascade]: https://github.com/jrief/djangocms-cascade
 [DjangoCMS-WOW]: https://pypi.python.org/pypi/djangocms-wow
 [IIT Kharagpur]: http://iitkgp.ac.in/
