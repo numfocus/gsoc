@@ -163,35 +163,38 @@ As I'm getting familiar with the project AMY during the community bonding period
 
 ## Open Source Development Experience
 
-I have been involved in the open source community since my freshman year at the institute, once I got the flavor of it. I have been using Git and GitHub for 3 years.
+* Have been using Git and GitHub for 3+ years.
+* As a "Student Developer", I was part of the student organization [SDSLabs](https://sdslabs.co/), a student group that promotes technical inventions and open development on the campus.
+* Received a "Student Scholarship" for GopherCon 2016 conference, for my open source projects in the Golang environment.
+* Open Source contributor to [Plotly](https://plot.ly/), where I have developed (and now maintain) the [octogrid](https://github.com/plotly/octogrid) visualizer project.
+* Also worked as a "Technical Editor, Intern" with Plotly, where I have contributed to their technical computing blog [modern data](http://moderndata.plot.ly). Here are the resultant posts I have written there.
+    * [Gauge charts in R and Python](http://moderndata.plot.ly/gauge-charts-in-r-and-python/)
+    * [Community detection in your GitHub's following network using d3.js and igraph](http://moderndata.plot.ly/community-detection-in-your-githubs-following-network-using-d3-js-and-igraph)
+    * [Network Graphs in R](https://plot.ly/r/network-graphs/)
 
-As a "Student Developer", I was part of the student organization [SDSLabs](https://sdslabs.co/), a student group that promotes technical inventions and open development on the campus.
+Some of the open source projects I have developed, are:
 
-I have worked as a "Technical Editor, Intern" with Plotly, where I have contributed to their technical computing blog, [Modern Data](http://moderndata.plot.ly). I have also implemented the open source project [octogrid](https://github.com/octogrid), and now I maintain the repository.
-
-These are the resultant posts on the *modern.data* blog.
-* [Gauge charts in R and Python](http://moderndata.plot.ly/gauge-charts-in-r-and-python/)
-* [Community detection in your GitHub's following network using d3.js and igraph](http://moderndata.plot.ly/community-detection-in-your-githubs-following-network-using-d3-js-and-igraph)
-* [Network Graphs in R](https://plot.ly/r/network-graphs/)
-
-I am [@pravj](https://github.com/pravj) on GitHub where I open source all of my projects.
-
-Here are some of the project I have worked on.
-
+* [geopattern](https://github.com/pravj/geopattern) - Create beautiful generative image patterns from a string in golang
 * [Doga](https://github.com/pravj/doga) - HTTP log monitoring console for Humans
 * [octogrid](https://github.com/plotly/octogrid) - GitHub following network visualizer for Humans
 * [slack-lens](https://github.com/sdslabs/slack-lens/tree/development) - A search backend for Slack using Elasticsearch and MySQL
+* [teamwork](https://github.com/pravj/teamwork) - Organization's contribution dashboard built for the GitHub Data Challenge 3
 
-I have experience developing [concurrent storage system](https://github.com/pravj/engine) using RethinkDB, I have developed it for my last project.
+Some of the open source projects I have contributed to, are:
 
-Both slack-lens and octogrid use GitHub's OAuth implementation.
+* [term2048](https://github.com/bfontaine/term2048/commits?author=pravj) - 2048 in your terminal
+* [gist](https://github.com/defunkt/gist/commits?author=pravj) - Potentially the best command line gister.
+* [graf](https://github.com/abhshkdz/graf/commits?author=pravj) - A simple git log analyzer gem.
 
-I had received a Student Scholarship for GopherCon 2016 conference, for my open [source](https://github.com/pravj/puzzl) [projects](https://github.com/pravj/geopattern) in the Golang environment.
+Rest of my project contributions are on my [GitHub](https://github.com/pravj). I also write about the technical details of my projects at my [blog](http://pravj.github.io/blog), sporadically.
 
 ## Academic Experience
 
-I am a senior Computer Science student at Indian Institute of Technology, Roorkee.
-I have an interest in Data Science, Distributed Systems, and Programming Languages.
+I am a senior Computer Science student at [Indian Institute of Technology, Roorkee](http://iitr.ac.in), interested in Data Science, Distributed Systems, and Programming Languages.
+
+I have written a research paper on concurrent programming, [Implementing an intelligent version of the
+classical sliding-puzzle game for unix terminals
+using Golang’s concurrency primitives](http://arxiv.org/abs/1503.08345).
 
 ## Why this project?
 
@@ -202,9 +205,9 @@ Though, I didn't win it, but it pushed me into the beautiful world of data visua
 Since then, I have worked on multiple successful projects involving data visualization.
 * [Open Source Presence Infographic of Indian Startups](http://pravj.github.io/blog/open-source-presence-infographic/)
 * [Jump in to ride all the Bangalore taxis, at once](http://pravj.github.io/blog/bangalore-taxis/)
-* [Breaking into the Indian E-commerce](http://pravj.github.io/blog/indian-ecommerce/) [[Featured in "Tech in Asia"]](https://www.techinasia.com/talk/breaking-indian-ecommerce-space)
+* [Breaking into the Indian E-commerce](http://pravj.github.io/blog/indian-ecommerce/) __[[Featured in "Tech in Asia"]](https://www.techinasia.com/talk/breaking-indian-ecommerce-space)__
 
-I have opted for this project because I feel more engaged with a software project when there are hidden insights in the underlying metadata OR it involves retrieval of data through little challenges, so that we can harness the insights for other good use.
+I have opted for this project because I feel intrigued while working on a software project when there are hidden insights in the underlying metadata OR it involves retrieval of the data through little challenges, so that we can harness the insights for other good use.
 
 Ultimately, the goal is to turn data into information, and information into insight.
 
@@ -213,8 +216,10 @@ Stephen Few has said -
 
 ## Appendix
 
-##### Project Discussion
+## Project Discussion
 The discussion with my mentors about the project is available here, [Query about the survey visualizer project](https://github.com/numfocus/gsoc/issues/77).
 
-##### Sample Code
-[plotly/octogrid](https://github.com/plotly/octogrid): It's a visualizer ([Python package](http://pypi.python.org/pypi/octogrid)) that creates network graphs of the following-network for a given GitHub user. The package uses GitHub's OAuth authentication to cope with the rate limitation.
+## Sample Code
+> [plotly/octogrid](https://github.com/plotly/octogrid)
+
+It's a visualizer ([Python package](http://pypi.python.org/pypi/octogrid)) that creates network graphs of the following-network for a given GitHub user. The package uses GitHub's OAuth authentication to cope with the rate limitation.
