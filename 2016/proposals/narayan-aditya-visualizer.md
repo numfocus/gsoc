@@ -20,53 +20,55 @@ a better experience for the administrators and organization hosts.
 
 The *Survey Visualizer* application stack can be divided into:
 
- * Backend  : [Django Rest Framework]
+ * Backend  : [Django]
  * Scheduler: [Cron]
  * Database : [PostgreSQL]
  * Frontend : [Charts.js] and [Bootstrap]
 
 ### Backend - Django Application
 
-The survey visualizer application would be made using
-[Django Rest Framework] (henceforth called DRF) over [Django]
+The survey visualizer application would be made using [Django]
 to allow easier integration with [AMY] when required.
 
-The tentative API structure exposed by DRF is:
- * GET `/api/workshop/`  
-   Lists all workshops that have surveys collecting responses.
- * GET `/api/workshop/<workshop_id>/`  
-   Returns details of a particular workshop.
- * GET `/api/workshop/<workshop_id>/survey/`  
-   Lists all the surveys whose responses are being collected.
-   Each survey has its corresponding `survey_id`.
- * POST `/api/workshop/<workshop_id>/survey/refetch`  
-   Repopulates the list of surveys whose response are being
-   collected.
- * GET `/api/workshop/<workshop_id>/survey/<survey_id>`  
-   Returns the responses for the particular survey, listed
-   according to the questions contained in the survey.
- * POST `/api/workshop/<workshop_id>/survey/<survey_id>/refetch`  
-   Instructs the Django application to fetch the responses
-   that the survey has received since the last time the
-   SurveyMonkey API was hit.
+#### SurveyMonkey Django Application
 
-The underlying Django app will perform these tasks:
- * Polling SurveyMonkey API management command:
-   This management command would populate the database with survey
-   responses fetched from the SurveyMonkey API.
-   The number of survey responses obtained from the [get_response_counts]
-   API call will be compared to the number of survey responses
-   saved in the database. The remaining responses will be fetched
-   using the [get_respondent_list] and [get_responses] API calls.
- * Segregating the survey responses according to the answer to the
-   question: *Which workshop did you attend?* or the custom variable
-   `workshop_id`.
- * Rendering and serving the templates.
+The SurveyMonkey pluggable Django application would serve as
+an intermediary between the SurveyMonkey API and the Django
+ORM.
+
+The usage of the app will look similar to the following snippet:
+
+```python
+from surveymonkey.models import Response
+from workshop.models import Workshop
+
+
+#Fetch all responses from the database
+responses = Response.objects.all()
+#Fetch responses filtered by the last workshop
+last_workshop_responses = Response.objects.filter(
+    workshop=Workshop.objects.latest()
+)
+# Fetch responses gathered within the last week
+weekly_responses = Response.objects.filter(
+    date_created=(datetime.date.today()-datetime.timedelta(days=7))
+)
+#Populate database with responses from SurveyMonkey API
+new_responses = Response.objects.populate()
+```
+
+#### Django Project
+
+The Django project will perform these tasks:
+ * Exposing the `Response.object.populate()` directive through a
+   management command.
+ * Rendering and serving the views and templates.
 
 ### Scheduler - Cron
 
 [Cron] will be used as a job scheduler to periodically run
-the *Polling SM API* management command at fixed time intervals.
+the command `Responses.objects.populate()` at fixed
+time intervals.
 The interval duration would be dynamically determined by the
 number of API calls left and the time of the day.
 
@@ -79,17 +81,10 @@ number of API calls left and the time of the day.
 
 ### Database - PostgreSQL
 
-The Django app will use [PostgreSQL] as its database engine to
-store the survey responses fetched by the backend.
-
-*Why PostgreSQL?*
- *  Django provides [PostgreSQL-specific features] like the ability
-    and query JSONs, dicts and arrays. The database schema, when
-    finalized, would benefit from these features.
- *  PostgreSQL is actively maintained and is seen to perform
-    faster writes as compared to SQLite.
- *  Although AMY currently uses SQLite database, a [migration]
-    is currently being planned to upgrade AMY to PostgreSQL.
+The Django app will use PostgreSQL or SQLite as its
+database engine in production and SQLite database engine during
+development to store the survey responses fetched by the
+SurveyMonkey Django application.
 
 ### Frontend - Charts.js and Bootstrap
 
@@ -112,7 +107,7 @@ include:
    an easy way to list them.
 
 *Why Charts.js?*
- * Charts.js is the most popular Javascript charting library on
+ * Charts.js is the most popular JavaScript charting library on
    GitHub that fulfills our use case.
  * Charts.js is super lightweight as compared to other charting
    libraries.
@@ -127,12 +122,11 @@ be taken in consultation with the mentors. These include:
    of survey responses according to workshops.
 
 ### May 25th -  June 7th
-Start implementation of the *Polling SM API* management command
-to fetch survey responses from SurveyMonkey API.
+Implement the SurveyMonkey Django application.
 
 ### June 8th - June 21th
-Write tests and complete the implementation of the above
-management command.
+Write tests and complete the implementation and documentation
+of the SurveyMonkey Django application.
 
 ### June 22th - July 5th
 * Setting up the cron job to schedule polling of the SurveyMonkey
@@ -140,20 +134,19 @@ API at definite time intervals.
 * **Mid term evaluation**
 
 ### July 6th - July 19th
-* Implement segregation of survey responses by `workshop_id`.
-* Implement the API to be exposed by DRF.
+* Implement per-workshop and aggregated views.
+* Work on the UI.
 
 ### July 20th - August 2nd
-* Work on the UI.
-* Implement charts and graphs that use the API to aggregate
-  survey responses.
+* Implement charts and graphs for each question contained in a
+  survey.
 
 ### August 3rd - August 16th
 Work on integrating the survey visualizer application with AMY.
 
 ### August 17th - August 21th 19:00 UTC
-Document the project and the API.
-Cover all parts of the code with tests.
+* Document the project and the SurveyMonkey app.
+* Cover all parts of the code with tests.
 
 ## Future works
 
@@ -216,6 +209,16 @@ A [sample application] involving the use of Bar Charts to compare
 the number of responses for the various answers to the questions
 listed in the [sample survey] can be viewed [here].
 
+The conversation between the mentors can be viewed at
+[numfocus/gsoc/issues/91].
+
+## Contact
+
+Name:       Aditya Narayan
+Email:      narayanaditya95@gmail.com
+Timezone:   UTC +0530
+
+
 [SurveyMonkey]: http://surveymonkey.com/
 [Django]: http://djangoproject.com/
 [Django Rest Framework]: http://www.django-rest-framework.org/
@@ -242,3 +245,4 @@ listed in the [sample survey] can be viewed [here].
 [DjangoCMS Cascade]: https://github.com/jrief/djangocms-cascade
 [DjangoCMS-WOW]: https://pypi.python.org/pypi/djangocms-wow
 [IIT Kharagpur]: http://iitkgp.ac.in/
+[numfocus/gsoc/issues/91]: https://github.com/numfocus/gsoc/issues/91
