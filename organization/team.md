@@ -20,56 +20,65 @@ organizing Google Summer of Code for NumFOCUS.
 
 #### biocore
 
-| Name               | Melange Profile | GitHub Profile |
-|--------------------|-----------------|----------------|
-| Greg Caporaso      |                 | gregcaporaso   |
+| Name               | GitHub Profile |
+|--------------------|----------------|
+| Greg Caporaso      | gregcaporaso   |
 
 #### DyND
 
-| Name               | Melange Profile | GitHub Profile            |
-|--------------------|-----------------|---------------------------|
-| Ian Henriksen      |                 | insertinterestingnamehere |
-| Irwin Zaid         | izaid           | izaid                     |
-| Mark Wiebe         | mwiebe          | mwiebe                    |
+| Name               | GitHub Profile            |
+|--------------------|---------------------------|
+| Ian Henriksen      | insertinterestingnamehere |
+| Irwin Zaid         | izaid                     |
+| Mark Wiebe         | mwiebe                    |
+
+# EcoData Retriever
+
+| Name               | GitHub Profile            |
+|--------------------|---------------------------|
+|                    | ethanwhite                |
+|                    | henrysenyondo             |
+|                    | sckott                    |
 
 #### Gensim
 
-| Name                 | Melange Profile | GitHub Profile            |
-|----------------------|-----------------|---------------------------|
-| Lev Konstantinovskiy |                 | tmylk                     |
-| Radim Rehurek        |                 | piskvorky                 |
+| Name                 | GitHub Profile            |
+|----------------------|---------------------------|
+| Lev Konstantinovskiy | tmylk                     |
+| Radim Rehurek        | piskvorky                 |
 
 #### JuliaOpt
 
-| Name               | Melange Profile | GitHub Profile |
-|--------------------|-----------------|----------------|
-|                    |                 | dvij           |
-| Joey Huchettell    |                 | joehuchette    |
-| Madeleine Udell    |                 | madeleineudell |
-| Miles Lubin        |                 | mlubin         |
+| Name               | GitHub Profile |
+|--------------------|----------------|
+|                    | dvij           |
+| Joey Huchettell    | joehuchette    |
+| Madeleine Udell    | madeleineudell |
+| Miles Lubin        | mlubin         |
 
 #### matplotlib
 
-| Name               | Melange Profile | GitHub Profile |
-|--------------------|-----------------|----------------|
-| Eric Firing        |                 |                |
-| Michael Droettboom |                 |                |
-| Phil Elson         |                 |                |
-| Thomas Caswell     |                 |                |
+| Name               | GitHub Profile |
+|--------------------|----------------|
+| Eric Firing        |                |
+| Michael Droettboom |                |
+| Phil Elson         |                |
+| Thomas Caswell     |                |
 
 #### Pandas
 
-| Name                | Melange Profile | GitHub Profile |
-|---------------------|-----------------|----------------|
-| Jeff Reback         |                 | jreback        |
-| Stephan Hoyer       |                 | shoyer         |
+| Name                | GitHub Profile |
+|---------------------|----------------|
+| Jeff Reback         | jreback        |
+| Stephan Hoyer       | shoyer         |
 
 #### Software Carpentry
 
-| Name                | Melange Profile | GitHub Profile |
-|---------------------|-----------------|----------------|
-| Piotr Banaszkiewicz |                 | pbanaszkiewicz |
-| Raniere Silva       | r.gaia.cs       | rgaiacs        |
+| Name                | GitHub Profile |
+|---------------------|----------------|
+| Piotr Banaszkiewicz | pbanaszkiewicz |
+| Raniere Silva       | rgaiacs        |
+|                     | gvwilson       |
 
 ## 2015
 
