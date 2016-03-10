@@ -13,11 +13,31 @@ lists a few things you can do to get started in free and open source software.
 **Please use the instructions of the project/organization
 you are interested in work with.**
 
-## Software Carpentry
+## biocore
+
+Read [default instructions](#default-instructions).
+
+## DyND
+
+Read [default instructions](#default-instructions).
+
+## Gensim
+
+Read [default instructions](#default-instructions).
+
+## JuliaOpt
 
 Read [default instructions](#default-instructions).
 
 ## matplotlib
+
+Read [default instructions](#default-instructions).
+
+## Pandas
+
+Read [default instructions](#default-instructions).
+
+## Software Carpentry
 
 Read [default instructions](#default-instructions).
 
@@ -102,32 +122,20 @@ like phone number and address, at your proposal.**
 ### Final Proposal
 
 Your final proposal must be submitted to [GSoC][]
-**before March 25th 19:00 UTC**.
-
-You proposal form should look like
-
-![Blank Proposal Form](img/gsoc-main.png)
+**before March 25th 19:00 UTC**
+as a PDF file.
 
 You can use [Pandoc][] to convert your proposal in Markdown
-to HTML and paste the HTML at [GSoC][].
+to PDF **if you have LaTeX installed on your machine**
+or convert to HTML and print it to PDF using your web browser.
 For example, you can
 
 ~~~
-$ pandoc -f markdown -t html YYYY/proposals/your-name.md | xclip -selection clipboard
+$ pandoc -f markdown -t pdf YYYY/proposals/your-name.md
 ~~~
-
-and `CTRL+v` your proposal at [GSoC][]. If you are going to do this
-you need to paste your proposal as source code and for this
-you need to select `Tools -> Source Code`.
-
-![Showing Source Code Option](img/gsoc-tools.png)
-
-A window will open where you can paste your HTML code.
-
-![Source Code Window](img/gsoc-source-code.png)
 
 [IL]: 2015/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
-[GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
+[GSoC]: http://summerofcode.withgoogle.com/
 [ML]: organization/team.md
 [Pandoc]: http://pandoc.org/
