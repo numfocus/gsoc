@@ -188,3 +188,48 @@ GitHub.
 
 * @ethanwhite
 * @henrysenyondo
+
+
+## Add Python 3 support
+
+**Please ask questions [here](https://github.com/numfocus/gsoc/issues).**
+
+### Rationale
+
+The [EcoData Retriever](http://ecodataretriever.org) is a Python based tool for
+automatically downloading, cleaning up, and restructuring ecological data. It
+does the hard work of data munging so that scientists can focus on doing
+science.
+
+As the scientific Python community increasingly transitions to Python 3,
+supporting the newest version of Python will be important.
+
+### Approach
+
+* Using [2to3](https://docs.python.org/2/library/2to3.html) as a starting point
+update the code that can support both both 2.7+ and Python 3.4+
+
+### Challenges
+
+Getting code to run on both Python 2 and Python 3 with the same code base can be
+tricky.
+
+### Involved toolkits or projects
+
+* The [EcoData Retriever](http://ecodataretriever.org)
+* Python
+
+### Degree of difficulty and needed skills
+
+* Relatively easy
+* Knowledge of Python
+
+### Involved developer communities
+
+The EcoData Retriever primarily interacts via issues and pull requests on
+GitHub.
+
+### Mentors
+
+* @ethanwhite
+* @henrysenyondo
