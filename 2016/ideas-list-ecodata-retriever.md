@@ -65,6 +65,7 @@ GitHub.
 
 * @ethanwhite
 * @henrysenyondo
+* @sckott
 
 ## Improving reproducibility in science by adding provenance tracking to the EcoData Retriever
 
@@ -127,4 +128,3 @@ GitHub.
 * @henrysenyondo
 
 ## Appendix
- 
