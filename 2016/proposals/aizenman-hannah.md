@@ -34,16 +34,16 @@ Seperate out table into table and axtable:
 
 ## Open Source Development Experience
  * Open Sourced Academic Research:
-  -Longterm (ensemble) Forecast Evaluation: https://bitbucket.org/story645/libltf
-  -Linear Manifold Clustering: https://bitbucket.org/story645/lmclus
+  - Longterm (ensemble) Forecast Evaluation: https://bitbucket.org/story645/libltf
+  - Linear Manifold Clustering: https://bitbucket.org/story645/lmclus
  * Tutorials on Open Source Tools:
-  -PyCon 2014 Matplotlib Tutorial: https://github.com/story645/matplotlib-tutorial
-  -AMS 2016 Python Symposium Pandas/Matplotlib Tutorials: https://github.com/story645/ams2016_tutorials
+  - PyCon 2014 Matplotlib Tutorial: https://github.com/story645/matplotlib-tutorial
+  - AMS 2016 Python Symposium Pandas/Matplotlib Tutorials: https://github.com/story645/ams2016_tutorials
  * GSOC 2011 (Climate Code Foundation):  
-  -opensource embeddable climate data visualization tool
-  -Server side numpy/scipy/matplotlib processing
-  -https://github.com/story645/ccp-viz-toolkit
-  -https://ams.confex.com/ams/92Annual/webprogram/Paper204786.html
+  - opensource embeddable climate data visualization tool
+  - Server side numpy/scipy/matplotlib processing
+  - https://github.com/story645/ccp-viz-toolkit
+  - https://ams.confex.com/ams/92Annual/webprogram/Paper204786.html
 
 
 ## Academic Experience
