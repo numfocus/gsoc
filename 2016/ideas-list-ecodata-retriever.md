@@ -65,6 +65,7 @@ GitHub.
 
 * @ethanwhite
 * @henrysenyondo
+* @sckott
 
 ## Improving reproducibility in science by adding provenance tracking to the EcoData Retriever
 
@@ -126,5 +127,109 @@ GitHub.
 * @ethanwhite
 * @henrysenyondo
 
-## Appendix
- 
+
+## Upgrade to datapackage.json standard
+
+**Please ask questions [here](https://github.com/numfocus/gsoc/issues).**
+
+### Rationale
+
+The [EcoData Retriever](http://ecodataretriever.org) is a Python based tool for
+automatically downloading, cleaning up, and restructuring ecological data. It
+does the hard work of data munging so that scientists can focus on doing
+science.
+
+One of the ways the Retriever makes it easy to add new datasets is by allowing
+datasets to be added using simple plain text descriptions of the data that are
+then parsed into Python. There is an emerging standard for this kind of metadata
+called
+[datapackage.json](http://dataprotocols.org/data-packages/#descriptor-datapackagejson).
+
+### Approach
+
+This project would upgrade the EcoData Retriever to use the datapackage.json
+standard. Specifically this would involve:
+
+* Understanding the metadata standard
+* Extending the standard to include metadata that is required by the EcoData
+  Retriever that is not part of the standard
+* Converting the Python parser to take JSON as input instead of current YAML
+  like scripts
+* Converting existing scripts to the JSON standard
+* (stretch goal) developing a simple web or command line tool for generating
+  JSON for new datasets
+
+### Challenges
+
+The EcoData Retriever scripts contain information on how to clean and modify
+data that is not currently part of the datapackage.json standard. Designing how
+to include this information in a way that is easy to read by both humans and
+computers will require good design work.
+
+### Involved toolkits or projects
+
+* The [EcoData Retriever](http://ecodataretriever.org)
+* Python
+* JSON
+* [datapackage.json](http://dataprotocols.org/data-packages/#descriptor-datapackagejson)
+
+### Degree of difficulty and needed skills
+
+* Moderate Difficulty
+* Knowledge of Python
+* Knowledge of JSON
+
+### Involved developer communities
+
+The EcoData Retriever primarily interacts via issues and pull requests on
+GitHub.
+
+### Mentors
+
+* @ethanwhite
+* @henrysenyondo
+
+
+## Add Python 3 support
+
+**Please ask questions [here](https://github.com/numfocus/gsoc/issues).**
+
+### Rationale
+
+The [EcoData Retriever](http://ecodataretriever.org) is a Python based tool for
+automatically downloading, cleaning up, and restructuring ecological data. It
+does the hard work of data munging so that scientists can focus on doing
+science.
+
+As the scientific Python community increasingly transitions to Python 3,
+supporting the newest version of Python will be important.
+
+### Approach
+
+* Using [2to3](https://docs.python.org/2/library/2to3.html) as a starting point
+update the code that can support both both 2.7+ and Python 3.4+
+
+### Challenges
+
+Getting code to run on both Python 2 and Python 3 with the same code base can be
+tricky.
+
+### Involved toolkits or projects
+
+* The [EcoData Retriever](http://ecodataretriever.org)
+* Python
+
+### Degree of difficulty and needed skills
+
+* Relatively easy
+* Knowledge of Python
+
+### Involved developer communities
+
+The EcoData Retriever primarily interacts via issues and pull requests on
+GitHub.
+
+### Mentors
+
+* @ethanwhite
+* @henrysenyondo
