@@ -12,7 +12,7 @@ scientists and technology-enthusiasts with an aim of advancing research in
 scientific disciplines by teaching necessary computing skills.
 
 Software Carpentry works in this direction by organizing workshops, lessons or
-simply through discussions. 
+simply through discussions.
 
 An important part of the workshop is to ensure that participants have installed
 all the necessary software. Software Carpentry has
@@ -38,8 +38,7 @@ The technical details of the project can be organized into following:
 * Documentation             : use travis-ci automated build system, follow pep8
 * Testing                   : use travis-ci, coveralls for coverage
 
-An additional objective of this section is to keep the design sweet and simple
-(KISS).
+An additional objective of this section is to focus on a simple design.
 
 ### Collectable information
 
@@ -71,7 +70,7 @@ platform.linux_distribution() # linux
 #### Status report
 
 * Software check status (pass/fail) along with relevant messages
-* Version number of the found (installed) softwares
+* Version number of the found (installed) software
 * Any error that may have occurred in the script itself
 * Process information
 * Timestamp
@@ -98,12 +97,11 @@ The following steps are involved in the process:
   > choice that is easy to develop and maintain. Scalability is not an issue for
   > our use case.
 
-* Server verifies the data, open database connection, updates the record.
+* Server verifies the data, opens database connection, updates the record.
   > As suggested in the ideas sections, SQLite will be a low-barrier, easier to
   > maintain database, appropriate for our needs.
 
-* Send a status response back to the client. The response can contain feedback,
-  suggestions or perhaps link to some survey.
+* Server responds with an OK status.
 
 * Ability to export diagnostic data into JSON or CSV format.
   > It’ll allow us to separate the user interface from backend creating a modular
@@ -135,10 +133,12 @@ TABLE machine_info {
 
 TABLE software_version {
   id PRIMARY KEY AUTO,
+  machine_id INTEGER,
   software VARCHAR,
   installed BOOL,
   version VARCHAR,
-  log VARCHAR
+  log VARCHAR,
+  FOREIGN KEY (machine_id) REFERENCES machine_info(id)
 }
 ```
 
@@ -151,27 +151,28 @@ A typical example of the database entry then may look like:
 ```
 (TABLE machine_info)
 
-id | system  | hostname    | release             | version                                               | machine  | processor | email       | time                      | exit_status
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1  | ‘Linux’ | ‘ghostbook’ | ‘3.19.0-47-generic’ | ‘#53~14.04.1-Ubuntu SMP Mon Jan 18 16:09:14 UTC 2016’ | ‘x86_64’ | ‘x86_64’  | foo@bar.com | ‘Tue Mar 8 00:52:35 2016’ | 0
+id | system   | hostname     | release             | version                                               | machine  | processor | email         | time                       | exit_status
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1  | ‘Linux’  | ‘ghostbook’  | ‘3.19.0-47-generic’ | ‘#53~14.04.1-Ubuntu SMP Mon Jan 18 16:09:14 UTC 2016’ | ‘x86_64’ | ‘x86_64’  | foo@bar.com   | ‘Tue Mar 8 00:52:35 2016’  | 0
+2  | ‘Darwin’ | ‘Vs-MacBook’ | ‘15.0.0’            | ‘Darwin Kernel Version 15.0.0: ..  ’                  | ‘x86_64’ | ‘i386’    | ‘bar@foo.com’ | ‘Sat Mar 12 18:34:12 2016’ | 0
 
 (TABLE software_version)
 
-id | software | installed | version | log
------------------------------------------
-1  | python   | True      | 3.5.1   | ‘’
-1  | git      | True      | 1.9.1   | ‘’
-1  | hg       | False     | ‘’      | ‘’
-1  | pip      | True      | 7.9     | ‘A newer version of pip is available.’
+id | machine_id | software | installed | version | log
+------------------------------------------------------
+1  | 1          | python   | True      | 3.5.1   | ‘’
+2  | 1          | git      | True      | 1.9.1   | ‘’
+3  | 1          | hg       | False     | ‘’      | ‘’
+4  | 1          | pip      | True      | 7.9     | ‘A newer version of pip is available.’
 ```
 
 Complex queries can be performed by `JOINING` the two tables and querying for
 corresponding field of interest.
 
 #### Concerns
-Both tables share the unique identity given to a particular report.  There is
-a possibility that same user may submit a report twice possibly because there
-were some errors or something else causing duplication.
+
+There is a possibility that users may execute the test scripts several times,
+submitting the report to the server and leading to duplication.
 
 There might be a couple of ways to tackle this:
 
@@ -182,6 +183,11 @@ There might be a couple of ways to tackle this:
    information is already record. If yes, then update the records in
    `software_version` table. Essentially, all the attributes of `machine-info`
    table may constitute a `UNIQUE_KEY` constraint.
+3. Handle it through a client side modification in installation-test script.
+
+These will be [discussed
+later](https://github.com/numfocus/gsoc/pull/94/files#r55733858) in due course
+as the project evolves.
 
 ### User interface
 
@@ -206,10 +212,32 @@ friends.
 Modify the installation-test scripts to generate a diagnostic report containing
 machine information and status report as described before. The script should:
 
+* add a new command line parameter which denotes whether the user *consents* to
+  sending the report to an external server.
 * catch abrupt halts (`SIGINT`, for example) and report it to the server.
-* should create a local copy of report log if submission fails.
+  > If CLI switch for sending report is not specified, the script should fail
+  > with an exit message requesting the user to rerun with flag enabled.
 
-## Schedule of Deliverables
+* create a local copy of report log if submission fails. The file can be
+  directly saved in JSON format.
+
+#### Installation manual
+
+Following from the
+[discussion](https://github.com/numfocus/gsoc/pull/94#discussion_r55920929), we
+seek to write a installation manual of all the software currently checked by the
+installation-test scripts. These instructions or installation-recipes will help 
+create a consistent ecosystem, improve setup experience and save time.
+
+## Schedule of deliverables
+
+**Roughly by mid-term evaluation period, we hope to deploy final changes on the
+client side i.e. installation-test scripts along with a basic server-database
+framework.**
+
+The concurrent feedback from the workshops will allow us to incorporate feedback
+in the second half of the coding period. So that by the end of the period, we
+already have a well-tested and polished code.
 
 ### April 22nd - May 24nd
 
@@ -243,7 +271,11 @@ Write a secondary demo script that posts to server.
 
 **Mid-term evaluation**
 
-Update installation-test scripts. Test rigorously.
+Update installation-test scripts. Write unit-tests for untested code and test
+rigorously. Specially, the code that generates report, makes submission and
+catches error.
+
+**Deploy test scripts and installation manual to workshops. Request feedback.**
 
 ### July 6th - July 19th
 
@@ -254,7 +286,7 @@ required, to be decided later).
 
 Upgrade user-interface. Design a responsive, navigable HTML report. Create
 mock sketches and decide a good way to show information in coherent, easy to
-understand manner. 
+understand manner.
 
 Allow downloading data (using the endpoint developed week before).
 
