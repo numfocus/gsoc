@@ -3,7 +3,7 @@
 ## Abstract
 Software Carpentry hosts a series of workshops, each if which is associated with five surveys. The surveys are conducted on SurveyMonkey. Viewing the results on SurveyMonkey takes a lot of clicks, and hence an application is needed which can aggregate the results from the various surveys.
 
-A django-based application will be linked to Software Carpentry's SurveyMonkey account. The workshop organiser (user) is expected to provide the application with either:
+A django-based application will be linked to Software Carpentry's SurveyMonkey account. The workshop organiser (user) is expected to provide the application with either:  
 1. the complete URL of survey **OR** 
 2. the workshop ID in an input field.
 
@@ -152,7 +152,7 @@ The documentation will be finalized. Code will be beautified along with removal 
 Continue working on this project, along with AMY. I would continue to contribute, test and fix bugs that will be reported. I will work on improvements in AMY and also contribute to future projects of Software Carpentry. 
 	
 ## Open Source Development Experience
-I'm new to open source. This project would be my first opportunity to contribute to an open-source organization. I found the idea quite exciting - especially since I have already worked on few large-scale django projects. However, I am have developed **Media Management Service**, a django-based backend service that handles media files and requests. It's features include media storage, file recovery, file transformation, file compression and user defined rule-based authentication. Further, it is integrated with Django Forms and [Django File Manager]()(A open-source GUI File manager developed by Information Management Group). As soon as the documentation gets complete, I plan to release this service module as open source. 
+I'm new to open source. This project would be my first opportunity to contribute to an open-source organization. I found the idea quite exciting - especially since I have already worked on few large-scale django projects. However, I am have developed **Media Management Service**, a django-based backend service that handles media files and requests. It's features include media storage, file recovery, file transformation, file compression and user defined rule-based authentication. Further, it is integrated with Django Forms and [Django File Manager](https://github.com/IMGIITRoorkee/django-filemanager) (An open-source GUI File manager developed by Information Management Group). As soon as the documentation gets complete, I plan to release this service module as open source. 
 
 ## Academic Experience
 I'm a second year undergraduate student at Indian Institute of Technology Roorkee (IIT R), majoring in Computer Science & Engineering. I have strong programming experience in Python, PHP, SQL and C++. As a part of academic curriculum, I have taken courses in *Software Engineering*, *Object Oriented Analysis & Design*, *Data Structures & Algorithms*, which have equipped me with skills to design, develop and test applications of industry standards.  
