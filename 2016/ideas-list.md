@@ -9,6 +9,7 @@ page of each organization under NumFocus umbrella at this page.
 - EcoData Retriever: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-ecodata-retriever.md
 - Gensim: https://github.com/piskvorky/gensim/wiki/Student-Projects
 - JuliaOpt: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaopt.md
+- JuliaQuantum: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaquantum.md
 - matplotlib: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-matplotlib.md
 - Pandas: https://github.com/pydata/pandas/wiki/Google-Summer-of-Code
 - Software Carpentry: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-swc.md

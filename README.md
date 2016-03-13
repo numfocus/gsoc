@@ -125,6 +125,21 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="300px" src="http://www.juliaopt.org/images/juliaopt.svg"/>
+    </td>
+    <td>
+       <h1>JuliaQuantum</h1>
+       <p>JuliaQuantum is ...
+       </p>
+       <p>
+         <a href="">Website</a> | <a href="">Mailing List</a> | <a href="">Chat</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-juliaquantum.md">Ideas Page</a>
+       </p>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>
       <img width="300px" src="http://matplotlib.org/_static/logo2.png" />
     </td>
     <td>
