@@ -163,7 +163,8 @@ This is the first time, I am contributing to an open source organization, and fe
 * Apart from this, as the academic project I worked on cryptography, and published a research paper on "Efficient Substitution Box Design using Travelling Salesman Problem and Chaos". 
  
 ## Why this project?
-I have a lot of experience in developing RESTful API's and web services. This project involves development of a RESTful API and setting up a server. Also, "Software Carpentry has been teaching researchers in science, engineering, medicine, and related disciplines the computing skills they need to get more done in less time and with less pain". This project is concerned with the problems that students face in installing the necessary packages for a workshop. This project will enable the instructors to better understand the problems and remove the package version and other issues, so that the setup process speeds up, and students don't get stuck in just installing the packages for a long time. Working upon this, it would give me more experience towards working on APIs and python Scripts, and also a open source experience which is very exciting for me.
+This project is concerned with the problems that students face in installing the necessary packages for a workshop. This project will enable the instructors to better understand the problems and remove the package version and other issues, so that the setup process speeds up, and students don't get stuck in just installing the packages for a long time. <br />
+I have a lot of experience in developing RESTful API's and web services. This project involves development of a RESTful API and setting up a server. Working upon this, it would give me more experience towards working on APIs and python Scripts, and also a open source experience which is new and exciting for me.
  
 ## Appendix
 ###Code Contribution
