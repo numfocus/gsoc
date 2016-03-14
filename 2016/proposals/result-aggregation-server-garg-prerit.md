@@ -169,7 +169,7 @@ I have a lot of experience in developing RESTful API's and web services. This pr
 ###Code Contribution
 As per the requirement mentioned in the project information, I developed a sample [demo](https://github.com/prerit2010/DemoAPI) flask API which takes the Operating system information and sends to the API making a POST request.
 
-###Availability (Time Zone)
+###Availability
 * **Time Zone :** Indian Standard Time (IST) UTC +5:30 
 * 2nd Mid semester examinations start: 9th May, 2016
 * 2nd Mid semester examinations end : 23rd May, 2016 (Approx.)
