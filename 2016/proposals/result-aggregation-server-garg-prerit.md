@@ -170,7 +170,12 @@ I have a lot of experience in developing RESTful API's and web services. This pr
 As per the requirement mentioned in the project information, I developed a sample [demo](https://github.com/prerit2010/DemoAPI) flask API which takes the Operating system information and sends to the API making a POST request.
 
 ###Availability (Time Zone)
-**Indian Standard Time (IST) UTC +5:30**
+* **Time Zone :** Indian Standard Time (IST) UTC +5:30 
+* 2nd Mid semester examinations start: 9th May, 2016
+* 2nd Mid semester examinations end : 23rd May, 2016 (Approx.)
+* My graduation (B.Tech) completes as soon as exams get over. So, after that I am available full time for the project.
+* **Hours per week :** 35 hours (5 hours a day)
+
 ###Contact
 <table style="width:100%">
   <tr>
