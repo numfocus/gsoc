@@ -99,7 +99,9 @@ The following steps are involved in the process:
 
 * Server verifies the data, opens database connection, updates the record.
   > As suggested in the ideas sections, SQLite will be a low-barrier, easier to
-  > maintain database, appropriate for our needs.
+  > maintain database, appropriate for our needs. We will, however, use
+  > SQLAlchemy Python ORM and avoid dealing with raw SQL queries improving both
+  > readability and maintenance of code.
 
 * Server responds with an OK status.
 
@@ -112,35 +114,65 @@ The following steps are involved in the process:
 Based on the current nature of collectable information, write-volume and
 functionality required SQLite seems to be a fit choice. In this regard, the
 database schema is an important component that determines how we are going to
-store the collected data in the database.
+store the collected data in the database. Following from
+[discussion](https://github.com/numfocus/gsoc/pull/94#issuecomment-196363139)
+[on GitHub](https://github.com/numfocus/gsoc/pull/94#issuecomment-196410391),
+we decided in favor of using
+[SQLAlchemy](http://flask-sqlalchemy.pocoo.org/latest/) Python ORM library
+instead of using raw SQL queries to managed database operations.
 
-The following illustrates a typical schema that might be used:
+The following illustrates a typical database model that can be defined:
 
 ```
-TABLE machine_info {
-  id PRIMARY KEY AUTO,
-  system VARCHAR,
-  hostname VARCHAR,
-  release VARCHAR,
-  version VARCHAR,
-  machine VARCHAR,
-  processor VARCHAR,
-  email VARCHAR,
-  time VARCHAR,
-  exit_status INT
-}
+class MachineInfo(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    workshop_id = db.Column(db.String(120))
+    system = db.Column(db.String(80))
+    hostname = db.Column(db.String(120))
+    release = db.Column(db.String(120))
+    version = db.Column(db.String(120))
+    machine = db.Column(db.String(120))
+    processor = db.Column(db.String(120))
+    email = db.Column(db.String(120))
+    time = db.Column(db.DateTime)
+    exit_status = db.Column(db.Integer)
+    packages = db.relationship('PackageInfo', order_by=PackageInfo.id,
+                               backref='machine_info')
+
+    def __repr__(self):
+        return "<MachineInfo(id={}, system={}, hostname={}, release={},
+                version={}, machine={}, processor={}, email={}, time={},
+                exit_status={})>".format(self.id,
+                                         self.system,
+                                         self.hostname,
+                                         self.release,
+                                         self.version,
+                                         self.machine,
+                                         self.processor,
+                                         self.email,
+                                         self.time,
+                                         self.exit_status)
 
 
-TABLE software_version {
-  id PRIMARY KEY AUTO,
-  machine_id INTEGER,
-  software VARCHAR,
-  installed BOOL,
-  version VARCHAR,
-  log VARCHAR,
-  FOREIGN KEY (machine_id) REFERENCES machine_info(id)
-}
+class PackageInfo(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    package = db.Column(db.String(120))
+    installed = db.Column(db.Boolean)
+    version = db.Column(db.String(120))
+    log = db.Column(db.String(1000))
+    machine_id = db.Column(db.Integer, db.ForeignKey('machine_info.id'))
+
+    def __repr__(self):
+        return "<PackageInfo(id={}, software={}, installed={},
+                version={}, log={}, machine_id={})>".format(self.id,
+                                                            self.package,
+                                                            self.installed,
+                                                            self.version,
+                                                            self.log,
+                                                            self.machine_id)
+
 ```
+
 
 Since we are obtaining the platform information using Python `platform` module
 which is same across all platforms, the same database schema can accommodate all
@@ -151,23 +183,36 @@ A typical example of the database entry then may look like:
 ```
 (TABLE machine_info)
 
-id | system   | hostname     | release             | version                                               | machine  | processor | email         | time                       | exit_status
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1  | ‘Linux’  | ‘ghostbook’  | ‘3.19.0-47-generic’ | ‘#53~14.04.1-Ubuntu SMP Mon Jan 18 16:09:14 UTC 2016’ | ‘x86_64’ | ‘x86_64’  | foo@bar.com   | ‘Tue Mar 8 00:52:35 2016’  | 0
-2  | ‘Darwin’ | ‘Vs-MacBook’ | ‘15.0.0’            | ‘Darwin Kernel Version 15.0.0: ..  ’                  | ‘x86_64’ | ‘i386’    | ‘bar@foo.com’ | ‘Sat Mar 12 18:34:12 2016’ | 0
+id | workshop_id       | system   | hostname     | release             | version                                               | machine  | processor | email         | time                       | exit_status
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1  | ugc@edu.in        | 'Linux'  | 'ghostbook'  | '3.19.0-47-generic' | '#53~14.04.1-Ubuntu SMP Mon Jan 18 16:09:14 UTC 2016’ | 'x86_64' | 'x86_64'  | 'foo@bar.com' | 'Tue Mar 8 00:52:35 2016'  | 0
+2  | trainus@gmail.com | 'Darwin' | 'Vs-MacBook' | '15.0.0'            | 'Darwin Kernel Version 15.0.0: ..  ’                  | 'x86_64' | 'i386'    | 'bar@foo.com' | 'Sat Mar 12 18:34:12 2016' | 0
 
 (TABLE software_version)
 
 id | machine_id | software | installed | version | log
 ------------------------------------------------------
-1  | 1          | python   | True      | 3.5.1   | ‘’
-2  | 1          | git      | True      | 1.9.1   | ‘’
-3  | 1          | hg       | False     | ‘’      | ‘’
-4  | 1          | pip      | True      | 7.9     | ‘A newer version of pip is available.’
+1  | 1          | python   | True      | 3.5.1   | ''
+2  | 1          | git      | True      | 1.9.1   | ''
+3  | 1          | hg       | False     | ''      | ''
+4  | 2          | pip      | True      | 7.9     | 'A newer version of pip is available.'
 ```
 
-Complex queries can be performed by `JOINING` the two tables and querying for
-corresponding field of interest.
+Once the model is defined, queries [complex
+queries](http://flask-sqlalchemy.pocoo.org/2.1/queries/) can be performed to
+add, remove or update records in the database as per requirement.
+
+#### Database migration
+
+As the project progresses, database schema may require significant alteration
+and will necessitate the use of a schema migration tool. Alembic is a database
+migration tool for usage with SQLAlchemy database toolkit of Python that we’d
+like to use. The Flask ecosystem also has a handy migration plugin
+([Flask-migrate](https://flask-migrate.readthedocs.org/en/latest/)) built on top
+of it.
+
+We’ll revisit the requirement and setup of proper tools for database migration
+after mid-term evaluation after receiving feedback from workshop deployments.
 
 #### Concerns
 
@@ -179,9 +224,9 @@ There might be a couple of ways to tackle this:
 1. One way to avoid it would be to generate a unique `machine-id` and use
    that as a primary identifier key. This key will act as foreign key for key
    for other table and maintain consistency.
-2. Just execute a SELECT statement on table `machine-info` and see if that
+2. Just execute a SELECT statement on table `machine_info` and see if that
    information is already record. If yes, then update the records in
-   `software_version` table. Essentially, all the attributes of `machine-info`
+   `package_info` table. Essentially, all the attributes of `machine-info`
    table may constitute a `UNIQUE_KEY` constraint.
 3. Handle it through a client side modification in installation-test script.
 
@@ -281,6 +326,9 @@ catches error.
 
 Add API endpoints to obtain report data in JSON format (whether other formats
 required, to be decided later).
+
+Incorporate feedback from workshop deployments. Setup database migration tool as
+necessary.
 
 ### July 20th - August 2rd
 
@@ -383,6 +431,12 @@ vivekraiiitkgp@gmail.com
 Indian Standard Time (+5.30 UTC)
 
 vivekrai@freenode (IRC)
+
+### Other plans
+
+May to mid of July is available as summer vacation during which I expect to
+remain right on timeline (30 hrs/week). Normal school hours resume after
+mid-July during which my hours/week may reduce (20 hrs/week).
 
 ### Checklist
 
