@@ -60,7 +60,7 @@ Some or most of these information are being retrieved in the [installation-test-
 
 >check for IPython script (ipython) failed: ( Name : IPython script (ipython) ) <br />
 >  errors finding IPython script (ipython) version  <-- Description  <br />
->causes:  < br />
+>causes: <br />
 >check for IPython script (ipython) failed:  <br />
 >    could not find 'ipython' executable  <-- Cause  <br />
  
@@ -96,7 +96,13 @@ class Successful(db.Model):
   package_name = db.Column(db.String(128)) 
   version = db.Column(db.String(128)) 
 ``` 
-* Optionally, user shall be prompted to enter the ```workshop_id``` before sending the data to the server, as it would enable us to associate each result with the workshop, and summarize conclusions workshop specific and also overall. 
+###Database Schema
+* User shall be prompted to enter the **workshop_id** and **email_id** before sending the data to the server, as it would enable the server to associate each result with the workshop, and summarize conclusions workshop specific and also overall.
+* Concatenation of **workshop_id** and **email_id** as **workshopid_email_id** would give us a unique id per user per workshop, and thus would prevent duplicate entries in the table for the same student attending the same workshop.
+* Everytime a call is made to the API, it will first check whether an entry is already there for **workshopid_email_id**. If yes, UPDATE query shall be made instead of INSERT query.
+* Initial Proposed schema :
+
+![diagram](http://i.imgur.com/VGGJuqd.png)
  
 * In response to the POST request the API may return some useful diagnostic information to the user. 
  
