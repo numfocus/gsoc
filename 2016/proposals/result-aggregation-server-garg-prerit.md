@@ -179,6 +179,9 @@ This project is concerned with the problems that students face in installing the
 I have a lot of experience in developing RESTful API's and web services. This project involves development of a RESTful API and setting up a server. Working upon this, it would give me more experience towards working on APIs and python Scripts, and also a open source experience which is new and exciting for me.
  
 ## Appendix
+
+Link to my opened issues : [#87](https://github.com/numfocus/gsoc/issues/87) , [#82](https://github.com/numfocus/gsoc/issues/82)
+
 ###Code Contribution
 As per the requirement mentioned in the project information, I developed a sample [demo](https://github.com/prerit2010/DemoAPI) flask API which takes the Operating system information and sends to the API making a POST request.
 
