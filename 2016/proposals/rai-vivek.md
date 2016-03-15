@@ -59,7 +59,7 @@ status report of the installation-test scripts.
 Most of this information can be collected using the `platform` Python module.
 A snippet of useful commands is shown below.
 
-```
+```python
 import platform
 platform.uname() # cross platform
 platform.win32_ver() # windows
@@ -123,10 +123,34 @@ instead of using raw SQL queries to managed database operations.
 
 The following illustrates a typical database model that can be defined:
 
-```
+```python
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+db = SQLAlchemy(app)
+
+class PackageInfo(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    package = db.Column(db.String(120))
+    installed = db.Column(db.Boolean)
+    version = db.Column(db.String(120))
+    log = db.Column(db.String(1000))
+    machine_id = db.Column(db.Integer, db.ForeignKey('machine_info.id'))
+
+    def __repr__(self):
+        return ("<PackageInfo(id={}, software={}, installed={}, "
+                "version={}, log={}, machine_id={})>").format(self.id,
+                                                              self.package,
+                                                              self.installed,
+                                                              self.version,
+                                                              self.log,
+                                                              self.machine_id)
+
+
 class MachineInfo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    workshop_id = db.Column(db.String(120))
+    workshopid = db.Column(db.String(120))
     system = db.Column(db.String(80))
     hostname = db.Column(db.String(120))
     release = db.Column(db.String(120))
@@ -140,37 +164,18 @@ class MachineInfo(db.Model):
                                backref='machine_info')
 
     def __repr__(self):
-        return "<MachineInfo(id={}, system={}, hostname={}, release={},
-                version={}, machine={}, processor={}, email={}, time={},
-                exit_status={})>".format(self.id,
-                                         self.system,
-                                         self.hostname,
-                                         self.release,
-                                         self.version,
-                                         self.machine,
-                                         self.processor,
-                                         self.email,
-                                         self.time,
-                                         self.exit_status)
-
-
-class PackageInfo(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    package = db.Column(db.String(120))
-    installed = db.Column(db.Boolean)
-    version = db.Column(db.String(120))
-    log = db.Column(db.String(1000))
-    machine_id = db.Column(db.Integer, db.ForeignKey('machine_info.id'))
-
-    def __repr__(self):
-        return "<PackageInfo(id={}, software={}, installed={},
-                version={}, log={}, machine_id={})>".format(self.id,
-                                                            self.package,
-                                                            self.installed,
-                                                            self.version,
-                                                            self.log,
-                                                            self.machine_id)
-
+        return ("<MachineInfo(id={}, workshopid={}, system={}, hostname={}, "
+                "release={}, version={}, machine={}, processor={}, email={}, "
+                "time={}, exit_status={})>").format(self.id,
+                                                    self.system,
+                                                    self.hostname,
+                                                    self.release,
+                                                    self.version,
+                                                    self.machine,
+                                                    self.processor,
+                                                    self.email,
+                                                    self.time,
+                                                    self.exit_status)
 ```
 
 
@@ -180,27 +185,48 @@ systems.
 
 A typical example of the database entry then may look like:
 
-```
+
+```sql
 (TABLE machine_info)
 
-id | workshop_id       | system   | hostname     | release             | version                                               | machine  | processor | email         | time                       | exit_status
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1  | ugc@edu.in        | 'Linux'  | 'ghostbook'  | '3.19.0-47-generic' | '#53~14.04.1-Ubuntu SMP Mon Jan 18 16:09:14 UTC 2016’ | 'x86_64' | 'x86_64'  | 'foo@bar.com' | 'Tue Mar 8 00:52:35 2016'  | 0
-2  | trainus@gmail.com | 'Darwin' | 'Vs-MacBook' | '15.0.0'            | 'Darwin Kernel Version 15.0.0: ..  ’                  | 'x86_64' | 'i386'    | 'bar@foo.com' | 'Sat Mar 12 18:34:12 2016' | 0
+id | workshop_id         | system   | hostname     | release             | version                                               | machine  | processor | email         | time                       | exit_status
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1  | 'ugc@edu.in'        | 'Linux'  | 'ghostbook'  | '3.19.0-47-generic' | '#53~14.04.1-Ubuntu SMP Mon Jan 18 16:09:14 UTC 2016’ | 'x86_64' | 'x86_64'  | 'foo@bar.com' | 'Tue Mar 8 00:52:35 2016'  | 0
+2  | 'trainus@gmail.com' | 'Darwin' | 'Vs-MacBook' | '15.0.0'            | 'Darwin Kernel Version 15.0.0: ..  ’                  | 'x86_64' | 'i386'    | 'bar@foo.com' | 'Sat Mar 12 18:34:12 2016' | 0
 
 (TABLE software_version)
 
-id | machine_id | software | installed | version | log
-------------------------------------------------------
-1  | 1          | python   | True      | 3.5.1   | ''
-2  | 1          | git      | True      | 1.9.1   | ''
-3  | 1          | hg       | False     | ''      | ''
-4  | 2          | pip      | True      | 7.9     | 'A newer version of pip is available.'
+id | machine_id | software   | installed | version  | log
+---------------------------------------------------------
+1  | 1          | 'python'   | True      | '3.5.1'  | ''
+2  | 1          | 'git'      | True      | '1.9.1'  | ''
+3  | 1          | 'hg'       | False     | ''       | ''
+4  | 2          | 'pip'      | True      | '7.9'    | 'A newer version of pip is available.'
 ```
 
 Once the model is defined, queries [complex
 queries](http://flask-sqlalchemy.pocoo.org/2.1/queries/) can be performed to
 add, remove or update records in the database as per requirement.
+
+A few examples of schema models are shown below:
+
+```python
+>>> pip = PackageInfo(package='pip', installed=1, version='7.9', log='Upgrade', machine_id=1)
+
+>>> pip
+<PackageInfo(id=1, software=pip, installed=True, version=7.9, log=Upgrade, machine_id=1)>
+
+>>> # add more packages, machines
+
+>>> MachineInfo.query.all()
+[<MachineInfo(id=1, workshopid="ugc@edu.net", system=Linux, ..., exit_status=0)>,
+ <MachineInfo(id=2, workshopid="example@ready.net", system=Darwin, ..., exit_status=0)>]
+
+>>> MachineInfo.query.first().packages
+[<PackageInfo(id=1, software=git, installed=True, version=1.9, log=, machine_id=1)>,
+ <PackageInfo(id=2, software=pip, installed=True, version=7.9, log=Upgrade, machine_id=1)>]
+
+```
 
 #### Database migration
 
@@ -237,6 +263,7 @@ as the project evolves.
 ### User interface
 
 * An easily navigable HTML report of diagnostic data.
+  > A Twitter Bootstrap front-end with jQuery.
 
 * Add simple in-browser visualizations.
   > These visualizations can be served via backend using Python library like
@@ -376,11 +403,16 @@ Collaborator in many open-source projects. A few that I am personally fond of:
 * [Sequenceserver](https://github.com/wurmlab/sequenceserver):  > 115+ commits,
     bioinformatics software, developed in Ruby, Frontend and backend design
 
-* [Wikipedia Gender Indicators](https://github.com/hargup/WIGI-website): Wikimedia supported, developer and maintainer,
-statistical analysis, visualization, used Python and JavaScript. See it in [action](http://wigi.wmflabs.org).
+* [Wikipedia Gender Indicators](https://github.com/hargup/WIGI-website):
+  Wikimedia supported, developer and maintainer,
+statistical analysis, visualization, used Python and JavaScript. See it in
+[action](http://wigi.wmflabs.org).
 
 * [Afra](https://github.com/yeban/Afra): JavaScript, Commits to improve the user
     interface.
+
+These projects incorporated relevant development experience (unit testing,
+coverage, code quality etc.) useful for this project.
 
 Please see all my contributions at [GitHub](https://github.com/vivekiitkgp).
 I also blog occasionally at [shorts](https://vivekiitkgp.github.io).
