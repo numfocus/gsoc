@@ -92,7 +92,7 @@ response = requests.post(uri, data=json.dumps(data), headers=headers)
 ``` 
 * This API will follow the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) standard, and all the data shall be sent in [JSON](http://www.json.org/) to the API. 
  
-* Setting up the **Database**. As mentioned in the description of the idea, [SQLite](https://www.sqlite.org/) is preferred, but it suffers some problems in case 40-50 people send the data simultaneously. After going through the comparison given [here](https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems), I would personally prefer [MySQL](https://www.mysql.com/) or [PostgreSQL](http://www.postgresql.org/) in this project. But that can be decided later as per the discussion with mentors. 
+* Setting up the **Database**. As mentioned in the description of the idea, [SQLite](https://www.sqlite.org/) is preferred, but it suffers some problems in case 40-50 people send the data simultaneously. After going through the comparison given [here](https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems), I would personally prefer [MySQL](https://www.mysql.com/) or [PostgreSQL](http://www.postgresql.org/) in this project. But that can be decided later as per the discussion with mentors. All interactions with the database shall be done using **SQLAlchemy** and **Alembic**.
  
 * Modelling the information collected at the client end. There shall be Tables in the database for user_system_info, successful installs and failed installs. All shall be referenced with a **unique id**, which will be used as a **foreign key** in all the tables, to identify a particular user associated with that entry in DB. Models shall be defined as follows: 
 ``` 
@@ -112,7 +112,7 @@ class Successful(db.Model):
 
 ###Database Migration
 
-* [SQLAlchemy](http://www.sqlalchemy.org/) is prefered for querying and handling the database. It provides great convenience and easy to maintain code. SQLAlchemy does not consider a database as just a set of tables, rows and columns, but it considers it as a relational algebra engine. Writing complex raw queries can lead to difficult to maintain code. Any schematic changes in the database can be easily taken care off using SQLALchemy. Sample code snippet :
+* I suggest using [SQLAlchemy](http://www.sqlalchemy.org/) for querying and handling the database. It has several advantages over using traditional SQL connectors, such as producing code, which is more readable, easier to maintain, less prone to errors and less vulnerable to attacks. SQLAlchemy does not consider a database as just a set of tables, rows and columns, but rather as a relational algebra engine. Writing complex raw queries can lead to difficult to maintain code. Any schematic changes in the database can be easily taken care of using SQLAlchemy. Sample code snippet :
 ```
 import os
  
