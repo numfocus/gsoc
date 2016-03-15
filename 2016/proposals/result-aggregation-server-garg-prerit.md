@@ -182,6 +182,11 @@ I have a lot of experience in developing RESTful API's and web services. This pr
 
 Link to my opened issues : [#87](https://github.com/numfocus/gsoc/issues/87) , [#82](https://github.com/numfocus/gsoc/issues/82)
 
+###Operating systems accessibility 
+
+* **Laptop configuration** : Lenovo Z510 with Ubuntu 15.10 and Windows 10.
+* I shall be testing the scripts on all three platforms ( Linux , Windows , OS X ). I have Linux and Windows on my Laptop, and also have access to OS X through two of my close friends' MacBook.
+
 ###Code Contribution
 As per the requirement mentioned in the project information, I developed a sample [demo](https://github.com/prerit2010/DemoAPI) flask API which takes the Operating system information and sends to the API making a POST request.
 
