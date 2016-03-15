@@ -27,7 +27,8 @@ The installation-test script needs to be modified to retrieve some useful inform
   * Complete platform information 
   * Uname ( System info like kernel-name, kernel-version etc ) 
   * Version ( System’s release version ) 
-  * Machine information ( Machine type, e.g. 'i386' ) 
+  * Machine information ( Machine type, e.g. 'i386' )
+  * Python Version
   
 All of this information can be retrieved by using a library in python called "Platform", code of which I wrote in my [demo](https://github.com/prerit2010/DemoAPI) application. The code snippet : 
 ``` 
@@ -88,7 +89,7 @@ response = requests.post(uri , data = json.dumps(data) , headers = headers)
  
 * Setting up the **Database**. As mentioned in the description of the idea, [SQLite](https://www.sqlite.org/) is preferred, but it suffers some problems in case 40-50 people send the data simultaneously. After going through the comparison given [here](https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems), I would personally prefer [MySQL](https://www.mysql.com/) or [PostgreSQL](http://www.postgresql.org/) in this project. But that can be decided later as per the discussion with mentors. 
  
-* Modelling the information collected at the client end. There shall be Tables in the database for successful installs, failed installs, and diagnose information. All shall be reference with a **unique id**, which will be used as **foreign key** in all the tables, to identify a particular user associated with that entry in the DB. Models shall be defined as follows: 
+* Modelling the information collected at the client end. There shall be Tables in the database for user_system_info, successful installs and failed installs. All shall be reference with a **unique id**, which will be used as **foreign key** in all the tables, to identify a particular user associated with that entry in the DB. Models shall be defined as follows: 
 ``` 
 from app import db 
 class Successful(db.Model): 
