@@ -22,7 +22,7 @@ The *Survey Visualizer* application stack can be divided into:
 
  * Backend  : [Django]
  * Scheduler: [Cron]
- * Database : [PostgreSQL]
+ * Database : [Django ORM]
  * Frontend : [Charts.js] and [Bootstrap]
 
 ### Backend - Django Application
@@ -45,22 +45,32 @@ from workshop.models import Workshop
 
 #Fetch all responses from the database
 responses = Response.objects.all()
-#Fetch responses filtered by the last workshop
-last_workshop_responses = Response.objects.filter(
-    workshop=Workshop.objects.latest()
-)
+
 # Fetch responses gathered within the last week
 weekly_responses = Response.objects.filter(
     date_created=(datetime.date.today()-datetime.timedelta(days=7))
 )
+
 #Populate database with responses from SurveyMonkey API
 new_responses = Response.objects.populate()
 ```
 
+The `Response.objects.populate()` command works as:
+* Hit the [get_response_counts] API endpoint to check the
+  number of responses for each survey.
+* If the number of responses have increased since the last
+  time the database was populated for a survey, we proceed to
+  collect the respondents for the survey between the two time
+  instants using the [get_respondent_list] API endpoint.
+* The responses for the new respondents are collected using
+  the [get_responses] API endpoint. The responses are saved
+  to the `Response` model.
+
+
 #### Django Project
 
 The Django project will perform these tasks:
- * Exposing the `Response.object.populate()` directive through a
+ * Exposing the `Response.objects.populate()` directive through a
    management command.
  * Rendering and serving the views and templates.
 
@@ -68,9 +78,7 @@ The Django project will perform these tasks:
 
 [Cron] will be used as a job scheduler to periodically run
 the command `Responses.objects.populate()` at fixed
-time intervals.
-The interval duration would be dynamically determined by the
-number of API calls left and the time of the day.
+time intervals (tentatively twice a day).
 
 *Why Cron?*
  * Cron is the easiest job scheduling solution available to us
@@ -79,12 +87,134 @@ number of API calls left and the time of the day.
 
    -- DonaldKnuth
 
-### Database - PostgreSQL
+### Database - Django ORM
 
-The Django app will use PostgreSQL or SQLite as its
-database engine in production and SQLite database engine during
-development to store the survey responses fetched by the
+The SurveyMonkey Django app will use five major tables
+to store the survey responses fetched by the
 SurveyMonkey Django application.
+
+* **Survey**: The *Survey* table will consists of surveys fetched
+   and auto-populated by the [get_survey_details] API endpoint.
+* **Respondent**: The *Respondent* table stores basic user details
+  of all respondents for a given survey.
+* **Question**: Each survey row in the *Survey* table consists of
+  a list of questions, ranging from but not limited to
+  * Single choice / Dropdowns
+  * Matrix choice
+  * Text Box
+* **Answer**: Each question in the *Question* table has certain
+  answers that the respondent can select or give as an input. For eg:
+  * Single choice / Dropdowns: These questions have a list of answers
+    to them.
+  * Matrix choice: These questions have a row and a column of answers
+    to them.
+  * Text Box: The answer to these questions is a string.
+* **Response**: Each row in the *Response* table associates a respondent
+  with the question that was asked and the answer that
+  the respondent selected or inputted.
+
+I propose four database schemas.
+
+#### Proposal 1
+The different  questions and answers are modeled using multi-table
+inheritance.
+Foreign keys exists between a survey row and the questions within it,
+a question row and the answers within it. A response row has two foreign
+keys, one to the question that was asked and the other to the answer
+that the respondent selected.
+
+![Proposal-1](https://cloud.githubusercontent.com/assets/6830800/13755382/fd10d820-ea40-11e5-8c36-bed3cac6357e.png)
+
+##### PROS:
+1. Compatible across all database engines supported by Django.
+2. We can query across the the Foreign Keys between the tables.
+
+#### CONS:
+> In nearly every case, abstract inheritance is a better approach for the long term. I’ve seen more than few sites crushed under the load introduced by concrete inheritance, so I’d strongly suggest that Django users approach any use of concrete inheritance with a large dose of skepticism.
+
+-Jacob Kaplan-Moss
+
+The left joins that exist between the tables under multi-table
+inheritance cause a lot of database hit when Django fetches a
+row.
+
+#### Proposal 2
+
+This schema uses abstract inheritance with the use of
+GenericForeignKeys over multi-table inheritance.
+The base _Question_ and _Answer_ tables do not exist and the
+_Response_ table has two GenericForeignKeys, one that points to
+any of the Question table, while the other GenericForeignKey
+points to any of the corresponding _Answer_ tables.
+
+![Proposal-2](https://cloud.githubusercontent.com/assets/6830800/13756243/fb11080c-ea44-11e5-8790-7208e61c46f0.png)
+
+**PROS**:
+
+None
+
+**CONS**:
+
+1. We cannot run queries across the GenericForeignKey.
+   We cannot filter responses by the particular answer to a question.
+2. To allow the app to filter responses by a particular field,
+   we will have to explicitly save the field
+   (like the answer to a particular question)
+   in another column of the *Response* table.
+   This introduces a redundancy.
+
+#### Proposal 3
+
+We stores the fields within the Answer table as a serialized dictionary
+in a TextField of the column json.
+
+![Proposal-3](https://cloud.githubusercontent.com/assets/6830800/13775856/ddf50358-eacc-11e5-8320-8ae205014310.png)
+
+**PROS**:
+
+1. Simple schema.
+
+**CONS**:
+
+1. No SQL validation across the fields of the *Answer* table stored
+   within the TextField. The fields are saved as strings.
+2. We incur an overhead of parsing and serializing the fields
+   on every database hit.
+3. To allow the app to filter responses by a particular field,
+   we will have to explicitly save the field
+   (like the answer to a particular question)
+   in another column of the *Response* table.
+   This introduces a redundancy.
+
+#### Proposal 4
+
+We use the HStoreField that PostgreSQL provides to store the fields
+of the *Answer* tables.
+
+![Proposal-4](https://cloud.githubusercontent.com/assets/6830800/13776834/47d28e4e-ead2-11e5-8f6d-bebeb972ef1a.png)
+
+**PROS**:
+
+1. Simplest database schema to understand and work with.
+2. Allows us to query responses by the answer.
+   `Response.objects.filter(answer__data__text='Workshop A')`
+
+**CONS**:
+
+1. This schema can only be realized on PostgreSQL database,
+   on both development and production environments.
+   No equivalent SQLite solution exists.
+2. No SQL validation across the fields of the *Answer* table stored
+   within the HStoreField. The fields are saved as strings.
+
+#### Summary
+
+The proposed database schema have their advantages and their shortcomings.  
+Proposal 1 is not recommended by the community and is seen to
+perform poorly under stress.  
+Proposal 2 and 3 do not allow us to filter the responses without
+introducing a redundancy in the *Response* table.  
+Proposal 4, though simplest to use, is not compatible on SQLite.
 
 ### Frontend - Charts.js and Bootstrap
 
@@ -212,16 +342,23 @@ listed in the [sample survey] can be viewed [here].
 The conversation between the mentors can be viewed at
 [numfocus/gsoc/issues/91].
 
+## Availability
+
+**Time Zone**:      UTC +0530  
+**Minimum hours per week**: 40 hours
+
+My university classes begin on 18th July, 2016. I will still be able
+to devote 30-40 hours per week till the end of the coding period.
+
 ## Contact
 
-Name:       Aditya Narayan
-Email:      narayanaditya95@gmail.com
-Timezone:   UTC +0530
+**Name**:   Aditya Narayan  
+**Email**:  narayanaditya95@gmail.com
 
 
 [SurveyMonkey]: http://surveymonkey.com/
 [Django]: http://djangoproject.com/
-[Django Rest Framework]: http://www.django-rest-framework.org/
+[Django ORM]: https://docs.djangoproject.com/en/1.9/topics/db/models/
 [Cron]: https://wiki.archlinux.org/index.php/cron
 [PostgreSQL]: http://www.postgresql.org/
 [PostgreSQL-specific features]: https://docs.djangoproject.com/en/1.9/ref/contrib/postgres/fields/
@@ -232,11 +369,11 @@ Timezone:   UTC +0530
 [Bar Charts]: http://www.chartjs.org/docs/#bar-chart
 [Tables]: http://getbootstrap.com/css/#tables
 [AMY]: https://github.com/swcarpentry/amy
-[migration]: https://github.com/swcarpentry/amy/issues/716
 [SurveyMonkey API]: https://developer.surveymonkey.com/
 [sample application]: https://github.com/narayanaditya95/survey-visualiser
 [sample survey]: https://www.surveymonkey.com/r/HSKQPQQ
 [here]: https://infinite-falls-5979.herokuapp.com/
+[get_survey_details]: https://developer.surveymonkey.com/docs/methods/get_survey_details/
 [get_response_counts]: https://developer.surveymonkey.com/docs/methods/get_response_counts/
 [get_respondent_list]: https://developer.surveymonkey.com/docs/methods/get_respondent_list/
 [get_responses]: https://developer.surveymonkey.com/docs/methods/get_responses/
