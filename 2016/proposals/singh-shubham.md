@@ -190,7 +190,7 @@ My skill set includes - Python,C/C++,Java,Django,MySQL, Sqlite and JavaScript.
 
 This project is a wonderful example of Software Design to tackle real life problems, where there is no exact, correct solution.
 Designing a possible workflow was an enriching experience, where we had to take a number of issues into account to come up with a solution.
-Working on this project, would give me more experience in Software Design and Implementation, and working on a live open source project is itself is a very exciting feat.
+Working on this project, would give me more experience in Software Design and Implementation, and working on a live open source project is itself a very exciting feat.
 
 ## Appendix
 
