@@ -68,7 +68,7 @@ like phone number and address, at your proposal.**
 2.  Clone your fork:
 
     ~~~
-    $ git clone https://github.com/username/gsoc2015.git
+    $ git clone https://github.com/username/gsoc.git
     ~~~
 
     where `username` is your GitHub username.
