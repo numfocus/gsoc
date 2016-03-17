@@ -125,11 +125,11 @@ that the respondent selected.
 
 ![Proposal-1](https://cloud.githubusercontent.com/assets/6830800/13755382/fd10d820-ea40-11e5-8c36-bed3cac6357e.png)
 
-##### PROS:
+##### PROS
 1. Compatible across all database engines supported by Django.
 2. We can query across the the Foreign Keys between the tables.
 
-#### CONS:
+##### CONS
 > In nearly every case, abstract inheritance is a better approach for the long term. I’ve seen more than few sites crushed under the load introduced by concrete inheritance, so I’d strongly suggest that Django users approach any use of concrete inheritance with a large dose of skepticism.
 
 -Jacob Kaplan-Moss
@@ -149,11 +149,11 @@ points to any of the corresponding _Answer_ tables.
 
 ![Proposal-2](https://cloud.githubusercontent.com/assets/6830800/13756243/fb11080c-ea44-11e5-8790-7208e61c46f0.png)
 
-**PROS**:
+##### PROS
 
 None
 
-**CONS**:
+##### CONS
 
 1. We cannot run queries across the GenericForeignKey.
    We cannot filter responses by the particular answer to a question.
@@ -170,11 +170,11 @@ in a TextField of the column json.
 
 ![Proposal-3](https://cloud.githubusercontent.com/assets/6830800/13775856/ddf50358-eacc-11e5-8320-8ae205014310.png)
 
-**PROS**:
+##### PROS
 
 1. Simple schema.
 
-**CONS**:
+##### CONS
 
 1. No SQL validation across the fields of the *Answer* table stored
    within the TextField. The fields are saved as strings.
@@ -193,13 +193,13 @@ of the *Answer* tables.
 
 ![Proposal-4](https://cloud.githubusercontent.com/assets/6830800/13776834/47d28e4e-ead2-11e5-8f6d-bebeb972ef1a.png)
 
-**PROS**:
+##### PROS
 
 1. Simplest database schema to understand and work with.
 2. Allows us to query responses by the answer.
    `Response.objects.filter(answer__data__text='Workshop A')`
 
-**CONS**:
+##### CONS
 
 1. This schema can only be realized on PostgreSQL database,
    on both development and production environments.
