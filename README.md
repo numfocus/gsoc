@@ -84,7 +84,7 @@ In alphabetic order.
        algorithms.
        </p>
        <p>
-         <a href="https://github.com/piskvorky/gensim">Website</a>  | <a href="https://github.com/piskvorky/gensim/wiki/Student-Projects">Ideas Page</a> | <a href="https://groups.google.com/forum/#!forum/gensim">Mailing List</a> 
+         <a href="https://github.com/piskvorky/gensim">Website</a>  | <a href="https://github.com/piskvorky/gensim/wiki/Student-Projects">Ideas Page</a> | <a href="https://groups.google.com/forum/#!forum/gensim">Mailing List</a>
        </p>
     </td>
   </tr>
@@ -156,7 +156,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="" />
+      <img width="300px" src="http://pandas.pydata.org/_static/pandas_logo.png" />
     </td>
     <td>
        <h1>Pandas</h1>
@@ -241,7 +241,7 @@ a sub-org must:
 | [Julia] | Applying as separate organization | |
 | [Matplotlib] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-matplotlib.md |
 | [NumPy] | Applying under PSF umbrella | https://wiki.python.org/moin/SummerOfCode/2016 |
-| [pandas] | Unknown | |
+| [pandas] | Applying under NumFOCUS umbrella | https://github.com/pydata/pandas/wiki/Google-Summer-of-Code |
 | [Project Jupyter](Jupyter) | Unknown | |
 | [PyTables] | Unknown | |
 | [rOpenSci]  | Not going to participate | N/A |
