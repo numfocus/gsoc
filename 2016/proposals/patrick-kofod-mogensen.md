@@ -18,10 +18,13 @@ To improve what you might call coverage, I will extend the test set significantl
 The performance tests will be performed with regards to different measures such as: function evaluations, gradient evaluations, cpu time, memory allocation (for large problems), and more. Standard measures such as means, percentiles, and typical ranks will be presented, but also [performance profiles](http://link.springer.com/article/10.1007%2Fs101070100263).
 
 ### Improved algorithms
-I propose to improve at least two if the current algorithms as part of this GSoC project. The two I have in mind (Simulated Annealing and Nelder Mead) both have code available, and I will make sure that they are adapted, benchmarked, and merged if they provide improvements over the current situation. Obviously, the test set needs to be implemented to make this decision. Other possibilities might present themselves along the way.
+I propose to improve at least two of the current algorithms as part of this GSoC project. The two I have in mind (Simulated Annealing and Nelder Mead) both have code available, and I will make sure that they are adapted, benchmarked, and merged if they provide improvements over the current situation. Obviously, the test set needs to be implemented to make this decision. Other possibilities might present themselves along the way.
 
 ### Unit testing
 The last area which needs better testing is testing each individual method in the package. A more detailed testing of the package itself will guard against future bugs, and might reveal current bugs.
+
+### JuliaCon application
+I have submitted a workshop proposal for JuliaCon 2016. The workshop is meant to be a tutorial in using Optim.jl for optimization in Julia. The recently merged optimization API, and the soon to be merged results access API changes will be presented, and the attendees will see examples, and work on provided exercises. Part of my GSoC time will be spent preparing this material.
 
 ## Schedule of Deliverables
 
@@ -29,7 +32,7 @@ The last area which needs better testing is testing each individual method in th
 
 - Documentation
 - Performance
-- JuliaCon (?)
+- JuliaCon workshop
 
 
 ### June 28nd - August 14th
