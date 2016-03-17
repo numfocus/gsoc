@@ -32,7 +32,7 @@ organizing Google Summer of Code for NumFOCUS.
 | Irwin Zaid         | izaid                     |
 | Mark Wiebe         | mwiebe                    |
 
-# EcoData Retriever
+#### EcoData Retriever
 
 | Name               | GitHub Profile            |
 |--------------------|---------------------------|
