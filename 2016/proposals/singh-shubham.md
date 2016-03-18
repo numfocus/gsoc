@@ -9,7 +9,7 @@ This project will design such a workflow and implement it by adding appropriate 
 
 ## Proposed workflow
 
-![HTML MOCKUP flowchart](https://cloud.githubusercontent.com/assets/15982349/13770094/aa23d670-eaaa-11e5-81a8-312f860ecd7b.png)
+![HTML MOCKUP flowchart](https://cloud.githubusercontent.com/assets/15982349/13868778/90f99dc0-ecf2-11e5-9ac3-8cfd3dec3224.png)
 
 1. Interested Trainees apply as Group or Individuals by filling forms.
 ![HTML MOCKUP FORMS](https://cloud.githubusercontent.com/assets/15982349/13816694/6c7a68e6-ebb5-11e5-809e-eb5bd00d7a22.png)
