@@ -1,13 +1,11 @@
-# Manage workflow for instructor training
+# Manage Workflow for Instructor Training
 
 ## Abstract
 
-Computing Skills have now become essential more so in the field of Science, but many a time we find researchers struggling with code or tools to get things done.
-Software Carpentary is a step in this direction.
 Since 1998, Software Carpentry has been teaching researchers in science, engineering, medicine, and related disciplines the computing skills they need to get more done in less time and with less pain.
-Software Carpentary , uses AMY ( a django based web application) to to keep track of who's qualified to teach, what workshops have run, who taught and attended. As more and more people are applying to become instructors at Software Carpentary. It has become essential to manage the workflow for instructor training.
+Software Carpentary, uses AMY (a Django based web application) to to keep track of who's qualified to teach, what workshops have run, who taught and attended. As more and more people are applying to become instructors at Software Carpentary. It has become essential to manage the workflow for instructor training.
 
-This project aims at designing such a workflow and implementing it by adding appropriate views to AMY.
+This project will design such a workflow and implement it by adding appropriate views to AMY..
 
 ## Proposed workflow
 
@@ -29,12 +27,11 @@ This list can be filtered on the following criteria:
   * start date of training.
   * location of the training.
 
-  When the training is completed and the trainee has been certified, the lead instructor can export the trainee as instructor, to move their accounts to the Person table, and remove them from the Trainee table.
 ![HTML MOCKUP ALL_TRAINEE](https://cloud.githubusercontent.com/assets/15982349/13816909/3401c4a4-ebb6-11e5-9799-0eb21ccd5eea.png)
 4. *Trainee Home page* -
-After getting accepted for the training program, the trainees recieve a randomly generated password, which they can use to log in to AMY, a trainee's home page is different from the AMY DASHBOARD, the AMY DASHBOARD is reservered for administrative purposes only. After logging in the trainees are directed to TRAINEE_HOME. This view will have a nav-bar - **HOME** , **ABOUT** and **NOTIFICATION**.
-  * *HOME*  shows the trainees progress, through a progress bar indicating which stages have been completed and the ones left. In this view the trainee can also request a discussion session by filling in a webform, with fields such as TOPIC, PREFERRED TIME, and so on.
-This view will also list down the general guidelines for instructor training, informing what is required in each stage of the training.
+After getting accepted for the training program, the trainees receive a randomly generated password, which they can use to log in to AMY, a trainee's home page is different from the AMY DASHBOARD, the AMY DASHBOARD is reserved for administrative purposes only. After logging in the trainees are directed to TRAINEE_HOME. This view will have a nav-bar - **HOME** , **ABOUT** and **NOTIFICATION**.
+  * *HOME*  shows the trainees progress, through a progress bar indicating which stages have been completed and the ones left. In this view the trainee can also request a discussion session by filling in a webform, with fields such as TOPIC, PREFERRED TIME, and so on.This view will also list down the general guidelines for instructor training, informing what is required in each stage of the training.
+
   * *ABOUT* , this view shows the information entered by the trainee in their initial application, they can also edit this information, and change passwords here.
   * *NOTIFICATION*,  this view allows the trainee to view all the comments/feedback from the discussion leaders and the lesson maintainers.In the format *comment: by whom: timestamp*.
 
@@ -51,27 +48,16 @@ The Software stack for this project can be divided into:
 Trainee would be the main Model, maintaining most of the Flags for Progress and other information:
 
 ```python
-lass Trainee(AbstractBaseUser):
+class Trainee(models.Model):
     '''Model for a Trainee '''
     # listing just essential fields, more fields can and should be added when implementing
-    COURSE_CHOICES = (
-        ('1', 'SWC'),
-        ('2', 'DC'),
-        )
-    personal    = models.CharField(max_length=STR_LONG)
-    middle      = models.CharField(max_length=STR_LONG, null=True, blank=True)
-    family      = models.CharField(max_length=STR_LONG)
-    email       = models.CharField(max_length=STR_LONG, unique=True, null=True, blank=True)
-    course      = models.CharField(max_length=STR_LONG, choices=COURSE_CHOICES, null=False, default='1')
-    group       = models.ForeignKey(Trainee_Group,default=None,null=True)
+    trainee = models.ForeignKey(Person,default=None)
+    badge   = models.ForeignKey(Badge)
+    group   = models.ForeignKey(Trainee_Group,default=None,null=True)
     Attendance_Flag = models.BooleanField(default=False) # maintains attendance record
     Discussion_Flag = models.BooleanField(default=False) # maintains PASS or FAIL
     HomeWork_Flag = models.BooleanField(default=False) # maintains PASS or FAIL
 
-    username    = models.CharField(
-        max_length=STR_MED, unique=True,
-        validators=[RegexValidator(r'^[\w\-_]+$', flags=re.A)],
-    )
  ```
 
 Maintaining Group information:
@@ -79,34 +65,22 @@ Maintaining Group information:
 ```python
 class Trainee_Group(models.Model):
 
-    instructor_assigned=models.ForeignKey(Person)
-    primary_contact_personal    = models.CharField(max_length=STR_LONG)
-    primary_contact_middle      = models.CharField(max_length=STR_LONG, null=True, blank=True)
-    primary_contact_family      = models.CharField(max_length=STR_LONG)
-    primary_contact_email       = models.CharField(max_length=STR_LONG, unique=True, null=True, blank=True)
-    training_course             = models.CharField(max_length=STR_LONG)
+    instructor_assigned= models.ForeignKey(Person)
+    primary_contact = models.ForeignKey(Person)
+    badge = models.ForeignKey(Badge)
 ```
 Commenting System:
 Since comments/feedback are only meant to be unidirectional (i.e from the discussion_leaders, lesson_maintainers to the trainee) a simple Commenting Model would suffice and there is no need for third party apps.
 
 ```python
 
-class D_Comments(models.Model):
+class Comments(models.Model):
     ''' commenting system
-    storing comments by the discussion leaders
+    storing comments by the Discussion leaders and the lesson maintainers
     '''
-    Discussion_Comment =models.TextField(default="", blank=True)
-    Discussion_leader = models.ForeignKey(Person,default=None,null=True)
+    comment =models.TextField(default="", blank=True)
+    trainer = models.ForeignKey(Person,default=None,null=True)
     trainee = models.ForeignKey(Trainee,default=None,null=True) # Many to one relationship
-    created = models.DateTimeField(auto_now_add=True)
-
-class H_Comments(models.Model):
-    ''' commenting System
-    storing comments by the lesson maintainers
-    '''
-    Homework_Comment = models.TextField(default="", blank=True)
-    lesson_maintainer = models.ForeignKey(Person,default=None,null=True)
-    trainee =  models.ForeignKey(Trainee,default=None,null=True) #Many to one relationship
     created = models.DateTimeField(auto_now_add=True)
 
 ```
@@ -114,7 +88,7 @@ class H_Comments(models.Model):
 
 ## Schedule of Deliverables
 
-I believe in test drive development so I will be writing tests as soon as I am done with a feature/view addition.
+I believe in test driven development so I will be writing tests as soon as I am done with a feature/view addition.
 
 ### Community Bonding Period
 
