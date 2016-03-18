@@ -26,8 +26,8 @@ Trainees apply in one of the following ways:
 
   **Helping individuals form groups**
 
-    * Apart from the regular details, the applicant would also be asked if they are willing to pair up.
-    * If yes, they would be presented with a list of individuals or groups willing to accept new members. The applicant can then request to pair up with the individual/group of their choice.
+   * Apart from the regular details, the applicant would also be asked if they are willing to pair up.
+   * If yes, they would be presented with a list of individuals or groups willing to accept new members. The applicant can then request to pair up with the individual/group of their choice.
 
   **Determine alredy associated applicants**
 
@@ -37,9 +37,9 @@ Trainees apply in one of the following ways:
 
   Applicants can also apply in groups, making it easier to manage a bunch of people together. This would have the following fields:
 
-    * Individual details of every member, as in [1] above
-    * Group Leader
-    * Whether or not they are willing to expand the group
+   * Individual details of every member, as in [1] above
+   * Group Leader
+   * Whether or not they are willing to expand the group
 
 
 ### 2. Managing Trainees - The Trainee Admin
