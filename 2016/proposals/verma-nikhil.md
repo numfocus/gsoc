@@ -138,13 +138,9 @@ The design is something I want to pay attention to. The trainee dashboard, as we
 
 I propose to either use another theme, or a different framework, such as `MaterializeCSS` for the Trainee Dashboard. Amy can still continue to use Bootstrap for consistency.
 
-**Network Optimization**
-
-The static files (js, css) are the ones which take up most of the time loading the page and are expected to change infrequently. So, to make the portal load faster, a `Cache-Control:max-age=3600` header would instruct the browser to retain those files for atleast an hour before checking for new updates. This will make the interface significantly faster even on slower connections.
-
 **Emails and Notifications**
 
-It'll be required to send bulk emails to applicants which, as the portal grows, would require using a bulk email service, such as `Amazon SES`. Setting this up earlier would help solve the issue before any such problem arises.
+The portal will use Django's default `django.core.mail` module for sending emails and notifications.
 
 **Social Login**
 
@@ -230,3 +226,17 @@ I'm also interested in web development, and I develop websites of our college fe
 ## Why this project?
 
 I've developed Django applications in the past, and I wanted to improve upon my skills by means of working with experienced developers for some real world applications. And after some contributions to AMY, I seem to understand it well, and I'm also comfortable enough with AMY. This gives me more reasons to work on it! Also, I can promise quality work, and hope that this becomes a wonderful experience for all of us.
+
+Some of my previous contributions are:
+
+**Oasis 2015** ([GitHub](https://github.com/dvm-bitspilani/oasis-2015-backend)) ([bits-oasis.org](http://bits-oasis.org))
+
+Extended and revamped [regsoft](https://github.com/dvm-bitspilani/oasis-2015-backend/tree/master/regsoft), the on-campus registration software, and the portal for participant registrations.
+
+**Apogee 2016** ([GitHub](https://github.com/dvm-bitspilani/apogee-2016)) ([bits-apogee.org](http://bits-apogee.org))
+
+Developed [EMS](https://github.com/dvm-bitspilani/apogee-2016/tree/master/ems), an Event Management System to keep track of participation in all events of the fest, and the backend for [Lacuna](https://github.com/dvm-bitspilani/apogee-2016/tree/master/lacuna), a puzzle based game.
+
+**BOSM 2015** ([GitHub](https://github.com/dvm-bitspilani/BITS-BOSM-2015)) ([bits-bosm.org](http://bits-bosm.org))
+
+Developed an [admin interface for PCR](https://github.com/dvm-bitspilani/BITS-BOSM-2015/tree/master/bosm2015/pcradmin), the [portal to manage participant registrations](https://github.com/dvm-bitspilani/BITS-BOSM-2015/tree/master/bosm2015/registration) and update event data dynamically on the website.
