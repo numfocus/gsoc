@@ -51,7 +51,7 @@ Implement proper 2D heat map API:
   - make heatmap catagorically aware
 
 ### July 6th - July 19th
-Implement API for categorical color mapping (earlier because seems easier than interactivty)
+Implement API for categorical color mapping (earlier because seems easier than interactivity)
   
 ### July 20th - August 2nd
 Start interactive features: 
