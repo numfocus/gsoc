@@ -3,7 +3,7 @@
 ## Abstract
 
 Since 1998, Software Carpentry has been teaching researchers in science, engineering, medicine, and related disciplines the computing skills they need to get more done in less time and with less pain.
-Software Carpentary, uses AMY (a Django based web application) to to keep track of who's qualified to teach, what workshops have run, who taught and attended. As more and more people are applying to become instructors at Software Carpentary. It has become essential to manage the workflow for instructor training.
+Software Carpentary, uses AMY (a Django based web application) to keep track of who's qualified to teach, what workshops have run, who taught and attended. As more and more people are applying to become instructors at Software  Carpentary. It has become essential to manage the workflow for instructor training.
 
 This project will design such a workflow and implement it by adding appropriate views to AMY..
 
@@ -17,14 +17,14 @@ This project will design such a workflow and implement it by adding appropriate 
 The lead trainer has to compose one sample email by filling a web-form before accepting an application, this email will contain information such as
 date, location, mode(online or in person), instructor name and instructor email id. This information is also stored in the database for the accepted applicant to be queried on later.
 Accepting an application will send an email, to the applicant that he/she has been accepted into the program with other details about the actual training along with one randomly generated password to login in to their account (this password can be changed to anything by the trainee after the first login).
-The sample email has to be written once and can be sent to all the people who have been accepted for a particular training session.
-For another training session the lead trainer would just have to fill the web-form again, overwriting previous values.
+Every trainee gets a login credential, even if they belong to a group.
 ![HTML MOCKUP ALL_APPLICATIONS]( https://cloud.githubusercontent.com/assets/15982349/13816688/66a3e7e4-ebb5-11e5-83f1-5086ddddac13.png)
 
 3. All accepted applications, are then transferred to the Trainee view. In this view the lead trainer, trainers,discussion leaders, lesson maintainers can track progress of the trainees, provide feedback and update the status of every stage. They are also notified here if the Trainee has requested a discussion session.
 This list can be filtered on the following criteria:
   * instructor assigned.
   * start date of training.
+  * mode of training (online or in person)
   * location of the training.
 
 ![HTML MOCKUP ALL_TRAINEE](https://cloud.githubusercontent.com/assets/15982349/13816909/3401c4a4-ebb6-11e5-9799-0eb21ccd5eea.png)
