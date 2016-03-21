@@ -13,17 +13,17 @@ Here is [#89](https://github.com/numfocus/gsoc/issues/89) issue where I discusse
 
 I split this proposal into as small milestones as possible. Every milestone ends up with new version of Amy being pushed to production and introduced to all its users. This minimizes the chances of failure and let us adapt or change almost everything after every milestone -- even if it means changing the scope of this project. The milestones are:
 
-1. [Milestone 1: Managing SWC Checkout Process](#milestone-1-managing-swc-checkout-process) -- that is Homework, Discussion Session, Checkout Session and welcoming to the community.
+1. [Milestone 1: Managing Checkout Process](#milestone-1-managing-checkout-process) -- that is Homework, Discussion Session, Checkout Session and welcoming to the community.
 
-1. [Milestone 2: Managing DC Checkout Process](#milestone-2-managing-dc-checkout-process)
-
-1. [Milestone 3: Managing Recruiting Candidates](#milestone-3-managing-recruiting-candidates) and rest of the workflow, that is matching them to Instructor Trainings and running those trainings.
+1. [Milestone 2: Managing Recruiting Candidates](#milestone-2-managing-recruiting-candidates) and rest of the workflow, that is matching them to Instructor Trainings and running those trainings.
 
 It may be necessary to move from SQLite to Postgress. I'm discussing in [#716](https://github.com/swcarpentry/amy/issues/716) with Piotr Banaszkiewicz if it's really necessary, but if it is, it must be done at the beginning, as an additional milestone.
 
 I believe it's really important to get feedback as soon as possible, therefore:
 
-- Before introducing new features to all users, they'll be tested by a group of volunteering early users. That way, we don't have to test everything before showing it to first users, so we can get feedback faster and iterate quicker.
+- Before introducing new features to all users, they'll be tested by a group of volunteering early users. That way, we don't have to test everything before showing it to first users, so we can get feedback faster and iterate quicker. If we don't get those early users, the only thing we can do is:
+    - to extensively test the code for different user scenarios before exposing new functionality to all users,
+    - to introduce the new system only to SWC Admins, Trainers and Trainees who serve as "early users", and then to all users.
 
 - The early users can give feedback in an easy way, e.g. by sending an email rather than opening an issue on github.
 
@@ -39,33 +39,38 @@ It's also important to note what will be **not** implemented:
 
 - Tracking sessions with Google Analytics or Piwik.
 
-## Milestone 1: Managing SWC Checkout Process
+## Milestone 1: Managing Checkout Process
 
 That is everything after an Instructor Training -- that is Homework, Discussion Session, Checkout Session and welcoming to the community.
 
 The new workflow would be:
 
-- At the end of Instructor Training, Trainees register in Amy using the link shared by the Trainer. The link would be unique for each Training, so Trainees can be automatically associated with that Training.
+- At the end of Instructor Training, Trainees register in Amy using Registration Form. This form contains only one field: email address. After submitting the form, Amy sends an email with link to another form, where the Candidate can choose password and enter some basic information about him (something like `update_profile`). The Registration Form accepts emails addresses that are already present in Amy Database. In that case, it serves as password recovery.
 
-- The Amy interface for new trainees would be completely different from the current one. It could be a single page for the entire Checkout Process, plus one form to update their profile and one to change password.
+- The Trainer uses Trainees list view and filters all Trainees who are not assigned to any Instructor Training. Then, he assigns his Trainees to his Instructor Training.
 
-- Trainees make a change in the SWC Lessons and paste the link to their pull requests into Amy.
+- The Amy interface for new trainees will be completely different from the current one. Here is UI mockup: 
+![checkout-process-progress](https://cloud.githubusercontent.com/assets/1645996/13904004/afa256cc-ee91-11e5-8829-090afd95f604.png)
 
-- Amy analyzes the link to decide which core lesson did the trainee pick up.
+- Trainees make a change in the SWC Lessons and paste the link to their pull requests into Amy. In the case of DC, they paste link to anything that describes their Lesson Change.
 
-- After entering the pull request, the trainee uses Amy to register for one Discussion Session.
+- In the case of SWC, Amy analyzes the link to decide which core lesson did the trainee pick up. In the case of DC, Trainee has to manually select core lesson.
+
+- After entering the link, the trainee uses Amy to register for one Discussion Session.
 
     - In order not to overload Lesson Maintainers, they don't have to indicate in Amy if the pull request is good enough. It also means that trainees don't have to wait for the feedback from lesson maintainers, so they can register for discussion session immediately. This may raise up the percent of trainees who bother up to go through rest of checkout process.
+
+    - By default, we assume that pull requests are good enough. However, Lesson Maintainer can indicate that the submission is not good enough in Trainees list view.
 
     - The Trainee can indicate that she's not available at any of the slots. She can tell when she's available in a text area. The Head of Training can list all trainees (in Trainees list view) who requested additional sessions along with whatever they entered in the text area.
 
     - Amy tracks which Trainees attended which Sessions. That is, there would be many-to-many relation between Trainees and Discussion Sessions.
 
-- After the Discussion Session, the Discussion Leader uses the detailed view of Discussion Session shown below to indicate who has passed and who failed. After that, Amy mails the trainees with instructions on what to do next.
-![discussion-session-detailed-1](https://cloud.githubusercontent.com/assets/1645996/13723295/3d0e7582-e860-11e5-94ae-7e38a02c081a.png)
+- After the Discussion Session, the Discussion Leader uses the detailed view of Discussion Session shown below to indicate who has passed and who failed. After that, Amy mails the trainees with instructions on what to do next. This view is also displayed when a Trainer or an Admin wants to create a new session.
+![discussion-session-detailed-v2](https://cloud.githubusercontent.com/assets/1645996/13904131/8979568a-ee96-11e5-8f4c-068f256ac184.png)
 
 - This view lets the Discussion Leader customize emails:
-![discussion-session-detailed-2](https://cloud.githubusercontent.com/assets/1645996/13723297/454654d6-e860-11e5-8137-93c57d4a9325.png)
+![discussion-session-detailed-v2-mail](https://cloud.githubusercontent.com/assets/1645996/13904138/b115dd9e-ee96-11e5-8adf-7a1a383ed9a8.png)
 
 - At this moment, trainees can register for Checkout Session.
 
@@ -77,21 +82,15 @@ The new workflow would be:
 
 - New instructors send their biography as well as photo in Amy; and are asked to join `discuss` as well as `instructors` list. After sending it, they can download their certificate from Amy.
 
-## Milestone 2: Managing DC Checkout Process
-
-This Milestone is an easy extension of the previous one. Therefore, I believe there is no need for early users.
-
-At the end of previous Milestone, trainees can view progress of their SWC Checkout Process. In this Milestone, we'll introduce a second page with progress of DC Checkout Process, that will be very similar to the first one.
-
-## Milestone 3: Managing Recruiting Candidates
+## Milestone 2: Managing Recruiting Candidates
 
 That is managing everything before and during an Instructor Training -- Recruiting Candidates, Matching them to Instructor Trainings and running those trainings.
 
-All Candidates will be represented in `Person` table, from the beginning of the workflow. For simplicity, trainees can login using their emails, so they don't have to choose username.
+All Candidates will be represented in `Person` table, from the beginning of the workflow. For simplicity, trainees can login using their emails, so they don't have to choose username. Every Amy user can login using their email address or username (if they have an username).
 
 The new workflow is:
 
-- A Candidate or a Lead Candidate of a group of Candidates uses Registration Form to create his account. This form contains only one field: email address. After submitting the form, Amy sends an email with link to another form, where the Candidate can choose password and enter some basic information about him (something like `update_profile`). The Registration Form accepts emails addresses that are already present in Amy Database. In that case, it serves as password recovery.
+- A Candidate or a Lead Candidate of a group of Candidates uses Registration Form to create his account.
 
 - The Candidate logs into Amy and uses Application Form to apply for an Instructor Training. This form is used for both individual Candidates as well as groups of Candidates. In the case of group applications, the Lead Candidate needs to enter names and email addresses of other Candidates. After submitting the form, a new account is created for each Candidate, but no password is set yet. For simplicity, UI allows the Candidate to request only one Instructor Training.
 
@@ -99,11 +98,108 @@ The new workflow is:
 
 - Admins can view all applications along with candidates in Amy. They can also merge groups and individuals to form bigger groups. They manually match Candidates to Instructor Trainings.
 
+- Admins negotiate date and place of Instructor Training with Lead Candidate via email.
+
+- In the end of negotiation of Instructor Training date, Admins send emails to all Candidates to confirm they want to participate in the Instructor Training.
+
 - An Instructor Training take place.
 
 - At Instructor Training (or after that training), all Trainees already have accounts in Amy. They can set up their passwords using Registration Form.
 
 - After logging in, every Trainee can see the progress of Checkout Process, as described in Milestone 1.
+
+## Schema Changes
+
+```python
+class SWCOrDCField(models.CharField):
+    max_length = STR_MED
+    choices = (
+        ('swc', 'Software-Carpentry'),
+        ('dc', 'Data-Carpentry'),
+    )
+    blank = False
+    default = 'swc'
+
+class Person(AbstractBaseUser, PermissionsMixin):
+    # determines whether the person has access to AMY interface for admins and trainers
+    is_admin = models.BooleanField(default=True)  
+
+    # username -- no longer required
+    # email -- required
+
+    swc_instructor_training = models.ForeignKey('InstructorTraining', null=True)
+    dc_instructor_training = models.ForeignKey('InstructorTraining', null=True)
+    swc_core_lesson = models.ForeignKey('CoreLesson', null=True, related_name='trainees')
+    dc_core_lesson = models.ForeignKey('CoreLesson', null=True, related_name='trainees')
+    cannot_make_discussion_session = models.BooleanField(default=False)
+    cannot_make_checkout_session = models.BooleanField(default=False)
+    availability_for_discussion_session = models.TextField(default="", blank=True)
+    availability_for_checkout_session = models.TextField(default="", blank=True)
+    link_to_swc_lesson_change = models.URLField(default="", blank=True)
+    link_to_dc_lesson_change = models.URLField(default="", blank=True)
+    is_swc_lesson_change_good_enough = models.BooleanField(default=True)
+    is_dc_lesson_change_good_enough = models.BooleanField(default=True)
+    is_certified_instructor = models.BooleanField(default=False)
+    biography = models.TextField(default="", blank=True)
+    photo = models.FileField()
+
+# The source of truth for Discussion Sessions and Checkout Sessions is Amy
+# database. However, we can later switch to get them from Google Calendar. In
+# that case, we need to periodically synchronize Amy database with the
+# calendar.
+class Session(models.Model):
+    leader = models.ForeignKey('Person')
+    start = models.DateTimeField()
+    swc_or_dc = SWCOrDCField()
+    status = models.CharField(
+        max_length=STR_MED,
+        choices=(
+            ('not-started', 'Did not started yet'),
+            ('canceled', 'Canceled'),
+            ('took-place', 'Took place')
+        ),
+        blank=False, default='not-started',
+    )
+    notes = models.TextField(default="", blank=True)
+    trainees = models.ManyToManyField(Person, 
+        through='SessionAttendance', 
+        through_fields=('session', 'person'),
+        related_name='sessions')
+
+class SessionAttendance(models.Model):
+    person = models.ForeignKey('Person')
+    session = models.ForeignKey('Session')
+    status = models.CharField(
+        max_length=STR_MED,
+        choices=(
+            ('na', 'NA'),
+            ('absent', 'Absent'),
+            ('failed', 'Failed'),
+            ('passed', 'Passed'),
+        ),
+        blank=False, default='na',
+    )
+    mail_sent = models.BooleanField(default=False)
+
+class InstructorTrainingApplication(models.Model):
+    lead_candidate = models.ForeignKey(Person)
+    candidates = models.ManyToManyField(Person,
+        related_name='applications')
+    reason = models.TextField(default="", blank=True) # why they want to become an instructor
+
+class InstructorTraining(models.Model):
+    swc_or_dc = SWCOrDCField()
+    date = models.DateTimeField()
+    country = CountryField()
+    location = models.CharField(max_length=STR_LONG,
+                                help_text='City, Province, or State')
+    instructor = models.ForeignKey(Person)
+
+class CoreLesson(models.Model):
+    name = models.CharField(max_length=STR_MED)
+    swc_or_dc = SWCOrDCField()
+
+```
 
 ## Schedule and Detailed TODO List
 
@@ -116,10 +212,11 @@ The new workflow is:
 
 * **Week 1: May 23 - May 29**
 
-    - Doing UI mockups. Early users give feedback on the U1.
+    - Doing UI mockups. Early users give feedback on the UI.
 
 * **Week 2: May 30 - June 5**
 
+    - Doing necessary schema changes.
     - Implementing Discussion Session detailed view.
     - Implementing Discussion Session list view.
 
@@ -128,11 +225,16 @@ The new workflow is:
     - Implementing Checkout Session detailed view.
     - Implementing Checkout Session list view.
     - Implementing Trainees list view.
-    - Implementing view of progress of Checkout Process for trainees.
+    - Implementing views of progress of Checkout Process for trainees (one for SWC and one for DC).
 
 * **Week 4: June 13 - June 19**
 
+    - Implementing Registration Form.
+    - Setting up Amy, so it can send emails in the name of other people. 
     - Manual testing.
+
+* **Week 5: June 20 - June 26 (midterm evaluation deadline)**
+
     - Importing existing data about early users to Amy. The data are in:
         - Discussion Registration Etherpad
         - Checkout Registration Etherpad
@@ -140,14 +242,16 @@ The new workflow is:
     - Exposing new functionality to early users.
         - Discussion Sessions and Final Demonstration Sessions for early users will be different from those sessions available for "old" users, so we don't have to synchronize sessions between Etherpad and Amy.
 
-* **Week 5: June 20 - June 26 (midterm evaluation deadline)**
-* **& Week 6: June 27 - July 3**
+* **Week 6: June 27 - July 3**
+* **& Week 7: July 4 - July 10**
 
     - Responding to feedback and improving Amy.
-    - Writing unit tests. Especially security tests to ensure that only the right people can see certain information.
+    - Writing unit tests. 
+        - Especially security tests to ensure that only the right people can see certain information.
+        - Especially tests for the case when one trainee wants to become certified Instructor of both Carpentries.
     - Doing manual load tests to ensure that the system will keep working after introducing it to all users.
 
-* **Week 7: July 4 - July 10**
+* **Week 8: July 11 - July 17**
 
     - Importing existing data, so e.g. people who already attended Instructor Workshop are also included in the new system.
     - Exposing new functionality to all users.
@@ -156,26 +260,15 @@ The new workflow is:
     - Editing appropriate web pages and github repos to document the new workflow.
     - Responding to feedback from all users.
 
-### Milestone 2: Managing DC Checkout Process
+### Milestone 2: Managing Recruiting Candidates
 
-* **Week 8: July 11 - July 17**
-* **& Week 9: July 18 - July 24**
+* **Week 9: July 18 - July 24**
 
-    - Implementing view of progress of DC Checkout Process for trainees.
-    - Writing unit tests. Especially tests for the case when one trainee wants to become certified Instructor of both Carpentries.
-    - Importing existing trainees to the new system.
-    - Introducing the new system to all users.
-
-### **Milestone 3: Managing Recruiting Candidates**
-
-* **Week 10: July 25 - July 31**
-
-    - Implementing Registration Form.
     - Implementing Application Form.
     - Implementing form to set up password and basic information.
     - Implementing filtering by Instructor Training in Trainees list view.
 
-* **Week 11: August 1 - August 7**
+* **Week 10: July 25 - July 31**
 
     - Importing data (only related to early users). The data are in:
         - Individual Application Spreadsheet
@@ -184,18 +277,24 @@ The new workflow is:
     - Manual testing.
     - Exposing new functionality to early users.
 
-* **Week 12: August 8 - August 14**
+* **Week 11: August 1 - August 7**
 
     - Writing unit tests.
     - Responding to feedback and improving Amy.
 
-* **Week 13: August 15 - August 22 (final evaluation)**
+* **Week 12: August 8 - August 14**
 
     - Importing all data to Amy.
+    - Ensure that email addresses of Amy users are unique.
     - Exposing new functionality to all users.
     - Teaching all Trainers and Admins the new workflow.
     - Editing appropriate web pages and github repos to document the new workflow.
     - Responding to feedback from all users.
+
+* **Week 13: August 15 - August 22 (final evaluation)**
+
+    - Buffer week.
+    - Week for implementing additional nice-to-have features, like harvesting information whether a Lesson Change is good enough from GitHub by looking at tags attached to Trainees' pull requests.
 
 ## Experience
 
@@ -221,7 +320,7 @@ I also talked with Piotr Banaszkiewicz, so I know how it is to work on Amy as de
 
 Usage of technologies that I know (Python, Django) is also an important factor for me.
 
-I don't apply for any other GSoC project.
+I'm not applying for any other GSoC project.
 
 [an account on codementor.io]: http://codementor.io/chris.medrela
 
