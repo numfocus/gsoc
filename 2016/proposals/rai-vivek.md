@@ -185,23 +185,33 @@ systems.
 
 A typical example of the database entry then may look like:
 
+```python
 
-```sql
-(TABLE machine_info)
+m_1 = MachineInfo(workshopid='ugc@edu.in', system='Linux', hostname='ghostbook',
+                  release='3.19.0-47-generic',
+                  version="#53i~14.04.1-Ubuntu SMP Mon Jan 18 16:09:14 UTC 2016",
+                  machine='x86_64', processor='x86_64', email='foo@bar.com',
+                  time=datetime.utcnow(), exit_status=0)
 
-id | workshop_id         | system   | hostname     | release             | version                                               | machine  | processor | email         | time                       | exit_status
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1  | 'ugc@edu.in'        | 'Linux'  | 'ghostbook'  | '3.19.0-47-generic' | '#53~14.04.1-Ubuntu SMP Mon Jan 18 16:09:14 UTC 2016’ | 'x86_64' | 'x86_64'  | 'foo@bar.com' | 'Tue Mar 8 00:52:35 2016'  | 0
-2  | 'trainus@gmail.com' | 'Darwin' | 'Vs-MacBook' | '15.0.0'            | 'Darwin Kernel Version 15.0.0: ..  ’                  | 'x86_64' | 'i386'    | 'bar@foo.com' | 'Sat Mar 12 18:34:12 2016' | 0
+m_2 = MachineInfo(workshopid='train@example.com', system='Darwin', hostname='MacBook-Air',
+                  version='15.0.0',
+                  release='Darwin Kernel Version 15.0.0: .. ',
+                  machine='x86_64', processor='i386', email='bar@foo.com',
+                  time=datetime.utcnow(), exit_status=0)
 
-(TABLE software_version)
+pip = PackageInfo(package='pip', installed=1, version='7.9', log='Upgrade', machine_id=1)
+git = PackageInfo(package='git', installed=1, version='1.9', log='', machine_id=1)
+hg = PackageInfo(package='hg', installed=0, version='', log='', machine_id=2)
+python = PackageInfo(package='Python', installed=1, version='3.5.1', log='', machine_id=2)
 
-id | machine_id | software   | installed | version  | log
----------------------------------------------------------
-1  | 1          | 'python'   | True      | '3.5.1'  | ''
-2  | 1          | 'git'      | True      | '1.9.1'  | ''
-3  | 1          | 'hg'       | False     | ''       | ''
-4  | 2          | 'pip'      | True      | '7.9'    | 'A newer version of pip is available.'
+db.session.add(git)
+db.session.add(pip)
+db.session.add(hg)
+db.session.add(python)
+
+db.session.add(m_1)
+db.session.add(m_2)
+db.session.commit()
 ```
 
 Once the model is defined, queries [complex
@@ -422,6 +432,10 @@ I also blog occasionally at [shorts](https://vivekiitkgp.github.io).
 I am a Biology enthusiast with a wide spectrum of interests in computing. I am
 inclined towards developing or improving software tools in the field of
 computational biology.
+
+Currently, I am enrolled as a pre-final undergraduate student at *Indian
+Institute of Technology Kharagpur*, studying Biotechnology and Biochemical
+Engineering.
 
 ## Why this project?
 
