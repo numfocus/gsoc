@@ -72,7 +72,8 @@ Improve table by changing the API as such:
 * table: standalone plot/axis object 
 
 ## Open Source Development Experience
- * Tentatively NLTK: [Open pull request](https://github.com/nltk/nltk/pull/1333)  
+ * Tenative matplotlib documentation fixes: [open pull requests](https://github.com/matplotlib/matplotlib/pulls/story645)
+ * Tentative NLTK: [open pull request](https://github.com/nltk/nltk/pull/1333)  
  * Tutorials on Open Source Tools:
   - AMS 2016 Python Symposium Pandas/Matplotlib Tutorials: https://github.com/story645/ams2016_tutorials
   - PyCon 2014 Matplotlib Tutorial: https://github.com/story645/matplotlib-tutorial
