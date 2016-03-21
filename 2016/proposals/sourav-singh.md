@@ -19,6 +19,17 @@ My journey with open source started with Click where I had added documentation f
  
 * GitHub Profile : https://github.com/souravsingh
 
+
+###Contributions to the project
+I have made some pull requests to the projects which are part of the biocore like micronota, scikit-bio, QIIME 1.The pull requests can be seen here-
+
+* Pull Request for micronota: https://github.com/biocore/micronota/pull/62
+* Pull Request for scikit-bio: https://github.com/biocore/scikit-bio/pull/1297
+* Pull Request for QIIME: https://github.com/biocore/qiime/pull/2134
+* Pull Request for QIIME: https://github.com/biocore/qiime/pull/2133
+
+I have also opened an issue at the numfocus repository on QIIME 2: https://github.com/numfocus/gsoc/issues/113
+
 ---
 ### Project Synopsis : 
 
