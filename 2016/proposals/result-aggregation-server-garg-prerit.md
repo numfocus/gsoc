@@ -91,9 +91,9 @@ This would involve :
 * **Modification of the installation-test-scrips** and giving the user an option to send the data to the server by making a [POST](https://en.wikipedia.org/wiki/POST_(HTTP)) request to the API endpoint with payload of all the information collected. Code Snippet : 
 ```python
 try:
-  import httplib
+  import httplib as http_client
 except ImportError:
-  import http.client
+  import http.client as http_client
 
 headers = {
     "Content-Type": "application/json",
@@ -103,10 +103,8 @@ HOST = "127.0.0.1:5000"
 os_end_point = "/system_info/"
 system_dict = {"system_dist" : system_dist , "system" : system, "machine" : machine , 
     "system_platform" : system_platform ,"uname" : uname , "version": version}
-try:
-  conn = httplib.HTTPConnection(HOST)
-except:
-  conn = http.client.HTTPConnection(HOST)
+
+conn = http_client.HTTPConnection(HOST)
 
 data = json.dumps(system_dict)
 conn.request("POST", os_end_point, data, headers=headers)
