@@ -40,7 +40,7 @@ This work may include:
 Understanding the mpl units framework and prototyping of implementing catagorical axis. 
 
 ### June 8th - June 21th
-Fully implement catagorical axis, with tests, and start incorporating into APIs:
+Fully implement catagorical axis, with tests, and incorporate into APIs:
 * barplot
 * lineplot & scatterplot (maybe being able to pick up xlabel and ylabel natively?)
 
