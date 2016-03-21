@@ -6,10 +6,6 @@ During Software Carpentry's workshops which teach computing skills to the greate
 
 ## Technical Details
 
-###Database
-
-SQLite will be used as the database to store the results of the installation scripts. SQLAlchemy will be used to manage the database and all Python interaction with the database. If database migration is needed in the future, Alembic will be used.
-
 ### Server
 
 All server management will be written in Python. The server itself will be implemented using [bottle](http://bottlepy.org/docs/dev/index.html), a simple web framework with functionality to parse forms and JSON requests and responses. 
@@ -17,22 +13,39 @@ All server management will be written in Python. The server itself will be imple
 ####Interactions
 
 * `/first/`
-  * The first installation script will send its data here in JSON for forms format. The server will send back a 200 response.
+  * The first installation script will send platform, system, release, implementation, version information here in JSON or forms format. The server will send back a 200 response.
 * `/second/`
-  * The second installation script will send its data here in JSON for forms format. The server will send back a 200 response.
+  * The second installation script will send platform, system, release, implementation, version and dependency data here in JSON or forms format. The server will send back a 200 response.
 * `/data/`
-  * A request to this URL will recieve JSON from the server which contains information from the database for analysis in some future application.
+  * A request to this URL will recieve JSON from the server which contains all information from the database for analysis in some future application.
+
+###Database
+
+SQLite will be used as the database to store the results of the installation scripts. SQLAlchemy will be used to manage the database and all Python interaction with the database. If database migration is needed in the future, Alembic will be used.
+
+####Proposed Schema
+
+* First(FID, platform, system, release, implementation, version)
+  * FID is a unique integer automatically assigned by the database when a tuple is inserted, and is the primary key of the relation.
+  * platform is the system information provided by calling `platform.platform`
+  * system is the operating system provided by `platform.system`
+  * release is the version of the operating system provided by `platform.release`
+  * implementation is the Ptyhon distribution (Cpython, Pypy, etc.) provided by `platform.python_implementation`
+  * version is the Python version provided by `platform.python_version`
+* Second(SID, platform, system, release, implementation, version, *all tests*)
+  * SID, platform, system, release, implementation, and version are hold almost the same information as in First, however, if someone saw that they were failing the first test script and got a newer version of the interpreter, then the results may be different and therefore should be collected again in the second test script.
+  * *all tests* refers to the pass/fail status of each dependency. Each library or program is a boolean showing wether or not it is installed correctly. If one is null, that means that the dependency was not tested for (since individual workshops can change which ones they need)
 
 ### Updates to Test Scripts
 
-The existing installation testing scripts, already written in Python, will be updated to send data to the server. Because the point of the scripts is to determine whether Python is configured correctly, the changes should not rely on any third party libraries and be compatible with both Python 2 and 3 so that even if a system fails a test, it will still be able to send the results. Data will be sent using the http.client and urllib.parse libraries. System data will be collected using the platform library, which is included in Python's standard library, specifically, 
+The existing installation testing scripts, already written in Python, will be updated to send data to the server. Because the point of the scripts is to determine whether Python is configured correctly, the changes should not rely on any third party libraries and be compatible with both Python 2 and 3 so that even if a system fails a test, it will still be able to send the results. Data will be sent using the http.client and urllib.parse libraries. System data will be collected using the platform library, which is included in Python's standard library, specifically:
 
 * general platform information
   * `platform.platform()`
 * Python implementation
   * `platform.python_implementation()`
 * Python version
-  * `platform.python_version`
+  * `platform.python_version()`
 * Operating system information
   * `platform.uname()`
 
@@ -64,7 +77,7 @@ Make a simple front end for easy viewing of data, as either a desktop or web app
 
 ### August 17th - August 21th 19:00 UTC
 
-Week to account for complications and delays.
+Week to account for complications and delays, test on more machines and operating systems.
 
 ## Future works
 
