@@ -96,6 +96,6 @@ Improve table by changing the API as such:
  
 ## Why this project?
 I have taught matplotlib so often that I'm kind of ashamed that I haven't contributed and this seems like a good entry point. 
-I work with a lot of catagorical data, especially climate data, and so I've written loads of boilerplate to plot it nicely in matplotlib and so think it would be awesome to have this all incorporated into the project. 
+I work with a lot of catagorical data, especially climate data, and so I've written loads of boilerplate to plot it nicely in matplotlib; therefore I think it would be awesome to have this all incorporated into the project. 
 
 
