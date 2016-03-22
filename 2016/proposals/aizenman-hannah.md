@@ -28,16 +28,12 @@ This work may include:
 - sort out how / if multiple categorical artists should interact with
   each other. This may interact with the Compound Artists project.
 - implement API for categorical color mapping
-- possible interactions with
-    - altair
-    - seaborn
-    - pandas
+- ensure everything works with: pandas, altair, seaborn
   
 ## Schedule of Deliverables
 
 ### May 25th -  June 7th
-
-Understanding the mpl units framework and prototyping of implementing catagorical axis. 
+Understanding the mpl units framework and prototyping of implementing catagorical axis. Work out the requirements for supporting common catagorical data types: pandas dataframes, numpy structured arrays, dictionaries, etc.
 
 ### June 8th - June 21th
 Fully implement catagorical axis, with tests, and incorporate into APIs:
@@ -49,24 +45,22 @@ Implement proper 2D heat map API:
   - based on imshow or pcolormesh?
   - move hinton demo into main API?
   - make heatmap catagorically aware
-
+  - 
 ### July 6th - July 19th
 Implement API for categorical color mapping (earlier because seems easier than interactivity)
   
 ### July 20th - August 2nd
-Start interactive features: 
+Work on interactive features: 
 * ensure catagorically aware
 * work out how multiple artists should interact with each other
 
 ### August 3rd - August 16th
-Continue work on interactive features if necessary, otherwise move on to future works. 
+Ensure interactions with any pandas, altair, and seaborn use cases that haven't been tested against earlier.
 
 ### August 17th - August 21th 19:00 UTC
 **Week to scrub code, write tests, improve documentation, etc.**
 
 ## Future works
-Possible interactions with altair, seaborn, pandas
-
 Improve table by changing the API as such:
 * axtable: behaves like a legend in that it's specifically attached to a plot
 * table: standalone plot/axis object 
