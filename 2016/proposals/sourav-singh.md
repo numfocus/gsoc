@@ -30,11 +30,11 @@ The idea for the project is to add softwares like Ea-utils, fastq-tools in the Q
 
 The idea to to add all of these into one single plugin for QIIME 2 which can run as a part of pre-processing step.
 
-We can also work on adding a Barcode splitter, which will come in handy for QIIME 2 microbiome analysis
+We can also work on adding a Barcode splitter, which will come in handy for QIIME 2 microbiome analysis.The basic skeleton code for reading FASTQ files and matching the sequence based on barcode file is-
 ```python
 
 if(argv==0):
- Show error
+ Show error for no files parsed
 elif(argv=1):
  Show error for insufficient input
 else:
@@ -57,7 +57,6 @@ match_sequence():
   Calculate the DNA fragment based on the matching of fragment and store in seq_fragment.
   write(seq_fragment)
  
-end
 ```     
 We will also look into adding similar such tools for allowing data to be pre-processed nicely and will also look into borrowing the parallelization algorithms and adding pipeline jobs so that the job can run faster.
 
@@ -77,10 +76,12 @@ I have also opened an issue at the numfocus repository on QIIME 2: https://githu
 The aim of the project is to equip the QIIME 2 library, which is currently under development with plugins for preprocessing of FASTA/FASTQ data so that they can be used for further downstream analysis in Taxonomic detection.
 Main goals of the project include:
 
-1. Framework to add plugins for QIIME 2 like-
+1. Framework/Tools for the plugin for QIIME 2 are-
     * fastq-grep
     * FastQC for Quality Control of FASTQ data
     * Trimmomatic for intelligent trimming of FASTA/FASTQ data
+    * Barcode primer and linker 
+    * FASTQ/FASTA splitter
 
 2. Try and Add Parallelization to some of the above tasks.
 
