@@ -14,6 +14,7 @@
  7. Academic Experience
  8. Why this project
  9. About Me
+ 10. Appendix
  
 ---
 
@@ -186,3 +187,11 @@ I enjoy working on software engineering projects, and debugging challenging prob
  
 
 Currently based in London, UK. Bilingual in English and Czech.
+
+---
+
+###Appendix
+
+- Initial draft report and discussion: [https://gist.github.com/terfn/c63f7dc6039bdf47b63d](https://gist.github.com/terfn/c63f7dc6039bdf47b63d) (Revision 2)
+- Pandas sparse [bugs](https://github.com/pydata/pandas/issues?utf8=✓&q=is%3Aopen+is%3Aissue+label%3ASparse+label%3ABug)
+- Pandas sparse [enhancements](https://github.com/pydata/pandas/issues?utf8=✓&q=is%3Aopen+is%3Aissue+label%3ASparse+label%3AEnhancement)
