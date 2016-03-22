@@ -25,20 +25,29 @@ SQLite will be used as the database to store the results of the installation scr
 
 ####Proposed Schema
 
-* First(FID, platform, system, release, implementation, version)
-  * FID is a unique integer automatically assigned by the database when a tuple is inserted, and is the primary key of the relation.
-  * platform is the system information provided by calling `platform.platform`
-  * system is the operating system provided by `platform.system`
-  * release is the version of the operating system provided by `platform.release`
-  * implementation is the Ptyhon distribution (Cpython, Pypy, etc.) provided by `platform.python_implementation`
-  * version is the Python version provided by `platform.python_version`
-* Second(SID, platform, system, release, implementation, version, *all tests*)
-  * SID, platform, system, release, implementation, and version are hold almost the same information as in First, however, if someone saw that they were failing the first test script and got a newer version of the interpreter, then the results may be different and therefore should be collected again in the second test script.
-  * *all tests* refers to the pass/fail status of each dependency. Each library or program is a boolean showing wether or not it is installed correctly. If one is null, that means that the dependency was not tested for (since individual workshops can change which ones they need)
+```
+CREATE TABLE System (
+    SID INTEGER PRIMARY KEY AUTOINCREMENT,
+    plat VARCHAR(30) NOT NULL,
+    sys VARCHAR(10) NOT NULL,
+    rel VARCHAR(10) NOT NULL,
+    implementation VARCHAR(10) NOT NULL,
+    version VARCHAR(6) NOT NULL
+);
+```
+`System` is the table that holds data about the machine the script is running on. `SID` is an atuomatically-generated identifier assigned each time data is entered into the server. `Plat` is the system information provided by calling `platform.platform`. `Sys` is the operating system provided by `platform.system`. `Rel` is the version of the operating system provided by `platform.release`. `Implementation` is the Python distribution (CPython, PyPy, etc.) provided by `platform.python_implementation`. `Version` is the Python version provided by `platform.python_version`. The size of each `varchar` may be different in the actual database depending on the maximum length of the string returned by the platform functions.
+
+```
+CREATE TABLE Dependency (
+    SID INTEGER PRIMARY KEY REFERENCES System (SID),
+    success BOOLEAN NOT NULL
+);
+```
+Each test in the [second test script](https://github.com/wking/swc-setup-installation-test/blob/master/swc-installation-test-2.py) will have its own table in the database, so `Dependency` is meant to be a placeholder for the name of the dependency that will also be the name of the table. This data is associated with `System` information by the `SID`. `Success` is a boolean which represents whether the specific test was passed. If a workshop does not test for a specific dependency, then there will not an entry for that dependency associated with the results from those machines. If more dependencies are added in the future, then a new table would have to be created, but no existing tables would have to be altered.
 
 ### Updates to Test Scripts
 
-The existing installation testing scripts, already written in Python, will be updated to send data to the server. Because the point of the scripts is to determine whether Python is configured correctly, the changes should not rely on any third party libraries and be compatible with both Python 2 and 3 so that even if a system fails a test, it will still be able to send the results. Data will be sent using the http.client and urllib.parse libraries. System data will be collected using the platform library, which is included in Python's standard library, specifically:
+The existing installation testing scripts, already written in Python, will be updated to send data to the server. Because the point of the scripts is to determine whether Python is configured correctly, the changes should not rely on any third party libraries and be compatible with both Python 2 and 3 so that even if a system fails a test, it will still be able to send the results. Data will be sent using the http.client and urllib.parse libraries. Before sending, the user will be prompted to decide whether they actually want to send the information. System data will be collected using the platform library, which is included in Python's standard library, specifically:
 
 * general platform information
   * `platform.platform()`
@@ -48,6 +57,8 @@ The existing installation testing scripts, already written in Python, will be up
   * `platform.python_version()`
 * Operating system information
   * `platform.uname()`
+* Dependency test results
+  * The [second test script](https://github.com/wking/swc-setup-installation-test/blob/master/swc-installation-test-2.py) tests that various libraries and programs are properly installed on the system, and this information will be sent to the server.
 
 ## Schedule of Deliverables
 
