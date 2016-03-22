@@ -19,6 +19,47 @@ My journey with open source started with Click where I had added documentation f
  
 * GitHub Profile : https://github.com/souravsingh
 
+## Details :
+
+### Implementation :
+The implementation details for the project will require addition of various pre-processing steps on the FASTA/FASTQ data like checking for quality reports, Barcode splitting, a read filter for FASTQ based on the quality score etc. as part of a QIIME 2 plugin which will be run on every FASTA/FASTQ file before the data could be used for microbiome analysis in QIIME 2. Once the basic plugins are added into QIIME 2, I hope to work on parallelizing some of the plugins so that multiple reads are processed faster and the pre-processing step can be finished much faster.
+
+### Design:
+
+The idea for the project is to add softwares like Ea-utils, fastq-tools in the QIIME 2 plugin so as to allow for checkcing of patterns in a FASTA/FASTQ sequence and for trimming of the data. We will also have to look into the implementation for library splitting, barcode primer which have been done in QIIME so that they can be added as a part of QIIME 2 plugin.
+
+The idea to to add all of these into one single plugin for QIIME 2 which can run as a part of pre-processing step.
+
+We can also work on adding a Barcode splitter, which will come in handy for QIIME 2 microbiome analysis
+```python
+
+if(argv==0):
+ Show error
+elif(argv=1):
+ Show error for insufficient input
+else:
+ Check order for input files and parse
+ 
+seq_name=argv[1]
+if(seq_name of type fastq):
+ seq_name2=seq_name.getline() #Line with sequence name
+ print "Expect Sequence Name"
+ seq_qualities=seq_name.getline()
+ print "Expect Sequence Quality"
+
+match_sequence():
+ while(read seq_name):
+ 
+  mismatch_count=barcode_length
+  for barcode_ref in barcode:
+   (get the lowest mismatch count and store in barcode_length)
+  
+  Calculate the DNA fragment based on the matching of fragment and store in seq_fragment.
+  write(seq_fragment)
+ 
+end
+```     
+We will also look into adding similar such tools for allowing data to be pre-processed nicely and will also look into borrowing the parallelization algorithms and adding pipeline jobs so that the job can run faster.
 
 ###Contributions to the project
 I have made some pull requests to the projects which are part of the biocore like micronota, scikit-bio, QIIME 1.The pull requests can be seen here-
