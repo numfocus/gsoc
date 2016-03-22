@@ -15,7 +15,7 @@ I am a pre-final year undergraduate student Bachelors in Computer Engineering fr
 
 ### Programming Skills:
 
-My journey with open source started with Click where I had added documentation for the project, my interest in Scientific Computing introduced me to various Scientific packages like SciPy.I took various courses in Genomic Data Sciences Specialization by John Hopkins to learn about Genomics as much as possible. My interest towards hardware allowed me undertake projects involving Beaglebone Black, the details of which could be found on my GitHub repo (Repo titles : [beaglebone-codes] (https://github.com/souravsingh/beaglebone-codes)). I had an opportunity to give talks at the PyCon India 2015 on nipype, a neuroimaging package and at SciPy India 2015, where I gave a workshop on BioPython. 
+My journey with open source started with Click where I had added documentation for the project, my interest in Scientific Computing introduced me to various Scientific packages like SciPy.I took various courses in Genomic Data Sciences Specialization by John Hopkins to learn about Genomics as much as possible. My interest towards hardware allowed me undertake projects involving Beaglebone Black, the details of which could be found on my GitHub repo (Repo titles : [beaglebone-codes] (https://github.com/souravsingh/beaglebone-codes)). I had an opportunity to give talks at the PyCon India 2015 on nipype, a neuroimaging package and at SciPy India 2015, where I gave a workshop on BioPython. I am also a contributing member to Python Software Foundation.
  
 * GitHub Profile : https://github.com/souravsingh
 
