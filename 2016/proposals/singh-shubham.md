@@ -21,6 +21,8 @@ Every trainee gets a login credential, even if they belong to a group.
 ![HTML MOCKUP ALL_APPLICATIONS]( https://cloud.githubusercontent.com/assets/15982349/13816688/66a3e7e4-ebb5-11e5-83f1-5086ddddac13.png)
 
 3. All accepted applications, are then transferred to the Trainee view. In this view the lead trainer, trainers,discussion leaders, lesson maintainers can track progress of the trainees, provide feedback and update the status of every stage. They are also notified here if the Trainee has requested a discussion session.
+The Feedback/Comments are public and will be visible to everyone at the administrative end - lead instructor/instructors/discussion leaders/lesson maintainers.
+These Feedback/Comments would be useful for archiving, so that later on anyone would know, why a particular trainee was passed or failed at a particular stage in instructor training and by whom.
 This list can be filtered on the following criteria:
   * instructor assigned.
   * start date of training.
@@ -29,11 +31,12 @@ This list can be filtered on the following criteria:
 
 ![HTML MOCKUP ALL_TRAINEE](https://cloud.githubusercontent.com/assets/15982349/13816909/3401c4a4-ebb6-11e5-9799-0eb21ccd5eea.png)
 4. *Trainee Home page* -
-After getting accepted for the training program, the trainees receive a randomly generated password, which they can use to log in to AMY, a trainee's home page is different from the AMY DASHBOARD, the AMY DASHBOARD is reserved for administrative purposes only. After logging in the trainees are directed to TRAINEE_HOME. This view will have a nav-bar - **HOME** , **ABOUT** and **NOTIFICATION**.
-  * *HOME*  shows the trainees progress, through a progress bar indicating which stages have been completed and the ones left. In this view the trainee can also request a discussion session by filling in a webform, with fields such as TOPIC, PREFERRED TIME, and so on.This view will also list down the general guidelines for instructor training, informing what is required in each stage of the training.
+After getting accepted for the training program, the trainees receive a randomly generated password, which they can use to log in to AMY, a trainee's home page is different from the AMY DASHBOARD, the AMY DASHBOARD is reserved for administrative purposes only. After logging in the trainees are directed to TRAINEE_HOME. This view will have a nav-bar - **HOME**, **ABOUT**, **NOTIFICATION** and **MESSAGES**.
+  * *HOME*  shows the trainees progress, through a progress bar indicating which stages have been completed and the ones left. In this view the trainee can also request a discussion session/checkout session by filling in a webform, with fields such as TOPIC, PREFERRED TIME, and so on.This view will also list down the general guidelines for instructor training, informing what is required in each stage of the training.
 
   * *ABOUT* , this view shows the information entered by the trainee in their initial application, they can also edit this information, and change passwords here.
   * *NOTIFICATION*,  this view allows the trainee to view all the comments/feedback from the discussion leaders and the lesson maintainers.In the format *comment: by whom: timestamp*.
+  * *MESSAGES*, In this view the trainee can talk to any of the Instructors/Discussion Leaders/Lesson Maintainers.We will be using [ django-postman](http://django-postman.readthedocs.org/en/latest/quickstart.html) for this.These are private messages.
 
 
 ## Technical Details
@@ -115,13 +118,16 @@ I would also like to discuss with the mentors:
 
 * **Mid term evaluation**
 *  Implement the Commenting System.
+*  Implement the Messaging System.
 ### July 6th - July 19th
 
 **MILESTONE 3** -
 
+* Messaging System continued.
 * Progress Tracking System.
     Discussion Leaders and lesson maintainers, should be able to comment and evaluate the performance of the trainees.
 * Enable login for trainees and Design the *TRAINEE_HOME* page.
+
 ### July 20th - August 2nd
 **MILESTONE 4** -
 * Progress Tracking System continued.
@@ -132,13 +138,14 @@ I would also like to discuss with the mentors:
 **MILESTONE 5** -
 
 * Implement the Export Trainee as Instructor Feature in AMY.
+
 ### August 17th - August 21th 19:00 UTC
 
  * **Week to scrub code, write tests, improve documentation, etc.**
 
 ## Future works
 
-Future work will include making improvements to the workflow based on the feedback of this project. This would greatly help new trainees and trainers involved in the process of instructor training and would make the training process smoother.
+Future work will include making improvements to the work-flow based on the feedback of this project. This would greatly help new trainees and trainers involved in the process of instructor training and would make the training process smoother.
 
 ## Open Source Development Experience
 
