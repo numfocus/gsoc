@@ -112,6 +112,19 @@ I have used the pandas package before in my lab project - deep sequencing data a
  
 I am interested in becoming a data scientist, in which career python and pandas are powerful and popular tools. I would like to join the development of pandas, because it helps me understand pandas better, as well as improves my coding skills and insights.
 
-I chose to join the panel/xarray project because the project offers me the chance to review and study the general features and advantages/disadvantages of both pandas and xarray packages.
+I look forward to joining the panel/xarray project because the project offers me the chance to review and study the general features and advantages/disadvantages of both pandas and xarray packages. I believe I can benefit a lot from finishing the work and so do pandas/xarray.
+
+## Contact information
+Name: Pan Deng
+
+E-mail: engelzora@gmail.com
+
+Github: OXPHOS
+
+IRC: OXPHOS
+
+Time zone: UTC-05:00
+
+
 
 
