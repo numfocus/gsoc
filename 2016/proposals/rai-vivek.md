@@ -311,7 +311,7 @@ seek to write a installation manual of all the software currently checked by the
 installation-test scripts. These instructions or installation-recipes will help 
 create a consistent ecosystem, improve setup experience and save time.
 
-## Schedule of deliverables
+## Schedule of deliverables (tentative)
 
 **Roughly by mid-term evaluation period, we hope to deploy final changes on the
 client side i.e. installation-test scripts along with a basic server-database
@@ -406,6 +406,9 @@ like:
 * *Do some platform users find it more difficult to manage through the workshop
   than the others?*
 
+Other than that, I would also like to plan out a software-carpentry workshop in
+my university (preferably in next spring semester).
+
 ## Open Source Development Experience
 
 Collaborator in many open-source projects. A few that I am personally fond of:
@@ -475,6 +478,14 @@ Vivek Rai
 vivekraiiitkgp@gmail.com
 
 Indian Standard Time (+5.30 UTC)
+
+Google+ (Hangouts): vivekraiiitkgp@gmail.com
+
+IRC: vivekrai @ freenode
+
+GitHub: https://github.com/vivekiitkgp
+
+Twitter: https://twitter.com/vivek_ziel
 
 vivekrai@freenode (IRC)
 
