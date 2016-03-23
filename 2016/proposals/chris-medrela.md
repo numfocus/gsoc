@@ -11,14 +11,6 @@ Software Carpentry (SWC) has a workflow for Instructor Trainings. Currently, it 
 
 Here is [#89](https://github.com/numfocus/gsoc/issues/89) issue where I discussed this proposal. 
 
-I split this proposal into as small milestones as possible. Every milestone ends up with new version of Amy being pushed to production and introduced to all its users. This minimizes the chances of failure and let us adapt or change almost everything after every milestone -- even if it means changing the scope of this project. The milestones are:
-
-1. [Milestone 1: Managing Checkout Process](#milestone-1-managing-checkout-process) -- that is Homework, Discussion Session, Checkout Session and welcoming to the community.
-
-1. [Milestone 2: Managing Recruiting Candidates](#milestone-2-managing-recruiting-candidates) and rest of the workflow, that is matching them to Instructor Trainings and running those trainings.
-
-It may be necessary to move from SQLite to Postgress. I'm discussing in [#716](https://github.com/swcarpentry/amy/issues/716) with Piotr Banaszkiewicz if it's really necessary, but if it is, it must be done at the beginning, as an additional milestone.
-
 I believe it's really important to get feedback as soon as possible, therefore:
 
 - Before introducing new features to all users, they'll be tested by a group of volunteering early users. That way, we don't have to test everything before showing it to first users, so we can get feedback faster and iterate quicker. If we don't get those early users, the only thing we can do is:
@@ -39,96 +31,100 @@ It's also important to note what will be **not** implemented:
 
 - Tracking sessions with Google Analytics or Piwik.
 
-## Milestone 1: Managing Checkout Process
+## New Workflow
 
-That is everything after an Instructor Training -- that is Homework, Discussion Session, Checkout Session and welcoming to the community.
+1. **Recruiting Candidates**
 
-The new workflow would be:
+    + A Candidate or a Lead Candidate of a group of Candidates uses Registration Form to create his account.
 
-- At the end of Instructor Training, Trainees register in Amy using Registration Form. This form contains only one field: email address. After submitting the form, Amy sends an email with link to another form, where the Candidate can choose password and enter password and username.
+        + All Candidates will be represented in `Person` table, from the beginning of the workflow. For simplicity, users can login using their emails, so they don't have to choose username. Every Amy user can login using their email address or username (if they have an username).
 
-    - The Registration Form accepts emails addresses that are already present in Amy Database.
-    - If the user hasn't chosen a username yet (that happens for people who were registered by someone else), he's forwarded to the same form. 
-    - If the user has an username, she's forwarded to Password Recovery Form.
+        + This form contains only one field: email address. After submitting the form, Amy sends an email with link to another form, where the Candidate can choose password and enter password and username.
+        
+        + The Registration Form accepts emails addresses that are already present in Amy Database. 
 
-- The Trainer uses Trainees list view and filters all Trainees who are not assigned to any Instructor Training. Then, he assigns his Trainees to his Instructor Training.
+            + If the user hasn't chosen a username yet (that happens for people who were registered by someone else), he's forwarded to the same form. 
+        
+            + If the user has an username, she's forwarded to Password Recovery Form.
 
-- The Amy interface for new trainees will be completely different from the current one. Here is UI mockup: 
-![checkout-process-progress](https://cloud.githubusercontent.com/assets/1645996/13904004/afa256cc-ee91-11e5-8829-090afd95f604.png)
+    + The Candidate logs into Amy and uses Application Form to apply for an Instructor Training. This form is used for both individual Candidates as well as groups of Candidates.
+        
+        + In the case of group applications, the Lead Candidate needs to enter names and email addresses of other Candidates.
 
-- Trainees make a change in the SWC Lessons and paste the link to their pull requests into Amy. In the case of DC, they paste link to anything that describes their Lesson Change.
+        + After submitting the form, a new account is created for each Candidate, but no password and no username are set yet. Amy detects when somebody is already present in the database (matching by email address). In that case, no record is created.
 
-- In the case of SWC, Amy analyzes the link to decide which core lesson did the trainee pick up. In the case of DC, Trainee has to manually select core lesson.
+        + For simplicity, UI allows the Candidate to request only one Instructor Training.
 
-- After entering the link, the trainee uses Amy to register for one Discussion Session.
+    + The Lead Candidate can later log into Amy and edit his application using the same view.
 
-    - In order not to overload Lesson Maintainers, they don't have to indicate in Amy if the pull request is good enough. It also means that trainees don't have to wait for the feedback from lesson maintainers, so they can register for discussion session immediately. This may raise up the percent of trainees who bother up to go through rest of checkout process.
+1. **Matching Candidates to Courses**
 
-    - By default, we assume that pull requests are good enough. However, Lesson Maintainer can indicate that the submission is not good enough in Trainees list view.
+    + Admins can view all applications along with candidates in Amy. They can also merge groups and individuals to form bigger groups. They manually match Candidates to Instructor Trainings.
 
-    - The Trainee can indicate that she's not available at any of the slots. She can tell when she's available in a text area. The Head of Training can list all trainees (in Trainees list view) who requested additional sessions along with whatever they entered in the text area.
+        + Admins can view all applications in Applications list view.
 
-    - Amy tracks which Trainees attended which Sessions. That is, there would be many-to-many relation between Trainees and Discussion Sessions.
+        + Admins can view one application (along with all candidates) in Applications detailed view.
 
-- After the Discussion Session, the Discussion Leader uses the detailed view of Discussion Session shown below to indicate who has passed and who failed. After that, Amy mails the trainees with instructions on what to do next. This view is also displayed when a Trainer or an Admin wants to create a new session.
-![discussion-session-detailed-v2](https://cloud.githubusercontent.com/assets/1645996/13904131/8979568a-ee96-11e5-8f4c-068f256ac184.png)
+        + Admins can associate each Application with one Instructor Training. That way, they can merge groups by associating two or more Applications to one Instructor Training.
 
-- This view lets the Discussion Leader customize emails:
-![discussion-session-detailed-v2-mail](https://cloud.githubusercontent.com/assets/1645996/13904138/b115dd9e-ee96-11e5-8adf-7a1a383ed9a8.png)
+        + Applications list view let you sort applications by distance to chosen application. That way, you can easily see which groups are worth merging.
 
-- The emails Amy sends are send in the name of the Trainer, so if somebody replies, the response will land in the Trainer mailbox.
+        + Admins can split any group in Applications detailed view. This works by creating a clone Application with different candidates set.
 
-- At this moment, trainees can register for Checkout Session.
+    + Admins negotiate date and place of Instructor Training with Lead Candidate via email.
 
-- After the Checkout Session, the Examiner indicates in Amy who has passed and who has failed (the interface would be similar to the detailed view of Discussion Session). Amy mails the Trainees with instructions on what to do next.
+    + In the end of negotiation of Instructor Training date, Admins send emails to all Candidates to confirm they want to participate in the Instructor Training.
 
-    - Note that Admins and Head of Training are not engaged at all.
+1. **Running Courses**
 
-- Amy generates PDF certificates. Those certificates are hosted as static files on Amy (much easier than integrating Amy with github).
+    + An Instructor Training take place.
 
-- New instructors send their biography as well as photo in Amy; and are asked to join `discuss` as well as `instructors` list. After sending it, they can download their certificate from Amy.
+    + At Instructor Training (or after that training), all Trainees already have accounts in Amy. They can set up their passwords and usernames using Registration Form.
 
-## Milestone 2: Managing Recruiting Candidates
+    + The Trainer uses Trainees list view and filters all Trainees who are not assigned to any Instructor Training. Then, he assigns his Trainees to his Instructor Training.
 
-That is managing everything before and during an Instructor Training -- Recruiting Candidates, Matching them to Instructor Trainings and running those trainings.
+    + The Amy interface for Trainees will be completely different from the current one. Here is what Trainees can see after logging in:
+    ![checkout-process-progress](https://cloud.githubusercontent.com/assets/1645996/13904004/afa256cc-ee91-11e5-8829-090afd95f604.png)
 
-All Candidates will be represented in `Person` table, from the beginning of the workflow. For simplicity, trainees can login using their emails, so they don't have to choose username. Every Amy user can login using their email address or username (if they have an username).
+1. **Homework**
 
-The new workflow is:
+    + Trainees make a change in the SWC Lessons and paste the link to their pull requests into Amy. In the case of DC, they paste link to anything that describes their Lesson Change.
 
-- A Candidate or a Lead Candidate of a group of Candidates uses Registration Form to create his account.
+    + In the case of SWC, Amy analyzes the link to decide which core lesson did the trainee pick up. In the case of DC, Trainee has to manually select core lesson.
 
-- The Candidate logs into Amy and uses Application Form to apply for an Instructor Training. This form is used for both individual Candidates as well as groups of Candidates.
-    
-    - In the case of group applications, the Lead Candidate needs to enter names and email addresses of other Candidates.
+1. **Discussion Session**
 
-    - After submitting the form, a new account is created for each Candidate, but no password and no username are set yet. Amy detects when somebody is already present in the database (matching by email address). In that case, no record is created.
+    + After entering the link, the Trainee uses Amy to register for one Discussion Session.
 
-    - For simplicity, UI allows the Candidate to request only one Instructor Training.
+        + In order not to overload Lesson Maintainers, they don't have to indicate in Amy if the pull request is good enough. It also means that trainees don't have to wait for the feedback from lesson maintainers, so they can register for discussion session immediately. This may raise up the percent of trainees who bother up to go through rest of checkout process.
 
-- The Lead Candidate can later log into Amy and edit his application using the same view.
+        + By default, we assume that pull requests are good enough. However, Lesson Maintainer can indicate that the submission is not good enough in Trainees list view.
 
-- Admins can view all applications along with candidates in Amy. They can also merge groups and individuals to form bigger groups. They manually match Candidates to Instructor Trainings.
+        + The Trainee can indicate that she's not available at any of the slots. She can tell when she's available in a text area. The Head of Training can list all trainees (in Trainees list view) who requested additional sessions along with whatever they entered in the text area.
 
-    - Admins can view all applications in Applications list view.
+        + Amy tracks which Trainees attended which Sessions. That is, there would be many-to-many relation between Trainees and Discussion Sessions.
 
-    - Admins can view one application (along with all candidates) in Applications detailed view.
+    + After the Discussion Session, the Discussion Leader uses the detailed view of Discussion Session shown below to indicate who has passed and who failed. After that, Amy mails the trainees with instructions on what to do next. This view is also displayed when a Trainer or an Admin wants to create a new session.
+    ![discussion-session-detailed-v2](https://cloud.githubusercontent.com/assets/1645996/13904131/8979568a-ee96-11e5-8f4c-068f256ac184.png)
 
-    - Admins can associate each Application with one Instructor Training. That way, they can merge groups by associating two or more Applications to one Instructor Training.
+    + This view lets the Discussion Leader customize emails:
+    ![discussion-session-detailed-v2-mail](https://cloud.githubusercontent.com/assets/1645996/13904138/b115dd9e-ee96-11e5-8adf-7a1a383ed9a8.png)
 
-    - Applications list view let you sort applications by distance to chosen application. That way, you can easily see which groups are worth merging.
+    + The emails Amy sends are send in the name of the Trainer, so if somebody replies, the response will land in the Trainer mailbox.
 
-    - Admins can split any group in Applications detailed view. This works by creating a clone Application with different candidates set.
+1. **Checkout Session**
 
-- Admins negotiate date and place of Instructor Training with Lead Candidate via email.
+    + At this moment, trainees can register for Checkout Session.
 
-- In the end of negotiation of Instructor Training date, Admins send emails to all Candidates to confirm they want to participate in the Instructor Training.
+    + After the Checkout Session, the Examiner indicates in Amy who has passed and who has failed (the interface would be similar to the detailed view of Discussion Session). Amy mails the Trainees with instructions on what to do next.
 
-- An Instructor Training take place.
+        + Note that Admins and Head of Training are not engaged at all.
 
-- At Instructor Training (or after that training), all Trainees already have accounts in Amy. They can set up their passwords and usernames using Registration Form.
+1. **Welcoming to the Community**
 
-- After logging in, every Trainee can see the progress of Checkout Process, as described in Milestone 1.
+    + Amy generates PDF certificates. Those certificates are hosted as static files on Amy (much easier than integrating Amy with github).
+
+    + New instructors send their biography as well as photo in Amy; and are asked to join `discuss` as well as `instructors` list. After sending it, they can download their certificate from Amy.
 
 ## Schema Changes
 
@@ -245,7 +241,23 @@ class Lesson(models.Model):
 
 ```
 
-## Schedule and Detailed TODO List
+## Milestones
+
+I split this proposal into as small milestones as possible. Every milestone ends up with new version of Amy being pushed to production and introduced to all its users. This minimizes the chances of failure and let us adapt or change almost everything after every milestone -- even if it means changing the scope of this project. The milestones are:
+
+1. **Milestone 0: Migrating from SQLite to PostgreSQL**
+
+    I'm discussing in [#716](https://github.com/swcarpentry/amy/issues/716) with Piotr Banaszkiewicz if it's really necessary, but if it is, it must be done at the beginning, as an additional "zero" milestone.
+
+1. **Milestone 1: Managing Checkout Process**
+
+    That is everything after an Instructor Training -- that is Homework, Discussion Session, Checkout Session and welcoming to the community.
+
+1. **Milestone 2: Managing Recruiting Candidates** and rest of the workflow.
+
+    That is managing everything before and during an Instructor Training -- Recruiting Candidates, Matching them to Instructor Trainings and running those trainings.
+
+## Schedule
 
 ### Community Bonding Period
 
@@ -253,7 +265,7 @@ class Lesson(models.Model):
 - Choosing early users among Admins, Trainers and Trainees.
 - Discussing and improving schema changes (it clearly demands improvements and more considered design).
 
-### Milestone 1: Managing SWC Checkout Process
+### Milestone 1: Managing Checkout Process
 
 * **Week 1: May 23 - May 29**
 
