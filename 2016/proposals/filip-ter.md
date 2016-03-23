@@ -147,19 +147,20 @@ After the project I would like to evaluate the success of refactoring sparse, an
 
 ###Open Source Development Experience
 
-I have worked in research settings during summers, as well as contributing to open-source projects related to my last summer job, specifically:
+I have worked in research settings during summers, as well as contributing to open-source projects related to my last summer job. List of OS projects I contributed to:
 
- - [Pandas](https://www.github.com/pydata/pandas) (Pull request open, tests pass):
- 	- Added xz compression in `to_csv` of a DataFrame. -- [#12668](https://github.com/pydata/pandas/pull/12668)
-
- - [SequenceServer](https://www.github.com/wurmlab/sequenceserver):
+ - [Pandas](https://www.github.com/pydata/pandas):
+ 	- Added xz compression in `to_csv` of a DataFrame. -- [#12668](https://github.com/pydata/pandas/pull/12668) 
+ - [SequenceServer](https://www.github.com/wurmlab/sequenceserver): 
  	- Commits: [here](https://github.com/wurmlab/sequenceserver/commits?author=terfn)
  	- Fixed various issues both on back-end and front-end.
- 	- Added a background thread to remove files
- - [Bionode](https://www.github.com/bionode/bionode-ncbi)
+ 	- Added a background thread to remove files.
+ - [Bionode](https://www.github.com/bionode/bionode-ncbi):
  	- Commits: [here](https://github.com/bionode/bionode-ncbi/commits?author=terfn)
  	- Added some testing to improve code coverage
  	- Implemented a wrapper for an API call used to download specific gene sequences and added tests to it.
+ - [Drf-Extra-Fields](https://github.com/Hipo/drf-extra-fields) : Extra serializable fields for the Django Rest Framework
+ 	- Enabled Base64 encoded Image downloads PR [here](https://github.com/Hipo/drf-extra-fields/pull/15)
  
 ---
 
