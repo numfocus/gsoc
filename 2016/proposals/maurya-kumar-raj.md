@@ -55,7 +55,7 @@ I have been the member of NumFocus community and supporting it as a volunteer.
 
 ## Academic Experience
 
-I am currently a 3rd year (B.Tech) Computer Science and Engineering student at University Institute of Engineering and Technology, Kanpur, India. I have done some academic projects on database management systems. I am a FOSS enthusiast and like to contribute, collaborate for the same.
+I am currently a 3rd year (B.Tech) Computer Science and Engineering student at University Institute of Engineering and Technology, Kanpur, India. I have done some academic projects on database management systems. I am a Free Open Source Software (FOSS) enthusiast and like to contribute, collaborate for the same.
 
 This project deals with implementation and automating the process of accessing the data in EcoData Retriever that requires the knowledge Python and database systems like MySql, SqLite, which I am familiar with and have experience as well as done few projects on that technology.
 
