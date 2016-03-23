@@ -40,12 +40,10 @@ This time line has been made keeping in mind that it will require work at least 
 
 ## Future works
 
-* Continue to work on the Retriever Project and finish some feature requests or fix some bugs in Retriever. After I finish this gsoc project, I think I will have more ideas about how to improve the Retriever much better. 
+* I will continue to work on the Retriever Project and finish some feature requests and i will be involved in fixing some bugs in Retriever.
 * Adding more reliable name resolution APIs.
 * Improving the accuracy of the best name deciding algorithm.
 * Bug fixing the existing and adding more engines for different formats of data. For example - JSON, XML etc.
-* Adding more features to the user interface like giving the option to the user to update the names from a specific source.
-* Support for the existing code base.
 
 ## Open Source Development Experience
 
