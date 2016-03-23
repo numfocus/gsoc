@@ -40,7 +40,7 @@ This time line has been made keeping in mind that it will require work at least 
 
 ## Future works
 
-* I will continue to work on the Retriever Project and finish some feature requests and i will be involved in fixing some bugs in Retriever.
+* I will continue to work on the Retriever Project and finish some feature requests and I will be involved in fixing some bugs in Retriever.
 * Adding more reliable name resolution APIs.
 * Improving the accuracy of the best name deciding algorithm.
 * Bug fixing the existing and adding more engines for different formats of data. For example - JSON, XML etc.
