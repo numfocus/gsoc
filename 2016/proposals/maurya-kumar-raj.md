@@ -2,7 +2,7 @@
 
 ## Abstract
 
-The EcoData Retriever is an automated software that is used for finding, downloading, and cleaning up ecological data files, and then organizes the whole data in a local database of your choice. The program cleans and restructures datasets in normalized form and formats them according to the suitable standards of the database management systems.
+The EcoData Retriever is an automated software that is used for finding, downloading, and cleaning up ecological data files, and then organizes the whole data in a local database of your choice. The program cleans and restructures datasets in normalized form and formats these datasets according to the suitable standards of the database management systems.
 
 This project deals with handling the problem of resolving scientific names that are stored in appropriate manner across various datasets. This software would enable its users to conveniently combine different datasets that will be helpful in answering scientific queries. 
 
