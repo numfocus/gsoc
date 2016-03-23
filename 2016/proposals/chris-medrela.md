@@ -133,6 +133,15 @@ The new workflow is:
 ## Schema Changes
 
 ```python
+
+class SWCOrDCField(models.CharField):
+    max_length = STR_MED
+    choices = (
+        ('swc', 'Software-Carpentry'),
+        ('dc', 'Data-Carpentry'),
+    )
+    blank = False
+
 # modification to Person class:
 class Person(AbstractBaseUser, PermissionsMixin):
     # determines whether the person has access to AMY interface for admins and trainers
@@ -180,14 +189,7 @@ class Session(models.Model):
         abstract = True
 
 class DiscussionSession(Session):
-    carpentry = models.CharField(
-        max_length = STR_MED,
-        choices = (
-            ('swc', 'Software-Carpentry'),
-            ('dc', 'Data-Carpentry'),
-        ),
-        blank = False,
-        default = 'swc')
+    carpentry = SWCOrDCField()
     trainees = models.ManyToManyField(Person, 
         through='DiscussionSessionAttendance', 
         through_fields=('session', 'person'),
@@ -201,7 +203,6 @@ class CheckoutSession(Session):
 
 class SessionAttendance(models.Model):
     person = models.ForeignKey('Person')
-    session = models.ForeignKey('Session')
     status = models.CharField(
         max_length=STR_MED,
         choices=(
@@ -218,10 +219,10 @@ class SessionAttendance(models.Model):
         abstract = True
 
 class DiscussionSessionAttendance(SessionAttendance):
-    pass
+    session = models.ForeignKey('DiscussionSession')
 
 class CheckoutSessionAttendance(SessionAttendance):
-    pass
+    session = models.ForeignKey('CheckoutSession')
 
 class InstructorTrainingApplication(models.Model):
     lead_candidate = models.ForeignKey(Person)
@@ -240,14 +241,7 @@ class InstructorTraining(models.Model):
 class Lesson(models.Model):
     # `name` field is already present
     suitable_for_training = models.BooleanField(default=False)
-    carpentry = models.CharField(
-        max_length = STR_MED,
-        choices = (
-            ('swc', 'Software-Carpentry'),
-            ('dc', 'Data-Carpentry'),
-        ),
-        blank = False,
-        default = 'swc')
+    carpentry = SWCOrDCField()
 
 ```
 
