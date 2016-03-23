@@ -45,7 +45,11 @@ That is everything after an Instructor Training -- that is Homework, Discussion 
 
 The new workflow would be:
 
-- At the end of Instructor Training, Trainees register in Amy using Registration Form. This form contains only one field: email address. After submitting the form, Amy sends an email with link to another form, where the Candidate can choose password and enter some basic information about him (something like `update_profile`). The Registration Form accepts emails addresses that are already present in Amy Database. In that case, it serves as password recovery.
+- At the end of Instructor Training, Trainees register in Amy using Registration Form. This form contains only one field: email address. After submitting the form, Amy sends an email with link to another form, where the Candidate can choose password and enter password and username.
+
+    - The Registration Form accepts emails addresses that are already present in Amy Database.
+    - If the user hasn't chosen a username yet (that happens for people who were registered by someone else), he's forwarded to the same form. 
+    - If the user has an username, she's forwarded to Password Recovery Form.
 
 - The Trainer uses Trainees list view and filters all Trainees who are not assigned to any Instructor Training. Then, he assigns his Trainees to his Instructor Training.
 
@@ -72,6 +76,8 @@ The new workflow would be:
 - This view lets the Discussion Leader customize emails:
 ![discussion-session-detailed-v2-mail](https://cloud.githubusercontent.com/assets/1645996/13904138/b115dd9e-ee96-11e5-8adf-7a1a383ed9a8.png)
 
+- The emails Amy sends are send in the name of the Trainer, so if somebody replies, the response will land in the Trainer mailbox.
+
 - At this moment, trainees can register for Checkout Session.
 
 - After the Checkout Session, the Examiner indicates in Amy who has passed and who has failed (the interface would be similar to the detailed view of Discussion Session). Amy mails the Trainees with instructions on what to do next.
@@ -92,11 +98,27 @@ The new workflow is:
 
 - A Candidate or a Lead Candidate of a group of Candidates uses Registration Form to create his account.
 
-- The Candidate logs into Amy and uses Application Form to apply for an Instructor Training. This form is used for both individual Candidates as well as groups of Candidates. In the case of group applications, the Lead Candidate needs to enter names and email addresses of other Candidates. After submitting the form, a new account is created for each Candidate, but no password is set yet. For simplicity, UI allows the Candidate to request only one Instructor Training.
+- The Candidate logs into Amy and uses Application Form to apply for an Instructor Training. This form is used for both individual Candidates as well as groups of Candidates.
+    
+    - In the case of group applications, the Lead Candidate needs to enter names and email addresses of other Candidates.
 
-- The Lead Candidate can later log into Amy and edit his application.
+    - After submitting the form, a new account is created for each Candidate, but no password and no username are set yet. Amy detects when somebody is already present in the database (matching by email address). In that case, no record is created.
+
+    - For simplicity, UI allows the Candidate to request only one Instructor Training.
+
+- The Lead Candidate can later log into Amy and edit his application using the same view.
 
 - Admins can view all applications along with candidates in Amy. They can also merge groups and individuals to form bigger groups. They manually match Candidates to Instructor Trainings.
+
+    - Admins can view all applications in Applications list view.
+
+    - Admins can view one application (along with all candidates) in Applications detailed view.
+
+    - Admins can associate each Application with one Instructor Training. That way, they can merge groups by associating two or more Applications to one Instructor Training.
+
+    - Applications list view let you sort applications by distance to chosen application. That way, you can easily see which groups are worth merging.
+
+    - Admins can split any group in Applications detailed view. This works by creating a clone Application with different candidates set.
 
 - Admins negotiate date and place of Instructor Training with Lead Candidate via email.
 
@@ -104,22 +126,14 @@ The new workflow is:
 
 - An Instructor Training take place.
 
-- At Instructor Training (or after that training), all Trainees already have accounts in Amy. They can set up their passwords using Registration Form.
+- At Instructor Training (or after that training), all Trainees already have accounts in Amy. They can set up their passwords and usernames using Registration Form.
 
 - After logging in, every Trainee can see the progress of Checkout Process, as described in Milestone 1.
 
 ## Schema Changes
 
 ```python
-class SWCOrDCField(models.CharField):
-    max_length = STR_MED
-    choices = (
-        ('swc', 'Software-Carpentry'),
-        ('dc', 'Data-Carpentry'),
-    )
-    blank = False
-    default = 'swc'
-
+# modification to Person class:
 class Person(AbstractBaseUser, PermissionsMixin):
     # determines whether the person has access to AMY interface for admins and trainers
     is_admin = models.BooleanField(default=True)  
@@ -127,14 +141,15 @@ class Person(AbstractBaseUser, PermissionsMixin):
     # username -- no longer required
     # email -- required
 
-    swc_instructor_training = models.ForeignKey('InstructorTraining', null=True)
-    dc_instructor_training = models.ForeignKey('InstructorTraining', null=True)
-    swc_core_lesson = models.ForeignKey('CoreLesson', null=True, related_name='trainees')
-    dc_core_lesson = models.ForeignKey('CoreLesson', null=True, related_name='trainees')
-    cannot_make_discussion_session = models.BooleanField(default=False)
+    instructor_training = models.ForeignKey('InstructorTraining', null=True)
+    swc_core_lesson = models.ForeignKey('Lesson', null=True, related_name='trainees',
+        limit_choices_to=Q(suitable_for_training=True))
+    dc_core_lesson = models.ForeignKey('Lesson', null=True, related_name='trainees',
+        limit_choices_to=Q(suitable_for_training=True))
+    swc_cannot_make_discussion_session = models.BooleanField(default=False)
+    dc_cannot_make_discussion_session = models.BooleanField(default=False)
     cannot_make_checkout_session = models.BooleanField(default=False)
-    availability_for_discussion_session = models.TextField(default="", blank=True)
-    availability_for_checkout_session = models.TextField(default="", blank=True)
+    availability = models.TextField(default="", blank=True)
     link_to_swc_lesson_change = models.URLField(default="", blank=True)
     link_to_dc_lesson_change = models.URLField(default="", blank=True)
     is_swc_lesson_change_good_enough = models.BooleanField(default=True)
@@ -150,7 +165,15 @@ class Person(AbstractBaseUser, PermissionsMixin):
 class Session(models.Model):
     leader = models.ForeignKey('Person')
     start = models.DateTimeField()
-    swc_or_dc = SWCOrDCField()
+    carpentry = models.CharField(
+        max_length = STR_MED,
+        choices = (
+            ('na', 'na'),
+            ('swc', 'Software-Carpentry'),
+            ('dc', 'Data-Carpentry'),
+        ),
+        blank = False,
+        default = 'swc')
     status = models.CharField(
         max_length=STR_MED,
         choices=(
@@ -183,21 +206,29 @@ class SessionAttendance(models.Model):
 
 class InstructorTrainingApplication(models.Model):
     lead_candidate = models.ForeignKey(Person)
-    candidates = models.ManyToManyField(Person,
-        related_name='applications')
+    # the lead_candidate is always present in candidates set
+    candidates = models.ManyToManyField(Person, related_name='applications')
     reason = models.TextField(default="", blank=True) # why they want to become an instructor
+    training = models.ForeignKey(InstructorTraining, null=True)
 
 class InstructorTraining(models.Model):
-    swc_or_dc = SWCOrDCField()
     date = models.DateTimeField()
     country = CountryField()
     location = models.CharField(max_length=STR_LONG,
                                 help_text='City, Province, or State')
     instructor = models.ForeignKey(Person)
 
-class CoreLesson(models.Model):
-    name = models.CharField(max_length=STR_MED)
-    swc_or_dc = SWCOrDCField()
+class Lesson(models.Model):
+    # `name` field is already present
+    suitable_for_training = models.BooleanField(default=False)
+    carpentry = models.CharField(
+        max_length = STR_MED,
+        choices = (
+            ('swc', 'Software-Carpentry'),
+            ('dc', 'Data-Carpentry'),
+        ),
+        blank = False,
+        default = 'swc')
 
 ```
 
@@ -207,6 +238,7 @@ class CoreLesson(models.Model):
 
 - Fixing small issues to familiarize with AMY codebase.
 - Choosing early users among Admins, Trainers and Trainees.
+- Discussing and improving schema changes (it clearly demands improvements and more considered design).
 
 ### Milestone 1: Managing SWC Checkout Process
 
@@ -229,8 +261,9 @@ class CoreLesson(models.Model):
 
 * **Week 4: June 13 - June 19**
 
-    - Implementing Registration Form.
-    - Setting up Amy, so it can send emails in the name of other people. 
+    - Implementing Registration Form and the form to set password and username.
+    - Implementing Recover Password Form.
+    - Setting up Amy, so it can send emails, in the name of other people (i.e. in the name of Trainers). Using `django.core.mail`.
     - Manual testing.
 
 * **Week 5: June 20 - June 26 (midterm evaluation deadline)**
@@ -239,6 +272,7 @@ class CoreLesson(models.Model):
         - Discussion Registration Etherpad
         - Checkout Registration Etherpad
         - Trainees Spreadsheet
+        - Certification Repository
     - Exposing new functionality to early users.
         - Discussion Sessions and Final Demonstration Sessions for early users will be different from those sessions available for "old" users, so we don't have to synchronize sessions between Etherpad and Amy.
 
@@ -265,8 +299,9 @@ class CoreLesson(models.Model):
 * **Week 9: July 18 - July 24**
 
     - Implementing Application Form.
-    - Implementing form to set up password and basic information.
     - Implementing filtering by Instructor Training in Trainees list view.
+    - Implementing Application list view.
+    - Implementing Application detailed view.
 
 * **Week 10: July 25 - July 31**
 
@@ -292,9 +327,23 @@ class CoreLesson(models.Model):
     - Responding to feedback from all users.
 
 * **Week 13: August 15 - August 22 (final evaluation)**
-
+    
     - Buffer week.
-    - Week for implementing additional nice-to-have features, like harvesting information whether a Lesson Change is good enough from GitHub by looking at tags attached to Trainees' pull requests.
+    - Week for implementing additional nice-to-have features listed below.
+
+### Backlog
+
+If time allows, I'd like to implement nice-to-have features like (in no particular order):
+
+- harvesting information whether a Lesson Change is good enough from GitHub by looking at tags attached to Trainees' pull requests,
+
+- sending emails to Trainees when new Discussion Sessions and Checkout Sessions are available,
+
+- also notifying Discussion Leaders when Trainees want sessions of the kind they're able to offer,
+
+- tracking whether groups (who attended instructor workshop) run their promised workshops or not,
+
+- allowing logging using Google account.
 
 ## Experience
 
@@ -383,6 +432,7 @@ One person may have multiple roles.
 - **SWC Lesson Changes**: GitHub pull requests to SWC Lessons. First step of Checkout Process.
 - **DC Lesson Changes Doc**: Google Docs page for Data Carpentry. First step of Checkout Process.
 - **SWC/DC Lessons**: SWC/DC lessons available on SWC website.
+- **[Certification Repository](https://github.com/swcarpentry/certification)**: contains generated .pdf certificates for both SWC and DC Instructors
 
 ### Other
 
@@ -392,6 +442,7 @@ One person may have multiple roles.
 - **Pre-Checkout discussion session**, **Discussion Session**, **Discussion**: meeting between an Instructor Trainer and some trainees to discuss one of Software or Data Carpentry lessons.
 - **Checkout Session**, **Final Demonstration Session**: meeting between a Instructor Trainer and a trainee to conclude Instructor Training.
 - **Carpentry** -- either SWC or DC.
+- **Application** -- individual or group application for Instructor Training
 
 ## The Current Workflow
 
