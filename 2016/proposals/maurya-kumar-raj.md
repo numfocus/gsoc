@@ -57,7 +57,8 @@ I have been the member of NumFocus community and supporting it as a volunteer.
 
 I am currently a 3rd year (B.Tech) Computer Science and Engineering student at University Institute of Engineering and Technology, Kanpur, India. I have done some academic projects on database management systems. I am a Free Open Source Software (FOSS) enthusiast and like to contribute, collaborate for the same.
 
-This project deals with implementation and automating the process of accessing the data in EcoData Retriever that requires the knowledge Python and database systems like MySql, SqLite, which I am familiar with and have experience as well as done few projects on that technology.
+This project deals with implementing and automating the process of accessing the data with the taxonomic names resolved. The project requires the knowledge of Python and database systems like MySql, SqLite.
+I have worked on similar projects that had the same requirements and skill set.
 
 I also have interned at some research organizations like Indian Institute of Science Education Research (IISER) Kolkata, UNESCO.
 Apart from these I have also interned at start-up companies which includes Kanopy Techno Solutions, Pariksha.co, Pollinate Energy, Absentia Virtual Reality.
