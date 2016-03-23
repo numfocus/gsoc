@@ -1,9 +1,10 @@
-# Software Carpentry:  Survey Visualizer Application
+#### Software Carpentry
+# Survey Visualizer Application
 
 ## Abstract
 Software Carpentry hosts a series of workshops, each if which is associated with five surveys. The surveys are conducted on SurveyMonkey. Viewing the results on SurveyMonkey takes a lot of clicks, and hence an application is needed which can aggregate the results from the various surveys.
 
-A django-based application will be linked to Software Carpentry's SurveyMonkey account. The workshop organiser (user) is expected to provide the application with either:  
+A Django-based application will be linked to Software Carpentry's SurveyMonkey account. The workshop organiser (user) is expected to provide the application with either:    
 1. the complete URL of survey **OR** 
 2. the workshop ID in an input field.
 
@@ -17,18 +18,17 @@ The presentation of results for each question will depend on the question type. 
  Multiple choice |  Bar graph / Pie chart 
  Matrix Menu | Multiple Bar graphs / Stacked Bar graph / Grouped Bar chart 
  Matrix table | A Bar graph for each record / Matrix "chart
- Text field | Text content (presented in required format)
- Rating-type Question | Bar graph / Pie chart 
+ Rating-type Question | Bar graph / Pie chart 	
 
-In later stages, the application will be integrated with [AMY](https://github.com/swcarpentry/amy), a django-based workshop administration application for Software Carpentry. 
+In later stages, the application will be integrated with [AMY](https://github.com/swcarpentry/amy), a Django-based workshop administration application for Software Carpentry. 
 
 ## Technical Details
 The application will require a one-time setup where in the application will be linked to the SurveyMonkey account of Software Carpentry. 
 
 The technology stack for the application will consist of:
-* *Backend* : **Django**
-* *Database* : **PostgreSQL**
-* *Frontend* : **Bootstrap** along with **Plotly.js**
+ * *Backend* : **Django**
+ * *Database* : **PostgreSQL** / **SQLite**
+ * *Frontend* : **Bootstrap** along with **Plotly.js**
 
 #### **Backend**: Django
 As stated earlier, the application will be developed in Django. Since the application will be associated with a single SurveyMonkey account, the access token shall be taken from the SurveyMonkey API console. This access token will be used to authorize the access to the account data.
@@ -48,7 +48,7 @@ The application will make a sequence of API calls:
  * For every *respondent_id* in *respondent_ids*, we iterate over all *question_id* and for a given question, the *count* is calculated against each *answer_id*.
  * The calculated result is saved as a JSON object and stored in the database.
 
-The structure of the models used:
+The detailed structure of the models used:
 ```python
 
 class Question(models.Model):
@@ -105,22 +105,23 @@ class WorkshopSurvey(models.Model):
 
 The *results* field for a WorkshopSurvey object will store JSON in the following format 
 ```python
-[	
-	{
-		'id': 		question_id,
-		'answer':	[
-						{
-							'id': 		answer_id
-							'count':	answer_count['answer_id']	 	# answer_count shall be user-defined dictionary as described above
-						},
-					]
-	},
-]
+{	
+	'index' :	
+		{
+			'id': 		question_id,
+			'answer':	[
+							{
+								'id': 		answer_id
+								'count':	answer_count['answer_id']	 	 #answer_count shall be user-defined dictionary as described above
+							},
+						]
+		},
+}
 ```
 
-##### Database Scheme
+##### Database Schema
 ![Database Schema](https://lh3.googleusercontent.com/c1DJI58ZVreLs2aU8n28RcKORXwt2y3ZkyadzYImNswuRI85z-7zdD4nlDKXeETyOiKsugVgpmXn7cxot4M5vJJNILiRFe_4gqPWBmNt5BvLpkNgM64v9gRLlA0X7AeFoYNmdv17I-7tOHEnRJuA5EQKxvK4XhotJg755rmwxGXccDhjNxUPjGepcjQHUy-S52w8e0ct077YMhhpYSbcxaucNnWlcVb1JQHsp7xo9i5AH0k_B6wzvnOtn4OHd2YSGTz2t-lqOywkMRYAtVbcncWOAIB5W1oqLyB9_ANCMnb25fIyGiS75ZE0ZLYv6q5WO6wXCL6R37Inq1xhyZdWqqjwPziBm0LCa_MAZ_3CJTF5jhtXog8PFR4yp6rCdzKnO2glVRDZTAI-peHpsxCMsm6N67FI7E7-FNUvN3ynusKCXe84VfdS4_tGM9cHHlmJcsUUYQIbqpwycLSyIUTbPB4Eb5aZKlRfHV946pS4Yc2QcxwUCcGOqK3NUI1r6uZt--8DKi0E9DVR45rwvdVXN7l9DuB-mcIlpWpiSM2GclYM4FvlcLVsPDKxneAtN9U=w896-h443-no)
-*The arrows represent **Many-to-One** ,i.e. **Foreign Key** relationship*
+The arrows represent *Many-to-One* ,i.e. **Foreign Key** relationship
 
 ##### Explaination
 In order to (i) make querying easy & fast and (ii) store results in an optimal data structure, I have proposed the above design. Most of the queries and filters would be on variable like *workshop_id*, *survey_id*, *date* or *host*, we can easily search the *Workshop* & *WorkshopSurvey* tables for any such query. The *Organiser* is maintained as a seperate table, as we may need to associate more data with a host.   
@@ -135,14 +136,13 @@ With the release of v9.4, extensive support for JSON has been added to PostgreSQ
 However, as per the discussions with the mentors, I have been made aware that SQLite is currently being employed in AMY. With the discussed database schema, we can store the JSON as a string in SQLite.  
 
 #### **Frontend**: Bootstrap + Plotly.js
-The reason for narrowing down the choices out of various charting libraries to a single one is the fact that this library enables developers to design responsive, customizable charts and adds functionalities to the already large feature set of *D3.js*, on which it is based. Further, (i) it is completely free & open-source (ii) *Plotly playground*: developers can run write the code online & modify using GUI (thus, modify, enhance & test charts well before using them) *and* (iii) it is easier to use & presence of few rendering bugs in Highcharts [1](https://news.ycombinator.com/item?id=10583784) [2](http://stackoverflow.com/questions/6924356/highcharts-jquery-rendering-problem-all-browsers)
+The reason for narrowing down the choices out of various charting libraries to a single one is the fact that this library enables developers to design responsive, customizable charts and adds functionalities to the already large feature set of *D3.js*, on which it is based. Further, (i) it is completely free & open-source (ii) *Plotly playground*: developers can run write the code online & modify using GUI (thus, modify, enhance & test charts well before using them) *and* (iii) it is easier to use.
 
 ## Schedule of Deliverables
 
 ### Community Bonding Period
 This time will be used to perform complete *requirement analysis* of the project and  to better know the Software Carpentry community - the users as well as the developers. During this period, the discussions will be held with mentors, as part of the analysis phase, to finalize the minute details including:
 * presentation layout for each question-type and answer-type
-* choice of plotting library
 * database schema
 * way to present the choices (of 5 surveys) when the workshop ID is provided 
 
@@ -162,11 +162,11 @@ Show working Python backend: authorization, fetching and processing of data.
 
 ### June 22nd - July 5th
 *Developing the frontend.*    
-*Begin documentation. *
-The charts and graphs will be implemented, using the processed data & the progress so far will be documented along with the necessary .
+*Begin documentation.*
+The charts and graphs will be implemented, using the processed data & the progress so far will be documented along with the necessary examples.
 
 ### July 6th - July 19th
-*Testing & (continue) documentation. *    
+*Testing & (continue) documentation.*    
 The application should be completely working by this time. Thus this period will be used to thoroughly test the application for various bugs in backend and frontend. Tests cases used in this phase will be documented, along with the system response. Also, if any improvements are realised, will be worked upon in this time.
 
 ### July 20th - August 2nd
@@ -175,7 +175,7 @@ Since, the application will be fully functional by this time, the next 4 weeks w
 	
 ### August 3rd - August 16th
 *Working with AMY. [2]*  
-Besides integration, I shall begin working on documentation towards the end of this phase. 	
+Besides integration, I shall continue working on documentation towards the end of this phase. 	
 
 ### August 17th - August 21st 19:00 UTC
 *Wrapping up.*  
@@ -190,20 +190,20 @@ The documentation will be finalized. Code will be beautified along with removal 
 Continue working on this project, along with AMY. I would continue to contribute, test and fix bugs that will be reported. I will work on improvements in AMY and also contribute to future projects of Software Carpentry.
 	
 ## Open Source Development Experience
-I'm new to open source. This project would be my first opportunity to contribute to an open-source organization. I found the idea quite exciting - especially since I have already worked on few large-scale django projects. However, I have developed **Media Management Service**, a django-based backend service that handles media files and requests. It's features include media storage, file recovery, file transformation, file compression and user defined rule-based authentication. Further, it is integrated with Django Forms and [Django File Manager](https://github.com/IMGIITRoorkee/django-filemanager) (An open-source GUI File manager developed by Information Management Group). As soon as the documentation gets complete, I plan to release this service module as open source. 
+I'm new to open source. This project would be my first opportunity to contribute to an open-source organization. I found the idea quite exciting - especially since I have already worked on few large-scale Django projects. However, I have developed **Media Management Service**, a Django-based backend service that handles media files and requests. It's features include media storage, file recovery, file transformation, file compression and user defined rule-based authentication. Further, it is integrated with Django Forms and [Django File Manager](https://github.com/IMGIITRoorkee/Django-filemanager) (An open-source GUI File manager developed by [Information Management Group, IIT Roorkee](https://www.facebook.com/IMGIITRoorkee/)). As soon as the documentation gets complete, I plan to release this service module as open source. 
 
 ## Academic Experience
 I'm a second year undergraduate student at Indian Institute of Technology Roorkee (IIT R), majoring in Computer Science & Engineering. I have strong programming experience in Python, PHP, SQL and C++. As a part of academic curriculum, I have taken courses in *Software Engineering*, *Object Oriented Analysis & Design*, *Data Structures & Algorithms*, which have equipped me with skills to design, develop and test applications of industry standards.  
-Besides software development, I'm passionate about cryptography, learning theory and theoretical computer science.
+Besides software development, I'm passionate about cryptography, information security, machine learning and theoretical computer science.
 
 ## Why this project?
-Being motivated to contribute to an open-source organization and having worked on Django for more than a year, I believe this project would be a perfect start to contribute to OSS. As a member of [Information Management Group](https://www.facebook.com/IMGIITRoorkee), I have worked on many django-based applications and have primarily worked on developing	Media Management Service and the Institute Placement Portal. The online competition portal that I developed for demonstration purpose can be found [here](https://github.com/meet-vora/euclid). This project seems very exciting to work on, given my background. Further, I have been able to use the SurveyMonkey API as well as Plotly during the discussion period and have well understood the idea. I have also realised the trouble one could get into, while using the SurveyMonkey API - querying with inclusion of custom variable *workshop_id* and OAuth, and have discussed the other details and issues [here](https://github.com/numfocus/gsoc/issues/98). Thus, I believe that I am well equipped with the skills, excitement and motivation to work on this project.  
+Being motivated to contribute to an open-source organization and having worked on Django for more than a year, I believe this project would be a perfect start to contribute to OSS. As a member of [Information Management Group](http://img.channeli.in/works/), I have worked on many Django-based applications and have primarily worked on developing	Media Management Service and the Institute Placement Portal. The online competition portal that I developed for demonstration purpose can be found [here](https://github.com/meet-vora/euclid). This project seems very exciting to work on, given my background. Further, I have been able to use the SurveyMonkey API as well as Plotly during the discussion period and have well understood the idea. I have also realised the trouble one could get into, while using the SurveyMonkey API - querying with inclusion of custom variable *workshop_id* and OAuth, and have discussed the other details and issues [here](https://github.com/numfocus/gsoc/issues/98). Thus, I believe that I am well equipped with the skills, excitement and motivation to work on this project.  
 
 ## Other Details
 #### Summer Schedule
-I have no other commitments scheduled for the summer and would devote atleast 50 hours a week, and more if required.
-The ongoing semester will be completed by 10th of May. The next semester is scheduled to begin on 20th of July, 2016. 
+I have no other commitments scheduled for the summer and would devote at least 40 hours a week, and more if required.
+The ongoing semester will be completed by 6th of May. The next semester is scheduled to begin on 20th of July, 2016. 
 
 #### Contact
 Email: [meetvora@outlook.com](mailto:meetvora@outlook.com) / [v.h.c.meetirth@gmail.com](mailto:v.h.c.meetirth@gmail.com)  
-Mobile: +91 839 487 7088
+Mobile: +91 839 487 7088 / +91 702 198 4036
