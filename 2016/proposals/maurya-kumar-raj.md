@@ -10,7 +10,7 @@ This project deals with handling the problem of resolving scientific names that 
 
 EcoData Retriever is python based tool for downloading, cleaning up, and restructuring ecological data. The information about the repositories are stored in .script files which contain URLs to the files containing the datasets.
 
-This project would build a system for sending a species name to one or more of the taxonomic name resolution services and determine the best name to appear in the generated databases. The project is composed of the following main components: 
+This project would include a system for sending a species name to one or more of the taxonomic name resolution services and determine the best name to appear in the generated databases. The project is composed of the following main components: 
 * Accessing the resolution services.
 * Determining the selection strategy.
 * Updating the data model. 
