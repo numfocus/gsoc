@@ -38,8 +38,6 @@ This time line has been made keeping in mind that it will require work at least 
 
 ### August 17th - August 21th 19:00 UTC
 
-**Week to scrub code, write tests, improve documentation, etc.**
-
 ## Future works
 
 * Continue to work on the Retriever Project and finish some feature requests or fix some bugs in Retriever. After I finish this gsoc project, I think I will have more ideas about how to improve the Retriever much better. 
