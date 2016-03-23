@@ -65,7 +65,7 @@ Apart from these I have also interned at start-up companies which includes Kanop
 
 ## Why this project?
 
-While going through the list of organizations and their ideas pages, I was actually looking for the projects which involves the extensive use of database systems, manipulating the large datasets accordingly and I found this project more suitable as well as favorable to me as it involves the usage of almost 80% of the skill sets and technologies that i am already familiar with. Also, my academic as well as non academic projects involved the processing of large data sets using sophisticated database systems accordingly.
+While going through the list of organizations and their ideas pages, I was actually looking for the projects which involves the extensive use of database systems, manipulating the large datasets accordingly and I found this project more suitable as well as favorable to me as it involves the usage of almost 80% of the skill sets and technologies that I am already familiar with. Also, my academic as well as non academic projects involved the processing of large data sets using sophisticated database systems.
 
 I want to be involved in this project because it could help scientists and researchers to do their research and will save their precious time. I will be glad to contribute to this project and help others through this open source projects. So I think it's very meaningful and useful project for me and also i will be learning a lot as well as this project would useful in extending my skills and abilities as well.
 
