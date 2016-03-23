@@ -165,15 +165,6 @@ class Person(AbstractBaseUser, PermissionsMixin):
 class Session(models.Model):
     leader = models.ForeignKey('Person')
     start = models.DateTimeField()
-    carpentry = models.CharField(
-        max_length = STR_MED,
-        choices = (
-            ('na', 'na'),
-            ('swc', 'Software-Carpentry'),
-            ('dc', 'Data-Carpentry'),
-        ),
-        blank = False,
-        default = 'swc')
     status = models.CharField(
         max_length=STR_MED,
         choices=(
@@ -184,10 +175,29 @@ class Session(models.Model):
         blank=False, default='not-started',
     )
     notes = models.TextField(default="", blank=True)
+
+    class Meta:
+        abstract = True
+
+class DiscussionSession(Session):
+    carpentry = models.CharField(
+        max_length = STR_MED,
+        choices = (
+            ('swc', 'Software-Carpentry'),
+            ('dc', 'Data-Carpentry'),
+        ),
+        blank = False,
+        default = 'swc')
     trainees = models.ManyToManyField(Person, 
-        through='SessionAttendance', 
+        through='DiscussionSessionAttendance', 
         through_fields=('session', 'person'),
-        related_name='sessions')
+        related_name="discussion_sessions")
+
+class CheckoutSession(Session):
+    trainees = models.ManyToManyField(Person, 
+        through='CheckoutSessionAttendance', 
+        through_fields=('session', 'person'),
+        related_name="checkout_sessions")
 
 class SessionAttendance(models.Model):
     person = models.ForeignKey('Person')
@@ -195,7 +205,7 @@ class SessionAttendance(models.Model):
     status = models.CharField(
         max_length=STR_MED,
         choices=(
-            ('na', 'NA'),
+            ('na', 'NA'),  # when the session hasn't happened yet
             ('absent', 'Absent'),
             ('failed', 'Failed'),
             ('passed', 'Passed'),
@@ -203,6 +213,15 @@ class SessionAttendance(models.Model):
         blank=False, default='na',
     )
     mail_sent = models.BooleanField(default=False)
+
+    class Meta:
+        abstract = True
+
+class DiscussionSessionAttendance(SessionAttendance):
+    pass
+
+class CheckoutSessionAttendance(SessionAttendance):
+    pass
 
 class InstructorTrainingApplication(models.Model):
     lead_candidate = models.ForeignKey(Person)
@@ -342,6 +361,8 @@ If time allows, I'd like to implement nice-to-have features like (in no particul
 - also notifying Discussion Leaders when Trainees want sessions of the kind they're able to offer,
 
 - tracking whether groups (who attended instructor workshop) run their promised workshops or not,
+
+- letting Candidates see other groups that are close to them and merge with them,
 
 - allowing logging using Google account.
 
