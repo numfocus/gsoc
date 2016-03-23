@@ -46,34 +46,34 @@ Trainees apply in one of the following ways:
 
   The Trainee Admin will be used to manage trainees at each stage of training. Access will be based on permissions (to be discussed during GSoC), so that the right people get to change and monitor the trainee status at each stage. For now, an *admin* is the relevant person handling a particular stage for an applicant. The admin workflow is outlined here:
 
-  * All the applications will be visible to *admins* on a dashboard.
-  * The *admins* start by reviewing applications for instructor training that were filled in the form above.
+  1. All the applications will be visible to *admins* on a dashboard. Here the admins could be the lead trainer, members of the Steering Committee and/or the Executive Directors.
+  * These *admins* start by reviewing applications for instructor training that were filled in the form above.
   * They can then shortlist applicants and match them to courses. Multiple applications can be updated at once for ease.
   * Once this is done, the applicants are sent an invitation to attend the selected course and also to join the Trainee Dashboard.
 
   >Trainees log in, and attend the course
 
-  * The *admin* updates course completion status
+  * The *course instructor* updates course completion status.
 
   >Trainees submit homework link
 
-  * The *admin* reviews the homework, and provide necessary feedback. Once they are satisfied, they update homework completion status.
+  * The *admin* reviews the homework, and provide necessary feedback. Once they are satisfied, they update homework completion status. Here the admins would be the ones who currently approve or disapprove a homework.
 
   >Trainee provides preferred time for discussion session (optional)
 
-  * The *admin* fixes up a discussion session
+  * The *discussion leader* fixes up a discussion session
 
   >Trainees attend discussion session
 
-  * The *admin* evaluates the discussion session, providing necessary feedback. If satisfied, updates the discussion complete status
+  * The *discussion leader* evaluates the discussion session, providing necessary feedback. If satisfied, updates the discussion complete status
 
-  >Trainee provides preferred time for discussion session (optional)
+  >Trainee provides preferred time for checkout session (optional)
 
-  * The *admin* fixes up a checkout session
+  * The *checkout session examiner* fixes up a checkout session
 
   >Trainees attend checkout session
 
-  * The *admin* evaluates the checkout session, providing necessary feedback. If satisfied, updates the checkout complete status
+  * The *examiner* evaluates the checkout session, providing necessary feedback. If satisfied, updates the checkout complete status
   * When this is done, the applicant now becomes a trainee, and they can be managed from the AMY instructor dashboard.
 
 
@@ -131,6 +131,89 @@ The portal will use **Django** for obvious reasons.
 **Database**
 
 As the portal would be a subapp within the AMY project, it will use the same database as AMY. But since the portal, and AMY, in general would be handling a higher load, `PostgreSQL` would be the preferred database. An issue is already raised [here](https://github.com/swcarpentry/amy/issues/716). If this gets addressed, we'll use PostgreSQL. If not, the system can also run on SQLite during development phase.
+
+**Models Structure**
+
+Here is a brief overview of the model structure:
+
+```python
+# training/models.py
+
+class Application(models.Model):
+    """Represents an application for Instructor Training."""
+    # personal details, like name, etc
+    accepted = models.BooleanField()
+    # if true, this application would show up in the list
+    # of choices available to form groups
+    is_willing_to_pair = models.BooleanField()
+
+class ApplicationGroup(models.Model):
+    """Represents a group of applicants applying together."""
+    members = models.ManyToManyField('training.Application', related_name='member_of')
+    leader = models.OneToOneField('training.Application', related_name='leader_of')
+
+class Trainee(models.Model):
+    # personal details to be stored in the Person model
+    person = models.OneToOneField('workshops.Person')
+    courses = models.ManyToManyField('training.Course',
+                                     through='training.CourseMembership')
+    # homeworks
+    discussion_sessions = models.ManyToManyField('training.DiscussionSesssion')
+    # checkout_sessions
+
+class Course(models.Model):
+    """Represents a course"""
+    COURSE_MEDIA = (
+        ('offline', 'In Person Course'),
+        ('live', 'Live Online Course'),
+        ('async', 'Asynchronous Online Course'),
+    )
+    medium = models.CharField(choices=COURSE_MEDIA)
+    instructor = models.ForeignKey('workshops.Person')
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField(null=True, blank=True)
+
+class CourseMembership(models.Model):
+    trainee = models.ForeignKey('training.Trainee')
+    course = models.ForeignKey('training.Course')
+    # attendance
+    result = models.NullBooleanField()
+    comments = models.ManyToManyField('training.Comments')
+
+class Homework(models.Model):
+    """Keeps track of homework submissions."""
+    trainee = models.ForeignKey('training.Trainee', related_name='homeworks')
+    link = models.CharField(max_length=500)
+    evaluator = models.ForeignKey('workshops.Person')
+    # accepted or not
+    result = models.NullBooleanField()
+    comments = models.ManyToManyField('training.Comments')
+
+class DiscussionSession(models.Model):
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField(null=True, blank=True)
+    leader = models.ForeignKey('workshops.Person')
+
+class DiscussionSessionMembership(models.Model):
+    trainee = models.ForeignKey('training.Trainee')
+    discussion_session = models.ForeignKey('training.DiscussionSession')
+    # passed or need to work again
+    result = models.NullBooleanField()
+    comments = models.ManyToManyField('training.Comments')
+
+class CheckoutSession(models.Model):
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField(null=True, blank=True)
+    trainee = models.ForeignKey('training.Trainee', related_name='checkout_sessions')
+    examiner = models.ForeignKey('workshops.Person')
+    passed = models.BooleanField()
+    comments = models.ManyToManyField('training.Comments')
+
+class Comment(models.Model):
+    author = models.ForeignKey('workshops.Person')
+    timestamp = models.DateTimeField(auto_now_add=True)
+    content = models.TextField()
+```
 
 **Design Framework**
 
