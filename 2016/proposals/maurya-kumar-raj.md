@@ -26,19 +26,44 @@ The general problem that we will be dealing would be to maintain the accuracy of
 
 This time line has been made keeping in mind that it will require work at least 40 hours per week. I am not planning on taking any vacations during the summer and would dedicatedly work on the project and also, I will continue to contribute afterwards.
 
+### Before May 25th
+
+* Get more familiar with the Retriever codes and do sample tests.
+* Determine possible advancements and selection strategy.
+
 ### May 25th -  June 7th
+
+Handling Resource Description Framework Schema (RDFs) for testing the XML communications and also test different Taxonomic name resolution services.
 
 ### June 8th - June 21th
 
+Add functions and writing advance scripts to access more name resolution services in pytaxize.
+
 ### June 22nd - July 5th
+
+* Test added functions in pytaxize and scripts.
+* Write and test the module in Retriever to query names through database.
+* Build the control flow for taxonomic name resolution
 
 ### July 6th - July 19th
 
+* Test on some datasets to evaluate the results with some updates of the selection strategy.
+* Test for the control flow for taxonomic name resolution for the desired output format.
+
 ### July 20th - August 2nd
+
+Perform final tests and check if the current implementations works for all the dataset, introduce more parameters if required
 
 ### August 3rd - August 16th
 
+* Work on open issues in the retriever like adding new datasets and fixing bugs.
+* Work on pytaxise to make it more robust.
+* Make any changes needed in Graphical User Interface (GUI) to incorporate this utility. Finalize the code and take feedback from the mentor.
 ### August 17th - August 21th 19:00 UTC
+
+* Week to scrub code, write tests, improve documentation, etc.
+* Code polish and merge back to the master. 
+* Submit final evaluation.
 
 ## Future works
 
@@ -62,7 +87,10 @@ I am currently a 3rd year (B.Tech) Computer Science and Engineering student at U
 This project deals with implementing and automating the process of accessing the data with the taxonomic names resolved. The project requires the knowledge of Python and database systems like MySql, SqLite.
 I have worked on similar projects that had the same requirements and skill set.
 
-I also have interned at some research organizations like Indian Institute of Science Education Research (IISER) Kolkata, UNESCO.
+I also have interned at some research organizations like:
+* Indian Institute of Science Education Research (IISER) Kolkata.
+* United Nations Educational, Scientific and Cultural Organization (UNESCO).
+
 Apart from these I have also interned at start-up companies which includes:
 * Absentia Virtual Reality
 * Kanopy Techno Solutions
