@@ -59,6 +59,7 @@ Perform final tests and check if the current implementations works for all the d
 * Work on open issues in the retriever like adding new datasets and fixing bugs.
 * Work on pytaxize to make it more robust.
 * Make any changes needed in Graphical User Interface (GUI) to incorporate this utility. Finalize the code and take feedback from the mentor.
+
 ###August 17th - August 21th 19:00 UTC
 
 * Week to scrub code, write tests, improve documentation, etc.
@@ -120,3 +121,16 @@ I want to be involved in this project because it could help scientists and resea
 
 Concurrent access of the SQLite database:
 https://github.com/numfocus/gsoc/issues/120
+
+##### References
+
+https://github.com/weecology/retriever
+http://retriever.readthedocs.org/en/latest/scripts.html
+
+##Contact Details
+
+Name: Raj Kumar Maurya
+Email: rajkmaurya111@gmail.com
+GitHub: raj-maurya
+Location: India
+Mentors: @ethanwhite @henrysenyondo @sckott
