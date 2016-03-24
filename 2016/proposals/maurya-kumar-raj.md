@@ -124,13 +124,13 @@ https://github.com/numfocus/gsoc/issues/120
 
 ##### References
 
-https://github.com/weecology/retriever
-http://retriever.readthedocs.org/en/latest/scripts.html
+* https://github.com/weecology/retriever
+* http://retriever.readthedocs.org/en/latest/scripts.html
 
 ##Contact Details
 
-Name: Raj Kumar Maurya
-Email: rajkmaurya111@gmail.com
-GitHub: raj-maurya
-Location: India
-Mentors: @ethanwhite @henrysenyondo @sckott
+* Name: Raj Kumar Maurya
+* Email: rajkmaurya111@gmail.com
+* GitHub: raj-maurya
+* Location: India
+* Mentors: @ethanwhite @henrysenyondo @sckott
