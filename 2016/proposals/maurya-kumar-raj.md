@@ -133,4 +133,5 @@ https://github.com/numfocus/gsoc/issues/120
 * Email: rajkmaurya111@gmail.com
 * GitHub: raj-maurya
 * Location: India
+* Web Presence: https://rajkmauryablog.wordpress.com/
 * Mentors: @ethanwhite @henrysenyondo @sckott
