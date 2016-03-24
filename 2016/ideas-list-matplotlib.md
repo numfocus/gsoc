@@ -11,7 +11,6 @@ Any questions or comments should be asked on
 * [Documentation improvements](#documentation)
 * [International text handling](#text)
 * [Categorical axes](#categorical)
-* [New Mac OSX backent](#macosx)
 * [Compound artists](#compound)
 * [GUI Improvements](#gui)
 
@@ -159,31 +158,6 @@ This work may include:
 
 This work will be done in Python.  Pandas experience would be very helpful.  Domain
 expertise working with categorical data helpful but not required.
-
-<a name="macosx"></a>
-## New Mac OSX backend
-
-### Abstract
-
-The existing `macosx` backend performs rendering of all drawing
-primitives.  Unfortunately, this means it often lags behind in terms
-of the quality and speed of the rendering vs. the more commonly used
-Agg backend.  We would like to implement a new `macosx` backend
-(largely based on the existing one) where the rendering is performed
-by Agg and this image buffer is simply copied to the screen.  This
-would retain all of the advantages of the existing `macosx` backend --
-that it has no external dependencies and the widgets appear "native"
--- but would render with the same quality and performance as the Agg
-backends.
-
-| **Intensity** | **Involves**  | **Mentors** |
-| ------------- | --------------|------------ |
-| Advanced | Python, Objective-C, Python/C API, Cocoa | [@mdboom][] |
-
-### Open Source Development Experience
-
-This will involve adapting an existing Python extension written in
-Objective-C, and will require access to a Macintosh.
 
 <a name="compound"></a>
 ## Compound Artists
