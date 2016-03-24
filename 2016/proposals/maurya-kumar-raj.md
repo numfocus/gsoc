@@ -75,4 +75,9 @@ While going through the list of organizations and their ideas pages, I was actua
 
 I want to be involved in this project because it could help scientists and researchers to do their research and will save their precious time. I will be glad to contribute to this project and help others through this open source projects. This project will be a stepping stone for expanding my experience, skills and abilities as well.
 
+## Contributions and ideas
+
+Concurrent access of the SQLite database:
+https://github.com/numfocus/gsoc/issues/120
+
 ## Appendix
