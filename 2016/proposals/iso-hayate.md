@@ -93,7 +93,7 @@ Google Summer of Code is good opportunity for me to start developing OSS.
 
 ## Academic Experience
 
-I got a BS in statistics at Osaka University and I'm at Computation language laboratory now.
+I got a BS in statistics at Osaka University and I'm in Computational Linguistics Laboratory at Nara Institute of Science and Technology now.
 
 I studied some machine learning method in statistical perspective such as SVM, Boosting and something like that and I deeply understand about sparse estimation.
 
