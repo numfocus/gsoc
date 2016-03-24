@@ -1,6 +1,6 @@
 # Google Summer of Code 2016
 
-[NumFOCUS][] will apply to be a mentoring organization for
+[NumFOCUS][] is a mentoring organization for
 [Google Summer of Code 2016][GSoC].
 [NumFOCUS][], an umbrella organization, supports and
 promotes world-class, innovative, open source scientific software.
