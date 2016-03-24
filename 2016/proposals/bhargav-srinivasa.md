@@ -18,7 +18,9 @@ Other things to keep in mind while going about this project is Gensim's philosop
 
 ### Community Bonding Period
 
-- Before the official time period begins I intend to fix some of the outstanding issues [\[#113\]](https://github.com/piskvorky/gensim/issues/113) and add a few basic functionality (such as [\[#64\]](https://github.com/piskvorky/gensim/issues/64), among others.
+- A huge part of being part of the open-source community and Google Summer of Code is sharing your ideas and work. I've started a blog [here](https://topicmodel2016.wordpress.com/) to give weekly reports of the summer work I will be doing, and try and break down the world of probabilistic topic models to everyone.
+
+- Before the official time period begins I intend to fix some of the outstanding issues [\[#113\]](https://github.com/piskvorky/gensim/issues/113) and add a few basic functionality such as [\[#64\]](https://github.com/piskvorky/gensim/issues/64), among others.
 
 ### May 25th -  June 7th
 
@@ -40,24 +42,26 @@ how to build our API for this.
 ### July 6th - July 19th
 
 - By now we should have a crude representation of Dynamic Topic Model set up.
-- Put our building blocks together and make sure the results are at least on par with the current gensim wrapper.
-- Test using the corpus described here - [\[12\]](http://arxiv.org/pdf/1510.03797.pdf).
+- Put our building blocks together and make sure the results are at least on par with the current gensim wrapper. We will use [\[12\]](http://arxiv.org/pdf/1510.03797.pdf) as the corpus to benchmark the two implementations. There is some pre-processing code for the same dataset on [this](https://github.com/ashishbaghudana/dtm) repo.
+
 
 ### July 20th - August 2nd
 
 - Now that we have our Dynamic Topic Model, it's time to test and fine-tune and give insights.
-- There are already papers which talk and articles which discuss the use of Dynamic Topic Modelling and their insights [ [\[13\]](http://ceur-ws.org/Vol-974/lakdatachallenge2013_01.pdf)  [\[14\]](http://jmlr.org/proceedings/papers/v28/shalit13.pdf)].
+- The papers [\[13\]](http://ceur-ws.org/Vol-974/lakdatachallenge2013_01.pdf) and [\[14\]](http://jmlr.org/proceedings/papers/v28/shalit13.pdf) also use Dynamic Topic Modelling - an effort can be made to procure these corpuses as well to have multiple benchmarks on the performance of our code.
 - After tuning on different scenarios and the corpuses the above references use, we can see how this implementation holds up to standard previous implementations such as [\[4\]](https://code.google.com/archive/p/princeton-statistical-learning/downloads)].
 
 ### August 3rd - August 16th
 
+- At this point documentation will start. One of the ideas is to start making a ipython notebook tutorial as well.
 - Work on possible bugs and problems our implementation will have at this point. Make sure all edge and corner cases are handled.
 - As mentioned in the project deliverables, time, memory usage and accuracy is what we will primarily concern ourselves with at this point. 
 
 ### August 17th - August 21th 19:00 UTC
 
 - By now there will be a good amount of insight of how our model works, and knowledge of parameter selection, number of topics will be known according to different scenarios.
-- Documentation of the same, cleaning, and seeing how we can set up our code to implement multiple cores should be discussed, if not completed.
+- Documentation of the same, cleaning, and seeing how we can set up our code to implement multiple cores should be discussed (maybe on Spark and TensorFlow), if not completed. 
+- Last few days will be in scrubbing and finishing documentation, and wrapping up with the ipython tutorial as well.
 
 ## Future works
 
