@@ -253,11 +253,9 @@ I split this proposal into as small milestones as possible. Every milestone ends
 
 - **Milestone 1: Managing Final Demonstration Sessions** and welcoming to the community
 
-- **Milestone 2: Managing Rest of Checkout Process** -- that is everything after an Instructor Training (that is Homework and Discussion Session).
+- **Milestone 2: Managing Rest of Checkout Process** -- that is everything after an Instructor Training: Homework and Discussion Session.
 
-- **Milestone 3: Managing Recruiting Candidates** and rest of the workflow.
-
-    That is managing everything before and during an Instructor Training -- Recruiting Candidates, Matching them to Instructor Trainings and running those trainings.
+- **Milestone 3: Managing Recruiting Candidates** and rest of the workflow -- that is managing everything before and during an Instructor Training: Recruiting Candidates, Matching them to Instructor Trainings and running those trainings.
 
 ## Schedule
 
