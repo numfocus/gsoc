@@ -96,12 +96,16 @@ I also have interned at some research organizations like:
   At UNESCO, I was exposed to various approaches and methods to resolve the issues and associate the solutions for the government using cloud computing resources available so, as it becomes easier for the government to interact with its citizen for the smooth running of the whole organization. 
 
 Apart from these I have also interned at start-up companies which includes:
+
 * #####Absentia Virtual Reality:
 Data Analytics Internship.
+
 * #####Kanopy Techno Solutions:
 Software Developer Internship.
+
 * #####Pollinate Energy:
-Actively involved in Product research and development team.
+Actively involved with product research and development team.
+
 * #####Pariksha.co:
 E-Learning content developer/curator using LaTex.
 
