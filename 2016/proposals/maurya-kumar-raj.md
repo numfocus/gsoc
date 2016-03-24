@@ -83,7 +83,7 @@ I have been the member of NumFOCUS community and supporting it as a volunteer.
 
 ## Academic Experience
 
-I am currently a 3rd year (B.Tech) Computer Science and Engineering student at University Institute of Engineering and Technology, Kanpur, India.I have undertaken courses in Data Structures, Algorithm Design and Analysis, Database Management Systems (DBMS), Discrete Mathematics, Compiler Design, Software Engineering, Machine Learning and other varied interests. I have done some academic projects on database management systems. I am a Free Open Source Software (FOSS) enthusiast and like to contribute, collaborate for the same.
+I am currently a 3rd year (B.Tech) Computer Science and Engineering student at University Institute of Engineering and Technology, Kanpur, India. I have undertaken courses in Data Structures, Algorithm Design and Analysis, Database Management Systems (DBMS), Discrete Mathematics, Compiler Design, Software Engineering, Machine Learning and other varied interests. I have done some academic projects on database management systems. I am a Free Open Source Software (FOSS) enthusiast and like to contribute, collaborate for the same.
 
 This project deals with implementing and automating the process of accessing the data with the taxonomic names resolved. The project requires the knowledge of Python and database systems like MySql, SqLite.
 I have worked on similar projects that had the same requirements and skill set.
