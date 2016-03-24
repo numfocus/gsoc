@@ -1,5 +1,7 @@
 # Manage workflow for Software/Data Carpentry instructor training
 
+You can see this proposal on [github](https://github.com/chrismedrela/gsoc/blob/master/2016/proposals/chris-medrela.md).
+
 ## Abstract
 
 Software Carpentry (SWC) has a workflow for Instructor Trainings. Currently, it uses Etherpads and Google Docs spreadsheets, which slows down SWC Admins and Trainers whose time is already precious. The goal is to extend AMY (Django-base web application for SWC Admins) to manage the process of training people to be instructors, to avoid manual data copying and synchronization and make the entire process smoother.
