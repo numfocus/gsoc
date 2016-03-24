@@ -20,7 +20,7 @@ Other things to keep in mind while going about this project is Gensim's philosop
 
 - A huge part of being part of the open-source community and Google Summer of Code is sharing your ideas and work. I've started a blog [here](https://topicmodel2016.wordpress.com/) to give weekly reports of the summer work I will be doing, and try and break down the world of probabilistic topic models to everyone.
 
-- Before the official time period begins I intend to fix some of the outstanding issues [\[#113\]](https://github.com/piskvorky/gensim/issues/113) and add a few basic functionality such as [\[#64\]](https://github.com/piskvorky/gensim/issues/64), among others.
+- Before the official time period begins I intend to fix some of the outstanding issues [\[#113\]](https://github.com/piskvorky/gensim/issues/113) and add a few basic functionality such as [\[#64\]](https://github.com/piskvorky/gensim/issues/64), among others. I have begun work on #64 and after finishing Hellinger distances I will add more similarity metrics to `mathutils.py` such as Jaccard Coefficient and other metrics described in [this](http://nzcsrsc08.canterbury.ac.nz/site/proceedings/Individual_Papers/pg049_Similarity_Measures_for_Text_Document_Clustering.pdf) paper. [This paper](http://bib.dbvis.de/uploadedFiles/155.pdf) is also a good resource for high-dimensional distance metrics and introduces a fractional distance norm which can be considered.
 
 ### May 25th -  June 7th
 
@@ -38,6 +38,7 @@ Other things to keep in mind while going about this project is Gensim's philosop
 - Engineer in time-slices to our existing system and test our above results over a range.
 - Since time-slices have not been introduced in Gensim before, we might need to spend some time working on
 how to build our API for this. 
+- Keep working on the blog as well!
 
 ### July 6th - July 19th
 
@@ -69,7 +70,7 @@ The project timeline described above does not include an implementation across m
 
 ## Open Source Development Experience
 
-My first tryst with Open Source Development was when I was learning it through [Code Combat](https://codecombat.com/), a popular game used to learn Python and JavaScript. While playing, I stumbled across an error [\[#25\]](https://github.com/differentmatt/filbert/issues/25) in the sorting function. This had me stuck, so I decided to dive in and fix the bug [\[#42\]](https://github.com/differentmatt/filbert/pull/42) - it was quite nice to see my contribution in a game I enjoyed playing. Since, I have been largely working on research work in data science and stepped away from open source contribution, but some of this academic work has been made public  [\[15\]](https://github.com/bhargavvader/CASApythonPort), and I hope it has helped those who needed help in porting MATLAB to Python and do work in Blind Source Separation. Since my interest in contributing to Gensim, I have been in regular touch with my mentors and have started working on a few issues to get more familiar with the code base.
+My first tryst with Open Source Development was when I was learning it through [Code Combat](https://codecombat.com/), a popular game used to learn Python and JavaScript. While playing, I stumbled across an error [\[#25\]](https://github.com/differentmatt/filbert/issues/25) in the sorting function. This had me stuck, so I decided to dive in and fix the bug [\[#42\]](https://github.com/differentmatt/filbert/pull/42) - it was quite nice to see my contribution in a game I enjoyed playing. Since, I have been largely working on research work in data science and stepped away from open source contribution, but some of this academic work has been made public  [\[15\]](https://github.com/bhargavvader/CASApythonPort), and I hope it has helped those who needed help in porting MATLAB to Python and do work in Blind Source Separation. Since my interest in contributing to Gensim, I have been in regular touch with my mentors and have started working on a few issues to get more familiar with the code base [\[#64\]](https://github.com/piskvorky/gensim/issues/64).
 I look forward to getting back to regularly contributing to the Open Source and Machine Learning Community.
 
 ## Academic Experience
@@ -84,17 +85,19 @@ Implementing Dynamic Topic Models came from a rather selfish point of view - I w
 
 Find below a list of all the web articles and research papers described above.
 
- 1 - http://www.stat.uchicago.edu/~lafferty/pdf/dtm.pdf
- 2 - https://en.wikipedia.org/wiki/Dynamic_topic_model
- 3 - https://www.cs.princeton.edu/~blei/papers/Blei2012.pdf
- 4 - https://code.google.com/archive/p/princeton-statistical-learning/downloads
- 5 - https://radimrehurek.com/gensim/models/wrappers/dtmmodel.html
- 6 - http://nlp.stanford.edu/pubs/hall-emnlp08.pdf
- 7 - http://jmlr.org/proceedings/papers/v28/shalit13.pd 
- 8 - http://sappingattention.blogspot.in/2013/01/keeping-words-in-topic-models.html
- 9 - https://www.cs.princeton.edu/~blei/papers/GerrishBlei2010.pdf
- 10 - https://github.com/santonus/bigscholarlydata
- 11 - https://en.wikipedia.org/wiki/Kalman_filter
- 12 - http://arxiv.org/pdf/1510.03797.pdf
- 13 - http://ceur-ws.org/Vol-974/lakdatachallenge2013_01.pdf
- 14 - http://jmlr.org/proceedings/papers/v28/shalit13.pdf
+1 - http://www.stat.uchicago.edu/~lafferty/pdf/dtm.pdf
+2 - https://en.wikipedia.org/wiki/Dynamic_topic_model
+3 - https://www.cs.princeton.edu/~blei/papers/Blei2012.pdf
+4 - https://code.google.com/archive/p/princeton-statistical-learning/downloads
+5 - https://radimrehurek.com/gensim/models/wrappers/dtmmodel.html
+6 - http://nlp.stanford.edu/pubs/hall-emnlp08.pdf
+7 - http://jmlr.org/proceedings/papers/v28/shalit13.pd 
+8 - http://sappingattention.blogspot.in/2013/01/keeping-words-in-topic-models.html
+9 - https://www.cs.princeton.edu/~blei/papers/GerrishBlei2010.pdf
+10 - https://github.com/santonus/bigscholarlydata
+11 - https://en.wikipedia.org/wiki/Kalman_filter
+12 - http://arxiv.org/pdf/1510.03797.pdf
+13 - http://ceur-ws.org/Vol-974/lakdatachallenge2013_01.pdf
+14 - http://jmlr.org/proceedings/papers/v28/shalit13.pdf
+15 - http://nzcsrsc08.canterbury.ac.nz/site/proceedings/Individual_Papers/pg049_Similarity_Measures_for_Text_Document_Clustering.pdf
+16 - http://bib.dbvis.de/uploadedFiles/155.pdf
