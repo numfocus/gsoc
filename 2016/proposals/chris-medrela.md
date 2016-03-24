@@ -8,6 +8,8 @@ Software Carpentry (SWC) has a workflow for Instructor Trainings. Currently, it 
 
 [Greg Wilson's pull request]: https://github.com/swcarpentry/board/pull/81/files
 [user roles]: people-or-user-roles
+[description of the current workflow]: #the-current-workflow
+[list of issues]: #issues
 
 Here is [#89](https://github.com/numfocus/gsoc/issues/89) issue where I discussed this proposal. 
 
@@ -245,15 +247,15 @@ class Lesson(models.Model):
 
 I split this proposal into as small milestones as possible. Every milestone ends up with new version of Amy being pushed to production and introduced to all its users. This minimizes the chances of failure and let us adapt or change almost everything after every milestone -- even if it means changing the scope of this project. The milestones are:
 
-1. **Milestone 0: Migrating from SQLite to PostgreSQL**
+- **Milestone 0: Migrating from SQLite to PostgreSQL**
 
     I'm discussing in [#716](https://github.com/swcarpentry/amy/issues/716) with Piotr Banaszkiewicz if it's really necessary, but if it is, it must be done at the beginning, as an additional "zero" milestone.
 
-1. **Milestone 1: Managing Checkout Process**
+- **Milestone 1: Managing Final Demonstration Sessions** and welcoming to the community
 
-    That is everything after an Instructor Training -- that is Homework, Discussion Session, Checkout Session and welcoming to the community.
+- **Milestone 2: Managing Rest of Checkout Process** -- that is everything after an Instructor Training (that is Homework and Discussion Session).
 
-1. **Milestone 2: Managing Recruiting Candidates** and rest of the workflow.
+- **Milestone 3: Managing Recruiting Candidates** and rest of the workflow.
 
     That is managing everything before and during an Instructor Training -- Recruiting Candidates, Matching them to Instructor Trainings and running those trainings.
 
@@ -265,68 +267,89 @@ I split this proposal into as small milestones as possible. Every milestone ends
 - Choosing early users among Admins, Trainers and Trainees.
 - Discussing and improving schema changes (it clearly demands improvements and more considered design).
 
-### Milestone 1: Managing Checkout Process
+### Milestone 1: Managing Final Demonstration Sessions
 
 * **Week 1: May 23 - May 29**
 
     - Doing UI mockups. Early users give feedback on the UI.
+    - Doing necessary schema changes.
 
 * **Week 2: May 30 - June 5**
-
-    - Doing necessary schema changes.
-    - Implementing Discussion Session detailed view.
-    - Implementing Discussion Session list view.
-
-* **Week 3: June 6 - June 12**
 
     - Implementing Checkout Session detailed view.
     - Implementing Checkout Session list view.
     - Implementing Trainees list view.
-    - Implementing views of progress of Checkout Process for trainees (one for SWC and one for DC).
+    - Implementing views of progress of Checkout Process for Trainees (one for SWC and one for DC).
 
-* **Week 4: June 13 - June 19**
+* **Week 3: June 6 - June 12**
 
     - Implementing Registration Form and the form to set password and username.
     - Implementing Recover Password Form.
     - Setting up Amy, so it can send emails, in the name of other people (i.e. in the name of Trainers). Using `django.core.mail`.
     - Manual testing.
-
-* **Week 5: June 20 - June 26 (midterm evaluation deadline)**
-
     - Importing existing data about early users to Amy. The data are in:
-        - Discussion Registration Etherpad
         - Checkout Registration Etherpad
         - Trainees Spreadsheet
         - Certification Repository
+
+* **Week 4: June 13 - June 19**
+
     - Exposing new functionality to early users.
-        - Discussion Sessions and Final Demonstration Sessions for early users will be different from those sessions available for "old" users, so we don't have to synchronize sessions between Etherpad and Amy.
-
-* **Week 6: June 27 - July 3**
-* **& Week 7: July 4 - July 10**
-
+        - Final Demonstration Sessions for early users will be different from those sessions available for "old" users, so we don't have to synchronize sessions between Etherpad and Amy.
     - Responding to feedback and improving Amy.
     - Writing unit tests. 
         - Especially security tests to ensure that only the right people can see certain information.
         - Especially tests for the case when one trainee wants to become certified Instructor of both Carpentries.
     - Doing manual load tests to ensure that the system will keep working after introducing it to all users.
 
-* **Week 8: July 11 - July 17**
+* **Week 5: June 20 - June 26 (midterm evaluation deadline)**
 
-    - Importing existing data, so e.g. people who already attended Instructor Workshop are also included in the new system.
+    - Importing existing data, so e.g. people who already attended Discussion Session are also included in the new system.
     - Exposing new functionality to all users.
-        - Currently there is one, common list of Final Demonstration Sessions for both Carpentries. At this moment, we need to temporarily split it into SWC and DC Sessions til the end of third Milestone.
     - Teaching all Trainers and Admins the new workflow.
     - Editing appropriate web pages and github repos to document the new workflow.
     - Responding to feedback from all users.
 
-### Milestone 2: Managing Recruiting Candidates
+### Milestone 2: Managing Rest of Checkout Process
+
+* **Week 6: June 27 - July 3**
+
+    - Doing UI mockups. Early users give feedback on the UI.
+    - Doing necessary schema changes.
+    - Implementing Discussion Session detailed view.
+    - Implementing Discussion Session list view.
+    - Extending the views of progress of Checkout Process for Trainees.
+    - Manual testing.
+    - Importing existing data about early users to Amy. The data are in:
+        - Discussion Registration Etherpad
+        - Trainees Spreadsheet
+
+* **Week 7: July 4 - July 10**
+
+    - Exposing new functionality to early users.
+        - Discussion Sessions for early users will be different from those sessions available for "old" users, so we don't have to synchronize sessions between Etherpad and Amy.
+    - Responding to feedback and improving Amy.
+    - Writing unit tests. 
+    - Doing manual load tests to ensure that the system will keep working after introducing it to all users.
+    - Importing existing data, so e.g. people who already attended Instructor Training are also included in the new system.
+
+* **Week 8: July 11 - July 17**
+
+    - Exposing new functionality to all users.
+    - Teaching all Trainers and Admins the new workflow.
+    - Editing appropriate web pages and github repos to document the new workflow.
+    - Responding to feedback from all users.
+
+### Milestone 3: Managing Recruiting Candidates
 
 * **Week 9: July 18 - July 24**
 
+    - Doing UI mockups. Early users give feedback on the UI.
     - Implementing Application Form.
     - Implementing filtering by Instructor Training in Trainees list view.
     - Implementing Application list view.
     - Implementing Application detailed view.
+    - Doing necessary schema changes.
 
 * **Week 10: July 25 - July 31**
 
@@ -473,7 +496,7 @@ One person may have multiple roles.
 
 ## The Current Workflow
 
-1. Recruiting Candidates -- one of three ways:
+1. **Recruiting Candidates** -- one of three ways:
 
     - A candidate applies directly as individual by sending Individual Application Form. Temporarily there is no way to apply as individual, because the form is disabled.
 
@@ -483,7 +506,7 @@ One person may have multiple roles.
 
     - A partner finds 3-12 candidates and requires Instructor Training as part of partnership agreements.
 
-1. Matching candidates to Instruction Trainings.
+1. **Matching Candidates to Instruction Trainings**.
 
     1. The Head of Training, Members of the Steering Committee and/or the Executive Director:
 
@@ -491,14 +514,14 @@ One person may have multiple roles.
         - manually decides on dates
         - invite individuals and/or groups to take part in an Instructor Training.
 
-1. Running Instruction Training -- one of three ways:
+1. **Running Instruction Training** -- one of three ways:
 
     1. The Trainer and the Trainee take part in:
         1) the in-person Instruction Training that takes two days or
         2) live online Instruction Training that also takes two days or
         3) asynchronous online course run over several weeks; this format is phased out.
 
-1. Homework
+1. **Homework**
 
     1. The Trainee picks one core lesson from SWC or DC or both (depending whether they want to SWC or DC Certified Instructor).
     1. If the Trainee wants to become SWC Certified Instructor, the Trainee submit pull requests with a small change to Software Carpentry Lessons.
@@ -508,7 +531,7 @@ One person may have multiple roles.
     1. The Head of Training mails the Trainee instructions on how to sign up for a discussion session on the lesson discussion Etherpad.
     1. The SWC Lesson Maintainers are supposed to merge the pull requests, but currently the load on them is unsustainable.
 
-1. Discussion Session
+1. **Discussion Session**
 
     1. The Trainee registers for Discussion Session on Discussion Registration Etherpad. The Session must be about the core lesson that the trainee picked up in the previous step (Homework).
     1. The Trainees and Mentor take part in Discussion Session.
@@ -516,12 +539,12 @@ One person may have multiple roles.
     1. The Head of Training updates Trainees Spreadsheet: column "the date and moderator of the discussion session they have taken part in".
     1. The Head of Training mails Trainees who passed Discussion Session telling them to register for Checkout Session.
 
-1. Checkout Session
+1. **Checkout Session**
 
     1. The Trainee registers for Checkout Session on Checkout Registration Etherpad.
     1. The Trainees and Mentor take part in Checkout Session. They take notes in the Checkout Registration Etherpad.
 
-1. Welcoming to the community
+1. **Welcoming to the Community**
 
     1. An Admin generates PDF certificate using command-line script in [the certification repository](https://github.com/swcarpentry/certification).
     1. The Admin mails the trainees with instructions to:
@@ -531,7 +554,6 @@ One person may have multiple roles.
     1. The Trainee replies to the Admin.
     1. The Admin edits the biography and the photo (this must be done manually since they always require formatting) and publish it to the website.
     1. The Admin welcomes bunch of Trainees on the blog.
-
 
 ## Issues
 
