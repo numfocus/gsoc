@@ -1,7 +1,7 @@
-﻿Improving reproducibility in science by adding provenance tracking to the EcoData Retriever
+##Improving reproducibility in science by adding provenance tracking to the EcoData Retriever
 
 
-Personal Details
+#Personal Details
 
 
 Name:- Prabh Simran Singh Baweja
@@ -9,13 +9,13 @@ Senior Year, B.Tech in Computer Science and Engineering, IIIT Hyderabad, India.
 Email Id:- prabhsimransingh.baweja@gmail.com
 
 
-Abstract
+#Abstract
 
 
 The adoption of provenance among computational scientists is low, because most existing systems require them to adopt a particular tool set in order to benefit from their functionality, such as the requirement to use a particular programming language, operating system, or a workflow engine. The EcoData Retriever is a Python based tool for automatically downloading, cleaning up, and restructuring ecological data. Most of the steps related to data acquisition and manipulation are either done manually, or using one-off scripts. Due to this, the process is highly arbitrary and not reproducible. The EcoData Retriever is unable to keep track of the work that has been completed, and therefore fails to support revision and reproduction of workflows. Thus, the need to integrate a provenance library or build a module to track the history of data is pressing. The aim of this project is to accomplish the same, making the EcoData Retriever more efficient and reliable for scientists.
 
 
-Technical Details
+#Technical Details
 
 
 The project could be divided in three parts :-
@@ -55,7 +55,7 @@ B.)   The second option is to implement it from scratch, as described in the abo
         The basic docker that has been built will be useful for checking out the original code as required. Given the availability of correct version of EcoData Retriever and the signature of the methods run on the original data (that is given by our provenance module), we will be able to retrieve a full workflow and also possibly visualize the changes in each step, if required.
 
 
-Schedule of Deliverables
+#Schedule of Deliverables
 
 
 Before 22nd April
@@ -103,7 +103,7 @@ Before 22nd April
    2. In case of errors, solve those bugs.
 
 
-Future Work
+#Future Work
 
 The deadlines I have set for myself will be sufficient to complete this project. In the future, this project can be extended to build a visualization tool for changes made by EcoData Retriever. A GUI to assemble and execute a pipeline could also be built over the above modules.
 
@@ -114,7 +114,7 @@ I am equally eager to contribute to the other projects that EcoData Retriever is
 
 
 
-Open Source Development Experience
+#Open Source Development Experience
 
 I have been an active contributor to the open source community for a couple of years. I developed a few games for CodeCombat which have now been played by around a million users. 
    1. http://codecombat.com/play/level/sword-loop.
@@ -124,12 +124,12 @@ Apart from that, I am an ardent member of the Open Source Development Group in m
 
 
 
-Academic Experience
+#Academic Experience
 
 I am a senior undergraduate at International Institute of Information  Technology, Hyderabad, India majoring in Computer Science and Engineering. 
 Some of the courses that I have taken are:- Information Retrieval and Extraction, Structured System Design and Analysis (Project based), IT Workshop, Database systems, Cloud Computing, Software Engineering, Data Structures, Algorithms, Statistical Methods in Artificial Intelligence.
 
-Some relevant projects:- 
+#Some relevant projects:- 
    1. Wikipedia Search Engine
         Developed an efficient search engine on Wikipedia (42 GB). Search results obtained in less than 1 sec. Languages Used:- Python, C++. (~1k LOC)
       2)  Database Query Execution
@@ -140,23 +140,14 @@ Some relevant projects:-
 Analyzed requirements, designed schema and created a database using MySQL for an
 online payment gateway. A query interface was also integrated using Web2py.
 
-
-
-
-
-
-
-
-
-
-Why this project?
+#Why this project?
 
 
 I’ve always been an ardent supporter of Open source and frequently make my academic projects and pastime hacks publicly available. This project, in particular, attracts me because it is aimed at developing a tool that would help accelerate research output for scientists who use this tool. I understand the motivation behind the project, and the importance of versioning, having learnt it the hard way myself.
 
 Given my skills and previous projects related to indexing, experience with version control and familiarity with APIs and file systems, I believe I’m a strong match for this project. In the past, I’ve dealt with file systems in low level languages and understand their working. I’ve very comfortable with integrating APIs with existing web services, having done so for my Wikipedia project. I’m confident, having read more about existing provenance libraries and their underlying algorithms, that I’d be able to deliver this project. I hope to make a modest contribution to the scientific community by helping scientists reproduce existing research, in a more effective way.
 
-Contributions
+#Contributions
 Check for and use system proxies for downloading files
 https://github.com/weecology/retriever/pull/278.
 Previous exchange of Ideas:
