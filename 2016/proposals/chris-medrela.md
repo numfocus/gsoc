@@ -247,9 +247,7 @@ class Lesson(models.Model):
 
 I split this proposal into as small milestones as possible. Every milestone ends up with new version of Amy being pushed to production and introduced to all its users. This minimizes the chances of failure and let us adapt or change almost everything after every milestone -- even if it means changing the scope of this project. The milestones are:
 
-- **Milestone 0: Migrating from SQLite to PostgreSQL**
-
-    I'm discussing in [#716](https://github.com/swcarpentry/amy/issues/716) with Piotr Banaszkiewicz if it's really necessary, but if it is, it must be done at the beginning, as an additional "zero" milestone.
+- **Milestone 0: Migrating from SQLite to PostgreSQL**. I'm discussing in [#716](https://github.com/swcarpentry/amy/issues/716) with Piotr Banaszkiewicz if it's really necessary, but if it is, it must be done at the beginning, as an additional "zero" milestone.
 
 - **Milestone 1: Managing Final Demonstration Sessions** and welcoming to the community
 
