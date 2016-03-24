@@ -206,4 +206,4 @@ The ongoing semester will be completed by 6th of May. The next semester is sched
 
 #### Contact
 Email: [meetvora@outlook.com](mailto:meetvora@outlook.com) / [v.h.c.meetirth@gmail.com](mailto:v.h.c.meetirth@gmail.com)  
-Mobile: +91 839 487 7088 / +91 702 198 4036
+Mobile: +91 XXX XXX XXXX
