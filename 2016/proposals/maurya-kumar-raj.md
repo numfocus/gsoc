@@ -59,7 +59,7 @@ Perform final tests and check if the current implementations works for all the d
 * Work on open issues in the retriever like adding new datasets and fixing bugs.
 * Work on pytaxize to make it more robust.
 * Make any changes needed in Graphical User Interface (GUI) to incorporate this utility. Finalize the code and take feedback from the mentor.
-### August 17th - August 21th 19:00 UTC
+###August 17th - August 21th 19:00 UTC
 
 * Week to scrub code, write tests, improve documentation, etc.
 * Code polish and merge back to the master. 
@@ -74,9 +74,9 @@ Perform final tests and check if the current implementations works for all the d
 
 ## Open Source Development Experience
 
-I have worked on few open source projects like Google's tensorflow https://github.com/tensorflow/tensorflow which involves computation using data flow graphs for scalable machine learning. I also have contribution in fixing bugs in Mozilla community at bugzilla and also contributed as Firefox Student Ambassador.
+I have worked on few open source projects like Google's tensorflow https://github.com/tensorflow/tensorflow which involves computation using data flow graphs for scalable machine learning. I also have contribution in fixing bugs in Mozilla community at bugzilla and also contributed as Firefox Student Ambassador as well as on Free Code Camp https://github.com/FreeCodeCamp/FreeCodeCamp/issues/6126#issuecomment-182170155.
 
-I have also worked with a start-up from IIT Kanpur,SIDBI Incubation Center, (India) which involved the development of Dynamic UI graph using plot.ly API for Python and Java Script for testing and plotting the large experimental data sets.
+I have also worked with a start-up from IIT Kanpur, SIDBI Incubation Center, (India) which involved the development of Dynamic UI graph using plot.ly API for Python and Java Script for testing and plotting the large experimental data sets.
 
 I have been the member of NumFOCUS community and supporting it as a volunteer.
 
@@ -89,17 +89,21 @@ I have worked on similar projects that had the same requirements and skill set.
 https://github.com/raj-maurya/Database-Frontend-backend-Mysql-Project
 
 I also have interned at some research organizations like:
-* Indian Institute of Science Education Research (IISER) Kolkata.
+* #####Indian Institute of Science Education Research (IISER) Kolkata:
   I have been actively involved in research and developmental activities since my freshman and sophomore year and have worked as a researcher at Indian Institute of Science Education and Research (IISER) Kolkata, India (2015). At IISER, I have worked on research module of “Time Series Analysis and Prediction”, it included the study of various mathematical tools and time series models like ARCH, GARC, TAR and ANN for the analysis of financial as well as the biological experimental data consisting of structured, unstructured data and can be suitable for a range of varied applications like monitoring health of patients, daily price variation, stock market volatility, weather prediction, growth rate of agricultural sector and their market prediction. The analysis of non- linear models including Artificial Neural Network (ANN), Haar functions and Genetic Algorithms for a better understanding and good approach for the non-linear time series and solutions for minimizing the risk of economic bubble burst. Also worked on “Epilepsy Prediction” and “Wavelet analysis”.
 
-* United Nations Educational, Scientific and Cultural Organization (UNESCO).
+* #####United Nations Educational, Scientific and Cultural Organization (UNESCO):
   At UNESCO, I was exposed to various approaches and methods to resolve the issues and associate the solutions for the government using cloud computing resources available so, as it becomes easier for the government to interact with its citizen for the smooth running of the whole organization. 
 
 Apart from these I have also interned at start-up companies which includes:
-* Absentia Virtual Reality
-* Kanopy Techno Solutions
-* Pollinate Energy
-* Pariksha.co
+* #####Absentia Virtual Reality:
+Data Analytics Internship.
+* #####Kanopy Techno Solutions:
+Software Developer Internship.
+* #####Pollinate Energy:
+Actively involved in Product research and development team.
+* #####Pariksha.co:
+E-Learning content developer/curator using LaTex.
 
 ## Why this project?
 
@@ -107,9 +111,8 @@ While going through the list of organizations and their ideas pages, I was actua
 
 I want to be involved in this project because it could help scientists and researchers to do their research and will save their precious time. I will be glad to contribute to this project and help others through this open source projects. This project will be a stepping stone for expanding my experience, skills and abilities as well.
 
-## Contributions and ideas
+##Appendix
+##### Contributions and ideas
 
 Concurrent access of the SQLite database:
 https://github.com/numfocus/gsoc/issues/120
-
-## Appendix
