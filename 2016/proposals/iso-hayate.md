@@ -4,109 +4,94 @@ Online Word2Vec development
 
 ## Abstract
 
-Word embedding (as known as Word2Vec) is one of the hot topic in natural language processing research and we can implement it easily using gensim.
+* Word embedding (as known as Word2Vec) is one of the major topics in natural language processing research and we can make it easily using Gensim.
 
-However, gensim word2vec implementation has a disadvantage. It cannot update word2vec model after initial training, so we have to retrain word2vec model every time you get the new data.
+* However, we cannot update Word2Vec model after first training, so we have to retrain word2vec model every time you get the new data.
 
-Therefore, I want to try to add online learning feature to gensim word2vec model.
-
-
+* Therefore, I want to try to add online learning feature to Gensim word2vec model.
 
 ## Technical Details
 
-Online learning is a method which uses for stream data and update every time you get data. Vanilla word2vec train the model every time you get the data. The word usage continue to change so we need to update word2vec model constantly.
-
-
+* Online machine learning is a method which uses for stream data and update every time you get data. Vanilla word2vec train the model every time you get the data. The word usage continue to change so we need to update word2vec model constantly.
 
 ## Schedule of Deliverables
 
 ### now -  May 24th (not GSoC period)
 
-Understand Mikolov's papers and gensim word2vec architecture.
-
-
+* Understand Mikolov's papers [1][2][3] and Gensim word2vec architecture.
 
 ### May 25th -  June 7th
 
-
-
-Read [Online Word2Vec for Gensim](http://rutumulkar.com/blog/2015/word2vec/) and gensim's issue #435 and #615 to develop online Word2Vec.
+* Read [Online Word2Vec for Gensim](http://rutumulkar.com/blog/2015/word2vec/)[4] and Gensim's issue [#435](https://github.com/piskvorky/gensim/pull/435) and [#615](https://github.com/piskvorky/gensim/pull/615) to develop online Word2Vec.
 
 ### June 8th - June 21th
 
+* Start developing online Word2Vec refer to Rutu's code.
 
-
-Transcribe online word2vec and implement it at least in local environment.
-
-
+* I want to reproduce online Word2Vec at least in local environment.
 
 ### June 22nd - July 5th
 
-
-
-Review gensim word2vec architecture to understand online Word2Vec code in the and resolve AppVeyor error. 
-
-
+* Continue developing online Word2Vec.
 
 ### July 6th - July 19th
 
+* Reread Gensim word2vec architecture to understand online Word2Vec code in general perspective.
 
-
-Evaluating online Word2Vec using [Lee corpus](http://www.socsci.uci.edu/~mdlee/lee_pincombe_welsh_document.PDF) and start writing documentation for gensim users.
-
-
+* Find the error to resolve AppVeyor error.
 
 ### July 20th - August 2nd
 
-If I had my way, extend online method to other implementation such as doc2vec.
+* Evaluate online Word2Vec using [Lee corpus](http://www.socsci.uci.edu/~mdlee/lee_pincombe_welsh_document.PDF)[5]
 
-If I hadn't my way, fix bug.
-
-
+* Start writing documentation.
 
 ### August 3rd - August 16th
 
-Test online Word2Vec using several parameters and write documentation for users to easily use online method and choose parameters.
+* Test online Word2Vec using several parameters.
 
-
+* Write documentation for users to easily use online method and choose parameters.
 
 ### August 17th - August 21th 19:00 UTC
 
-
-
-Refactor code, write tests, improve documentation, etc.
-
+* Clean code, write tests, improve documentation.
 
 ## Future works
 
-Extend online implementations to other word embedding methods.
+* I'm interested in word embedding methods, not only Word2Vec but also Doc2Vec and something like that. I think online method is applicable for other word embedding methods.
 
-
+* Therefore I want to continuous contribution for Gensim to add online features.
 
 ## Open Source Development Experience
 
-I haven't had Open source development experience so far.
-
-Google Summer of Code is good opportunity for me to start developing OSS.
-
-
+* I haven't had Open source development experience so far. Google Summer of Code is good opportunity for me to start developing Open source software.
 
 ## Academic Experience
 
-I got a BS in statistics at Osaka University and I'm in Computational Linguistics Laboratory at Nara Institute of Science and Technology now.
+* I got a B.S. in statistics at Osaka University and I'm in Computational Linguistics Laboratory at Nara Institute of Science and Technology now.
 
-I studied some machine learning method in statistical perspective such as SVM, Boosting and something like that and I deeply understand about sparse estimation.
+* I studied statistics in the theoretical point of view. In my earlier lab, I studied sparse estimation for high-dimensional data. Many people use Lasso for high-dimensional data, but I used Boosting. Boosting also has a good feature for sparse estimation.[6]
 
-Current research interest is natural language processing, especially word embedding.
+* I also studied machine learning as a hobby. I finished [machine learning course](https://www.coursera.org/learn/machine-learning) by Andrew Ng and read [Foundations of machine learning](http://www.cs.nyu.edu/~mohri/mlbook/) which show machine learning as statistical perspective.
+
+* Current research interest is natural language processing, especially word embedding.
+
+* I also have an experience working as internship to develop recommender system using Gensim. I used job applicants resume data and job offer data to job matching by Gensim implementation of Latent Dirichlet allocation.
 
 ## Why this project?
 
-The reason for choosing gensim project is that I use gensim a lot!
+* The reason for choosing Gensim project is that I use Gensim a lot!
 I belong Computational Linguistic Laboratory and I study word embedding.
-Gensim provide us to use some kinds of word embedding implementation easilly.
-I want to make a contribution to gensim comunity and at the same time understand gensim architecture deeply.
-Therefore, I choose gensim project as Google summer of code 2016.
+Gensim give us to use some kinds of word embedding implementation easilly.
+I want to make a contribution to Gensim comunity and at the same time understand Gensim architecture deeply.
+
+* Therefore, I choose Gensim project as Google summer of code 2016.
 
 ## Appendix
-
-I have an experience working as internship to develop recommender system using gensim.
+[1] Tomas Mikolov, Wen-tau Yih, Geoffrey Zweig, "Linguistic Regularities in Continuous Space Word Representations." 2013, NAACL
+[2] Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean, "Efficient estimation of word representations in vector space" 2013, ICLR
+[3] Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, Jeff Dean, "Distributed representations of words and phrases and their compositionality", 2013, NIPS
+[4] Online Word2Vec for Gensim http://rutumulkar.com/blog/2015/word2vec/
+[5] Lee, M., Pincombe, B., & Welsh, M. "An empirical evaluation of models of text document similarity.", 2005, Proceedings of the 27th Annual Conference of the Cognitive Science Society
+[6] Machine learning course at Coursera https://www.coursera.org/learn/machine-learning
+[7] Mehryar Mohri, Afshin Rostamizadeh, and Ameet Talwalkar, "Foundations of Machine Learning", 2012, MIT Press.
