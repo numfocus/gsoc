@@ -13,7 +13,9 @@ Software Carpentry (SWC) has a workflow for Instructor Trainings. Currently, it 
 
 Here is [#89](https://github.com/numfocus/gsoc/issues/89) issue where I discussed this proposal. 
 
-**Getting Feedback.** I believe it's really important to get feedback as soon as possible, therefore:
+### Getting Feedback
+
+I believe it's really important to get feedback as soon as possible, therefore:
 
 - Before introducing new features to all users, they'll be tested by a group of volunteering early users. That way, we don't have to test everything before showing it to first users, so we can get feedback faster and iterate quicker. If we don't get those early users, the only thing we can do is:
     - to extensively test the code for different user scenarios before exposing new functionality to all users,
@@ -25,7 +27,9 @@ Here is [#89](https://github.com/numfocus/gsoc/issues/89) issue where I discusse
 
 - Amy dev instance will be available to all interested parties.
 
-**Discarded features**. It's also important to note what will be **not** implemented:
+### Discarded features
+
+It's important to enumerate what will be **not** implemented:
 
 - Advanced security control. There'll be only one flag in `Person` model that indicates if somebody is a Trainee with very limited permissions or somebody else (Admin, Trainer etc.) who can can edit everything.
 
