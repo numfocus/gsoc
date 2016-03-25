@@ -138,7 +138,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="http://www.juliaopt.org/images/juliaopt.svg"/>
+      <img width="300px" src="http://juliaquantum.github.io/images/logo_icon.svg"/>
     </td>
     <td>
        <h1>JuliaQuantum</h1>
