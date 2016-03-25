@@ -12,7 +12,7 @@ Online Word2Vec development
 
 ## Technical Details
 
-* online machine learning is a method which uses for stream data and update every time you get data. Vanilla Word2Vec train the model every time you get the data. The word usage continue to change so we need to update Word2Vec model constantly.
+* Online machine learning is a method which uses for stream data and update every time you get data. Vanilla Word2Vec train the model every time you get the data. The word usage continue to change so we need to update Word2Vec model constantly.
 
 ## Schedule of Deliverables
 
@@ -48,21 +48,17 @@ Online Word2Vec development
 
 * Evaluate online Word2Vec using some data sets such as [Lee corpus](http://www.socsci.uci.edu/~mdlee/lee_pincombe_welsh_document.PDF)[5].
 
-* Start writing a blog post about online Word2Vec usage.
-
-### August 3rd - August 16th
-
 * Test online Word2Vec using several parameters.
-
-* Write a blog post about online Word2Vec performance.
 
 * Write documentation for users to easily use online method and choose parameters.
 
+### August 3rd - August 16th
+
+* Start writing a blog post about online Word2Vec usage.
+
 ### August 17th - August 21th 19:00 UTC
 
-* Clean code, write tests, improve documentation.
-
-* Continue blog writing.
+* Write a blog post about online Word2Vec performance.
 
 ## Future works
 
