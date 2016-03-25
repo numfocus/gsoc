@@ -3,9 +3,7 @@
 ## Getting Started Early
 
 The 2016 student application window is March 14th to 25th.
-**We don't know if NumFOCUS will be accepted to participate until 29 February**
-but if you are interested in start work early on your application,
-[the Python Software Foundation Wiki](https://wiki.python.org/moin/SummerOfCode/2016#Students)
+[The Python Software Foundation Wiki](https://wiki.python.org/moin/SummerOfCode/2016#Students)
 lists a few things you can do to get started in free and open source software.
 
 ## Getting Started
