@@ -1,0 +1,735 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.3 (9/9/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[twoside]{article}
+\usepackage[nottoc]{tocbibind}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[margin={1cm,1cm},hmarginratio=1:1,top=32mm,columnsep=30pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks = true,
+            linkcolor = NavyBlue,
+            urlcolor  = NavyBlue,
+            citecolor = NavyBlue,
+            anchorcolor = NavyBlue]{hyperref} % For hyperlinks in the PDF
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+%\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+%\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+\titleformat*{\section}{\normalfont\Large\bfseries\color{Blue}}
+\titleformat*{\subsection}{\normalfont\large\bfseries\color{RoyalPurple}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{GSoC 2016 Application - Julia/Numfocus} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{listings}
+
+\lstdefinelanguage{Julia}%
+  {morekeywords={abstract,begin,break,case,catch,const,continue,do,else,elseif,%
+      end,export,false,for,function,immutable,import,importall,if,in,%
+      macro,module,otherwise,quote,return,switch,true,try,type,typealias,%
+      using,while},%
+   sensitive=true,%
+   alsoother={$},%
+   morecomment=[l]\#,%
+   morecomment=[n]{\#=}{=\#},%
+   morestring=[s]{"}{"},%
+   morestring=[m]{'}{'},%
+}[keywords,comments,strings]%
+
+\lstset{%
+    language         = Julia,
+    basicstyle       = \ttfamily,
+    keywordstyle     = \bfseries\color{blue},
+    stringstyle      = \color{magenta},
+    commentstyle     = \color{ForestGreen},
+    showstringspaces = false,
+}
+
+\usepackage{fancyvrb}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\color{Blue}\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Presolve Routines for LP and SDP within Convex.jl}} % Article title
+
+\author{
+\large
+\textsc{Ramchandran Muthukumar}\thanks{I would like to thank Madeleine Udell for pointing out the recent paper on Partial Facial Reduction\cite{permenter2014partial}}\\[5mm] % Your name
+\normalsize Birla Institute of Technology and Science-Pilani, India \\ % Your institution
+\normalsize \href{mailto:ramcha1994@gmail.com}{ramcha1994@gmail.com} \\
+\normalsize Github handle : ramcha24 \\
+\normalsize Location/Timezone: India, GMT +5:30 \\
+\normalsize Mentor: Madeleine Udell
+\vspace{-5mm}
+}
+\date{}
+
+
+%\usepackage[
+%backend=biber,
+%style=numeric,
+%sorting=ynt
+%]{biblatex}
+
+%\addbibresource{citations.bib}
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Insert title
+
+\thispagestyle{fancy} % All pages have headers and footers
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\begin{multicols}{2} % Two-column layout throughout the main article text
+
+
+\section{\textbf{Personal Background}}
+
+\hspace{5mm}I am a third year undergraduate student pursuing Masters in Mathematics and Bachelors in Computer Science from BITS Pilani, Goa Campus. For the past 2-3 years, I have taken rigorous math courses like Algebra, Real Analysis, Measure and Integration, Topology. In particular I enjoyed the optimization-related courses like - Linear Programming, Non-Linear Optimization and Operations Research. 
+
+My first exposure to Convex Optimization and the Stanford Convex Group was actually through a Machine Learning Project back in 2014 where I had to use Prof. Stephen Boyd's implementation of the interior point method for \href{https://stanford.edu/~boyd/l1_logreg/}{l1-logistic regression}. This led me to discover the vast amount of materials hosted on Prof. Boyd's web page for his Convex Optimization courses - EE364a/b - the video lectures, slides, the book, MATLAB files, extra exercises et cetera. I can never be grateful enough to Prof. Boyd for making these available online. For the past one year I have been reading and working my way through Prof. Boyd's book on Convex Optimization and it's been an immense pleasure to attempt the exercise questions (especially from the "Extra Exercises") and along the way I have greatly enjoyed implementing the solutions using CVX, CVXPY, Convex.jl, PICOS. 
+
+I think I am very well suited to work on the project proposed, as it requires a good comfort level with the theory of convex optimization and higher level mathematics that I am accustomed to, due to my background in abstract Mathematics courses and the wonderful course on Convex Optimisation. I have worked through two research papers,  and I believe that I can convert the ideas in the paper to code and add Pre-solving capabilities to Convex.jl.
+\vspace*{-\baselineskip}
+%\vspace{2mm}
+\section{\textbf{Programming Skills}}
+
+I have worked with C, C++, Java, Python, R and Julia before. %I would rate my programming expertise to be moderate.
+I usually use C++ for solving algorithmic questions from websites like Hackerrank, Codechef etc. 
+
+A MOOC course I completed in summer 2015 - Analytics Edge by MITx involved programming with R and I am quite comfortable with R. I have used Python for machine-learning scripts in the past (working with scikit-learn, numpy libraries). 
+
+Recently I helped build \textit{conda} packages for CVXPY to make installation easier. The files for the same are hosted \href{https://anaconda.org/Ramcha24/}{here} for public download.
+
+Exercises using CVX that were part of my formal report for a study-oriented-project on campus are available \href{https://github.com/ramcha24/cvx-exercises}{here}
+and some sample code that I have written using Julia - \href{https://github.com/ramcha24/julia-exercises/blob/master/Binary\%20Searching\%20with\%20Julia.ipynb
+}{Binary-searching variants in Julia}, \href{https://github.com/ramcha24/julia-exercises/blob/master/Quasiconvex\%20Optimization\%20by\%20Bisection.ipynb
+}{Quasi-Convex Optimization in Julia.}
+\vspace*{-\baselineskip}
+
+\section{\textbf{Project Synopsis}}
+\hspace{5mm}Pre-solving is the process of detecting redundancies in an optimization problem and removing them so that the problems that are fed to solvers are properly formulated. The reduced optimization problem is now solved by the solver. This has the two-fold benefit of speeding up the optimization process, and higher accuracy in solutions. Since smaller problems are fed to the solver (eg. SCS), the bottleneck call to the solver has now become significantly faster. 
+
+Ideally, we would want to remove the types of redundancy which lead to reduction in total solution time. But this isn't possible. There is also a trade-off between time spent in the pre-solve procedure and the amount of redundancy detected by our procedure. 
+%\textit{Therefore, our essential goal would be to find simple forms of redundancies, and in as less time as possible.}
+
+\textbf{\color{blue}Motto} - Find simple forms of redundancies and find them quick.
+
+
+Many commercial solver include pre-solve (like CPLEX) but almost no open source solver has an efficient and exhaustive implementation of pre-solve for LP.
+To the best of our knowledge no first order solver has pre-solve of any kind for SDP problems. Thus adding a pre-solve to Julia-opt greatly increases the competition of open-source solvers. 
+
+I intend to write pre-solve routines for Julia-opt rather than write interfaces to Frank Permenter's \textbf{frlib} for SDP or GLPK for LP. 
+Why? The presolve support for LP in other open source solvers is not as exhaustive as proposed. The presolve support for SDP in \textbf{frlib}, uses SeDuMi, but first-order solver like SCS (the default solver in Convex.jl) has been shown to be considerably faster when the problem size scales from \cite{o2013operator}. 
+
+SCS currently has no pre-solve inbuilt and this would help resolve that issue. 
+Also writing optimized Julia code is easier than re-writing in a lower-level language like C and more easily maintained for further improvements in future. This could have the added side benefit of 
+yet another benchmark against other 'fast' languages and give feedback on how the pre-solve routine written completely in Julia would fare against some of the support given in GLPK, CLP.
+
+The next few sections will give a theoretical description of the process 'under-the-hood' of the final pre-solve algorithm. 
+While I have quoted two quality research papers, the mathematics behind both these papers are well understood and acknowledged and their conversion to code can be done to get reliable results with ease. 
+
+In fact, for SDP, where the mathematics is more involved due to the frlib package we have a clearer starting point from their implementation so that we can straightaway discuss design issues for implementing in Julia. 
+
+\vspace*{-\baselineskip}
+\vspace{3mm}
+
+\subsection{\textbf{Pre-solving for LP}}
+Any LP problem can be formulated as:
+
+\begin{align*}
+\mbox{minimize} \hspace{0.1in} & c^Tx \\
+\mbox{subject to} \hspace{0.1in} & Ax=b \\
+\hspace{0.1in} & l \leq x \leq u 
+\end{align*}
+where $ x,c,l,u \in \mathbb{R}^n$ and $b \in \mathbb{R}^m, A \in \mathbb{R}^{m\times n} $
+
+Some of the simple bounds $ l_j, u_j $ may be $ -\infty, \infty $ .
+
+Define $L  = \{ j : l_j > -\infty\} \hspace{0.1in}$ and $U = \{ j : u_j < \infty\} $
+
+Then the constraints of the LP are:
+\begin{align*}
+ Ax^* &= b \\
+ A^T + y^* &= c \\
+ (x_j^*-l_j)z_j^*& = 0 \\ 
+ (u_j-x_j^*)z_j^*& = 0 \\
+ z_j^* &\geq 0 \hspace{0.1in} \forall \hspace{0.1in} j \hspace{0.1in} \in \hspace{0.1in} \mbox{L} \\
+ z_j^* &\leq 0 \hspace{0.1in} \forall \hspace{0.1in} j \hspace{0.1in} \in \hspace{0.1in} \mbox{U} \\
+z_j^* &= 0 \hspace{0.1in} \forall \hspace{0.1in} j \hspace{0.1in} \notin \hspace{0.1in} L \cup U 
+\end{align*}
+We want a pre-solve procedure that would reduce the size of A without creating new non-zero terms. 
+
+This also means that linear transformations are not allowed but changes to $c,b,l,u$ are.
+
+We make several passes through A and remove redundancies as and when they are detected. Some types of redundancies are easily understood and in the next subsection we will look at few of them.
+\vspace*{-\baselineskip}
+
+\subsection{\textbf{Redundancies in LP}} 
+
+\textbf{\color{blue}Empty Rows/Columns}\\When a row $i$ is empty, either the constraint is redundant or infeasible.
+	
+	When a column $j$ is empty, depending on the bounds on the variable and the objective function, the variable $x_j$ can either be fixed at its bounds or is unbounded. \\
+\textbf{\color{blue}Row Singletons}
+\begin{equation*}
+ \exists (i,k) \text{ s.t. } a_{ij} = 0 \hspace{0.1in} \forall j \neq k, a_{ik} \neq 0    \end{equation*}
+ 
+   Here, the $i^{th}$ constraint fixes the variable $x_k$ at the value - $\frac{b_i}{a_{ik}}$
+    
+    Thus we can substitute $x_k$ out of the system and reduce the number of variables by one.
+    
+    Thus, one reduction could possibly lead to several others and to exploit this, we need to keep a count of number of non-zeros in each constraint and a list containing all singleton constraints.
+    
+    Every time we fix a variable, the number of non-zeros is updated and the new singleton constraints that arise are added to the list. \\\textbf{\color{blue}Column Singletons}
+    \begin{equation*}
+     \exists (j,k) \text{ s.t. }  a_{ij} = 0 \hspace{0.1in} \forall i \neq k, a_{kj} \neq 0   
+    \end{equation*}
+   
+    When this occurs, a 'free' column singleton occurs on variable $j$ along with $l_j = -\infty$ and $u_j = \infty$. Here again we can substitute:
+    \begin{equation*}
+     x_j = \frac{b_k - \displaystyle\sum_{p \neq j} a_{kp}x_p}{a_{kj}}   
+    \end{equation*}
+    Removal of column singletons is very advantageous as they result in the removal of one variable and also one constraint.
+
+	Whenever our Presolve procedure detects a column singleton $x_j$, we try to establish that it is \emph{implied free}. 
+	
+	A variable is \emph{implied free} if we can construct new bounds, that are at least as tight as the original bounds. A candidate pair of bounds for the variable is calculated for each $a_{ij}$ as - 
+	
+	\begin{align*}
+	u_{ij} = & \frac{b_i - \displaystyle\sum_{k \in P_{ij} } a_{ik}l_k - \displaystyle\sum_{p \in M_{ij}} a_{ik}u_k }{a_{ij}},\hspace{0.1in}  a_{ij} > 0 \\
+	u_{ij} = & \frac{b_i - \displaystyle\sum_{k \in P_{ij} } a_{ik}u_k - \displaystyle\sum_{p \in M_{ij}} a_{ik}l_k }{a_{ij}},\hspace{0.1in}  a_{ij} < 0 \\		
+	l_{ij} = & \frac{b_i - \displaystyle\sum_{k \in P_{ij} } a_{ik}l_k - \displaystyle\sum_{p \in M_{ij}} a_{ik}u_k }{a_{ij}},\hspace{0.1in}  a_{ij} < 0 \\
+	l_{ij} = & \frac{b_i - \displaystyle\sum_{k \in P_{ij} } a_{ik}u_k -\displaystyle \sum_{p \in M_{ij}} a_{ik}l_k }{a_{ij}},\hspace{0.1in}  a_{ij} > 0 
+	\end{align*}
+	
+	For any feasible solution $x$, it is easy to observe that $l_{ij} \leq x_j \leq u_{ij}$. Thus, we have an implied free column singleton if - $l_j \leq l_{kj} \leq u_{kj} \leq u_j$ \\
+	\textbf{\color{blue}Forcing and Dominating Constraints}
+
+Let $P_i = \{i : a_{ij} > 0\}$ and $M_i = \{i : a_{ij} < 0\}$. Let's compute the quantities:
+\begin{align*}
+	g_{i} = & \sum_{j \in P_{i} } a_{ij}l_j - \sum_{j \in M_{i}} a_{ij}u_j \\
+	h_{i} = & \sum_{j \in M_{i} } a_{ij}l_j - \sum_{j \in P_{i}} a_{ij}u_j 
+\end{align*}
+Clearly, $g_i \leq \sum a_{ij}x_j \leq h_i$ for any solution $x$. Now if $h_i < b_i$ or $g_i > b_i$, we have an unfeasible constraint. 
+
+A forcing constraint is one where $g_i = b_i$ or $h_i = b_i$. Here, the value of $x_j$ is fixed at its bounds according to the sign of $a_{ij}$ and thus we can fix all variables that occur in the $i^{th}$ constraint. 
+
+Removal of Forcing Constraints is highly advantageous as they we remove all variables that are structurally degenerate. We can also use this to detect more column singletons and we can determine $l_{ij}', u_{ij}'$ for appropriate cases when $a_{ij} \neq 0 $ and when $g_i$ or $h_i$ is finite.
+
+\begin{align*}
+    u_{ij} = & \frac{b_i - g_i}{a_{ij}} + l_j, \hspace{0.1in}  a_{ij} > 0 \\
+	u_{ij} = & \frac{b_i - h_i}{a_{ij}} + l_j, \hspace{0.1in}  a_{ij} < 0 \\		
+	l_{ij} = & \frac{b_i - h_i}{a_{ij}} + u_j, \hspace{0.1in}  a_{ij} > 0 \\
+	l_{ij} = & \frac{b_i - g_i}{a_{ij}} + u_j, \hspace{0.1in}  a_{ij} < 0 		
+\end{align*}
+
+This is called the Dominated Constraint Procedure. Similarly there are concepts of Dominated Columns and Forcing Columns elaborately discussed in the paper by Andersen. 
+\vspace*{-\baselineskip}
+
+\subsection{\textbf{Algorithm for LP}}
+
+In \cite{ipm:Andersen9}, the authors have proposed the following algorithm for Pre-solving a LP - 
+
+\begin{enumerate}
+\item Remove all fixed variables
+\item Repeat
+\begin{itemize}
+    \item Check Rows
+         \begin{itemize}
+         \item[-] Remove Row Singletons
+         \item[-] Remove Forcing Constraints
+         \end{itemize}
+         
+    \item Dominated Constraints
+         \begin{itemize}
+         \item[-]  Remove all dominated constraints
+         \end{itemize}
+         
+    \item Check Columns
+         \begin{itemize}
+         \item[-] Remove all free, implied free column singletons
+         \item[-] Remove column singleton-double combinations
+         \end{itemize}
+         
+    \item Dominated Columns
+    
+    \item Duplicate Rows
+    
+    \item Duplicate Columns
+   
+\end{itemize}
+   Until no reduction in last pass
+\item Remove all empty rows and columns
+\end{enumerate}
+
+We also need to maintain a 'stack' of presolve operations and undo a reduction such that, if the primal and dual solutions to the reduced problem are optimal and feasible, so is the solution to the restored problem. 
+
+This constitutes a Post-solve procedure to recover solutions to the orginial problem, after we have solved the reduced LP. 
+
+Each of the operations in pre-solve has a corresponding post-solve procedure whereby we 'unfix' the fixed variable $x_j$ or constraint $i$ at each iteration. 
+\vspace*{-\baselineskip}
+
+\subsection{\textbf{Pre-solving for SDP}}
+
+SDPs with no strictly feasible solutions don't satisfy Slater's conditions for strong duality. This is a frequent problem arising on outputs from the parser, that generate SDP-based relaxations of algebraic problems. This is because the parser does not exploiting the structure of the SDP. 
+
+The feasible set of an SDP is the intersection of an affine subspace and the cone of positive-semidefinite matrices. If there are no matrices in the feasible set that are positive definite then strict feasibilty fails. 
+
+This results in two issues: \\- Lack of strong duality means duality gap is not zero. \\- The SDP is unnecessarily large; the feasible set can be reduced. 
+
+
+One such approach for a general Conic Optimization Problem is the \textbf{Facial Reduction Algorithm} which aims at finding \textit{faces} of the original PSD cones that contain the feasible set. 
+
+Let's look at some terminologies that are needed to discuss the facial reduction algorithm - 
+
+Let $E$ be a finite dimensional vector space of $\mathbb{R}$ with inner product $\langle\cdot,\cdot\rangle$
+\begin{itemize}
+\item For a subset $S \subseteq E$, we define LinS to be the Linear Span of all elements of S and $S^\perp$ to be the orthogonal complement of $\mbox{Lin} S$
+\item A \textbf{Convex Cone} $K$ is a convex set that satisfies - $x \in K \implies \alpha x \in K\hspace{0.1in} \forall \alpha \ge 0$. 
+\item A \textbf{Dual Cone} $K^*$ of $K$ is the set of linear functionals non-negative on K - $\{y | \langle y,x\rangle \ge 0, \hspace{0.1in} \forall x \in K\}$ 
+\item A \textbf{face} $F$ of a convex cone K is a convex subset that satisfies the following
+\begin{equation*}
+    \frac{a+b}{2} \in F \mbox{ and a, b,} \in K  \implies a,b \in F
+\end{equation*}  
+\item A face is \textbf{proper} if it is non-empty and not equal to K. Faces of convex cones are also convex cones. 
+\item $\mathbb{S}^n_{+}$ denotes the convex cone of Positive Semidefinite Matrices
+\item A set $F$ is a face of $\mathbb{S}^n_{+}$ iff it equals the set of all $n\times n$ PSD matrices with range contained in a given $d$-dimensional subspace. 
+\item A proper face $f$ (and $f^*$) can be described with a invertible matrix $(U,V) \in \mathbb{R}^{n\times n}$ where the range of $U \in \mathbb{R}^{n\times d}$ equals this subspace and $V \in \mathbb{R}^{n\times n-d} = R(U)^{\perp}$
+\item The relative interior of a set S consists of points of the set that are not in the boundary with respect to the affine hull of S. 
+Its used to analyse low-dimensional spaces embedded in higher-dimensional spaces. 
+Mathematically,
+\begin{equation*}
+    relint(S) := \{ x \in S : \exists \epsilon > 0, N_e(x) \cap \mbox{aff}(S) \subseteq S \}
+\end{equation*}
+\item The following lemma stated in \cite{permenter2014partial} is important: 
+\begin{lemma} 
+$K$ - convex cone and $A$ - affine subspace such that $A \cap K$ is non-empty. Then the following statements are equivalent: 
+\begin{enumerate}
+	\item $A \cap \mbox{ relint } K$ is empty 
+
+	\item $\exists s \in K^*-K^{\perp}$ for which the hyperplane $s^{\perp}$ contains A.
+\end{enumerate}
+\end{lemma}
+Thus if we have strict feasibility then the first condition is satisfied and which means a suitable vector $s$ exists, we call this vector the \textbf{reducing certificate} as we can construct a new face at any iteration $i$ as $F_{i+1} = F_{i} \cap s_{i}^{\perp}$.
+\end{itemize}
+Thus we would get a sequence of 'faces', $F_n \subset F_{n-1} \subset \hdots \subset F_0 = K$. Producing this sequence is called \textbf{Facial Reduction}. 
+
+\textbf{\color{blue}Facial Reduction Algorithm}
+\begin{enumerate}
+	\item Begin, Initialize $f_0 \leftarrow K, i = 0$
+	\item Repeat
+	\begin{itemize}
+		\item Find Reducing Certificates 
+				i.e, Solve the feasibility $(*)$
+			\begin{align*}
+			\mbox{Find} \hspace{0.1in} & s_i \in F_i^*-F_i^{\perp} \\
+			\mbox{subject to} \hspace{0.1in} & s_i^{\perp} \mbox{ contains } A
+            \end{align*}
+		\item Compute new face, $F_{i+1} = F_i \cap s_i^{\perp}$
+		\item Increment i 
+	       
+	          Until the feasibility problem $(*)$ is infeasible
+    \end{itemize}
+\end{enumerate}
+
+In the case of an SDP, we compute a new face by using a matrix $B \in \mathbb{R}^{d \times r}$ with range = Null($U_i^TS_iU_i$) and $F_i \cap S_i^{\perp} = U_iBS^r_+B^TU_i^T$
+\\
+\\\textbf{\color{blue}Facial Reduction Algorithm for SDP}
+\begin{enumerate}
+	\item Begin, Initialize $U_0 = I_{n\times n}, d_0 = n, i=0$
+	\item Repeat
+	\begin{itemize}
+		\item Find Reducing Certificates $S_i$ by solving the SDP: 
+			\begin{align*}
+			\mbox{Find} \hspace{0.1in} & S_i \in S^n \\
+			\mbox{subject to} \hspace{0.1in} & U_i^Ts_i^{\perp}U_i \mbox{ contains } A \\
+			& U_iU_i^T\cdot S_i = 1\\
+			& C\cdot S_i = 0\\
+			& A_j - S_i = 0 \hspace{0.1in}\forall 1 \leq j \leq n
+            \end{align*}
+		\item Compute New face by finding basis for Null($U_i^TS_iU_i$) and setting $U_{i+1} = U_i\cdot B$ and $d_{i+1} =$ dim(Null($U_i^TS_iU_i$))
+		\item Increment i 
+	       
+	          Until the feasibility problem $(*)$ is infeasible
+    \end{itemize}
+\end{enumerate}
+
+
+But finding the reducing certificates is itself an SDP problem, thus we try to reduce the complexity of finding a reducing certificate at the cost of only partially simplifying the given Conic Optimization Problem.
+
+We approximate $f_i$ with a user-specified  convex cone $f_{i,outer}$ that satisfies - 
+\begin{enumerate}
+    \item $f_i \subseteq f_{i,outer}$
+    \item $\mbox{Lin} \hspace{0.1in} f_i = \mbox{Lin} \hspace{0.1in} f_{i,outer}$
+    \item $f_{i,outer} \hspace{0.1in} \mbox{has lower search space complexity.}$
+\end{enumerate}
+
+We can now modify $(*)$ to - 
+	\begin{align*}
+			\mbox{Find} \hspace{0.2in} & S_i \in F_{i,outer}^*-F_{i,outer}^{\perp} \\
+			\mbox{subject to} \hspace{0.1in} & S_i^{\perp} \mbox{ contains } A
+    \end{align*}
+    
+The authors in \cite{permenter2014partial} have proved theorems that check the mathematical validity of such a modification. 
+
+The new modified algorithm is called the \textbf{Partial Facial Reduction} algorithm and it takes an additional input of a user-specified cone approximation. 
+
+Let $W$ be a set containing finite number of $d \times k$ rectangular matrices, the approximations $C(W)$ are such that - $C(W)^* \subseteq S_+^d \subseteq C(W)$. Four such approximations have been analysed in \cite{permenter2014partial} and the following table gives us a clear picture of the final result -
+
+\begin{table}[H]
+	\caption{Cone Approximations and resulting simplified complexity}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		$C(W)^*$ & Search & $|W|$ \\
+		\midrule
+		Non-negative Diagonal $(D^d)$ & LP & $O(d)$\\
+		Diagonally Dominant $(DD^d)$ & LP & $O(d^2)$\\
+		Scaled DD $(SDD^d)$ & SOCP & $O(d^2)$\\
+		Factor Width-k $(FW^d_k)$ & SDP & $O\left(\binom{d}{k}\right)$\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{itemize}
+\item \textbf{\color{blue}Non-negative Diagonal Matrices}: $D^d$ represents the set: 
+\begin{equation*}
+    D^d := \{X \in \mathbb{S}^d : X_{ii} \ge 0, X_{ij} = 0 \hspace{0.1in} \forall \hspace{0.1in} i \neq j \}
+\end{equation*}
+\item\textbf{\color{blue}Diagonally Dominant Matrices}: $DD^d$ represents the set:
+\begin{equation*}
+    DD^d := \{X \in \mathbb{S}^d : X_{ii} \ge \sum_{j \neq i} |X_{ij}|\}
+\end{equation*}
+\item \textbf{\color{blue}Scaled Diagonally Dominant}: $SDD^d$ represents the set :
+\begin{equation*}
+    SDD^d := \{DTD |D \in D^d, D_{ii} > 0, T \in DD^d \}
+\end{equation*}
+\item \textbf{\color{blue}Factor-width-k Matrices}: These are matrices such that k is the smallest integer for which they can written as sum of PSD matrices that are non-zero only on $k \times k$ principal submatrices.
+\end{itemize}
+It is easy to observe that:
+\begin{align*}
+    D^d = FW_1^d \subseteq DD^d \subseteq SDD^d &= FW_2^d \subseteq \cdots \\ \subseteq FW_d^d = S_+^d
+\end{align*}
+
+Another aspect of the procedure is to find those reducing certificates that minimize the dimension of the next face. In relation to the same, the following lemma has been proved in \cite{permenter2014partial}: 
+\begin{lemma}
+Let $M$ be a subspace of $S^d$, A matrix $X$ maximising $\displaystyle\sum_{i=1}^{|W|} \mbox{rank} \hspace{0.1in} X_i$ over $M \cap C(W)^*$ is given by any optimal solution $(X,X_i,T)$ to the following SDP:
+\begin{align*}
+        \mbox{maximize} \hspace{0.1in} & \sum_{i=1}^{|W|} Tr(T_i)\\
+        \mbox{subject to} \hspace{0.1in} & X \in M \\
+        \hspace{0.1in} & X = \sum W_iX_iW_i^T \\
+        \hspace{0.1in} & X_i \succeq T_i  \\
+        \hspace{0.1in} & I \succeq T_i \succeq 0
+\end{align*}
+\end{lemma}
+
+The first two approximations were polyhedral. The above problem reduces to an LP in those cases.
+
+We can now substitute this with appropriate modifications to find reducing certificates in the Partial Facial Reduction Algorithm for SDP given above. The paper\cite{permenter2014partial} also discusses the important issue of recovery of dual solutions.
+
+\vspace*{-\baselineskip}
+
+\subsection{\textbf{Algorithm for SDP}}
+Finally we present a high-level description of the Pre-solve steps for an SDP
+
+\textbf{\color{blue}Input} - Primal-Dual pair and Approximation Type
+\vspace{0.1in}
+
+\textbf{\color{blue}Algorithm} -
+\begin{enumerate}
+    \item Identify sequences of faces containing primal(dual) feasible set using approximations
+    \item Construct the reduced primal problem
+    \item Solve reduced primal-dual pair
+    \item Recover solution to primal(dual) and attempt recovery to dual(primal)
+\end{enumerate}
+
+\textbf{\color{blue}Output} - Recovered solutions to Input
+\vspace*{-\baselineskip}
+
+\subsection{\textbf{Computational Benefits}}
+Computational benefits for both the pre-solve procedures have been discussed in \cite{ipm:Andersen9} and \cite{permenter2014partial} after analysing them with testing benchmarks.
+
+\vspace*{-\baselineskip}
+
+\section{\textbf{Current Ecosystem of Presolve Routines}}
+
+Currently the Pre-solve routines mentioned for LP have been implemented either in whole, in parts or with some variations in JOptimizer, lpsolve-5.5, CPLEX, GLPK.
+
+JOptimizer seems to implement the most among other open source alternatives but it isn't used widely or cited. CPLEX is the industry standard but not open source. GLPK has some basic presolve routines inbuilt for LP but they don't seem to be as extensive as proposed in \cite{ipm:Andersen9}. 
+
+For SDP, the authors of \cite{permenter2014partial} have written matlab package \href{https://github.com/frankpermenter/frlib}{frlib} which interfaces with Sedumi solver. But they only seem to have implemented for the approximations of 'D' and 'DD'. 
+
+Central to Julia's success so far has been readability and its speed. Addition of the presolve feature to optimization problems would enhance Julia's performance and preference for users. 
+\vspace*{-\baselineskip}
+
+\section{\textbf{Implementation and Timeline}}
+
+\textbf{\color{blue}Sample Code}
+
+Presolve will by default be set to false (convention). It will be specified in the solve!() function as a parameter, and based on type of problem we will execute the presolve. 
+
+We will need to maintain a vector of the sequence of operations performed . They could possibly be identified by a unique tuple of method\_id, var\_change array and constraint\_change array which will help us later post-solve and recover solutions to orginal problem. 
+
+A first crack at the implementation was done by my mentor Madeliene Udell (refer - 
+\href{https://github.com/JuliaOpt/Convex.jl/pull/92}{Presolve \#92})
+
+For lp\_presolve(), we will write many layers of helper functions and there purpose is mostly self-explanatory from the function names. 
+
+\begin{enumerate}
+\item Utility Functions:
+\begin{verbatim}
+remove_fixed_variables(),
+sparsity_pattern(),
+remove_zero_row_and_col(),
+make_lp()
+\end{verbatim}
+\item Row functions:
+\begin{verbatim} 
+check_empty_rows(),
+remove_row_singletons(),
+remove_duplicated_rows()
+\end{verbatim}
+\item Column Functions:
+ \begin{verbatim}
+check_empty_columns(),
+remove_forcing_constraints(),
+remove_dominated_constraints(),,
+remove_coloumn_singleton(),
+remove_dominated_columns(),
+remove_duplicated_columns()
+ \end{verbatim}
+\item For Testing Purposes:
+\begin{verbatim}
+check_progrees(),
+is_same_sparsity(),
+compare_bounds(),
+detect_lp(),
+detect_sdp()
+\end{verbatim}
+\end{enumerate}
+
+And, here is a rough outline of how the top level function would be implemented and called - 
+
+\begin{Verbatim}[obeytabs]
+function detect_lp()
+	# will set is_lp = true if just a LP
+	if is_lp
+	# extract constraints L,U,c,A,b
+end
+
+
+function solve!(p::Problem,..,use_presolve=true)
+
+	if (use_presolve && is_lp)
+		new_p = lp_presolve(p::Problem)
+	elseif (use_presolve && is_sdp)
+		newp = sdp_presolve(p::Problem)
+	end
+	...
+end
+
+
+function lp_presolve(p::Problem)
+iteration = 0
+reduction_done = false
+
+while(!reduction_done)
+
+	check_empty_rows
+	remove_fixed_variables()
+	check_progress()
+	
+	remove_row_singletons()
+	check_progress()
+
+	remove_forcing_constraints()
+	check_progress()
+
+	if(iteration < 5)
+		compares_bounds()
+		checkprogress()
+
+	remove_dominated_constraints()
+	check_progress()
+	
+	#Check and remove three kinds
+	#Free Columns
+	#Implied free Column Singletons
+	#Singleton-Doubleton combos
+	
+	check_column_singletons()
+	check_progress()
+
+	#Dominated Columns
+	remove_dominated_columns()
+	checkProgress()
+
+	#Duplicate Rows
+	remove_duplicate_row()
+	
+	#Duplicate columns
+	remove_duplicate_column()
+	
+	remove_zero_row_and_col()
+	end
+	problem p = make_lp()
+end
+\end{Verbatim}
+
+For writing the presolve for SDP,we will mostly port the code from frlib package and make appropriate calls to SCS instead of SeDuMi solver.
+
+We would have multiple Julia files (each serving a small purpose and exporting one or two functions to be used by the main facialreduction function).
+
+\textit{facebase.jl} would contain the structure necessary to work with faces, and some utility functions to check if an element is in the dual cone, linear span, to compute the interesection of two faces etc.
+
+\textit{facialred.jl} builds the LP obtained in the feasibility problem and solves it. Similarly solves the dual problem. It uses 'generator' (or extreme-rays) to generate user-given cone approximation. 
+
+\textit{reduceprg.jl} recovers the primal and dual solutions from the reduced program. 
+
+\textit{solutil.jl} has most of the utility functions which test if a matrix is PSD, implementation of the line-search for dual recovery etc. 
+
+
+\vspace*{-\baselineskip}
+
+\subsection{\textbf{Testing Benchmarks}}
+The focus of the tests would be to ensure code is sufficiently optimized and accuracy is maintained and performance in general is better than without the presolve option inside Convex.jl
+
+We shall also document the the possible differences between solution time with and without presolve in comparison to other open source solvers presolve support. 
+
+We shall test our code at significant checkpoints with the following standard problem instances. 
+
+\begin{enumerate}
+    \item Testing with LP benchmark for speed improvements - \href{http://www.cuter.rl.ac.uk/Problems/netlib.shtml}{\textbf{LP-Instances}}
+    \item Testing with SDP problem instances for speed improvements - \href{http://www.math.uwaterloo.ca/~hwolkowi//henry/reports/SDPinstances.tar}{\textbf{SDP-Instances}}
+\end{enumerate}
+\vspace*{-\baselineskip}
+
+\subsection{\textbf{Proposed Schedule}}
+
+\begin{enumerate}
+	\item[] \textbf{\color{blue}Community Bonding}: Closer look at GLPK's and CLP's implementation of LP Pre-solve and frlib's implementations and discussing design decisions with Mentor. 
+    \item[] \textbf{\color{blue}Week 1-2}: Utility and Row procedures for LP
+    \item[] \textbf{\color{blue}Week 3-4}: Dominated and Forcing Constraints  
+    \item[] \textbf{\color{blue}Week 5}: Columns - Free and Implied Free 
+    \item[] \textbf{\color{blue}Week 6}: Dominated and Forcing Columns
+    \item[] \textbf{\color{blue}Week 7}: Duplicated Rows and Columns
+    \item[] \textbf{\color{blue}Week 8}: Post-solve LP and LP Benchmark 
+    \item[] \textbf{\color{blue}Week 9}: Utility Procedure for SDP  
+    \item[] \textbf{\color{blue}Week 10-11}: Conic Approximation Support 
+    \item[] \textbf{\color{blue}Week 12-14}: Partial Facial Reduction 
+\end{enumerate}
+\vspace*{-\baselineskip}
+
+\section{\textbf{Issues to tackle}}
+
+Most of the \textit{Sparse Matrix Storage} formats that exist currently are good for matrix multiplication and storage-efficient but very slow for indexing. Since our presolve procedures depend heavily on indexing, we need to come up with a workaround. 
+
+One possible solution is to store the matrix as dense if it isn't too large and execute the presolve routine. Then we can convert it to a sparse matrix after presolve so that we can now feed it to the solvers. 
+
+This of course has the downside that we aren't making use of the sparsity of the matrix. Some clever storage format using ideas like masking etc needs to be explored. 
+
+Also, when the matrix is sparse, we need to be careful about the arithmetic operations performed on the elements of the matrix to make sure they are numerically stable and consistent (for eg., dividing by small values close to zero could lead to inaccuracy).
+
+The summations required to calculate for Column Singletons and Forcing constraints could potentially be inefficient when the matrix is sparse. We could be adding zero multiple times if we iterated through each and every index without accounting for sparsity. 
+
+This would be the trade-off to consider - exploiting the sparse structure vs efficient access and indexing.
+
+Another issue that could arise is, if the values being subtracted were very close then this could result in loss of precision. This would mean despite the straightforward formulas discussed in \cite{ipm:Andersen9}, using modified equivalent forms could make the algorithm numerically more stable.  
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+
+\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+
+\bibitem{ipm:Andersen9}
+E.~D. Andersen and K.~D. Andersen.
+Presolving in linear programming.
+\textit{ Mathematical Programming}, 71:221--245, 1995.
+
+\bibitem{permenter2014partial}
+Permenter, Frank and Parrilo, Pablo.
+Partial facial reduction: simplified, equivalent SDPs via approximations of the PSD cone.
+\textit{ arXiv:1408.4685}, 2014
+
+\bibitem{o2013operator}
+O'Donoghue, Brendan and Chu, Eric and Parikh, Neal and Boyd, Stephen.
+Operator splitting for conic optimization via homogeneous self-dual embedding.
+\textit{ arXiv:1312.3039}, 2013
+
+
+
+%\printbibliography
+ \medskip
+\end{thebibliography}
+%\bibliographystyle{unsrt}
+%\bibliography{citations}
+
+
+\end{multicols}
+
+
+\end{document}
