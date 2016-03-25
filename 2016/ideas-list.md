@@ -5,6 +5,7 @@ Since NumFocus is a umbrella organization you will only find links to the ideas
 page of each organization under NumFocus umbrella at this page.
 
 - biocore: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-biocore.md
+- bokeh: https://github.com/bokeh/bokeh/wiki/GSOC-2016-Ideas
 - DyND: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-dynd.md
 - EcoData Retriever: https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-ecodata-retriever.md
 - Gensim: https://github.com/piskvorky/gensim/wiki/Student-Projects

@@ -37,6 +37,19 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+  <tr>
+    <td>
+      <img width="300px" src="http://bokeh.pydata.org/en/latest/_static/images/logo.png"/>
+    </td>
+    <td>
+       <h1>Bokeh</h1>
+       <p>Bokeh is a Python interactive visualization library that targets modern web browsers for presentation. Its goal is to provide elegant, concise construction of novel graphics in the style of D3.js, and to extend this capability with high-performance interactivity over very large or streaming datasets. Bokeh can help anyone who would like to quickly and easily create interactive plots, dashboards, and data applications.
+         </p>
+       <p>
+         <a href="https://github.com/bokeh/bokeh">GitHub</a> | <a href="https://gitter.im/bokeh/bokeh?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">Chat</a> | <a href="https://groups.google.com/a/continuum.io/forum/#!forum/bokeh">Mailing List</a> | <a href="https://github.com/bokeh/bokeh/wiki/GSOC-2016-Ideas">Project Ideas</a>
+       </p>
+    </td>
+  </tr>
 
   <tr>
     <td>
