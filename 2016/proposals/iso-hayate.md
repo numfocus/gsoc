@@ -62,6 +62,8 @@ Online Word2Vec development
 
 * Clean code, write tests, improve documentation.
 
+* Continue blog writing.
+
 ## Future works
 
 * I'm interested in word embedding methods, not only Word2Vec but also Doc2Vec and something like that. I think online method is applicable for other word embedding methods.
