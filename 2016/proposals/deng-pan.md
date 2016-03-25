@@ -1,4 +1,5 @@
-#Integrating `pandas.Panel` and xarray Features
+#Integrating pandas and xarray features
+
 
 ## Abstract
 
@@ -6,45 +7,54 @@ Pandas package excels at processing tabular models, especially 1-D and 2-D model
  
 However, some useful features in pandas were not implemented in xarray yet. Thus, my project will be focusing on porting features from pandas to xarray, and improving data structure conversion between pandas and xarray. By the end of my work, I expect pandas/xarray users can have specialized tools for different types of data processing, and migrate between pandas and xarray smoothly. 
 
+
 ## Technical Details
 
-Most of my proposal is supposed to be carried out with current implemented features in pandas and xarray. For PCA part, to improve the performance, I might switch to C++ and Eigen3 library.
+Most of my proposal is supposed to be carried out with current implemented features in pandas and xarray. PCA project will have NumPy/SciPy involved.
  
 
 ## Schedule of Deliverables
 
-###Milestone 1: Migrate features from pandas to xarray 
+###Milestone 1: Fix bugs / Port basic supportive methods from pandas to xarray
 
-**Week 1 - 5, May 23rd - June 26th**
+**Week 1 - 4, May 23rd - June 19th**
 
-  - I will have my coursework finished within the first two weeks
-  - I will implement more multiIndex-related features and port features from pandas to xarray.
+  - MultiIndex is an important feature in pandas. Although multiIndex has been implemented in xarray, some issues still remain. Therefore, my first aim is to fix current issues with multiIndex implementation in xarray.
 
-    - **Week 1:** Enable multi-datatype in `xr.DataArray` like `pd.panel`
-    - **Week 2:** Enable groupby for one-dimensional variables / Make levels accessible as coordinate variables
-    - **Week 3:** Based on [#702](https://github.com/pydata/xarray/pull/702) and according to [#719](https://github.com/pydata/xarray/issues/719), I will implement selection return objects with MultiIndex, and add `set_index`/`reset_index`/`swaplevel` to make it easier to create and manipulate multi-indexes.
-    - **Week 4 - 5:** Port features from pd.panel to `xr.DataArray`, such as `prod`, `cumsum`, `rank`, and etc.. Ref [#791](https://github.com/pydata/xarray/issues/791)
+    - **Week 1 - 2:** Fully support of multiIndex: multiIndex falls back to base index in some cases (For example .copy() bug as mentioned in [#769](https://github.com/pydata/xarray/issues/769)). I will examine all methods that involve changes in index and make sure they handle multiIndex correctly.
+    - **Week 3:** Follow-up on #702. Implement selection return objects with MultiIndex, and add `set_index`/`reset_index`/`swaplevel` to make it easier to create and manipulate multi-indexes.
+    - **Week 4:** Make `levels` accessible as coordinate variables for indexes and multi-indexes.
 
-###Milestone 2: Type conversion between pandas and xarray data structure
+###Milestone 2: Fill gaps between `pandas.Panel` and xarray
 
-**Week 6 - 9, June 27th - July 24th**
+**Week 5 - 7, June 20th - July 10th**
 
-  - To ensure that data can migrate between pandas and xarray data structure smoothly, I want to spend time on optimizing the conversion between data types. I will check current conversion methods, and implement more features - from multi-indexed/ hierarchical-indexed `pd.DataFrame` to `xr.DataSet`; from xr.DataSet to 2-D pd.DataFrame with PCA.
+  - To facilitate users’ smooth migration from `Panel` to xarray, I will unify features in `Panel` and xarray.
 
-    - **Week 6:** Test current conversion methods with newly added features in Milestone1 and fix existing bugs.
-    - **Week 7:** Based on [#702](https://github.com/pydata/xarray/pull/702) and Milestone1, I am going to take one step further and implement conversion from multiIndexed `pd.DataFrame` to `xr.DataSet`.
-    - **Week 8 - 9:** It might be useful to compress multi-dimensional metadata into 2-dimensional or 3-dimentional dataset and view in matplotlib. I am going to implement PCA method in xarray, and enable conversion from `xr.DataSet` to `pd.DataFrame` via PCA with certain data types. 
+    - **Week 5:** For methods with a different name in xarray, add wrappers with the corresponding `pd.panel` names. For example, `Panel.axes` and `Dataset.indexes` can be double-named.
+    - **Week 6:** Port missing arithmetic methods to xarray, such as `Panel.cumsum()`, `Panel.rank()` and `Panel.skew()`.
+    - **Week 7:** Implement missing indexing/selection methods in xarray, such as counterparts of `Panel.add_prefix()`, `Panel.sample()` and `Panel.sort_index()`. 
 
-###Milestone 3: Port xarray features to pandas
+###Milestone 3: Improve xarray performance/experience
 
-**Week 10 - 11, July 25th - Aug 7th** 
+**Week 8 - 10, July 11th - July 31st** 
 
-  - `pd.DataFrame` currently supports basic `.loc` indexing. I am going to introduce `xr.loc` back into pd.DataFrame to enable dictionary syntax for indexing. 
+  - As mentioned in [#659](https://github.com/pydata/xarray/issues/659), `groupby` method in xarray is slower compared to the method in pandas. I will refactor groupby in xarray to improve its performance. 
+  - To better present and convert data from `xr.DataSet` to `pd.DataFrame`, I will add a new feature to the conversion - transform from `xr.DataSet` to 2-D `pd.DataFrame` with PCA analysis.
+  
+    - **Week 8:** Improve `groupby` performance as mentioned in [#659](https://github.com/pydata/xarray/issues/659)
+    - **Week 9 - 10:** To compress multi-dimensional metadata into 2-dimensional or 3-dimentional dataset and view in matplotlib. I am going to implement PCA method in xarray, and enable conversion from `xr.DataSet` to `pd.DataFrame` via PCA analysis with certain data types.
+
+###Milestone 4: Port xarray features to pandas
+
+**Week 11 - 12, Aug. 1st- Aug. 14th**
+
+  - `pd.DataFrame` currently supports basic `.loc` indexing. I am going to introduce `xr.loc` back into pd.DataFrame to enable dictionary syntax for indexing.
   - I will also check for other useful features in xarray and migrate back to pandas.
 
-###Milestone 4: Clean-up and Wrap-up
+###Milestone 5: Clean-up and Wrap-up
 
-**Week 12 - 13, Aug. 8th - Aug. 23rd**
+**Week 13, Aug. 15th - Aug. 23rd**
 
   - Checked for and fix opening issues for xarray. 
   - Clean-up codes and finish documentations.
