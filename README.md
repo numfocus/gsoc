@@ -142,10 +142,10 @@ In alphabetic order.
     </td>
     <td>
        <h1>JuliaQuantum</h1>
-       <p>JuliaQuantum is ...
+       <p>JuliaQuantum is an open-source organization to build libraries in Julia for Quantum science and technology. 
        </p>
        <p>
-         <a href="">Website</a> | <a href="">Mailing List</a> | <a href="">Chat</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-juliaquantum.md">Ideas Page</a>
+         <a href="http://juliaquantum.github.io">Website</a> | <a href="https://gitter.im/JuliaQuantum/JuliaQuantum.github.io">Chat</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-juliaquantum.md">Ideas Page</a>
        </p>
     </td>
   </tr>
