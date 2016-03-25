@@ -20,7 +20,7 @@
 
 ### Abstract
 
-Currently sparse data structures provided by pandas exist in a `sparse` module under the `pandas` project. This package has few users and is easy to overlook when developing new features. I propose to change sparse to its own independent project named `pandas-sparse`, which will then be an external dependency of pandas. This will greatly enhance the modularity of pandas, as well as making it easier to develop new features for `pandas-sparse` by making it clear that the data structures are implemented differently. While making the module independent, compatibility with the `pandas/core` data structures will remain a top priority for `pandas-sparse`. 
+Currently sparse data structures provided by pandas exist in a `sparse` module under the `pandas` project. This package has few users and is easy to overlook when developing new features. I propose to change sparse to its own independent project named `pandas-sparse`, which will then be an external dependency of pandas. This will greatly enhance the modularity of pandas, as well as making it easier to develop new features for `pandas-sparse` by making it intuitive that these data structures have a different implementation. While making the module independent, compatibility with the `pandas/core` data structures will remain a top priority for `pandas-sparse`. 
 
 The `sparse` module also has many [issues](https://github.com/pydata/pandas/issues?q=is%3Aopen+is%3Aissue+label%3ASparse) that remain unresolved. The errors make sparse more difficult to use and require workarounds. On top of this there are enhancements to sparse that have been requested on Github. In addition to refactoring the module I plan to fix some of the more relevant bugs and implement requested enhancements, in order to provide a wider range of features to sparse data structures. 
 
@@ -32,19 +32,19 @@ The project goals are as follows:
 
 
 1. Fix existing bugs:
-	- The list of 'Bug' labelled issues is posted [here](https://github.com/pydata/pandas/issues?utf8=✓&q=is%3Aopen+is%3Aissue+label%3ASparse+label%3ABug) - will likely change before the start of gsoc.
-	- Before making sparse a separate module, it makes sense to fix some of the existing bugs. It is good to start with this for two reasons:
-		1. It will mean that known bugs are not transferred to the new `pandas-sparse` module.
-		2. It will be a good opportunity to gain a deep understanding of `sparse` internals and implementation, which will make the refactoring into a separate module easier. 
+	- The list of 'Bug' labelled issues is posted [here](https://github.com/pydata/pandas/issues?utf8=✓&q=is%3Aopen+is%3Aissue+label%3ASparse+label%3ABug) - will likely change before the start of gsoc
+	- It is good to start with this for two reasons:
+		1. It will mean that known bugs are not transferred to the new `pandas-sparse` module
+		2. It will be a good opportunity to gain a deep understanding of `sparse` internals and implementation, which will make the refactoring into a separate module easier
 		
 2. Refactor sparse to an independent module: 
 	- Change `sparse` to be an independent module named `pandas-sparse` which will be its own project with no dependency on `pandas`
 	- This `pandas-sparse` will then be an external dependency of `pandas`, which is how pandas will provide sparse functionality
-	- `pandas-sparse` will have its own tests, but the `sparse` module already has it's own tests so this should not be too difficult to refactor
+	- `pandas-sparse` will have its own tests, but the `sparse` module already has its own tests so this should not be too difficult to refactor
 	
 3. Implement enhancements:
-	- List of enhancements to implement: [here](https://github.com/pydata/pandas/issues?utf8=✓&q=is%3Aopen+is%3Aissue+label%3ASparse+label%3AEnhancement), if there is not enough time to for them all, I will choose a subset to implement. 
-	- This section will involve writing tests for the enhancements that will be implemented.
+	- List of enhancements to implement: [here](https://github.com/pydata/pandas/issues?utf8=✓&q=is%3Aopen+is%3Aissue+label%3ASparse+label%3AEnhancement), if there is not enough time to for them all, I will choose a subset to implement
+	- This section will involve writing tests for the enhancements that will be implemented
 
 
 --- 
@@ -53,9 +53,9 @@ The project goals are as follows:
 
 - Goal 1:
 	
-	Fixing the bugs will involve modifying existing code, making existing test pass, and perhaps adding 	tests that didn't catch the bug. As usual when working on Pandas issues I will add a reference to 		the Github issue that it relates to in the code for the fix.
+	Fixing the bugs will involve modifying existing code, making existing tests pass, and perhaps adding 	tests that didn't catch the bug. As usual when working on Pandas issues I will add a reference to 		the Github issue that it relates to in the code for the fix.
 
-	For example if I were to implement a fix for bug [#9850](https://github.com/pydata/pandas/issues/9850) in `sparse/series.py`
+	For example if I were to implement a fix for bug [#9850](https://github.com/pydata/pandas/issues/9850) in `sparse/series.py`:
 
 	```python
 	  ...
@@ -70,27 +70,29 @@ The project goals are as follows:
      
 - Goal 2:
 		
-	A new repository `pandas-sparse` will be created, hosted on Github under `pydata`. This will host the code for the project onwards. The module `pandas-sparse` will be have no dependency on `pandas` and will use `numpy` and `cython` internally.
+	A new repository `pandas-sparse` will be created, hosted on Github under `pydata`. This will host the code for the project onwards. The module `pandas-sparse` will be have no dependency on `pandas` and will use `numpy` and `cython` internally. 
 	
 	Example Usage:
 	
 	```python
 		from pandas_sparse import SparseDataFrame
 			
-		df = SparseDataFrame({'A': [1,0,2,0,0], 'B': [0,0,0,7,0],}, fill_value=0)
+		df = SparseDataFrame({'A': [1,0,2,0,0], 'B': [0,0,0,7,0],},
+				     		fill_value=0)
 	```
     
-	The fill_value is equal to `np.nan` by default 
+	The fill_value is equal to `np.nan` by default.
 
 	As mentioned before `pandas-sparse` will be an external dependency of pandas, therefore I will implement conversion methods to pandas that will allow dense data structures to be converted to sparse and vice versa. These methods currently convert between `pandas/core` and `pandas/sparse`, the new ones will only be implemented in `pandas/core` as `pandas-sparse` will not include `pandas` in any way.
 
-	Example Usage with `Series` will be the same for other data structures, this could also be an example of a test of the conversion methods:
+	Example usage with `Series` is show below. It will be almost the same for other data structures, this could also be an example of a test of the conversion methods:
 	
 	```python
 	    import numpy as np
 	    import padnas as pd
 	
-	    series = pd.Series(np.random.randn(5), index=['a', 'b', 'c', 'd', 'e'])
+	    series = pd.Series(np.random.randn(5), 
+	    		      		index=['a', 'b', 'c', 'd', 'e'])
 	
 	    ##Will return instance of pandas_sparse.SparseSeries
 	    sparse_series = series.to_sparse()
@@ -120,24 +122,22 @@ The project goals are as follows:
 	    def from_sparse(sparse_series):
 	        ...
 	        return Series(sparse_series.sp_values, 
-	                	  index=sparse_series.index,
+	                      index=sparse_series.index,
 	                      name=sparse_series.name)
 	
 	    ...
 	```
 
-	The repository for `pandas-sparse` will contain the implementation, of the sparse data structures, tests, and documentation. Most of the implementation will be taken from the existing `sparse` module of `pandas`, in addition to that it will be necessary to write code that implement some `internals` to make the module function independently, although it is largely independent already.
+	The repository for `pandas-sparse` will contain the implementation of the sparse data structures, tests, and documentation. Most of the implementation will be taken from the existing `sparse` module of `pandas`, in addition to that it will be necessary to write code that implement some `internals` to make the module function independently, although it is largely independent already.
 	
-	Finally the project will will use [Travis CI](https://travis-ci.org/) and [Codecov](https://codecov.io/) to track code coverage and whether builds work. Pandas already uses these tools so it should be easy for contributors to Pandas to add features to `pandas-sparse`.
+	Finally the project will use [Travis CI](https://travis-ci.org/) and [Codecov](https://codecov.io/) to track code coverage and whether builds work. Pandas already uses these tools so it should be easy for contributors to Pandas to add features to `pandas-sparse`.
 	
 	
 - Goal 3:
 	
 	When it comes to implementing the enhancements, as a general rule any new feature I will implement will have added tests, if the existing ones do not already cover it. The `pandas-sparse` module will have its documentation, there I will note the implementation of new enhancements as I make them. As is the case with `pandas` and `xarray` I will include a `whatsnew.rst` file in which new additions will be reported.
 	
-	For example when I implement the enhancement [#667](https://github.com/pydata/pandas/issues/667)
-	
-	I will make the corresponding entry into whatsnew in the `doc/source/whatsnew` of `pandas-sparse`:
+	For example when I implement the enhancement [#667](https://github.com/pydata/pandas/issues/667), I will make the corresponding entry into whatsnew in the `doc/source/whatsnew` of `pandas-sparse`:
 	
     
 	```rst
@@ -145,7 +145,9 @@ The project goals are as follows:
 		~~~~~~~~~~~
 			...
 		
-			- Multiple dtypes are now supported. Sparse data structures are no longer limited to only float (:issue:`667`).
+			- Multiple dtypes are now supported. 
+			  Sparse data structures are no longer limited to 
+			  only float (:issue:`667`).
 		
 			...
 		
