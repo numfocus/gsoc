@@ -145,7 +145,7 @@ In alphabetic order.
        <p>JuliaQuantum is an open-source organization to build libraries in Julia for Quantum science and technology. 
        </p>
        <p>
-         <a href="http://juliaquantum.github.io">Website</a> | <a href="https://gitter.im/JuliaQuantum/JuliaQuantum.github.io">Chat</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2015/ideas-list-juliaquantum.md">Ideas Page</a>
+         <a href="http://juliaquantum.github.io">Website</a> | <a href="https://gitter.im/JuliaQuantum/JuliaQuantum.github.io">Chat</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaquantum.md">Ideas Page</a>
        </p>
     </td>
   </tr>
