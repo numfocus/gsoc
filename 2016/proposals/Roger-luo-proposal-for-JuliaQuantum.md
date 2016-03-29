@@ -52,7 +52,7 @@ A long-term aim of the project is to equip the [JuliaQuantum](http://juliaquantu
 
 **A brief structure of this project**
 
-![](https://github.com/Roger-luo/Resources/tree/master/GSoC/2016/imag/structure.png)
+[structure.png](https://github.com/Roger-luo/Resources/tree/master/GSoC/2016/imag/structure.png)
 
 ##### Explanation for each layer
 
@@ -123,7 +123,7 @@ Explanation of nouns:
 
 ### Structure of Types
 
-![](https://github.com/Roger-luo/Resources/tree/master/GSoC/2016/imag/typestructure.png)
+[type_structure.png](https://github.com/Roger-luo/Resources/tree/master/GSoC/2016/imag/typestructure.png)
 
 
 ### Prototype
@@ -316,7 +316,7 @@ Prototype 2: quantum  Fourier Transformation
 [wiki](https://en.wikipedia.org/wiki/Quantum_Fourier_transform)
 [implementation in adiabatic computational model](http://journal.frontiersin.org/article/10.3389/fphy.2014.00044/full)
 
-![QFT circuit pic](imag/fourier.svg)
+[QFT circuit.png](https://github.com/Roger-luo/Resources/blob/master/GSoC/2016/imag/fourier.svg)
 
 ```julia
 # Quantum Fourier Transformation
@@ -350,7 +350,7 @@ show()
 
 Prototype 3:Daemon-like cooling
 
-![cooling circuit](imag/circuit.png)
+[cooling circuit.png](https://github.com/Roger-luo/Resources/blob/master/GSoC/2016/imag/circuit.png)
 
 *This picture comes from [doi:10.103](http://www.nature.com/nphoton/journal/v8/n2/full/nphoton.2013.354.html)*
 
