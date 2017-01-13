@@ -1,12 +1,25 @@
-# Google Summer of Code 2016
+# Google Summer of Code 2017
 
+<!--
 [NumFOCUS][] is a mentoring organization for
-[Google Summer of Code 2016][GSoC].
+[Google Summer of Code 2017][GSoC].
+[NumFOCUS][], an umbrella organization, supports and
+promotes world-class, innovative, open source scientific software.
+-->
+
+[NumFOCUS][] is applying to be a mentoring organization for
+[Google Summer of Code 2017][GSoC].
 [NumFOCUS][], an umbrella organization, supports and
 promotes world-class, innovative, open source scientific software.
 
+<!--
 This Git repository stores information about NumFOCUS' participation in
-Google Summer of Code 2016 program and previous editions.
+Google Summer of Code 2017 program and previous editions.
+-->
+
+This Git repository stores information about NumFOCUS'
+application for Google Summer of Code 2017 and
+participation in previous editions.
 
 ## Students and Mentors
 
@@ -17,6 +30,8 @@ For any questions please open an issue in our [issue tracker][issues].
 Or send a email to gsoc@numfocus.org, our mailing list address, and
 please consider subscribing to the mailing list at
 https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc.
+
+<!--
 
 ## Organizations Confirmed Under NumFOCUS Umbrella
 
@@ -101,8 +116,6 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-
-  <!-- Uncomment after contact Julia
   <tr>
     <td>
       <img width="300px" src="https://camo.githubusercontent.com/e1ae5c7f6fe275a50134d5889a68f0acdd09ada8/687474703a2f2f6a756c69616c616e672e6f72672f696d616765732f6c6f676f5f68697265732e706e67"/>
@@ -117,8 +130,6 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-  -->
-
   <tr>
     <td>
       <img width="300px" src="http://www.juliaopt.org/images/juliaopt.svg"/>
@@ -196,8 +207,6 @@ In alphabetic order.
     </td>
   </tr>
 
-
-  <!-- Uncomment after contact Spyder
   <tr>
     <td>
       <img width="300px"
@@ -211,9 +220,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-  -->
 
-  <!-- Uncomment after contact Sumpy
   <tr>
     <td>
       <img width="300px" src="http://www.sympy.org/static/images/logo.png">
@@ -226,9 +233,9 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-  -->
 
 </table>
+-->
 
 ## Organizations Eligible Under NumFOCUS Umbrella
 
@@ -244,6 +251,7 @@ a sub-org must:
 
 2.  Have a good ideas page.
 
+<!--
 ## NumFOCUS' Fiscally Sponsored Projects GSoC Status
 
 | Project | Status | Ideas Pages |
@@ -292,6 +300,7 @@ could receive their applications.**
 | [Dipy] | Applying under PSF umbrella | https://wiki.python.org/moin/SummerOfCode/2016 |
 | [JuliaOpt] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaopt.md |
 | [JuliaQuantum] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaquantum.md |
+-->
 
 [AstroPy]: http://www.astropy.org/
 [Bokeh]: http://bokeh.pydata.org/
@@ -303,7 +312,7 @@ could receive their applications.**
 [DyND]: http://libdynd.org/
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
-[IL]: 2016/ideas-list.md
+[IL]: 2017/ideas-list.md
 [IPython]: http://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: http://julialang.org/
