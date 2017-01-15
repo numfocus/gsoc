@@ -12,13 +12,6 @@
         - [Proposal draft](#proposal-draft)
         - [Final Proposal](#final-proposal)
 - [Organization Instructions](#organization-instructions)
-    - [biocore](#biocore)
-    - [DyND](#dynd)
-    - [Gensim](#gensim)
-    - [JuliaOpt](#juliaopt)
-    - [matplotlib](#matplotlib)
-    - [Pandas](#pandas)
-    - [Software Carpentry](#software-carpentry)
 
 <!-- markdown-toc end -->
 
