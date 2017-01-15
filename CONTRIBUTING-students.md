@@ -43,17 +43,18 @@ At the same time if you have experience using your project of choice or one of i
 
 **Communication**
 
-- Write a short report for us every second week, this can be a blog post
+- Write a short report for us every second week, this can be a blog post.
 - Commit early and commit often! Push to a public repository (e.g. github) so that we can see and review your work.
-- Actively work on our project timeline and communicate with us during the community bonding period
-- Communicate every working day with your mentor. Just say "Hello" if you like. It can be via email, skype, github comments, etc
+- Actively work on our project timeline and communicate with us during the community bonding period.
+- Communicate every working day with your mentor. Preferably in public using the standard channels of your project.
 - If there is a reason why you can't work or can't contact us on a regular basis please make us aware of this.
 - If you don't communicate with us regularly we will fail you.
 
-**Midterm and Final evaluations**
+**Evaluations**
 
-- Set a realistic goal for mid-term. If you fail to meet your own goal we are more likely to fail you in the evaluations
-- Have some code merged into the current development branch of your project at the end of the summer to pass the final evaluation
+- Set a realistic goal for all evaluation deadlines. If you fail to meet your own goal we are more likely to fail you in the evaluations.
+- Create at least one public commit that has been reviewed before each evaluation.
+- Have at least one commit merged into the current development branch of your project at the end of the summer to pass the final evaluation.
 - The last point is a hard requirement. Make sure that your time plan includes time for the review process.
 
 
@@ -87,9 +88,9 @@ Overall, your application should make us believe that you are capable of complet
 
 ### Dividing your project
 
-We require that all of our students have at least one commit in the development branch of your project before the end of the summer. The best way to achieve this is to divide your project into small self contained subprojects and plan to merge at least one of them around midterm. 
+We require that all of our students have at least one commit in the development branch of your project before the end of the summer. The best way to achieve this is to divide your project into small self contained subprojects and plan to merge at least one of them around the phase 2 evaluations. We also require you to have at least one commit reviewed by your mentor before each evaluation, the division of the project will help with this too. But don't worry about it we are sure that you will create dozens if not hundreds of commits for your mentors review over the summer.
 
-During your summer you'll likely encounter bugs in your project or find code that can be refactored to help you implement your ideas. You can also immediately fix them and help us all out. This has several advantages. All your pull request will only concentrate on specific features and are much better to review. And you'll also get direct feedback from other devs and users during the summer.
+During your summer you'll likely encounter bugs in your project or find code that can be refactored to help you implement your ideas. You can also immediately fix them and help us all out. This has several advantages. All your pull request will only concentrate on specific features and are much better to review. And you'll also get direct feedback from other developers and users during the summer.
 
 Since this is a hard requirement we as mentors will also have an eye on that and check if your proposal incorporates it and also warn you ahead of time during the summer if we see that you might not make it. Communicating with us on a regular basis is vital for that, though. 
 
@@ -186,33 +187,33 @@ $ pandoc -f markdown -t pdf YYYY/proposals/your-name.md
 **Please use the instructions of the project/organization
 you are interested in work with.**
 
-## biocore
+<!-- ## biocore -->
 
-Read [default instructions](#default-instructions).
+<!-- Read [default instructions](#default-instructions). -->
 
-## DyND
+<!-- ## DyND -->
 
-Read [default instructions](#default-instructions).
+<!-- Read [default instructions](#default-instructions). -->
 
-## Gensim
+<!-- ## Gensim -->
 
-Read [default instructions](#default-instructions).
+<!-- Read [default instructions](#default-instructions). -->
 
-## JuliaOpt
+<!-- ## JuliaOpt -->
 
-Read [default instructions](#default-instructions).
+<!-- Read [default instructions](#default-instructions). -->
 
-## matplotlib
+<!-- ## matplotlib -->
 
-Read [default instructions](#default-instructions).
+<!-- Read [default instructions](#default-instructions). -->
 
-## Pandas
+<!-- ## Pandas -->
 
-Read [default instructions](#default-instructions).
+<!-- Read [default instructions](#default-instructions). -->
 
-## Software Carpentry
+<!-- ## Software Carpentry -->
 
-Read [default instructions](#default-instructions).
+<!-- Read [default instructions](#default-instructions). -->
 
 [IL]: 2015/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
