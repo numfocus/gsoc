@@ -12,7 +12,12 @@ your addition.**
 
 **Short Version**
 
-If you have a proposal, please create an [issue][issues] for it.
+If you have a proposal, please create an [issue][issues] for it. 
+Please make sure that the project can be partly completed during the summer so that students pass the final evaluation. 
+See the expectations in the [student guide](CS).
+
+Please also
+read the [student guide](CS) 
 
 **Long Version**
 
@@ -29,3 +34,4 @@ If you have a proposal,
 [GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
 [issues]: https://github.com/numfocus/gsoc/issues
 [OT]: organization/team.md
+[CS]: CONTRIBUTING-students.md
