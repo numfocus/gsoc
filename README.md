@@ -238,6 +238,19 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="300px" src="http://www.numfocus.org/uploads/6/0/6/9/60696727/nteract-fc.png?120">
+    </td>
+    <td>
+       <h1>nteract</h1>
+       <p>nteract is an open-source, desktop-based interactive computing application that is focused on accessibility and composability. nteract allows users to edit and share interactive notebook documents that contain explanatory text, executive code, and interactive visualizations. By combining the best of the web and the best of the desktop, nteract provides a user experience that is seamless and enjoyable for all.</p>
+       <p>
+         <a href="https://nteract.io/">Website</a> | <a href="https://slackin-egwcornswi.now.sh/">Gitter</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="300px" src="http://www.numfocus.org/uploads/6/0/6/9/60696727/pymc3_1.png">
     </td>
     <td>
