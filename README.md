@@ -244,7 +244,7 @@ In alphabetic order.
        <h1>nteract</h1>
        <p>nteract is an open-source, desktop-based interactive computing application that is focused on accessibility and composability. nteract allows users to edit and share interactive notebook documents that contain explanatory text, executive code, and interactive visualizations. By combining the best of the web and the best of the desktop, nteract provides a user experience that is seamless and enjoyable for all.</p>
        <p>
-         <a href="https://nteract.io/">Website</a> | <a href="https://slackin-egwcornswi.now.sh/">Gitter</a>
+         <a href="https://nteract.io/">Website</a>
        </p>
     </td>
   </tr>
