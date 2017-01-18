@@ -37,5 +37,5 @@ and different teams with FEniCS and Kitware developers.
 
 ### First steps
 
-Install FEniCS from https://bitbucket.org/fenics-project and try out the demos. Install [ParaView](http://www.paraview.org)
+Install FEniCS from https://bitbucket.org/fenics-project/dolfin and try out the demos. Install [ParaView](http://www.paraview.org)
 and view the output from the FEniCS demos.
