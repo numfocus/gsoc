@@ -3,6 +3,30 @@
 This is the list of people helping
 organizing Google Summer of Code for NumFOCUS.
 
+## 2017
+
+### Admin
+
+| Name          | Melange Profile | GitHub Profile |
+|---------------|-----------------|----------------|
+| Max Linke     |                 | kain88-de      |
+| Raniere Silva | r.gaia.cs       | rgaiacs        |
+
+### Mentors
+
+#### PyMC3
+
+| Name               | GitHub Profile |
+|--------------------|----------------|
+
+#### MDAnalysis
+
+| Name              | GitHub Profile |
+|-------------------|----------------|
+| Richard Gowers    | richardjgowers |
+| Manuel  Nuno Melo | mnmelo         |
+| Jonathon  Barnoud | jbarnoud       |
+
 ## 2016
 
 **NumFOCUS Administrator for GSoC**: Raniere Silva
