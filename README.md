@@ -251,84 +251,89 @@ a sub-org must:
 
 2.  Have a good ideas page.
 
-<!--
 ## NumFOCUS' Fiscally Sponsored Projects GSoC Status
 
-| Project | Status | Ideas Pages |
-| ------- | ------ | ----------- |
-| [AstroPy] | Under [OpenAstronomy](http://openastronomy.org/) | http://openastronomy.org/gsoc/gsoc2016/ideas.html |
-| [Data Carpentry](DataCarpentry) | Not going to participate | N/A |
-| [IPython] | Unknow | |
-| [Julia] | Applying as separate organization | |
-| [Matplotlib] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-matplotlib.md |
-| [NumPy] | Applying under PSF umbrella | https://wiki.python.org/moin/SummerOfCode/2016 |
-| [pandas] | Applying under NumFOCUS umbrella | https://github.com/pydata/pandas/wiki/Google-Summer-of-Code |
-| [Project Jupyter](Jupyter) | Unknown | |
-| [PyTables] | Unknown | |
-| [rOpenSci]  | Not going to participate | N/A |
-| [Software Carpentry](SoftwareCarpentry) | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-swc.md |
-| [SymPy] | Applying as separate organization | https://github.com/sympy/sympy/wiki/GSoC-2016-Ideas |
+| Project                         | Status                           | Ideas Pages                                         |
+| -------                         | ------                           | -----------                                         |
+| [AstroPy]                       | Unkown                           |                                                     |
+| [Data Carpentry](DataCarpentry) | Unkown                           |                                                     |
+| [FEniCS Project](FEniCSproject) | Unkown                           |                                                     |
+| [IPython]                       | Unkown                           |                                                     |
+| [Julia]                         | Unkown                           |                                                     |
+| [Matplotlib]                    | Unkown                           |                                                     |
+| [nteract]                       | Unkown                           |                                                     |
+| [NumPy]                         | Unkown                           |                                                     |
+| [Project Jupyter](Jupyter)      | Unkown                           |                                                     |
+| [pandas]                        | Unkown                           |                                                     |
+| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella |                                                     |
+| [PyTables]                      | Unkown                           |                                                     |
+| [quantecon]                     | Unkown                           |                                                     |
+| [rOpenSci]                      | Unkown                           |                                                     |
+| [Software Carpentry](SCF)       | Unkown                           |                                                     |
+| [SymPy]                         | Applying as a separate org       | https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas |
+| [Stan]                          | Unkown                           |                                                     |
+| [yt]                            | Unkown                           |                                                     |
 
 ## NumFOCUS' Affiliated Projects GSoC Status
 
-| Project | Status | Ideas Pages |
-| ------- | ------ | ----------- |
-| [Bokeh] | Unknown | |
-| [Cython] | Unknown | |
-| [Dask] | Unknown | |
-| [DyND] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-dynd.md |
-| [Gensim] | Applying under NumFOCUS umbrella | https://github.com/piskvorky/gensim/wiki/Student-Projects
-| [Numba] | Unknown |
-| [Orange] | Applying as separate organization | https://github.com/biolab/orange3/wiki/GSoC-2016#project-ideas |
-| [PythonXY] | Unknown | |
-| [scikit-bio] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-biocore.md |
-| [scikit-image] | Unknown | |
-| [scikit-learn] | Unknown | |
-| [SciPy] | Applying under PSF umbrella | https://wiki.python.org/moin/SummerOfCode/2016 |
-| [Spyder] | Unknown | |
-| [Statmodels] | Applying as separate organization | https://github.com/statsmodels/statsmodels/wiki/Google-Summer-of-Code-2016 |
-| [Theano] | Unknown |
-| [yt] | Under [OpenAstronomy](http://openastronomy.org/) | http://openastronomy.org/gsoc/gsoc2016/ideas.html |
+| Project        | Status                           | Ideas Pages |
+| -------        | ------                           | ----------- |
+| [Bokeh]        | Unkown                           |             |
+| [Conda]        | Unkown                           |             |
+| [Cython]       | Unkown                           |             |
+| [Dask]         | Unkown                           |             |
+| [DyND]         | Unkown                           |             |
+| [Gensim]       | Applying under NumFOCUS umbrella |             |
+| [Numba]        | Unkown                           |             |
+| [Orange]       | Unkown                           |             |
+| [PythonXY]     | Unkown                           |             |
+| [SciPy]        | Applying under the PSF umbrella  |             |
+| [scikit-image] | Unkown                           |             |
+| [scikit-bio]   | Unkown                           |             |
+| [scikit-learn] | Unkown                           |             |
+| [Statmodels]   | Unkown                           |             |
+| [Spyder]       | Unkown                           |             |
+| [Theano]       | Unkown                           |             |
+| [xarray]       | Unkown                           |             |
 
 ## Other Projects GSoC Status
 
 **This session intend to help students to find mentoring organizations that
 could receive their applications.**
 
-| Project | Status | Ideas Pages |
-| ------- | ------ | ----------- |
-| [Dipy] | Applying under PSF umbrella | https://wiki.python.org/moin/SummerOfCode/2016 |
-| [JuliaOpt] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaopt.md |
-| [JuliaQuantum] | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-juliaquantum.md |
--->
+| Project      | Status                           | Ideas Pages                                                           |
+| -------      | ------                           | -----------                                                           |
+| [MDAnalysis] | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2017-Project-Ideas |
 
 [AstroPy]: http://www.astropy.org/
 [Bokeh]: http://bokeh.pydata.org/
 [CONTRIBUTING]: CONTRIBUTING.md
+[Conda]: https://github.com/conda/conda
 [Cython]: http://cython.org/
 [Dask]: http://dask.pydata.org/
 [DataCarpentry]: http://datacarpentry.org/
-[Dipy]: http://dipy.org/
 [DyND]: http://libdynd.org/
+[FEniCSproject]: https://fenicsproject.org/
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
 [IL]: 2017/ideas-list.md
 [IPython]: http://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: http://julialang.org/
-[JuliaOpt]: http://www.juliaopt.org/
-[JuliaQuantum]: http://juliaquantum.github.io/
 [Jupyter]: http://jupyter.org/
 [Matplotlib]: http://matplotlib.sourceforge.net/
+[MDAnalysis]: http://mdanalysis.org
 [Numba]: http://numba.pydata.org/
 [NumFOCUS-Projects]: http://numfocus.org/projects/index.html
 [NumFOCUS]: http://numfocus.org/
 [NumPy]: http://numpy.scipy.org/
+[nteract]: https://nteract.io/
 [Orange]: http://orange.biolab.si/
 [pandas]: http://pandas.pydata.org/
 [PyTables]: http://pytables.github.com/
 [PythonXY]: http://code.google.com/p/pythonxy/wiki/Welcome
 [rOpenSci]: http://ropensci.org/
+[quantecon]: http://quantecon.org/
 [SCF]: http://software-carpentry.org/scf/index.html
 [scikit-bio]: http://scikit-bio.org/
 [scikit-image]: http://scikit-image.org/
@@ -337,6 +342,7 @@ could receive their applications.**
 [SoftwareCarpentry]: http://software-carpentry.org/
 [Spyder]: http://code.google.com/p/spyderlib/
 [Statmodels]: http://statsmodels.sourceforge.net/
+[Stan]: http://mc-stan.org/
 [SymPy]: http://sympy.org
 [Theano]: http://deeplearning.net/software/theano/
 [xarray]: http://xarray.pydata.org/
