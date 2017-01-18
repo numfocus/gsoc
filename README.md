@@ -275,7 +275,7 @@ a sub-org must:
 | [IPython]                       | Unkown                           |                                                     |
 | [Julia]                         | Unkown                           |                                                     |
 | [Matplotlib]                    | Unkown                           |                                                     |
-| [nteract]                       | Unkown                           |                                                     |
+| [nteract]                       | Applying under NumFOCUS umbrella | https://github.com/nteract/nteract/wiki/GSoC-2017-Ideas |
 | [NumPy]                         | Unkown                           |                                                     |
 | [Project Jupyter](Jupyter)      | Unkown                           |                                                     |
 | [pandas]                        | Unkown                           |                                                     |
