@@ -282,46 +282,46 @@ a sub-org must:
 
 | Project                         | Status                           | Ideas Pages                                         |
 | -------                         | ------                           | -----------                                         |
-| [AstroPy]                       | Unkown                           |                                                     |
-| [Data Carpentry](DataCarpentry) | Unkown                           |                                                     |
-| [FEniCS Project](FEniCSproject) | Unkown                           |                                                     |
-| [IPython]                       | Unkown                           |                                                     |
-| [Julia]                         | Unkown                           |                                                     |
-| [Matplotlib]                    | Unkown                           |                                                     |
+| [AstroPy]                       | Unknown                          |                                                     |
+| [Data Carpentry](DataCarpentry) | Unknown                          |                                                     |
+| [FEniCS Project](FEniCSproject) | Unknown                          |                                                     |
+| [IPython]                       | Unknown                          |                                                     |
+| [Julia]                         | Unknown                          |                                                     |
+| [Matplotlib]                    | Unknown                          |                                                     |
 | [nteract]                       | Applying under NumFOCUS umbrella | https://github.com/nteract/nteract/wiki/GSoC-2017-Ideas |
-| [NumPy]                         | Unkown                           |                                                     |
-| [Project Jupyter](Jupyter)      | Unkown                           |                                                     |
-| [pandas]                        | Unkown                           |                                                     |
+| [NumPy]                         | Unknown                          |                                                     |
+| [Project Jupyter](Jupyter)      | Unknown                          |                                                     |
+| [pandas]                        | Unknown                          |                                                     |
 | [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella |                                                     |
-| [PyTables]                      | Unkown                           |                                                     |
-| [quantecon]                     | Unkown                           |                                                     |
-| [rOpenSci]                      | Unkown                           |                                                     |
-| [Software Carpentry](SCF)       | Unkown                           |                                                     |
+| [PyTables]                      | Unknown                          |                                                     |
+| [quantecon]                     | Unknown                          |                                                     |
+| [rOpenSci]                      | Unknown                          |                                                     |
+| [Software Carpentry](SCF)       | Unknown                          |                                                     |
 | [SymPy]                         | Applying as a separate org       | https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas |
-| [Stan]                          | Unkown                           |                                                     |
-| [yt]                            | Unkown                           |                                                     |
+| [Stan]                          | Unknown                          |                                                     |
+| [yt]                            | Unknown                          |                                                     |
 
 ## NumFOCUS' Affiliated Projects GSoC Status
 
 | Project        | Status                           | Ideas Pages |
 | -------        | ------                           | ----------- |
-| [Bokeh]        | Unkown                           |             |
-| [Conda]        | Unkown                           |             |
-| [Cython]       | Unkown                           |             |
-| [Dask]         | Unkown                           |             |
-| [DyND]         | Unkown                           |             |
+| [Bokeh]        | Unknown                          |             |
+| [Conda]        | Unknown                          |             |
+| [Cython]       | Unknown                          |             |
+| [Dask]         | Unknown                          |             |
+| [DyND]         | Unknown                          |             |
 | [Gensim]       | Applying under NumFOCUS umbrella |             |
-| [Numba]        | Unkown                           |             |
-| [Orange]       | Unkown                           |             |
-| [PythonXY]     | Unkown                           |             |
+| [Numba]        | Unknown                          |             |
+| [Orange]       | Unknown                          |             |
+| [PythonXY]     | Unknown                          |             |
 | [SciPy]        | Applying under the PSF umbrella  |             |
-| [scikit-image] | Unkown                           |             |
-| [scikit-bio]   | Unkown                           |             |
-| [scikit-learn] | Unkown                           |             |
-| [Statmodels]   | Unkown                           |             |
-| [Spyder]       | Unkown                           |             |
-| [Theano]       | Unkown                           |             |
-| [xarray]       | Unkown                           |             |
+| [scikit-image] | Unknown                          |             |
+| [scikit-bio]   | Unknown                          |             |
+| [scikit-learn] | Unknown                          |             |
+| [Statmodels]   | Unknown                          |             |
+| [Spyder]       | Unknown                          |             |
+| [Theano]       | Unknown                          |             |
+| [xarray]       | Unknown                          |             |
 
 ## Other Projects GSoC Status
 
