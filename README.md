@@ -292,7 +292,7 @@ a sub-org must:
 | [NumPy]                         | Unknown                          |                                                     |
 | [Project Jupyter](Jupyter)      | Unknown                          |                                                     |
 | [pandas]                        | Unknown                          |                                                     |
-| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella |                                                     |
+| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | https://github.com/pymc-devs/pymc3/wiki/GSoC-2017-projects |
 | [PyTables]                      | Unknown                          |                                                     |
 | [quantecon]                     | Unknown                          |                                                     |
 | [rOpenSci]                      | Unknown                          |                                                     |
