@@ -4,6 +4,7 @@
 - [NumFOCUS Profile][OA]
 - [NumFOCUS Questionnaire][OQ]
 - [NumFOCUS Team][OT]
+- [Organization Stipend][stipend]
 
 For informations, check
 http://en.flossmanuals.net/melange/org-application-period/.
@@ -13,3 +14,4 @@ http://en.flossmanuals.net/melange/org-application-period/.
 [OP]: operations.md
 [OQ]: questionnaire.md
 [OT]: team.md
+[stipend]: stipend.md
