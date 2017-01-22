@@ -146,20 +146,20 @@ In alphabetic order.
   <!-- </tr> -->
 
 
-  <!-- <tr> -->
-  <!--   <td> -->
-  <!--     <img width="300px" src="http://matplotlib.org/_static/logo2.png" /> -->
-  <!--   </td> -->
-  <!--   <td> -->
-  <!--      <h1>matplotlib</h1> -->
-  <!--      <p>matplotlib is a Python 2D plotting library which produces publication -->
-  <!--      quality figures in a variety of hardcopy formats and interactive -->
-  <!--      environments across platforms.</p> -->
-  <!--      <p> -->
-  <!--        <a href="https://matplotlib.org/">Website</a> | <a href="https://github.com/matplotlib/matplotlib/issues">Project Discussions</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-matplotlib.md">Ideas Page</a> -->
-  <!--      </p> -->
-  <!--   </td> -->
-  <!-- </tr> -->
+  <tr>
+    <td>
+      <img width="300px" src="http://matplotlib.org/_static/logo2.png" />
+    </td>
+    <td>
+       <h1>matplotlib</h1>
+       <p>matplotlib is a Python 2D plotting library which produces publication
+       quality figures in a variety of hardcopy formats and interactive
+       environments across platforms.</p>
+       <p>
+         <a href="https://matplotlib.org/">Website</a> | <a href="https://github.com/matplotlib/matplotlib/issues">Project Discussions</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-matplotlib.md">Ideas Page</a>
+       </p>
+    </td>
+  </tr>
 
 
   <!-- <tr> -->
@@ -236,6 +236,22 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+
+  <tr>
+    <td>
+      <img width="300px" src="http://matplotlib.org/_static/logo2.png" />
+    </td>
+    <td>
+       <h1>matplotlib</h1>
+       <p>matplotlib is a Python 2D plotting library which produces publication
+       quality figures in a variety of hardcopy formats and interactive
+       environments across platforms.</p>
+       <p>
+         <a href="https://matplotlib.org/">Website</a> | <a href="https://github.com/matplotlib/matplotlib/issues">Project Discussions</a>
+       </p>
+    </td>
+  </tr>
+
   <tr>
     <td>
       <img width="300px" src="http://www.numfocus.org/uploads/6/0/6/9/60696727/nteract-fc.png?120">
@@ -287,7 +303,7 @@ a sub-org must:
 | [FEniCS Project](FEniCSproject) | Unknown                          |                                                            |
 | [IPython]                       | Unknown                          |                                                            |
 | [Julia]                         | Applying as separate org         | http://julialang.org/soc/ideas-page                        |
-| [Matplotlib]                    | Unknown                          |                                                            |
+| [Matplotlib]                    | Applying under NumFOCUS umbrella |                                                            |
 | [nteract]                       | Applying under NumFOCUS umbrella | https://github.com/nteract/nteract/wiki/GSoC-2017-Ideas    |
 | [NumPy]                         | Not participating                |                                                            |
 | [Project Jupyter](Jupyter)      | Unknown                          |                                                            |
