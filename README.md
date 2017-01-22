@@ -145,23 +145,6 @@ In alphabetic order.
   <!--   </td> -->
   <!-- </tr> -->
 
-
-  <tr>
-    <td>
-      <img width="300px" src="http://matplotlib.org/_static/logo2.png" />
-    </td>
-    <td>
-       <h1>matplotlib</h1>
-       <p>matplotlib is a Python 2D plotting library which produces publication
-       quality figures in a variety of hardcopy formats and interactive
-       environments across platforms.</p>
-       <p>
-         <a href="https://matplotlib.org/">Website</a> | <a href="https://github.com/matplotlib/matplotlib/issues">Project Discussions</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-matplotlib.md">Ideas Page</a>
-       </p>
-    </td>
-  </tr>
-
-
   <!-- <tr> -->
   <!--   <td> -->
   <!--     <img width="300px" src="http://pandas.pydata.org/_static/pandas_logo.png" /> -->
