@@ -1,4 +1,4 @@
-# matplotlib ideas page
+# Matplotlib ideas page
 
 These are just starting points.  Your own ideas are most welcome.
 
@@ -20,7 +20,7 @@ Any questions or comments should be asked on
 
 ### Abstract
 
-matplotlib currently has a very simple method to layout the components
+Matplotlib currently has a very simple method to layout the components
 of a figure (axes, titles, tick labels).  This unfortunately makes it
 very common for text to run together or outside of the image.  A
 proper constraint-based layout engine should be able to automatically
@@ -52,7 +52,7 @@ text layout, would also be an asset.
 
 ### Abstract
 
-matplotlib's documentation has grown organically over time and is now
+Matplotlib's documentation has grown organically over time and is now
 disorganized and out-of-date in many areas.  This task would involve
 making the documentation more user-accessible through some combination
 of:
@@ -78,7 +78,7 @@ repetitive tasks will also be required.
 ### Open Source Development Experience
 
 A contributor to this project will have to have broad experience using
-matplotlib and Python and have good technical writing skills.  A deep
+Matplotlib and Python and have good technical writing skills.  A deep
 understanding of Sphinx, including writing extensions, would also be a
 major asset.
 
@@ -87,9 +87,9 @@ major asset.
 
 ### Abstract
 
-matplotlib's existing text layout engine is appropriate only for
+Matplotlib's existing text layout engine is appropriate only for
 standard English-like left-to-right languages.  In order to open
-matplotlib usage up to a broader international audience, it would be
+Matplotlib usage up to a broader international audience, it would be
 nice to wrap an existing internationalized text layout engine, such as
 [Pango](http://www.pango.org/)/[Harfbuzz](https://github.com/behdad/harfbuzz).
 
@@ -121,7 +121,7 @@ Unicode Standard and text layout algorithms is required.
 
 ### Abstract
 
-matplotlib 1.5 added direct support for plotting data frames.
+Matplotlib 1.5 added direct support for plotting data frames.
 However, there are still a few related tasks yet to be done.  An
 important one is detecting when plotting categorical data
 (i.e. enumerations) and updating the tick labels accordingly.
@@ -159,13 +159,13 @@ expertise working with categorical data helpful but not required.
 
 ### Abstract
 
-Many of matplotlib's higher-level plotting methods, such as `hist`
+Many of Matplotlib's higher-level plotting methods, such as `hist`
 (histogram), return lists of artists that it draws.  Unfortunately,
 this loses the connection to the original data, or any relationships
 that those artists may have.  We would like to refactor these methods
 to return "compound artist" classes that would retain the original
 data and have methods to further modify the artists as a whole in
-meaningful ways.  In addition to improving the API for matplotlib
+meaningful ways.  In addition to improving the API for Matplotlib
 users, this opens up the possibility of better data exchange with
 other tools.
 
