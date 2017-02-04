@@ -5,14 +5,6 @@ These are just starting points.  Your own ideas are most welcome.
 Any questions or comments should be asked on
 [matplotlib-devel list](https://mail.python.org/mailman/listinfo/matplotlib-devel).
 
-## Table of contents
-
-* [Layout manager](#layout)
-* [Documentation improvements](#documentation)
-* [International text handling](#text)
-* [Categorical axes](#categorical)
-* [Compound artists](#compound)
-
 ---------
 
 <a name="layout"></a>
@@ -35,7 +27,8 @@ layout difficulties such as twinned axes and colorbars.
 
 This work will likely be based on an existing constraint-solving
 library, such as
-[Cassowary](http://constraints.cs.washington.edu/cassowary/).  Likely
+[Cassowary](http://constraints.cs.washington.edu/cassowary/) as implemneted by
+[kiwi](https://github.com/nucleic/kiwi).  Likely
 this would be implemented in two phases: (1) the implementation of
 existing layout abilities in terms of constraints, accessible through
 a new API, and (2) exposing this new implementation through the
@@ -48,41 +41,75 @@ linear constraint solvers.  Computer graphics concepts, particularly
 text layout, would also be an asset.
 
 <a name="documentation"></a>
-## Documentation improvements
-
+## imshow performance
 ### Abstract
 
-Matplotlib's documentation has grown organically over time and is now
-disorganized and out-of-date in many areas.  This task would involve
-making the documentation more user-accessible through some combination
-of:
 
-1. Reorganizing examples by keywords
-
-1. Redoing our Sphinx usage to put a single docstring per page and
-   linking to frequently repeated content
-
-1. Modernizing narrative documentation to follow best practice
+When images are rendered to the canvas, we use >4x the input size in
+internal temporary arrays.  In some cases, with masked images or with
+values out of the normalization range, this is un-avoidable, but in
+many cases we could make do with only one full size intermediate copy. See
+[#6952](https://github.com/matplotlib/matplotlib/issues/6952) for more details.
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
-| Light | Python, Sphinx | [@mdboom][] [@tacaswell][] |
+| Intermediate  | Python, | [@tacaswell][] |
+
 
 ### Technical details
 
-Beside just writing, this task will involve working closely with our
-Sphinx-based documentation production system, possibly writing and
-adapting extensions.  Writing tools and scripts in Python to automate
-repetitive tasks will also be required.
+One approach at this would be add some fast-paths through the existing code.
+
+Extending the current interpolation system to inculde dedicated (external) resampling code, for
+example datashader.  See [bokeh/datashader#200](https://github.com/bokeh/datashader/pull/200) for
+a proof of concept.
+
+Folding something
+like
+[mpl-modest-image](https://github.com/ChrisBeaumont/mpl-modest-image)
+directly into Matplotlib would alo be in scope for this project.
+
+### Open Source Development Experince
+
+This task will be majority in python and requires a working knowledge
+of numpy.  Domain experiance with large images is a plus.
+
+This work may require the ability to read and understand templated c++
+and Matplotlib's binding of Agg to python.
+
+This work may require API design (for which domain expertise will be beneficial) and
+interaction with external libaries.
+
+
+## 2D color maps
+### Abstract
+All of the color mapping in Matplotlib is currently derived from
+`ScalerMappable` which as the same suggests maps scalers from `R^1 ->
+R^4` RGBA color space.  It is common to want to map a vector to
+colors, for example to control the alpha based on a second value in a
+scatter plot or to show the orientation of a field.
+
+| **Intensity** | **Involves**  | **Mentors** |
+| ------------- | --------------|------------ |
+| Intermediate  | Python, | [@tacaswell][] |
+
+
+### Technical details
+This will require developing a significant new set of classes for
+Matplotlib, possibly parallel to possibly extending the existing 1D
+normalization and color mapping classes.  These  classes will need to be exposed to
+users either as new API or extending the existing `ScalerMappable` API.
+
+In addition, a 2D color bar would need to be implemented and suitable
+color maps will need to be developed.
 
 ### Open Source Development Experience
 
-A contributor to this project will have to have broad experience using
-Matplotlib and Python and have good technical writing skills.  A deep
-understanding of Sphinx, including writing extensions, would also be a
-major asset.
+Competence with python and OO design is required.  Experience with the
+current normalization and color mapping tools in Matplotlib would be
+beneficial.
 
-<a name="text"></a>
+
 ## International text handling
 
 ### Abstract
@@ -90,12 +117,13 @@ major asset.
 Matplotlib's existing text layout engine is appropriate only for
 standard English-like left-to-right languages.  In order to open
 Matplotlib usage up to a broader international audience, it would be
-nice to wrap an existing internationalized text layout engine, such as
+nice to wrap an existing internationalized text layout engine, such
+as
 [Pango](http://www.pango.org/)/[Harfbuzz](https://github.com/behdad/harfbuzz).
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
-| Advanced | Python, C, low-level font details | [@mdboom][] |
+| Advanced | Python, C, low-level font details | [][] |
 
 ### Technical details
 
@@ -117,44 +145,35 @@ Deep understanding of or willingness to learn font technologies, the
 Unicode Standard and text layout algorithms is required.
 
 <a name="categorical"></a>
-## Categorical axes
+## Categorical Color
 
 ### Abstract
 
-Matplotlib 1.5 added direct support for plotting data frames.
-However, there are still a few related tasks yet to be done.  An
-important one is detecting when plotting categorical data
-(i.e. enumerations) and updating the tick labels accordingly.
+Categorical color support in Matplotlib consists of the user manually
+mapping their categorical data to numbers and creating some hacks to plot
+their data accordingly. To more broadly support categorical color, the tasks
+may include:
+1. Modifying the units and plots interface so that heatmaps and other `scalerMappables` support units.
+2. Creating a CategoricalNorm and CategoricalCmap
+3. Modifying legends to work with `scalermappbles`
+4. Adding support for natively plotting arrays of colornames
+
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
-| Intermediate | Python, Pandas, Databases, Data science | [@tacaswell][] |
+| Intermediate | Python, Data science | [@tacaswell][@story645] |
 
 ### Technical details
 
-More broadly, this task will involve designed new user-friendly APIs
+More broadly, this task will involve designing new user-friendly APIs
 to more automatically deal with certain types of data.
-
-This work may include:
-
-- implement proper 2D heat map API
-    - based on imshow or pcolormesh?
-    - move hinton demo into main API?
-- ensuring that the interactive features are categorical aware
-- sort out how / if multiple categorical artists should interact with
-  each other. This may interact with the Compound Artists project.
-- implement API for categorical color mapping
-- possible interactions with
-    - altair
-    - seaborn
-    - pandas
 
 ### Open Source Development Experience
 
-This work will be done in Python.  Pandas experience would be very helpful.  Domain
-expertise working with categorical data helpful but not required.
+This work will be done in Python.
 
-<a name="compound"></a>
+
+
 ## Compound Artists
 
 ### Abstract
@@ -183,7 +202,52 @@ Some of this work has already been begun in
 This work should be 100% in Python.  Understanding of duck-typing and
 operator overloading in Python is a must.
 
+<a name="gui"></a>
+## Sphinx extension for handling large galleries
 
+### Abstract
+
+Matplotlib's documentation has grown organically over time and is now
+extreme large, disorganized, and still does not cover the full
+functionality of the library.  Current best practices favor an
+overview->filter->details on demand approach to UI, but unfortunately
+this tool does not yet exist in the sphinx ecosystem that Matplotlib
+uses to build the documentation.  This task would involve making
+the documentation more user-accessible through some combination of:
+
+1. Understanding how [sphinx-gallery](sphinx-gallery/sphinx-gallery) generates documentation
+
+1. Building album support in [sphinx-gallery](sphinx-gallery/sphinx-gallery)
+
+1. Sorting out what meta-data to capture and cross link, develop tools
+   to do this automatically.
+
+1. Begin reorganizing the
+   Matplotlib [gallery](http://matplotlib.org/gallery.html)
+   and [examples](http://matplotlib.org/examples/index.html) albums,
+   develop documentation and guide lines on how to sort examples into albums
+
+
+
+| **Intensity** | **Involves**  | **Mentors** |
+| ------------- | --------------|------------ |
+| Medium | Python, Sphinx, javascript, html | [ @story645 @tacaswell |
+
+### Technical details
+
+This task will involve working closely with our sphinx-based
+documentation production system and writing and adapting extensions.
+
+Writing tools and scripts in Python to automate repetitive tasks will
+also be required.
+
+### Open Source Development Experience
+
+A contributor to this project will have to have broad experience using
+Matplotlib and Python.  A deep understanding of Sphinx, including
+writing extensions, would also be a major asset.
+
+<a name="text"></a>
 # Contact
 
 [matplotlib-devel list](https://mail.python.org/mailman/listinfo/matplotlib-devel)
