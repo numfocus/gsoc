@@ -54,34 +54,36 @@ text layout, would also be an asset.
 ### Abstract
 
 matplotlib's documentation has grown organically over time and is now
-disorganized and out-of-date in many areas.  This task would involve
-making the documentation more user-accessible through some combination
-of:
+disorganized and out-of-date in many areas. Current best practices favor
+an overview->filter->details on demand approach to UI, but unfortunately
+this tool does not yet exist in the sphinx ecosystem that matplotlib relies
+on heavily for documentation. This task would involve making the documentation
+more user-accessible through some combination of:
 
-1. Reorganizing examples by keywords
+1. Understanding how [sphinx-gallery](sphinx-gallery/sphinx-gallery) generates documentation
 
-1. Redoing our Sphinx usage to put a single docstring per page and
-   linking to frequently repeated content
+1. Building album support in [sphinx-gallery](sphinx-gallery/sphinx-gallery)
 
-1. Modernizing narrative documentation to follow best practice
+1. Reorganizing the matplotlib [gallery](http://matplotlib.org/gallery.html) into albums
+
+1. Moving the [examples](http://matplotlib.org/gallery.html) into albums
+
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
-| Light | Python, Sphinx | [@mdboom][] [@tacaswell][] |
+| Medium | Python, Sphinx | [@story645[] [@tacaswell][] |
 
 ### Technical details
 
-Beside just writing, this task will involve working closely with our
-Sphinx-based documentation production system, possibly writing and
-adapting extensions.  Writing tools and scripts in Python to automate
+This task will involve working closely with our sphinx-based documentation production system
+and writing and adapting extensions.  Writing tools and scripts in Python to automate
 repetitive tasks will also be required.
 
 ### Open Source Development Experience
 
 A contributor to this project will have to have broad experience using
-matplotlib and Python and have good technical writing skills.  A deep
-understanding of Sphinx, including writing extensions, would also be a
-major asset.
+matplotlib and Python.  A deep understanding of Sphinx, including writing extensions,
+would also be a major asset.
 
 <a name="text"></a>
 ## International text handling
@@ -118,41 +120,52 @@ Deep understanding of or willingness to learn font technologies, the
 Unicode Standard and text layout algorithms is required.
 
 <a name="categorical"></a>
-## Categorical axes
+## Categorical Color
 
 ### Abstract
 
-matplotlib 1.5 added direct support for plotting data frames.
-However, there are still a few related tasks yet to be done.  An
-important one is detecting when plotting categorical data
-(i.e. enumerations) and updating the tick labels accordingly.
+Categorical color support in matplotlib consists of the user manually
+mapping their categorical data to numbers and creating some hacks to plot
+their data accordingly. To more broadly support categorical color, the tasks
+may include:
+1. Modifying the units and plots interface so that heatmaps and other `scalerMappables` support units.
+2. Creating a CategoricalNorm and CategoricalCmap
+3. Modifying legends to work with `scalermappbles`
+4. Adding support for natively plotting arrays of colornames
+
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
-| Intermediate | Python, Pandas, Databases, Data science | [@tacaswell][] |
+| Intermediate | Python, Data science | [@tacaswell][@story645] |
 
 ### Technical details
 
-More broadly, this task will involve designed new user-friendly APIs
+More broadly, this task will involve designing new user-friendly APIs
 to more automatically deal with certain types of data.
 
-This work may include:
+### Open Source Development Experience
 
-- implementing categorical axis in top of the mpl units framework (this may or
-  may not be possible / make sense)
-- implement improved / combined API for bar plots
-    - this API should cover all of the styles currently exposed by hist
-- implement proper 2D heat map API
-    - based on imshow or pcolormesh?
-    - move hinton demo into main API?
-- ensuring that the interactive features are categorical aware
-- sort out how / if multiple categorical artists should interact with
-  each other. This may interact with the Compound Artists project.
-- implement API for categorical color mapping
-- possible interactions with
-    - altair
-    - seaborn
-    - pandas
+This work will be done in Python.
+
+<a name="macosx"></a>
+## New Mac OSX backend
+
+### Abstract
+
+The existing `macosx` backend performs rendering of all drawing
+primitives.  Unfortunately, this means it often lags behind in terms
+of the quality and speed of the rendering vs. the more commonly used
+Agg backend.  We would like to implement a new `macosx` backend
+(largely based on the existing one) where the rendering is performed
+by Agg and this image buffer is simply copied to the screen.  This
+would retain all of the advantages of the existing `macosx` backend --
+that it has no external dependencies and the widgets appear "native"
+-- but would render with the same quality and performance as the Agg
+backends.
+
+| **Intensity** | **Involves**  | **Mentors** |
+| ------------- | --------------|------------ |
+| Advanced | Python, Objective-C, Python/C API, Cocoa | [@mdboom][] |
 
 ### Open Source Development Experience
 
