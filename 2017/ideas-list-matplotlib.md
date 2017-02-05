@@ -27,7 +27,7 @@ layout difficulties such as twinned axes and colorbars.
 
 This work will likely be based on an existing constraint-solving
 library, such as
-[Cassowary](http://constraints.cs.washington.edu/cassowary/) as implemneted by
+[Cassowary](http://constraints.cs.washington.edu/cassowary/) as implemented by
 [kiwi](https://github.com/nucleic/kiwi).  Likely
 this would be implemented in two phases: (1) the implementation of
 existing layout abilities in terms of constraints, accessible through
@@ -60,31 +60,33 @@ many cases we could make do with only one full size intermediate copy. See
 
 One approach at this would be add some fast-paths through the existing code.
 
-Extending the current interpolation system to inculde dedicated (external) resampling code, for
-example datashader.  See [bokeh/datashader#200](https://github.com/bokeh/datashader/pull/200) for
-a proof of concept.
+Extending the current interpolation system to include dedicated
+(external) resampling code, for example datashader.
+See
+[bokeh/datashader#200](https://github.com/bokeh/datashader/pull/200)
+for a proof of concept.
 
 Folding something
 like
 [mpl-modest-image](https://github.com/ChrisBeaumont/mpl-modest-image)
-directly into Matplotlib would alo be in scope for this project.
+directly into Matplotlib would also be in scope for this project.
 
 ### Open Source Development Experince
 
-This task will be majority in python and requires a working knowledge
-of numpy.  Domain experiance with large images is a plus.
+This task will be majority in Python and requires a working knowledge
+of NumPy.  Domain experience with large images is a plus.
 
-This work may require the ability to read and understand templated c++
-and Matplotlib's binding of Agg to python.
+This work may require the ability to read and understand templated C++
+and Matplotlib's binding of Agg to Python.
 
 This work may require API design (for which domain expertise will be beneficial) and
-interaction with external libaries.
+interaction with external libraries.
 
 
 ## 2D color maps
 ### Abstract
 All of the color mapping in Matplotlib is currently derived from
-`ScalerMappable` which as the same suggests maps scalers from `R^1 ->
+`ScalerMappable` which as the name suggests maps scalers from `R^1 ->
 R^4` RGBA color space.  It is common to want to map a vector to
 colors, for example to control the alpha based on a second value in a
 scatter plot or to show the orientation of a field.
@@ -105,7 +107,7 @@ color maps will need to be developed.
 
 ### Open Source Development Experience
 
-Competence with python and OO design is required.  Experience with the
+Competence with Python and OO design is required.  Experience with the
 current normalization and color mapping tools in Matplotlib would be
 beneficial.
 
@@ -243,7 +245,7 @@ also be required.
 
 ### Open Source Development Experience
 
-A contributor to this project will have to have broad experience using
+A contributor to this project should have broad experience using
 Matplotlib and Python.  A deep understanding of Sphinx, including
 writing extensions, would also be a major asset.
 
