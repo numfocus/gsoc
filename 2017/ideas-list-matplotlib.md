@@ -36,7 +36,7 @@ existing APIs.
 
 ### Open Source Development Experience
 
-This project involves experience with Python and and understanding of
+This project involves experience with Python and understanding of
 linear constraint solvers.  Computer graphics concepts, particularly
 text layout, would also be an asset.
 
