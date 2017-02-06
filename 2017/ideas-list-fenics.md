@@ -25,8 +25,9 @@ C++ method would nede to be implemented to read in the XDMF from file in paralle
 correctly to restore from file after checkpointing.
 
 From the visualisation side, a set of Python filters will need to be developed to read the
-new data format in ParaView and display it using VTK. Ultimately, the filters will need to be
-translated to C++ and incorporated as part of the Xdmf3 library.
+new data format in ParaView and display it using VTK. Some work has already been done in this direction:
+https://github.com/chrisrichardson/xdmf-fe-filter
+Ultimately, the filters will need to be translated to C++ and incorporated as part of the Xdmf3 library.
 
 ### Open Source Development Experience
 
