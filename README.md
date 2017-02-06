@@ -403,6 +403,6 @@ could receive their applications.**
 [Statmodels]: http://statsmodels.sourceforge.net/
 [Stan]: http://mc-stan.org/
 [SymPy]: http://sympy.org
-
+[Theano]: http://deeplearning.net/software/theano/
 [xarray]: http://xarray.pydata.org/
 [yt]: http://yt-project.org/
