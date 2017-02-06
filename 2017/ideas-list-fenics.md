@@ -1,7 +1,5 @@
 # FEniCS Project
 
-{{ Table of Content with link to ideas }}
-
 ## Develop [XDMF](http://www.xdmf.org) format for visualisation and checkpointing
 
 ### Abstract
@@ -16,7 +14,7 @@ data structures directly in XDMF, and still be able to visualise the data.
 
 | **Intensity** | **Priority | **Involves**  | **Mentors** |
 | ------------- | -----------| ------------- | ----------- |
-| Moderate      | Medium     | Python, C++, XML | [@foo][], [@bar][] |
+| Moderate      | Medium     | Python, C++, XML | [David DeMarle](mailto:dave.demarle@kitware.com), [Chris Richardson](mailto:chris@bpi.cam.ac.uk) |
 
 ### Technical Details
 
