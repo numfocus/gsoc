@@ -203,6 +203,19 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="300px" src="http://www.numfocus.org/uploads/6/0/6/9/60696727/fenics-website-icon.png?92"/>
+    </td>
+    <td>
+       <h1>FEniCS Project</h1>
+       <p>The FEniCS Project is a collection of tools with extensive features for the automated and efficient solution of differential equations. Partial differential equations can be specified in near-mathematical notation (as finite element variational problems) and solved automatically.</p>
+       <p>
+         <a href="https://fenicsproject.org/">Website</a> | <a href="https://groups.google.com/forum/#!forum/fenics-dev">Mailing List</a>  
+       </p>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
       <img width="300px" src="https://raw.githubusercontent.com/tmylk/image_gensim/master/logo-gensim_large.png"/>
     </td>
     <td>
@@ -299,26 +312,26 @@ a sub-org must:
 
 ## NumFOCUS' Fiscally Sponsored Projects GSoC Status
 
-| Project                         | Status                           | Ideas Pages                                                |
-| -------                         | ------                           | -----------                                                |
-| [AstroPy]                       | Unknown                          |                                                            |
-| [Data Carpentry](DataCarpentry) | Unknown                          |                                                            |
-| [FEniCS Project](FEniCSproject) | Unknown                          |                                                            |
-| [IPython]                       | Unknown                          |                                                            |
-| [Julia]                         | Applying as separate org         | http://julialang.org/soc/ideas-page                        |
-| [Matplotlib]                    | Applying under NumFOCUS umbrella |                                                            |
-| [nteract]                       | Applying under NumFOCUS umbrella | https://github.com/nteract/nteract/wiki/GSoC-2017-Ideas    |
-| [NumPy]                         | Not participating                |                                                            |
-| [Project Jupyter](Jupyter)      | Unknown                          |                                                            |
-| [pandas]                        | Unknown                          |                                                            |
-| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | https://github.com/pymc-devs/pymc3/wiki/GSoC-2017-projects |
-| [PyTables]                      | Unknown                          |                                                            |
-| [quantecon]                     | Unknown                          |                                                            |
-| [rOpenSci]                      | Unknown                          |                                                            |
-| [Software Carpentry](SCF)       | Unknown                          |                                                            |
-| [SymPy]                         | Applying as a separate org       | https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas        |
-| [Stan]                          | Unknown                          |                                                            |
-| [yt]                            | Unknown                          |                                                            |
+| Project                         | Status                           | Ideas Pages                                                                |
+| -------                         | ------                           | -----------                                                                |
+| [AstroPy]                       | Unknown                          |                                                                            |
+| [Data Carpentry](DataCarpentry) | Unknown                          |                                                                            |
+| [FEniCS Project](FEniCSproject) | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-fenics.md     |
+| [IPython]                       | Unknown                          |                                                                            |
+| [Julia]                         | Applying as separate org         | http://julialang.org/soc/ideas-page                                        |
+| [Matplotlib]                    | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-matplotlib.md |
+| [nteract]                       | Applying under NumFOCUS umbrella | https://github.com/nteract/nteract/wiki/GSoC-2017-Ideas                    |
+| [NumPy]                         | Not participating                |                                                                            |
+| [Project Jupyter](Jupyter)      | Unknown                          |                                                                            |
+| [pandas]                        | Unknown                          |                                                                            |
+| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | https://github.com/pymc-devs/pymc3/wiki/GSoC-2017-projects                 |
+| [PyTables]                      | Unknown                          |                                                                            |
+| [quantecon]                     | Unknown                          |                                                                            |
+| [rOpenSci]                      | Unknown                          |                                                                            |
+| [Software Carpentry](SCF)       | Unknown                          |                                                                            |
+| [SymPy]                         | Applying as a separate org       | https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas                        |
+| [Stan]                          | Unknown                          | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-stan.md       |
+| [yt]                            | Unknown                          |                                                                            |
 
 ## NumFOCUS' Affiliated Projects GSoC Status
 
@@ -390,6 +403,6 @@ could receive their applications.**
 [Statmodels]: http://statsmodels.sourceforge.net/
 [Stan]: http://mc-stan.org/
 [SymPy]: http://sympy.org
-[Theano]: http://deeplearning.net/software/theano/
+
 [xarray]: http://xarray.pydata.org/
 [yt]: http://yt-project.org/
