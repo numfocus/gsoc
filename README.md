@@ -352,7 +352,7 @@ a sub-org must:
 | [scikit-learn] | Unknown                          |                                                                   |
 | [Statmodels]   | Applying with PSF                |                                                                   |
 | [Spyder]       | Unknown                          |                                                                   |
-| [Theano]       | Unknown                          |                                                                   |
+| [Theano]       | Applying with PSF                | https://github.com/Theano/Theano/wiki/GSoC2017                    |
 | [xarray]       | Unknown                          |                                                                   |
 
 ## Other Projects GSoC Status
