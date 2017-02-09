@@ -37,15 +37,16 @@ and different teams with FEniCS and Kitware developers.
 ### First steps
 
 Install FEniCS from https://bitbucket.org/fenics-project/dolfin and try out the demos. Install [ParaView](http://www.paraview.org)
-and view the output from the FEniCS demos.
+and view the output from the FEniCS demos. The FEniCS tutorial at https://fenicsproject.org/tutorial/ 
+has an up-to-date description of using FEniCS to solve partial differential equations.
 
 ## Develop assembly of finite element forms on quadtrilateral and hexahedral meshes
 
 ### Abstract
 
-One of the first steps in the finite element method is splitting the domain on which the partial
-differential equation is solved into small parts, called cells, which in sum make a mesh. 
-FEniCS has always supported meshes consisting of simplex cells (e.g. triangles and tetrahedrons),
+One of the first steps in the [finite element method](https://en.wikipedia.org/wiki/Finite_element_method) 
+is splitting the domain on which the partial differential equation is solved into small parts, called cells, 
+which in sum make a mesh. FEniCS has always supported meshes consisting of simplex cells (e.g. triangles and tetrahedrons),
 but has limited support for meshes consisting of of quadrilateral (quad) and hexahedral (hex) cells. 
 Finite element problems solved on quad/hex meshes often have better approximation properties and better robustness
 to cell distortion than those solved on simplex meshes. We would like to be able to assemble and solve the simplest 
@@ -81,4 +82,8 @@ but not necessary. Those who are interested compiler technology might also find 
 
 ### First steps
 
-Install FEniCS from https://bitbucket.org/fenics-project/dolfin and try out the demos.
+Install FEniCS from https://bitbucket.org/fenics-project/dolfin and try out the demos. The FEniCS book
+https://fenicsproject.org/pub/book/book/fenics-book-2011-06-14.pdf (GNU Free Doc License) contains a 
+description of the form compiler technology behind FEniCS. The FEniCS tutorial at
+https://fenicsproject.org/tutorial/ has an up-to-date description of using FEniCS to solve partial
+differential equations.
