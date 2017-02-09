@@ -38,3 +38,47 @@ and different teams with FEniCS and Kitware developers.
 
 Install FEniCS from https://bitbucket.org/fenics-project/dolfin and try out the demos. Install [ParaView](http://www.paraview.org)
 and view the output from the FEniCS demos.
+
+## Develop assembly of finite element forms on quadtrilateral and hexahedral meshes
+
+### Abstract
+
+One of the first steps in the finite element method is splitting the domain on which the partial
+differential equation is solved into small parts, called cells, which in sum make a mesh. 
+FEniCS has always supported meshes consisting of simplex cells (e.g. triangles and tetrahedrons),
+but has limited support for meshes consisting of of quadrilateral (quad) and hexahedral (hex) cells. 
+Finite element problems solved on quad/hex meshes often have better approximation properties and better robustness
+to cell distortion than those solved on simplex meshes. We would like to be able to assemble and solve the simplest 
+PDE, a Poisson problem on a quad/hex mesh in FEniCS.
+
+| **Intensity** | **Priority | **Involves**  | **Mentors** |
+| ------------- | -----------| ------------- | ----------- |
+| High          | Medium     | Python, C++ | [Jack S. Hale](mailto:jack.hale@uni.lu), [Chris Richardson](mailto:chris@bpi.cam.ac.uk), [Martin Alnaes](mailto:martinal@simula.no) |
+
+### Technical Details
+
+Many constituent parts to assemble and solve on quad/hex meshes are already in FEniCS, but
+there are missing links to get the pieces working as a whole. You will lead a project
+get these missing pieces into place.
+
+A key technological innovation in FEniCS is the development of a domain specific language
+for specifying finite element variational forms (UFL) and a form compiler (FFC) that can 
+translates UFL into low-level C++ code that is used to generate cell tensors (local matrices) on
+every cell in the mesh.
+
+Currently this toolchain cannot produce the C++ code for quad/hex cell geometries. You will
+need to interface FFC with an existing class in FIAT to evaluate the tensor product finite 
+element basis functions on the quad/hex cell geometry. You will then need to add appropriate code
+into FFC to compute geometric quantities on the quad/hex cell geometry, using the existing
+simplex code as an example. Finally, you will need to add hooks in our DOLFIN problem solving 
+environment to solve a complete problem.
+
+### Open Source Development Experience
+
+This project requires knowledge of C++ and Python, and will require working with multiple git repositories
+and different teams with FEniCS developers. Some knowledge of finite element methods would also be desirable, 
+but not necessary. Those who are interested compiler technology might also find this project suitable.
+
+### First steps
+
+Install FEniCS from https://bitbucket.org/fenics-project/dolfin and try out the demos.
