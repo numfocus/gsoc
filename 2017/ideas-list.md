@@ -4,6 +4,7 @@ This is the home page of projects ideas of NumFocus for Google Summer of Code 20
 Since NumFocus is a umbrella organization you will only find links to the ideas
 page of each organization under NumFocus umbrella at this page.
 
+- Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2017-Project-Ideas
 - fenics https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-fenics.md
 - gensim https://github.com/RaRe-Technologies/gensim/wiki/Student-Projects
 - nteract https://github.com/nteract/nteract/wiki/GSoC-2017-Ideas

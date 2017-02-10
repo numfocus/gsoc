@@ -81,23 +81,6 @@ In alphabetic order.
   <!--   </td> -->
   <!-- </tr> -->
 
-  <!-- <tr> -->
-  <!--   <td> -->
-  <!--     <img width="300px" src="img/ecodata-retriever.png"/> -->
-  <!--   </td> -->
-  <!--   <td> -->
-  <!--      <h1>EcoData Retriever</h1> -->
-  <!--      <p> -->
-  <!--      The EcoData Retriever automates the tasks of finding, downloading, and -->
-  <!--      cleaning up ecological data files, and then stores them in a local -->
-  <!--      database. -->
-  <!--      </p> -->
-  <!--      <p> -->
-  <!--        <a href="http://www.ecodataretriever.org/">Website</a>  | <a href="https://github.com/numfocus/gsoc/blob/master/2016/ideas-list-ecodata-retriever.md">Ideas Page</a> -->
-  <!--      </p> -->
-  <!--   </td> -->
-  <!-- </tr> -->
-
   
   <!-- <tr> -->
   <!--   <td> -->
@@ -200,6 +183,23 @@ In alphabetic order.
   <!--      </p> -->
   <!--   </td> -->
   <!-- </tr> -->
+
+  <tr>
+    <td>
+      <img width="300px" src="img/ecodata-retriever.png"/>
+    </td>
+    <td>
+       <h1>Data Retriever</h1>
+       <p>
+       The Data Retriever automates the tasks of finding, downloading, and
+       cleaning up ecological data files, and then stores them in a local
+       database.
+       </p>
+       <p>
+         <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2017-Project-Ideas">Ideas Page</a>
+       </p>
+    </td>
+  </tr>
 
   <tr>
     <td>
@@ -360,9 +360,10 @@ a sub-org must:
 **This session intend to help students to find mentoring organizations that
 could receive their applications.**
 
-| Project      | Status                           | Ideas Pages                                                           |
-| -------      | ------                           | -----------                                                           |
-| [MDAnalysis] | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2017-Project-Ideas |
+| Project              | Status                           | Ideas Pages                                                           |
+| -------              | ------                           | -----------                                                           |
+| [MDAnalysis]         | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2017-Project-Ideas |
+| [Data Retriever](DR) | Applying under NumFOCUS umbrella | https://github.com/weecology/retriever/wiki/GSoC-2017-Project-Ideas   |
 
 [AstroPy]: http://www.astropy.org/
 [Bokeh]: http://bokeh.pydata.org/
@@ -371,6 +372,7 @@ could receive their applications.**
 [Cython]: http://cython.org/
 [Dask]: http://dask.pydata.org/
 [DataCarpentry]: http://datacarpentry.org/
+[DR]: http://www.data-retriever.org/
 [DyND]: http://libdynd.org/
 [FEniCSproject]: https://fenicsproject.org/
 [Gensim]: https://radimrehurek.com/gensim/
