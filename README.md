@@ -343,10 +343,11 @@ a sub-org must:
 | [Dask]         | Unknown                          |                                                                            |
 | [DyND]         | Unknown                          |                                                                            |
 | [Gensim]       | Applying under NumFOCUS umbrella | https://github.com/RaRe-Technologies/gensim/wiki/Student-Projects          |
+| [MDAnalysis]   | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2017-Project-Ideas      |
 | [Numba]        | Unknown                          |                                                                            |
 | [Orange]       | Unknown                          |                                                                            |
 | [PythonXY]     | Unknown                          |                                                                            |
-| [SciPy]        | Applying with PSF | https://github.com/scipy/scipy/wiki/GSoC-2017-project-ideas                |
+| [SciPy]        | Applying with PSF                | https://github.com/scipy/scipy/wiki/GSoC-2017-project-ideas                |
 | [scikit-image] | Unknown                          |                                                                            |
 | [scikit-bio]   | Not participating                |                                                                            |
 | [scikit-learn] | Unknown                          |                                                                            |
@@ -362,7 +363,6 @@ could receive their applications.**
 
 | Project              | Status                           | Ideas Pages                                                           |
 | -------              | ------                           | -----------                                                           |
-| [MDAnalysis]         | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2017-Project-Ideas |
 | [Data Retriever](DR) | Applying under NumFOCUS umbrella | https://github.com/weecology/retriever/wiki/GSoC-2017-Project-Ideas   |
 
 [AstroPy]: http://www.astropy.org/
