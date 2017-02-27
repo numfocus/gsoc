@@ -191,9 +191,9 @@ In alphabetic order.
     <td>
        <h1>Data Retriever</h1>
        <p>
-       The Data Retriever automates the tasks of finding, downloading, and
-       cleaning up ecological data files, and then stores them in a local
-       database.
+         The Data Retriever is a package manager for data. It downloads, cleans,
+         and stores publicly available data, so that analysts spend less time
+         cleaning and managing data, and more time analyzing it.
        </p>
        <p>
          <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2017-Project-Ideas">Ideas Page</a>
@@ -315,20 +315,20 @@ a sub-org must:
 | Project                         | Status                            | Ideas Pages                                                                |
 | -------                         | ------                            | -----------                                                                |
 | [AstroPy]                       | Unknown                           |                                                                            |
-| [Data Carpentry](DataCarpentry) | Unknown                           |                                                                            |
-| [FEniCS Project](FEniCSproject) | Applying under NumFOCUS umbrella  | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-fenics.md     |
+| [Data Carpentry][DataCarpentry] | Unknown                           |                                                                            |
+| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella  | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-fenics.md     |
 | [IPython]                       | Unknown                           |                                                                            |
 | [Julia]                         | Applying as separate org          | http://julialang.org/soc/ideas-page                                        |
 | [Matplotlib]                    | Applying under NumFOCUS umbrella  | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-matplotlib.md |
 | [nteract]                       | Applying under NumFOCUS umbrella  | https://github.com/nteract/nteract/wiki/GSoC-2017-Ideas                    |
 | [NumPy]                         | Not participating                 |                                                                            |
-| [Project Jupyter](Jupyter)      | Unknown                           |                                                                            |
+| [Project Jupyter][Jupyter]      | Unknown                           |                                                                            |
 | [pandas]                        | Unknown                           |                                                                            |
 | [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella  | https://github.com/pymc-devs/pymc3/wiki/GSoC-2017-projects                 |
 | [PyTables]                      | Unknown                           |                                                                            |
 | [quantecon]                     | Unknown                           |                                                                            |
 | [rOpenSci]                      | Unknown                           |                                                                            |
-| [Software Carpentry](SCF)       | Unknown                           |                                                                            |
+| [Software Carpentry][SCF]       | Unknown                           |                                                                            |
 | [SymPy]                         | Applying as a separate org        | https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas                        |
 | [Stan]                          | Applying under NumFOCUS  umbrella | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-stan.md       |
 | [yt]                            | Unknown                           |                                                                            |
@@ -363,7 +363,7 @@ could receive their applications.**
 
 | Project              | Status                           | Ideas Pages                                                           |
 | -------              | ------                           | -----------                                                           |
-| [Data Retriever](DR) | Applying under NumFOCUS umbrella | https://github.com/weecology/retriever/wiki/GSoC-2017-Project-Ideas   |
+| [Data Retriever][DR] | Applying under NumFOCUS umbrella | https://github.com/weecology/retriever/wiki/GSoC-2017-Project-Ideas   |
 
 [AstroPy]: http://www.astropy.org/
 [Bokeh]: http://bokeh.pydata.org/
