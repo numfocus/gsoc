@@ -37,7 +37,7 @@ The other Bayesian methods needs to be added into the PyMC3 codebase to make it 
 
 ### May 1th - May 28th, **Community Bonding Period**
 
-Familiarize with the Core Developers of PyMC3, take a look at the Gaussian process model and discuss with mentors on the approach for the project. Fix some of the issues in PyMC3 code. Write a detailed report on the same.
+Familiarize with the Core Developers of PyMC3, take a look at the Gaussian process model and discuss with mentors on the approach for the project. Fix some of the issues in PyMC3 code like one mentioned [here](https://github.com/pymc-devs/pymc3/pull/1819). Write a detailed report on the same.
 
 ### May 29th - June 3rd
 Start work on improving Gaussian processes and Dirichlet Diffusion Trees.
