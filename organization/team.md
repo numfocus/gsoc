@@ -7,25 +7,60 @@ organizing Google Summer of Code for NumFOCUS.
 
 ### Admin
 
-| Name          | Melange Profile | GitHub Profile |
-|---------------|-----------------|----------------|
-| Max Linke     |                 | kain88-de      |
-| Raniere Silva | r.gaia.cs       | rgaiacs        |
+| Name          |  GitHub Profile 							|
+|---------------|-------------------------------------------|
+| Max Linke     | [kain88-de](https://github.com/kain88-de) |
+| Raniere Silva | [rgaiacs](https://github.com/rgaiacs)     |
+| Mridul Seth   | [MridulS](https://github.com/MridulS)     |
 
 ### Mentors
 
-#### PyMC3
+#### Data Retriever
+
+| Name           | GitHub Profile                                  |
+|----------------|-------------------------------------------------|
+| Ethan White    | [ethanwhite](https://github.com/ethanwhite)     |
+| Henry Senyondo | [henrykironde](https://github.com/henrykironde) |
+
+
+#### FEniCS Project
+
+| Name               | GitHub Profile |
+|--------------------|----------------|
+
+#### Gensim
+
+| Name               | GitHub Profile |
+|--------------------|----------------|
+
+#### matplotlib
 
 | Name               | GitHub Profile |
 |--------------------|----------------|
 
 #### MDAnalysis
 
-| Name              | GitHub Profile |
-|-------------------|----------------|
-| Richard Gowers    | richardjgowers |
-| Manuel  Nuno Melo | mnmelo         |
-| Jonathon  Barnoud | jbarnoud       |
+| Name              | GitHub Profile                                     |
+|-------------------|----------------------------------------------------|
+| Richard Gowers    | [richardjgowers](https://github.com/richardjgowers)|
+| Manuel  Nuno Melo | [mnmelo](https://github.com/mnmelo)                |
+| Jonathon  Barnoud | [jbarnoud](https://github.com/jbarnoud)            |
+
+#### nteract
+
+| Name               | GitHub Profile |
+|--------------------|----------------|
+
+#### PyMC3
+
+| Name               | GitHub Profile |
+|--------------------|----------------|
+
+#### Stan
+
+| Name               | GitHub Profile |
+|--------------------|----------------|
+
 
 ## 2016
 
