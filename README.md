@@ -209,7 +209,7 @@ In alphabetic order.
        <h1>FEniCS Project</h1>
        <p>The FEniCS Project is a collection of tools with extensive features for the automated and efficient solution of differential equations. Partial differential equations can be specified in near-mathematical notation (as finite element variational problems) and solved automatically.</p>
        <p>
-         <a href="https://fenicsproject.org/">Website</a> | <a href="https://groups.google.com/forum/#!forum/fenics-dev">Mailing List</a>  
+         <a href="https://fenicsproject.org/">Website</a> | <a href="https://groups.google.com/forum/#!forum/fenics-dev">Mailing List</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-fenics.md">Ideas Page</a>
        </p>
     </td>
   </tr>
@@ -243,7 +243,7 @@ In alphabetic order.
        quality figures in a variety of hardcopy formats and interactive
        environments across platforms.</p>
        <p>
-         <a href="https://matplotlib.org/">Website</a> | <a href="https://github.com/matplotlib/matplotlib/issues">Project Discussions</a>
+         <a href="https://matplotlib.org/">Website</a> | <a href="https://github.com/matplotlib/matplotlib/issues">Project Discussions</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-matplotlib.md">Ideas Page</a>
        </p>
     </td>
   </tr>
@@ -263,7 +263,7 @@ In alphabetic order.
           ecosystem.
        </p>
        <p>
-         <a href="http://mdanalysis.org/">Website</a> | <a href="https://github.com/MDAnalysis/mdanalysis/issues">Project Discussions</a>
+         <a href="http://mdanalysis.org/">Website</a> | <a href="https://github.com/MDAnalysis/mdanalysis/issues">Project Discussions</a> | <a href="https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2017-Project-Ideas">Ideas Page</a>
        </p>
     </td>
   </tr>
@@ -276,7 +276,7 @@ In alphabetic order.
        <h1>nteract</h1>
        <p>nteract is an open-source, desktop-based interactive computing application that is focused on accessibility and composability. nteract allows users to edit and share interactive notebook documents that contain explanatory text, executive code, and interactive visualizations. By combining the best of the web and the best of the desktop, nteract provides a user experience that is seamless and enjoyable for all.</p>
        <p>
-         <a href="https://nteract.io/">Website</a>
+         <a href="https://nteract.io/">Website</a> | <a href="https://github.com/nteract/nteract/wiki/GSoC-2017-Ideas">Ideas Page</a>
        </p>
     </td>
   </tr>
@@ -289,7 +289,20 @@ In alphabetic order.
        <h1>PyMC3</h1>
        <p>PyMC3 is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://gitter.im/pymc-devs/pymc">Gitter</a>
+         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://gitter.im/pymc-devs/pymc">Gitter</a> | <a href="https://github.com/pymc-devs/pymc3/wiki/GSoC-2017-projects">Ideas Page</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img width="300px" src="http://www.numfocus.org/uploads/6/0/6/9/60696727/8386978.png?106">
+    </td>
+    <td>
+       <h1>Stan</h1>
+       <p>Stan is a probabilistic programming language for data analysis, enabling automatic inference for a large class of statistical models. It features full Bayesian inference with Markov chain Monte Carlo sampling, approximate Bayesian inference with variational inference and the Laplace approximation, and penalized maximum likelihood estimation with optimization. The language integrates a Math Library written in C++, which can act as a stand-alone, and features derivatives for arithmetic, special functions, probability functions, and linear algebra.</p>
+       <p>
+         <a href="http://mc-stan.org/">Website</a> | <a href="http://discourse.mc-stan.org">Mailing List</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-stan.md">Ideas Page</a>
        </p>
     </td>
   </tr>
