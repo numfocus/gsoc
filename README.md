@@ -327,7 +327,7 @@ a sub-org must:
 
 | Project                         | Status                            | Ideas Pages                                                                |
 | -------                         | ------                            | -----------                                                                |
-| [AstroPy]                       | Unknown                           |                                                                            |
+| [AstroPy]                       | Applying with OpenAstronomy       | http://openastronomy.org/gsoc/gsoc2017/                                    |
 | [Data Carpentry][DataCarpentry] | Unknown                           |                                                                            |
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella  | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-fenics.md     |
 | [IPython]                       | Unknown                           |                                                                            |
