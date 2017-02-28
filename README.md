@@ -348,26 +348,26 @@ a sub-org must:
 
 ## NumFOCUS' Affiliated Projects GSoC Status
 
-| Project        | Status                           | Ideas Pages                                                                |
-| -------        | ------                           | -----------                                                                |
-| [Bokeh]        | Unknown                          |                                                                            |
-| [Conda]        | Unknown                          |                                                                            |
-| [Cython]       | Unknown                          |                                                                            |
-| [Dask]         | Unknown                          |                                                                            |
-| [DyND]         | Unknown                          |                                                                            |
-| [Gensim]       | Applying under NumFOCUS umbrella | https://github.com/RaRe-Technologies/gensim/wiki/Student-Projects          |
-| [MDAnalysis]   | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2017-Project-Ideas      |
-| [Numba]        | Unknown                          |                                                                            |
-| [Orange]       | Unknown                          |                                                                            |
-| [PythonXY]     | Unknown                          |                                                                            |
-| [SciPy]        | Applying with PSF                | https://github.com/scipy/scipy/wiki/GSoC-2017-project-ideas                |
-| [scikit-image] | Unknown                          |                                                                            |
-| [scikit-bio]   | Not participating                |                                                                            |
-| [scikit-learn] | Unknown                          |                                                                            |
-| [Statmodels]   | Applying with PSF                | https://github.com/statsmodels/statsmodels/wiki/Google-Summer-of-Code-2017 |
-| [Spyder]       | Unknown                          |                                                                            |
-| [Theano]       | Applying with PSF                | https://github.com/Theano/Theano/wiki/GSoC2017                             |
-| [xarray]       | Unknown                          |                                                                            |
+| Project        | Status                           | Ideas Pages                                                                         |
+| -------        | ------                           | -----------                                                                         |
+| [Bokeh]        | Unknown                          |                                                                                     |
+| [Conda]        | Unknown                          |                                                                                     |
+| [Cython]       | Unknown                          |                                                                                     |
+| [Dask]         | Unknown                          |                                                                                     |
+| [DyND]         | Unknown                          |                                                                                     |
+| [Gensim]       | Applying under NumFOCUS umbrella | https://github.com/RaRe-Technologies/gensim/wiki/Student-Projects                   |
+| [MDAnalysis]   | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2017-Project-Ideas               |
+| [Numba]        | Unknown                          |                                                                                     |
+| [Orange]       | Unknown                          |                                                                                     |
+| [PythonXY]     | Unknown                          |                                                                                     |
+| [SciPy]        | Applying with PSF                | https://github.com/scipy/scipy/wiki/GSoC-2017-project-ideas                         |
+| [scikit-image] | Unknown                          |                                                                                     |
+| [scikit-bio]   | Not participating                |                                                                                     |
+| [scikit-learn] | Applying with PSF                | https://github.com/scikit-learn/scikit-learn/wiki/Google-summer-of-code-(GSOC)-2017 |
+| [Statmodels]   | Applying with PSF                | https://github.com/statsmodels/statsmodels/wiki/Google-Summer-of-Code-2017          |
+| [Spyder]       | Unknown                          |                                                                                     |
+| [Theano]       | Applying with PSF                | https://github.com/Theano/Theano/wiki/GSoC2017                                      |
+| [xarray]       | Unknown                          |                                                                                     |
 
 ## Other Projects GSoC Status
 
