@@ -17,8 +17,11 @@ organizing Google Summer of Code for NumFOCUS.
 
 #### Data Retriever
 
-| Name               | GitHub Profile |
-|--------------------|----------------|
+| Name           | GitHub Profile                                  |
+|----------------|-------------------------------------------------|
+| Ethan White    | [ethanwhite](https://github.com/ethanwhite)     |
+| Henry Senyondo | [henrykironde](https://github.com/henrykironde) |
+
 
 #### FEniCS Project
 
