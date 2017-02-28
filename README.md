@@ -371,7 +371,7 @@ a sub-org must:
 
 ## Other Projects GSoC Status
 
-**This session intend to help students to find mentoring organizations that
+**This section intend to help students to find mentoring organizations that
 could receive their applications.**
 
 | Project              | Status                           | Ideas Pages                                                           |
