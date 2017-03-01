@@ -35,8 +35,10 @@ organizing Google Summer of Code for NumFOCUS.
 
 #### matplotlib
 
-| Name               | GitHub Profile |
-|--------------------|----------------|
+| Name           | GitHub Profile                            |
+|----------------|-------------------------------------------|
+| Thomas Caswell | [tacaswell](https://github.com/tacaswell) |
+| Hannah         | [story645](https://github.com/story645)   |
 
 #### MDAnalysis
 
@@ -48,13 +50,15 @@ organizing Google Summer of Code for NumFOCUS.
 
 #### nteract
 
-| Name               | GitHub Profile |
-|--------------------|----------------|
+| Name         | GitHub Profile                      |
+|--------------|-------------------------------------|
+| John Detlefs | [jdetle](https://github.com/jdetle) |
 
 #### PyMC3
 
-| Name               | GitHub Profile |
-|--------------------|----------------|
+| Name          | GitHub Profile                        |
+|---------------|---------------------------------------|
+| Thomas Wiecki | [twiecki](https://github.com/twiecki) |
 
 #### Stan
 
