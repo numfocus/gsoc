@@ -20,7 +20,7 @@
 
 ## Getting Started Early
 
-The 2016 student application window is March 14th to 25th.
+The 2017 student application window is March 20th to April 3rd.
 [The Python Software Foundation Wiki](https://wiki.python.org/moin/SummerOfCode/2016#Students)
 lists a few things you can do to get started in free and open source software.
 
