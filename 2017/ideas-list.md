@@ -1,6 +1,6 @@
 # Ideas Pages
 
-This is the home page of projects ideas of NumFocus for Google Summer of Code 2016.
+This is the home page of projects ideas of NumFocus for Google Summer of Code 2017.
 Since NumFOCUS is a umbrella organization you will only find links to the ideas
 page of each organization under NumFocus umbrella at this page.
 
