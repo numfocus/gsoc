@@ -344,7 +344,7 @@ a sub-org must:
 | [Software Carpentry][SCF]       | Unknown                           |                                                                            |
 | [SymPy]                         | Applying as a separate org        | https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas                        |
 | [Stan]                          | Applying under NumFOCUS  umbrella | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-stan.md       |
-| [yt]                            | Unknown                           |                                                                            |
+| [yt]                            | Not participating                           |                                                                            |
 
 ## NumFOCUS' Affiliated Projects GSoC Status
 
