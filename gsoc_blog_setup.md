@@ -4,7 +4,7 @@ GitHub gives you free hosting and a free domain name (`github_username.github.io
 #### Install Ruby
 For Debian or Ubuntu based users
 ```
-sudo apt-get install ruby-full
+$ sudo apt-get install ruby-full
 ```
 Mac OS/OS X has ruby installed by default.
 
@@ -17,17 +17,17 @@ $ \curl -sSL https://get.rvm.io | bash -s stable
 for more information https://rvm.io
 
 ```
-rvm install ruby  #installs the latest version
-rvm gemset create blog     #creates a new gemset (ruby environment)
-rvm gemset use blog       #change to blog gemset
-gem install bundler jekyll
+$ rvm install ruby  #installs the latest version
+$ rvm gemset create blog     #creates a new gemset (ruby environment)
+$ rvm gemset use blog       #change to blog gemset
+$ gem install bundler jekyll
 ```
 #### Create the blog site
 
 ```
-jekyll new gsoc_blog
-cd gsoc_blog
-bundle exec jekyll serve
+$ jekyll new gsoc_blog
+$ cd gsoc_blog
+$ bundle exec jekyll serve
 ```
 
 You should have a local server running on port 4000 (http://127.0.0.1:4000/) with a sample post on the blog. This uses the default theme, there are various others themes available feel free to hack around.
@@ -36,7 +36,7 @@ You should have a local server running on port 4000 (http://127.0.0.1:4000/) wit
 
 Initialize a git repository inside the gsoc_blog folder.
 ```
-git init .      # make sure you are inside the gsoc_blog folder
+$ git init .      # make sure you are inside the gsoc_blog folder
 ```
 `git status` should give you the output something like
 ```
@@ -59,23 +59,23 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 Make this as your first commit
 ```
-git add .
-git commit -m 'Initial commit'
+$ git add .
+$ git commit -m 'Initial commit'
 ```
 
 Now go to GitHub and create a new repository and name it `github_username.github.io`. **Don't** add readme or license files. If you are already using GitHub pages for a personal website create a new repository and name it `gsoc_blog`. Make sure to turn on GitHub pages in settings for the repository. You can access the blog at `github_username.github.io/gsoc_blog`
 
 Add remote link to the GitHub repository on your machine
 ```
-git remote add origin https://github.com/github_username/github_username.github.io.git
+$ git remote add origin https://github.com/github_username/github_username.github.io.git
 ```
 or if you already are using `github_username.github.io`
 ```
-git remote add origin https://github.com/github_username/gsoc_blog.git
+$ git remote add origin https://github.com/github_username/gsoc_blog.git
 ```
 Push the changes (Intial commit) to GitHub
 ```
-git push -u origin master
+$ git push -u origin master
 ```
 
 Have a look at https://mriduls.github.io/blog/
@@ -84,8 +84,8 @@ Have a look at https://mriduls.github.io/blog/
 
 Once we are done with the initial setup, let's write our first blog post.
 ```
-cd _posts
-touch YEAR-MONTH-DAY-title.markdown   #creates a new file
+$ cd _posts
+$ touch YEAR-MONTH-DAY-title.markdown   #creates a new file
 ```
 
 All blog post files must begin with [YAML Front Matter](https://jekyllrb.com/docs/frontmatter/).
@@ -107,8 +107,9 @@ for more information https://jekyllrb.com/docs/posts/#creating-post-files
 
 Now we need to push these changes to GitHub.
 ```
-git add .
-git commit -m 'Accepted for GSoC 2017 with NumFOCUS'
+$ git add .
+$ git commit -m 'Accepted for GSoC 2017 with NumFOCUS'
+$ git push -u origin master
 ```
 
 Your blog `github_username.github.io` will update to show your new post. (This could take a couple of minutes)
