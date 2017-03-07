@@ -340,7 +340,7 @@ a sub-org must:
 | [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella  | https://github.com/pymc-devs/pymc3/wiki/GSoC-2017-projects                 |
 | [PyTables]                      | Unknown                           |                                                                            |
 | [QuantEcon]                     | Not participating                 |                                                                            |
-| [rOpenSci]                      | Unknown                           |                                                                            |
+| [rOpenSci]                      | Not participating                 |                                                                            |
 | [Software Carpentry][SCF]       | Unknown                           |                                                                            |
 | [SymPy]                         | Applying as a separate org        | https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas                        |
 | [Stan]                          | Applying under NumFOCUS  umbrella | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-stan.md       |
