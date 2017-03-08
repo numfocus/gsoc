@@ -1,7 +1,7 @@
-Once you have been accepted as a GSoC student NumFOCUS expects you to blog about your progress every week. It's okay if you are stuck, post about that too :) You could use various platforms like wordpress, blogger, etc. but in our experience it's usually a pain to get formatting right in case of code snippets, screenshots. We suggest you use GitHub Pages and Jekyll to blog about your summer. 
+Once you have been accepted as a GSoC student NumFOCUS expects you to blog about your progress every week. It's okay if you are stuck, post about that too :) We suggest you use GitHub Pages and Jekyll to blog about your summer. 
 GitHub gives you free hosting and a free domain name (`github_username.github.io`) and [Jekyll](https://jekyllrb.com) is a blog friendly static site generator. This tutorial will help you setup your blog.
 
-#### Install Ruby
+## Install Ruby
 For Debian or Ubuntu based users
 ```
 $ sudo apt-get install ruby-full
@@ -10,8 +10,9 @@ Mac OS/OS X has ruby installed by default.
 
 For more information go through https://www.ruby-lang.org/en/documentation/installation/
 
-#### Install RVM and setup 
+## Install RVM and setup 
 ```
+$ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 $ \curl -sSL https://get.rvm.io | bash -s stable
  ```
 for more information https://rvm.io
@@ -22,7 +23,7 @@ $ rvm gemset create blog     #creates a new gemset (ruby environment)
 $ rvm gemset use blog       #change to blog gemset
 $ gem install bundler jekyll
 ```
-#### Create the blog site
+## Create the blog site
 
 ```
 $ jekyll new gsoc_blog
@@ -32,7 +33,7 @@ $ bundle exec jekyll serve
 
 You should have a local server running on port 4000 (http://127.0.0.1:4000/) with a sample post on the blog. This uses the default theme, there are various others themes available feel free to hack around.
 
-#### Integrate with GitHub Pages
+## Integrate with GitHub Pages
 
 Initialize a git repository inside the gsoc_blog folder.
 ```
@@ -69,7 +70,7 @@ Add remote link to the GitHub repository on your machine
 ```
 $ git remote add origin https://github.com/github_username/github_username.github.io.git
 ```
-or if you already are using `github_username.github.io`
+or if you already are using `github_username.github.io` and created a new repo `gsoc_blog` for the blog
 ```
 $ git remote add origin https://github.com/github_username/gsoc_blog.git
 ```
@@ -78,9 +79,9 @@ Push the changes (Intial commit) to GitHub
 $ git push -u origin master
 ```
 
-Have a look at https://mriduls.github.io/blog/
+Have a look at `your_username.github.io` it should look like something like `https://mriduls.github.io/blog/`
 
-#### Adding a new post
+## Adding a new post
 
 Once we are done with the initial setup, let's write our first blog post.
 ```
