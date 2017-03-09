@@ -330,12 +330,12 @@ a sub-org must:
 | [AstroPy]                       | Applying with OpenAstronomy       | http://openastronomy.org/gsoc/gsoc2017/                                    |
 | [Data Carpentry][DataCarpentry] | Unknown                           |                                                                            |
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella  | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-fenics.md     |
-| [IPython]                       | Unknown                           |                                                                            |
+| [IPython]                       | Not participating                      |                                                                            |
 | [Julia]                         | Applying as separate org          | http://julialang.org/soc/ideas-page                                        |
 | [Matplotlib]                    | Applying under NumFOCUS umbrella  | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-matplotlib.md |
 | [nteract]                       | Applying under NumFOCUS umbrella  | https://github.com/nteract/nteract/wiki/GSoC-2017-Ideas                    |
 | [NumPy]                         | Not participating                 |                                                                            |
-| [Project Jupyter][Jupyter]      | Unknown                           |                                                                            |
+| [Project Jupyter][Jupyter]      | Not participating                 |                                                                            |
 | [pandas]                        | Unknown                           |                                                                            |
 | [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella  | https://github.com/pymc-devs/pymc3/wiki/GSoC-2017-projects                 |
 | [PyTables]                      | Unknown                           |                                                                            |
