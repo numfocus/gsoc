@@ -4,6 +4,7 @@
 - [NumFOCUS Profile][OA]
 - [NumFOCUS Questionnaire][OQ]
 - [NumFOCUS Team][OT]
+- [Mentor Summit][summit]
 
 For informations, check
 http://en.flossmanuals.net/melange/org-application-period/.
@@ -13,3 +14,4 @@ http://en.flossmanuals.net/melange/org-application-period/.
 [OP]: operations.md
 [OQ]: questionnaire.md
 [OT]: team.md
+[summit]: summit.md
