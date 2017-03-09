@@ -29,8 +29,8 @@ lists a few things you can do to get started in free and open source software.
 The answer is generally: **Yes**. 
 We value creativity, intelligence and enthusiasm above specific knowledge of the libraries or algorithms we use. 
 We think that an interested and motivated student who is willing to learn is more valuable than anything else.
-The range of available projects should suit people with different backgrounds, both with and without prior experience of computational chemistry.
-At the same time if you have experience using your project of choice or one of it's dependencies (e.g. language) make sure to let us know about that as well.
+The range of available projects should suit people with different backgrounds.
+At the same time if you have experience using your project of choice or one of it's dependencies (e.g. language) make sure to let us know about that as well. [FLOSS manual](http://write.flossmanuals.net/gsocstudentguide/am-i-good-enough/) gives a good overview of this part for GSoC.
 
 ## Our Expectations From Students
 
@@ -163,7 +163,7 @@ like phone number and address, at your proposal.**
 ### Final Proposal
 
 Your final proposal must be submitted to [GSoC][]
-**before March 25th 19:00 UTC**
+**before April 3rd 16:00 UTC**
 as a PDF file.
 
 You can use [Pandoc][] to convert your proposal in Markdown
