@@ -163,7 +163,7 @@ like phone number and address, at your proposal.**
 ### Final Proposal
 
 Your final proposal must be submitted to [GSoC][]
-**before March 25th 19:00 UTC**
+**before April 3rd 16:00 UTC**
 as a PDF file.
 
 You can use [Pandoc][] to convert your proposal in Markdown
