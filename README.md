@@ -199,7 +199,7 @@ a sub-org must:
 | [AstroPy]                       | Applying with OpenAstronomy       | http://openastronomy.org/gsoc/gsoc2017/                                    |
 | [Data Carpentry][DataCarpentry] | Unknown                           |                                                                            |
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella  | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-fenics.md     |
-| [IPython]                       | Not participating                      |                                                                            |
+| [IPython]                       | Not participating                 |                                                                            |
 | [Julia]                         | Applying as separate org          | http://julialang.org/soc/ideas-page                                        |
 | [Matplotlib]                    | Applying under NumFOCUS umbrella  | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-matplotlib.md |
 | [nteract]                       | Applying under NumFOCUS umbrella  | https://github.com/nteract/nteract/wiki/GSoC-2017-Ideas                    |
@@ -210,10 +210,10 @@ a sub-org must:
 | [PyTables]                      | Unknown                           |                                                                            |
 | [QuantEcon]                     | Not participating                 |                                                                            |
 | [rOpenSci]                      | Not participating                 |                                                                            |
-| [Software Carpentry][SCF]       | Unknown                           |                                                                            |
+| [Software Carpentry][SCF]       | Not participating                 |                                                                            |
 | [SymPy]                         | Applying as a separate org        | https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas                        |
 | [Stan]                          | Applying under NumFOCUS  umbrella | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-stan.md       |
-| [yt]                            | Not participating                           |                                                                            |
+| [yt]                            | Not participating                 |                                                                            |
 
 ## NumFOCUS' Affiliated Projects GSoC Status
 
