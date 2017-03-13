@@ -13,3 +13,6 @@ page of each organization under NumFocus umbrella at this page.
 - MDAnalysis https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2017-Project-Ideas
 - PyMC3 https://github.com/pymc-devs/pymc3/wiki/GSoC-2017-projects
 - Stan https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-stan.md
+
+
+See the [README](https://github.com/numfocus/gsoc/blob/master/READMD.md) for contact information of each org.
