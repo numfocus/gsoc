@@ -78,7 +78,7 @@ In alphabetic order.
        <h1>FEniCS Project</h1>
        <p>The FEniCS Project is a collection of tools with extensive features for the automated and efficient solution of differential equations. Partial differential equations can be specified in near-mathematical notation (as finite element variational problems) and solved automatically.</p>
        <p>
-         <a href="https://fenicsproject.org/">Website</a> | <a href="mailto:student-projects@rare-technologies.com)">Student Mailing List</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-fenics.md">Ideas Page</a>
+         <a href="https://fenicsproject.org/">Website</a> | <a href="https://groups.google.com/forum/#!forum/fenics-dev">Mailing List</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-fenics.md">Ideas Page</a>
        </p>
     </td>
   </tr>
