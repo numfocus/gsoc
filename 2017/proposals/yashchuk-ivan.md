@@ -26,7 +26,7 @@ are needed to be added into FFC to compute geometric quantities on the quad/hex 
 code for triangles and tetrahedrons as an example. Finally, linking everything to the DOLFIN problem solving 
 environment should be done to solve a complete problem.
 
-The main source of information for this project is [The FEniCS Book](https://link.springer.com/book/10.1007%2F978-3-642-23099-8).
+The main sources of information for this project are the sourcecode and [The FEniCS Book](https://link.springer.com/book/10.1007%2F978-3-642-23099-8).
 Any other book on FEM can also be useful (for example a [book by Claes Johnson](https://www.amazon.com/Numerical-Solution-Differential-Equations-Mathematics/dp/048646900X))
 
 ## Schedule of Deliverables
@@ -40,19 +40,45 @@ Any other book on FEM can also be useful (for example a [book by Claes Johnson](
 ### May 30th - June 3rd
 
 * Start working on building an interface between FFC and FIAT for quad/hex mesh.
-
+   
+   Following script should work correctly:  
+   ```python
+   from dolfin import *
+   mesh = UnitQuadMesh(mpi_comm_world(), 1, 1) #2D mesh of quadrilaterals with 4 vertices and 1 cell
+   print(assemble(1.0*dx(mesh))) #should return 1.0
+   ```  
+   Modifications needed in ffc/fiatinterface.py, ffc/representation.py
+   
 ### June 5th - June 9th
 
 * Testing and improving the interface.
-
+** Work on uflacs representation for quad/hex mesh in FFC.
+** (optional) Fix plotting of quad/hex mesh:
+   
+   `plot(mesh)` currently does not work  
+   In 3D plots with `HTML(X3DOM().html(mesh))` quad faces are not represented correctly
+   
 ### June 12th - June 16th
 
-* Work on quadrature representation for quad/hex mesh in FFC.
+* Defining function spaces for quad/hex mesh
+   
+   The data of a FunctionSpace is represented in terms of a triplet consisting of a Mesh, a DofMap and a FiniteElement.  
+   The DofMap provides the function tabulate_dofs which maps the local degrees of freedom on any given cell of the Mesh to global degrees of freedom.  
+   The FiniteElement defines the local function space on any given cell of the Mesh.
+
+   Following script should work correctly: 
+   ```python
+   from dolfin import *  
+   mesh = UnitQuadMesh(mpi_comm_world(), 1, 1) #2D mesh of quadrilaterals with 4 vertices and 1 cell  
+   V = FunctionSpace(mesh, "P", 1) #Function space on a quadrilateral  
+   f = Function(V) #Function in FE space V  
+   ```   
+   Modifications needed in dolfin/functions/functionspace.py  
 
 ### June 19th - June 23th
 
-* Work on tensor representation for quad/hex mesh in FFC.
-* Skeleton code for FIAT and FFC should be ready by Phase 2.
+* Further work on function spaces.
+* Skeleton code should be ready by Phase 2.
 
 ### June 26 - June 30th, **End of Phase 1**
 
@@ -60,15 +86,24 @@ Any other book on FEM can also be useful (for example a [book by Claes Johnson](
 
 ### July 3rd - July 7th, **Begin of Phase 2**
 
-* Testing and bug fixing of the existing changes to FFC, FIAT code.
+* Test and get the interpolation of an expression into function space working
+   
+   Following script should work correctly:    
+   ```python
+   from dolfin import *  
+   mesh = UnitQuadMesh(mpi_comm_world(), 1, 1) #2D mesh of quadrilaterals with 4 vertices and 1 cell  
+   V = FunctionSpace(mesh, "P", 1) #Function space on a quadrilateral  
+   m = interpolate(Expression(('...', '...')), V)
+   ``` 
+   dolfin/fem/interpolation.py
 
 ### July 10th - July 14th
 
-* Finalize changes for quad/hex mesh in FIAT and FFC.
+* Further work on `interpolate`, `project`, `assemble`
 
 ### July 17th - July 21th
 
-* Start linking quad/hex mesh functionality to DOLFIN environment.
+* Finalize changes for quad/hex mesh in FIAT/FFC.
 
 ### July 24th - July 28th, **End of Phase 2**
 
@@ -76,16 +111,27 @@ Any other book on FEM can also be useful (for example a [book by Claes Johnson](
 
 ### July 31st - August 4th, **Begin of Phase 3**
 
-* Continue working with DOLFIN.
+* Finalize linking everything to DOLFIN.
+   
+   Following functionality should be tested and fixed if needed:  
+   
+    * Assembling the functionals 1*dx (for unit size mesh should return 1) and x[0]*dx (for unit size mesh should return 0.5)
+    * Defining a FunctionSpace `V = FunctionSpace(mesh, "P", 1)`
+    * Interpolating an expression into a function `interpolate(Expression(('...', '...')), V)`
+    * Assembling the functional f*dx `assemble(f*dx(mesh))`
+    * Assembling a linear form fvdx `L = f*v*dx`
+    * Assembling a bilinear form uvdx `a = inner(u, v)*dx`
+    * Projecting an expression into a function space `project('...', FunctionSpace)`
+    * Solve a Poisson problem
 
 ### August 7th - August 11th
 
-* Finalize linking everything to DOLFIN.
+* Make the documentation.
+* Make the demo program with Jupyter Notebook.
 
 ### August 14th - August 18th
 
-* Make the documentation.
-* Make the demo program with Jupyter Notebook.
+* One week of break. I am going to attend a Nordic Graduate Course in Computational Mathematical Modeling in Oslo.
 
 ### August 21st - August 25th, **Final Week**
 
