@@ -51,9 +51,9 @@ Any other book on FEM can also be useful (for example a [book by Claes Johnson](
    
 ### June 5th - June 9th
 
-* Testing and improving the interface.
-** Work on uflacs representation for quad/hex mesh in FFC.
-** (optional) Fix plotting of quad/hex mesh:
+* Testing and improving the interface.  
+ * Work on uflacs representation for quad/hex mesh in FFC.
+ * (optional) Fix plotting of quad/hex mesh:
    
    `plot(mesh)` currently does not work  
    In 3D plots with `HTML(X3DOM().html(mesh))` quad faces are not represented correctly
