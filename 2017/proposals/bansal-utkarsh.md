@@ -174,9 +174,24 @@ fine, but a deprecation warning is displayed.
     Here only `TestChildClass` is collected for test cases.
 
 
+Useful pytest features
+----------------------
+
+1. Fixtures - pytest has completely different type of fixtures that are very modular and simple. The documentation
+is available [here](http://doc.pytest.org/en/latest/fixture.html). Using fixtures is one of the major goals of this project as it will help in making the tests
+more modular and might even help speed them up (by caching parsed files among others, see [#1191](https://github.com/MDAnalysis/mdanalysis/issues/1191)).
+
+2. Universal `assert` statements - pytest allows us to use the standard python assert for verifying expectations and values in tests. It also automagically provides
+quite helpful tracebacks when tests fail.
+
+3. `parametrize` instead of `yeild` bases test generators - The builtin `pytest.mark.parametrize` decorator enables parametrization of arguments for a test
+function. This is more manageable than the nose `yield` based counterpart.
+
+4. `raises` helper - it is used to assert that some code raises an exception and is better than the decorator that is used in nose.
 
 
-The project can be divided into three major parts which will cover issues [#884](https://github.com/MDAnalysis/mdanalysis/issues/884) and [#516](https://github.com/MDAnalysis/mdanalysis/issues/516)
+
+Overall the project can be divided into three major parts which will cover issues [#884](https://github.com/MDAnalysis/mdanalysis/issues/884) and [#516](https://github.com/MDAnalysis/mdanalysis/issues/516)
 
 
 Part 1
@@ -311,7 +326,8 @@ Personal Information
 I am a 4th year undergraduate student pursuing my B.Tech. in Computer Science and Engineering.
 
 Why are you interested in working with us?
------------------------------------------
+------------------------------------------
+
 
 Have you used MDAnalysis for your research already?
 --------------------------------------------------
