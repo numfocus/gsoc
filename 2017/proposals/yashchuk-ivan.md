@@ -151,7 +151,8 @@ I will try to keep contributing to FEniCS with issues and PRs, and remain an act
 
 For my bachelor's thesis I was developing a tool for 3D microstructure generation with the grain boundaries in Matlab.
 Also this project involved developing subroutines in Fortran for Finite Element Analysis Program (FEAP) for modelling crack growth between the grains with cohesive elements with hex and wedge type of elements support.
-Recently, I have worked on adding an improved boundary condition implementation for open source program Pencil Code (so far 2 PRs merged [first](https://github.com/pencil-code/pencil-code/pull/15), [second](https://github.com/pencil-code/pencil-code/pull/16))
+Recently, I have worked on adding an improved boundary condition implementation for open source program Pencil Code (so far 2 PRs merged [first](https://github.com/pencil-code/pencil-code/pull/15), [second](https://github.com/pencil-code/pencil-code/pull/16)).
+I have added minor fixes to FEniCS Project [PR #70](https://bitbucket.org/fenics-project/ufl/pull-requests/70/), [PR #340](https://bitbucket.org/fenics-project/dolfin/pull-requests/340/).
 
 ## Other Experiences
 
