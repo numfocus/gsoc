@@ -28,121 +28,132 @@ Incompatible nose idioms
 ------------------------
 
 1. Test classes with `__init__` methods are not collected by pytest.
- **Example**
+
+     **Example**
+
      ```
      class TestGROReader(BaseReaderTest):
-        def __init__(self, reference=None):
-            if reference is None:
-                reference = GROReference()
-            super(TestGROReader, self).__init__(reference)
+       def __init__(self, reference=None):
+         if reference is None:
+         reference = GROReference()
+         super(TestGROReader, self).__init__(reference)
 
-        def test_flag_convert_lengths(self):
-            assert_equal(mda.core.flags['convert_lengths'], True,
-                         "MDAnalysis.core.flags['convert_lengths'] should be True "
-                         "by default")
+       def test_flag_convert_lengths(self):
+         assert_equal(mda.core.flags['convert_lengths'], True,
+         "MDAnalysis.core.flags['convert_lengths'] should be True "
+         "by default")
 
-        def test_time(self):
-            u = mda.Universe(self.ref.topology, self.ref.trajectory)
-            assert_equal(u.trajectory.time, 0.0,
-                         "wrong time of the frame")
+       def test_time(self):
+         u = mda.Universe(self.ref.topology, self.ref.trajectory)
+         assert_equal(u.trajectory.time, 0.0,
+         "wrong time of the frame")
 
-        def test_full_slice(self):
-            u = mda.Universe(self.ref.topology, self.ref.trajectory)
-            trj_iter = u.trajectory[:]
-            frames = [ts.frame for ts in trj_iter]
-            assert_equal(frames, np.arange(u.trajectory.n_frames))
-     ```
+       def test_full_slice(self):
+         u = mda.Universe(self.ref.topology, self.ref.trajectory)
+         trj_iter = u.trajectory[:]
+         frames = [ts.frame for ts in trj_iter]
+         assert_equal(frames, np.arange(u.trajectory.n_frames))
+	```
+
+
     This class is not collected for tests because `__init__` is present
 
+
 2. `setUp` and `tearDown` methods are not executed in test classes that do not inherit from `TestCase`.
+
     **Example**
 
+    ```
+    class TestGROIncompleteVels(object):
+      def setUp(self):
+      	self.u = mda.Universe(GRO_incomplete_vels)
 
-      ```
-        class TestGROIncompleteVels(object):
-            def setUp(self):
-                self.u = mda.Universe(GRO_incomplete_vels)
+      def tearDown(self):
+      	del self.u
 
-            def tearDown(self):
-                del self.u
+      def test_load(self):
+      	assert_equal(len(self.u.atoms), 4)
 
-            def test_load(self):
-                assert_equal(len(self.u.atoms), 4)
+      def test_velocities(self):
+        assert_array_almost_equal(self.u.atoms[0].velocity,
+        np.array([ 79.56,  124.08,   49.49]),
+        decimal=3)
+        assert_array_almost_equal(self.u.atoms[2].velocity,
+        np.array([0.0, 0.0, 0.0]),
+        decimal=3)
+    ```
 
-            def test_velocities(self):
-                assert_array_almost_equal(self.u.atoms[0].velocity,
-                                          np.array([ 79.56,  124.08,   49.49]),
-                                          decimal=3)
-                assert_array_almost_equal(self.u.atoms[2].velocity,
-                                          np.array([0.0, 0.0, 0.0]),
-                                          decimal=3)
-      ```
     **Output**
     `AttributeError - 'TestGROIncompleteVels' object has no attribute 'u'`
 
 3. `yield` based test generators are deprecated in the current version of pytest. For now the are executed just
- fine, but a deprecation warning is displayed.
-   **Example**
+fine, but a deprecation warning is displayed.
 
-     ```
-     def check_even(n, nn):
-        print(n)
-        assert n % 2 == 0 or nn % 2 == 0
+	**Example**
 
-
-     def test_evens():
-        for i in range(0, 5):
-            print(i)
-            yield check_even, i, i * 3
-
-     ```
-
-    **Warning**
     ```
-    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-    ```
+    def check_even(n, nn):
+      print(n)
+      assert n % 2 == 0 or nn % 2 == 0
+
+
+    def test_evens():
+      for i in range(0, 5):
+      print(i)
+      yield check_even, i, i * 3
+
+	```
+
+   **Warning**
+
+   ```
+   WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+   WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+   WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+   WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+   WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+   ```
 
 
 4. Test case discovery in pytest is quite different from that in nose.
 
-    **Example**
+	**Example**
+
     ```
     class _IgnoreClass(TestCase):
 
-        def test_number(self):
-            assert 2 == 2
+      def test_number(self):
+      	assert 2 == 2
 
-        def test_bool(self):
-            assert True is True
+      def test_bool(self):
+      	assert True is True
 
-        def dont_collect(self):
-            assert 1 == 1
+      def dont_collect(self):
+      	assert 1 == 1
 
 
     class IgnoreClass(object):
-        def test_number(self):
-            assert 2 == 2
+      def test_number(self):
+      	assert 2 == 2
 
-        def test_bool(self):
-            assert True is False
-    ```
-    In the above case,  `_IgnoreClass` is collected even tough it doesn't follow the naming convention required for test discovery and the class `IgnoreClass` is not collected.
+      def test_bool(self):
+      	assert True is False
+	```
+
+  In the above case,  `_IgnoreClass` is collected even tough it doesn't follow the naming convention required for test discovery and the class `IgnoreClass` is not collected.
 
 5. Inheritance also causes problems in pytest.
+
     **Example**
     ```
     class ParentClass(TestCase):
 
-        def test_value(self):
-            assert self.a == 2
+      def test_value(self):
+      	assert self.a == 2
 
 
     class TestChildClass(ParentClass):
-        a = 2
+    	a = 2
     ```
     The problem with the above example is that both the test classes are collected for tests (only `TestChildClass` should be collected)
     and hence test case in `ParentClass` fails
@@ -150,15 +161,15 @@ Incompatible nose idioms
     **Solution**
     ```
     class ParentClass(TestCase):
-        __test__ = False
+      __test__ = False
 
-        def test_value(self):
-            assert self.a == 2
+      def test_value(self):
+          assert self.a == 2
 
 
     class TestChildClass(ParentClass):
-        __test__ = True
-        a = 2
+      __test__ = True
+      a = 2
     ```
     Here only `TestChildClass` is collected for test cases.
 
@@ -174,13 +185,65 @@ This part will make the bare minimum changes needed to shift from nose to pytest
 code coverage running as usual. This is being done in a single PR to avoid any weird coexistence of two testing 
 libraries.
 
-* Modify the code to make it discoverable by pytest (take care of `__init__` and inheritance problems)
+* Modify the code to make it discoverable by pytest (take care of `__init__` and inheritance problems as explained above)
 * Port the 5 existing nose plugins to pytest -
-    * Capture error (`capture_err.py`)
-    * Cleanup (`cleanup.py`)
-    * Knownfailure (`knownfailure.py`)
-    * Memory leak (`memleak.py`)
-    * Open files (`open_files.py`)
+    * Capture error (`capture_err.py`) This plugin captures stderr during test execution. If the test fails
+    or raises an error, the captured output is appended to the error or failure output. Pytest already has this
+feature inbuilt so this plugin can be dropped.
+
+        **Example**
+        ```
+        def check_even(n, nn):
+            print(n)
+            assert n % 2 == 0 or nn % 2 == 0
+
+
+        def test_evens():
+            for i in range(0, 5):
+                yield check_even, i, i * 3
+        ```
+
+        **Output**
+        ```
+        ======================================= FAILURES =======================================
+        ____________________________________ test_evens[1] _____________________________________
+
+        n = 1, nn = 3
+
+            def check_even(n, nn):
+                print(n)
+        >       assert n % 2 == 0 or nn % 2 == 0
+        E       assert ((1 % 2) == 0 or (3 % 2) == 0)
+
+        experiments.py:37: AssertionError
+        --------------------------------- Captured stdout call ---------------------------------
+        1
+        ____________________________________ test_evens[3] _____________________________________
+
+        n = 3, nn = 9
+
+            def check_even(n, nn):
+                print(n)
+        >       assert n % 2 == 0 or nn % 2 == 0
+        E       assert ((3 % 2) == 0 or (9 % 2) == 0)
+
+        experiments.py:37: AssertionError
+        --------------------------------- Captured stdout call ---------------------------------
+        3
+        ```
+
+
+    * Cleanup (`cleanup.py`) This plugin deletes XDR offset files after all testing is done. This will have to
+    be re-written as a pytest plugin.
+    * Knownfailure (`knownfailure.py`) This is a decorator to check tests that are expected to fail. Pytest has
+    something similar to this called `xfail`. The documentation for this is available [here](http://doc.pytest.org/en/latest/skipping.html#mark-a-test-function-as-expected-to-fail) .
+    This needs discussion to finalize if we need to port the existing code or if `xfail` is good enough for our use.
+    * Memory leak (`memleak.py`) This plugin detects memory leaks in tests. There is an open-source (MIT license) plugin, [pytest-leaks](https://github.com/abalkin/pytest-leaks).
+    This also needs discussion to finalize if we need to port the existing code or if pytest-leaks is good enough for our use.
+    * Open files (`open_files.py`) This plugin lists all open files when a test fails or errors. They also are listed at
+    the end of the test suite. This plugin is currently disabled because we were facing issue with capturing stdout. Discussion
+    is needed to decide if we need this plugin anymore. If we do, this will have to be rewritten for pytest as no open source
+    alternatives are available.
 * Configure TravisCI and code coverage
 * Take care of time limit for a single test case
 
@@ -352,6 +415,5 @@ Long description of the project.
 
 {{ Why you want to do this project? }}
 
-## Appendix
-
-{{ Extra content }}
+Relevant Discussions and References
+===================================
