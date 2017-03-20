@@ -5,8 +5,8 @@ Port testsuite to pytest
 Abstract
 ========
 Testing is crucial to the development of any software and MDAnalysis currently uses nose to test their code. 
-Unfortunately, nose is no longer under active development so the community has decided to shift over to pytest.
-The objective of this project is to implement this shift in a way that existing development work is not affected 
+Unfortunately, [nose](http://nose.readthedocs.io/en/latest/) is no longer under active development so the community has decided to shift over to [pytest](http://doc.pytest.org/en/latest/) .
+The objective of this project is to implement this shift in a way that existing development work is not affected
 and to standardise and improve the existing test cases.
 
 
@@ -21,10 +21,152 @@ Also, it is to be noted that pytest misses out some (231 to be exact) test cases
 between test discovery rules of nose and pytest.
 
 
-
-
 Technical Details
-================
+=================
+
+Incompatible nose idioms
+------------------------
+
+1. Test classes with `__init__` methods are not collected by pytest.
+ **Example**
+     ```
+     class TestGROReader(BaseReaderTest):
+        def __init__(self, reference=None):
+            if reference is None:
+                reference = GROReference()
+            super(TestGROReader, self).__init__(reference)
+
+        def test_flag_convert_lengths(self):
+            assert_equal(mda.core.flags['convert_lengths'], True,
+                         "MDAnalysis.core.flags['convert_lengths'] should be True "
+                         "by default")
+
+        def test_time(self):
+            u = mda.Universe(self.ref.topology, self.ref.trajectory)
+            assert_equal(u.trajectory.time, 0.0,
+                         "wrong time of the frame")
+
+        def test_full_slice(self):
+            u = mda.Universe(self.ref.topology, self.ref.trajectory)
+            trj_iter = u.trajectory[:]
+            frames = [ts.frame for ts in trj_iter]
+            assert_equal(frames, np.arange(u.trajectory.n_frames))
+     ```
+    This class is not collected for tests because `__init__` is present
+
+2. `setUp` and `tearDown` methods are not executed in test classes that do not inherit from `TestCase`.
+    **Example**
+
+
+      ```
+        class TestGROIncompleteVels(object):
+            def setUp(self):
+                self.u = mda.Universe(GRO_incomplete_vels)
+
+            def tearDown(self):
+                del self.u
+
+            def test_load(self):
+                assert_equal(len(self.u.atoms), 4)
+
+            def test_velocities(self):
+                assert_array_almost_equal(self.u.atoms[0].velocity,
+                                          np.array([ 79.56,  124.08,   49.49]),
+                                          decimal=3)
+                assert_array_almost_equal(self.u.atoms[2].velocity,
+                                          np.array([0.0, 0.0, 0.0]),
+                                          decimal=3)
+      ```
+    **Output**
+    `AttributeError - 'TestGROIncompleteVels' object has no attribute 'u'`
+
+3. `yield` based test generators are deprecated in the current version of pytest. For now the are executed just
+ fine, but a deprecation warning is displayed.
+   **Example**
+
+     ```
+     def check_even(n, nn):
+        print(n)
+        assert n % 2 == 0 or nn % 2 == 0
+
+
+     def test_evens():
+        for i in range(0, 5):
+            print(i)
+            yield check_even, i, i * 3
+
+     ```
+
+    **Warning**
+    ```
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+    ```
+
+
+4. Test case discovery in pytest is quite different from that in nose.
+
+    **Example**
+    ```
+    class _IgnoreClass(TestCase):
+
+        def test_number(self):
+            assert 2 == 2
+
+        def test_bool(self):
+            assert True is True
+
+        def dont_collect(self):
+            assert 1 == 1
+
+
+    class IgnoreClass(object):
+        def test_number(self):
+            assert 2 == 2
+
+        def test_bool(self):
+            assert True is False
+    ```
+    In the above case,  `_IgnoreClass` is collected even tough it doesn't follow the naming convention required for test discovery and the class `IgnoreClass` is not collected.
+
+5. Inheritance also causes problems in pytest.
+    **Example**
+    ```
+    class ParentClass(TestCase):
+
+        def test_value(self):
+            assert self.a == 2
+
+
+    class TestChildClass(ParentClass):
+        a = 2
+    ```
+    The problem with the above example is that both the test classes are collected for tests (only `TestChildClass` should be collected)
+    and hence test case in `ParentClass` fails
+
+    **Solution**
+    ```
+    class ParentClass(TestCase):
+        __test__ = False
+
+        def test_value(self):
+            assert self.a == 2
+
+
+    class TestChildClass(ParentClass):
+        __test__ = True
+        a = 2
+    ```
+    Here only `TestChildClass` is collected for test cases.
+
+
+
+
+The project can be divided into three major parts which will cover issues [#884](https://github.com/MDAnalysis/mdanalysis/issues/884) and [#516](https://github.com/MDAnalysis/mdanalysis/issues/516)
+
 
 Part 1
 ------
@@ -51,7 +193,37 @@ been tested in a consistent fashion. Also all the reader/writers don’t necessa
 * Modify Reader/Writer API for files in the coordinates module for to follow the standard API.
 * Modify coordinates tests to use base Reader/Writer test classes. This will help to set a baseline that all 
 readers/writers will have to conform to and at the same time avoid code duplication among test classes.
-* Modify code to make use of pytest only features such as assert statements and fixtures. 
+* Modify code to make use of pytest only features such as assert statements and fixtures.
+
+This part will be split into multiple pull requests, ideally one pull request for each coordinate test file.
+The following files will be fixed in this part -
+* `test_amber_inpcrd.py`
+* `test_chainreader.py`
+* `test_crd.py`
+* `test_dcd.py`
+* `test_dlpoly.py`
+* `test_dms.py`
+* `test_gms.py`
+* `test_gro.py`
+* `test_lammps.py`
+* `test_memory.py`
+* `test_mmtf.py`
+* `test_mol2.py`
+* `test_netcdf.py`
+* `test_null.py`
+* `test_pdb.py`
+* `test_pdbqt.py`
+* `test_pqr.py`
+* `test_reader_api.py`
+* `test_timestep_api.py`
+* `test_trj.py`
+* `test_trz.py`
+* `test_writer_registration.py`
+* `test_xdr.py`
+* `test_xyz.py`
+* `base.py`
+* `reference.py`
+
 
 Part 3
 ------
