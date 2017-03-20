@@ -485,6 +485,26 @@ Yes
 
 {{ Experience }}
 
+Contributions to MDAnalysis
+===========================
+* Port GRO tests to new BaseReader/Writer Test classes [#1196](https://github.com/MDAnalysis/mdanalysis/pull/1196) (Work in progress)
+* Add support for start and stop in transfer_to_memory [#1189](https://github.com/MDAnalysis/mdanalysis/pull/1189)
+* Fix error message in case of unidentified file format [#1184](https://github.com/MDAnalysis/mdanalysis/pull/1184)
+* Raises IOError if the toplogy file doesn't exist or can't be accessed [#1177](https://github.com/MDAnalysis/mdanalysis/pull/1177)
+
+
+Contributions to other Open Source Projects
+===========================================
+* https://github.com/mozilla/bedrock/pull/2697
+* https://github.com/mozilla/bedrock/pull/2699
+* https://github.com/mozilla/kuma/pull/3131
+* https://github.com/rrmerugu/django-seed/pull/5
+* https://github.com/rrmerugu/django-seed/pull/4
+* I've also been actively engaged with @Software-Incubator, the software development center of my college where I have
+contributed to various projects which include websites, REST APIs, web based games and iOS applications which are all open
+source.
+
+
 ## Why this project?
 
 {{ Why you want to do this project? }}
