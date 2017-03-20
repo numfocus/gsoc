@@ -201,7 +201,8 @@ code coverage running as usual. This is being done in a single PR to avoid any w
 libraries.
 
 * Modify the code to make it discoverable by pytest (take care of `__init__` and inheritance problems as explained above)
-* Port the 5 existing nose plugins to pytest -
+* Port the 5 existing nose plugins to pytest. Pytest has awesome documentation on how to implement plugins which can be
+ found [here](http://doc.pytest.org/en/latest/writing_plugins.html) .
     * Capture error (`capture_err.py`) This plugin captures stderr during test execution. If the test fails
     or raises an error, the captured output is appended to the error or failure output. Pytest already has this
 feature inbuilt so this plugin can be dropped.
@@ -259,8 +260,8 @@ feature inbuilt so this plugin can be dropped.
     the end of the test suite. This plugin is currently disabled because we were facing issue with capturing stdout. Discussion
     is needed to decide if we need this plugin anymore. If we do, this will have to be rewritten for pytest as no open source
     alternatives are available.
+    * To run tests in parallel, there is a open source (MIT license) plugin [pytest-xdist](https://github.com/pytest-dev/pytest-xdist) that is recommended by pytest.
 * Configure TravisCI and code coverage
-* Take care of time limit for a single test case
 
 Part 2 
 ------
@@ -338,6 +339,7 @@ with pytest. Here are my findings
 **Change #1** Changed all classes that have either setUp or tearDown methods to inherit from TestCase.
 
 **Before** `580 failed, 954 passed, 31 skipped, 505 pytest-warnings, 26 error in 146.41 seconds`
+
 **After**  `171 failed, 1361 passed, 87 skipped, 42 pytest-warnings, 50 error in 177.44 seconds`
 
 In short, there are around 1600 test cases, by changing the base class I got around 400 more to run successfully with pytest.
@@ -346,16 +348,17 @@ In short, there are around 1600 test cases, by changing the base class I got aro
 are being inherited from i.e. both parent and child classes.
 
 **Before** `171 failed, 1361 passed, 87 skipped, 42 pytest-warnings, 50 error in 177.44 seconds`
+
 **After**  `1408 passed, 68 skipped`
 
-In short, none of the test cases fail.
+In short, _none of the test cases fail_.
 
 It is to be noted that pytest collects around 270 test cases less that nosetests, that is largely because of the fact that
 pytest does not collect classes with an `__init__` method (which I've explained above)
 
 Also to get an approximate of how much time and effort _part 2_ would take, I have worked on a part of issue [#516](https://github.com/MDAnalysis/mdanalysis/issues/516)
-where I fixed the `GRO` writers API to follow the reader API standard and to inherit from base test classes. As of now the changes have been approved and are ready to
-be merged. See [#1196](https://github.com/MDAnalysis/mdanalysis/pull/1196)
+where I fixed the `GRO` writers API to follow the reader API standard and modified test classes to inherit from base test classes. As of now the changes have been
+approved and are ready to be merged. See [#1196](https://github.com/MDAnalysis/mdanalysis/pull/1196)
 
 
 
