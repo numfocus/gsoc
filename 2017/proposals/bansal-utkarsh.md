@@ -86,6 +86,9 @@ Incompatible nose idioms
     **Output**
     `AttributeError - 'TestGROIncompleteVels' object has no attribute 'u'`
 
+    **Solution**
+    Inheriting from `TestCase` fixes this problem
+
 3. `yield` based test generators are deprecated in the current version of pytest. For now, they are executed just
 fine, but a deprecation warning is displayed.
 
@@ -112,6 +115,20 @@ fine, but a deprecation warning is displayed.
    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+   ```
+
+   **Solution**
+   Using `pytest.mark.parametrize` is the recommended way to port yield based tests to pytest.
+
+   ```
+   @pytest.mark.parametrize("n, nn", [
+    (0, 0),
+    pytest.mark.xfail((1, 3)),
+    (2, 6),
+   ])
+   def check_even(n, nn):
+      print(n)
+      assert n % 2 == 0 or nn % 2 == 0
    ```
 
 
@@ -188,6 +205,8 @@ quite helpful tracebacks when tests fail.
 function. This is more manageable than the nose `yield` based counterpart.
 
 4. `raises` helper - it is used to assert that some code raises an exception and is better than the decorator that is used in nose.
+
+5. `pytest.mark.xfail` to check test cases that are expected to fail.
 
 
 
