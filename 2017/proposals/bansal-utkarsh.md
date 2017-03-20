@@ -31,7 +31,7 @@ Incompatible nose idioms
 
      **Example**
 
-     ```
+     ```python
      class TestGROReader(BaseReaderTest):
        def __init__(self, reference=None):
          if reference is None:
@@ -63,7 +63,7 @@ Incompatible nose idioms
 
     **Example**
 
-    ```
+    ```python
     class TestGROIncompleteVels(object):
       def setUp(self):
       	self.u = mda.Universe(GRO_incomplete_vels)
@@ -94,7 +94,7 @@ fine, but a deprecation warning is displayed.
 
 	**Example**
 
-    ```
+    ```python
     def check_even(n, nn):
       print(n)
       assert n % 2 == 0 or nn % 2 == 0
@@ -120,7 +120,7 @@ fine, but a deprecation warning is displayed.
    **Solution**
    Using `pytest.mark.parametrize` is the recommended way to port yield based tests to pytest.
 
-   ```
+   ```python
    @pytest.mark.parametrize("n, nn", [
     (0, 0),
     pytest.mark.xfail((1, 3)),
@@ -136,7 +136,7 @@ fine, but a deprecation warning is displayed.
 
 	**Example**
 
-    ```
+    ```python
     class _IgnoreClass(TestCase):
 
       def test_number(self):
@@ -162,7 +162,7 @@ fine, but a deprecation warning is displayed.
 5. Inheritance also causes problems in pytest.
 
     **Example**
-    ```
+    ```python
     class ParentClass(TestCase):
 
       def test_value(self):
@@ -176,7 +176,7 @@ fine, but a deprecation warning is displayed.
     and hence test case in `ParentClass` fails
 
     **Solution**
-    ```
+    ```python
     class ParentClass(TestCase):
       __test__ = False
 
@@ -227,7 +227,7 @@ libraries.
 feature inbuilt so this plugin can be dropped.
 
         **Example**
-        ```
+        ```python
         def check_even(n, nn):
             print(n)
             assert n % 2 == 0 or nn % 2 == 0
