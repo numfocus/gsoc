@@ -198,19 +198,99 @@ Useful pytest features
 is available [here](http://doc.pytest.org/en/latest/fixture.html). Using fixtures is one of the major goals of this project as it will help in making the tests
 more modular and might even help speed them up (by caching parsed files among others, see [#1191](https://github.com/MDAnalysis/mdanalysis/issues/1191)).
 
+**Usage**
+
+Currently we have a class `TempDir` (`MDAnalysisTests/tempdir.py`) that is used to get temporary directory for writing files. This is used as follows -
+```python
+class BaseWriterTest(object):
+  def __init__(self, reference):
+    self.ref = reference
+    self.tmpdir = tempdir.TempDir()
+    self.reader = self.ref.reader(self.ref.trajectory)
+```
+And then this attribute is accessed by other methods of the class
+
+This can be easily converted into a fixture. Infact, pytest has an inbuilt fixture for this very thing!
+```python
+class BaseWriterTest(object):
+  ...
+
+  def test_some_method(tmpdir):
+    # do something with tmpdir
+    ...
+```
+
+Custom fixtures are easy to create too -
+```python
+@pytest.fixture
+def tmpdir():
+    # code to create temp_dir
+    return temp_dir
+```
+
+Moreover fixtures have configurable scopes and can be used to cache resources that are reused, i.e. there is no need to initialize a particular resource everytime
+it is needed in a different class/function. This will lead to performance gains too and will help reduce boilerplate code further.
+
+
 2. Universal `assert` statements - pytest allows us to use the standard python assert for verifying expectations and values in tests. It also automagically provides
 quite helpful tracebacks when tests fail.
 
-3. `parametrize` instead of `yeild` bases test generators - The builtin `pytest.mark.parametrize` decorator enables parametrization of arguments for a test
+**Usage**
+Nose has a number of `assert_*` methods such as `assert_equal`, `assert_raises`, etc. Pytest on the other hand uses only plain `assert` statements.
+This is easier as developers don't have to remember all the methods and also pytest has awesome advanced introspection which brings great and
+informative tracebacks when test cases fail.
+
+In nose - `assert_equal(1,1)`
+Equivalent statement in pytest - `assert(1==1)`
+
+
+3. `parametrize` instead of `yield` bases test generators - The builtin `pytest.mark.parametrize` decorator enables parametrization of arguments for a test
 function. This is more manageable than the nose `yield` based counterpart.
+
+**Usage**
+Nose uses yield based test generators-
+```python
+    def check_even(n, nn):
+      print(n)
+      assert n % 2 == 0 or nn % 2 == 0
+
+
+    def test_evens():
+      for i in range(0, 5):
+      print(i)
+      yield check_even, i, i * 3
+```
+
+Pytest on the other hand has far better and simpler `pytest.mark.parametrize`
+```python
+   @pytest.mark.parametrize("n, nn", [
+    (0, 0),
+    pytest.mark.xfail((1, 3)),
+    (2, 6),
+   ])
+   def check_even(n, nn):
+      print(n)
+      assert n % 2 == 0 or nn % 2 == 0
+```
 
 4. `raises` helper - it is used to assert that some code raises an exception and is better than the decorator that is used in nose.
 
-5. `pytest.mark.xfail` to check test cases that are expected to fail.
+**Usage**
+```
+def f():
+  raise SystemExit(1)
+
+def test_mytest():
+  with pytest.raises(SystemExit):
+    f()
+```
+
+5. `pytest.mark.xfail` to check test cases that are expected to fail. Usage already shown above.
 
 
 
-Overall the project can be divided into three major parts which will cover issues [#884](https://github.com/MDAnalysis/mdanalysis/issues/884) and [#516](https://github.com/MDAnalysis/mdanalysis/issues/516)
+**Overall the project can be divided into three major parts which will cover issues [#884](https://github.com/MDAnalysis/mdanalysis/issues/884) Port to pytest and
+[#516](https://github.com/MDAnalysis/mdanalysis/issues/516) Update coordinate tests to use base test classes.**
 
 
 Part 1
@@ -363,7 +443,7 @@ with pytest. Here are my findings
 
 In short, there are around 1600 test cases, by changing the base class I got around 400 more to run successfully with pytest.
 
-**Change #2** Use `__test__` attribute in classes which are either inhering from other base test classes & classes that
+**Change #2** Use `__test__` attribute in classes which are either inheriting from other base test classes & classes that
 are being inherited from i.e. both parent and child classes.
 
 **Before** `171 failed, 1361 passed, 87 skipped, 42 pytest-warnings, 50 error in 177.44 seconds`
@@ -500,9 +580,10 @@ Contributions to other Open Source Projects
 * https://github.com/mozilla/kuma/pull/3131
 * https://github.com/rrmerugu/django-seed/pull/5
 * https://github.com/rrmerugu/django-seed/pull/4
-* I've also been actively engaged with @Software-Incubator, the software development center of my college where I have
+* I've also been actively engaged with [@Software-Incubator](https://github.com/Software-Incubator) , the software development center of my college where I have
 contributed to various projects which include websites, REST APIs, web based games and iOS applications which are all open
 source.
+* Also built an open source library for django forms [here](https://github.com/utkbansal/crispy-forms-materialize)
 
 
 ## Why this project?
