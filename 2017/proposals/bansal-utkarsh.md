@@ -5,7 +5,7 @@ Port testsuite to pytest
 Abstract
 ========
 Testing is crucial to the development of any software and MDAnalysis currently uses nose to test their code. 
-Unfortunately, [nose](http://nose.readthedocs.io/en/latest/) is no longer under active development so the community has decided to shift over to [pytest](http://doc.pytest.org/en/latest/) .
+Unfortunately, [nose](http://nose.readthedocs.io/en/latest/) is no longer under active development so the community has decided to shift over to [pytest](http://doc.pytest.org/en/latest/).
 The objective of this project is to implement this shift in a way that existing development work is not affected
 and to standardise and improve the existing test cases.
 
@@ -86,7 +86,7 @@ Incompatible nose idioms
     **Output**
     `AttributeError - 'TestGROIncompleteVels' object has no attribute 'u'`
 
-3. `yield` based test generators are deprecated in the current version of pytest. For now the are executed just
+3. `yield` based test generators are deprecated in the current version of pytest. For now, they are executed just
 fine, but a deprecation warning is displayed.
 
 	**Example**
@@ -302,12 +302,61 @@ The following files will be fixed in this part -
 * `base.py`
 * `reference.py`
 
+This part will take a large part of my time as I have to deal with two issues at the same time - [#516](https://github.com/MDAnalysis/mdanalysis/issues/516) - Porting test
+cases to use base test classes and [#884](https://github.com/MDAnalysis/mdanalysis/issues/884) - Making changes to run with pytest. Moreover this will be the first place I
+start using pytest idioms, so that will involve a lot of discussions and reviews from my mentors.
+
 
 Part 3
 ------
 This part will focus on the remaining tests and will modify them to use pytest features such as assert statements and
-fixtures. This part should go relatively smoothly because I will be able to follow the patterns and conventions 
-formed while working on the second part of the project.
+fixtures. This part should go relatively smoothly because I will be able to follow the patterns and conventions
+developed while working on the previous part of the project. Again, PR's will be made on a per file basis.
+
+
+The following modules will be fixed in this part -
+* `analysis`
+* `auxiliary`
+* `core`
+* `formats`
+* `lib`
+* `topology`
+* Files in the root of `testsuite` directory
+
+
+I want to work on parts 2 and 3 on a per-file basis because I find small changes are easy to review and get merged. Also
+this way, I will be able to stick to my proposed timeline. This will also help my mentors to easily keep track of my progress
+and help me sooner, if I were to start lagging behind or go off track.
+
+
+Other Research
+--------------
+Just to get an approximate how much time _part 1_ of this project would take, I went ahead and did a small part of it on
+my fork. I worked on the `coordinates` module (which is also the largest module) and made some changes to make it work
+with pytest. Here are my findings
+
+**Change #1** Changed all classes that have either setUp or tearDown methods to inherit from TestCase.
+
+**Before** `580 failed, 954 passed, 31 skipped, 505 pytest-warnings, 26 error in 146.41 seconds`
+**After**  `171 failed, 1361 passed, 87 skipped, 42 pytest-warnings, 50 error in 177.44 seconds`
+
+In short, there are around 1600 test cases, by changing the base class I got around 400 more to run successfully with pytest.
+
+**Change #2** Use `__test__` attribute in classes which are either inhering from other base test classes & classes that
+are being inherited from i.e. both parent and child classes.
+
+**Before** `171 failed, 1361 passed, 87 skipped, 42 pytest-warnings, 50 error in 177.44 seconds`
+**After**  `1408 passed, 68 skipped`
+
+In short, none of the test cases fail.
+
+It is to be noted that pytest collects around 270 test cases less that nosetests, that is largely because of the fact that
+pytest does not collect classes with an `__init__` method (which I've explained above)
+
+Also to get an approximate of how much time and effort _part 2_ would take, I have worked on a part of issue [#516](https://github.com/MDAnalysis/mdanalysis/issues/516)
+where I fixed the `GRO` writers API to follow the reader API standard and to inherit from base test classes. As of now the changes have been approved and are ready to
+be merged. See [#1196](https://github.com/MDAnalysis/mdanalysis/pull/1196)
+
 
 
 Personal Information
@@ -341,19 +390,6 @@ Do you have any exams during GSoC or plan a vacation during the summer?
 ----------------------------------------------------------------------
 Yes
 
-
-# Port testsuite to pytest
-
-## Abstract
-
-{{ Abstract }}
-
-## Technical Details
-
-{{
-Long description of the project.
-**Must** include all technical details of the projects like libraries involved.
-}}
 
 ## Schedule of Deliverables
 
