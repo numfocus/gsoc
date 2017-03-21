@@ -16,11 +16,12 @@ Not only ADVI and Langevin Stein Operator VI is appliable with OPVI framework. N
 My recent contributions ([Implementing OPVI](https://github.com/pymc-devs/pymc3/pull/1694)) to PyMC3 created a good basis for extending variational inference in PyMC3 even further. I tried to transfer theoretical framework to python code and it succeed. Now main logic is in base classes and all rotines are abstracted and use public interface that is provided by developer. Implementing state-of-the-art methods is now not a challenge, you should just break the problem into 4 blocks described above and implement abstract methods.
  
 I also have a side project [Gelato](https://github.com/ferrine/gelato) for using pymc3 in neural networks. So my future plans are the following:
-    1. Implement Normalizing Flows
-    2. Implement Householders Flows
-    3. Implement Langein Stein Operator (not sure in success)
-    4. Integrate OPVI to Gelato
-    5. Make it possible to bayesionize pretrained Lasagne model and then fine tune it
+
+1. Implement Normalizing Flows
+2. Implement Householders Flows
+3. Implement Langein Stein Operator (not sure in success)
+4. Integrate OPVI to Gelato
+5. Make it possible to bayesionize pretrained Lasagne model and then fine tune it
 
 ## Technical Details
 
