@@ -198,92 +198,125 @@ Useful pytest features
 is available [here](http://doc.pytest.org/en/latest/fixture.html). Using fixtures is one of the major goals of this project as it will help in making the tests
 more modular and might even help speed them up (by caching parsed files among others, see [#1191](https://github.com/MDAnalysis/mdanalysis/issues/1191)).
 
-**Usage**
+    **Usage**
 
-Currently we have a class `TempDir` (`MDAnalysisTests/tempdir.py`) that is used to get temporary directory for writing files. This is used as follows -
-```python
-class BaseWriterTest(object):
-  def __init__(self, reference):
-    self.ref = reference
-    self.tmpdir = tempdir.TempDir()
-    self.reader = self.ref.reader(self.ref.trajectory)
-```
-And then this attribute is accessed by other methods of the class
+    Currently we have a class `TempDir` (`MDAnalysisTests/tempdir.py`) that is used to get temporary directory for writing files. This is used as follows -
+    ```python
+    class BaseWriterTest(object):
+      def __init__(self, reference):
+        self.ref = reference
 
-This can be easily converted into a fixture. Infact, pytest has an inbuilt fixture for this very thing!
-```python
-class BaseWriterTest(object):
-  ...
+        # Instantiating a TempDir object
+        self.tmpdir = tempdir.TempDir()
+        self.reader = self.ref.reader(self.ref.trajectory)
 
-  def test_some_method(tmpdir):
-    # do something with tmpdir
-    ...
-```
+      def tmp_file(self, name):
 
-Custom fixtures are easy to create too -
-```python
-@pytest.fixture
-def tmpdir():
-    # code to create temp_dir
-    return temp_dir
-```
+        # Note the usage to self.tmpdir here
+        return self.tmpdir.name + name + '.' + self.ref.ext
 
-Moreover fixtures have configurable scopes and can be used to cache resources that are reused, i.e. there is no need to initialize a particular resource everytime
-it is needed in a different class/function. This will lead to performance gains too and will help reduce boilerplate code further.
+    ```
 
+    Custom fixtures are easy to create. The tempdir instantiation part can be easily converted into a custom fixture as follows
+    ```python
+
+    # Creating a custom fixture
+    @pytest.fixture
+    def tmpdir():
+        return tempdir.TempDir()
+
+    class BaseWriterTest(object):
+      def __init__(self, reference):
+        self.ref = reference
+        # Note that we do not have to initialize self.tmpdir how
+        self.reader = self.ref.reader(self.ref.trajectory)
+
+      # Note that the method now takes an additional argument - tmpdir (our fixture)
+      def tmp_file(self, name, tmpdir):
+        # Note the usage to tmpdir here
+        return tmpdir.name + name + '.' + self.ref.ext
+    ```
+
+    Moreover fixtures have configurable scopes and can be used to cache resources that are reused, i.e. there is no need to initialize a particular resource everytime
+    it is needed in a different class/function. This will lead to performance gains too and will help reduce boilerplate code further.
+
+    ```python
+
+    # Note the usage of scope
+    @pytest.fixture(scope="function")
+    def custom_fixture():
+      return resource
+    ```
+
+    The scope can be "function", "class", "module", "session" or "invocation". This way we can cache resources that are being reused in other parts of the code.
+    As with the above example, many parts of the code require the `tmpdir` and as of now each class instantiates its own object. The scope of this fixture may be
+    changed to `"session"` so that the object is create only once.
+
+    Pytest also has some commonly used inbuilt fixtures.
+    An interesting one of them is `cache` that returns a cache object that can persist state between testing sessions.
+
+    ```python
+    cache.get(key, default)
+    cache.set(key, value)
+    ```
+
+    This fixture may be used to speed up tests and TravisCI builds in particular (which take very long time as of now - approx. 50 min.)
 
 2. Universal `assert` statements - pytest allows us to use the standard python assert for verifying expectations and values in tests. It also automagically provides
 quite helpful tracebacks when tests fail.
 
-**Usage**
-Nose has a number of `assert_*` methods such as `assert_equal`, `assert_raises`, etc. Pytest on the other hand uses only plain `assert` statements.
-This is easier as developers don't have to remember all the methods and also pytest has awesome advanced introspection which brings great and
-informative tracebacks when test cases fail.
+    **Usage**
 
-In nose - `assert_equal(1,1)`
-Equivalent statement in pytest - `assert(1==1)`
+    Nose has a number of `assert_*` methods such as `assert_equal`, `assert_raises`, etc. Pytest on the other hand uses only plain `assert` statements.
+    This is easier as developers don't have to remember all the methods and also pytest has awesome advanced introspection which brings great and
+    informative tracebacks when test cases fail.
+
+    In nose - `assert_equal(1,1)`
+    Equivalent statement in pytest - `assert(1==1)`
 
 
 3. `parametrize` instead of `yield` bases test generators - The builtin `pytest.mark.parametrize` decorator enables parametrization of arguments for a test
 function. This is more manageable than the nose `yield` based counterpart.
 
-**Usage**
-Nose uses yield based test generators-
-```python
-    def check_even(n, nn):
-      print(n)
-      assert n % 2 == 0 or nn % 2 == 0
+    **Usage**
+
+    Nose uses yield based test generators-
+    ```python
+        def check_even(n, nn):
+          print(n)
+          assert n % 2 == 0 or nn % 2 == 0
 
 
-    def test_evens():
-      for i in range(0, 5):
-      print(i)
-      yield check_even, i, i * 3
-```
+        def test_evens():
+          for i in range(0, 5):
+          print(i)
+          yield check_even, i, i * 3
+    ```
 
-Pytest on the other hand has far better and simpler `pytest.mark.parametrize`
-```python
-   @pytest.mark.parametrize("n, nn", [
-    (0, 0),
-    pytest.mark.xfail((1, 3)),
-    (2, 6),
-   ])
-   def check_even(n, nn):
-      print(n)
-      assert n % 2 == 0 or nn % 2 == 0
-```
+    Pytest on the other hand has far better and simpler `pytest.mark.parametrize`
+    ```python
+       @pytest.mark.parametrize("n, nn", [
+        (0, 0),
+        pytest.mark.xfail((1, 3)),
+        (2, 6),
+       ])
+       def check_even(n, nn):
+          print(n)
+          assert n % 2 == 0 or nn % 2 == 0
+    ```
 
 4. `raises` helper - it is used to assert that some code raises an exception and is better than the decorator that is used in nose.
 
-**Usage**
-```python
-def f():
-  raise SystemExit(1)
+    **Usage**
 
-def test_mytest():
-  with pytest.raises(SystemExit):
-    f()
-```
+    ```python
+    def f():
+      raise SystemExit(1)
+
+    def test_mytest():
+      with pytest.raises(SystemExit):
+        f()
+    ```
 
 5. `pytest.mark.xfail` to check test cases that are expected to fail. Usage already shown above.
 
