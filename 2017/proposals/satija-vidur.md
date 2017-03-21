@@ -22,11 +22,7 @@ My skill set includes - iOS App Development using Swift, C, C++, Java, Python.
 
 ## Abstract
 
-All of the color mapping in Matplotlib is currently derived from
-`ScalerMappable` which as the name suggests maps scalers from `R^1 ->
-R^4` RGBA color space.  It is common to want to map a vector to
-colors, for example to control the alpha based on a second value in a
-scatter plot or to show the orientation of a field.
+All of the color mapping in Matplotlib is currently derived from `ScalerMappable` which as the name suggests maps scalers from `R^1 -> R^4` RGBA color space.  It is common to want to map a vector to colors, for example to control the alpha based on a second value in a scatter plot or to show the orientation of a field.
 
 ## Technical Details
 
