@@ -4,71 +4,106 @@
 
 | **Difficulty** | **Involves**  | **Potential Mentors** |
 | ------------- | --------------|------------ |
-| Moderate | Python, nose, pytest, coverage, travis | [@mnmelo](@mnmelo) [@richardjgowers](@richardjgowers) [@jbarnoud](@jbarnoud) [@kain88-de](@kain88-de) |
+| Moderate | Python, nose, pytest, coverage, travis | [@mnmelo](http://www.github.com/mnmelo) [@richardjgowers](http://www.github.com/richardjgowers) [@jbarnoud](http://www.github.com/jbarnoud) [@kain88-de](http://www.github.com/kain88-de) |
 
-TDD or test driven development is the backbone of any modelling library.  ![TDD](http://orm-chimera-prod.s3.amazonaws.com/1234000000754/images/twdp_0404.png)
-Recently nose has ceased its maintenance and suggests porting to nose2 or pytest [[1]](http://nose.readthedocs.io/en/latest/#note-to-users). Along with mdanalysis some libraries like ckan [[2]](https://github.com/ckan/ckan/issues/3310), azurectl [[3]](https://github.com/SUSE/azurectl/issues/102) have already realized that this porting is necessary. While some very reputed libraries like [numpy](https://github.com/numpy/numpy) have been using nosetest for all of their tests, it is really hard for them to migrate to pytest. Unlike numpy, mdanalysis has less number of tests so porting is comparitively easy. This project should be considered top priority for two reasons.
-* mdanalysis aims to increase its code coverage to over 90%. Porting to pytest before increasing the coverage will prevent devs from investing redundant effort in writing tests in complaince to nosetest.
-* more importantly, this project can be implemented without fail.
+TDD or test driven development is the backbone of any modelling library.  Recently nose has ceased its maintenance and suggests porting to nose2 or pytest [[1]](http://nose.readthedocs.io/en/latest/#note-to-users). Along with mdanalysis some libraries like ckan [[2]](https://github.com/ckan/ckan/issues/3310), azurectl [[3]](https://github.com/SUSE/azurectl/issues/102) have already realized that this porting is necessary. While some very reputed libraries like [numpy](https://github.com/numpy/numpy) have been using nosetest for all of their tests, it is really hard for them to migrate to pytest. Unlike numpy, mdanalysis has less number of tests so porting is comparitively easy. This project should be considered top priority because mdanalysis aims to increase its code coverage to over 90%. Porting to pytest before increasing the coverage will prevent devs from investing redundant effort in writing tests in compliance to nosetest.
 
 
 ## Technical Details
 
-* Testing : [pytest](http://doc.pytest.org/en/latest/) is a mature full-featured Python testing tool that helps you write better programs. There is a good comparision between different testing frameworks [here](https://www.slant.co/topics/2621/versus/~pytest_vs_nose_vs_unittest) and pytest has got an edge over other frameworks.
+* Testing : [pytest](http://doc.pytest.org/en/latest/) is a mature full-featured Python testing tool that helps you write better programs. There is a good comparision between different testing frameworks here [[4]](https://koodaamo.wordpress.com/2013/11/29/comparison-of-py-test-and-nose-for-python-testing/ ) [[5]](https://www.slant.co/topics/2621/versus/~pytest_vs_nose_vs_unittest).
 * Coding  : use travis-ci automated build system, follow PEP8  
 * Testing CI : use travis-ci, coveralls for coverage  
-* Official pytest documentation to follow - [pdf](https://media.readthedocs.org/pdf/pytest/latest/pytest.pdf).  
-* [supported nose idioms](http://doc.pytest.org/en/latest/nose.html#supported-nose-idioms)  
+* Stream Editor : preferably [sed](https://www.gnu.org/software/sed/manual/sed.html#Overview) or [replace](http://hpux.connect.org.uk/hppd/hpux/Users/replace-2.24/) to perform basic text transformation in the initial phase of development.
+* Time benchmarking tool - [pytest-benchmark]([pytest-benchmark](https://pytest-benchmark.readthedocs.io/en/latest/)  is a plugin for pytest to finely benchmark the time taken by each test.
+*
 * Devs at [azurectl](https://github.com/SUSE/azurectl) have already  [ported to pytest](https://github.com/SUSE/azurectl/commit/b071a582bf59d227f87b7148af698174cba31730)
 
-## Schedule of Deliverables
-Regardless of the timelines I will be sending a PR at least once a week to account for the work completed.
-### May 1th - May 28th, **Community Bonding Period**
 
-* Before diving into the coding part I will analyze (or resolve) some issues beforehand - primarily [#597](https://github.com/MDAnalysis/mdanalysis/issues/597) and the subordinating issues to get a better grip on the subject.
-* Fix already open related issues like [#1191](https://github.com/MDAnalysis/mdanalysis/issues/1191)
-* Get acquainted with the mentors and the mdanalysis community.
+The prime problems I faced were:
+* With the `setUp` and `tearDown` functions. If the class did not inherit `TestCase` these functions were not executed so we have two options:  
+1 - to either
+use `setup_method` and `teardown_method` instead  
+2 - inherit `TestCase` from `numpy.testing` module.
+
+* As pointed out in [#884](https://github.com/MDAnalysis/mdanalysis/issues/884) `yield` is deprecated will be deprecated in pytest 4.0. The workaround (also suggested in [#884](https://github.com/MDAnalysis/mdanalysis/issues/884)) is to use `@pytest.mark.parametrize`
+
+* The pytest skips tests with `__init__` method, the suggested workaround is to change the [standard test discovery](http://docs.pytest.org/en/latest/example/pythoncollection.html).
+* Also other test discovery options were not compatible with `nosetests`. Hence changing [standard test discovery](http://docs.pytest.org/en/latest/example/pythoncollection.html) is mandatory.
+
+## Schedule of Deliverables
+### May 1st - May 28th, **Community Bonding Period**
+
+* Before diving into the coding part I will analyze (or resolve) some issues beforehand - primarily [#597](https://github.com/MDAnalysis/mdanalysis/issues/597), [#1191](https://github.com/MDAnalysis/mdanalysis/issues/1191) and the subordinating issues to get a better grip on the subject. Also I will follow the course suggested in [#884](https://github.com/MDAnalysis/mdanalysis/issues/884).
+* Discuss (and figure out) a list of nosetests features which are incompatible with pytest.
+* As suggested by [@kain88-de](http://www.github.com/kain88-de) in this phase I will modify the existing [wiki-page](https://github.com/MDAnalysis/mdanalysis/wiki/Porting-tests-to-Pytest) by gathering the following information:
+> * the plugins we have and how they could be ported to py.test?  
+> * how many tests pass now with pytests?  
+> * what fails?  
+> * what idoms with examples in our testsuite fail?  
+> * where can we replace nose with pytest idoms?
+
 * To keep a track of my work I will be posting a weekly blog on my blogging website
 https://markroxor.wordpress.com/ or my jekyll based blog at http://markroxor.github.io/blog/ . Here I will highlight all the bugs/issues I will be facing during GSoC.
 
-### May 29th - June 9th
-* Port tests for [`coordinates`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/coordinates)
+In the coming phase we will thoroughly collect the relevant information required to proceed, along with minor code-refactoring.
 
-### June 12th - June 23th **End of Phase 1**
-* Port tests for [`analysis`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/analysis)
+### May 29th - June 3rd
+* Make a list of tests that won't run under pytest.
 
+### June 5th - June 16th
+* Refactor the code to make current tests compatible with pytest.
+* Configure travis-ci and other test execution scripts.
+* Submit a PR.
+
+### June 19th - June 23th **End of Phase 1**
+* Port the currently used plugins.
+* If any extra information is available, update the [wiki-page](https://github.com/MDAnalysis/mdanalysis/wiki/Porting-tests-to-Pytest).
+* Submit a PR.
 
 ### June 26 - June 30th, **Begin of Phase 2**
-* Port tests for [`topology`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/topology)
+In this phase we'll try to replace nose with pytest's idioms.
+* Replace nose with pytest's idioms for [`coordinates`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/coordinates)
+* Submit a PR.
 
 ### July 3rd - July 7th
-* Port tests for [`core`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/core)
+* Replace nose with pytest's idioms for [`analysis`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/analysis)
+* Submit a PR.
 
 ### July 10th - July 14th
-* Port tests for the root [`MDAnalysisTests`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/) folder
+* Replace nose with pytest's idioms for [`topology`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/topology)
+* Replace nose with pytest's idioms for the root [`MDAnalysisTests`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/) folder
+* Submit a PR.
 
 ### July 17th - July 21th, **End of Phase 2**
-* Port tests for [`auxilary`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/auxiliary)
+* Replace nose with pytest's idioms for [`core`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/core)
 
-* Port tests for [`formats`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/formats)
+* Replace nose with pytest's idioms for [`auxilary`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/auxiliary)
 
-* Port tests for  [`lib`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/lib)
+* Replace nose with pytest's idioms for [`formats`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/formats)
 
-* Port tests for [`plugin`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/plugins)
+* Replace nose with pytest's idioms for  [`lib`](https://github.com/MDAnalysis/mdanalysis/tree/develop/testsuite/MDAnalysisTests/lib)
 
-### July 24th - August 4th, **Begin of Phase 3**
-* Write tests for all the code which was not covered under nosetest.
-* Increase code coverage by completing [project 2](https://github.com/MDAnalysis/mdanalysis/projects/2).
+* Submit a PR.
 
-### August 7th - August 18th
-* Configure travis-ci and other test execution scripts.
-* Try to reduce the time taken by tests by optimizing them.
+### July 24th - July 28th, **Begin of Phase 3**
+* Write tests for all the code which was not already covered by nosetest.
+
+### July 31st - August 11th
+* Try to reduce the time taken by tests by finding slow tests using [pytest-benchmark](https://pytest-benchmark.readthedocs.io/en/latest/) and optimize them.
+* Submit a PR.
+
+### August 14th - August 18th
+* Complete any overdue tasks left.
+* __Secondary project__ - If time permits, increase code coverage by completing [project 2](https://github.com/MDAnalysis/mdanalysis/projects/2).
+* Submit a PR.
 
 ### August 21st - August 25th, **Final Week**
-Go through the code all over again to remove any redundancies. Clean the code. Manage docstrings.
+* Go through the code all over again to remove any redundancies. Clean the code.  
+* Manage docstrings.
 
 ### August 28th - August 29th, **Submit final work**
-Get the pull request merged.
+* Get the final pull request merged.
 
 ## Future works
 After GSoC ends I am willing to continue my work on the mdanalysis's [github projects](https://github.com/MDAnalysis/mdanalysis/projects) and on the gsoc project [Add new MD-Formats](https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2017-Project-Ideas#add-new-md-formats), once I get more acquainted with the library during gsoc.  
