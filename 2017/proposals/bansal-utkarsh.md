@@ -276,7 +276,7 @@ Pytest on the other hand has far better and simpler `pytest.mark.parametrize`
 4. `raises` helper - it is used to assert that some code raises an exception and is better than the decorator that is used in nose.
 
 **Usage**
-```
+```python
 def f():
   raise SystemExit(1)
 
@@ -362,6 +362,10 @@ feature inbuilt so this plugin can be dropped.
     * To run tests in parallel, there is a open source (MIT license) plugin [pytest-xdist](https://github.com/pytest-dev/pytest-xdist) that is recommended by pytest.
 * Configure TravisCI and code coverage
 
+**Challenges** The main challenge in this part is to not loose any tests in the conversion process. Code coverage data can be used to identify parts where this
+ problem occurs.
+
+
 Part 2 
 ------
 This part will focus on the coordinates module and its tests. The coordinates module is a very important part of 
@@ -405,6 +409,10 @@ The following files will be fixed in this part -
 This part will take a large part of my time as I have to deal with two issues at the same time - [#516](https://github.com/MDAnalysis/mdanalysis/issues/516) - Porting test
 cases to use base test classes and [#884](https://github.com/MDAnalysis/mdanalysis/issues/884) - Making changes to run with pytest. Moreover this will be the first place I
 start using pytest idioms, so that will involve a lot of discussions and reviews from my mentors.
+
+**Challenges** The main challenge in this part is to modify (if needed) the reader/writer API of the coordinates module to
+follow the API standard. Here my mentor can point out any problems with the changes via reviews. Again, this is because
+I want to do PRs on a per-file basis - it will be easier to review and get merged.
 
 
 Part 3
@@ -460,96 +468,36 @@ where I fixed the `GRO` writers API to follow the reader API standard and modifi
 approved and are ready to be merged. See [#1196](https://github.com/MDAnalysis/mdanalysis/pull/1196)
 
 
-
-Personal Information
-===================
-
-**Name**: Utkarsh Bansal
-
-**Email**: bansalutkarsh3@gmail.com
-
-**Github**: utkbansal
-
-**Blog**: utkarshbansal.me
-
-**Timezone**: UTC + 5:30
-
-I am a 4th year undergraduate student pursuing my B.Tech. in Computer Science and Engineering.
-
-Why are you interested in working with us?
-------------------------------------------
-
-
-Have you used MDAnalysis for your research already?
---------------------------------------------------
-No. I haven’t done any research.
-
-Do you have any experience programming?
-----------------------------------------
-Yes, I have over 3 years of experience with Python and
-
-Do you have any exams during GSoC or plan a vacation during the summer?
-----------------------------------------------------------------------
-Yes
-
-
-## Schedule of Deliverables
+Schedule of Deliverables
+========================
 
 ### May 4th - May 29th, **Community Bonding Period**
 
-{{ Delieverables }}
-
 ### May 30th - June 3rd
-
-{{ Delieverables }}
 
 ### June 5th - June 9th
 
-{{ Delieverables }}
-
 ### June 12th - June 16th
-
-{{ Delieverables }}
 
 ### June 19th - June 23th, **End of Phase 1**
 
-{{ Delieverables }}
-
 ### June 26 - June 30th, **Begin of Phase 2**
-
-{{ Delieverables }}
 
 ### July 3rd - July 7th
 
-{{ Delieverables }}
-
 ### July 10th - July 14th
-
-{{ Delieverables }}
 
 ### July 17th - July 21th, **End of Phase 2**
 
-{{ Delieverables }}
-
 ### July 24th - July 28th, **Begin of Phase 3**
-
-{{ Delieverables }}
 
 ### July 31st - August 4th
 
-{{ Delieverables }}
-
 ### August 7th - August 11th
-
-{{ Delieverables }}
 
 ### August 14th - August 18th
 
-{{ Delieverables }}
-
 ### August 21st - August 25th, **Final Week**
-
-{{ Delieverables }}
 
 ### August 28th - August 29th, **Submit final work**
 
@@ -583,12 +531,42 @@ Contributions to other Open Source Projects
 * I've also been actively engaged with [@Software-Incubator](https://github.com/Software-Incubator) , the software development center of my college where I have
 contributed to various projects which include websites, REST APIs, web based games and iOS applications which are all open
 source.
-* Also built an open source library for django forms [here](https://github.com/utkbansal/crispy-forms-materialize)
+* Also built an open source library for django forms [here](https://github.com/utkbansal/crispy-forms-materialize).
+
+
+Personal Information
+===================
+
+**Name**: Utkarsh Bansal
+
+**Email**: bansalutkarsh3@gmail.com
+
+**Github**: utkbansal
+
+**Blog**: utkarshbansal.me
+
+**Timezone**: UTC + 5:30
+
+I am a 4th year undergraduate student pursuing my B.Tech. in Computer Science and Engineering.
+
+Why are you interested in working with us?
+------------------------------------------
+
+
+Have you used MDAnalysis for your research already?
+--------------------------------------------------
+
+
+Do you have any experience programming?
+----------------------------------------
+
+
+Do you have any exams during GSoC or plan a vacation during the summer?
+----------------------------------------------------------------------
 
 
 ## Why this project?
 
-{{ Why you want to do this project? }}
 
 Relevant Discussions and References
 ===================================
