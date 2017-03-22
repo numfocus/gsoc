@@ -93,7 +93,7 @@ scatter plot or to show the orientation of a field.
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
-| Intermediate  | Python, | [@tacaswell][] |
+| Intermediate  | Python, | [@tacaswell][@story645] |
 
 
 ### Technical details
@@ -233,7 +233,7 @@ the documentation more user-accessible through some combination of:
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
-| Medium | Python, Sphinx, javascript, html | [ @story645 @tacaswell |
+| Medium | Python, Sphinx, javascript, html | [][@tacaswell]|
 
 ### Technical details
 
