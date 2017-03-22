@@ -86,8 +86,9 @@ auto-differentiation is used to compute gradients on the fly.  Without the
 definition of a static computation graph before execution, its not possible for
 PyTorch to do symbolic optimizations like Theano and TensorFlow.  However, its
 dynamic computation graphs allows variable-length inputs and outputs to be
-processed.  This may make the implementation of prediction methods in PyMC3
-more straightforward.  PyTorch code is easier to debug than TensorFlow or
+processed, and allows pure Python control flow constructs to be used, and 
+differentiated through.  This may make the implementation of prediction methods 
+in PyMC3 more straightforward.  PyTorch code is easier to debug than TensorFlow or
 Theano (due to its dynamism) and advertises its extensibility.  Since PyTorch's
 dynamic computational model is different from Theano and TensorFlow's, it may
 be more difficult to include in a common interface with TensorFlow and Theano.
@@ -234,7 +235,9 @@ second fork on the tests as a blog post
 
 One of the most important things about developing open source code is being
 available into the future to fix bugs, answer questions, and help maintain the
-contributed code.  I hope to gain the expertise to help maintain  
+contributed code.  I think this project is a step outside of my comfort zone,
+and will provide the experience necessary to become a valuable contributor to, 
+and maintainer of PyMC3.
 
 I think avenues for future work depend on the results of this study.  The use
 of an abstraction layer between Theano and PyMC3 would make PyMC3 easier to
@@ -267,11 +270,11 @@ the exciting intersection of these two paradigms.
 Software like BUGS, JAGS, STAN, and PyMC3 have helped make Bayesian inference
 accessible, allowing it to be employed in everyday modelling tasks.  Becoming
 an expert in using and developing PyMC3 under the supervison of mentors would
-be a huge benefit my academic and professional developemt.  
+be a huge benefit to my academic and professional development.  
 
 ## Appendix
 
-- Starting MS in Statistics in Fall 2007
+- Starting MS in Statistics in Fall 2017
 - Eligible for GSoC
 - Issue filed on NumFOCUS: [link](https://github.com/numfocus/gsoc/issues/197)
 
