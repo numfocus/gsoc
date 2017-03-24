@@ -84,8 +84,8 @@ Future work will include making improvements to the work-flow based on the feedb
 
 Contributions to Matplotlib:
 
-1. https://github.com/matplotlib/matplotlib/pull/8191
-2. https://github.com/matplotlib/matplotlib/pull/8314
+1. https://github.com/matplotlib/matplotlib/pull/8375
+2. https://github.com/matplotlib/matplotlib/pull/8373
 
 
 Published games to the iOS App Store:
