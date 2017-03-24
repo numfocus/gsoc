@@ -7,7 +7,7 @@ Abstract
 Testing is crucial to the development of any software and MDAnalysis currently uses nose to test their code. 
 Unfortunately, [nose](http://nose.readthedocs.io/en/latest/) is no longer under active development so the community has decided to shift over to [pytest](http://doc.pytest.org/en/latest/).
 The objective of this project is to implement this shift in a way that existing development work is not affected
-and to standardise and improve the existing test cases.
+and to standardize and improve the existing test cases.
 
 
 Current State
@@ -29,31 +29,31 @@ Incompatible nose idioms
 
 1. Test classes with `__init__` methods are not collected by pytest.
 
-     **Example**
+    **Example**
 
-     ```python
-     class TestGROReader(BaseReaderTest):
-       def __init__(self, reference=None):
-         if reference is None:
-         reference = GROReference()
-         super(TestGROReader, self).__init__(reference)
+    ```python
+    class TestGROReader(BaseReaderTest):
+      def __init__(self, reference=None):
+        if reference is None:
+        reference = GROReference()
+        super(TestGROReader, self).__init__(reference)
 
-       def test_flag_convert_lengths(self):
-         assert_equal(mda.core.flags['convert_lengths'], True,
-         "MDAnalysis.core.flags['convert_lengths'] should be True "
-         "by default")
+      def test_flag_convert_lengths(self):
+        assert_equal(mda.core.flags['convert_lengths'], True,
+        "MDAnalysis.core.flags['convert_lengths'] should be True "
+        "by default")
 
-       def test_time(self):
-         u = mda.Universe(self.ref.topology, self.ref.trajectory)
-         assert_equal(u.trajectory.time, 0.0,
-         "wrong time of the frame")
+      def test_time(self):
+        u = mda.Universe(self.ref.topology, self.ref.trajectory)
+        assert_equal(u.trajectory.time, 0.0,
+        "wrong time of the frame")
 
-       def test_full_slice(self):
-         u = mda.Universe(self.ref.topology, self.ref.trajectory)
-         trj_iter = u.trajectory[:]
-         frames = [ts.frame for ts in trj_iter]
-         assert_equal(frames, np.arange(u.trajectory.n_frames))
-	```
+      def test_full_slice(self):
+        u = mda.Universe(self.ref.topology, self.ref.trajectory)
+        trj_iter = u.trajectory[:]
+        frames = [ts.frame for ts in trj_iter]
+        assert_equal(frames, np.arange(u.trajectory.n_frames))
+    ```
 
 
     This class is not collected for tests because `__init__` is present
@@ -107,29 +107,29 @@ fine, but a deprecation warning is displayed.
 
 	```
 
-   **Warning**
+    **Warning**
 
-   ```
-   WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-   WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-   WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-   WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-   WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-   ```
+    ```
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+    ```
 
-   **Solution**
-   Using `pytest.mark.parametrize` is the recommended way to port yield based tests to pytest.
+    **Solution**
+    Using `pytest.mark.parametrize` is the recommended way to port yield based tests to pytest.
 
-   ```python
-   @pytest.mark.parametrize("n, nn", [
-    (0, 0),
-    pytest.mark.xfail((1, 3)),
-    (2, 6),
-   ])
-   def check_even(n, nn):
+    ```python
+    @pytest.mark.parametrize("n, nn", [
+      (0, 0),
+      pytest.mark.xfail((1, 3)),
+      (2, 6),
+    ])
+    def check_even(n, nn):
       print(n)
       assert n % 2 == 0 or nn % 2 == 0
-   ```
+    ```
 
 
 4. Test case discovery in pytest is quite different from that in nose.
@@ -250,7 +250,7 @@ more modular and might even help speed them up (by caching parsed files among ot
 
     The scope can be "function", "class", "module", "session" or "invocation". This way we can cache resources that are being reused in other parts of the code.
     As with the above example, many parts of the code require the `tmpdir` and as of now each class instantiates its own object. The scope of this fixture may be
-    changed to `"session"` so that the object is create only once.
+    changed to `"session"` so that the object is created only once.
 
     Pytest also has some commonly used inbuilt fixtures.
     An interesting one of them is `cache` that returns a cache object that can persist state between testing sessions.
@@ -319,8 +319,6 @@ function. This is more manageable than the nose `yield` based counterpart.
     ```
 
 5. `pytest.mark.xfail` to check test cases that are expected to fail. Usage already shown above.
-
-
 
 **Overall the project can be divided into three major parts which will cover issues [#884](https://github.com/MDAnalysis/mdanalysis/issues/884) Port to pytest and
 [#516](https://github.com/MDAnalysis/mdanalysis/issues/516) Update coordinate tests to use base test classes.**
@@ -393,7 +391,8 @@ feature inbuilt so this plugin can be dropped.
     is needed to decide if we need this plugin anymore. If we do, this will have to be rewritten for pytest as no open source
     alternatives are available.
     * To run tests in parallel, there is a open source (MIT license) plugin [pytest-xdist](https://github.com/pytest-dev/pytest-xdist) that is recommended by pytest.
-* Configure TravisCI and code coverage
+* Configure TravisCI and code coverage. This will not take much time as most of the original config will run just fine. Only a
+couple of commands will have to be changed.
 
 **Challenges** The main challenge in this part is to not loose any tests in the conversion process. Code coverage data can be used to identify parts where this
  problem occurs.
@@ -456,13 +455,13 @@ developed while working on the previous part of the project. Again, PR's will be
 
 
 The following modules will be fixed in this part -
-* `analysis`
-* `auxiliary`
-* `core`
-* `formats`
-* `lib`
-* `topology`
-* Files in the root of `testsuite` directory
+* `analysis` (21 files)
+* `auxiliary` (2 files)
+* `core` (17 files)
+* `formats` (1 file)
+* `lib` (1 file)
+* `topology` (20 files)
+* Files in the root of `testsuite` directory (19 files)
 
 
 I want to work on parts 2 and 3 on a per-file basis because I find small changes are easy to review and get merged. Also
@@ -507,48 +506,70 @@ Schedule of Deliverables
 ### May 4th - May 29th, **Community Bonding Period**
 
 ### May 30th - June 3rd
+* Begin work on **Part 1**. Start by editing tests to make them discoverable by pytest.
+Also actively discuss the `__init__` issue as it will be dealt with on a case by case
+basis.
+* Send a PR only for review and discussion purposes. It will _not_ be ready to merge.
 
 ### June 5th - June 9th
+* Complete the test discovery issue and get _atleast_ one plugin working with pytest.
+* Work is done on the same PR. Still _not_ ready to merge.
+* Get a _bare minimum_ TravisCI setup to work.
 
 ### June 12th - June 16th
+* Get all the plugins to work
+* Work is done on the same PR. Still _not_ ready to merge.
 
 ### June 19th - June 23th, **End of Phase 1**
+* Complete configuring TravisCI with plugins, code coverage and quantified code.
+* Final review, documentation and code cleanup as suggested.
+* Get the PR merged.
 
 ### June 26 - June 30th, **Begin of Phase 2**
+* Begin working on **Part 2** - the coordinates module. PRs will we worked on in parallel as the
+coordinate tests aren't interdependent. So I can work on one while another one is waiting for a review.
+* Port 4 coordinate test files - 4 PRs
 
 ### July 3rd - July 7th
+* Port another 6 coordinate test files - 6 PRs
 
 ### July 10th - July 14th
+* Port another 6 coordinated test files - 6 PRs
 
 ### July 17th - July 21th, **End of Phase 2**
+* Port another 6 coordinate test files - 6 PRs
 
 ### July 24th - July 28th, **Begin of Phase 3**
+* Port remaining 4 coordinate test files - 4 PRs
 
 ### July 31st - August 4th
+* Begin work on **Part 3**. PRs are again worked on in parallel.
+* Port analysis & auxiliary modules - multiple PRs
 
 ### August 7th - August 11th
+* Port core & topology modules - multiple PRs
 
 ### August 14th - August 18th
+* Port files in the root directory, lib and formats modules - multiple PRs
 
 ### August 21st - August 25th, **Final Week**
+* This week is set aside as a buffer to negate any time lost/lag in work. Follow up on reviews and get PRs
+merged into develop.
 
 ### August 28th - August 29th, **Submit final work**
+* Submit all the work.
 
 ## Future works
+All the points mentioned here are _optional_ and may be done if I'm ahead of schedule
 
-{{ Future works }}
-
-## Development Experience
-
-{{ Development Experience }}
-
-## Other Experiences
-
-{{ Experience }}
+* Benchmarking of tests module.
+* Add support for doctests.
 
 Contributions to MDAnalysis
 ===========================
-* Port GRO tests to new BaseReader/Writer Test classes [#1196](https://github.com/MDAnalysis/mdanalysis/pull/1196) (Work in progress)
+* Universe now woks with StringIO objects [#1254](https://github.com/MDAnalysis/mdanalysis/pull/1254) (Work in progress)
+* Adds filename attribute to MemoryReader & associated tests [#1252](https://github.com/MDAnalysis/mdanalysis/pull/1252)
+* Port GRO tests to new BaseReader/Writer Test classes [#1196](https://github.com/MDAnalysis/mdanalysis/pull/1196)
 * Add support for start and stop in transfer_to_memory [#1189](https://github.com/MDAnalysis/mdanalysis/pull/1189)
 * Fix error message in case of unidentified file format [#1184](https://github.com/MDAnalysis/mdanalysis/pull/1184)
 * Raises IOError if the toplogy file doesn't exist or can't be accessed [#1177](https://github.com/MDAnalysis/mdanalysis/pull/1177)
@@ -561,7 +582,7 @@ Contributions to other Open Source Projects
 * https://github.com/mozilla/kuma/pull/3131
 * https://github.com/rrmerugu/django-seed/pull/5
 * https://github.com/rrmerugu/django-seed/pull/4
-* I've also been actively engaged with [@Software-Incubator](https://github.com/Software-Incubator) , the software development center of my college where I have
+* I've also been actively engaged with [@Software-Incubator](https://github.com/Software-Incubator), the software development center of my college where I have
 contributed to various projects which include websites, REST APIs, web based games and iOS applications which are all open
 source.
 * Also built an open source library for django forms [here](https://github.com/utkbansal/crispy-forms-materialize).
@@ -576,11 +597,9 @@ Personal Information
 
 **Github**: utkbansal
 
-**Blog**: utkarshbansal.me
+**Blog**: http://utkarshbansal.me
 
 **Timezone**: UTC + 5:30
-
-I am a 4th year undergraduate student pursuing my B.Tech. in Computer Science and Engineering.
 
 Why are you interested in working with us?
 ------------------------------------------
@@ -603,3 +622,7 @@ Do you have any exams during GSoC or plan a vacation during the summer?
 
 Relevant Discussions and References
 ===================================
+* Port to pytest thread on mailing list. https://groups.google.com/forum/#!topic/mdnalysis-devel/uzTwpc8FiNs
+* Discussions about this application. https://groups.google.com/forum/#!topic/mdnalysis-devel/5sXPZsJXecs
+* Pytest documentation. http://doc.pytest.org/en/latest/
+* Nose documentation. http://nose.readthedocs.io/en/latest/
