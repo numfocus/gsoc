@@ -66,7 +66,7 @@ I would also like to add an enhancement of visualizing the data. As previously d
 
  Adding Raster object for PostGIS in `engines/postgis_raster.py`. 
 
-### By Mid-term evaluation, I would deliver a basic framework of spatial database engine and working vector and raster objects for PostGIS.
+#### By Mid-term evaluation, I would deliver a basic framework of spatial database engine and working vector and raster objects for PostGIS.
 
 ### June 26 - June 30th, **Begin of Phase 2**
 
@@ -84,6 +84,8 @@ I would also like to add an enhancement of visualizing the data. As previously d
 
  Writing tests for the work done till now. Improving the test coverage. 
 
+#### By phase 2 evaluation I would deliver working and test covered Spatial database support for SpatiaLite as well as PostGIS.
+
 ### July 24th - July 28th, **Begin of Phase 3**
 
  Incorporating a couple of spatial data sets such as datasets from grassgis and freegis to test the overall working and common formats of raw datasets. 
@@ -96,7 +98,7 @@ I would also like to add an enhancement of visualizing the data. As previously d
 
  Writing Documentation, final bug fixes and cleaning the code. 
 
-### I would like to work on some stretch goals after the above has been done, such as incorporating small enhancements like visualizing data and spatial data support for MySQL(using InnoDB/MyISAM) which can be further continued post-GSoC period. 
+#### I would like to work on some stretch goals after the above has been done, such as incorporating small enhancements like visualizing data and spatial data support for MySQL(using InnoDB/MyISAM) which can be further continued post-GSoC period. 
 
 ### August 14th - August 18th
 
@@ -175,6 +177,10 @@ I have a teaching exeperience in Information security and Web Development as wel
 
 - [Helped fixing the default encoding bug](https://github.com/weecology/retriever/issues/716)
 - [Improved docstrings as per new cli commands](https://github.com/weecology/retriever/pull/820)
+- [Update Internals to match datapackage specs](https://github.com/weecology/retriever/issues/765)
+- [Incorporate the PREDICTS database release](https://github.com/weecology/retriever/issues/792)
+- [Check MySQL and Postgres credential files](https://github.com/weecology/retriever/issues/421)
+- [Add "dataset out of service" functionality](https://github.com/weecology/retriever/issues/562)
 
 ## Why this project?
 
