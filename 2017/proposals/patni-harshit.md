@@ -124,3 +124,17 @@ July. I don't have any commitments in summer and GSOC will be my full time job.
 * **Time Zone :** Indian Standard Time (IST) UTC +5:30
 *  **Hours per week :** 35-40 hours(during vacations), this may go down to
 30-35 hours in August/September.
+
+### About Me
+
+I am a second year undergraduate from, International Institute of Information
+Technology, Hyderabad majoring in Computer Science.
+
+### Contact
+|          |                                                        |
+|----------|--------------------------------------------------------|
+| Name     | Harshit Patni                                          |
+| Email    | patniharshit@gmail.com                                 |
+|          | harshit.patni@students.iiit.ac.in                      |
+| Github   | [patniharshit](https://github.com/patniharshit)        |
+| Gitter   | patniharshit                                           |
