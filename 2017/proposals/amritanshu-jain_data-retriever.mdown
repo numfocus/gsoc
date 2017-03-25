@@ -25,7 +25,7 @@ I would also like to add an enhancement of visualizing the data. As previously d
 
 - For adding data visualization I would like to use [ggplot2](https://github.com/yhat/ggpy) for data visualization of spatial datasets. We can not use the traditional indexing methods of DBMS and so we will have to use the concept of R-Tree for spatial indexing widely popular for spatial data sets. 
 
-- I would suggest to use [rtree](https://github.com/Toblerity/rtree)(python bindings for libspatialindex) for the same. Generally the spatial datasets are provided with shape files. I would suggest to convert them into GeoJSON/TopoJSON for packaging the raw data using [ogr2ogr](http://www.gdal.org/ogr2ogr.html) for the same. 
+- Spatial Indexing will be done by the conecpt of R-Tree rather than Binary Tree(as is used for traditional indexing purposes). Generally the spatial datasets are provided with shape files. I would suggest to use [ogr2ogr](http://www.gdal.org/ogr2ogr.html) for processing the raw data. 
 
 - I would be editing CLI tools for supporting spatial data processing as it does for tabular data now. The person could add a new dataset(new_json), download an existing dataset in a preferred database and more. User would have more fields in the spatial datapackage to define the type of data(vector/raster), Spatial Reference System and more. `lib/datapackage.py` and `lib/compile.py` would be extended for the same. 
 
