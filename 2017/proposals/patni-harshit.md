@@ -107,13 +107,20 @@ fixed documentation as well as bugs.
 
 ## Why this project?
 
-- Currently there are no multidimensional colormaps in Matplotlib. This is a
+Currently there are no multidimensional colormaps in Matplotlib. This is a
 big nuisance if we want to modulate the color and opacity independently based
-on data in different dimensions independently. Thus this project will greatly
-improve visualisation of data in fields like neuroscience etc.
-- Having used Matplotlib for displaying graphical information many times I
-wanted to give something back to the community. Thus I think I am the right
-person to do this project.
+on data in different dimensions independently. This project has been requested
+for a long time by people in neuroscience, astronomy etc.
+Here are some of those requests :
+- #4369
+- [bivariate colormaps](http://stackoverflow.com/questions/15207255/is-there-any-way-to-use-bivariate-colormaps-in-matplotlib)
+
+Having used Matplotlib for displaying graphical information many times I
+wanted to give something back to the community. I am the right person to do
+this project because not only I want to contribute to Open Source but I have
+also worked closely with the community for last month so I have good
+understanding of workflow.
+
 
 ## Appendix
 
