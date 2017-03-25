@@ -15,10 +15,12 @@ scatter plot or to show the orientation of a field.
 
 ## Technical Details
 
-{{
-Long description of the project.
-**Must** include all technical details of the projects like libraries involved.
-}}
+This project will involve :
+- Extending the existing 1D normalization and color mapping classes
+- Exposing these classes to users either as new API or extending the existing
+  ScalerMappable API.
+- Implementing a 2D color bar.
+- Developing color maps
 
 ## Schedule of Deliverables
 
