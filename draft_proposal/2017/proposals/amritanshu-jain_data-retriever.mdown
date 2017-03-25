@@ -1,5 +1,13 @@
 #  Add Spatial Data Support to the Data Retriever 
 
+## Introduction
+
+I am Amritanshu Jain, a sophomore currently studying at BITS Pilani, Pilani Campus. I wish to apply for GSoC under your organisation.  I have a programming experience of over six years in Python and JS, and have gained substantial command over Python libraries/frameworks such as Django, Scrapy, NumPy OpenCV, Pandas. I have also worked with Node.js and React/Redux for a few projects. Lately I have been working with Text mining and Natural Processing Language. Contact Information-
+- Email ID - jainamritanshu@gmail.com
+- Github - https://github.com/jainamritanshu/
+- Skype ID - amritanshu.jain
+- Phone Number - +91 9953108361
+
 ## Abstract
 
  The Data Retriever automates the tasks of finding, downloading, and cleaning up publicly available data, and then stores them in a local database or csv files. It's a package manager for data. This lets data analysts spend less time cleaning up and managing data, and more time analyzing it. 
