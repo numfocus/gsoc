@@ -1,0 +1,179 @@
+#  Add Spatial Data Support to the Data Retriever 
+
+## Abstract
+
+ The Data Retriever automates the tasks of finding, downloading, and cleaning up publicly available data, and then stores them in a local database or csv files. It's a package manager for data. This lets data analysts spend less time cleaning up and managing data, and more time analyzing it. 
+
+Data retriever currently lacks Spatial Data support. I plan to make my contributions this summer to incorporate Spatial data support for PostgreSQL/PostGIS, SQLite/SpatiaLite and MySQL(if time permits). 
+
+I would also like to add an enhancement of visualizing the data. As previously discussed with the mentors I have some exeperience with handling market data and would like to add scripts for market data as well as some gis datasets in order to test the working of newly incorporated Spatial data support and expanding ends of Data Retriever.
+
+## Technical Details
+
+
+- I will be using **PostGIS** to add spatial data support to PostgreSQL, SpatiaLite for SQLite and MyISAM/InnoDB for MySQL.
+
+- MySQL lacks some functionalities such as providing less MBR functions as compared to PostGIS or SpatiaLite and requiring an examination of whether the necessary functions are provided or not while contemplating an application. If we try to incorporate Spatial support for MySQL as well we would have to write a couple of methods for taking care of the same.
+
+- For adding data visualization I would like to use [ggplot2](https://github.com/yhat/ggpy) for data visualization of spatial datasets. We can not use the traditional indexing methods of DBMS and so we will have to use the concept of R-Tree for spatial indexing widely popular for spatial data sets. 
+
+- I would suggest to use [rtree](https://github.com/Toblerity/rtree)(python bindings for libspatialindex) for the same. Generally the spatial datasets are provided with shape files. I would suggest to convert them into GeoJSON/TopoJSON for packaging the raw data using [ogr2ogr](http://www.gdal.org/ogr2ogr.html) for the same. 
+
+- I would be editing CLI tools for supporting spatial data processing as it does for tabular data now. The person could add a new dataset(new_json), download an existing dataset in a preferred database and more. User would have more fields in the spatial datapackage to define the type of data(vector/raster), Spatial Reference System and more. `lib/datapackage.py` and `lib/compile.py` would be extended for the same. 
+
+- `lib/engine.py` and `lib/tables.py` would be extended to support different creation of tables according to the desired spatial database format. Spatial data schema has a considerable difference as compared to general tabular data and hence I believe that these two files would have large extended methods for dealing with different schemas.
+
+- The main information of Spatial DBMS is managed in three tables - 
+	- LAYERS
+	- SPATIAL_REF_SYS
+	- GEOMETRY_COLUMNS
+
+
+[![Screenshot from 2017-03-25 17-40-04.png](https://s21.postimg.org/5igcj2913/Screenshot_from_2017-03-25_17-40-04.png)](https://postimg.org/image/q2l6hjos3/)
+
+- The above would result in a basic framework of incorporation of spatial data support. Now I would be working on specific support object files(like PostGIS_vector). I shall try to include almost all file formats for spatial database like GeoJSON for vector format and more. 
+
+- As stretch goals I would like to work on a small enhancement of data visualization using ggplot2 as mentioned previously. I would also like to extend the spatial support to MySQL as well using MyISAM/InnoDB if time permits. I have made the timeline below for the above. 
+
+
+## Schedule of Deliverables
+
+### May 1th - May 28th, **Community Bonding Period**
+
+ Get to know the community. Discuss broadly about the design and possible hurdles/problems of implementation of the idea and learning more about the Spatial Databases, particularly PostGIS and SpatiaLite. 
+
+### May 29th - June 3rd
+
+ Introducing native methods of processing raw gis data sets in `lib/engine.py` and defining different properties needed for gis data sets to be defined in the datapackage. 
+
+### June 5th - June 9th
+
+ Working and extending CLI tools to make json scripts for datapackaging, compiling into python scripts and downloading it in the preffered database. Adding/extending methods in `lib/table.py` for schema of spatial database. 
+
+### June 12th - June 16th
+
+ Adding Vector object for PostGIS in `engines/postgis_vector.py`. 
+
+### June 19th - June 23th, **End of Phase 1**
+
+ Adding Raster object for PostGIS in `engines/postgis_raster.py`. 
+
+### By Mid-term evaluation, I would deliver a basic framework of spatial database engine and working vector and raster objects for PostGIS.
+
+### June 26 - June 30th, **Begin of Phase 2**
+
+ Adding Vector object for SpatiaLite in `engines/spatialite_vector.py`. 
+
+### July 3rd - July 7th
+
+ Adding Raster object for SpatiaLite in `engines/spatialite_raster.py`. 
+
+### July 10th - July 14th
+
+ Fixing bugs and cleaning the code according to the feedback provided by the mentors. 
+
+### July 17th - July 21th, **End of Phase 2**
+
+ Writing tests for the work done till now. Improving the test coverage. 
+
+### July 24th - July 28th, **Begin of Phase 3**
+
+ Incorporating a couple of spatial data sets such as datasets from grassgis and freegis to test the overall working and common formats of raw datasets. 
+
+### July 31st - August 4th
+
+ Working on suggestions from mentors to fix bugs, such as if a particular data format is creating problems for processing. Enhancements to add support for more raw data formats and more. 
+
+### August 7th - August 11th
+
+ Writing Documentation, final bug fixes and cleaning the code. 
+
+### I would like to work on some stretch goals after the above has been done, such as incorporating small enhancements like visualizing data and spatial data support for MySQL(using InnoDB/MyISAM) which can be further continued post-GSoC period. 
+
+### August 14th - August 18th
+
+ Adding support for visualising data using ggplot2. 
+
+### August 21st - August 25th, **Final Week**
+
+ Working on to add Spatial Data support for MySQL by start tackling around problems such as lack of MBR functions etc., and start making `engines/mysql_vector.py` and `engines/mysql_raster.py` 
+
+### August 28th - August 29th, **Submit final work**
+
+## Future works
+
+ I would like to extend Spatial Support in Data Retriever to MySQL as well. Also as mentioned in this [issue](https://github.com/weecology/retriever/issues/325), I would like exetend Data Retriever to import spatial data in HDF5 format. I read a bit about it, and HDF5 format is well suited for spatial data sets. Also I am exploring the lacks of data in Data Retriever and would love to add new data sets to the same. 
+
+## Development Experience
+
+ In the past I have been involved more in the development of backend services and REST API for Web/Mobile based applications. I am the lead backend developer of college's technical department, Department of Visual Media responsilble for development work in college softwares and fests. Most of this work involved the use of Django and React.js. These are some of my development pieces -
+- **[Oasis Store](bits-oasis.org/2016/shop/)** - An e-commerce platform for our college fest, where users can buy merchandise, concert passes and more. These are some of the major features
+	- Used redis-db for the cart and mapped it to a unique ID of the user to maintain the history of the products added to the cart in realtime
+	- Added social-auth and user could even purchase without any registration, providing the specific details and still maintaining the product history.
+	- Made a payment portal using instamojo REST API for online payments.
+
+- **[Latch](https://test.investu.in)** - A Location-based chat made for a hackathon, where you can chat with people with same interests nearby you.
+	- Used websockets to write the chat framework from scratch, in order to increase the speed of chats.
+	- Used SpatiaLite to retrieve nearby users locations and mark a particular region as a city.
+	- A small chat bot was added to help you explore restaraunts, book cabs, hotels and more.
+
+- **[Chat Room](https://github.com/jainamritanshu/chat-room)** - Made a small chat room using python websockets and TornadoPy.
+
+- **[Regsoft](https://github.com/dvm-bitspilani/oasis-2016/tree/master/regsoft)** - A registration software made for particularly our college fests that handle the registration/payment/accomodation of almost 5000 partcipants.
+	- Built a regitration software which behaved as a pipeline for the participants and eased the process of verfication of the participant and accomodation of the participant attending the fest.
+	- An automated mail was sent to the registered participant with a barcode which he/she had to carry and the barcode was scanned to verify the identity of the participant. He/She could pay online as well as in cash and after the verification process was completed the participant can get himself/herself accomodated through the software only.
+
+- **[Event Management System](https://github.com/dvm-bitspilani/oasis-2016/tree/master/ems)** - Built an event management system which could help maintain transparency of the event and record scores for each participant/team with ease.
+	- The participant would be asked to scan the barcode to verify his unique ID number. This helped a lot even in the on spot registration of partcicpant in a particular event.
+	- He/She would be judged by the judges using the judge sheet which maintained the record of the scores of diiferent teams hence maintaining the transparency of the event. It even eased the process for the judges to keep record of their scores
+
+- **[Fuzzy Bill Parser](https://github.com/jainamritanshu/bill-parser)** - Made as a final project for my course Neural Network and Fuzzy Logic, it takes the image of a bill, parses its important information and saves in a csv file.
+	- Used Fuzzy Inference System(FIS) to implement edge detection system and parse the data from an image,OpenCV and tesseract were used to parse the text.
+	- Implementation of Levenshtein distance and Difflib(Python library) were used to compare the strings and return the accuracy.
+
+- **Lawyers App** - One of my most recent works(in progress) in lawyer's application. It aims to collect data of different cases(of different categories) and make an archive. 
+	- Real time notifications/alerts related to the case, like next date or result and more.
+	- The application retrieves the cases from archive and returns the closely related cases so that the lawyer can compare his current cases to related previous cases. 
+	- I used tf-idf techniques for mining and indexing. I used cosine similarity as a prototype to make the comparison algorithm.
+  
+
+## Other Experiences
+
+ I have been quite a nerd at mathematics. This was a major reason of me pursuing and exploring Text Mining and Natural Language Processing. I have been more involved with machine learning and deep learning lately. I don't have a significant development experience in the above, but have completed some courses in my college and some MOOCS in the same. Recently I have been reading [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/pdf/irbookonlinereading.pdf) as a part of my ongoing course. I have taken up the following courses at the university-
+- Neural Network and Fuzzy Logic
+- Data Mining and Information Retrieval(In progress)
+
+I have been doing the following MOOCS - 
+- [CS 229](http://cs229.stanford.edu/)
+- [CS 231](http://cs231n.stanford.edu/)
+
+I have a teaching exeperience in Information security and Web Development as well.
+
+- Information Security Workshop
+	- Gave over 20+ hours of lectures to over 70+ students in the workshop conducted in APOGEE-2016(Technical fest of BITS Pilani)
+	- Taught about different encryptions like DES, SHA-1, HMAC and their implementations in various fields of Information security.
+	- Made the students familiar with Kali and different tools like John the ripper, aircrack-ng, metasploit, nmap etc and pratically show them different types of attacks and vulnerabilities in web applications.
+	- Pratically show them network vulnerable attacks like man in the middle and DDoS for a small botnet.
+
+- Full Stack Web Development
+	- Teaching a bunch of undergraduates of BITS Pilani under the Centre for Software Development BITS Pilani.
+	- Focusing on core concepts of Javascript and servers.
+	- Focused on MERN Stack for development and docker for deployments.
+
+**For more about my experience and achievements kindly go through my [CV](https://drive.google.com/open?id=0B0FtyRFzljwQVDdKSDY0VVJTNTA) if time permits.**
+ 
+
+### Contribution in Data Retriever
+
+- [Helped fixing the default encoding bug](https://github.com/weecology/retriever/issues/716)
+- [Improved docstrings as per new cli commands](https://github.com/weecology/retriever/pull/820)
+
+## Why this project?
+
+ Lately I have been working with quite a few datasets such as market data, as I mentioned earlier and it bugged me, writing scripts over and over again for downloading, cleaning and storing raw datasets. Given my interest about getting my hands dirty in large datasets, I saw Data Retriever as a boon to data analysts. The concept of cleaning and handling the data so well, adding it to preferred Database and specially the structure and readability of the code got me fascinated towards the organisation. Recently I developed a Location-Based Chat for a hackathon. A major challenge faced was how to get the location of users in a particular region(precisely in a given radius), allot a city to a specific area and improve the retrieval speed for the same. This resulted in my exposure to the spatial database system. It was a pretty small implementation but worked like a charm for us. This experience got me attracted to Spatial Data and as I got preparing for this particular project, I already learnt a lot new concepts about the same. I am pretty sure of my instincts that this project will be a great learning as well as a great development experience for me. Looking forward to contribute in this project, this summers. 
+
+## Appendix
+
+ https://freegisdata.rtwilson.com/
+   
+ 
