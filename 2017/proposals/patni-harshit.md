@@ -168,8 +168,9 @@ Matplotlib for some time.
 
 ### Availability
 
+I don't have any commitments in summer and GSOC will be my full time job.
 My summer vacations starts on 27 April and college reopens in last week of
-July. I don't have any commitments in summer and GSOC will be my full time job.
+July.
 * **Time Zone :** Indian Standard Time (IST) UTC +5:30
 *  **Hours per week :** 35-40 hours(during vacations), this may go down to
 30-35 hours in August/September.
