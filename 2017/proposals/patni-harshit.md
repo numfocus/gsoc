@@ -1,4 +1,4 @@
-# {{ Title }}
+# Title
 2D color maps
 
 ## Abstract
