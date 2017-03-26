@@ -15,81 +15,105 @@ scatter plot or to show the orientation of a field.
 
 ## Technical Details
 
-This project will involve :
-- Extending the existing 1D normalization and color mapping classes
-- Exposing these classes to users either as new API or extending the existing
-  ScalerMappable API.
-- Implementing a 2D color bar.
-- Developing color maps
+- All the work will be done in Python.
+- It will be in accordance with current implementation of 1D colormaps.
+- Extending the existing 1D normalization for 2D data : This can be done by
+a family of normalizers which go from data -> unit-disk or square in the
+complex plane
+- Creating color maps that go from the unit disk or square -> RGBA
+- Exposing these classes to user as either new API or extending the existing
+`ScalerMappable` API
+- Implementing a 2D color bar
+- Developing 2D color maps : They can be created by doing bi-linear
+interpolation between four colours. Also major focus would be on developing
+perpetual colormaps so that color blind people have no difficulty in
+distinguishing colors.
 
 ## Schedule of Deliverables
 
 ### May 1th - May 28th, **Community Bonding Period**
 
-{{ Delieverables }}
+- Before the official time period begins I will do some tasks listed under
+[MEP21](http://matplotlib.org/devel/MEP/MEP21.html): color and cm refactor.
+This will greatly help in understanding the current implementation of
+normalization and color mapping tools in Matplotlib
+- Set up a blog
+- Along with this I will continue to solve issues on github
 
 ### May 29th - June 3rd
 
-{{ Delieverables }}
+- Discuss implementation details with mentors
+- Start working on normalizers
 
 ### June 5th - June 9th
 
-{{ Delieverables }}
+- Finish up normalizers
+- Write tests
+- Starting working on color map that maps unit circle or square to rgba
 
 ### June 12th - June 16th
 
-{{ Delieverables }}
+- Finish up color maps
+- Debug and test
+- Write tests
 
 ### June 19th - June 23th, **End of Phase 1**
 
-{{ Delieverables }}
+- Complete any unfinished work in Phase 1
+- Write documentation for code written so far
+- Write blog for Phase 1
 
 ### June 26 - June 30th, **Begin of Phase 2**
 
-{{ Delieverables }}
+- Decide on how API will be exposed to users as new API or as extension of
+ScalerMappable
+- Make API for exposing normalizers and color maps to user
 
 ### July 3rd - July 7th
 
-{{ Delieverables }}
+- Test new API
+- Document the API so that it is exposed to users
 
 ### July 10th - July 14th
 
-{{ Delieverables }}
+- Implement 2D color bar
 
 ### July 17th - July 21th, **End of Phase 2**
 
-{{ Delieverables }}
+- Complete any unfinished work of Phase 2
+- Test and document
+- Write blog for Phase 2
 
 ### July 24th - July 28th, **Begin of Phase 3**
 
-{{ Delieverables }}
+- Research on perpetual and printer friendly colormaps
 
 ### July 31st - August 4th
 
-{{ Delieverables }}
+- Develop 2D colormaps
 
 ### August 7th - August 11th
 
-{{ Delieverables }}
+- Test and document colormaps
 
 ### August 14th - August 18th
 
-{{ Delieverables }}
+Write examples for Matplotlib gallery to demonstrate 2D color maps
 
 ### August 21st - August 25th, **Final Week**
 
-{{ Delieverables }}
+- Buffer period for any unfinished work
+- Write blog for Phase 3
+- Clean up code
 
 ### August 28th - August 29th, **Submit final work**
 
 ## Future works
 
-{{ Future works }}
+In future the project can be extended to higher dimensions by mapping to
+quaternions as well.
 
 ## Open Source Development Experience
-
-I have been an active contributor of Matplotlib for the last month. I have
-fixed documentation as well as bugs.
 
 - (Merged) #8094 Cleaned up documentation by removing an example
 - (Merged) #8097 Improved the code to use plt.gca instead of plt.axes
@@ -126,18 +150,12 @@ understanding of workflow.
 
 ## Appendix
 
-### Availability
-
-My summer vacations starts on 27 April and college reopens in last week of
-July. I don't have any commitments in summer and GSOC will be my full time job.
-* **Time Zone :** Indian Standard Time (IST) UTC +5:30
-*  **Hours per week :** 35-40 hours(during vacations), this may go down to
-30-35 hours in August/September.
-
 ### About Me
 
-I am a second year undergraduate from, International Institute of Information
-Technology, Hyderabad majoring in Computer Science.
+I am a sphomore at International Institute of Information Technology, Hyderabad
+majoring in Computer Science. I have been intermediate proficiency in Python
+and have worked on several projects with it. I am also an active contributor of
+Matplotlib for some time.
 
 ### Contact
 |          |                                                        |
@@ -147,3 +165,11 @@ Technology, Hyderabad majoring in Computer Science.
 |          | harshit.patni@students.iiit.ac.in                      |
 | Github   | [patniharshit](https://github.com/patniharshit)        |
 | Gitter   | patniharshit                                           |
+
+### Availability
+
+My summer vacations starts on 27 April and college reopens in last week of
+July. I don't have any commitments in summer and GSOC will be my full time job.
+* **Time Zone :** Indian Standard Time (IST) UTC +5:30
+*  **Hours per week :** 35-40 hours(during vacations), this may go down to
+30-35 hours in August/September.
