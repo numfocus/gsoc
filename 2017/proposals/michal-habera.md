@@ -77,7 +77,7 @@ generated XDMF output.
 ### July 24th - July 28th, **Begin of Phase 3**
 
 * Study the existing C++ ParaView/VTK/XDMF3 library.
-* Be familiar with Paraview C++ API for VTK visualization and prepare prepare the Python -> C++
+* Be familiar with Paraview C++ API for VTK visualization and prepare the Python -> C++
 conversion strategy.
 
 ### July 31st - August 4th
