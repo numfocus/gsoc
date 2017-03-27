@@ -99,5 +99,5 @@ Yandex Data Factory Intern (now)
 
 ## Why this project?
 
-I'm a great fan of bayesian statistics and like develop great things. I also see myself utilizing them in nearest future. 
+I'm a great fan of bayesian statistics and see it is usefull for many practical applications. I also love development and good codestyle. This project is interesting for me from both point of views. I'm also planning to use my results for my research projects and work.
 
