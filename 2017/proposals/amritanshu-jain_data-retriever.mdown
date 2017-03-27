@@ -52,29 +52,29 @@ I would also like to add an enhancement of visualizing the data. As previously d
 
 ### May 29th - June 3rd
 
- Introducing native methods of processing raw gis data sets in `lib/engine.py` and defining different properties needed for gis data sets to be defined in the datapackage. 
+ Introducing native methods of processing raw gis data sets in Data Retriever and defining different properties needed for gis data sets to be defined in the datapackage. 
 
 ### June 5th - June 9th
 
- Working and extending CLI tools to make json scripts for datapackaging, compiling into python scripts and downloading it in the preffered database. Adding/extending methods in `lib/table.py` for schema of spatial database. 
+ Working and extending CLI tools to make json scripts for datapackaging, compiling into python scripts and downloading it in the preffered database. Adding/extending methods in Data Retriever for schema of spatial database. 
 
 ### June 12th - June 16th
 
- Adding Vector object for PostGIS in `engines/postgis_vector.py`. 
+ Adding Vector object for PostGIS in Data Retriever. 
 
 ### June 19th - June 23th, **End of Phase 1**
 
- Adding Raster object for PostGIS in `engines/postgis_raster.py`. 
+ Adding Raster object for PostGIS in Data Retriever. 
 
 #### By Mid-term evaluation, I would deliver a basic framework of spatial database engine and working vector and raster objects for PostGIS.
 
 ### June 26 - June 30th, **Begin of Phase 2**
 
- Adding Vector object for SpatiaLite in `engines/spatialite_vector.py`. 
+ Adding Vector object for SpatiaLite in Data Retriever. 
 
 ### July 3rd - July 7th
 
- Adding Raster object for SpatiaLite in `engines/spatialite_raster.py`. 
+ Adding Raster object for SpatiaLite in Data Retriever. 
 
 ### July 10th - July 14th
 
@@ -106,7 +106,7 @@ I would also like to add an enhancement of visualizing the data. As previously d
 
 ### August 21st - August 25th, **Final Week**
 
- Working on to add Spatial Data support for MySQL by start tackling around problems such as lack of MBR functions etc., and start making `engines/mysql_vector.py` and `engines/mysql_raster.py` 
+ Adding Spatial Data support for MySQL
 
 ### August 28th - August 29th, **Submit final work**
 
