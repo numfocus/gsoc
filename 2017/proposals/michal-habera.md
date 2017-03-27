@@ -115,8 +115,7 @@ Symfony framework, language PHP. Symfony is an OOP framework, we worked with GIT
 repositiories via Bitbucket. We used Composer as a dependency manager for internal CMS parts. 
 * My bachelor thesis is based on FEniCS code and I have 2 years experience in using FEniCS 
 (via Python).  
-* I have minor [merged pull request](https://bitbucket.org/simula_cbc/cbcpost/pull-requests/1/according-to-line-94-of-cbcbatch-runnable/diff#comment-None)
-merged in cbcpost documentation - postprocessing tool for FEniCS.
+* I have minor [merged pull request](https://bitbucket.org/simula_cbc/cbcpost/pull-requests/1/according-to-line-94-of-cbcbatch-runnable/diff#comment-None) in cbcpost documentation - postprocessing tool for FEniCS.
 
 ## Other Experiences
 
