@@ -40,15 +40,19 @@ Any other book on FEM can also be useful (for example a [book by Claes Johnson](
 ### May 30th - June 3rd
 
 * Start working on building an interface between FFC and FIAT for quad/hex mesh.
-   
-   Following script should work correctly:  
+* Generate C++ code for the Poisson problem with the command `ffc` in command line and check the output.
+
+   In python following script should work correctly:  
    ```python
    from dolfin import *
-   mesh = UnitQuadMesh(mpi_comm_world(), 1, 1) #2D mesh of quadrilaterals with 4 vertices and 1 cell
+   mesh = UnitQuadMesh(mpi_comm_self(), 1, 1) #2D mesh of quadrilaterals with 4 vertices and 1 cell
    print(assemble(1.0*dx(mesh))) #should return 1.0
    ```  
    Modifications needed in ffc/fiatinterface.py, ffc/representation.py
-   
+
+* Modifications should be supported with the unit tests.
+* Each implemented milestone feature shall be submitted as PRs weekly for a review.
+
 ### June 5th - June 9th
 
 * Testing and improving the interface.  
@@ -69,7 +73,7 @@ Any other book on FEM can also be useful (for example a [book by Claes Johnson](
    Following script should work correctly: 
    ```python
    from dolfin import *  
-   mesh = UnitQuadMesh(mpi_comm_world(), 1, 1) #2D mesh of quadrilaterals with 4 vertices and 1 cell  
+   mesh = UnitQuadMesh(mpi_comm_self(), 1, 1) #2D mesh of quadrilaterals with 4 vertices and 1 cell  
    V = FunctionSpace(mesh, "P", 1) #Function space on a quadrilateral  
    f = Function(V) #Function in FE space V  
    ```   
@@ -91,7 +95,7 @@ Any other book on FEM can also be useful (for example a [book by Claes Johnson](
    Following script should work correctly:    
    ```python
    from dolfin import *  
-   mesh = UnitQuadMesh(mpi_comm_world(), 1, 1) #2D mesh of quadrilaterals with 4 vertices and 1 cell  
+   mesh = UnitQuadMesh(mpi_comm_self(), 1, 1) #2D mesh of quadrilaterals with 4 vertices and 1 cell  
    V = FunctionSpace(mesh, "P", 1) #Function space on a quadrilateral  
    m = interpolate(Expression(('...', '...')), V)
    ``` 
@@ -123,11 +127,13 @@ Any other book on FEM can also be useful (for example a [book by Claes Johnson](
     * Assembling a bilinear form uvdx `a = inner(u, v)*dx`
     * Projecting an expression into a function space `project('...', FunctionSpace)`
     * Solve a Poisson problem
+    
+   Above mentioned functionality should work with arbitrary shaped quad/hex elements.
 
 ### August 7th - August 11th
 
 * Make the documentation.
-* Make the demo program with Jupyter Notebook.
+* Make the documented demo of the Poisson problem.
 
 ### August 14th - August 18th
 
@@ -139,7 +145,7 @@ Any other book on FEM can also be useful (for example a [book by Claes Johnson](
 
 ### August 28th - August 29th, **Submit final work**
 
-* Have the PR merged.
+* Have the final PR merged.
 * Discussion and evaluation of the work done.
 
 ## Future works
@@ -165,3 +171,6 @@ I am very interested in the field of computational mechanics. FEniCS is one of t
 Working on this project will let me further develop my knowledge and understanding of the essential parts of the Finite Element Method.
 Collaborating and sharing the ideas with the experts in the area of FEM and scietific computing will help me to determine my path for the future research.
 
+## Mentors
+
+Jack S. Hale, Chris Richardson, Martin Alnaes
