@@ -9,7 +9,7 @@ Operator is like an approach we use, it constructs loss from given Model, Approx
 
 Test Function has more unintuitive meaning. It is usually used with LS operator and represents all we want from our approximate distribution. For any given vector based function of $z$ LS operator yields zero mean function under posterior. $loq Q(D)$ is no more needed. That opens a door to rich approximation families as neural networks. 
 
-Not only ADVI and Langevin Stein Operator VI is appliable with OPVI framework. Normalizing, Householder Flows fit well for it.
+Not only ADVI and Langevin Stein Operator VI are applicable with OPVI framework. Normalizing, Householder Flows fit well for it.
 
 ## Motivation
 
