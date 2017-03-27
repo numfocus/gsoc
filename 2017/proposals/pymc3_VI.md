@@ -106,3 +106,6 @@ Yandex Data Factory Analyst Intern (now)
 
 I'm a great fan of bayesian statistics and see it is usefull for many practical applications. I also love development and good codestyle. This project is interesting for me from both point of views. I'm also planning to use my results for my research projects and work.
 
+## Links
+GitHub GSoC [PR](https://github.com/numfocus/gsoc/pull/178), [Issue](https://github.com/numfocus/gsoc/issues/152)
+
