@@ -19,9 +19,8 @@ I also have a side project [Gelato](https://github.com/ferrine/gelato) for using
 
 1. Implement Normalizing Flows
 2. Implement Householders Flows
-3. Implement Langein Stein Operator (not sure in success)
+3. Implement Langein Stein Operator
 4. Integrate OPVI to Gelato
-5. Make it possible to bayesionize pretrained Lasagne model and then fine tune it
 
 ## Technical Details
 
@@ -43,43 +42,49 @@ As support material I'll use papers from arXiv:
 
 ### May 1th - May 28th, **Community Bonding Period**
 
-Merge PR [Implement OPVI](https://github.com/pymc-devs/pymc3/pull/1694) [**Merged**]
+*Integrate OPVI to Gelato*
+
+Work on documentation for OPVI and Histogram. Add a noteboook with comprehensive example using Gelato.
 
 ### May 29th - June 10th
 
-Implement Normalizing Flows
+*Implement Normalizing and Householder Flows*
+
+These flows have similar structure so implementing them both at once will be the best decision.
 
 ### June 11th - June 23th
 
-Implement Householder Flows
+Debug Flows, refine code, improve performance.
 
 ### July 3rd - July 7th
 
-Implement Langevin Stein Operator and Test Function for it
+Add documentation for Flows
 
 ### July 10th - July 23d **End of Phase 2**
 
-Get out why it didn't work this winter and try to fix the problem (It was really strange)
+Implement Langevin Stein Operator with convergence tests
+
+*Not all tests are supposed to be passed by the end of the Phase 2, making it work is a tough problem according to my past experience*
 
 ### July 24th - July 28th, **Begin of Phase 3**
 
-Prepare environment for toy examples (data, model construction)
+Further work on making LS Op work
 
 ### July 31st - August 4th
 
-Prepare draft with working examples
+Finish LS Op
 
-### August 7th - August 18th
+### August 7th - August 10th
 
-Write some text for examples
+Add documentaton for Langevin Stein Operator
 
-### August 14th - August 18th
+### August 11th - August 18th
 
-Refine text
+Write a notebook with example of LS Op
 
 ### August 21st - August 25th, **Final Week**
 
-Publish a post, optionally present the work on bayesian summer school
+Byesian Summer School, not sure I can work here
 
 ### August 28th - August 29th, **Submit final work**
 
@@ -95,7 +100,7 @@ Yandex Analyst-Developer Intern (summer 2016), PyMC3 developer
 
 ## Other Experiences
 
-Yandex Data Factory Intern (now)
+Yandex Data Factory Analyst Intern (now)
 
 ## Why this project?
 
