@@ -118,6 +118,7 @@ I am currently attending Deep Learning class in which I learn many predictive an
 ## Appendix
 
 - My lab website: http://pl.postech.ac.kr/
+- NumFOCUS issue: https://github.com/numfocus/gsoc/issues/215 
 - [1] TensorFlow: https://www.tensorflow.org/
 - [2] PyTorch: http://pytorch.org/
 - [3] Edward: http://edwardlib.org/ 
