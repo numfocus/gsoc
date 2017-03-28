@@ -20,43 +20,47 @@ Over the course of the summer, I'd like to implement combinatorial BNP models in
 
 Spend time familiarizing myself with the PyMC3 codebase, and start with API design for the underlying combinatorial stochastic processes. Also, review existing literature to familiarize myself with any identified issues with implementing Bayesian nonparametric models.
 
-### May 29th - June 9th
+### May 29th - June 2nd
+Implement the Dirichlet process.
 
-Implement the Dirichlet process, including tests and documentation. Compile a notebook explaining how Dirichlet processes work with examples. This should be at accessible to someone with a machine learning or statistics course under their belt.
+### June 5th - June 9th 
+Debug the Dirichlet process implementation, along with adding tests and documentation.
 
 ### June 12th - June 16th
-
-Implement Dirichlet process mixture models based on the Dirichlet process, along with tests.
+Implement Dirichlet process mixture models for clustering.
 
 ### June 19th - June 23th, **End of Phase 1**
-
-Commit and submit a pull request. Fix anything that has been overlooked and merge into the dev branch. I've kept a buffer period for any delays.
+Buffer time for anything that's overrun, along with debugging and documenting Dirichlet process mixture models. Commit everything thus far and submit a pull request.
 
 ### June 26 - June 30th, **Begin of Phase 2**
 Begin implementing Polya trees for density estimation.
 
-### July 3rd - July 14th
-Complete implementing Polya trees for density estimation. Implement clustering models based on mixtures of Polya trees.
+### July 3rd - July 7th
+Polya trees are difficult to implement, so this week is meant for debugging.
+
+### July 10th - July 14th
+Write up documentation and tests for Polya trees. Commit everything thus far and submit a pull request.
 
 ### July 17th - July 21th, **End of Phase 2**
-Write up the documentation for Polya trees. Commit and submit a pull request, and fix anything that's been overlooked.
+I'm leaving this week as a buffer for any overruns, as well as clearing up any issues with the PR.
 
 ### July 24th - July 28th, **Begin of Phase 3**
 Begin implementing hierarchical Dirichlet processes for clustering and grouping data.
 
 ### July 31st - August 4th
-Finish implementing hierarchical Dirichlet processes.
+Debug the hierarchical Dirichlet process implementation. Add tests and documentation.
 
 ### August 7th - August 11th
-Add documentation and tests for hierarchical Dirichlet processes. At this point, I'd like to start working on a tutorial on BNP models in PyMC3 accessible to someone with just a first course in machine learning or statistics.
+At this point, I'd like to start working on a tutorial on BNP models in PyMC3 accessible to someone with just a first course in machine learning or statistics.
 
 ### August 14th - August 18th
-Complete writing the tutorial.
+Complete writing the tutorial. Submit a pull request for hierarchical Dirichlet processes.
 
 ### August 21st - August 25th, **Final Week**
-Submit a final pull request for hierarchical Dirichlet processes, and fix anything that's been overlooked.
+Fix any issues with the pull request.
 
 ### August 28th - August 29th, **Submit final work**
+Celebrate!
 
 ## Future work and extensions
 Bayesian nonparametrics is advancing at an extraordinary pace. A straightforward extension to the work I've proposed would be to add other prior processes: Pitman-Yor, hierarchical beta, and other stickbreaking prior processes. I plan to write the code in a modular way so that the prior distributions are decoupled from the clustering and density estimation models. This would make implementing other priors for the same models, and other models for the same priors as straightforward as possible. I plan on continuing working on BNP models in PyMC3 after GSOC as a regular contributor.
