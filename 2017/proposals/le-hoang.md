@@ -105,7 +105,7 @@ I think I have a lot of things to do after finish this project. First, I will be
 
 ## Development Experience
 
-Apart from my graduate study, I also join the big data lab. I help my professor to build the next generation computing engine for big data which run on top of Hadoop and Yarn. I am familiar with Scala, and Python. I use them every day for my works and study. Besides, I also teach myself web development (react, ember,…), because I want to build a visualizing tool for my deep learning research or study.
+Apart from my graduate study, I also join a big data lab. In our lab, we build the next generation computing engine for big data which run on top of Hadoop and Yarn. I use Scala and Python every day for my works and study. Besides, I also teach myself web development (react, ember,…), because I want to build a visualizing tool for my deep learning research or study.
 
 ## Other Experiences
 
@@ -113,7 +113,7 @@ Before attending a full-time Master program in Computer Science and Engineering 
 
 ## Why this project?
 
-I am currently attending Deep Learning class in which I learn many predictive and generative models. Thus, I understand the importance of probabilistic programming and Bayesian methods when using it to build generative models, namely variational auto-encoder. This project offers me a great opportunity to not only study more about Bayesian methods, but also make a contribution to the open source society. I believe that this work will help spread PyMC3 in the scientific community.
+I am currently attending Deep Learning class in which I learn many predictive and generative models. Thus, I understand the importance of probabilistic programming and Bayesian methods when using it to build generative models, namely variational auto-encoder. This project offers me a great opportunity to not only study more about Bayesian methods, but also make a contribution to the open source community. I believe that this work will help spread PyMC3 in the scientific community.
 
 ## Appendix
 
