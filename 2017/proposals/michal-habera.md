@@ -44,13 +44,15 @@ to be translated to C++ and incorporated as part of the Xdmf3 library.
 ### June 12th - June 16th
 
 * Further work on the parallel XDMF input.
+* Possibly attend FEniCS‘17 conference at University of Luxembourg, 12-14 June 2017,
+to meet the mentors in person and discuss progress.
 
 ### June 19th - June 23th, **End of Phase 1**
 
 * Generate documentation for the code written during phase 1, so the work is clear, complete
 and independent.
 * Goal: DOLFIN should have improved XDMF read/write methods working also in parallel. 
-* ?Write tests.?
+* Write tests.
 
 ### June 26 - June 30th, **Begin of Phase 2**
 
@@ -100,6 +102,7 @@ FEniCS XDMF output.
 
 * I expect some bugs from phase 1, 2, 3 to appear. Solve the possible
 issues and test the code again.
+* Write additional tests.
 * Reflect minor changes from community response.
 
 ### August 28th - August 29th, **Submit final work**
