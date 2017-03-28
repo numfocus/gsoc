@@ -59,8 +59,13 @@ Submit a final pull request for hierarchical Dirichlet processes, and fix anythi
 ### August 28th - August 29th, **Submit final work**
 
 ## Future work and extensions
-Bayesian nonparametrics is advancing at an extraordinary pace. A straightforward extension to the work I've proposed would be to add other prior processes: Pitman-Yor,
-hierarchical beta, and other stickbreaking prior processes. I plan to write the code in a modular way so that the prior distributions are decoupled from the clustering and density estimation models. This would make implementing other priors for the same models, and other models for the same priors as straightforward as possible. I plan on continuing working on BNP models in PyMC3 after GSOC as a regular contributor.
+Bayesian nonparametrics is advancing at an extraordinary pace. A straightforward extension to the work I've proposed would be to add other prior processes: Pitman-Yor, hierarchical beta, and other stickbreaking prior processes. I plan to write the code in a modular way so that the prior distributions are decoupled from the clustering and density estimation models. This would make implementing other priors for the same models, and other models for the same priors as straightforward as possible. I plan on continuing working on BNP models in PyMC3 after GSOC as a regular contributor.
+
+## Development Experience
+While I'm comfortable coding in Python and Haskell, this is my first formal programming project. I've used both Haskell and Python for data analysis, either for college projects or at think tanks and NGOs during internships.
+
+## Other experience
+I graduated with a bachelor's in economics and mathematics from St. Stephen's College, Delhi in 2016. I am currently working for a year with a group of academics aiming to improve policy implementation in India through a data driven approach, before I begin my graduate studies in statistics this fall at the University of Minnesota, where I aim to work on consistency guarantees for variational inference in Bayesian nonparametric models. I've always believed that statistical literacy is an important part of general literacy, and in my larger work I hope to make Bayesian statistics more accessible to the general public through teaching as well as through FOSS like PyMC3.
 
 ## Why this project?
-As a statistics graudate student, I plan on working on theoretical guarantees for Bayesian nonparametric models. Implementing these models for PyMC3 is a great way to get open source software development, while bettering my grasp on the literature. Equally importantly, I'm very interested in helping people learn and understand, writing tutorials for lay audiences will help improve my communication skills before grad school.
+As a statistics graduate student, I plan on working on theoretical guarantees for Bayesian nonparametric models. Implementing these models for PyMC3 is a great way to get open source software development, while bettering my grasp on the literature. Equally importantly, I'm very interested in helping people learn and understand, writing tutorials for lay audiences will help improve my communication skills before grad school.
