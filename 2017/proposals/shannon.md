@@ -1,4 +1,4 @@
-# PyMC3: Implement non-parameteric Bayesian Methods #
+# PyMC3: Implement non-parametric Bayesian Methods #
 
 ## Abstract ##
 
