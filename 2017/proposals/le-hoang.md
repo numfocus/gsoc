@@ -101,7 +101,7 @@ Apart from Theano, there are two well-known numerical computation libraries to t
 
 ## Future works
 
-I think I have a lot of things to do after finish this project. First, I will be active in PyMC3’s github or community to answer questions and fix issues when needed. Second, I will try to integrate TensorFlow into the PyMC3’s backend, because TensorFlow is very strong at running on distributed systems. 
+There are a lot of things to do after finishing this project. First, I will be active in PyMC3’s github or community to answer and fix issues when needed. The next step is to try to integrate TensorFlow into the PyMC3’s backend, because TensorFlow is very strong at running on distributed systems. 
 
 ## Development Experience
 
