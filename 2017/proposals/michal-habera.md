@@ -15,7 +15,7 @@ to be able to save FEniCS data structures directly in XDMF, and still be able to
 FEniCS has a C++ interface, called DOLFIN, and wrappers in SWIG for a Python interface. 
 There is already an I/O module which produces XDMF output, and this would need to be extended 
 and adapted to produce the suitable output for an enhanced XDMF specification. 
-Additionally, a new C++ method would nede to be implemented to read in the XDMF from file in 
+Additionally, a new C++ method would need to be implemented to read in the XDMF from file in 
 parallel, and distribute it correctly to restore from file after checkpointing.
 
 From the visualisation side, a set of Python filters will need to be developed to read the 
@@ -64,7 +64,7 @@ and independent.
 
 ### July 10th - July 14th
 
-* ? Write new filters for FEniCS supported elements (higher order, Brezzi-Douglas-Marini, ...)?
+* Focus on proper functioning of CGn and DGn elements.
 * Finalize changes, existing code improvement, refactorization.
 
 ### July 17th - July 21th, **End of Phase 2**
@@ -106,7 +106,7 @@ issues and test the code again.
 
 ## Future works
 
-* Python filters for all FEniCS elements. 
+* Python filters for all FEniCS elements (higher order, Brezzi-Douglas-Marini). 
 
 ## Development Experience
 
