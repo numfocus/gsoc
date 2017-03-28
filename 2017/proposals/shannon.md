@@ -10,7 +10,7 @@ In this GSoC project, I'd like to implement some of the more commonly used Bayes
 
 ## Technical Details ##
 
-Over the course of the summer, I'd like to implement combinatorial BNP models in PyMC3, as well as improve on inference techniques for these models. I plan on implementing the Dirichlet process \[[Ferguson 1973,](https://projecteuclid.he maorg/euclid.aos/1176342360), [Sethuraman 1994](http://www3.stat.sinica.edu.tw/statistica/oldpdf/A4n216.pdf)\], the Dirichlet process mixture model \[[Antoniak 1974](https://projecteuclid.org/euclid.aos/1176342871)\], Polya trees \[[Müller 2013](https://projecteuclid.org/download/pdfview_1/euclid.cbms/1362163749)\] the hierarchical Dirichlet process \[[Teh et al. 2006](https://www.stats.ox.ac.uk/~teh/research/npbayes/jasa2006.pdf)\].
+Over the course of the summer, I'd like to implement combinatorial BNP models in PyMC3, as well as improve on inference techniques for these models. I plan on implementing the Dirichlet process \[[Ferguson 1973](https://projecteuclid.org/euclid.aos/1176342360), [Sethuraman 1994](http://www3.stat.sinica.edu.tw/statistica/oldpdf/A4n216.pdf)\], the Dirichlet process mixture model \[[Antoniak 1974](https://projecteuclid.org/euclid.aos/1176342871)\], Polya trees \[[Müller 2013](https://projecteuclid.org/download/pdfview_1/euclid.cbms/1362163749)\] the hierarchical Dirichlet process \[[Teh et al. 2006](https://www.stats.ox.ac.uk/~teh/research/npbayes/jasa2006.pdf)\].
 
 [Edward](https://github.com/blei-lab/edward) \[[Tran el al. 2016](https://arxiv.org/abs/1610.09787)\] has recently added Dirichlet processes and I hope to use their implementation as a reference.
 
