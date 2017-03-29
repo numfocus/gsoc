@@ -129,9 +129,9 @@ quaternions as well.
 ## Other Experiences
 
 - [AI-Bot](https://github.com/patniharshit/Ultimate-Tic-Tac-Toe) in python
-  for 4X4 Ultimate-Tic-Tac-Toe.
+  for 4X4 Ultimate-Tic-Tac-Toe
 - [Brick-Breaker](https://github.com/patniharshit/Brick-Breaker), a 2d shooter
-  game in OpenGL.
+  game in OpenGL
 - [Bloxorz](https://github.com/patniharshit/Bloxorz), a 3d puzzle game in OpenGL
 
 ## Why this project?
