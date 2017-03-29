@@ -27,7 +27,8 @@ to be translated to C++ and incorporated as part of the Xdmf3 library.
 
 ### May 1th - May 28th, **Community Bonding Period**
 
-* Get know FEniCS workflow, test custom dolfin compilation.
+* Get know FEniCS workflow.
+* Try custom DOLFIN compilation within Docker.
 * Study existing I/O module for XDMF output, current issues and pitfalls.
 * Communicate with a mentor and FEniCS community on this issue.
 * Study the XDMF3 specification.
@@ -35,6 +36,11 @@ to be translated to C++ and incorporated as part of the Xdmf3 library.
 ### May 29th - June 3rd
 
 * Edit the current XDMFFile class output methods in accordance with enhanced XDMF specification.
+* Related issue [#759](https://bitbucket.org/fenics-project/dolfin/issues/759/more-xdmf-features-wanted)
+* Related issue [#488](https://bitbucket.org/fenics-project/dolfin/issues/488/add-support-xdmf-mesh-entity-attributes)
+* Think of higher-order mesh IO. New XDMF IO model should respect possible-in-future higher-order mesh
+geometry. 
+* Work mostly with DOLFIN/dolfin/io/XDMFFile.\*, DOLFIN/dolfin/io/HDF5File.\*
 
 ### June 5th - June 9th
 
@@ -78,12 +84,14 @@ generated XDMF output.
 
 ### July 24th - July 28th, **Begin of Phase 3**
 
-* Study the existing C++ ParaView/VTK/XDMF3 library.
-* Be familiar with Paraview C++ API for VTK visualization and prepare the Python -> C++
-conversion strategy.
+* I expect some bugs from phase 1, 2 to appear. Solve the possible
+issues and test the code again.
 
 ### July 31st - August 4th
 
+* Study the existing C++ ParaView/VTK/XDMF3 library.
+* Be familiar with Paraview C++ API for VTK visualization and prepare the Python -> C++
+conversion strategy.
 * Start work on Python -> C++ conversion of filters.
 * Be in constant discussion with developers of ParaView(Kitware).
 
@@ -127,7 +135,7 @@ physics, Charles University in Prague.
 
 ## Why this project?
 
-* In my bachelor thesis I tried VTK(*.pvd) and XDMF(*.xdmf) as an output format
+* In my bachelor thesis I tried VTK(\*.pvd) and XDMF(\*.xdmf) as an output format
 and neither of them behaved as I expected, especially in parallel. Correct parallel
 checkpointing of results is a challenge and better(more documented) IO FEniCS
 workflow would help to postprocess results a lot.
