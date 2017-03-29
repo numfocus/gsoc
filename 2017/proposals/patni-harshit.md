@@ -83,7 +83,6 @@ ScalerMappable
 ### July 17th - July 21th, **End of Phase 2**
 
 - Complete any unfinished work of Phase 2
-- Test and document
 - Write blog for Phase 2
 
 ### July 24th - July 28th, **Begin of Phase 3**
@@ -133,6 +132,7 @@ quaternions as well.
   for 4X4 Ultimate-Tic-Tac-Toe.
 - [Brick-Breaker](https://github.com/patniharshit/Brick-Breaker), a 2d shooter
   game in OpenGL.
+- [Bloxorz](https://github.com/patniharshit/Bloxorz), a 3d puzzle game in OpenGL
 
 ## Why this project?
 
@@ -141,8 +141,8 @@ big nuisance if we want to modulate the color and opacity independently based
 on data in different dimensions independently. This project has been requested
 for a long time by people in neuroscience, astronomy etc.
 Here are some of those requests :
-- #4369
-- [bivariate colormaps](http://stackoverflow.com/questions/15207255/is-there-any-way-to-use-bivariate-colormaps-in-matplotlib)
+- [#4369](https://github.com/matplotlib/matplotlib/issues/4369)
+- [Bivariate Colormaps](http://stackoverflow.com/questions/15207255/is-there-any-way-to-use-bivariate-colormaps-in-matplotlib)
 
 Having used Matplotlib for displaying graphical information many times I
 wanted to give something back to the community. I am the right person to do
