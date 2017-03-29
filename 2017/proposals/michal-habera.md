@@ -131,7 +131,7 @@ repositiories via Bitbucket. We used Composer as a dependency manager for intern
 ## Other Experiences
 
 * I am master student of programme Mathematical and computational modelling in mathematics and 
-physics, Charles University in Prague. 
+physics, Charles University, Prague. 
 
 ## Why this project?
 
