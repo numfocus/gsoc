@@ -50,6 +50,7 @@ normalization and color mapping tools in Matplotlib
 - Finish up normalizers
 - Write tests
 - Starting working on color map that maps unit circle or square to rgba
+- Write blog
 
 ### June 12th - June 16th
 
@@ -73,6 +74,7 @@ ScalerMappable
 
 - Test new API
 - Document the API so that it is exposed to users
+- Write blog
 
 ### July 10th - July 14th
 
@@ -95,6 +97,7 @@ ScalerMappable
 ### August 7th - August 11th
 
 - Test and document colormaps
+- Write blog
 
 ### August 14th - August 18th
 
