@@ -68,16 +68,17 @@ ScalerMappable
 ### June 26 - June 30th, **Begin of Phase 2**
 
 - Make API for exposing normalizers and color maps to user
+- Test new API
+- Document the API so that it is exposed to users
 
 ### July 3rd - July 7th
 
-- Test new API
-- Document the API so that it is exposed to users
+- Start implementing 2D color bar
 - Write blog
 
 ### July 10th - July 14th
 
-- Implement 2D color bar
+- Continue implementing 2D color bar
 
 ### July 17th - July 21th, **End of Phase 2**
 
