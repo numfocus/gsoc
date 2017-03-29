@@ -26,7 +26,7 @@ complex plane
 - Implementing a 2D color bar
 - Developing 2D color maps : They can be created by doing bi-linear
 interpolation between four colours. Also major focus would be on developing
-perpetual colormaps so that color blind people have no difficulty in
+perceptually friendly colormaps so that color blind people have no difficulty in
 distinguishing colors.
 
 ## Schedule of Deliverables
@@ -86,7 +86,7 @@ ScalerMappable
 
 ### July 24th - July 28th, **Begin of Phase 3**
 
-- Research on perpetual and printer friendly colormaps
+- Research on perceptually friendly colormaps
 
 ### July 31st - August 4th
 
