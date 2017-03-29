@@ -42,7 +42,8 @@ normalization and color mapping tools in Matplotlib
 
 ### May 29th - June 3rd
 
-- Discuss implementation details with mentors
+- Decide on how API will be exposed to users as new API or as extension of
+ScalerMappable
 - Start working on normalizers
 
 ### June 5th - June 9th
@@ -66,8 +67,6 @@ normalization and color mapping tools in Matplotlib
 
 ### June 26 - June 30th, **Begin of Phase 2**
 
-- Decide on how API will be exposed to users as new API or as extension of
-ScalerMappable
 - Make API for exposing normalizers and color maps to user
 
 ### July 3rd - July 7th
