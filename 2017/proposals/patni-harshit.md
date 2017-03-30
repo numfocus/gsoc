@@ -162,10 +162,7 @@ understanding of workflow.
 
 ### About Me
 
-I am a sphomore at International Institute of Information Technology, Hyderabad
-majoring in Computer Science. I have intermediate proficiency in Python and
-have worked on several projects with it. I am also an active contributor of
-Matplotlib for some time.
+I am a sophomore at International Institute of Information Technology, Hyderabad majoring in Computer Science. I have intermediate proficiency in Python and have worked on several projects with it. I am also an active contributor of Matplotlib for some time.
 
 ### Contact
 |          |                                                        |
