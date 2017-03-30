@@ -105,9 +105,16 @@ synchronized with their corresponding BackboneJS views in the frontend,
 the widget that is seen in the notebook.
 
 The following block of code will display the source code for
-a small Hello World Widget:
+a small Hello World Widget.  In the code block, the first section of
+code contains the code of the  Python model which extends
+*ipywidgets.widgets.DOMWidget*. This class of widgets dynamically creates
+the elements the DOM of the HTML widget.  
+Within the second part of the code block, displays a sample of the Javascript
+view .  We use RequireJS to import *jupyter-js-widgets* in the Javascript
+script.  HelloView is a variable which extends *jupyter-js-widgets*
+class *widgets.DOMWidgetView*.:  
 
-'''
+~~~~
 Python (Backend Model):
 
 import ipywidgets as widgets
@@ -116,6 +123,7 @@ from traitlets import Unicode, validate
 class HelloWidget(widgets.DOMWidget):
     _view_name = Unicode('HelloView').tag(sync=True)
     _view_module = Unicode('hello').tag(sync=True)
+
 ________________________________________________________________________________
 
 Javascript (Frontend View):
@@ -137,8 +145,8 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
     };
 });
 
-'''
-
+~~~~
+[src](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Custom.html)
 
 
 ________________________________________________________________________________
