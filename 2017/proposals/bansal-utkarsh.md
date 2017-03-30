@@ -6,19 +6,24 @@ Abstract
 ========
 Testing is crucial to the development of any software and MDAnalysis currently uses nose to test their code. 
 Unfortunately, [nose](http://nose.readthedocs.io/en/latest/) is no longer under active development so the community has decided to shift over to [pytest](http://doc.pytest.org/en/latest/).
-The objective of this project is to implement this shift in a way that existing development work is not affected
-and to standardize and improve the existing test cases.
+Another problem is the performance of the current testsuite in terms of execution time. Currently the TravisCI
+build takes around 45 minutes (50 min. being the cap). This causes builds to fail because they are terminated
+on exceeding the maximum execution time. The objective of this project is to implement this shift in a way
+that existing development work is not affected and to improve performance of the existing test cases and to
+make it more maintainable in general.
 
 
 Current State
 =============
-Currently the testsuite consists of 8 modules that have a total of 4731 test cases. Running this testsuite with 
-pytest (without any modifications) results in the following output:
+Currently the testsuite consists of 8 modules that have a total of 4731 test cases (detected by nose). The execution
+time is around 45 minutes (on TravisCI).
+
+Running this testsuite with pytest (without any modifications) results in the following output:
 
 `1789 failed, 2630 passed, 52 skipped, 1610 pytest-warnings, 26 error`
 
 Also, it is to be noted that pytest misses out some (231 to be exact) test cases too. This is due to differences 
-between test discovery rules of nose and pytest.
+between test discovery rules of nose and pytest (explained further).
 
 
 Technical Details
@@ -57,6 +62,10 @@ Incompatible nose idioms
 
 
     This class is not collected for tests because `__init__` is present
+
+    **Solution**
+    Switch from using `__init__` to `setUp`/`tearDown` or move things to pytest fixtures with the same logic.
+    This will have to be dealt with on a case-by-case basis and will involve a lot of discussions.
 
 
 2. `setUp` and `tearDown` methods are not executed in test classes that do not inherit from `TestCase`.
@@ -110,11 +119,16 @@ fine, but a deprecation warning is displayed.
     **Warning**
 
     ```
-    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
-    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated, and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated,
+     and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated,
+     and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated,
+     and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated,
+     and scheduled to be removed in pytest 4.0
+    WC1 /Users/utkbansal/Code/mdanalysis/testsuite/MDAnalysisTests/coordinates/experiments.py yield tests are deprecated,
+     and scheduled to be removed in pytest 4.0
     ```
 
     **Solution**
@@ -126,6 +140,8 @@ fine, but a deprecation warning is displayed.
       pytest.mark.xfail((1, 3)),
       (2, 6),
     ])
+
+
     def check_even(n, nn):
       print(n)
       assert n % 2 == 0 or nn % 2 == 0
@@ -158,6 +174,7 @@ fine, but a deprecation warning is displayed.
 	```
 
   In the above case,  `_IgnoreClass` is collected even tough it doesn't follow the naming convention required for test discovery and the class `IgnoreClass` is not collected.
+  In short, anything that inherits from `TestCase` is collected for tests.
 
 5. Inheritance also causes problems in pytest.
 
@@ -172,6 +189,7 @@ fine, but a deprecation warning is displayed.
     class TestChildClass(ParentClass):
     	a = 2
     ```
+
     The problem with the above example is that both the test classes are collected for tests (only `TestChildClass` should be collected)
     and hence test case in `ParentClass` fails
 
@@ -190,13 +208,15 @@ fine, but a deprecation warning is displayed.
     ```
     Here only `TestChildClass` is collected for test cases.
 
+    In short, using the `__test__` attribute we can be explicit about which classes have to be collected for tests.
+
 
 Useful pytest features
 ----------------------
 
 1. Fixtures - pytest has completely different type of fixtures that are very modular and simple. The documentation
 is available [here](http://doc.pytest.org/en/latest/fixture.html). Using fixtures is one of the major goals of this project as it will help in making the tests
-more modular and might even help speed them up (by caching parsed files among others, see [#1191](https://github.com/MDAnalysis/mdanalysis/issues/1191)).
+more modular and will  speed them up (by caching parsed files among others, see [#1191](https://github.com/MDAnalysis/mdanalysis/issues/1191)).
 
     **Usage**
 
@@ -274,6 +294,8 @@ quite helpful tracebacks when tests fail.
     In nose - `assert_equal(1,1)`
     Equivalent statement in pytest - `assert(1==1)`
 
+    This can mostly be done using a search-replace or sed.
+
 
 3. `parametrize` instead of `yield` bases test generators - The builtin `pytest.mark.parametrize` decorator enables parametrization of arguments for a test
 function. This is more manageable than the nose `yield` based counterpart.
@@ -305,6 +327,7 @@ function. This is more manageable than the nose `yield` based counterpart.
           assert n % 2 == 0 or nn % 2 == 0
     ```
 
+
 4. `raises` helper - it is used to assert that some code raises an exception and is better than the decorator that is used in nose.
 
     **Usage**
@@ -318,7 +341,19 @@ function. This is more manageable than the nose `yield` based counterpart.
         f()
     ```
 
-5. `pytest.mark.xfail` to check test cases that are expected to fail. Usage already shown above.
+
+5. `warns` helper - similar to `raises` helper, used to assert warnings.
+
+    **Usage**
+
+    ```python
+    def test_warning():
+      with pytest.warns(UserWarning):
+        warnings.warn("my warning", UserWarning)
+    ```
+
+
+6. `pytest.mark.xfail` to check test cases that are expected to fail. Usage already shown above.
 
 **Overall the project can be divided into three major parts which will cover issues [#884](https://github.com/MDAnalysis/mdanalysis/issues/884) Port to pytest and
 [#516](https://github.com/MDAnalysis/mdanalysis/issues/516) Update coordinate tests to use base test classes.**
@@ -385,14 +420,14 @@ feature inbuilt so this plugin can be dropped.
     something similar to this called `xfail`. The documentation for this is available [here](http://doc.pytest.org/en/latest/skipping.html#mark-a-test-function-as-expected-to-fail) .
     This needs discussion to finalize if we need to port the existing code or if `xfail` is good enough for our use.
     * Memory leak (`memleak.py`) This plugin detects memory leaks in tests. There is an open-source (MIT license) plugin, [pytest-leaks](https://github.com/abalkin/pytest-leaks).
-    This also needs discussion to finalize if we need to port the existing code or if pytest-leaks is good enough for our use.
+    There is another simpler implementation suggested by the community [here](https://nvbn.github.io/2017/02/02/pytest-leaking/).
+    This also needs discussion, I will have to check the performance of pytest-leaks to see if it slows down our tests.
     * Open files (`open_files.py`) This plugin lists all open files when a test fails or errors. They also are listed at
-    the end of the test suite. This plugin is currently disabled because we were facing issue with capturing stdout. Discussion
-    is needed to decide if we need this plugin anymore. If we do, this will have to be rewritten for pytest as no open source
-    alternatives are available.
+    the end of the test suite. This plugin is currently disabled because we were facing issue with capturing stdout.
+    This will have to be rewritten for pytest as no open source alternatives are available.
     * To run tests in parallel, there is a open source (MIT license) plugin [pytest-xdist](https://github.com/pytest-dev/pytest-xdist) that is recommended by pytest.
-* Configure TravisCI and code coverage. This will not take much time as most of the original config will run just fine. Only a
-couple of commands will have to be changed.
+* Configure TravisCI and code coverage. This will not take much time, only a couple of commands will have to be changed.
+We will be using the command line parameters directly i.e. no wrappers (like the one we currently use with nose)
 
 **Challenges** The main challenge in this part is to not loose any tests in the conversion process. Code coverage data can be used to identify parts where this
  problem occurs.
@@ -496,14 +531,18 @@ It is to be noted that pytest collects around 270 test cases less that nosetests
 pytest does not collect classes with an `__init__` method (which I've explained above)
 
 Also to get an approximate of how much time and effort _part 2_ would take, I have worked on a part of issue [#516](https://github.com/MDAnalysis/mdanalysis/issues/516)
-where I fixed the `GRO` writers API to follow the reader API standard and modified test classes to inherit from base test classes. As of now the changes have been
-approved and are ready to be merged. See [#1196](https://github.com/MDAnalysis/mdanalysis/pull/1196)
+where I fixed the `GRO` writers API to follow the reader API standard and modified test classes to inherit from base test classes.
+See [#1196](https://github.com/MDAnalysis/mdanalysis/pull/1196)
 
 
-Schedule of Deliverables
-========================
+Timeline
+========
 
 ### May 4th - May 29th, **Community Bonding Period**
+* Setup and configure TravisCI, QuantifiedCode and related tools on my fork of MDAnalysis.
+* Setup communications with mentor.
+* Profile the memory leak plugin alternatives and decide which one will be used.
+* Discuss the `__init__` issue with the community and finalize the pattern to deal with it.
 
 ### May 30th - June 3rd
 * Begin work on **Part 1**. Start by editing tests to make them discoverable by pytest.
@@ -582,9 +621,6 @@ Contributions to other Open Source Projects
 * https://github.com/mozilla/kuma/pull/3131
 * https://github.com/rrmerugu/django-seed/pull/5
 * https://github.com/rrmerugu/django-seed/pull/4
-* I've also been actively engaged with [@Software-Incubator](https://github.com/Software-Incubator), the software development center of my college where I have
-contributed to various projects which include websites, REST APIs, web based games and iOS applications which are all open
-source.
 * Also built an open source library for django forms [here](https://github.com/utkbansal/crispy-forms-materialize).
 
 
@@ -606,18 +642,24 @@ Why are you interested in working with us?
 
 
 Have you used MDAnalysis for your research already?
---------------------------------------------------
+---------------------------------------------------
+
+No, I haven't done any research yet.
 
 
-Do you have any experience programming?
-----------------------------------------
+Do you have any experience in programming?
+------------------------------------------
 
+Yes, I've been programming for over 3.5 years now. I mostly work with Python & iOS. You can find a lot of my work on my Github profile [here](https://github.com/utkbansal) .
+I've also been actively engaged with [@Software-Incubator](https://github.com/Software-Incubator), the software development center of my college where I have
+contributed to various projects which include websites, REST APIs, web based games and iOS applications which are all open
+source.
 
 Do you have any exams during GSoC or plan a vacation during the summer?
-----------------------------------------------------------------------
+-----------------------------------------------------------------------
 
-
-## Why this project?
+Yes, I have a couple of exams during the community bonding period but that will not be longer than a week (3rd week of May). I can continue
+discussions during that period.
 
 
 Relevant Discussions and References
