@@ -1,5 +1,6 @@
-# Title
-PythreeJS_VR
+# PythreeJS_VR
+### Kaitlyn Chait
+
 
 ## Contents
     1. Opening Details
@@ -20,6 +21,38 @@ ________________________________________________________________________________
 
 ## Opening Details
 
+#### Contact Information:
+    * Personal Email: katiec1029@gmail.com
+    * School Email: kchait000@citymail.cuny.edu
+    * Cell Phone: (718) 594 4909
+
+### Brief Introduction:
+My name is Kaitlyn Chait and I am a Computer Science student at The City
+University of New York at The City College of New York.  When I was 15,
+the high school I attended thought it was a great suggestion for me to take
+my first computer science course, and I can most definitely say they were
+correct.  In my opinion, the field of computer science is appealing in its
+various challenges and satisfying success.  There is always a new challenge
+to encounter and infinite possibilities to have success in solving the problem.
+
+During my free time, I enjoy thrilling sports such as skiing, listening
+to various genres of music and attending live music concerts.  
+
+### Research Experience & Programming Skills:
+I have been working with my mentor Dr.Michael Grossberg at the City College
+of New York.  He was the one that came to me with original idea to comprise
+a demonstration of a Virtual Reality application of Science on a Sphere.
+Science on a Sphere is an education tool developed by the National
+Oceanic Atmospheric Administration to help illustrate climate change,
+changes in ocean temperature, and other weather pattens of the sorts.
+After the success of our first demonstration, we wanted to expand it to
+plotting live data in Jupyter notebooks and other scripts alike.
+
+Programming Skills:
+    * Backend: Python, Java
+    * Databases: MYSQL
+    * Frontend: Javascript, HTML
+
 ________________________________________________________________________________
 
 ## Project Details
@@ -37,6 +70,7 @@ ________________________________________________________________________________
 ## Closing Remarks
 
 ________________________________________________________________________________
+
 
 ## Abstract
 
