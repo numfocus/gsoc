@@ -59,9 +59,33 @@ ________________________________________________________________________________
 ## Project Details
 
 ### Abstract
-
+Jupyter Notebook allow coders to compute data in an web - based interactive
+environment.  Ipywidgets is a module that extends Jupyter Notebooks and
+Ipython Kernel in that a coder has the ability to create interactive
+HTML - based widgets.  The developers of the Ipywidgets extension PythreeJS,
+developed PythreeJS as a bridge between Python widget creation and HTML
+widgets with the incorporation of Javascript 3-D illustration.  ThreeJS,
+Javascript 3-D library, has the functionality to create virtual reality
+environments; coders create the environment, call the proper VR functions,
+display the page in a browser and put on the proper VR goggles to be immersed.  
+What if we had the ability toc ompute live data into a virtual reality
+environment?  The overall main goal of this project to successfully implement
+virtual reality functionality in a Jupyter Notebook HTML widget with the use of
+Javascript 3-D graphics.
 
 ### Technical Details
+
+The following libraries/toolkits will be required throughout this project:
+    **PythreeJS**
+    **Ipywidgets**
+    **Jupyter Notebook**
+    **ThreeJS**
+    **BackboneJS**
+    **RequireJS**
+
+Ipywidgets
+
+
 
 
 ________________________________________________________________________________
@@ -85,6 +109,8 @@ tools, toolkits, libraries and other modules I have mentioned throughout
 this proposal. They are listed in the order in which they are mentioned
 
 [Science on a Sphere](https://sos.noaa.gov/What_is_SOS/)
+
+[Jupyter Notebook](https://github.com/jupyter/notebook)
 
 [ipywidgets Github](https://github.com/jupyter-widgets/ipywidgets)
 
