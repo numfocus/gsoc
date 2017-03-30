@@ -83,7 +83,9 @@ The following libraries/toolkits will be required throughout this project:
     **BackboneJS**
     **RequireJS**
 
-Ipywidgets
+Ipywidgets is coded on the model-view-coltroller paradigm.
+This implied the following steps occur during the process of running an
+Ipywidget widget in a Jupyter Notebook
 
 
 
