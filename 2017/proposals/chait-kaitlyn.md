@@ -17,6 +17,7 @@
         * Phase 3
     4. Why This Project?
     5. Closing Remarks
+    6. Appendix
 ________________________________________________________________________________
 
 ## Opening Details
@@ -57,6 +58,12 @@ ________________________________________________________________________________
 
 ## Project Details
 
+### Abstract
+
+
+### Technical Details
+
+
 ________________________________________________________________________________
 
 ## Schedule of Deliverables
@@ -71,17 +78,32 @@ ________________________________________________________________________________
 
 ________________________________________________________________________________
 
+## Appendix
 
-## Abstract
+The following links below will give further information on the following
+tools, toolkits, libraries and other modules I have mentioned throughout
+this proposal. They are listed in the order in which they are mentioned
 
+[Science on a Sphere](https://sos.noaa.gov/What_is_SOS/)
 
+[ipywidgets Github](https://github.com/jupyter-widgets/ipywidgets)
 
-## Technical Details
+[ipywidgets Documentation](https://ipywidgets.readthedocs.io/en/latest/index.html)
 
-{{
-Long description of the project.
-**Must** include all technical details of the projects like libraries involved.
-}}
+[pythreejs Github](https://github.com/jovyan/pythreejs)
+
+[ThreeJS](https://threejs.org/)
+
+[ThreeJS VREffect](https://github.com/mrdoob/three.js/blob/dev/examples/js/effects/VREffect.js)
+
+[ThreeJS VRControls](https://github.com/mrdoob/three.js/blob/dev/examples/js/controls/VRControls.js)
+
+[BackboneJS](http://backbonejs.org/)
+
+[RequireJS](http://requirejs.org/)
+
+________________________________________________________________________________
+
 
 ## Schedule of Deliverables
 
@@ -147,18 +169,6 @@ Long description of the project.
 
 {{ Future works }}
 
-## Development Experience
-
-{{ Development Experience }}
-
-## Other Experiences
-
-{{ Experience }}
-
 ## Why this project?
 
 {{ Why you want to do this project? }}
-
-## Appendix
-
-{{ Extra content }}
