@@ -127,6 +127,7 @@ repositiories via Bitbucket. We used Composer as a dependency manager for intern
 * My bachelor thesis is based on FEniCS code and I have 2 years experience in using FEniCS 
 (via Python).  
 * I have minor [merged pull request](https://bitbucket.org/simula_cbc/cbcpost/pull-requests/1/according-to-line-94-of-cbcbatch-runnable/diff#comment-None) in cbcpost documentation - postprocessing tool for FEniCS.
+* I have created [pull request](https://bitbucket.org/fenics-project/dolfin/pull-requests/349/added-simple-xyzfile-python-unit-test/diff) to improve FEniCS test coverage.
 
 ## Other Experiences
 
@@ -142,6 +143,7 @@ workflow would help to postprocess results a lot.
 * This project will help me to dig deeper into FEniCS code and be a benefit
 for young and open-source community. Having some experience from this project would allow
 me to contribute to FEniCS even more in the future.
+* I pland to do a PhD that will inevitably use finite element method and its FEniCS implementation.
 
 ## Appendix
 
