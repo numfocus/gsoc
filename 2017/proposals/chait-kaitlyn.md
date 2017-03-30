@@ -83,9 +83,16 @@ The following libraries/toolkits will be required throughout this project:
     **BackboneJS**
     **RequireJS**
 
-Ipywidgets is coded on the model-view-coltroller paradigm.
-This implied the following steps occur during the process of running an
-Ipywidget widget in a Jupyter Notebook
+Ipywidgets is coded using the architectural pattern, *Model-View-Controller*.
+Components of a Model-View-Controller application:
+    *Model*: describes the manipulation/storage of the data and the user input
+    *View*: output representation of the data; displays the data that has been
+            manipulated and stored
+    *Controller*: controls how the user inputs are controlled between model
+            and view
+    [MVC Diagram](https://i.stack.imgur.com/ocEWx.png)
+
+
 
 
 
