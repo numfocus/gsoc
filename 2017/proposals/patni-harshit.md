@@ -15,7 +15,7 @@ scatter plot or to show the orientation of a field.
 
 ## Technical Details
 
-- All the work will be done in Python.
+- All the work will be done in Python
 - It will be in accordance with current implementation of 1D colormaps.
 - Extending the existing 1D normalization for 2D data : This can be done by
 a family of normalizers which go from data -> unit-disk or square in the
@@ -27,7 +27,7 @@ complex plane
 - Developing 2D color maps : They can be created by doing bi-linear
 interpolation between four colours. Also major focus would be on developing
 perceptually friendly colormaps so that color blind people have no difficulty in
-distinguishing colors.
+distinguishing colors
 
 ## Schedule of Deliverables
 
@@ -36,7 +36,14 @@ distinguishing colors.
 - Before the official time period begins I will do some tasks listed under
 [MEP21](http://matplotlib.org/devel/MEP/MEP21.html): color and cm refactor.
 This will greatly help in understanding the current implementation of
-normalization and color mapping tools in Matplotlib
+normalization and color mapping tools in Matplotlib. Some tasks that can be
+done as a part of this are:
+    - Tidying up namespace
+    - Defining a "Color" class
+    - Making it easy to convert from one color type to another `hex -> RGB`, `RGB -> hex`, `HSV -> RGB` etc
+    - Improving construction of colormap by changing current dictionary approach
+    - Making it possible to interpolate between two or more color types in different modes
+    - Renaming `cm` module to something more descriptive
 - Set up a blog
 - Along with this I will continue to solve issues on github
 
@@ -176,4 +183,4 @@ My summer vacations starts on 27 April and college reopens in last week of
 July.
 * **Time Zone :** Indian Standard Time (IST) UTC +5:30
 *  **Hours per week :** 35-40 hours(during vacations), this may go down to
-30-35 hours in August/September.
+30-35 hours in August/September
