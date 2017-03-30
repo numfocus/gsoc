@@ -38,6 +38,7 @@ to be translated to C++ and incorporated as part of the Xdmf3 library.
 * Edit the current XDMFFile class output methods in accordance with enhanced XDMF specification.
 * Related issue [#759](https://bitbucket.org/fenics-project/dolfin/issues/759/more-xdmf-features-wanted)
 * Related issue [#488](https://bitbucket.org/fenics-project/dolfin/issues/488/add-support-xdmf-mesh-entity-attributes)
+* Related issue [#837](https://bitbucket.org/fenics-project/dolfin/issues/837/io-on-ghosted-meshes-buggy)
 * Think of higher-order mesh IO. New XDMF IO model should respect possible-in-future higher-order mesh
 geometry. 
 * Work mostly with DOLFIN/dolfin/io/XDMFFile.\*, DOLFIN/dolfin/io/HDF5File.\*
