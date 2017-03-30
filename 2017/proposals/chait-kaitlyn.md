@@ -1,9 +1,46 @@
 # Title
 PythreeJS_VR
 
+## Contents
+    1. Opening Details
+        * Contact Information
+        * Brief Introduction
+        * Research Experience & Programming Skills
+    2. Project Details
+        * Abstract
+        * Technical Details
+        * Future Works
+    3. Schedule of Deliverables
+        * Community Bonding Period & Phase 1
+        * Phase 2
+        * Phase 3
+    4. Why This Project?
+    5. Closing Remarks
+________________________________________________________________________________
+
+## Opening Details
+
+________________________________________________________________________________
+
+## Project Details
+
+________________________________________________________________________________
+
+## Schedule of Deliverables
+
+________________________________________________________________________________
+
+## Why This Project?
+
+________________________________________________________________________________
+
+## Closing Remarks
+
+________________________________________________________________________________
+
 ## Abstract
 
-{{ Abstract }}
+
 
 ## Technical Details
 
