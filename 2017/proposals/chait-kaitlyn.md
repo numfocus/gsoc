@@ -92,8 +92,52 @@ Components of a Model-View-Controller application:
             and view
     [MVC Diagram](https://i.stack.imgur.com/ocEWx.png)
 
+There are a variety of widgets already programmed into Ipywidgets, however
+coders can extend this library to create their own custom widgets.  The
+following link is a diagram of how the Ipython Kernel (Backend) interacts with
+the HTML widget (Frontend): [Ipywidget Diagram](http://ipywidgets.readthedocs.io/en/latest/_images/WidgetModelView.png)
 
+What the diagram does not show you is that Ipywidgets relies heavily on the
+Javascript library BackboneJS.  BackboneJS is a library that gives coders
+control of the structure between how models and their corresponding views
+interact. In Ipywidgets, widgets are created in the backend and automatically
+synchronized with their corresponding BackboneJS views in the frontend,
+the widget that is seen in the notebook.
 
+The following block of code will display the source code for
+a small Hello World Widget:
+
+'''
+Python (Backend Model):
+
+import ipywidgets as widgets
+from traitlets import Unicode, validate
+
+class HelloWidget(widgets.DOMWidget):
+    _view_name = Unicode('HelloView').tag(sync=True)
+    _view_module = Unicode('hello').tag(sync=True)
+________________________________________________________________________________
+
+Javascript (Frontend View):
+
+require.undef('hello');
+
+define('hello', ["jupyter-js-widgets"], function(widgets) {
+
+    var HelloView = widgets.DOMWidgetView.extend({
+
+        // Render the view.
+        render: function() {
+            this.el.textContent = 'Hello World!';
+        },
+    });
+
+    return {
+        HelloView: HelloView
+    };
+});
+
+'''
 
 
 
