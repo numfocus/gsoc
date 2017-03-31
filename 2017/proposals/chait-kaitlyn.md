@@ -80,14 +80,14 @@ Javascript 3-D graphics.
 ### Technical Details
 
 The following libraries/toolkits will be required throughout this project:
-    **PythreeJS**
     **Ipywidgets**
-    **Jupyter Notebook**
     **ThreeJS**
+    **PythreeJS**
+    **Jupyter Notebook**
     **BackboneJS**
     **RequireJS**
 
-Ipywidgets is coded using the architectural pattern, *Model-View-Controller*.
+**Ipywidgets** is coded using the architectural pattern, *Model-View-Controller*.
 Components of a Model-View-Controller application:
     *Model*: describes the manipulation/storage of the data and the user input
     *View*: output representation of the data; displays the data that has been
@@ -157,18 +157,47 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
 Now that we have established the fundamentak structure of ipywidgets, let's
 dive into ThreeJS and PythreeJS.
 
-ThreeJS is a Javascript 3-D graphics library that can used to code infinite
+**ThreeJS** is a Javascript 3-D graphics library that can used to code infinite
 3-D illustrations and environments.  Within this library there are two
-functions that can be used to render the environment and control the "camera"
-in a virtual reality application.
+functions that can be used together to  render the environment and
+control the "camera" in a virtual reality application.
 
 The following link will take you to a simple demo hosted from my personal
 Github page.  This demo is uses ThreeJS and can be viewed using any VR enabling
 device so long as the browser is webVR enabled.
 [Simple Demo](https://katierose1029.github.io/SimpleDemo/index.html)
 
-This then brings me to reintroducing PythreeJS, which is a python module
-that extends ipywidgets and bridges ThreeJS to Python widgets.  
+*VREffect*: ThreeJS function that renders the page to have a 'stereo effect'.
+VREffect is coded so that the web page is rendered so that when a users
+puts on virtual reality glasses the eyes see the environment in VR instead
+two images. The eyes are 'tricked' into seeing one image instead of two.
+*VRControls*: ThreeJS function that controls the movement of the camera
+as a user moves his/her head throughout exploring the virtual environment.
+
+This then brings me to reintroducing **PythreeJS**, a Python module
+that extends ipywidgets and bridges ThreeJS to Python widgets.  In creating
+this bridge, PythreeJS uses the Jupyter Notebook infrastructure to create
+HTML widgets that contain ThreeJS graphics.  A coder can use PythreeJS to
+create a geometric shape (spheres, cube, and other parametric shapes) and
+mesh to texturize it.
+
+So the question associated with the objective of this project is,
+"How can we incorporate ThreeJS VR functionality in a PythreeJS Widget?"
+
+I have been thinking about this for a while myself and have come up with
+at least two possible solutions:
+**Solution 1:**
+    In implementing VR functionality into PythreeJS I think it would make sense
+    to recreate Threejs.VREffect() and Threejs.VRControls() as a separate module.
+    To do this, I would reverse engineer these functions and attempt to
+    code them in terms of *jupyter-js-widgets*.
+    *Threejs.VREffect()* takes in a *Threejs.WebGLRenderer()* and
+    *Threejs.VRControls()* takes in a *Threejs.PerspectiveCamera()* in
+    its parameters in order to work properly.  In the following code
+    block, I will show a prototype os how this solution would be implemented
+    and ran in a Jupyter Notebook.
+
+**Solution 2:**
 
 
 
