@@ -42,7 +42,7 @@ The completion of this project will require the creation of certain new classes 
 * documentation for imshow extensions
 
 ### June 12th - June 16th
-*framework outline for norm functionality extensions
+* framework outline for norm functionality extensions
 * framework outline for cmap functionality extensions
 
 ### June 19th - June 23th, **End of Phase 1**
@@ -110,7 +110,9 @@ I am a second-year undergraduate student at the University of Moratuwa, Sri Lank
 
 ### Contact Details
 W M D Kanchana N Ranasinghe
+
 kahnchana@gmail.com / 150507H@uom.lk 
+
 kahnchana@github.com
 
 # Availability
