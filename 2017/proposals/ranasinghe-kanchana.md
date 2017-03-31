@@ -104,7 +104,7 @@ I am a second-year undergraduate student at the University of Moratuwa, Sri Lank
 ### Contact Details
 W M D Kanchana N Ranasinghe
 
-kahnchan@gmail.com / 150507H@uom.lk 
+kahnchana@gmail.com / 150507H@uom.lk 
 
 kahnchana@github.com
 
