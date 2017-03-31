@@ -80,9 +80,10 @@ The completion of this project will require the creation of certain new classes 
 
 ## Development Experience
 
-{{ Development Experience }}
 https://github.com/matplotlib/matplotlib/pull/8371#event-1015235492
+
 https://github.com/scikit-learn/scikit-learn/pull/8558#pullrequestreview-26737369
+
 https://github.com/cltk
 
 
