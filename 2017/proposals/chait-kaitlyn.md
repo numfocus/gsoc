@@ -25,6 +25,7 @@ ________________________________________________________________________________
 #### Contact Information:
     * Personal Email: katiec1029@gmail.com
     * School Email: kchait000@citymail.cuny.edu
+    * [Personal Github](https://github.com/katierose1029)
     * Cell Phone: (718) 594 4909
 
 ### Brief Introduction:
@@ -107,20 +108,17 @@ interact. In Ipywidgets, widgets are created in the backend and automatically
 synchronized with their corresponding BackboneJS views in the frontend,
 the widget that is seen in the notebook.
 
-Within the code block you will see the source code to a small
-widget called Hello and will display the test 'Hello World!'
-
-
-
-In the code block, the first section of code contains the code of the  
-Python model which extends *ipywidgets.widgets.DOMWidget*.
-This type of widget dynamically allocates the elements of the DOM
-of the HTML widget. Within the second part of the code block, I have
-displayed a sample of the Javascript code of the view.  
-We use RequireJS to import *jupyter-js-widgets*, which is the implementation
-of the backend ipywidgets.
-
-class *widgets.DOMWidgetView*.:  
+Within the code block below, you will see the source code to a small
+widget called Hello and will display the test 'Hello World!'.
+The first half of the code block contains the backend model of the widget
+in Python and the second half contains the frontend view in Javascript.
+You can see that the model is an extension of the class
+*ipywidgets.widgets.DOMWidget*, which is a type of widget that directly
+manipulates the DOM of the HTML widget.  Where I have the source code for
+the view of the widget in Javascript, the first line of code uses
+the Javascript library RequireJS, which is required to load the correct
+modules.  The view extends the class *widgets.DOMWidgetView*, which is the
+Javascript class that is overridden for the purpose of widget Hello.
 
 ~~~~
 Python (Backend Model):
@@ -156,6 +154,24 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
 ~~~~
 [src](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Custom.html)
 
+Now that we have established the fundamentak structure of ipywidgets, let's
+dive into ThreeJS and PythreeJS.
+
+ThreeJS is a Javascript 3-D graphics library that can used to code infinite
+3-D illustrations and environments.  Within this library there are two
+functions that can be used to render the environment and control the "camera"
+in a virtual reality application.
+
+The following link will take you to a simple demo hosted from my personal
+Github page.  This demo is uses ThreeJS and can be viewed using any VR enabling
+device so long as the browser is webVR enabled.
+[Simple Demo](https://katierose1029.github.io/SimpleDemo/index.html)
+
+This then brings me to reintroducing PythreeJS, which is a python module
+that extends ipywidgets and bridges ThreeJS to Python widgets.  
+
+
+
 
 
 
@@ -180,11 +196,13 @@ tools, toolkits, libraries and other modules I have mentioned throughout
 this proposal.
 
 [BackboneJS](http://backbonejs.org/)
+[Google Cardboard](https://vr.google.com/cardboard/)
 [ipywidgets Github](https://github.com/jupyter-widgets/ipywidgets)
 [ipywidgets Documentation](https://ipywidgets.readthedocs.io/en/latest/index.html)
 [ipywidgets.widgets.DOMWidget](https://github.com/jupyter-widgets/ipywidgets/blob/master/ipywidgets/widgets/domwidget.py)
 [ipywidgets/jupyter-js-widgets](https://github.com/jupyter-widgets/ipywidgets/tree/master/jupyter-js-widgets)
 [Jupyter Notebook](https://github.com/jupyter/notebook)
+[Oculus Rift](https://www.oculus.com/rift/)
 [pythreejs Github](https://github.com/jovyan/pythreejs)
 [RequireJS](http://requirejs.org/)
 [Science on a Sphere](https://sos.noaa.gov/What_is_SOS/)
