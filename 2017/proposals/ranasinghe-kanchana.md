@@ -79,7 +79,8 @@ The completion of this project will require the creation of certain new classes 
 ## Future works
 
 ## Development Experience
-
+I have been involved in programming work in python, MATLAB, Lua, Java, C and Micro C over the past three years. Some of my work is on [github](https://github.com/kahnchana). 
+With regards to open source development, I have worked on a couple of issues on matplotlib and scikitlearn over the past few weeks. In addition, I was able to get involved in this natural language processing related project for CLTK on Pali Language (mainly because I am familiar with the language). The links of work done are below.
 https://github.com/matplotlib/matplotlib/pull/8371#event-1015235492
 
 https://github.com/matplotlib/matplotlib/pull/8357
@@ -88,17 +89,26 @@ https://github.com/scikit-learn/scikit-learn/pull/8558#pullrequestreview-2673736
 
 https://github.com/cltk
 
+https://github.com/kahnchana/Pali-NLP
 
 ## Other Experiences
-
-{{ Experience }}
+I have been involved in some machine learning and computer vision related research work, especially regarding [activity recognition in videos]( https://github.com/kahnchana/tcsvt2017). Currently I am involved in some work related to dense trajectories. I have also been involved in numerous mathematics related work since an early age, having also represented my country at the International Mathematical Olympiad while in high school. 
 
 ## Why this project?
-
-{{ Why you want to do this project? }}
+I am quite interested in the areas of machine learning, computer vision, and robotics. As part of a machine learning research group at my university, I have constantly used Matplotlib for various purposes, including visualizing of certain categorical data. So I feel that I should try to get involved in contributing to the community as well. Also I feel a lot familiar with this project and find it interesting to work on mainly due to its relevance to data science.  
 
 ## Appendix
+### About Me
+I am a second-year undergraduate student at the University of Moratuwa, Sri Lanka studying Electronics and Telecommunication Engineering. I have been using python for the last three years for development and research work and am quite familiar with Numpy and Matplotlib libraries. 
 
-{{ Extra content }}
- 
- 
+### Contact Details
+W M D Kanchana N Ranasinghe
+
+kahnchan@gmail.com / 150507H@uom.lk 
+
+kahnchana@github.com
+
+# Availability
+I will be having summer holidays from the first week of June till the first week of September so I will be able to commit completely towards GSoC during that period. 
+* Time zone: Sri Lanka Standard Time (SLST)  - UTC +05:30
+* Hours per week: 35 – 40 hours (except for first week of June – roughly 30 hours)
