@@ -67,9 +67,12 @@ developed PythreeJS as a bridge between Python widget creation and HTML
 widgets with the incorporation of Javascript 3-D illustration.  ThreeJS,
 Javascript 3-D library, has the functionality to create virtual reality
 environments; coders create the environment, call the proper VR functions,
-display the page in a browser and put on the proper VR goggles to be immersed.  
-What if we had the ability toc ompute live data into a virtual reality
-environment?  The overall main goal of this project to successfully implement
+display the page in a browser and put on the proper VR goggles to be immersed.
+
+What if we had the ability to compute live data into a virtual reality
+environment?
+
+The overall main goal of this project to successfully implement
 virtual reality functionality in a Jupyter Notebook HTML widget with the use of
 Javascript 3-D graphics.
 
@@ -147,6 +150,7 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
 
 ~~~~
 [src](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Custom.html)
+
 
 
 ________________________________________________________________________________
