@@ -107,14 +107,19 @@ interact. In Ipywidgets, widgets are created in the backend and automatically
 synchronized with their corresponding BackboneJS views in the frontend,
 the widget that is seen in the notebook.
 
-The following block of code will display the source code for
-a small Hello World Widget.  In the code block, the first section of
-code contains the code of the  Python model which extends
-*ipywidgets.widgets.DOMWidget*. This class of widgets dynamically creates
-the elements the DOM of the HTML widget.  
-Within the second part of the code block, displays a sample of the Javascript
-view .  We use RequireJS to import *jupyter-js-widgets* in the Javascript
-script.  HelloView is a variable which extends *jupyter-js-widgets*
+Within the code block you will see the source code to a small
+widget called Hello and will display the test 'Hello World!'
+
+
+
+In the code block, the first section of code contains the code of the  
+Python model which extends *ipywidgets.widgets.DOMWidget*.
+This type of widget dynamically allocates the elements of the DOM
+of the HTML widget. Within the second part of the code block, I have
+displayed a sample of the Javascript code of the view.  
+We use RequireJS to import *jupyter-js-widgets*, which is the implementation
+of the backend ipywidgets.
+
 class *widgets.DOMWidgetView*.:  
 
 ~~~~
@@ -153,6 +158,7 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
 
 
 
+
 ________________________________________________________________________________
 
 ## Schedule of Deliverables
@@ -171,27 +177,22 @@ ________________________________________________________________________________
 
 The following links below will give further information on the following
 tools, toolkits, libraries and other modules I have mentioned throughout
-this proposal. They are listed in the order in which they are mentioned
-
-[Science on a Sphere](https://sos.noaa.gov/What_is_SOS/)
-
-[Jupyter Notebook](https://github.com/jupyter/notebook)
-
-[ipywidgets Github](https://github.com/jupyter-widgets/ipywidgets)
-
-[ipywidgets Documentation](https://ipywidgets.readthedocs.io/en/latest/index.html)
-
-[pythreejs Github](https://github.com/jovyan/pythreejs)
-
-[ThreeJS](https://threejs.org/)
-
-[ThreeJS VREffect](https://github.com/mrdoob/three.js/blob/dev/examples/js/effects/VREffect.js)
-
-[ThreeJS VRControls](https://github.com/mrdoob/three.js/blob/dev/examples/js/controls/VRControls.js)
+this proposal.
 
 [BackboneJS](http://backbonejs.org/)
-
+[ipywidgets Github](https://github.com/jupyter-widgets/ipywidgets)
+[ipywidgets Documentation](https://ipywidgets.readthedocs.io/en/latest/index.html)
+[ipywidgets.widgets.DOMWidget](https://github.com/jupyter-widgets/ipywidgets/blob/master/ipywidgets/widgets/domwidget.py)
+[ipywidgets/jupyter-js-widgets](https://github.com/jupyter-widgets/ipywidgets/tree/master/jupyter-js-widgets)
+[Jupyter Notebook](https://github.com/jupyter/notebook)
+[pythreejs Github](https://github.com/jovyan/pythreejs)
 [RequireJS](http://requirejs.org/)
+[Science on a Sphere](https://sos.noaa.gov/What_is_SOS/)
+[ThreeJS](https://threejs.org/)
+[ThreeJS VREffect](https://github.com/mrdoob/three.js/blob/dev/examples/js/effects/VREffect.js)
+[ThreeJS VRControls](https://github.com/mrdoob/three.js/blob/dev/examples/js/controls/VRControls.js)
+
+
 
 ________________________________________________________________________________
 
