@@ -418,7 +418,7 @@ feature inbuilt so this plugin can be dropped.
     be re-written as a pytest plugin.
     * Knownfailure (`knownfailure.py`) This is a decorator to check tests that are expected to fail. Pytest has
     something similar to this called `xfail`. The documentation for this is available [here](http://doc.pytest.org/en/latest/skipping.html#mark-a-test-function-as-expected-to-fail) .
-    This needs discussion to finalize if we need to port the existing code or if `xfail` is good enough for our use.
+    `xfail` is good enough for our use and we can drop `knownfailure`.
     * Memory leak (`memleak.py`) This plugin detects memory leaks in tests. There is an open-source (MIT license) plugin, [pytest-leaks](https://github.com/abalkin/pytest-leaks).
     There is another simpler implementation suggested by the community [here](https://nvbn.github.io/2017/02/02/pytest-leaking/).
     This also needs discussion, I will have to check the performance of all the alternatives to finalize which one to use.
