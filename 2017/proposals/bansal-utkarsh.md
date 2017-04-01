@@ -645,6 +645,9 @@ Personal Information
 Why are you interested in working with us?
 ------------------------------------------
 
+I am interested in working with MDAnalysis because I like working on open source projects. It would be a great opportunity
+for me to learn from experienced open source developers.
+
 
 Have you used MDAnalysis for your research already?
 ---------------------------------------------------
@@ -660,11 +663,12 @@ I've also been actively engaged with [@Software-Incubator](https://github.com/So
 contributed to various projects which include websites, REST APIs, web based games and iOS applications which are all open
 source.
 
+
 Do you have any exams during GSoC or plan a vacation during the summer?
 -----------------------------------------------------------------------
 
 Yes, I have a couple of exams during the community bonding period but that will not be longer than a week (3rd week of May). I can continue
-discussions during that period.
+discussions during that period. Other than that I am available the whole summer.
 
 
 Relevant Discussions and References
