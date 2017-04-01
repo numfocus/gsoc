@@ -287,8 +287,117 @@ define(["jupyter-js-widgets", "underscore", "three"],
 };
 ________________________________________________________________________________
 
-Jupyter Notebook:
+Jupyter Notebook: This code was made using Jupyter Notebook.
 
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "#Import Statements\n",
+    "import pythreejs as py3\n",
+    "from PIL import Image\n",
+    "from IPython.display import display\n",
+    "from ipywidgets import HTML, Text, Controller\n",
+    "from traitlets import link, dlink\n",
+    "from traitlets.traitlets import _validate_link"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "def create_sphere(fileName):\n",
+    "    \n",
+    "    def createImageTexture(fileName):\n",
+    "        texture = py3.ImageTexture(imageuri = fileName)\n",
+    "        return texture\n",
+    "        \n",
+    "    def sphereMesh(texture):\n",
+    "        sphereGeometry = py3.SphereGeometry(radius = 1)\n",
+    "        sphereMaterial = py3.BasicMaterial(map = texture)\n",
+    "        sphere = py3.Mesh(geometry = sphereGeometry, material = sphereMaterial)\n",
+    "        return sphere\n",
+    "    \n",
+    "    image = createImageTexture(fileName)\n",
+    "    sphere = sphereMesh(image)\n",
+    "    \n",
+    "    c = py3.PerspectiveCamera(position=[0,0,40])\n",
+    "    s = py3.Scene(children=[sphere])\n",
+    "    orbit_controls = py3.OrbitControls(controlling=c)\n",
+    "    fly_controls = py3.FlyControls(controlling=c)\n",
+    "    renderer = py3.Renderer(renderer_type='webgl',camera=c, scene= s, background='black', controls=[fly_controls])\n",
+    "    display(renderer)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/vnd.jupyter.widget-view+json": {
+       "model_id": "47695249bb3d4f5389a9f9960d000dc4"
+      }
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "create_sphere('4.png')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "#We could possibly test VREffect and VRControls before \n",
+    "#the line display(renderer) or after\n",
+    "effect = py3.VREffect(renderer)\n",
+    "controls = py3.VRControls(c)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
 
 
 ~~~~
