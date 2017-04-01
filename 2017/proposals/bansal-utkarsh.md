@@ -5,8 +5,8 @@ Port testsuite to pytest
 Abstract
 ========
 Testing is crucial to the development of any software and MDAnalysis currently uses nose to test their code. 
-Unfortunately, [nose](http://nose.readthedocs.io/en/latest/) is no longer under active development so the community has decided to shift over to [pytest](http://doc.pytest.org/en/latest/).
-Another problem is the performance of the current testsuite in terms of execution time. Currently the TravisCI
+Unfortunately, [nose](http://nose.readthedocs.io/en/latest/) is **no longer under active development** so the community has decided to shift over to [pytest](http://doc.pytest.org/en/latest/).
+Another problem is the **performance** of the current testsuite in terms of execution time. Currently the TravisCI
 build takes around 45 minutes (50 min. being the cap). This causes builds to fail because they are terminated
 on exceeding the maximum execution time. The objective of this project is to implement this shift in a way
 that existing development work is not affected and to improve performance of the existing test cases and to
@@ -421,7 +421,7 @@ feature inbuilt so this plugin can be dropped.
     This needs discussion to finalize if we need to port the existing code or if `xfail` is good enough for our use.
     * Memory leak (`memleak.py`) This plugin detects memory leaks in tests. There is an open-source (MIT license) plugin, [pytest-leaks](https://github.com/abalkin/pytest-leaks).
     There is another simpler implementation suggested by the community [here](https://nvbn.github.io/2017/02/02/pytest-leaking/).
-    This also needs discussion, I will have to check the performance of pytest-leaks to see if it slows down our tests.
+    This also needs discussion, I will have to check the performance of all the alternatives to finalize which one to use.
     * Open files (`open_files.py`) This plugin lists all open files when a test fails or errors. They also are listed at
     the end of the test suite. This plugin is currently disabled because we were facing issue with capturing stdout.
     This will have to be rewritten for pytest as no open source alternatives are available.
@@ -429,20 +429,46 @@ feature inbuilt so this plugin can be dropped.
 * Configure TravisCI and code coverage. This will not take much time, only a couple of commands will have to be changed.
 We will be using the command line parameters directly i.e. no wrappers (like the one we currently use with nose)
 
+
 **Challenges** The main challenge in this part is to not loose any tests in the conversion process. Code coverage data can be used to identify parts where this
  problem occurs.
+It is to be noted that custom plugins are a major cause for the slowdown of tests. Some discussion is being done [here](https://github.com/MDAnalysis/mdanalysis/issues/1191) .
+Plugins need to be profiled extensively to get rid of any potential bottlenecks.
 
-
-Part 2 
+Part 2
 ------
-This part will focus on the coordinates module and its tests. The coordinates module is a very important part of 
-MDAnalysis and any bugs in it will result in error in further calculations. Currently the coordinates module has not 
-been tested in a consistent fashion. Also all the reader/writers don’t necessarily follow the standard API.
+This part will focus on modifying tests to use pytest features such as -
+* assert statements (will help make the code more maintainable)
+* fixtures (this is the single most important fix that will improve performance a lot)
+* parameterize in place of yield (improves maintainability)
+* raises & warns helper (improves maintainability)
+
+PRs will be made on a per file basis.
+The following modules will be fixed in this part -
+
+* `analysis` (21 files)
+* `auxiliary` (2 files)
+* `core` (17 files)
+* `coordinates` (26 files)
+* `formats` (1 file)
+* `lib` (1 file)
+* `topology` (20 files)
+* Files in the root of `testsuite` directory (19 files)
+
+The main focus of this part will be the performance aspect of the tests. Module wide fixtures should help
+bring down the execution time vastly.
+
+
+
+Part 3 (Optional)
+-----------------
+This part will focus on the coordinates module and its tests. The coordinates module is a very important part of
+MDAnalysis and any bugs in it will result in error in further calculations. Currently the coordinates module has not
+been tested in a consistent fashion. Also all the reader/writers don’t necessarily follow the standard API See [#516](https://github.com/MDAnalysis/mdanalysis/issues/516).
 
 * Modify Reader/Writer API for files in the coordinates module for to follow the standard API.
-* Modify coordinates tests to use base Reader/Writer test classes. This will help to set a baseline that all 
+* Modify coordinates tests to use base Reader/Writer test classes. This will help to set a baseline that all
 readers/writers will have to conform to and at the same time avoid code duplication among test classes.
-* Modify code to make use of pytest only features such as assert statements and fixtures.
 
 This part will be split into multiple pull requests, ideally one pull request for each coordinate test file.
 The following files will be fixed in this part -
@@ -473,30 +499,10 @@ The following files will be fixed in this part -
 * `base.py`
 * `reference.py`
 
-This part will take a large part of my time as I have to deal with two issues at the same time - [#516](https://github.com/MDAnalysis/mdanalysis/issues/516) - Porting test
-cases to use base test classes and [#884](https://github.com/MDAnalysis/mdanalysis/issues/884) - Making changes to run with pytest. Moreover this will be the first place I
-start using pytest idioms, so that will involve a lot of discussions and reviews from my mentors.
 
 **Challenges** The main challenge in this part is to modify (if needed) the reader/writer API of the coordinates module to
 follow the API standard. Here my mentor can point out any problems with the changes via reviews. Again, this is because
 I want to do PRs on a per-file basis - it will be easier to review and get merged.
-
-
-Part 3
-------
-This part will focus on the remaining tests and will modify them to use pytest features such as assert statements and
-fixtures. This part should go relatively smoothly because I will be able to follow the patterns and conventions
-developed while working on the previous part of the project. Again, PR's will be made on a per file basis.
-
-
-The following modules will be fixed in this part -
-* `analysis` (21 files)
-* `auxiliary` (2 files)
-* `core` (17 files)
-* `formats` (1 file)
-* `lib` (1 file)
-* `topology` (20 files)
-* Files in the root of `testsuite` directory (19 files)
 
 
 I want to work on parts 2 and 3 on a per-file basis because I find small changes are easy to review and get merged. Also
@@ -545,51 +551,50 @@ Timeline
 * Discuss the `__init__` issue with the community and finalize the pattern to deal with it.
 
 ### May 30th - June 3rd
-* Begin work on **Part 1**. Start by editing tests to make them discoverable by pytest.
-Also actively discuss the `__init__` issue as it will be dealt with on a case by case
-basis.
+* Begin work on **Part 1**. Start by editing tests to make them discoverable by pytest. Move `__init__` code to
+`setUp` and use `__test__` attribute.
 * Send a PR only for review and discussion purposes. It will _not_ be ready to merge.
 
 ### June 5th - June 9th
-* Complete the test discovery issue and get _atleast_ one plugin working with pytest.
+* Complete the test discovery issue and get `knownfailure`, `capture_err` and `xdist` plugins working with pytest.
 * Work is done on the same PR. Still _not_ ready to merge.
 * Get a _bare minimum_ TravisCI setup to work.
 
 ### June 12th - June 16th
-* Get all the plugins to work
-* Work is done on the same PR. Still _not_ ready to merge.
+* Get `cleanup`, `memleak` and `open_files` plugin to work.
 
 ### June 19th - June 23th, **End of Phase 1**
 * Complete configuring TravisCI with plugins, code coverage and quantified code.
 * Final review, documentation and code cleanup as suggested.
-* Get the PR merged.
+* Get the PR merged. This completes the basic shift to pytest.
 
 ### June 26 - June 30th, **Begin of Phase 2**
-* Begin working on **Part 2** - the coordinates module. PRs will we worked on in parallel as the
-coordinate tests aren't interdependent. So I can work on one while another one is waiting for a review.
-* Port 4 coordinate test files - 4 PRs
+* Begin work on **Part 2**.
+* Start with the `analysis` module and work on 5 files.
+* PRs are submitted on a per-file basis and are worked on in parallel.
 
 ### July 3rd - July 7th
-* Port another 6 coordinate test files - 6 PRs
+* Wrap up the `analysis` module. Submit PRs on a per-file basis.
 
 ### July 10th - July 14th
-* Port another 6 coordinated test files - 6 PRs
+* Port `auxiliary` module - multiple PRs
 
 ### July 17th - July 21th, **End of Phase 2**
-* Port another 6 coordinate test files - 6 PRs
+* Port `coordinates` modules - multiple PRs
 
 ### July 24th - July 28th, **Begin of Phase 3**
-* Port remaining 4 coordinate test files - 4 PRs
+* Port `core` module - multiple PRs
 
 ### July 31st - August 4th
-* Begin work on **Part 3**. PRs are again worked on in parallel.
-* Port analysis & auxiliary modules - multiple PRs
+* Port `topology` module - multiple PRs
 
 ### August 7th - August 11th
-* Port core & topology modules - multiple PRs
+* Port files in the root directory, `lib` and `formats` modules - multiple PRs
 
 ### August 14th - August 18th
-* Port files in the root directory, lib and formats modules - multiple PRs
+* By now module wide fixtures have been implemented. Have a final look at the test performance.
+Identify any remaining major bottlenecks. Discuss with the community and work on them to bring
+down execution time further.
 
 ### August 21st - August 25th, **Final Week**
 * This week is set aside as a buffer to negate any time lost/lag in work. Follow up on reviews and get PRs
@@ -601,7 +606,7 @@ merged into develop.
 ## Future works
 All the points mentioned here are _optional_ and may be done if I'm ahead of schedule
 
-* Benchmarking of tests module.
+* Part 3 (as explained above)
 * Add support for doctests.
 
 Contributions to MDAnalysis
