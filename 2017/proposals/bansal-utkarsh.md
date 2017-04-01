@@ -22,7 +22,7 @@ Running this testsuite with pytest (without any modifications) results in the fo
 
 `1789 failed, 2630 passed, 52 skipped, 1610 pytest-warnings, 26 error`
 
-Also, it is to be noted that pytest misses out some (231 to be exact) test cases too. This is due to differences 
+Also, it is to be noted that pytest misses out some (231 to be exact) test cases too. Coverage drops to 69%. This is due to differences
 between test discovery rules of nose and pytest (explained further).
 
 
