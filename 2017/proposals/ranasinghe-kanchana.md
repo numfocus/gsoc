@@ -1,3 +1,14 @@
+---
+title: GSOC 2017 – Numfocus (Matplotlib)
+author: W M D Kanchana N Ranasinghe
+header-includes:
+    - \usepackage{fancyhdr}
+    - \pagestyle{fancy}
+    - \fancyhead[L]{ GSOC 2017 – Numfocus (Matplotlib)}
+    - \fancyhead[R]{Categorical Color}
+    - \fancyhead[C]{}
+---
+
 # Categorical Color
 
 ## Abstract
@@ -120,7 +131,7 @@ kahnchana@gmail.com / 150507H@uom.lk
 
 kahnchana@github.com
 
-# Availability
+## Availability
 I will be having summer holidays from the first week of June till the first week of September so I will be able to commit completely towards GSoC during that period. 
 
 * Time zone: Sri Lanka Standard Time (SLST)  - UTC +05:30
