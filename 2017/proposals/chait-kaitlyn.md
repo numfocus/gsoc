@@ -197,6 +197,67 @@ at least two possible solutions:
     block, I will show a prototype os how this solution would be implemented
     and ran in a Jupyter Notebook.
 
+~~~~
+Backend:
+
+import ipywidgets as widgets
+from traitlets import Unicode, validate
+
+class VREffectWidget(DOMWidget):
+    _view_module = Unicode(npm_pkg_name).tag(sync=True)
+    _model_module = Unicode(npm_pkg_name).tag(sync=True)
+    _view_name = Unicode('VREffectView').tag(sync=True)
+    _model_name = Unicode('VREffectModel').tag(sync=True)
+    #Renderer
+    renderer = Instance(Renderer).tag(sync=True, **widget_serialization)
+
+class VRCameraWidget(DOMWidget):
+    _view_module = Unicode(npm_pkg_name).tag(sync=True)
+    _model_module = Unicode(npm_pkg_name).tag(sync=True)
+    _view_name = Unicode('VRControlsView').tag(sync=True)
+    _model_name = Unicode('VRControlsModel').tag(sync=True)
+    #Camera
+    Camera = Instance(Camera).tag(sync=True, **widget_serialization)
+
+________________________________________________________________________________
+
+Frontend:
+
+define(["jupyter-js-widgets", "underscore", "three"],
+        function(widgets, _, THREE) {
+
+    window.THREE = THREE;
+    require("./examples/js/renderers/Projector.js");
+    require("./examples/js/renderers/CanvasRenderer.js");
+    require("./examples/js/controls/OrbitControls.js");
+    require("./examples/js/controls/MomentumCameraControls.js");
+    require("./examples/js/controls/TrackballControls.js");
+    var $ = require("jquery");
+
+    var VREffectView = widgets.DOMWidgetView.extend({
+        render : function() {},
+        /*other functions will go below here but render function
+        is the most important one to override*/    
+    });
+
+    var VRControlsView = widgets.DOMWidgetView.extend({
+        render : function() {},
+        /*other functions will go below here*/
+    });
+
+
+
+    return {
+
+    };
+};
+________________________________________________________________________________
+
+Jupyter Notebook:
+
+
+~~~~
+
 **Solution 2:**
 
 
