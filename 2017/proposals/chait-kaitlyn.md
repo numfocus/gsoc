@@ -195,7 +195,7 @@ at least two possible solutions:
     *Threejs.VRControls()* takes in a *Threejs.PerspectiveCamera()* in
     its parameters in order to work properly.  In the following code
     block, I will show a prototype os how this solution would be implemented
-    and ran in a Jupyter Notebook.
+    and tested in a Jupyter Notebook.
 
 ~~~~
 Backend:
@@ -211,13 +211,17 @@ class VREffectWidget(DOMWidget):
     #Renderer
     renderer = Instance(Renderer).tag(sync=True, **widget_serialization)
 
-class VRCameraWidget(DOMWidget):
+class VRControlsWidget(Controls):
     _view_module = Unicode(npm_pkg_name).tag(sync=True)
     _model_module = Unicode(npm_pkg_name).tag(sync=True)
     _view_name = Unicode('VRControlsView').tag(sync=True)
     _model_name = Unicode('VRControlsModel').tag(sync=True)
-    #Camera
-    Camera = Instance(Camera).tag(sync=True, **widget_serialization)
+
+    # controlling will be set to an instance of Camera
+    # Camera objects are of type Object3d
+    controlling = Instance(Object3d, allow_none=True).tag(sync=True,
+                                **widget_serialization)
+
 
 ________________________________________________________________________________
 
@@ -240,15 +244,45 @@ define(["jupyter-js-widgets", "underscore", "three"],
         is the most important one to override*/    
     });
 
-    var VRControlsView = widgets.DOMWidgetView.extend({
+    /*ThreeView is variable that extends widgets.WidgetView; this extension
+    creates template for further PythreeJS variables.*/
+    var VRControlsView =  ThreeView.extend({
         render : function() {},
         /*other functions will go below here*/
     });
 
+    var VREffectModel = widgets.DOMWidgetModel.extend({
+        defaults: _.extend({}, widgets.WidgetModel.prototype.defaults, {
+            _view_module: 'jupyter-threejs',
+            _model_module: 'jupyter-threejs',
 
+            _view_name: 'VREffectView',
+            _model_name: 'VREffectModel',
+        })
+    });
+
+    /*Controls Model is a template for instances that control cameras,
+    and other stances of Object3d alike.*/
+    var VRControlsModel = ControlsModel.extend({
+        defaults: _.extend({}, widgets.WidgetModel.prototype.defaults, {
+            _view_module: 'jupyter-threejs',
+            _model_module: 'jupyter-threejs',
+
+            _view_name: 'VRControlsView',
+            _model_name: 'VRControlsModel',
+            controlling: null
+        })
+    }, {
+        serializers: _.extend({
+            controlling: { deserialize: widgets.unpack_models }
+        }, widgets.WidgetModel.serializers)
+    });
 
     return {
-
+        VREffectView : VREffectView,
+        VRControlsView : VRControlsView,
+        VREffectModel : VREffectModel,
+        VRControlsModel : VRControlsModel,
     };
 };
 ________________________________________________________________________________
@@ -256,7 +290,9 @@ ________________________________________________________________________________
 Jupyter Notebook:
 
 
+
 ~~~~
+
 
 **Solution 2:**
 
