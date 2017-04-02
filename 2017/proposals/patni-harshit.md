@@ -11,7 +11,7 @@ scatter plot or to show the orientation of a field.
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
-| Intermediate  | Python, | [@tacaswell][@story645] |
+| Intermediate  | Python | tacaswell,story645 |
 
 ## Technical Details
 
@@ -37,7 +37,7 @@ distinguishing colors
 [MEP21](http://matplotlib.org/devel/MEP/MEP21.html): color and cm refactor.
 This will greatly help in understanding the current implementation of
 normalization and color mapping tools in Matplotlib. Some tasks that can be
-done as a part of this are:
+done as part of this are:
     - Tidying up namespace
     - Defining a "Color" class
     - Making it easy to convert from one color type to another `hex -> RGB`, `RGB -> hex`, `HSV -> RGB` etc
@@ -119,8 +119,9 @@ ScalerMappable
 
 ## Future works
 
-In future the project can be extended to higher dimensions by mapping to
+- In future the project can be extended to higher dimensions by mapping to
 quaternions as well.
+- Different types of colormaps can be added
 
 ## Open Source Development Experience
 
@@ -144,25 +145,28 @@ quaternions as well.
 ## Why this project?
 
 Currently there are no multidimensional colormaps in Matplotlib. This is a
-big nuisance if we want to modulate the color and opacity independently based
-on data in different dimensions independently. This project has been requested
-for a long time by people in neuroscience, astronomy etc.
+big nuisance if we want to modulate the color and opacity based on data in
+different dimensions independently. This project has been requested for a long
+time by people in neuroscience, astronomy etc.
 Here are some of those requests :
+
 - [#4369](https://github.com/matplotlib/matplotlib/issues/4369)
 - [Bivariate Colormaps](http://stackoverflow.com/questions/15207255/is-there-any-way-to-use-bivariate-colormaps-in-matplotlib)
 
-Having used Matplotlib for displaying graphical information many times I
+Having used Matplotlib for displaying graphical information several times, I
 wanted to give something back to the community. I am the right person to do
 this project because not only I want to contribute to Open Source but I have
 also worked closely with the community for last month so I have good
 understanding of workflow.
 
-
 ## Appendix
 
 ### About Me
 
-I am a sophomore at International Institute of Information Technology, Hyderabad majoring in Computer Science. I have intermediate proficiency in Python and have worked on several projects with it. I am also an active contributor of Matplotlib for some time.
+I am a sophomore at International Institute of Information Technology,
+Hyderabad majoring in Computer Science. I have intermediate proficiency in
+Python and have worked on several projects with it. I am also an active
+contributor of Matplotlib for some time.
 
 ### Contact
 |          |                                                        |
@@ -178,6 +182,7 @@ I am a sophomore at International Institute of Information Technology, Hyderabad
 I don't have any commitments in summer and GSOC will be my full time job.
 My summer vacations starts on 27 April and college reopens in last week of
 July.
+
 * **Time Zone :** Indian Standard Time (IST) UTC +5:30
 *  **Hours per week :** 35-40 hours(during vacations), this may go down to
 30-35 hours in August/September
