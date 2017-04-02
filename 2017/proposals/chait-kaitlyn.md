@@ -278,7 +278,9 @@ ________________________________________________________________________________
 
 ## Why This Project?
 Completing this project would be a great addition to matplotlib and to my
-portfolio as a coder.  
+portfolio as a coder.  I have some experience working with Ipywidgets, and
+would like to expand upon the range in which they can be used amongst other
+coders and developers.
 ________________________________________________________________________________
 
 ## Appendix
