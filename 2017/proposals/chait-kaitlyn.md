@@ -49,7 +49,7 @@ changes in ocean temperature, and other weather pattens of the sorts.
 After the success of our first demonstration, we wanted to expand it to
 plotting live data in Jupyter notebooks and other scripts alike.
 
-Programming Skills:
+* Programming Skills:
     * Backend: Python, Java
     * Databases: MYSQL
     * Frontend: Javascript, HTML
