@@ -30,23 +30,30 @@ to be translated to C++ and incorporated as part of the Xdmf3 library.
 * Get know FEniCS workflow.
 * Try custom DOLFIN compilation within Docker.
 * Study existing I/O module for XDMF output, current issues and pitfalls.
-* Communicate with a mentor and FEniCS community on this issue.
+* Study Pugi XML parser manual - a cornerstone of current XDMF I/O.
 * Study the XDMF3 specification.
+* Communicate with a mentor and FEniCS community on this issue.
 
 ### May 29th - June 3rd
 
-* Edit the current XDMFFile class output methods in accordance with enhanced XDMF specification.
+* Edit the current XDMFFile class output methods in accordance with enhanced XDMF3 specification.
+* Clean and refactor current XDMFFile class. There are some places, where logic is unnecessary cloned, 
+e.g. when adding XDMF node and version attributes.
+* Think of higher-order mesh IO. New XDMF IO model should respect possible-in-future higher-order mesh
+geometry. Currently, there is support for quadratic mesh (XDMFFile::build_mesh_quadratic), but it is not
+allowed in parallel.
 * Related issue [#759](https://bitbucket.org/fenics-project/dolfin/issues/759/more-xdmf-features-wanted)
 * Related issue [#488](https://bitbucket.org/fenics-project/dolfin/issues/488/add-support-xdmf-mesh-entity-attributes)
 * Related issue [#837](https://bitbucket.org/fenics-project/dolfin/issues/837/io-on-ghosted-meshes-buggy)
-* Think of higher-order mesh IO. New XDMF IO model should respect possible-in-future higher-order mesh
-geometry. 
 * Work mostly with DOLFIN/dolfin/io/XDMFFile.\*, DOLFIN/dolfin/io/HDF5File.\*
+
 
 ### June 5th - June 9th
 
 * Develop a new C++ method to read in the XDMF from file in parallel.
 * Make sure the distribution of (checkpointed) restored data is correct. 
+* Add close/clear/destroy function to XDMFFile, related issue [#390](https://bitbucket.org/fenics-project/dolfin/issues/390/add-close-clear-destroy-function-to)
+* Work mostly with DOLFIN/dolfin/io/XDMFFile.\*, DOLFIN/dolfin/io/HDF5File.\*
 
 ### June 12th - June 16th
 
@@ -60,6 +67,7 @@ to meet the mentors in person and discuss progress.
 and independent.
 * Goal: DOLFIN should have improved XDMF read/write methods working also in parallel. 
 * Write tests.
+* The work should be merged into master branch with all tests passed.
 
 ### June 26 - June 30th, **Begin of Phase 2**
 
@@ -86,7 +94,8 @@ generated XDMF output.
 ### July 24th - July 28th, **Begin of Phase 3**
 
 * I expect some bugs from phase 1, 2 to appear. Solve the possible
-issues and test the code again.
+issues and test the code again. If not, think of how items from Future works section could be 
+implemented. If have enough time then do so.
 
 ### July 31st - August 4th
 
@@ -105,7 +114,7 @@ conversion strategy.
 * Generate documentation for the code written during phase 3, so the work is clear, complete
 and independent.
 * Goal: XDMF3 library in ParaView should be able to read and visualize the newly developed
-FEniCS XDMF output.
+FEniCS XDMF3 output.
 
 ### August 21st - August 25th, **Final Week**
 
@@ -119,16 +128,21 @@ issues and test the code again.
 ## Future works
 
 * Python filters for all FEniCS elements (higher order, Brezzi-Douglas-Marini). 
+* Higher order mesh geometries.
 
 ## Development Experience
 
-* I've worked for 3 years as a web developer in webstudio in Prague. I developed CMS based on 
+* I've worked for 3 years as a web developer in webstudio in Prague (20 hrs per week). I developed CMS based on 
 Symfony framework, language PHP. Symfony is an OOP framework, we worked with GIT and managed
 repositiories via Bitbucket. We used Composer as a dependency manager for internal CMS parts. 
+As the web developer I worked in PHP, JavaScript, HTML, SQL, Linux. Besides my bachelor and master
+thesis being in Python I have written scripts/code in C/C++, R, Mathematica, LaTeX.
 * My bachelor thesis is based on FEniCS code and I have 2 years experience in using FEniCS 
 (via Python).  
+* I have [merged pull request](https://bitbucket.org/fenics-project/dolfin/pull-requests/349/added-simple-xyzfile-python-unit-test/diff) to improve FEniCS test coverage.
 * I have minor [merged pull request](https://bitbucket.org/simula_cbc/cbcpost/pull-requests/1/according-to-line-94-of-cbcbatch-runnable/diff#comment-None) in cbcpost documentation - postprocessing tool for FEniCS.
-* I have created [pull request](https://bitbucket.org/fenics-project/dolfin/pull-requests/349/added-simple-xyzfile-python-unit-test/diff) to improve FEniCS test coverage.
+* I have minor [merged pull request](https://bitbucket.org/fenics-project/docker/pull-requests/20/add-e-flag-to-sudo)
+in FEniCS installation guide via Docker.
 
 ## Other Experiences
 
@@ -141,10 +155,20 @@ physics, Charles University, Prague.
 and neither of them behaved as I expected, especially in parallel. Correct parallel
 checkpointing of results is a challenge and better(more documented) IO FEniCS
 workflow would help to postprocess results a lot.
+* Moreover, there is a discrepancy in what data could FEniCS save and reload, and what data could FEniCS
+save for visualisation (in Paraview). One can save and reload his results with pure "heavy-data" HDF5 format,
+but one cannot use this files for visualisation in Paraview. I think, this is a very good issue to improve. 
+FEniCS community and its users will greatly benefit from having XDMF3 format which handles both. This will
+be implemented into FEniCS sooner or later, but GSoC could boost the process substantially.
 * This project will help me to dig deeper into FEniCS code and be a benefit
 for young and open-source community. Having some experience from this project would allow
 me to contribute to FEniCS even more in the future.
 * I pland to do a PhD that will inevitably use finite element method and its FEniCS implementation.
+
+## Workload and summer plans
+
+* I plan to devote 8 hrs daily to work on this project. I am having my final state exam in mid of june, so there might
+be a slight drop in workload to approx. 6 hrs per day. After that I have no obligations until october and I am prepared to work on the project full speed.
 
 ## Appendix
 
