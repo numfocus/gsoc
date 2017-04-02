@@ -1,20 +1,27 @@
-#  Add Spatial Data Support to the Data Retriever 
+# Data Retriever  
+
+# Add Spatial Data Support to the Data Retriever 
 
 ## Introduction
 
-I am Amritanshu Jain, a sophomore currently studying at BITS Pilani, Pilani Campus. I wish to apply for GSoC under your organisation.  I have a programming experience of over six years in Python and JS, and have gained substantial command over Python libraries/frameworks such as Django, Scrapy, NumPy OpenCV, Pandas. I have also worked with Node.js and React/Redux for a few projects. Lately I have been working with Text mining and Natural Processing Language. Contact Information-
-- Email ID - jainamritanshu@gmail.com
-- Github - https://github.com/jainamritanshu/
-- Skype ID - amritanshu.jain
-- Phone Number - +91 9953108361
+I am Amritanshu Jain, a sophomore currently studying at BITS Pilani, Pilani Campus. I wish to apply for GSoC under your organisation.  I have a programming experience of over six years in Python and JS, and have gained substantial command over Python libraries/frameworks such as Django, Scrapy, NumPy OpenCV, Pandas.
+
+I have also worked with Node.js and React/Redux for a few projects. Lately I have been working with Text mining and Natural Processing Language. 
+
+Contact Information-
+- **Email ID** - jainamritanshu@gmail.com
+- **Github** - https://github.com/jainamritanshu/
+- **Skype ID** - amritanshu.jain
+- **Phone Number** - +91 9953108361
 
 ## Abstract
 
- The Data Retriever automates the tasks of finding, downloading, and cleaning up publicly available data, and then stores them in a local database or csv files. It's a package manager for data. This lets data analysts spend less time cleaning up and managing data, and more time analyzing it. 
+ The Data Retriever automates the tasks of finding, downloading, and cleaning up publicly available data, and then stores them in a local database or csv files. It's a package manager for data. This lets data analysts spend less time cleaning up and managing data, and more time analyzing it.
 
-Data retriever currently lacks Spatial Data support. I plan to make my contributions this summer to incorporate Spatial data support for PostgreSQL/PostGIS, SQLite/SpatiaLite and MySQL(if time permits). 
+Data retriever currently lacks **Spatial Data support**. I plan to make my contributions this summer to incorporate Spatial Data support for **PostgreSQL/PostGIS**, **SQLite/SpatiaLite** and **MySQL**(if time permits).
 
-I would also like to add an enhancement of visualizing the data. As previously discussed with the mentors I have some exeperience with handling market data and would like to add scripts for market data as well as some gis datasets in order to test the working of newly incorporated Spatial data support and expanding ends of Data Retriever.
+I would also like to add an enhancement of visualizing the data. As previously discussed with the mentors, I have some experience with handling market data and would like to add market data as well as some Gis datasets in order to test the working of newly incorporated Spatial Data support and expanding ends of Data Retriever.
+
 
 ## Technical Details
 
@@ -23,25 +30,28 @@ I would also like to add an enhancement of visualizing the data. As previously d
 
 - MySQL lacks some functionalities such as providing less MBR functions as compared to PostGIS or SpatiaLite and requiring an examination of whether the necessary functions are provided or not while contemplating an application. If we try to incorporate Spatial support for MySQL as well we would have to write a couple of methods for taking care of the same.
 
-- For adding data visualization I would like to use [ggplot2](https://github.com/yhat/ggpy) for data visualization of spatial datasets. We can not use the traditional indexing methods of DBMS and so we will have to use the concept of R-Tree for spatial indexing widely popular for spatial data sets. 
+- To add data visualization for spatial databases I would suggest to use [ggplot2](https://github.com/yhat/ggpy). 
 
 - Spatial Indexing will be done by the conecpt of R-Tree rather than Binary Tree(as is used for traditional indexing purposes). Generally the spatial datasets are provided with shape files. I would suggest to use [ogr2ogr](http://www.gdal.org/ogr2ogr.html) for processing the raw data. 
 
-- I would be editing CLI tools for supporting spatial data processing as it does for tabular data now. The person could add a new dataset(new_json), download an existing dataset in a preferred database and more. User would have more fields in the spatial datapackage to define the type of data(vector/raster), Spatial Reference System and more. `lib/datapackage.py` and `lib/compile.py` would be extended for the same. 
+- I would be editing CLI tools for supporting spatial data processing as it does for tabular data now. The person could add a **new dataset(new_json)**, download an existing dataset in a preferred database and more. User would have more fields in the spatial datapackage to define the type of data(vector/raster), Spatial Reference System and more. `lib/datapackage.py` and `lib/compile.py` would be extended for the same. 
 
-- `lib/engine.py` and `lib/tables.py` would be extended to support different creation of tables according to the desired spatial database format. Spatial data schema has a considerable difference as compared to general tabular data and hence I believe that these two files would have large extended methods for dealing with different schemas.
+- `lib/engine.py` and `lib/tables.py` would be extended to support different creation of tables according to the desired spatial database format. **Spatial data schema** has a considerable difference as compared to general tabular data and hence I believe that these two files would have large extended methods for dealing with different schemas.
 
 - The main information of Spatial DBMS is managed in three tables - 
-	- LAYERS
-	- SPATIAL_REF_SYS
-	- GEOMETRY_COLUMNS
+	- **LAYERS** - The sde_layers table maintains data about each feature class in the database. The information helps build and maintain spatial indexes, ensure proper shape types, maintain data integrity, and store the spatial reference for the coordinate data. This table stores a row for each spatial column in the database. Applications use the layer properties to discover available spatial data sources
+
+	- **SPATIAL_REF_SYS** - The sde_spatial_references table contains the coordinate system and floating-point-to-integer transformation values. Internal functions use the parameters of a spatial reference system to translate and scale each floating-point coordinate of the geometry into 64-bit positive integers prior to storage. Upon retrieval, the coordinates are restored to their original external floating-point format. Each geometry column of the sde_geometry_columns table is associated with a spatial reference system, the information for which is stored in the sde_spatial_references table. The columns of this table are those defined by the OpenGIS SQL specifications (srid, srtext, auth_name, and auth_srid. The spatial reference system identifies the coordinate system for a geometry and gives meaning to the numeric coordinate values for the geometry.
+
+	- **GEOMETRY_COLUMNS** - The sde_geometry_columns table stores a row for each column of type Geometry in the database that complies with the OpenGIS SQL specification. This table is treated as write only—the only time it is accessed is when a layer is added or deleted that uses an OpenGIS SQL data format. This table is defined by the OpenGIS SQL specification and may be updated by other applications with geometry columns not managed by ArcSDE. When a new Geometry column is created in an OpenGIS compliant format, the fully qualified table, column name, and spatial reference ID (srid) are added to the sde_geometry_columns table.
 
 
 [![Screenshot from 2017-03-25 17-40-04.png](https://s21.postimg.org/5igcj2913/Screenshot_from_2017-03-25_17-40-04.png)](https://postimg.org/image/q2l6hjos3/)
+###### Citation - http://help.arcgis.com/en/geodatabase/10.0/sdk/arcsde/concepts/geometry/dbschema/dbschema.htm
 
 - The above would result in a basic framework of incorporation of spatial data support. Now I would be working on specific support object files(like PostGIS_vector). I shall try to include almost all file formats for spatial database like GeoJSON for vector format and more. 
 
-- As stretch goals I would like to work on a small enhancement of data visualization using ggplot2 as mentioned previously. I would also like to extend the spatial support to MySQL as well using MyISAM/InnoDB if time permits. I have made the timeline below for the above. 
+- As stretch goals I would like to work on a small enhancement of **data visualization using ggplot2** as mentioned previously. I would also like to extend the spatial support to MySQL as well using MyISAM/InnoDB if time permits. I have made the timeline below for the above. 
 
 
 ## Schedule of Deliverables
@@ -52,11 +62,12 @@ I would also like to add an enhancement of visualizing the data. As previously d
 
 ### May 29th - June 3rd
 
- Introducing native methods of processing raw gis data sets in Data Retriever and defining different properties needed for gis data sets to be defined in the datapackage. 
+ Introducing native methods of processing raw Gis data sets in Data Retriever and defining different properties needed for Gis data sets to be defined in the datapackage. 
 
 ### June 5th - June 9th
 
- Working and extending CLI tools to make json scripts for datapackaging, compiling into python scripts and downloading it in the preffered database. Adding/extending methods in Data Retriever for schema of spatial database. 
+ - Extending CLI tools to make json scripts for datapackaging, compiling into python scripts and downloading it in the preffered database. 
+ - Adding/extending methods in Data Retriever for schema of spatial database. 
 
 ### June 12th - June 16th
 
@@ -82,13 +93,13 @@ I would also like to add an enhancement of visualizing the data. As previously d
 
 ### July 17th - July 21th, **End of Phase 2**
 
- Writing tests for the work done till now. Improving the test coverage. 
+ **Writing tests** for the work done till now. Improving the test coverage. 
 
 #### By phase 2 evaluation I would deliver working and test covered Spatial database support for SpatiaLite as well as PostGIS.
 
 ### July 24th - July 28th, **Begin of Phase 3**
 
- Incorporating a couple of spatial data sets such as datasets from grassgis and freegis to test the overall working and common formats of raw datasets. 
+ Incorporating a couple of spatial data sets such as datasets from **grassgis** and **freegis** to test the overall working and common formats of raw datasets. 
 
 ### July 31st - August 4th
 
@@ -112,11 +123,14 @@ I would also like to add an enhancement of visualizing the data. As previously d
 
 ## Future works
 
- I would like to extend Spatial Support in Data Retriever to MySQL as well. Also as mentioned in this [issue](https://github.com/weecology/retriever/issues/325), I would like exetend Data Retriever to import spatial data in HDF5 format. I read a bit about it, and HDF5 format is well suited for spatial data sets. Also I am exploring the lacks of data in Data Retriever and would love to add new data sets to the same. 
+- I would like to extend Spatial Support in Data Retriever to MySQL as well.
+- Also as mentioned in this [issue](https://github.com/weecology/retriever/issues/325), I would like exetend Data Retriever to import spatial data in HDF5 format. I read a bit about it, and HDF5 format is well suited for spatial data sets.
+- I am exploring the lacks of data in Data Retriever and would love to add new data sets to the same. 
 
 ## Development Experience
 
  In the past I have been involved more in the development of backend services and REST API for Web/Mobile based applications. I am the lead backend developer of college's technical department, Department of Visual Media responsilble for development work in college softwares and fests. Most of this work involved the use of Django and React.js. These are some of my development pieces -
+
 - **[Oasis Store](bits-oasis.org/2016/shop/)** - An e-commerce platform for our college fest, where users can buy merchandise, concert passes and more. These are some of the major features
 	- Used redis-db for the cart and mapped it to a unique ID of the user to maintain the history of the products added to the cart in realtime
 	- Added social-auth and user could even purchase without any registration, providing the specific details and still maintaining the product history.
@@ -184,10 +198,11 @@ I have a teaching exeperience in Information security and Web Development as wel
 
 ## Why this project?
 
- Lately I have been working with quite a few datasets such as market data, as I mentioned earlier and it bugged me, writing scripts over and over again for downloading, cleaning and storing raw datasets. Given my interest about getting my hands dirty in large datasets, I saw Data Retriever as a boon to data analysts. The concept of cleaning and handling the data so well, adding it to preferred Database and specially the structure and readability of the code got me fascinated towards the organisation. Recently I developed a Location-Based Chat for a hackathon. A major challenge faced was how to get the location of users in a particular region(precisely in a given radius), allot a city to a specific area and improve the retrieval speed for the same. This resulted in my exposure to the spatial database system. It was a pretty small implementation but worked like a charm for us. This experience got me attracted to Spatial Data and as I got preparing for this particular project, I already learnt a lot new concepts about the same. I am pretty sure of my instincts that this project will be a great learning as well as a great development experience for me. Looking forward to contribute in this project, this summers. 
+ Lately I have been working with quite a few datasets such as market data, as I mentioned earlier and it bugged me, writing scripts over and over again for downloading, cleaning and storing raw datasets. Given my interest about getting my hands dirty in large datasets, I saw Data Retriever as a boon to data analysts. The concept of cleaning and handling the data so well, adding it to preferred Database and specially the structure and readability of the code got me fascinated towards the organisation. Recently I developed a Location-Based Chat application for a hackathon. Recently, I developed a Location-Based based chat application for a hackathon. A major challenge faced was how to get the location of users in a particular region(precisely in a given radius), define a city’s bounding region/boundary. Initially we used Google’s Location API, but it had it’s limitations such as returning users in specific city and not by the parameter of radius. Also it took a huge amount of time for the API calls. This resulted in my exposure to the spatial database system. It was a pretty small implementation but worked like a charm for us. This experience got me attracted to Spatial Data and as I got preparing for this particular project, I already learnt a lot new concepts about the same. I am sure that this project will be a great learning as well as a great development experience for me. Looking forward to contribute in this project, this summers. 
 
 ## Appendix
 
- https://freegisdata.rtwilson.com/
+- https://freegisdata.rtwilson.com/
+- https://help.arcgis.com/
    
  
