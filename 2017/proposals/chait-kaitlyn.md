@@ -1,4 +1,4 @@
-# Matplotlib & PythreeJS
+# Matplotlib Serialization & PythreeJS
 ### Kaitlyn Chait
 
 
