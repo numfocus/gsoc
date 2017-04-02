@@ -227,6 +227,11 @@ renderer = py3.Renderer(renderer_type='webgl',camera=c, scene= s,
 return display(renderer)
 ~~~
 
+Note: The output of 3 would_be a PythreeJS Widget containing the figure.
+The following image is a sample sphere I made using PythreeJS.
+![PythreeJS_Sphere_Image](https://katierose1029.github.io/gsoc/PythreeJS_Sphere_Image.png)
+
+
 ________________________________________________________________________________
 
 ## Schedule of Deliverables
