@@ -60,6 +60,11 @@ ________________________________________________________________________________
 ## Project Details
 
 ### Abstract
+
+The following link will bring you to a Matplotlib Enhancement Proposal
+concerning the serialization of Matplotlib figures and widgets.  
+[MEP25: Serialization](https://github.com/matplotlib/matplotlib/wiki/MEP25#id7)
+
 Jupyter Notebook allow coders to compute data in an web - based interactive
 environment.  Ipywidgets is a module that extends Jupyter Notebooks and
 Ipython Kernel in that a coder has the ability to create interactive
@@ -70,12 +75,10 @@ of the Javascript 3-D graphics library, ThreeJS.
 **What if we had the ability to serialize data in matplotlib to json
 then render it in a PythreeJS widget?**
 
-[MEP25: Serialization](https://github.com/matplotlib/matplotlib/wiki/MEP25#id7)
-
-
 ### Technical Details
 
 The following libraries/toolkits will be required throughout this project:
+    **Matplotlib**
     **Ipywidgets**
     **ThreeJS**
     **PythreeJS**
@@ -150,18 +153,16 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
 ~~~~
 [src](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Custom.html)
 
-Now that we have established the fundamentak structure of ipywidgets, let's
+Now that we have established the fundamental structure of ipywidgets, let's
 dive into ThreeJS and PythreeJS.
 
 **ThreeJS** is a Javascript 3-D graphics library that can used to code infinite
-3-D illustrations and environments.  Within this library there are two
-functions that can be used together to  render the environment and
-control the "camera" in a virtual reality application.
+3-D illustrations and environments.
+**PythreeJS** is a bridge between Python and ThreeJS using Ipywidgets
+infrastructure.
 
+### Examples:
 
-~~~~
-
-~~~~
 
 ________________________________________________________________________________
 
@@ -170,21 +171,30 @@ ________________________________________________________________________________
 **Community Bonding Period:** (May 1st - May 28th)
 
 **Phase 1:** (May 29th - June 23rd)
-    The focus of this stage will be matplotlib serialization.
-    How can
+    *The focus of this stage will be Matplotlib serialization.*
+    How can we serialize a figure to json (or other format)?
+    When we have this ability, can we return the original matplotlib figure?
 
 **Phase 2:** (June 26th - July28th)
+    *The focus of this stage will be taking serialized data and rendering it
+    into a PythreeJS widget*
+    How can we take our serialized matplotlib data and render it to a
+    PythreeJS widget?
+    Can we alter the data in a PythreeJS widget and serialize it to a
+    json?
 
 **Phase 3:** (July 24th - August 25th)
+    *The focus of this stage will be, taking the data from our serialized
+    PythreeJS widget and using it in Matplotlib*
+    Ultimately, can we create forward and backward compatibility between
+    serialization?
 
 **Hand in Final Works** (August 28th - August 29th)
 
 ________________________________________________________________________________
 
 ## Why This Project?
-I have been determined and motivated to complete this project for a while.
-Completing this would be a great addition to my portfolio and can assist me
-in my future as a coder.
+Completing this project would
 
 ________________________________________________________________________________
 
