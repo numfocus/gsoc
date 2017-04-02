@@ -79,6 +79,7 @@ then render it in a PythreeJS widget?**
 The following libraries/toolkits will be required throughout this project:
     **Matplotlib**
     **Ipywidgets**
+    **json**
     **ThreeJS**
     **PythreeJS**
     **Jupyter Notebook**
@@ -158,7 +159,7 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
 infrastructure.
 
 
-### Examples:
+### Prototype:
 Here are some examples of how the serializer should work and be implemented
 in a PythreeJS widget
 
@@ -211,6 +212,7 @@ return display(renderer)
 ~~~
 
 ##Implementation:
+    1. Controller
 
 ________________________________________________________________________________
 
