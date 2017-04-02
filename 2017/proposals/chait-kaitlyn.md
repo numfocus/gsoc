@@ -82,12 +82,17 @@ The following libraries/toolkits will be required throughout this project:
 * **Matplotlib**
 * **Ipywidgets**
 * **PythreeJS**
+* **jupyter-matplotlib**
 * **Jupyter Notebook**
 * **json**
 * **BackboneJS**
 * **RequireJS**
 * **ThreeJS**
 
+**Matplotlib** is a widely used plotting API amongst the coders that use
+Python.  I want to implement a method that would allow plots, and other
+figures alike, to serialize naturally to a format in which would be able to
+be used in other widgets.
 
 **Ipywidgets** is coded using the architectural pattern, *Model-View-Controller*.
 Components of a Model-View-Controller application:
@@ -160,10 +165,11 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
 **ThreeJS** is a Javascript 3-D graphics library that can used to code infinite
 3-D illustrations and environments.
 **PythreeJS** is a bridge between Python and ThreeJS using Ipywidgets
-infrastructure.
+infrastructure.  A coder can use this library to create infinite variations of
+illustrations, and we will be using this *MVC* based module to view our
+serialized data.
 
-
-##Implementation:
+### Implementation:
 The implementation of this application will be based off the
 *Model-View-Controller* pattern as described before.
 
