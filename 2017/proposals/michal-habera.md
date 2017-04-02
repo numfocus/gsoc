@@ -46,6 +46,7 @@ allowed in parallel.
 * Related issue [#488](https://bitbucket.org/fenics-project/dolfin/issues/488/add-support-xdmf-mesh-entity-attributes)
 * Related issue [#837](https://bitbucket.org/fenics-project/dolfin/issues/837/io-on-ghosted-meshes-buggy)
 * Work mostly with DOLFIN/dolfin/io/XDMFFile.\*, DOLFIN/dolfin/io/HDF5File.\*
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
 
 
 ### June 5th - June 9th
@@ -54,48 +55,64 @@ allowed in parallel.
 * Make sure the distribution of (checkpointed) restored data is correct. 
 * Add close/clear/destroy function to XDMFFile, related issue [#390](https://bitbucket.org/fenics-project/dolfin/issues/390/add-close-clear-destroy-function-to)
 * Work mostly with DOLFIN/dolfin/io/XDMFFile.\*, DOLFIN/dolfin/io/HDF5File.\*
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
+
 
 ### June 12th - June 16th
 
 * Further work on the parallel XDMF input.
 * Possibly attend FEniCS‘17 conference at University of Luxembourg, 12-14 June 2017,
 to meet the mentors in person and discuss progress.
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
+
 
 ### June 19th - June 23th, **End of Phase 1**
 
 * Generate documentation for the code written during phase 1, so the work is clear, complete
 and independent.
+* Write tests, review the code.
 * Goal: DOLFIN should have improved XDMF read/write methods working also in parallel. 
-* Write tests.
 * The work should be merged into master branch with all tests passed.
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
+
 
 ### June 26 - June 30th, **Begin of Phase 2**
 
 * Test already prepared Python filters with newly developed XDMF output.
 * Python filters partially prepared at [https://github.com/chrisrichardson/xdmf-fe-filter](https://github.com/chrisrichardson/xdmf-fe-filter).
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
+
 
 ### July 3rd - July 7th
 
 * Further tests of Python filters in ParaView.
 * Check both: serial and parallel output.
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
 
 ### July 10th - July 14th
 
 * Focus on proper functioning of CGn and DGn elements.
 * Finalize changes, existing code improvement, refactorization.
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
+
 
 ### July 17th - July 21th, **End of Phase 2**
 
 * Generate documentation for the code written during phase 2, so the work is clear, complete
 and independent.
+* Review the code.
 * Goal: Python filters for basic FEniCS elements should correctly read newly (from phase 1) 
 generated XDMF output.
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
+
 
 ### July 24th - July 28th, **Begin of Phase 3**
 
 * I expect some bugs from phase 1, 2 to appear. Solve the possible
 issues and test the code again. If not, think of how items from Future works section could be 
 implemented. If have enough time then do so.
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
+
 
 ### July 31st - August 4th
 
@@ -104,10 +121,13 @@ implemented. If have enough time then do so.
 conversion strategy.
 * Start work on Python -> C++ conversion of filters.
 * Be in constant discussion with developers of ParaView(Kitware).
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
+
 
 ### August 7th - August 11th
 
 * More work on rewriting the filters to C++.
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
 
 ### August 14th - August 18th
 
@@ -115,6 +135,7 @@ conversion strategy.
 and independent.
 * Goal: XDMF3 library in ParaView should be able to read and visualize the newly developed
 FEniCS XDMF3 output.
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
 
 ### August 21st - August 25th, **Final Week**
 
@@ -122,6 +143,7 @@ FEniCS XDMF3 output.
 issues and test the code again.
 * Write additional tests.
 * Reflect minor changes from community response.
+* Write short report from this week, publish on [my GSoC webpage](http://karlin.mff.cuni.cz/~habera/?p=gsoc17).
 
 ### August 28th - August 29th, **Submit final work**
 
