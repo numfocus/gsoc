@@ -64,7 +64,7 @@ The work of this project will stem from existing development done for categorica
 ### June 5th - June 9th
 * color-bar support for imshow
 
-The color bar is mapped from numerical data for heat-maps currently, creating boundaries for each class. Due to discrete nature of categorical data, ListedColormaps will be used and the boundaries required for each distinct stage will be extended to support non-numerical values. The string values of categorical data will be directly mapped to each boundary class by the units integration. 
+The color bar is mapped from numerical data for heat-maps currently, creating boundaries for each class. Due to discrete nature of categorical data, ListedColormaps will be used and the boundaries required for each distinct stage will be extended to support non-numerical values. The string values of categorical data will be directly mapped to each distinct color level by the units integration. 
 
 ### June 12th - June 16th
 * legend support for imshow
