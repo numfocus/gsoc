@@ -92,12 +92,15 @@ Components of a Model-View-Controller application:
             manipulated and stored
     *Controller*: controls how the user inputs are controlled between model
             and view
-    [MVC Diagram](https://i.stack.imgur.com/ocEWx.png)
+![MVC Diagram](https://i.stack.imgur.com/ocEWx.png)
+[src: https://i.stack.imgur.com/ocEWx.png]((https://i.stack.imgur.com/ocEWx.png))
 
 There are a variety of widgets already programmed into Ipywidgets, however
 coders can extend this library to create their own custom widgets.  The
 following link is a diagram of how the Ipython Kernel (Backend) interacts with
-the HTML widget (Frontend): [Ipywidget Diagram](http://ipywidgets.readthedocs.io/en/latest/_images/WidgetModelView.png)
+the HTML widget (Frontend):
+![Ipywidget Diagram](http://ipywidgets.readthedocs.io/en/latest/_images/WidgetModelView.png)
+[src: http://ipywidgets.readthedocs.io/en/latest/_images/WidgetModelView.png](http://ipywidgets.readthedocs.io/en/latest/_images/WidgetModelView.png)
 
 What the diagram does not show you is that Ipywidgets relies heavily on the
 Javascript library **BackboneJS**.  **BackboneJS** is a library that gives coders
