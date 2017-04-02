@@ -266,18 +266,18 @@ The following links below will give further information on the following
 tools, toolkits, libraries and other modules I have mentioned throughout
 this proposal.
 
-[BackboneJS](http://backbonejs.org/)
-[Google Cardboard](https://vr.google.com/cardboard/)
-[ipywidgets Github](https://github.com/jupyter-widgets/ipywidgets)
-[ipywidgets Documentation](https://ipywidgets.readthedocs.io/en/latest/index.html)
-[ipywidgets.widgets.DOMWidget](https://github.com/jupyter-widgets/ipywidgets/blob/master/ipywidgets/widgets/domwidget.py)
-[ipywidgets/jupyter-js-widgets](https://github.com/jupyter-widgets/ipywidgets/tree/master/jupyter-js-widgets)
-[Jupyter Notebook](https://github.com/jupyter/notebook)
-[Matplotlib](http://matplotlib.org/)
-[Oculus Rift](https://www.oculus.com/rift/)
-[pythreejs Github](https://github.com/jovyan/pythreejs)
-[RequireJS](http://requirejs.org/)
-[Science on a Sphere](https://sos.noaa.gov/What_is_SOS/)
-[ThreeJS](https://threejs.org/)
+* [BackboneJS](http://backbonejs.org/)
+* [Google Cardboard](https://vr.google.com/cardboard/)
+* [ipywidgets Github](https://github.com/jupyter-widgets/ipywidgets)
+* [ipywidgets Documentation](https://ipywidgets.readthedocs.io/en/latest/index.html)
+* [ipywidgets.widgets.DOMWidget](https://github.com/jupyter-widgets/ipywidgets/blob/master/ipywidgets/widgets/domwidget.py)
+* [ipywidgets/jupyter-js-widgets](https://github.com/jupyter-widgets/ipywidgets/tree/master/jupyter-js-widgets)
+* [Jupyter Notebook](https://github.com/jupyter/notebook)
+* [Matplotlib](http://matplotlib.org/)
+* [Oculus Rift](https://www.oculus.com/rift/)
+* [pythreejs Github](https://github.com/jovyan/pythreejs)
+* [RequireJS](http://requirejs.org/)
+* [Science on a Sphere](https://sos.noaa.gov/What_is_SOS/)
+* [ThreeJS](https://threejs.org/)
 
 ________________________________________________________________________________
