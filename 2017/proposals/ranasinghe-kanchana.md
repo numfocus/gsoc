@@ -31,12 +31,22 @@ This work hopes to tackle this issue to a certain extent by creating APIs to aut
 A main aim of this project is to integrate unit support into these APIs without subjecting them to any direct changes. Matplotlib currently has these frameworks set-up with functionality for numerical data. This functionality will be extended to support categorical data. The work of this project will be done solely using Python. Libraries used will include Numpy and Matplotlib. There will be no new (unused in Matplotlib previously) third-party libraries used in the course of this project. 
 
 ## Proposed Solution
-Categorical data mostly includes panda categorical data types alongside numpy structured arrays and python dictionaries. Currently, APIs for plotting heat-maps and obtaining color-map/norm of a dataset directly support only numerical data due to their limited units understanding. All plotting requires a norm function to map data to relevant colors. Currently, it requires data to be continuous as well. We hope to overcome this through a direct integration of categorical normalization with the discrete data color-maps currently supported. Changes to the units conversions occurring when analyzing categorical data will also be looked into. These will provide the basic background for the norm and color-map APIs. Our final API will make it possible for users to easily obtain norm/color-map for categorical data directly. 
+Categorical data mostly includes pandas categorical data types alongside numpy structured arrays and python dictionaries. Currently, APIs for plotting heat-maps and obtaining color-map/norm of a dataset directly support only numerical data due to their limited units understanding. All plotting requires a norm function to map data to relevant colors. Currently, it requires data to be continuous as well. We hope to overcome this through a direct integration of categorical normalization with the discrete data color-maps currently supported. Changes to the units conversions occurring when analyzing categorical data will also be looked into. These will provide the basic background for the norm and color-map APIs. Our final API will make it possible for users to easily obtain norm/color-map for categorical data directly as below. 
 
 ```python
 data = getCategoricalDataFromPandas()
-cmap, norm =categorical_colors_API(data)
+cmap, norm = categorical_colors_API(data)
 ```
+
+With regards to heat-map generation we hope to incorporate similar units conversion knowledge to the existing APIs to support categorical data. In addition, upon integration with categorical norm and color-map APIs, the imshow function will be able to identify categorical data automatically and display adequate plots in a manner similar to how it analyses numerical data. 
+
+```python
+data = getCategoricalDataFromPandas()
+fig, ax = matplotlib.pyplot.subplots()
+ax.imshow(data)
+```
+
+Also this categorical support will be extended to support colorbars and legends for the imshow function with regards to categorical data. This will take a similar approach.
 
 ## Schedule of Deliverables
 
