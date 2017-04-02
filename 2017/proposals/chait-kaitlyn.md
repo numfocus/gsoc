@@ -229,14 +229,13 @@ ________________________________________________________________________________
     into a PythreeJS widget*
     How can we take our serialized matplotlib data and render it to a
     PythreeJS widget?
+
+**Phase 3:** (July 24th - August 25th)
+    *The focus of the final stage will be serializing data altered in PythreeJS
+    to json format*
     Can we alter the data in a PythreeJS widget and serialize it to a
     json?
 
-**Phase 3:** (July 24th - August 25th)
-    *The focus of this stage will be, taking the data from our serialized
-    PythreeJS widget and using it in Matplotlib*
-    Ultimately, can we create forward and backward compatibility between
-    serialization?
 
 **Hand in Final Works** (August 28th - August 29th)
 
