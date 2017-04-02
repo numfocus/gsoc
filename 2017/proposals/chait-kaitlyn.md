@@ -1,4 +1,4 @@
-# PythreeJS_VR
+# Matplotlib & PythreeJS
 ### Kaitlyn Chait
 
 
@@ -63,19 +63,15 @@ ________________________________________________________________________________
 Jupyter Notebook allow coders to compute data in an web - based interactive
 environment.  Ipywidgets is a module that extends Jupyter Notebooks and
 Ipython Kernel in that a coder has the ability to create interactive
-HTML - based widgets.  The developers of the Ipywidgets extension PythreeJS,
-developed PythreeJS as a bridge between Python widget creation and HTML
-widgets with the incorporation of Javascript 3-D illustration.  ThreeJS,
-Javascript 3-D library, has the functionality to create virtual reality
-environments; coders create the environment, call the proper VR functions,
-display the page in a browser and put on the proper VR goggles to be immersed.
+HTML - based widgets.  PythreeJS is an extension of Ipywidgets, as it is a
+bridge between Python widget creation and HTML widgets with the incorporation
+of the Javascript 3-D graphics library, ThreeJS.
 
-What if we had the ability to compute live data into a virtual reality
-environment?
+**What if we had the ability to serialize data in matplotlib to json
+then render it in a PythreeJS widget?**
 
-The overall main goal of this project to successfully implement
-virtual reality functionality in a Jupyter Notebook HTML widget with the use of
-Javascript 3-D graphics.
+[MEP25: Serialization](https://github.com/matplotlib/matplotlib/wiki/MEP25#id7)
+
 
 ### Technical Details
 
@@ -162,255 +158,26 @@ dive into ThreeJS and PythreeJS.
 functions that can be used together to  render the environment and
 control the "camera" in a virtual reality application.
 
-The following link will take you to a simple demo hosted from my personal
-Github page.  This demo is uses ThreeJS and can be viewed using any VR enabling
-device so long as the browser is webVR enabled.
-[Simple Demo](https://katierose1029.github.io/SimpleDemo/index.html)
-
-*VREffect*: ThreeJS function that renders the page to have a 'stereo effect'.
-VREffect is coded so that the web page is rendered so that when a users
-puts on virtual reality glasses the eyes see the environment in VR instead
-two images. The eyes are 'tricked' into seeing one image instead of two.
-*VRControls*: ThreeJS function that controls the movement of the camera
-as a user moves his/her head throughout exploring the virtual environment.
-
-This then brings me to reintroducing **PythreeJS**, a Python module
-that extends ipywidgets and bridges ThreeJS to Python widgets.  In creating
-this bridge, PythreeJS uses the Jupyter Notebook infrastructure to create
-HTML widgets that contain ThreeJS graphics.  A coder can use PythreeJS to
-create a geometric shape (spheres, cube, and other parametric shapes) and
-mesh to texturize it.
-
-So the question associated with the objective of this project is,
-"How can we incorporate ThreeJS VR functionality in a PythreeJS Widget?"
-
-**Solution:**
-    In implementing VR functionality into PythreeJS I think it would make sense
-    to recreate Threejs.VREffect() and Threejs.VRControls() as a separate module.
-    To do this, I would reverse engineer these functions and attempt to
-    code them in terms of *jupyter-js-widgets*.
-    *Threejs.VREffect()* takes in a *Threejs.WebGLRenderer()* and
-    *Threejs.VRControls()* takes in a *Threejs.PerspectiveCamera()* in
-    its parameters in order to work properly.  In the following code
-    block, I will show a prototype os how this solution would be implemented
-    and tested in a Jupyter Notebook.
 
 ~~~~
-Backend:
 
-import ipywidgets as widgets
-from traitlets import Unicode, validate
-
-class VREffectWidget(DOMWidget):
-    _view_module = Unicode(npm_pkg_name).tag(sync=True)
-    _model_module = Unicode(npm_pkg_name).tag(sync=True)
-    _view_name = Unicode('VREffectView').tag(sync=True)
-    _model_name = Unicode('VREffectModel').tag(sync=True)
-    #Renderer
-    renderer = Instance(Renderer).tag(sync=True, **widget_serialization)
-
-class VRControlsWidget(Controls):
-    _view_module = Unicode(npm_pkg_name).tag(sync=True)
-    _model_module = Unicode(npm_pkg_name).tag(sync=True)
-    _view_name = Unicode('VRControlsView').tag(sync=True)
-    _model_name = Unicode('VRControlsModel').tag(sync=True)
-
-    # controlling will be set to an instance of Camera
-    # Camera objects are of type Object3d
-    controlling = Instance(Object3d, allow_none=True).tag(sync=True,
-                                **widget_serialization)
-
-
-________________________________________________________________________________
-
-Frontend:
-
-define(["jupyter-js-widgets", "underscore", "three"],
-        function(widgets, _, THREE) {
-
-    window.THREE = THREE;
-    require("./examples/js/renderers/Projector.js");
-    require("./examples/js/renderers/CanvasRenderer.js");
-    require("./examples/js/controls/OrbitControls.js");
-    require("./examples/js/controls/MomentumCameraControls.js");
-    require("./examples/js/controls/TrackballControls.js");
-    var $ = require("jquery");
-
-    var VREffectView = widgets.DOMWidgetView.extend({
-        render : function() {},
-        /*other functions will go below here but render function
-        is the most important one to override*/    
-    });
-
-    /*ThreeView is variable that extends widgets.WidgetView; this extension
-    creates template for further PythreeJS variables.*/
-    var VRControlsView =  ThreeView.extend({
-        render : function() {},
-        /*other functions will go below here*/
-    });
-
-    var VREffectModel = widgets.DOMWidgetModel.extend({
-        defaults: _.extend({}, widgets.WidgetModel.prototype.defaults, {
-            _view_module: 'jupyter-threejs',
-            _model_module: 'jupyter-threejs',
-
-            _view_name: 'VREffectView',
-            _model_name: 'VREffectModel',
-        })
-    });
-
-    /*Controls Model is a template for instances that control cameras,
-    and other stances of Object3d alike.*/
-    var VRControlsModel = ControlsModel.extend({
-        defaults: _.extend({}, widgets.WidgetModel.prototype.defaults, {
-            _view_module: 'jupyter-threejs',
-            _model_module: 'jupyter-threejs',
-
-            _view_name: 'VRControlsView',
-            _model_name: 'VRControlsModel',
-            controlling: null
-        })
-    }, {
-        serializers: _.extend({
-            controlling: { deserialize: widgets.unpack_models }
-        }, widgets.WidgetModel.serializers)
-    });
-
-    return {
-        VREffectView : VREffectView,
-        VRControlsView : VRControlsView,
-        VREffectModel : VREffectModel,
-        VRControlsModel : VRControlsModel,
-    };
-};
-________________________________________________________________________________
-
-Jupyter Notebook: This code was made using Jupyter Notebook.
-
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 1,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": [
-    "#Import Statements\n",
-    "import pythreejs as py3\n",
-    "from PIL import Image\n",
-    "from IPython.display import display\n",
-    "from ipywidgets import HTML, Text, Controller\n",
-    "from traitlets import link, dlink\n",
-    "from traitlets.traitlets import _validate_link"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 2,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": [
-    "def create_sphere(fileName):\n",
-    "    \n",
-    "    def createImageTexture(fileName):\n",
-    "        texture = py3.ImageTexture(imageuri = fileName)\n",
-    "        return texture\n",
-    "        \n",
-    "    def sphereMesh(texture):\n",
-    "        sphereGeometry = py3.SphereGeometry(radius = 1)\n",
-    "        sphereMaterial = py3.BasicMaterial(map = texture)\n",
-    "        sphere = py3.Mesh(geometry = sphereGeometry, material = sphereMaterial)\n",
-    "        return sphere\n",
-    "    \n",
-    "    image = createImageTexture(fileName)\n",
-    "    sphere = sphereMesh(image)\n",
-    "    \n",
-    "    c = py3.PerspectiveCamera(position=[0,0,40])\n",
-    "    s = py3.Scene(children=[sphere])\n",
-    "    orbit_controls = py3.OrbitControls(controlling=c)\n",
-    "    renderer = py3.Renderer(renderer_type='webgl',camera=c, scene= s, background='black', controls=[orbit_controls])\n",
-    "    display(renderer)\n",
-    "\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 3,
-   "metadata": {
-    "collapsed": false
-   },
-   "outputs": [
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "47695249bb3d4f5389a9f9960d000dc4"
-      }
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    }
-   ],
-   "source": [
-    "create_sphere('4.png')"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": [
-    "#We could possibly test VREffect and VRControls before \n",
-    "#the line display(renderer) or after\n",
-    "effect = py3.VREffect(renderer)\n",
-    "controls = py3.VRControls(c)"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.6.0"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
 ~~~~
 
 ________________________________________________________________________________
 
 ## Schedule of Deliverables
 
-**Community Bonding Period:** (*May 1st - May 28th*)
+**Community Bonding Period:** (May 1st - May 28th)
 
-**Phase 1:** (*May 29th - June 23rd*)
+**Phase 1:** (May 29th - June 23rd)
     The focus of this stage will be matplotlib serialization.
+    How can
 
-**Phase 2:** (*June 26th - July28th*)
+**Phase 2:** (June 26th - July28th)
 
-**Phase 3:** (*July 24th - August 25th*)
+**Phase 3:** (July 24th - August 25th)
 
-**Hand in Final Works** (*August 28th - August 29th*)
+**Hand in Final Works** (August 28th - August 29th)
 
 ________________________________________________________________________________
 
