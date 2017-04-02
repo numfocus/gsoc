@@ -184,9 +184,7 @@ mesh to texturize it.
 So the question associated with the objective of this project is,
 "How can we incorporate ThreeJS VR functionality in a PythreeJS Widget?"
 
-I have been thinking about this for a while myself and have come up with
-at least two possible solutions:
-**Solution 1:**
+**Solution:**
     In implementing VR functionality into PythreeJS I think it would make sense
     to recreate Threejs.VREffect() and Threejs.VRControls() as a separate module.
     To do this, I would reverse engineer these functions and attempt to
@@ -334,8 +332,7 @@ Jupyter Notebook: This code was made using Jupyter Notebook.
     "    c = py3.PerspectiveCamera(position=[0,0,40])\n",
     "    s = py3.Scene(children=[sphere])\n",
     "    orbit_controls = py3.OrbitControls(controlling=c)\n",
-    "    fly_controls = py3.FlyControls(controlling=c)\n",
-    "    renderer = py3.Renderer(renderer_type='webgl',camera=c, scene= s, background='black', controls=[fly_controls])\n",
+    "    renderer = py3.Renderer(renderer_type='webgl',camera=c, scene= s, background='black', controls=[orbit_controls])\n",
     "    display(renderer)\n",
     "\n"
    ]
@@ -398,57 +395,9 @@ Jupyter Notebook: This code was made using Jupyter Notebook.
  "nbformat": 4,
  "nbformat_minor": 2
 }
-
-
 ~~~~
 
-
-**Solution 2:**
-
-
-
-
-
-
 ________________________________________________________________________________
-
-## Schedule of Deliverables
-
-________________________________________________________________________________
-
-## Why This Project?
-
-________________________________________________________________________________
-
-## Closing Remarks
-
-________________________________________________________________________________
-
-## Appendix
-
-The following links below will give further information on the following
-tools, toolkits, libraries and other modules I have mentioned throughout
-this proposal.
-
-[BackboneJS](http://backbonejs.org/)
-[Google Cardboard](https://vr.google.com/cardboard/)
-[ipywidgets Github](https://github.com/jupyter-widgets/ipywidgets)
-[ipywidgets Documentation](https://ipywidgets.readthedocs.io/en/latest/index.html)
-[ipywidgets.widgets.DOMWidget](https://github.com/jupyter-widgets/ipywidgets/blob/master/ipywidgets/widgets/domwidget.py)
-[ipywidgets/jupyter-js-widgets](https://github.com/jupyter-widgets/ipywidgets/tree/master/jupyter-js-widgets)
-[Jupyter Notebook](https://github.com/jupyter/notebook)
-[Oculus Rift](https://www.oculus.com/rift/)
-[pythreejs Github](https://github.com/jovyan/pythreejs)
-[RequireJS](http://requirejs.org/)
-[Science on a Sphere](https://sos.noaa.gov/What_is_SOS/)
-[ThreeJS](https://threejs.org/)
-[ThreeJS VREffect](https://github.com/mrdoob/three.js/blob/dev/examples/js/effects/VREffect.js)
-[ThreeJS VRControls](https://github.com/mrdoob/three.js/blob/dev/examples/js/controls/VRControls.js)
-
-
-
-________________________________________________________________________________
-
 
 ## Schedule of Deliverables
 
@@ -510,10 +459,40 @@ ________________________________________________________________________________
 
 ### August 28th - August 29th, **Submit final work**
 
-## Future works
 
-{{ Future works }}
+________________________________________________________________________________
 
-## Why this project?
+## Why This Project?
+I have been determined and motivated to complete this project for a while.
+Completing this would be a great addition to my portfolio and can assist me
+in my future as a coder.
 
-{{ Why you want to do this project? }}
+________________________________________________________________________________
+
+## Closing Remarks
+
+
+________________________________________________________________________________
+
+## Appendix
+
+The following links below will give further information on the following
+tools, toolkits, libraries and other modules I have mentioned throughout
+this proposal.
+
+[BackboneJS](http://backbonejs.org/)
+[Google Cardboard](https://vr.google.com/cardboard/)
+[ipywidgets Github](https://github.com/jupyter-widgets/ipywidgets)
+[ipywidgets Documentation](https://ipywidgets.readthedocs.io/en/latest/index.html)
+[ipywidgets.widgets.DOMWidget](https://github.com/jupyter-widgets/ipywidgets/blob/master/ipywidgets/widgets/domwidget.py)
+[ipywidgets/jupyter-js-widgets](https://github.com/jupyter-widgets/ipywidgets/tree/master/jupyter-js-widgets)
+[Jupyter Notebook](https://github.com/jupyter/notebook)
+[Oculus Rift](https://www.oculus.com/rift/)
+[pythreejs Github](https://github.com/jovyan/pythreejs)
+[RequireJS](http://requirejs.org/)
+[Science on a Sphere](https://sos.noaa.gov/What_is_SOS/)
+[ThreeJS](https://threejs.org/)
+[ThreeJS VREffect](https://github.com/mrdoob/three.js/blob/dev/examples/js/effects/VREffect.js)
+[ThreeJS VRControls](https://github.com/mrdoob/three.js/blob/dev/examples/js/controls/VRControls.js)
+
+________________________________________________________________________________
