@@ -59,7 +59,6 @@ ________________________________________________________________________________
 ## Project Details
 
 ### Abstract
-
 The following link will bring you to a Matplotlib Enhancement Proposal
 concerning the serialization of Matplotlib figures and widgets.  
 [MEP25: Serialization](https://github.com/matplotlib/matplotlib/wiki/MEP25#id7)
@@ -75,7 +74,6 @@ of the Javascript 3-D graphics library, ThreeJS.
 then render it in a PythreeJS widget?**
 
 ### Technical Details
-
 The following libraries/toolkits will be required throughout this project:
     **Matplotlib**
     **Ipywidgets**
@@ -101,7 +99,7 @@ following link is a diagram of how the Ipython Kernel (Backend) interacts with
 the HTML widget (Frontend): [Ipywidget Diagram](http://ipywidgets.readthedocs.io/en/latest/_images/WidgetModelView.png)
 
 What the diagram does not show you is that Ipywidgets relies heavily on the
-Javascript library BackboneJS.  BackboneJS is a library that gives coders
+Javascript library **BackboneJS**.  **BackboneJS** is a library that gives coders
 control of the structure between how models and their corresponding views
 interact. In Ipywidgets, widgets are created in the backend and automatically
 synchronized with their corresponding BackboneJS views in the frontend,
@@ -115,24 +113,21 @@ You can see that the model is an extension of the class
 *ipywidgets.widgets.DOMWidget*, which is a type of widget that directly
 manipulates the DOM of the HTML widget.  Where I have the source code for
 the view of the widget in Javascript, the first line of code uses
-the Javascript library RequireJS, which is required to load the correct
+the Javascript library **RequireJS**, which is required to load the correct
 modules.  The view extends the class *widgets.DOMWidgetView*, which is the
 Javascript class that is overridden for the purpose of widget Hello.
-
-~~~~
-Python (Backend Model):
-
+1. Python (Backend Model)
+~~~
 import ipywidgets as widgets
 from traitlets import Unicode, validate
 
 class HelloWidget(widgets.DOMWidget):
     _view_name = Unicode('HelloView').tag(sync=True)
     _view_module = Unicode('hello').tag(sync=True)
+~~~
 
-________________________________________________________________________________
-
-Javascript (Frontend View):
-
+2. Javascript (Frontend View)
+~~~
 require.undef('hello');
 
 define('hello', ["jupyter-js-widgets"], function(widgets) {
@@ -149,8 +144,7 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
         HelloView: HelloView
     };
 });
-
-~~~~
+~~~
 [src](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Custom.html)
 
 **ThreeJS** is a Javascript 3-D graphics library that can used to code infinite
@@ -158,6 +152,13 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
 **PythreeJS** is a bridge between Python and ThreeJS using Ipywidgets
 infrastructure.
 
+##Implementation:
+The implementation of this application will be based off the
+*Model-View-Controller* pattern as described before.
+*Controller*: In the following prototypes below, you will see the use of an
+object called Controller.  The purpose of this object is to serve as a
+data controller.  This object must be able to import and export serialized
+data.
 
 ### Prototype:
 Here are some examples of how the serializer should work and be implemented
@@ -210,9 +211,6 @@ renderer = py3.Renderer(renderer_type='webgl',camera=c, scene= s,
                             background='black', controls=[orbit_controls])
 return display(renderer)
 ~~~
-
-##Implementation:
-    1. Controller
 
 ________________________________________________________________________________
 
