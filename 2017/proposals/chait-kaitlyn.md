@@ -16,8 +16,7 @@
         * Phase 2
         * Phase 3
     4. Why This Project?
-    5. Closing Remarks
-    6. Appendix
+    5. Appendix
 ________________________________________________________________________________
 
 ## Opening Details
@@ -158,6 +157,7 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
 **PythreeJS** is a bridge between Python and ThreeJS using Ipywidgets
 infrastructure.
 
+
 ### Examples:
 Here are some examples of how the serializer should work and be implemented
 in a PythreeJS widget
@@ -208,10 +208,9 @@ orbit_controls = py3.OrbitControls(controlling=c)
 renderer = py3.Renderer(renderer_type='webgl',camera=c, scene= s,
                             background='black', controls=[orbit_controls])
 return display(renderer)
-
 ~~~
 
-
+##Implementation:
 
 ________________________________________________________________________________
 
@@ -246,11 +245,6 @@ Completing this project would
 
 ________________________________________________________________________________
 
-## Closing Remarks
-
-
-________________________________________________________________________________
-
 ## Appendix
 
 The following links below will give further information on the following
@@ -264,12 +258,11 @@ this proposal.
 [ipywidgets.widgets.DOMWidget](https://github.com/jupyter-widgets/ipywidgets/blob/master/ipywidgets/widgets/domwidget.py)
 [ipywidgets/jupyter-js-widgets](https://github.com/jupyter-widgets/ipywidgets/tree/master/jupyter-js-widgets)
 [Jupyter Notebook](https://github.com/jupyter/notebook)
+[Matplotlib](http://matplotlib.org/)
 [Oculus Rift](https://www.oculus.com/rift/)
 [pythreejs Github](https://github.com/jovyan/pythreejs)
 [RequireJS](http://requirejs.org/)
 [Science on a Sphere](https://sos.noaa.gov/What_is_SOS/)
 [ThreeJS](https://threejs.org/)
-[ThreeJS VREffect](https://github.com/mrdoob/three.js/blob/dev/examples/js/effects/VREffect.js)
-[ThreeJS VRControls](https://github.com/mrdoob/three.js/blob/dev/examples/js/controls/VRControls.js)
 
 ________________________________________________________________________________
