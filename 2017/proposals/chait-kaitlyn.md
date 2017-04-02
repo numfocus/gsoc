@@ -79,14 +79,14 @@ objects then render the data in a PythreeJS widget?**
 
 ### Technical Details
 The following libraries/toolkits will be required throughout this project:
-    **Matplotlib**
-    **Ipywidgets**
-    **PythreeJS**
-    **Jupyter Notebook**
-    **json**
-    **BackboneJS**
-    **RequireJS**
-    **ThreeJS**
+* **Matplotlib**
+* **Ipywidgets**
+* **PythreeJS**
+* **Jupyter Notebook**
+* **json**
+* **BackboneJS**
+* **RequireJS**
+* **ThreeJS**
 
 
 **Ipywidgets** is coded using the architectural pattern, *Model-View-Controller*.
