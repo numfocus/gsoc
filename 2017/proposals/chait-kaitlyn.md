@@ -91,11 +91,11 @@ The following libraries/toolkits will be required throughout this project:
 
 **Ipywidgets** is coded using the architectural pattern, *Model-View-Controller*.
 Components of a Model-View-Controller application:
-    *Model*: describes the manipulation/storage of the data and the user input
-    *View*: output representation of the data; displays the data that has been
-            manipulated and stored
-    *Controller*: controls how the user inputs are controlled between model
-            and view
+* *Model*: describes the manipulation/storage of the data and the user input
+* *View*: output representation of the data; displays the data that has been
+        manipulated and stored
+* *Controller*: controls how the user inputs are controlled between model
+        and view
 ![MVC Diagram](https://i.stack.imgur.com/ocEWx.png)
 [src: https://i.stack.imgur.com/ocEWx.png]((https://i.stack.imgur.com/ocEWx.png))
 
