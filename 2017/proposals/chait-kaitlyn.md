@@ -153,15 +153,64 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
 ~~~~
 [src](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Custom.html)
 
-Now that we have established the fundamental structure of ipywidgets, let's
-dive into ThreeJS and PythreeJS.
-
 **ThreeJS** is a Javascript 3-D graphics library that can used to code infinite
 3-D illustrations and environments.
 **PythreeJS** is a bridge between Python and ThreeJS using Ipywidgets
 infrastructure.
 
 ### Examples:
+Here are some examples of how the serializer should work and be implemented
+in a PythreeJS widget
+
+1. Display Matplotlib figure from serialized representation:
+~~~
+import json
+from matplotlib.controllers import Controller
+with open('my_figure') as f:
+    o = json.load(f)
+c = Controller(o)
+fig = c.figure
+~~~
+
+2. Export Matplotlib figure to json:
+~~~
+o = c.to_json()
+# or... we should be able to throw a figure object in there too
+o = Controller.to_json(mpl_fig)
+~~~
+[src](https://github.com/matplotlib/matplotlib/wiki/MEP25#examples)
+
+3. Render serialized data into a PythreeJS widget:
+~~~
+#Import Statements
+import pythreejs as py3
+from ipywidgets import HTML, Text, Controller
+from traitlets import link, dlink
+from traitlets.traitlets import _validate_link
+
+import json
+from matplotlib.controllers import Controller
+with open('my_figure') as f:
+    o = json.load(f)
+c = Controller(o)
+
+#Let's say for this example we have spherical data
+#We would need a variable texture that would properly
+#'encompass' a sphereical object.
+
+sphereGeometry = py3.SphereGeometry(radius = 1)
+sphereMaterial = py3.BasicMaterial(map = texture)
+sphere = py3.Mesh(geometry = sphereGeometry, material = sphereMaterial)
+
+camera = py3.PerspectiveCamera(position=[2,0,2])
+scene = py3.Scene(children=[])
+orbit_controls = py3.OrbitControls(controlling=c)
+renderer = py3.Renderer(renderer_type='webgl',camera=c, scene= s,
+                            background='black', controls=[orbit_controls])
+return display(renderer)
+
+~~~
+
 
 
 ________________________________________________________________________________
