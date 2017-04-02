@@ -81,12 +81,13 @@ objects then render the data in a PythreeJS widget?**
 The following libraries/toolkits will be required throughout this project:
     **Matplotlib**
     **Ipywidgets**
-    **json**
-    **ThreeJS**
     **PythreeJS**
     **Jupyter Notebook**
+    **json**
     **BackboneJS**
     **RequireJS**
+    **ThreeJS**
+
 
 **Ipywidgets** is coded using the architectural pattern, *Model-View-Controller*.
 Components of a Model-View-Controller application:
@@ -161,19 +162,27 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
 **PythreeJS** is a bridge between Python and ThreeJS using Ipywidgets
 infrastructure.
 
+
 ##Implementation:
 The implementation of this application will be based off the
 *Model-View-Controller* pattern as described before.
-*Controller*: In the following prototypes below, you will see the use of an
-object called Controller.  The design purpose of this object is to serve as a
-data controller, in which it is mandatory to have ability to import and export
-serialized data.  This implies that a Controller should be able to created
-with a figure and a figure can be created by a Controller.
+
+    *Controller*: In the following prototypes below, an object called
+    Controller being used.  The design purpose of this object is to serve as
+    a data controller. The two following actions are mandatory:
+        * import data from a serialized representation
+        * export data to a serialized representation
+    This object must be implemented with a way to properly unpack/pack
+    data from/to a json object file.
 
 Note:
     * The set of data can be list, ndarray, or other representation compatible
     with Matplotlib.  When exporting data, my first focus will be *to_json*
     function, in the future I would like to work out to other data types.
+    * Keep in mind unserializable aspects of a figure: how to deal with it?
+
+In the implementation, the controller will be key, but then we will have to
+deal with the serialization in PythreeJS.
 
 ### Prototype:
 Here are some examples of how the serializer should work and be implemented
