@@ -59,10 +59,13 @@ ________________________________________________________________________________
 ## Project Details
 
 ### Abstract
+Serialization is the process in which a data structure or object is translated
+and stored in the format of a file compatible in memory then reconstructed
+in another environment.
+
 The following link will bring you to a Matplotlib Enhancement Proposal
 concerning the serialization of Matplotlib figures and widgets.  
 [MEP25: Serialization](https://github.com/matplotlib/matplotlib/wiki/MEP25#id7)
-There has been a great interest in the serialization of Matplotlib figures.
 
 Jupyter Notebook allow coders to compute data in an web - based interactive
 environment.  Ipywidgets is a module that extends Jupyter Notebooks and
@@ -97,7 +100,7 @@ Components of a Model-View-Controller application:
 
 There are a variety of widgets already programmed into Ipywidgets, however
 coders can extend this library to create their own custom widgets.  The
-following link is a diagram of how the Ipython Kernel (Backend) interacts with
+following diagram displays how the Ipython Kernel (Backend) interacts with
 the HTML widget (Frontend):
 ![Ipywidget Diagram](http://ipywidgets.readthedocs.io/en/latest/_images/WidgetModelView.png)
 [src: http://ipywidgets.readthedocs.io/en/latest/_images/WidgetModelView.png](http://ipywidgets.readthedocs.io/en/latest/_images/WidgetModelView.png)
@@ -120,6 +123,7 @@ the view of the widget in Javascript, the first line of code uses
 the Javascript library **RequireJS**, which is required to load the correct
 modules.  The view extends the class *widgets.DOMWidgetView*, which is the
 Javascript class that is overridden for the purpose of widget Hello.
+
 1. Python (Backend Model)
 ~~~
 import ipywidgets as widgets
@@ -129,6 +133,7 @@ class HelloWidget(widgets.DOMWidget):
     _view_name = Unicode('HelloView').tag(sync=True)
     _view_module = Unicode('hello').tag(sync=True)
 ~~~
+[src](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Custom.html#Define-the-view)
 
 2. Javascript (Frontend View)
 ~~~
@@ -149,7 +154,7 @@ define('hello', ["jupyter-js-widgets"], function(widgets) {
     };
 });
 ~~~
-[src](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Custom.html)
+[src](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Custom.html#Render-method)
 
 **ThreeJS** is a Javascript 3-D graphics library that can used to code infinite
 3-D illustrations and environments.
@@ -160,11 +165,10 @@ infrastructure.
 The implementation of this application will be based off the
 *Model-View-Controller* pattern as described before.
 *Controller*: In the following prototypes below, you will see the use of an
-object called Controller.  The purpose of this object is to serve as a
-data controller, in which it must be able to import and export serialized
-data.  This implies that a Controller should be able to created with a figure
-and a figure can be created by a Controller.  In order to keep extra data from
-entering the set, should not be created by default.
+object called Controller.  The design purpose of this object is to serve as a
+data controller, in which it is mandatory to have ability to import and export
+serialized data.  This implies that a Controller should be able to created
+with a figure and a figure can be created by a Controller.
 
 Note:
     * The set of data can be list, ndarray, or other representation compatible
@@ -252,8 +256,8 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 ## Why This Project?
-Completing this project would
-
+Completing this project would be a great addition to matplotlib and to my
+portfolio as a coder.  
 ________________________________________________________________________________
 
 ## Appendix
