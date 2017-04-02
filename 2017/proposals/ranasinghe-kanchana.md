@@ -12,9 +12,9 @@ header-includes:
 # Categorical Color
 
 ## Abstract
-Categorical information (non-numerical like gender, favorite food, etc.) is quite common in datasets that we analyze. However Matplotlib support for plotting data is available mostly for numerical data, with few direct APIs built for categorical data. This project attempts to build an API for plotting heat-maps and other scalarMappables using categorical data. It will also work on developing normalization and color-map APIs supporting categorical data as these will be dependencies for the main API. 
+Categorical information (non-numerical like gender, favorite food, etc.) is quite common in datasets that we analyze. However Matplotlib support for plotting data is available mostly for numerical data, with few direct APIs that can automatically detect categorical data and support it. This project attempts to build an API for plotting heat-maps and other scalarMappables using categorical data. It will also work on developing normalization and color-map APIs supporting categorical data as these will be dependencies for the main API. 
 
-Currently, users wanting to plot categorical data with color support in Matplotlib must manually map their categorical data to numbers, creating non-existent links between classes and requiring a lot of additional effort. 
+Currently, users wanting to plot categorical data with color support in Matplotlib must manually map their categorical data to numbers, creating non-existent links between classes and requiring a lot of additional effort. The proposed APIs will automatically analyze categorical data and plot heat-maps or provide color-map/norm without no additional user interference being required. 
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
@@ -23,12 +23,23 @@ Currently, users wanting to plot categorical data with color support in Matplotl
 ## Technical Details
 With the widespread presence and usage of large datasets of varied nature, the analysis of categorical data has received much attention. Most machine learning, big-data analysis, and data-mining research and projects require the datasets available to be visualized at various stages of work. A variety of plotting techniques are utilized for this matter, and Matplotlib plays a prominent role as an essential tool for many researchers. Despite its diverse functionality with regard to numerical data visualization, Matplotlib is quite restricted in the domain of categorical data analysis. In most cases, users are compelled to manually map their categorical data to numerical data, thus introducing unnecessary relationships and patterns to the datasets, creating redundant data, and being withheld from the simplicity and ease of usage inherent to Matplotlib. 
 
-This work hopes to tackle this issue to a certain extent. The Categorical Color Project will include two main tasks: 
+This work hopes to tackle this issue to a certain extent by creating APIs to automatically identify categorical data and support them. The Categorical Color Project will include two main tasks: 
 
 1)	working on heat-map and other scalarMappables APIs
 2)	working on normalization and color-map APIs. 
 
 A main aim of this project is to integrate unit support into these APIs without subjecting them to any direct changes. Matplotlib currently has these frameworks set-up with functionality for numerical data. This functionality will be extended to support categorical data. The work of this project will be done solely using Python. Libraries used will include Numpy and Matplotlib. There will be no new (unused in Matplotlib previously) third-party libraries used in the course of this project. 
+
+## Proposed Solution
+Categorical data mostly includes panda categorical data types alongside numpy structured arrays and python dictionaries. Currently, APIs for plotting heat-maps and obtaining color-map/norm of a dataset directly support only numerical data due to their limited units understanding. All plotting requires a norm function to map data to relevant colors. Currently, it requires data to be continuous as well. We hope to overcome this through a direct integration of categorical normalization with the discrete data color-maps currently supported. Changes to the units conversions occurring when analyzing categorical data will also be looked into. These will provide the basic background for the norm and color-map APIs. 
+
+Our final API will make it possible for users to easily obtain norm/color-map for categorical data directly. 
+
+‘’’python
+data = categoricalDataFromPandas
+cmap, norm =categorical_colors_API(data)
+,,,
+
 
 ## Schedule of Deliverables
 
@@ -51,10 +62,10 @@ The color bar is mapped from numerical data for heat-maps currently, creating bo
 ### June 12th - June 16th
 * legend support for imshow
 
-This is an additional improvement attempted. Since heat-maps do not currently have a direct method for implementation of a legend, this will focus on extending the legend support of other scallarMappables. Also the categorical support for legend here will mostly be for the purpose of serving as a foundation for legend support for other scallarMappables. 
+This is an additional improvement attempted. Since heat-maps do not currently have a direct method for implementation of a legend, this will focus on extending the legend support of other scalarMappables. Also the categorical support for legend here will mostly be for the purpose of serving as a foundation for legend support for other scalarMappables. 
 
 ### June 19th - June 23th, **End of Phase 1**
-* testing and debugging of imshow function (heatmap API)
+* testing and debugging of imshow function (heat-map API)
 
 ### June 26 - June 30th, **Begin of Phase 2**
 * framework outline for norm functionality extensions
