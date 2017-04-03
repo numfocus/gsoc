@@ -22,10 +22,10 @@ ________________________________________________________________________________
 ## Opening Details
 
 #### Contact Information:
-Personal Email: katiec1029@gmail.com
-School Email: kchait000@citymail.cuny.edu
-[Personal Github](https://github.com/katierose1029)
-Cell Phone: (718) 594 4909
+* Personal Email: katiec1029@gmail.com
+* School Email: kchait000@citymail.cuny.edu
+* [Personal Github](https://github.com/katierose1029)
+* Cell Phone: (718) 594 4909
 
 ### Brief Introduction:
 My name is Kaitlyn Chait and I am a Computer Science student at The City
