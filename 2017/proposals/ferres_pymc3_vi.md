@@ -34,9 +34,9 @@ I'm going to use the following libraries:
 
 As support material I'll use papers from arXiv:
 
-[Variational Inference with Normalizing Flows](https://arxiv.org/abs/1505.05770)
-[Improving Variational Auto-Encoders using Householder Flow](https://arxiv.org/abs/1611.09630)
-[Operator Variational Inference](https://arxiv.org/abs/1610.09033)
+- Danilo Jimenez Rezende, Shakir Mohamed ["Variational Inference with Normalizing Flows"](https://arxiv.org/abs/1505.05770) (2015)
+- Jakub M. Tomczak, Max Welling ["Improving Variational Auto-Encoders using Householder Flow"](https://arxiv.org/abs/1611.09630) (2016)
+- Rajesh Ranganath, Jaan Altosaar, Dustin Tran, David M. Blei ["Operator Variational Inference"](https://arxiv.org/abs/1610.09033) (2016)
 
 ## Schedule of Deliverables
 
@@ -121,6 +121,10 @@ Yandex Data Factory Analyst Intern (now)
 
 I'm a great fan of Bayesian statistics and see it is usefull for many practical applications. I also love development and good codestyle. This project is interesting for me from both point of views. I'm also planning to use my results for my research projects and work.
 
+## Literature
+- Danilo Jimenez Rezende, Shakir Mohamed ["Variational Inference with Normalizing Flows"](https://arxiv.org/abs/1505.05770) (2015)
+- Jakub M. Tomczak, Max Welling ["Improving Variational Auto-Encoders using Householder Flow"](https://arxiv.org/abs/1611.09630) (2016)
+- Rajesh Ranganath, Jaan Altosaar, Dustin Tran, David M. Blei ["Operator Variational Inference"](https://arxiv.org/abs/1610.09033) (2016)
+
 ## Links
 GitHub GSoC [PR#178](https://github.com/numfocus/gsoc/pull/178), [Issue#152](https://github.com/numfocus/gsoc/issues/152)
-
