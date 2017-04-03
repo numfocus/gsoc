@@ -87,12 +87,12 @@ Currently, the process of using matplotlib.pyplot for heat-maps and other scalar
 * imshow basic functionality (extending plots interface) including tests and documentation
 * integration of units support 
 
-The previously setup units support for heat-maps will be linked to the imshow function for further development. The work of this project will stem from existing development done for categorical color support in Matplotlib issues [6889](https://github.com/matplotlib/matplotlib/pull/6889) and [6934](https://github.com/matplotlib/matplotlib/pull/6934). The starting point for this stage will be extending the imshow function (matplotlib.axes._axes.imshow) to support categorical data by introducing necessary units support. This mainly focuses on providing it unit knowledge with regards to non-numerical data followed by extending the plots interface (matplotlib.pyplot) to accommodate categorical data. The approach followed here will be the initial basis for this extended support for categorical data. 
+The previously setup units support for heat-maps will be linked to the imshow function for further development. The work of this project will stem from existing development done for categorical color support in Matplotlib issues [6889](https://github.com/matplotlib/matplotlib/pull/6889) and [6934](https://github.com/matplotlib/matplotlib/pull/6934). The starting point for this stage will be extending the imshow function (matplotlib.axes._axes.imshow) to support categorical data by introducing necessary units support. This mainly focuses on providing it unit knowledge with regards to non-numerical data followed by extending the plots interface (matplotlib.pyplot) to accommodate categorical data. 
 
 ### July 10th - July 14th
 * color-bar support for imshow
 
-The color bar is mapped from numerical data for heat-maps currently, creating boundaries for each class. Due to discrete nature of categorical data, work may stem from ListedColormaps, and that basis will be used. The boundaries required for each distinct stage will be extended to support non-numerical values. The non-numerical values of categorical data will be directly mapped to each distinct color level with the developed units integration. 
+The color bar is mapped from numerical data for heat-maps currently, creating boundaries for each class. Due to discrete nature of categorical data, work may stem from ListedColormaps, and that will be used as a foundation for work. The boundaries required for each distinct stage will be extended to support non-numerical values. Work will be done to overcome the current necessity for continuity of data to be mapped from (categorical data is discrete). This will focus on the non-numerical values of categorical data being directly mapped to each distinct color level with the developed units integration. 
 
 ### July 17th - July 21th, **End of Phase 2**
 * legend support for imshow
@@ -108,8 +108,12 @@ Extension of current work (support for categorical data) to other scalarMappable
 ### July 31st - August 4th
 * basic functionality of other scalarMappables 
 
+The work here will be done on the scalarMappables class and its underlying objects. This will ensure that all support for categorical data integrated flows down to each derived type of scalarMappables. 
+
 ### August 7th - August 11th
 * color-bar and legend support for other scalarMappables
+
+Work similar to what is done for heat-maps will be extended to the scalarMappables class to support color-bars and legends for categorical data. 
 
 ### August 14th - August 18th
 * overall functionality of other scalarMappables with tests and documentation
@@ -138,7 +142,7 @@ https://github.com/scikit-learn/scikit-learn/pull/8558#pullrequestreview-2673736
 https://github.com/kahnchana/Pali-NLP
 
 ## Other Experiences
-I have been involved in some machine learning and computer vision related research work, especially regarding [activity recognition in videos]( https://github.com/kahnchana/tcsvt2017). Currently I am involved in some work related to dense trajectories. I have also been involved in numerous mathematics related work since an early age, having also represented my country at the International Mathematical Olympiad while in high school. 
+I have been involved in some machine learning and computer vision related research work, especially regarding [activity recognition in videos]( https://github.com/kahnchana/tcsvt2017). I have also worked on some data mining projects related to machine learning. Currently I am involved in some work related to dense trajectories. I have also been involved in numerous mathematics related work since an early age, having also represented my country at the International Mathematical Olympiad while in high school. 
 
 ## Why this project?
 I am quite interested in the areas of machine learning, computer vision, and robotics. As part of a machine learning research group at my university, I have constantly used Matplotlib for various purposes, including visualizing of certain categorical data. So I feel that I should try to get involved in contributing to the community as well. Also I feel a lot familiar with this project and find it interesting to work on mainly due to its relevance to data science.  
