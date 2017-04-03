@@ -255,15 +255,18 @@ ________________________________________________________________________________
 **Community Bonding Period:** (May 1st - May 28th)
 
 **Phase 1:** (May 29th - June 23rd)
-    *The focus of this stage will be Matplotlib serialization.*
-    How can we serialize a figure to json (or other format)?
-    When we have this ability, can we return the original matplotlib figure?
+    *The focus of this stage will be Matplotlib serialization and
+    how can accomplish it.*
+    During this stage, I will focus on the strategy and approach to take in
+    serializing a figure to json (or other format)?
 
 **Phase 2:** (June 26th - July28th)
-    *The focus of this stage will be taking serialized data and rendering it
-    into a PythreeJS widget*
-    How can we take our serialized matplotlib data and render it to a
-    PythreeJS widget?
+    *The focus of this stage will be implementing a method in which we can
+    serialize matplotlib figures*
+    By this stage, I would like to start the implementation of serializing
+    a Matplotlib figure. This stage will take up the bulk of the project
+    due to its importance in the project. Of all the tasks to be completed
+    by the end of this program, I would like this one to be completed.
 
 **Phase 3:** (July 24th - August 25th)
     *The focus of the final stage will be serializing data altered in PythreeJS
