@@ -51,67 +51,71 @@ Also this categorical support will be extended to support colorbars and legends 
 ## Schedule of Deliverables
 
 ### May 1st - May 28th, **Community Bonding Period**
-* Working on understanding categorical data support for imshow function 
+* Working on understanding units support extension for categorical data	
 * Self-implementation of previous work done to support categorical color for better understanding
 * Setting up of project blog covering all major technical details
 * Working on MEPs in Matplotlib Developers’ Guide, and Matplotlib issues related to normalization, color-map, and color-bar code. 
 
 ### May 29th - June 3rd
+* extending units support for categorical data
+
+This is the starting point for the project. The units framework provides support for custom instances to be converted to values compatible with Matplotlib. The custom instances discussed are those of classes that can convert themselves to arrays despite lacking the array interface. In this stage, we attempt to allow categorical data to be converted to Matplotlib compatible values, generating necessary locators and ticks.  
+
+### June 5th - June 9th
+* review/document units support extension
+* tests/bug fixing units support extension
+
+### June 12th - June 16th
+* framework outline for norm functionality extensions
+* norm basic functionality including tests and documentation
+
+Based on the units support, the next step is normalization support for categorical data. With regards to the normalization function, in a Matplotlib sense, it encompasses a function mapping different data values to different colors (or color levels). Currently, the different data values to be mapped from are expected to be numerical. Also it requires data to be continuous. This limitation will be worked around to enable support for categorical data. Also during the course of the project focus will be given to the currently available discrete normalization methods (matplotlib.colors.BoundaryNorm) which handle data in a different sense which may be used as a foundation for this additional unit support. 
+
+### June 19th - June 23th, **End of Phase 1**
+* framework outline for cmap functionality extensions
+* cmap basic functionality including tests and documentation
+
+Currently, the process of using matplotlib.pyplot for heat-maps and other scalarMappables includes the creation of a color-map followed by normalization of all available data to fit this color-map. Color-maps plotting functionality is threefold: sequential, divergent and qualitative. Considering the intrinsic discreteness of categorical data, the extension of the color-maps API will focus on its qualitative plotting ability. However the fundamental behavior of the color-maps API will not require any changes for handling categorical data as our approach simply involves the integration of unit support. Therefore it is possible to build this extended support for categorical data while keeping the public API intact. The same applies to work done on norm API. 
+
+### June 26 - June 30th, **Begin of Phase 2**
+* finalization of categorical norm and cmap APIs
+* testing/bug-fixing
+
+
+### July 3rd - July 7th
 * imshow basic functionality including tests and documentation
+* integration of units support 
 
 The work of this project will stem from existing development done for categorical color support in Matplotlib issues [6889](https://github.com/matplotlib/matplotlib/pull/6889) and [7383](https://github.com/matplotlib/matplotlib/issues/7383). The starting point for the project will be extending the imshow function (matplotlib.axes._axes.imshow) to support categorical data. This mainly focuses on providing it unit knowledge with regards to non-numerical data. The approach followed here will be the initial basis for this extended support for categorical data. It will be used as a foundation to build the heat-maps API (the imshow function).  This will also lead to the normalization and color-map APIs. 
 
-### June 5th - June 9th
+### July 10th - July 14th
 * color-bar support for imshow
 
 The color bar is mapped from numerical data for heat-maps currently, creating boundaries for each class. Due to discrete nature of categorical data, ListedColormaps will be used and the boundaries required for each distinct stage will be extended to support non-numerical values. The string values of categorical data will be directly mapped to each distinct color level by the units integration. 
 
-### June 12th - June 16th
+### July 17th - July 21th, **End of Phase 2**
 * legend support for imshow
 
 This is an additional improvement attempted. Since heat-maps do not currently have a direct method for implementation of a legend, this will focus on extending the legend support of other scalarMappables. Also the categorical support for legend here will mostly be for the purpose of serving as a foundation for legend support for other scalarMappables. 
 
-### June 19th - June 23th, **End of Phase 1**
-* testing and debugging of imshow function (heat-map API)
-
-### June 26 - June 30th, **Begin of Phase 2**
-* framework outline for norm functionality extensions
-* norm basic functionality including tests and documentation
-
-With regards to the normalization function, in a Matplotlib sense, it encompasses a function mapping different data values to different colors (or color levels). Currently, the different data values to be mapped from are expected to be numerical. This limitation will be worked around to enable support for categorical data (string data). Also during the course of the project focus will be given to the currently available discrete normalization methods (matplotlib.colors.BoundaryNorm) which handle data in a different sense which may be used as a foundation for this additional unit support. 
-
-### July 3rd - July 7th
-* framework outline for cmap functionality extensions
-* cmap basic functionality including tests and documentation
-
-Currently, the process of using matplotlib.pyplot for heat-maps and other scalarMappables includes the creation of a color-map followed by normalization of all available data to fit this color-map. Color-maps plotting functionality is threefold: sequential, divergent and qualitative. Considering the intrinsic discreteness of categorical data, the extension of the color-maps API will focus on its qualitative plotting ability. However the fundamental behavior of the color-maps API will not require any changes for handling categorical data as our approach simply involves the integration of unit support. Therefore it is possible to build this extended support for categorical data while keeping the public API intact. 
-
-### July 10th - July 14th
-* integration of norm and cmap into heatmaps
-
-Given the functionality extended for categorical data, the final task is entwining all this functionality to imshow to allow the plotting of heat-maps from non-numerical values. This would be handled here. 
-
-### July 17th - July 21th, **End of Phase 2**
-* testing and debugging of norm and cmap APIs
-
 ### July 24th - July 28th, **Begin of Phase 3**
-* identifying possible scalarMappables to extend categorical color support
+* testing/bug-fixing of heatmaps API (imshow)
 * framework outline for categorical color support of other scalarMappables
 
-Identification of other scalarMappables like matshow, pcolor, pcolormesh, scatter, etc. will be done here. Possibilities to extend the current work to support categorical data will be analyzed. The work here will not be direct extensions of heat-maps but will require different approaches to extend the units support for these scalarMappables.  
+Extension of current work (support for categorical data) to other scalarMappables like matshow, pcolor, pcolormesh, scatter, etc. will be done here. The scalarMappables class will be used as the starting point to implement this. Support for color-bars and legend will be given focus. The work here will not be direct extensions of heat-maps and may require different approaches to extend the units support for these scalarMappables.  
 
 ### July 31st - August 4th
 * basic functionality of other scalarMappables 
 
 ### August 7th - August 11th
-* overall functionality of other scalarMappables with tests and documentation
+* color-bar and legend support for other scalarMappables
 
 ### August 14th - August 18th
+* overall functionality of other scalarMappables with tests and documentation
 * testing and debugging of other scalarMappables code
 
 ### August 21st - August 25th, **Final Week**
-* testing of all code and bug fixing
-* final review of all code and documentation
+* review of all documentation
 
 ### August 28th - August 29th, **Submit final work**
 * code submission
@@ -140,7 +144,7 @@ I am quite interested in the areas of machine learning, computer vision, and rob
 
 ## Appendix
 ### About Me
-I am a second-year undergraduate student at the University of Moratuwa, Sri Lanka studying Electronics and Telecommunication Engineering. I have been using python for the last three years for development and research work and am quite familiar with Numpy and Matplotlib libraries. 
+I am a second-year undergraduate student at the University of Moratuwa, Sri Lanka studying Electronics and Telecommunication Engineering. I have been using python for the last three years for development and research work and am quite familiar with Numpy and Matplotlib libraries. Having taken multiple courses in numerical analysis, calculus, programming, machine learning, and data-science, I am knowledgeable on the areas related to this project as well. 
 
 ### Contact Details
 W M D Kanchana N Ranasinghe
