@@ -154,9 +154,10 @@ Here are some of those requests :
 - [Bivariate Colormaps](http://stackoverflow.com/questions/15207255/is-there-any-way-to-use-bivariate-colormaps-in-matplotlib)
 
 Having used Matplotlib for displaying graphical information several times, I
-wanted to give something back to the community. I have also worked closely with
-the community for last month and I have good understanding of workflow.Therefore
-I feel I am the right person to do this project.
+wanted to give something back to the community. I am the right person to do
+this project because not only I want to contribute to Open Source but I have
+also worked closely with the community for last month so I have good
+understanding of workflow.
 
 ## Appendix
 
