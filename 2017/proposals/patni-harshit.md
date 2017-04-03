@@ -128,7 +128,7 @@ quaternions as well.
 - (Merged) [#8094](https://github.com/matplotlib/matplotlib/pull/8094) Cleaned up documentation by removing an example
 - (Merged) [#8097](https://github.com/matplotlib/matplotlib/pull/8097) Improved the code to use plt.gca instead of plt.axes
 - (Merged) [#8154](https://github.com/matplotlib/matplotlib/pull/8154) Merged fill_demo and fill_demo_features examples
-- (Merged) [#8194](https://github.com/matplotlib/matplotlib/pull/8194) Added link to Gitter channel in readme
+- (Merged) [#8190](https://github.com/matplotlib/matplotlib/pull/8190) Added link to Gitter channel in readme
 - (Merged) [#8234](https://github.com/matplotlib/matplotlib/pull/8234) Fixed broken Gitter badge
 - (Merged) [#8343](https://github.com/matplotlib/matplotlib/pull/8343) Made ArrowStyle docstrings numpydoc compatible
 - (Open) [#8336](https://github.com/matplotlib/matplotlib/pull/8336) Merged three streamplot examples into one plot with subplots
