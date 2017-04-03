@@ -271,9 +271,11 @@ ________________________________________________________________________________
 **Phase 3:** (July 24th - August 25th)
     *The focus of the final stage will be serializing data altered in PythreeJS
     to json format*
+    Hopefully by this phase of the program, I will have mostly completed the
+    implementation of Phease 2.  If this stands true, I would like to attempt
+    the focus of Phase 3 that I have above and answer the following question:
     Can we alter the data in a PythreeJS widget and serialize it to a
     json?
-
 
 **Hand in Final Works** (August 28th - August 29th)
 
