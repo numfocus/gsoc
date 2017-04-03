@@ -102,4 +102,4 @@ I am fond of solving non-trivial programming tasks and implementing state-of-the
 
 ## Appendix
 
-LibFM implementation of Online NNFM algorithm: http://www.csie.ntu.edu.tw/~cjlin/papers/libmf/libmf_journal.pdf
+LibFM implementation of Online NNMF algorithm: http://www.csie.ntu.edu.tw/~cjlin/papers/libmf/libmf_journal.pdf
