@@ -52,14 +52,15 @@ Also this categorical support will be extended to support colorbars and legends 
 
 ### May 1st - May 28th, **Community Bonding Period**
 * Working on understanding units support extension for categorical data	
+* Further understanding core Matplotlib internals and their interconnections
 * Self-implementation of previous work done to support categorical color for better understanding
 * Setting up of project blog covering all major technical details
 * Working on MEPs in Matplotlib Developers’ Guide, and Matplotlib issues related to normalization, color-map, and color-bar code. 
 
 ### May 29th - June 3rd
-* extending units support for categorical data
+* extending units support (categorical data) for heat-maps
 
-This is the starting point for the project. The units framework provides support for custom instances to be converted to values compatible with Matplotlib. The custom instances discussed are those of classes that can convert themselves to arrays despite lacking the array interface. In this stage, we attempt to allow categorical data to be converted to Matplotlib compatible values, generating necessary locators and ticks.  
+This is the starting point for the project. The units framework provides support for custom instances to be converted to values compatible with Matplotlib. The custom instances discussed are those of classes that can convert themselves to arrays despite lacking the array interface. Matplotlib currently supports this for certain plots (bar charts/line plots/scatter plots) drawn from categorical data. In this stage, we focus on heat-maps (imshow function) as we attempt to allow categorical data to be converted to Matplotlib compatible values, generating necessary locators and ticks for this task. This work will be built off existing development discussed in [7383](https://github.com/matplotlib/matplotlib/issues/7383). 
 
 ### June 5th - June 9th
 * review/document units support extension
@@ -83,15 +84,15 @@ Currently, the process of using matplotlib.pyplot for heat-maps and other scalar
 
 
 ### July 3rd - July 7th
-* imshow basic functionality including tests and documentation
+* imshow basic functionality (extending plots interface) including tests and documentation
 * integration of units support 
 
-The work of this project will stem from existing development done for categorical color support in Matplotlib issues [6889](https://github.com/matplotlib/matplotlib/pull/6889) and [7383](https://github.com/matplotlib/matplotlib/issues/7383). The starting point for the project will be extending the imshow function (matplotlib.axes._axes.imshow) to support categorical data. This mainly focuses on providing it unit knowledge with regards to non-numerical data. The approach followed here will be the initial basis for this extended support for categorical data. It will be used as a foundation to build the heat-maps API (the imshow function).  This will also lead to the normalization and color-map APIs. 
+The previously setup units support for heat-maps will be linked to the imshow function for further development. The work of this project will stem from existing development done for categorical color support in Matplotlib issues [6889](https://github.com/matplotlib/matplotlib/pull/6889) and [6934](https://github.com/matplotlib/matplotlib/pull/6934). The starting point for this stage will be extending the imshow function (matplotlib.axes._axes.imshow) to support categorical data by introducing necessary units support. This mainly focuses on providing it unit knowledge with regards to non-numerical data followed by extending the plots interface (matplotlib.pyplot) to accommodate categorical data. The approach followed here will be the initial basis for this extended support for categorical data. 
 
 ### July 10th - July 14th
 * color-bar support for imshow
 
-The color bar is mapped from numerical data for heat-maps currently, creating boundaries for each class. Due to discrete nature of categorical data, ListedColormaps will be used and the boundaries required for each distinct stage will be extended to support non-numerical values. The string values of categorical data will be directly mapped to each distinct color level by the units integration. 
+The color bar is mapped from numerical data for heat-maps currently, creating boundaries for each class. Due to discrete nature of categorical data, work may stem from ListedColormaps, and that basis will be used. The boundaries required for each distinct stage will be extended to support non-numerical values. The non-numerical values of categorical data will be directly mapped to each distinct color level with the developed units integration. 
 
 ### July 17th - July 21th, **End of Phase 2**
 * legend support for imshow
@@ -102,7 +103,7 @@ This is an additional improvement attempted. Since heat-maps do not currently ha
 * testing/bug-fixing of heatmaps API (imshow)
 * framework outline for categorical color support of other scalarMappables
 
-Extension of current work (support for categorical data) to other scalarMappables like matshow, pcolor, pcolormesh, scatter, etc. will be done here. The scalarMappables class will be used as the starting point to implement this. Support for color-bars and legend will be given focus. The work here will not be direct extensions of heat-maps and may require different approaches to extend the units support for these scalarMappables.  
+Extension of current work (support for categorical data) to other scalarMappables like matshow, pcolor, pcolormesh, scatter, etc. will be done here. The scalarMappables class will be used as the starting point to implement this as all instances stem from here. Support for color-bars and legends for these other scalarMappables will also be given focus. The work here will not be direct extensions of heat-maps and may require different approaches to extend the units support for these scalarMappables.  
 
 ### July 31st - August 4th
 * basic functionality of other scalarMappables 
