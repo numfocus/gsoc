@@ -95,6 +95,7 @@ In detail, I have experience in C++ including STL, MPI, OpenMP, CUDA. Also I hav
 ## Other Experiences
 
 I have experience of using Gensim library for research project, in detail, I used doc2vec to creating vectors for messages in social networks and then classify them into positive and negative opininons about particular places in the city.
+Link to contribution to Gensim: https://github.com/RaRe-Technologies/gensim/pull/1239
 
 ## Why this project?
 
