@@ -39,11 +39,11 @@ This will greatly help in understanding the current implementation of
 normalization and color mapping tools in Matplotlib. Some tasks that can be
 done as part of this are:
     - Tidying up namespace
-    - Defining a "Color" class
-    - Making it easy to convert from one color type to another `hex -> RGB`, `RGB -> hex`, `HSV -> RGB` etc
+    - Defining a "Color" tuple
     - Improving construction of colormap by changing current dictionary approach
-    - Making it possible to interpolate between two or more color types in different modes
-    - Renaming `cm` module to something more descriptive
+    - Analyzing  the feasibility of renaming `cm` module to something more
+      descriptive. It will be a major API change so this will be done only if
+      its pros outweighs cons
 - Set up a blog
 - Along with this I will continue to solve issues on github
 
@@ -154,10 +154,9 @@ Here are some of those requests :
 - [Bivariate Colormaps](http://stackoverflow.com/questions/15207255/is-there-any-way-to-use-bivariate-colormaps-in-matplotlib)
 
 Having used Matplotlib for displaying graphical information several times, I
-wanted to give something back to the community. I am the right person to do
-this project because not only I want to contribute to Open Source but I have
-also worked closely with the community for last month so I have good
-understanding of workflow.
+wanted to give something back to the community. I have also worked closely with
+the community for last month and I have good understanding of workflow.Therefore
+I feel I am the right person to do this project.
 
 ## Appendix
 
