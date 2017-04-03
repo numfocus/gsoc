@@ -185,4 +185,4 @@ July.
 
 * **Time Zone :** Indian Standard Time (IST) UTC +5:30
 *  **Hours per week :** 35-40 hours(during vacations), this may go down to
-30-35 hours in August/September
+30-35 hours in August
