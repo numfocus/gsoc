@@ -260,7 +260,7 @@ ________________________________________________________________________________
     During this stage, I will focus on the strategy and approach to take in
     serializing a figure to json (or other format)?
 
-**Phase 2:** (June 26th - July28th)
+**Phase 2 & Phase 3:**** (June 26th - August 25th)
     *The focus of this stage will be implementing a method in which we can
     serialize matplotlib figures*
     By this stage, I would like to start the implementation of serializing
@@ -268,12 +268,9 @@ ________________________________________________________________________________
     due to its importance in the project. Of all the tasks to be completed
     by the end of this program, I would like this one to be completed.
 
-**Phase 3:** (July 24th - August 25th)
-    *The focus of the final stage will be serializing data altered in PythreeJS
-    to json format*
-    Hopefully by this phase of the program, I will have mostly completed the
-    implementation of Phease 2.  If this stands true, I would like to attempt
-    the focus of Phase 3 that I have above and answer the following question:
+**Future Work**
+    After this project is complete, I would like to touch upon this in my
+    future works:
     Can we alter the data in a PythreeJS widget and serialize it to a
     json?
 
