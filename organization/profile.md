@@ -10,7 +10,7 @@
     data science and numeric computing tools such as numpy, pandas,
     Jupyter, Julia, and rOpenSci.
 
-    NumFOCUS would like to participate in Google Summer of Code 2016 as an
+    NumFOCUS would like to participate in Google Summer of Code 2017 as an
     umbrella organization for these tools in continuance of its mission.
     By participating, we hope to provide our community with another
     opportunity
@@ -57,7 +57,7 @@
 -   How will you get your students involved in your community during GSoC?
 
     The NumFOCUS community is passionate, engaged, and growing.
-    We have many conferences and chapters (meetups) planned for 2016
+    We have many conferences and chapters (meetups) planned for 2017
     around the world.
     We will offer students the
     opportunity to present their work at one of those conferences
@@ -86,12 +86,11 @@
 
 -   Which years did your org participate in GSoC?
 
-    2015
+    2015, 2016
 
 -   What is your success/fail rate per year?
 
-    All of the students that participated in GSoC 2015 succeeded in their
-    project.
+    2015: 3/3, 2016: 7/7
 
 -   Are you part of a foundation/umbrella organization?
 
@@ -115,7 +114,7 @@
 
 -   Logo
 
-    http://www.numfocus.org/uploads/6/0/6/9/60696727/3761816.png
+    See logo file in repository
 
 -   Primary Open Source License
 
@@ -127,7 +126,7 @@
 
 -   Technology Tags
 
-    python, javacript, julia, r
+    python, javacript, r, c/c++
 
 -   Topic Tags
 
@@ -135,7 +134,7 @@
 
 -   Ideas List
 
-    https://github.com/numfocus/gsoc/blob/master/2016/ideas-list.md
+    https://github.com/numfocus/gsoc/blob/master/2017/ideas-list.md
 
 ## Descriptions
 
@@ -160,14 +159,11 @@
 
 -   Proposal Tags
 
-    -   biocore
-    -   dynd
-    -   ecodata retriever
-    -   juliaopt
-    -   juliaquatum
-    -   matplotlib
-    -   software carpentry
-
+    - nteract
+    - pymc3
+    - mdanalysis
+    - gensym
+    - matplotlib
 
 ## Contact Methods
 

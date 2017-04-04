@@ -14,10 +14,10 @@ your addition.**
 
 If you have a proposal, please create an [issue][issues] for it. 
 Please make sure that the project can be partly completed during the summer so that students pass the final evaluation. 
-See the expectations in the [student guide](CS).
+See the expectations in the [student guide][CS].
 
 Please also
-read the [student guide](CS) 
+read the [student guide][CS] 
 
 **Long Version**
 
