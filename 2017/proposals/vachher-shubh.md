@@ -10,6 +10,13 @@ My use of gensim for the last few months has been its powerful unsupervised word
 
 Building over word2vec in recent times is the FastText word embedding implementation by researchers at Facebook. Considering the massive user base and use cases of the word2vec implementation, it is very likely that a supervised learning solution like FastText will be a welcome addition to the gensim library. This will provide people with an end to end solution to word embedding applications and it has been shown, will be faster to train alternative rather than word2vec followed by supervised learning.
 
+## Details of Previous work with Gensim
+
+My work includes drive-by fixes #1250 #1252, doc additions to gensim #1251 and one feature addition #1229.
+There is a plan to work on one other thing in the next month as soon as @1229 is done that I think will be a very good addition to gensim's word2vec pipeline!
+
+Link to opened issue on Numfocus : #240
+
 ## Technical Details
 
 
