@@ -1,0 +1,107 @@
+# Data Retriever
+
+# Proposal for Google Summer of Code 2017
+
+## Title
+
+Improve Data Retriever efficiency for out-of-memory scale datasets.
+
+## Abstract
+
+This project aims to increase the efficiency of the out-of-memory scale dataset. I aim to deterministically profile the code and analyze time/memory consumption for out-of-memory scale datasets in my project. I also plan to increase query efficiency by indexing datasets.
+
+## Technical Details
+
+Data Retriever is an open source project under numFocus foundation. Data Retriever downloads, cleans and stores publicly available data, so that analysts spend less time cleaning and managing data and more time on analyzing it.
+
+The project involves both making the Data Retriever more efficient on large datasets and making querying from the resulting databases more efficient.
+
+The project includes deterministic profiling of the code for the large scale data using the profile and memory-profiler library in python. Apart from this, the following libraries can be used for more efficient profiling:
+
+- cprofile
+- Memory-profiler (along with psutil)
+- line_profiler
+- objgraph
+
+Scanning the table is useful when the table size is small, but in the case of large scale dataset, indexing is used for better query optimization. Similarly for the dataset which completely resides in memory, the difference between use of indexing and table scan is less noticeable, but for the out-of-memory scale database, indexing makes a difference.
+
+The project also includes the addition of indexing for the out-of-memory scale dataset by using different database-python implementation library like given below:
+- pyMySql
+- pypostgresql
+
+## Schedule of Deliverables
+
+I plan to allocate at least 40 hours per week on this project and share weekly progress updates with the community through blog.
+
+**May 1st - May 28th, community Bonding Period :** Apart from discussing the implementation with the mentors, I will be brushing up on my knowledge of python profiling. I will look into the testing methodologies employed by the popular frameworks and libraries.  If possible, I will try to help in minor bugs and issue fixing and try to improve documentation of the Data Retriever. I will also help Data Retriever by adding new dataset script files.
+
+**May 29 – June 3:** Deterministic profiling along with memory profiling to gain statistical data.
+
+**June 5 – June 9:** Memory profiling to increasing efficiency for out-of-memory scale dataset
+
+**June 12 – June 16:** will do suitable changes in code based on the statistical data obtained through profiling
+
+**June 19 – June 23, End of phase 1:** working on indexing of out-of-memory scale dataset, Mid-term evaluation
+
+**June 26 – July 30, Begin of phase 2:** Implementation and understanding of addition of indexing and how addition affects the efficiency and querying
+
+**July 3 – July 7:** implementation and understanding  of addition of indexing and how addition affect the efficiency and querying
+
+**July 10 – July 14:** implementation of addition of indexing in mysql using pymysql
+
+**July 17 – July 21, End of phase 2:** implementation of addition of indexing in postgresql
+
+**July 24 – July 28, Begin of phase 3:** implementation of indexing in all datasets if, the efficiency increases after introducing indexing to small datasets
+
+**July 31 - August 4:** changes and modification in code based on the result obtained and further review by mentors
+
+**August 7 – August 11:** search for other alternatives for increasing efficiency for out-of-memory scale dataset / any pending work to be completed / any further work under guidance of mentors
+
+**August 14 – August 18:** search for other alternatives for increasing efficiency for out-of-memory scale dataset / any pending work to be completed / any further work under guidance of mentors
+
+**August 21 – August 25, Final Week:** Adding the final documentation and tests, and cleaning the code. Look into the community feedback ,and make sure everything is in place and working. Preparing for End-term evaluation.
+
+**August 28 – August 29, Submit Final work:** Adding the final documentation and tests, and cleaning
+
+
+## Future Works
+
+I will actively take participation in further contribution of Data retriever after GSOC. I will continue to work on some other projects of Data Retriever and will be active in community.
+
+## Development Experience
+
+This project of Data Retriever requires the knowledge of python and database-python client libraries(such as pymysql, py-postgresql etc.), and deep understanding of how DBMS works.
+
+I am proficient in python and intermediate in C language. I am currently enrolled in university where i studied as DBMS as one of my subject. My interest lies in Data Science and Machine Learning. Apart from above i have knowledge of concepts of A.I., R language and Matlab/octave And I have basic knowledge of web stacks. The details of projects i have worked on can be found on my Github account.
+
+I am a novice open source contributor. I have knowledge of git version control and have some working experience in Travis and Grunt testing bots. I have contributed to Data Retriever. My contribution are as below:
+- Addition of nyc-tree-count dataset(db25817)
+- Documentation update ( ed7ddcb )
+- Update portal dataset  ( WIP - Awaiting final changes)
+
+## Other Experience
+
+I am machine learning and AI enthusiast. I have trained several models in matlab/octave. I have completed several projects in web technologies. I am an active member of communities in college like Google Developers Group NIT Surat, ACM NIT Surat and Webdev labs, NIT Surat. I was the organiser/volunteer of Inout-India’s largest student run hackathon.
+
+## Why I choose Data Retriever?
+
+I am a novice open source contributor. When I was looking for the organisation for GSOC-2017, I found that Data Retriever is perfect for me. Data Retriever has active community of mentors and contributors which inspire a lot to work on it. Apart from this code is well written, maintained and easy to understand for a beginner.
+
+As a machine learning enthusiast, I know handling of data is an important thing, and Data Retriever is making it easy for everyone. I found it fascinating and interesting to work on something like this. Data Retriever is doing good job for data handling but it will be more useful when we increase the performance and efficiency, This makes me to apply for Data Retriever.
+
+## Why you should choose me?
+
+I will prove to be a suitable candidate as I possess the required expertise with the technologies involved, and have listed my implementation idea clearly. I have been working on the Data Retriever in understanding the code and working of it for the last few days.
+
+I have taught myself most of fundamentals of Computer Science, Programming fundamentals and Machine Learning and AI (MOOCs, Tutorials, etc.) The experience has made me a strong autodidact and that will prove to be useful during my work in SOC. I am a quick learner.
+
+Also, I have often been called driven, creative and hardworking. And I personally value having a strong work-ethic more than most things.
+
+## Personal Information
+
+- **Kevinkumar Amipara ( kvnamipara )**
+- Website: kvnamipara.github.io
+- Email: kvnamipara@gmail.com | kevin.dakshana2015@gmail.com
+- Contact Number : +91 9512853801
+- Username (GitHub and Gitter) : kvnamipara
+- Time Zone : Indian Standard Time (GMT +5:30)
