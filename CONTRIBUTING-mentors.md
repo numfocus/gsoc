@@ -1,23 +1,28 @@
-# Contributing Guide for Mentors
+# Contributing Guide for Mentors and Sub Orgs
 
-To be a mentor go to [GSoC homepage][GSoC] and create your profile.
-If you need help, please check
-http://en.flossmanuals.net/melange/creating-and-editing/.
+## Sub Organizations
 
-**After creating your profile, open an [issue][issues] requesting that your
-username be added at [organization/team.md][OT] or send a pull request with
-your addition.**
+Only organization for are either financially sponsored or affiliated with
+NumFOCUS can participate as a sub-org. One person should be the sub org
+administrator and take responsibility to communicate with NumFOCUS and advertise
+GSoC to the community of their organization.
 
-### Proposal summary (Mentors)
+## Mentors
+
+To be a mentor please tell your sub-org administrator so he can give you all the
+information you need to sign up.
+
+## Project Ideas 
+
+There has to be at least one primary mentor per project. We recommend that you
+have backup mentors for students as well. A mentor can only be 'primary' for one
+student but a backup for as many as he likes.
 
 **Short Version**
 
-If you have a proposal, please create an [issue][issues] for it. 
-Please make sure that the project can be partly completed during the summer so that students pass the final evaluation. 
-See the expectations in the [student guide][CS].
-
-Please also
-read the [student guide][CS] 
+Please make sure that the project can be partly completed during the summer so
+that students pass the final evaluation. Please also read
+the [student guide][CS]
 
 **Long Version**
 
@@ -31,7 +36,4 @@ If you have a proposal,
 4.  [create an issue](https://github.com/numfocus/gsoc/issues/new)
     where students can ask questions.
 
-[GSoC]: https://www.google-melange.com/gsoc/homepage/google/gsoc2015
-[issues]: https://github.com/numfocus/gsoc/issues
-[OT]: organization/team.md
 [CS]: CONTRIBUTING-students.md
