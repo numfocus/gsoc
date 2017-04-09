@@ -99,77 +99,11 @@ If you have never done anything like GSoC before you will tend to underestimate 
 We know that giving these estimates is not easy and that also professionals have problems with it. 
 Having a good plan, knowing its weak and strong points will help a lot. 
 
-### Proposal draft
-
-**You should avoid add some personal/private information
-like phone number and address, at your proposal.**
-
-1.  Fork https://github.com/numfocus/gsoc
-
-2.  Clone your fork:
-
-    ~~~
-    $ git clone https://github.com/username/gsoc.git
-    ~~~
-
-    where `username` is your GitHub username.
-
-    In my case is `rgaiacs`, so I will use
-
-    ~~~
-    $ git clone https://github.com/rgaiacs/gsoc.git
-    ~~~
-
-2.  Copy `YYYY/proposals/skeleton.md` to `YYYY/proposals/your-name.md`
-    where `YYYY` is the currently year, `your` is your last name, all lowercase,
-    and `name` is your firts name, all lowercase.
-
-    For example, my name is Raniere Silva so I need to
-    copy `YYYY/proposals/skeleton.md` to `YYYY/proposals/silva-raniere.md`.
-
-3.  Edit `YYYY/proposals/your-name.md` filling all sections.
-
-    If you need you can create new sections.
-
-    The text in a few sections are reminders for you
-    when writing your proposal.
-
-4.  Commit your changes:
-
-    ~~~
-    $ git add proposals
-    $ git commit
-    ~~~
-
-5.  Update it to GitHub:
-
-    ~~~
-    $ git push origin master
-    ~~~
-
-6.  Create a pull request.
-
-7.  Edit `YYYY/proposals/your-name.md` to address the comments.
-
-8.  Update your pull request:
-
-    ~~~
-    $ git commit -a
-    $ git push origin master
-    ~~~
-
-9.  Back to step 7.
-
 ### Final Proposal
 
-Your final proposal must be submitted to [GSoC][]
-**before April 3rd 16:00 UTC**
-as a PDF file.
-
-You can use [Pandoc][] to convert your proposal in Markdown
-to PDF **if you have LaTeX installed on your machine**
-or convert to HTML and print it to PDF using your web browser.
-For example, you can
+Your final proposal must be submitted to [GSoC](summerofcode.withgoogle.com)
+**before April 3rd 16:00 UTC** as a PDF file. Your proposal name should start
+with *[sub-org-name]* to make identification easier for the mentors.
 
 ~~~
 $ pandoc -f markdown -t pdf YYYY/proposals/your-name.md
