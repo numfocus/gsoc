@@ -47,12 +47,10 @@ gives a good overview of this part for GSoC.
 Organizations usually favor students that show a regular communication with
 possible mentors / organization until Google announces the accepted projects.
 
-Good communication skills are an important part of GSoC since a student and
-mentor can rarely meet in person. So
-
 Establishing a regular communication is good for 2 reasons. It shows that you
-are a reliable student and helps to organization to get to know you.
-
+are a reliable student and that you have good communication skills. Good
+communication skills are an important part of GSoC since a student and mentor
+can rarely meet in person.
 
 ### During the summer
 
