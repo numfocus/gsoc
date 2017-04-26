@@ -11,6 +11,9 @@ You can signup as a participating org with us until the application deadline for
 the current year or up to 5 days after Google announces that NumFOCUS is
 participating as a umbrella org.
 
+When you sign-up with us you should also tell us your preferred way for students
+to contact you.
+
 ## Mentors
 
 To be a mentor please tell your sub-org administrator so he can give you all the
