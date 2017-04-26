@@ -1,16 +1,10 @@
-# Google Summer of Code 2017
+# Google Summer of Code
 
-<!--
-[NumFOCUS][] is a mentoring organization for
-[Google Summer of Code 2017][GSoC].
-[NumFOCUS][], an umbrella organization, supports and
-promotes world-class, innovative, open source scientific software.
--->
+| [Sub organizations] | [IDEAS LIST][IL] | [Student guides] |
 
-[NumFOCUS][] is applying to be a mentoring organization for
-[Google Summer of Code 2017][GSoC].
-[NumFOCUS][], an umbrella organization, supports and
-promotes world-class, innovative, open source scientific software.
+[NumFOCUS][] is applying to be a umbrella mentoring organization
+for [Google Summer of Code 2017][GSoC]. [NumFOCUS][], an umbrella organization,
+supports and promotes world-class, innovative, open source scientific software.
 
 <!--
 This Git repository stores information about NumFOCUS' participation in
@@ -18,10 +12,25 @@ Google Summer of Code 2017 program and previous editions.
 -->
 
 This Git repository stores information about NumFOCUS'
-application for Google Summer of Code 2017 and
-participation in previous editions.
+application for Google Summer of Code in the current and previous years.
 
-## Students and Mentors
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [Google Summer of Code](#google-summer-of-code)
+    - [Students](#students)
+    - [Sub Organizations](#sub-organizations)
+    - [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
+    - [NumFOCUS Projects](#numfocus-projects)
+        - [Fiscally Sponsored Projects GSoC Status](#fiscally-sponsored-projects-gsoc-status)
+        - [Affiliated Projects GSoC Status](#affiliated-projects-gsoc-status)
+        - [Other Projects GSoC Status](#other-projects-gsoc-status)
+
+<!-- markdown-toc end -->
+
+## Students 
+
+NumFOCUS is participating as a umbrella organization. This means that 
 
 Read [this document][CONTRIBUTING] to know how you can apply for the
 GSoC program. Please also check our [ideas list][IL].
@@ -31,8 +40,20 @@ Or send a email to gsoc@numfocus.org, our mailing list address, and
 please consider subscribing to the mailing list at
 https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc.
 
+## Sub Organizations
+
+If you want to participate as a sub organization of NumFOCUS please read
+this [guide][CONTRIBUTING-mentors.md].
 
 ## Organizations Confirmed Under NumFOCUS Umbrella
+
+<!-- 
+The list should contain for each project.
+ - A short description 
+ - link to their website
+ - link to ideas page
+ - link how to best contact them
+-->
 
 In alphabetic order.
 
@@ -178,21 +199,14 @@ In alphabetic order.
 
 </table>
 
-## Organizations Eligible Under NumFOCUS Umbrella
+## NumFOCUS Organizations
 
-All the projects listed [here][NumFOCUS-Projects].
-Other projects should send a email to gsoc@numfocus.org.
+Not all NumFOCUS organizations participate under our umbrella. These lists show
+which organizations are participating with GSoC and where you can find
+information how to work with them.
 
-To participate under the NumFOCUS umbrella,
-a sub-org must:
+### Fiscally Sponsored Organizations GSoC Status
 
-1.  Have one sub-org admin
-    and at least two mentors (**the sub-org admin can be one of the mentors**)
-    who are willing to commit to the full GSoC period.
-
-2.  Have a good ideas page.
-
-## NumFOCUS' Fiscally Sponsored Projects GSoC Status
 
 | Project                         | Status                            | Ideas Pages                                                                |
 | -------                         | ------                            | -----------                                                                |
@@ -215,7 +229,7 @@ a sub-org must:
 | [Stan]                          | Applying under NumFOCUS  umbrella | https://github.com/numfocus/gsoc/blob/master/2017/ideas-list-stan.md       |
 | [yt]                            | Not participating                 |                                                                            |
 
-## NumFOCUS' Affiliated Projects GSoC Status
+### Affiliated Organizations GSoC Status
 
 | Project              | Status                           | Ideas Pages                                                                         |
 | -------              | ------                           | -----------                                                                         |
@@ -239,7 +253,7 @@ a sub-org must:
 | [Theano]             | Applying with PSF                | https://github.com/Theano/Theano/wiki/GSoC2017                                      |
 | [xarray]             | Unknown                          |                                                                                     |
 
-## Other Projects GSoC Status
+### Other Organizations GSoC Status
 
 **This section intend to help students to find mentoring organizations that
 could receive their applications.**
@@ -250,7 +264,7 @@ could receive their applications.**
 
 [AstroPy]: http://www.astropy.org/
 [Bokeh]: http://bokeh.pydata.org/
-[CONTRIBUTING]: CONTRIBUTING.md
+[CONTRIBUTING]: CONTRIBUTING-students.md
 [Conda]: https://github.com/conda/conda
 [Cython]: http://cython.org/
 [CF]: https://conda-forge.github.io/
