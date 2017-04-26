@@ -43,4 +43,4 @@ To publish your project ideas here follow this guide.
     where students can ask questions.
 
 [CS]: CONTRIBUTING-students.md
-[template]: 
+[template]: templates/ideas-page.md
