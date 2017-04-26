@@ -1,11 +1,20 @@
 # Contributing Guide for Mentors and Sub Orgs
+## Organizations Eligible Under NumFOCUS Umbrella
 
-## Sub Organizations
+All the projects listed [here][NumFOCUS-Projects].
+Other projects should send a email to gsoc@numfocus.org.
 
-Only organization for are either financially sponsored or affiliated with
-NumFOCUS can participate as a sub-org. One person should be the sub org
-administrator and take responsibility to communicate with NumFOCUS and advertise
-GSoC to the community of their organization.
+To participate under the NumFOCUS umbrella,
+a sub-org must:
+
+1. Have one sub-org admin
+   and at least two mentors (**the sub-org admin can be one of the mentors**)
+   who are willing to commit to the full GSoC period.
+2. Must be a NumFOCUS sponsored or affiliated project
+3. Have a good ideas page.
+
+The sub org administrator and has the responsibility to communicate with
+NumFOCUS and advertise GSoC to the community of their organization.
 
 You can signup as a participating org with us until the application deadline for
 the current year or up to 5 days after Google announces that NumFOCUS is
