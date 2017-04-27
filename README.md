@@ -1,6 +1,6 @@
 # Google Summer of Code
 
-| [Sub organizations] | [IDEAS LIST][IL] | [Student guides] |
+| [Sub organizations](https://github.com/numfocus/gsoc/tree/update-docs#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
 [NumFOCUS][] is applying to be a umbrella mentoring organization
 for [Google Summer of Code 2017][GSoC]. [NumFOCUS][], an umbrella organization,
