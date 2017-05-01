@@ -14,7 +14,7 @@ information about working on your project soon.
     please contact one of the [administrators][admin]. We are here to
     help you.
 
-2.  The coding period only starts on 25 May. For today until it we
+2.  The coding period only starts on 30 May. For today until it we
     are at the "Community Bonding Period". During this period you
     should
 
@@ -42,6 +42,11 @@ information about working on your project soon.
         how you are doing and help you if need. It's good if you
         already start writing a blog post during the community
         bonding period to get in the habit.
+    
+    3.  [optional]
+        you can use tools like https://github.com/karandesai-96/devlog
+        to keep a track of your progress during the summer, this
+        will also come in handy while writing your blog posts.
 
 Good luck.
 
