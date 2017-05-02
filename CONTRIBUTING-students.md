@@ -21,9 +21,8 @@
 Experience shows that the best thing to help your application is to contact the
 organization you want to work with early. For this you can introduce yourself on
 the mailing list of the organization, maybe fix a small
-bug.
-[The Python Software Foundation Wiki](https://wiki.python.org/moin/SummerOfCode/2016#Students) lists
-a few things you can do to get started in free and open source software.
+bug. [The opensource guide](https://opensource.guide/how-to-contribute/) has a
+good introduction how to start contributing to open source projects.
 
 ## Am I experienced enough?
 
@@ -42,7 +41,7 @@ gives a good overview of this part for GSoC.
 
 ### During the application phase
 
-**The tips listed here can help your application. They are not required**
+*The tips listed here can help your application. They are not required*
 
 Organizations usually favor students that show a regular communication with
 possible mentors / organization until Google announces the accepted projects.
@@ -53,6 +52,8 @@ communication skills are an important part of GSoC since a student and mentor
 can rarely meet in person.
 
 ### During the summer
+
+*The items here are a requirement for students during the summer*
 
 **Communication**
 
