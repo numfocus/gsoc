@@ -21,7 +21,7 @@ the current year or up to 5 days after Google announces that NumFOCUS is
 participating as a umbrella org.
 
 When you sign-up with us you should also tell us your preferred way for students
-to contact you.
+to contact you and a link to your new contributor page if you have one.
 
 ## Mentors
 
