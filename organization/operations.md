@@ -33,20 +33,6 @@ will have the advantage that we automatically have a list of all mentors and
 their contact information. Mentors should be given access to numfocus mentoring
 mailing list.
 
-## Sub Org Administrators
-
-Each project/organization under NumFOCUS umbrella for GSoC
-should have one administrator.
-
-The **sub-org admins** are responsible for
-
-- provide a list of projects ideas to **organization administrator**
-- advertise the application to the project/organization they represent
-- connect users with NumFOCUS profile
-- request to **organization administrator** a minimum and a maximum number of
-  slots
-- assign mentors and students to available slots
-
 ## Timeline for Organization Administrators
 
 *January*: Ask NumFOCUS if they want to participate. Preferably with help of NumFOCUS staff
@@ -56,7 +42,7 @@ The **sub-org admins** are responsible for
 *March*: - If accepted advertise to possible students.
          - Accept sub-org until 5 days after Google announces participating orgs
          - check projects ideas page is ready for students again
-*April*: - request slots numbers from sub-orgs and tell them Google
+*April*: - request slots numbers from sub-orgs and tell them Google (google forms are good here)
          - select students for sub-orgs
          - have a blog post about accepted projects
 *First Evaluation*: - Ensure that every mentor fulfills the evaluation

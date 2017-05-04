@@ -23,6 +23,20 @@ participating as a umbrella org.
 When you sign-up with us you should also tell us your preferred way for students
 to contact you and a link to your new contributor page if you have one.
 
+## Sub Org Administrators
+
+Each project/organization under NumFOCUS umbrella for GSoC should have one
+administrator.
+
+The **sub-org admins** are responsible for
+
+- provide a list of projects ideas to **organization administrator**
+- advertise the application to the project/organization they represent
+- connect users with NumFOCUS profile
+- request to **organization administrator** a minimum and a maximum number of
+  slots
+- assign mentors and students to available slots
+
 ## Mentors
 
 To be a mentor please tell your sub-org administrator so he can give you all the
