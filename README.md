@@ -53,6 +53,7 @@ The list should contain for each project.
  - link to their website
  - link to ideas page
  - link how to best contact them
+ - link to beginners guide
 -->
 
 In alphabetic order.
