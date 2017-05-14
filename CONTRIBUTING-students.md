@@ -51,6 +51,25 @@ are a reliable student and that you have good communication skills. Good
 communication skills are an important part of GSoC since a student and mentor
 can rarely meet in person.
 
+When we evaluate an application we use the following point system to get a
+baseline comparison of students. We are listing those points to help you
+successfully apply and not missing an obvious point. You can always do more, but
+please check those points. We will be fair, we promise. You can always ask us
+and we will help you.
+
+- 5pts Communicated with us org mentors ?
+- 5pts Communicated with the community ?
+- 5pts Do you reference projects you coded WITH links to repos or provided code?
+- 5pts Do you provide all demanded ways of contact (email, skype, mobile/phone, and twitter, chat and/or tumblr if available)
+- 3pts Do you add a preliminary project plan (before, during, after GSOC)?
+- 3pts Do you state which project you are applying for and why you think you can do that?
+- 3pts Do you have time for GSOC? This is a paid job! State that you have time in your motivation letter, and list other commitments!
+- 1pts Added a link to ALL your application files to a cloud hoster like github or dropbox? (easy points! 😉 )
+- 0pts Be honest! Only universal Karma points. 🙂
+- 5pts Did you do push code to the existing code? Or did a bugfix?
+- 5pts Communication until accepted students are announced. 
+
+
 ### During the summer
 
 *The items here are a requirement for students during the summer*
@@ -169,3 +188,6 @@ $ pandoc -f markdown -t pdf YYYY/proposals/your-name.md
 [GSoC]: http://summerofcode.withgoogle.com/
 [ML]: organization/team.md
 [Pandoc]: http://pandoc.org/
+
+
+
