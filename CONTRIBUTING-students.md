@@ -78,6 +78,11 @@ can rarely meet in person.
   project at the end of the summer to pass the final evaluation.
 - The last point is a hard requirement. Make sure that your time plan includes
   time for the review process.
+  
+**Blog**
+
+- keep a regular journal of your experience as a student and blog at least once
+  every 2 weeks.
 
 ## Default Instructions
 
