@@ -19,7 +19,7 @@
 | -------             | ---------                                     |
 | Utkarsh Bansal      | http://utkarshbansal.me                       |
 
-## Fenics
+## FEniCS
 
 | Student             | Blog link                                     |
 | -------             | ---------                                     |
