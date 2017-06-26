@@ -40,5 +40,5 @@
 | -------           | ---------                                                                                                          |
 | Chinmaya Pancholi | https://chinmayapancholi13.github.io/                                                                              |
 | Prakhar Pratyush  | https://rare-technologies.com/google-summer-of-code-2017-live-blog-performance-improvement-in-gensim-and-fasttext/ |
-| Parul Sethi       | https://parulsethi.github.io/                                                                                      |
+| Parul Sethi       | https://rare-technologies.com/gsoc17-training-and-topic-visualizations/                                                                                  |
 
