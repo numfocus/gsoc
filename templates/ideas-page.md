@@ -18,8 +18,8 @@ do have some general instructions for students.
 
 One line project.
 
-| **Intensity**                          | **Priority                | **Involves**  | **Mentors**              |
-| -------------                          | -----------               | ------------- | -----------              |
+| **Intensity**                          | **Priority**              | **Involves**  | **Mentors**              |
+| -------------                          | ------------              | ------------- | -----------              |
 | {{ Trivial - Easy - Moderate - Hard }} | {{ Low - Medium - High }} | {{ }}         | {{ [@foo][], [@bar][] }} |
 
 #### Technical Details
