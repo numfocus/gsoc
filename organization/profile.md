@@ -159,11 +159,7 @@
 
 -   Proposal Tags
 
-    - nteract
-    - pymc3
-    - mdanalysis
-    - gensym
-    - matplotlib
+    - don't provide them
 
 ## Contact Methods
 

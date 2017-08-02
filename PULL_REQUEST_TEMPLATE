@@ -1,6 +1,15 @@
-Checklist for prospect students for Google Summer of Code 2017:
+Hi
 
-- [ ] I contacted NumFOCUS mentors before writing my proposal
-- [ ] I showed you my contribution (it can be any form: proof-of-concept project idea, some sample code or just a link to your commits from other project)
-- [ ] I linked to my sample contribution from the proposal
-- [ ] I linked to my opened issues in numfocus/gsoc repository from the proposal
+Thanks that you have chosen to apply for a NumFOCUS project. You can use pull
+requests on this repository to work on a draft of your proposal before the
+student application period begins to get early feedback.
+
+Before you open a pull request with a draft of your proposal please make sure
+that you have contacted your organization beforehand. Some organization prefer
+if you communicate on their preferred channel (email/irc) and are more likely to
+give you feedback then. On the [README][readme] we list the preferred contact
+information of every organization and project idea.
+
+best NumFOCUS GSoC Admins
+
+[readme]: https://github.com/numfocus/gsoc/blob/master/README.md
