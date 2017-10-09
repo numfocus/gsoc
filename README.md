@@ -73,50 +73,56 @@ information how to work with them.
 ### Fiscally Sponsored Organizations GSoC Status
 
 
-| Project                         | Status                            | Ideas Pages                                                                |
-| -------                         | ------                            | -----------                                                                |
-| [AstroPy]                       | Unknown  |                                   |
-| [Data Carpentry][DataCarpentry] | Unknown                           |                                                                            |
-| [FEniCS Project][FEniCSproject] | Unknown  |  |
-| [IPython]                       | Unknown  |                                                                            |
-| [Julia]                         | Unknown  |  |
-| [Matplotlib]                    | Unknown  |  |
-| [nteract]                       | Unknown  |  |
-| [NumPy]                         | Unknown  |                                                                            |
-| [Project Jupyter][Jupyter]      | Unknown  |                                                                            |
-| [pandas]                        | Unknown                           |                                                                            |
-| [PyMC3](pymc3)                  | Unknown  |  |
-| [PyTables]                      | Unknown                           |                                                                            |
-| [QuantEcon]                     | Unknown  |                                                                            |
-| [rOpenSci]                      | Unknown  |                                                                            |
-| [Software Carpentry][SCF]       | Unknown  |                                                                            |
-| [SymPy]                         | Unknown  |  |
-| [Stan]                          | Unknowna |  |
-| [yt]                            | Unknown                 |                                                                            |
+| Project                         | Status   | Ideas Pages               |
+| -------                         | ------   | -------                   |
+| [AstroPy]                       | Unknown  |                           |
+| [Data Carpentry][DataCarpentry] | Unknown  |                           |
+| [Software Carpentry][SCF]       | Unknown  |                           |
+| [Econ-ARK][Econ-ARK]            | Unknown  |                           |
+| [FEniCS Project][FEniCSproject] | Unknown  |                           |
+| [IPython]                       | Unknown  |                           |
+| [Julia]                         | Unknown  |                           |
+| [Matplotlib]                    | Unknown  |                           |
+| [nteract]                       | Unknown  |                           |
+| [NumPy]                         | Unknown  |                           |
+| [Open Journals][theoj]          | Unknown  |                           |
+| [Project Jupyter][Jupyter]      | Unknown  |                           |
+| [pandas]                        | Unknown  |                           |                                                 
+| [PyMC3](pymc3)                  | Unknown  |                           |
+| [PyTables]                      | Unknown  |                           |
+| [QuantEcon]                     | Unknown  |                           |
+| [rOpenSci]                      | Unknown  |                           |
+| [Shogun]                        | Unknown  |                           |
+| [SunPy]                         | Unknown  |                           |
+| [SymPy]                         | Unknown  |                           |
+| [Stan]                          | Unknown  |                           |
+| [yt]                            | Unknown  |                           |
 
 ### Affiliated Organizations GSoC Status
 
-| Project              | Status                           | Ideas Pages                                                                         |
-| -------              | ------                           | -----------                                                                         |
-| [Bokeh]              | Unknown                          |                                                                                     |
-| [Conda]              | Unknown                          |                                                                                     |
-| [Cython]             | Unknown                          |                                                                                     |
-| [Data Retriever][DR] | Unknown |  |
-| [Dask]               | Unknown                          |                                                                                     |
-| [DyND]               | Unknown                          |                                                                                     |
-| [Gensim]             | Unknown |  |
-| [MDAnalysis]         | Unknown |  |
-| [Numba]              | Unknown                          |                                                                                     |
-| [Orange]             | Unknown                          |                                                                                     |
-| [PythonXY]           | Unknown                          |                                                                                     |
-| [SciPy]              | Unknown                |  |
-| [scikit-image]       | Unknown                          |                                                                                     |
-| [scikit-bio]         | Unknown                |                                                                                     |
-| [scikit-learn]       | Unknown                |  |
-| [Statmodels]         | Unknown                |  |
-| [Spyder]             | Unknown                          |                                                                                     |
-| [Theano]             | Unknown                |  |
-| [xarray]             | Unknown                          |                                                                                     |
+| Project              | Status                           | Ideas Pages                       |
+| -------              | ------                           | -----------                       |
+| [Bokeh]              | Unknown                          |                                   |
+| [Conda]              | Unknown                          |                                   |
+| [conda-forge]        | Unknown                          |                                   |
+| [Cython]             | Unknown                          |                                   |
+| [Data Retriever][DR] | Unknown                          |                                   |
+| [Dask]               | Unknown                          |                                   |
+| [DyND]               | Unknown                          |                                   |
+| [Gensim]             | Unknown                          |                                   |
+| [MDAnalysis]         | Unknown                          |                                   |
+| [Numba]              | Unknown                          |                                   |
+| [Orange]             | Unknown                          |                                   |
+| [PythonXY]           | Unknown                          |                                   |
+| [SciPy]              | Unknown                          |                                   |
+| [scikit-image]       | Unknown                          |                                   |
+| [scikit-bio]         | Unknown                          |                                   |
+| [scikit-learn]       | Unknown                          |                                   |
+| [Statmodels]         | Unknown                          |                                   |
+| [Spack]              | Unknown                          |                                   |
+| [Spyder]             | Unknown                          |                                   |
+| [Theano]             | Unknown                          |                                   |
+| [xarray]             | Unknown                          |                                   |
 
 
 
@@ -124,12 +130,14 @@ information how to work with them.
 [Bokeh]: http://bokeh.pydata.org/
 [CONTRIBUTING]: CONTRIBUTING-students.md
 [Conda]: https://github.com/conda/conda
+[conda-forge]: https://conda-forge.org
 [Cython]: http://cython.org/
 [CF]: https://conda-forge.github.io/
 [Dask]: http://dask.pydata.org/
 [DataCarpentry]: http://datacarpentry.org/
 [DR]: http://www.data-retriever.org/
 [DyND]: http://libdynd.org/
+[Econ-ARK]: https://econ-ark.github.io/HARK/
 [FEniCSproject]: https://fenicsproject.org/
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
@@ -145,6 +153,7 @@ information how to work with them.
 [NumFOCUS]: http://numfocus.org/
 [NumPy]: http://numpy.scipy.org/
 [nteract]: https://nteract.io/
+[theoj]: http://www.theoj.org
 [Orange]: http://orange.biolab.si/
 [pandas]: http://pandas.pydata.org/
 [PyTables]: http://pytables.github.com/
@@ -157,9 +166,12 @@ information how to work with them.
 [scikit-learn]: http://scikit-learn.org/stable/
 [SciPy]: http://www.scipy.org/
 [SoftwareCarpentry]: http://software-carpentry.org/
+[Spack]: https://spack.io
 [Spyder]: http://code.google.com/p/spyderlib/
 [Statmodels]: http://statsmodels.sourceforge.net/
 [Stan]: http://mc-stan.org/
+[Shogun]: http://www.shogun-toolbox.org
+[SunPy]: http://sunpy.org
 [SymPy]: http://sympy.org
 [Theano]: http://deeplearning.net/software/theano/
 [xarray]: http://xarray.pydata.org/
