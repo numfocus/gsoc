@@ -61,7 +61,53 @@ In alphabetic order.
 
 <table>
 
+  <tr>
+    <td>
+      <img width="300px" src="https://avatars2.githubusercontent.com/u/11897326?v=3&s=200"/>
+    </td>
+    <td>
+       <h1>Conda Forge</h1>
+       <p>
+        A community led collection of recipes, build infrastructure and distributions for the conda package manager.
+       </p>
+       <p>
+         <a href="https://conda-forge.github.io/">Website</a>  | <a href="https://gitter.im/conda-forge/conda-forge.github.io">Gitter</a>
+       </p>
+    </td>
+  </tr>
   
+  <tr>
+   <td>
+     <img width="300px" src="img/ecodata-retriever.png"/>
+   </td>
+   <td>
+      <h1>Data Retriever</h1>
+      <p>
+        The Data Retriever is a package manager for data. It downloads, cleans,
+        and stores publicly available data, so that analysts spend less time
+        cleaning and managing data, and more time analyzing it.
+      </p>
+      <p>
+        <a href="http://www.data-retriever.org/">Website</a> 
+      </p>
+   </td>
+ </tr>
+  
+  <tr>
+    <td>
+      <img width="300px" src="http://matplotlib.org/_static/logo2.png" />
+    </td>
+    <td>
+       <h1>matplotlib</h1>
+       <p>matplotlib is a Python 2D plotting library which produces publication
+       quality figures in a variety of hardcopy formats and interactive
+       environments across platforms.</p>
+       <p>
+         <a href="https://matplotlib.org/">Website</a> | <a href="https://gitter.im/matplotlib/matplotlib">Gitter</a>  | <a href="https://mail.python.org/mailman/listinfo/matplotlib-users">Mailing list</a>
+       </p>
+    </td>
+  </tr>
+
 </table>
 
 ## NumFOCUS Organizations
@@ -73,56 +119,56 @@ information how to work with them.
 ### Fiscally Sponsored Organizations GSoC Status
 
 
-| Project                         | Status   | Ideas Pages               |
-| -------                         | ------   | -------                   |
-| [AstroPy]                       | Unknown  |                           |
-| [Data Carpentry][DataCarpentry] | Unknown  |                           |
-| [Software Carpentry][SCF]       | Unknown  |                           |
-| [Econ-ARK][Econ-ARK]            | Unknown  |                           |
-| [FEniCS Project][FEniCSproject] | Unknown  |                           |
-| [IPython]                       | Unknown  |                           |
-| [Julia]                         | Unknown  |                           |
-| [Matplotlib]                    | Unknown  |                           |
-| [nteract]                       | Unknown  |                           |
-| [NumPy]                         | Unknown  |                           |
-| [Open Journals][theoj]          | Unknown  |                           |
-| [Project Jupyter][Jupyter]      | Unknown  |                           |
-| [pandas]                        | Unknown  |                           |                                                 
-| [PyMC3](pymc3)                  | Unknown  |                           |
-| [PyTables]                      | Unknown  |                           |
-| [QuantEcon]                     | Unknown  |                           |
-| [rOpenSci]                      | Unknown  |                           |
-| [Shogun]                        | Unknown  |                           |
-| [SunPy]                         | Unknown  |                           |
-| [SymPy]                         | Unknown  |                           |
-| [Stan]                          | Unknown  |                           |
-| [yt]                            | Unknown  |                           |
+| Project                         | Status                           | Ideas Pages |
+| -------                         | ------                           | ----------- |
+| [AstroPy]                       | Unknown                          |             |
+| [Data Carpentry][DataCarpentry] | Unknown                          |             |
+| [Software Carpentry][SCF]       | Unknown                          |             |
+| [Econ-ARK][Econ-ARK]            | Unknown                          |             |
+| [FEniCS Project][FEniCSproject] | Unknown                          |             |
+| [IPython]                       | Unknown                          |             |
+| [Julia]                         | Unknown                          |             |
+| [Matplotlib]                    | Applying under NumFOCUS umbrella |             |
+| [nteract]                       | Unknown                          |             |
+| [NumPy]                         | Unknown                          |             |
+| [Open Journals][theoj]          | Unknown                          |             |
+| [Project Jupyter][Jupyter]      | Unknown                          |             |
+| [pandas]                        | Unknown                          |             |
+| [PyMC3](pymc3)                  | Unknown                          |             |
+| [PyTables]                      | Unknown                          |             |
+| [QuantEcon]                     | Unknown                          |             |
+| [rOpenSci]                      | Unknown                          |             |
+| [Shogun]                        | Unknown                          |             |
+| [SunPy]                         | Unknown                          |             |
+| [SymPy]                         | Unknown                          |             |
+| [Stan]                          | Unknown                          |             |
+| [yt]                            | Unknown                          |             |
 
 ### Affiliated Organizations GSoC Status
 
-| Project              | Status                           | Ideas Pages                       |
-| -------              | ------                           | -----------                       |
-| [Bokeh]              | Unknown                          |                                   |
-| [Conda]              | Unknown                          |                                   |
-| [conda-forge]        | Unknown                          |                                   |
-| [Cython]             | Unknown                          |                                   |
-| [Data Retriever][DR] | Unknown                          |                                   |
-| [Dask]               | Unknown                          |                                   |
-| [DyND]               | Unknown                          |                                   |
-| [Gensim]             | Unknown                          |                                   |
-| [MDAnalysis]         | Unknown                          |                                   |
-| [Numba]              | Unknown                          |                                   |
-| [Orange]             | Unknown                          |                                   |
-| [PythonXY]           | Unknown                          |                                   |
-| [SciPy]              | Unknown                          |                                   |
-| [scikit-image]       | Unknown                          |                                   |
-| [scikit-bio]         | Unknown                          |                                   |
-| [scikit-learn]       | Unknown                          |                                   |
-| [Statmodels]         | Unknown                          |                                   |
-| [Spack]              | Unknown                          |                                   |
-| [Spyder]             | Unknown                          |                                   |
-| [Theano]             | Unknown                          |                                   |
-| [xarray]             | Unknown                          |                                   |
+| Project              | Status                           | Ideas Pages |
+| -------              | ------                           | ----------- |
+| [Bokeh]              | Unknown                          |             |
+| [Conda]              | Unknown                          |             |
+| [conda-forge]        | Applying under NumFOCUS umbrella |             |
+| [Cython]             | Unknown                          |             |
+| [Data Retriever][DR] | Applying under NumFOCUS umbrella |             |
+| [Dask]               | Unknown                          |             |
+| [DyND]               | Unknown                          |             |
+| [Gensim]             | Unknown                          |             |
+| [MDAnalysis]         | Unknown                          |             |
+| [Numba]              | Unknown                          |             |
+| [Orange]             | Unknown                          |             |
+| [PythonXY]           | Unknown                          |             |
+| [SciPy]              | Unknown                          |             |
+| [scikit-image]       | Unknown                          |             |
+| [scikit-bio]         | Unknown                          |             |
+| [scikit-learn]       | Unknown                          |             |
+| [Statmodels]         | Unknown                          |             |
+| [Spack]              | Unknown                          |             |
+| [Spyder]             | Unknown                          |             |
+| [Theano]             | Unknown                          |             |
+| [xarray]             | Unknown                          |             |
 
 
 
