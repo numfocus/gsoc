@@ -110,7 +110,7 @@ In alphabetic order.
 
  <tr>
    <td>
-     <img width="300px" src="http://www.numfocus.org/uploads/6/0/6/9/60696727/8386978.png?106">
+     <img width="300px" src="img/stan-logo.png">
    </td>
    <td>
       <h1>Stan</h1>
