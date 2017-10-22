@@ -108,6 +108,33 @@ In alphabetic order.
     </td>
   </tr>
 
+  <tr>
+    <td>
+      <img width="300px" src="http://matplotlib.org/_static/logo2.png" />
+    </td>
+    <td>
+       <h1>matplotlib</h1>
+       <p>matplotlib is a Python 2D plotting library which produces publication
+       quality figures in a variety of hardcopy formats and interactive
+       environments across platforms.</p>
+       <p>
+         <a href="https://matplotlib.org/">Website</a> | <a href="https://gitter.im/matplotlib/matplotlib">Gitter</a>  | <a href="https://mail.python.org/mailman/listinfo/matplotlib-users">Mailing list</a>
+       </p>
+    </td>
+  </tr>
+ <tr>
+   <td>
+     <img width="300px" src="http://www.numfocus.org/uploads/6/0/6/9/60696727/8386978.png?106">
+   </td>
+   <td>
+      <h1>Stan</h1>
+      <p>Stan is a probabilistic programming language for data analysis, enabling automatic inference for a large class of statistical models. It features full Bayesian inference with Markov chain Monte Carlo sampling, approximate Bayesian inference with variational inference and the Laplace approximation, and penalized maximum likelihood estimation with optimization. The language integrates a Math Library written in C++, which can act as a stand-alone, and features derivatives for arithmetic, special functions, probability functions, and linear algebra.</p>
+      <p>
+        <a href="http://mc-stan.org/">Website</a> | <a href="http://discourse.mc-stan.org">discourse</a> 
+      </p>
+   </td>
+ </tr>
+
 </table>
 
 ## NumFOCUS Organizations
@@ -140,7 +167,7 @@ information how to work with them.
 | [rOpenSci]                      | Unknown                          |             |
 | [Shogun]                        | Unknown                          |             |
 | [SunPy]                         | Unknown                          |             |
-| [SymPy]                         | Unknown                          |             |
+| [SymPy]                         | Applying under NumFOCUS umbrella |             |
 | [Stan]                          | Unknown                          |             |
 | [yt]                            | Unknown                          |             |
 
