@@ -71,11 +71,26 @@ In alphabetic order.
         A community led collection of recipes, build infrastructure and distributions for the conda package manager.
        </p>
        <p>
-         <a href="https://conda-forge.github.io/">Website</a>  | <a href="https://docs.google.com/document/d/1KSQvcP3Hxr60IhV-_dcGIb4IkmAEeAXNIqdX_2sqYoM">Ideas Page</a> | <a href="https://gitter.im/conda-forge/conda-forge.github.io">Gitter</a>
+         <a href="https://conda-forge.github.io/">Website</a>  | <a href="https://gitter.im/conda-forge/conda-forge.github.io">Gitter</a>
        </p>
     </td>
   </tr>
   
+  <tr>
+    <td>
+      <img width="300px" src="http://matplotlib.org/_static/logo2.png" />
+    </td>
+    <td>
+       <h1>matplotlib</h1>
+       <p>matplotlib is a Python 2D plotting library which produces publication
+       quality figures in a variety of hardcopy formats and interactive
+       environments across platforms.</p>
+       <p>
+         <a href="https://matplotlib.org/">Website</a> | <a href="https://gitter.im/matplotlib/matplotlib">Gitter</a>  | <a href="https://mail.python.org/mailman/listinfo/matplotlib-users">Mailing list</a>
+       </p>
+    </td>
+  </tr>
+
 </table>
 
 ## NumFOCUS Organizations
