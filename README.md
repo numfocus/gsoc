@@ -77,6 +77,23 @@ In alphabetic order.
   </tr>
   
   <tr>
+   <td>
+     <img width="300px" src="img/ecodata-retriever.png"/>
+   </td>
+   <td>
+      <h1>Data Retriever</h1>
+      <p>
+        The Data Retriever is a package manager for data. It downloads, cleans,
+        and stores publicly available data, so that analysts spend less time
+        cleaning and managing data, and more time analyzing it.
+      </p>
+      <p>
+        <a href="http://www.data-retriever.org/">Website</a> 
+      </p>
+   </td>
+ </tr>
+  
+  <tr>
     <td>
       <img width="300px" src="http://matplotlib.org/_static/logo2.png" />
     </td>
@@ -135,7 +152,7 @@ information how to work with them.
 | [Conda]              | Unknown                          |             |
 | [conda-forge]        | Applying under NumFOCUS umbrella |             |
 | [Cython]             | Unknown                          |             |
-| [Data Retriever][DR] | Unknown                          |             |
+| [Data Retriever][DR] | Applying under NumFOCUS umbrella |             |
 | [Dask]               | Unknown                          |             |
 | [DyND]               | Unknown                          |             |
 | [Gensim]             | Unknown                          |             |
