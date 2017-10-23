@@ -88,7 +88,7 @@ In alphabetic order.
         cleaning and managing data, and more time analyzing it.
       </p>
       <p>
-        <a href="http://www.data-retriever.org/">Website</a> 
+        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/issues">Issues</a>
       </p>
    </td>
  </tr>
