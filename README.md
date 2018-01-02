@@ -167,7 +167,7 @@ information how to work with them.
 | [Shogun]                        | Unknown                          |             |
 | [SunPy]                         | Unknown                          |             |
 | [SymPy]                         | Applying under NumFOCUS umbrella |             |
-| [Stan]                          | Unknown                          |             |
+| [Stan]                          | Applying under NumFOCUS umbrella |             |
 | [yt]                            | Unknown                          |             |
 
 ### Affiliated Organizations GSoC Status
