@@ -110,7 +110,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="http://www.numfocus.org/uploads/6/0/6/9/60696727/pymc3_1.png">
+      <img width="300px" src="img/pymc3-logo.png">
     </td>
     <td>
        <h1>PyMC3</h1>
@@ -134,6 +134,18 @@ In alphabetic order.
    </td>
  </tr>
 
+ <tr>
+   <td>
+     <img width="300px" src="img/yt-logo.png">
+   </td>
+   <td>
+      <h1>yt</h1>
+      <p>yt is a community-developed analysis and visualization toolkit for examining datasets in a variety of scientific disciplines. yt aims to provide a simple uniform way of handling volumetric data, regardless of where it is generated. yt is developed in Python under the open-source model.</p>
+      <p>
+        <a href="http://yt-project.org/">Website</a> | <a href="http://yt-project.org/community.html">community-page</a> | <a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">mailing-list </a>
+      </p>
+   </td>
+ </tr>
 </table>
 
 ## NumFOCUS Organizations
@@ -168,7 +180,7 @@ information how to work with them.
 | [SunPy]                         | Unknown                          |             |
 | [SymPy]                         | Applying under NumFOCUS umbrella |             |
 | [Stan]                          | Applying under NumFOCUS umbrella |             |
-| [yt]                            | Unknown                          |             |
+| [yt]                            | Applying under NumFOCUS umbrella |             |
 
 ### Affiliated Organizations GSoC Status
 
