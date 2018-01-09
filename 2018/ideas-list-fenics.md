@@ -1,7 +1,6 @@
 # FEniCS Project
 
-In all cases, we recommend that prospective students join our [Slack channel]
-(https://fenicsproject-slack-invite.herokuapp.com/) and work with us to
+In all cases, we recommend that prospective students join our [Slack channel](https://fenicsproject-slack-invite.herokuapp.com/) and work with us to
 write their project proposals.
 
 ## Develop Complex Number support in FEniCS
@@ -52,7 +51,7 @@ usability improvement for users working with very complex geometries.
 
 There are two possible paths that could be taken in this project:
 
-1. Modify gmsh to directly support [XDMF](http://www.xdmf.org/index.php/XDMF_Model_and_F   ormat) format files. DOLFIN directly supports reading and writing XDMF.
+1. Modify gmsh to directly support [XDMF](http://www.xdmf.org/index.php/XDMF_Model_and_Format) format files. DOLFIN directly supports reading and writing XDMF.
 2. Contribute to and improve [meshio](https://github.com/nschloe/meshio) a package for converting between different mesh file formats, e.g. gmsh's ``.msh`` and ``.xdmf``.
 
 ### Open Source Development Experience
