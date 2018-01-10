@@ -9,10 +9,10 @@ write their project proposals.
 
 Currently the finite element solver of the FEniCS Project, DOLFIN, supports
 real numbers represented as floating point arithmetic. However, many
-applications, such as electromagenetics, require complex numbers, represented
+applications, such as electromagnetics, require complex numbers, represented
 as two floating point numbers representing a real and imaginary part. In this
 project you will adapt DOLFIN and FFC to support complex numbers, opening up
-the possibility of large-scale electromagenetics problems to the users of the
+the possibility of large-scale electromagnetics problems to the users of the
 FEniCS Project.
 
 ### Description
