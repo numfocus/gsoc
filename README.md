@@ -110,6 +110,19 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="300px" src="img/mdanalysis.png" />
+    </td>
+    <td>
+       <h1>MDAnalysis</h1>
+       <p>MDAnalysis is a Python library to analyze trajectories from molecular dynamics (MD) simulations.</p>
+       <p>
+         <a href="https://www.mdanalysis.org/">Website</a> | <a href="https://groups.google.com/forum/#!forum/mdnalysis-devel">Mailing list</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="300px" src="img/pymc3-logo.png">
     </td>
     <td>
@@ -194,7 +207,7 @@ information how to work with them.
 | [Dask]               | Unknown                          |             |
 | [DyND]               | Unknown                          |             |
 | [Gensim]             | Unknown                          |             |
-| [MDAnalysis]         | Unknown                          |             |
+| [MDAnalysis]         | Applying under NumFOCUS umbrella |             |
 | [Numba]              | Unknown                          |             |
 | [Orange]             | Unknown                          |             |
 | [PythonXY]           | Unknown                          |             |
