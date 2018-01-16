@@ -92,6 +92,25 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+
+  <tr>
+   <td>
+     <img width="300px" src="img/fenics.png"/>
+   </td>
+   <td>
+      <h1>FEniCS</h1>
+      <p>
+        FEniCS is an automated finite element library used to solve equations used in
+        modeling, featuring a domain-specific language and automated code generation.
+        Users input a problem that looks very much like mathematical notation; FEniCS
+        then translates that into computer code. It solves problems for which there is
+        no analytical (exact) solution numerically.
+      </p>
+      <p>
+        <a href="https://fenicsproject.org/">Website</a>
+      </p>
+   </td>
+ </tr>
   
   <tr>
     <td>
@@ -176,7 +195,7 @@ information how to work with them.
 | [Data Carpentry][DataCarpentry] | Unknown                          |             |
 | [Software Carpentry][SCF]       | Unknown                          |             |
 | [Econ-ARK][Econ-ARK]            | Unknown                          |             |
-| [FEniCS Project][FEniCSproject] | Unknown                          |             |
+| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |             |
 | [IPython]                       | Unknown                          |             |
 | [Julia]                         | Unknown                          |             |
 | [Matplotlib]                    | Applying under NumFOCUS umbrella |             |
@@ -191,7 +210,7 @@ information how to work with them.
 | [rOpenSci]                      | Unknown                          |             |
 | [Shogun]                        | Unknown                          |             |
 | [SunPy]                         | Unknown                          |             |
-| [SymPy]                         | Applying under NumFOCUS umbrella |             |
+| [SymPy]                         | Unkown                           |             |
 | [Stan]                          | Applying under NumFOCUS umbrella |             |
 | [yt]                            | Applying under NumFOCUS umbrella |             |
 
