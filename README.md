@@ -92,6 +92,25 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+
+  <tr>
+   <td>
+     <img width="300px" src="img/fenics.png"/>
+   </td>
+   <td>
+      <h1>FEniCS</h1>
+      <p>
+        FEniCS is an automated finite element library used to solve equations used in
+        modeling, featuring a domain-specific language and automated code generation.
+        Users input a problem that looks very much like mathematical notation; FEniCS
+        then translates that into computer code. It solves problems for which there is
+        no analytical (exact) solution numerically.
+      </p>
+      <p>
+        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a>
+      </p>
+   </td>
+ </tr>
   
   <tr>
     <td>
@@ -110,13 +129,26 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="http://www.numfocus.org/uploads/6/0/6/9/60696727/pymc3_1.png">
+      <img width="300px" src="img/mdanalysis.png" />
+    </td>
+    <td>
+       <h1>MDAnalysis</h1>
+       <p>MDAnalysis is a Python library to analyze trajectories from molecular dynamics (MD) simulations.</p>
+       <p>
+         <a href="https://www.mdanalysis.org/">Website</a> | <a href="https://groups.google.com/forum/#!forum/mdnalysis-devel">Mailing list</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img width="300px" src="img/pymc3-logo.png">
     </td>
     <td>
        <h1>PyMC3</h1>
        <p>PyMC3 is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://gitter.im/pymc-devs/pymc">Gitter</a> 
+         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> 
        </p>
     </td>
   </tr>
@@ -134,6 +166,18 @@ In alphabetic order.
    </td>
  </tr>
 
+ <tr>
+   <td>
+     <img width="300px" src="img/yt-logo.png">
+   </td>
+   <td>
+      <h1>yt</h1>
+      <p>yt is a community-developed analysis and visualization toolkit for examining datasets in a variety of scientific disciplines. yt aims to provide a simple uniform way of handling volumetric data, regardless of where it is generated. yt is developed in Python under the open-source model.</p>
+      <p>
+        <a href="http://yt-project.org/">Website</a> | <a href="http://yt-project.org/community.html">community-page</a> | <a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">mailing-list </a>
+      </p>
+   </td>
+ </tr>
 </table>
 
 ## NumFOCUS Organizations
@@ -151,7 +195,7 @@ information how to work with them.
 | [Data Carpentry][DataCarpentry] | Unknown                          |             |
 | [Software Carpentry][SCF]       | Unknown                          |             |
 | [Econ-ARK][Econ-ARK]            | Unknown                          |             |
-| [FEniCS Project][FEniCSproject] | Unknown                          |             |
+| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |             |
 | [IPython]                       | Unknown                          |             |
 | [Julia]                         | Unknown                          |             |
 | [Matplotlib]                    | Applying under NumFOCUS umbrella |             |
@@ -166,9 +210,9 @@ information how to work with them.
 | [rOpenSci]                      | Unknown                          |             |
 | [Shogun]                        | Unknown                          |             |
 | [SunPy]                         | Unknown                          |             |
-| [SymPy]                         | Applying under NumFOCUS umbrella |             |
-| [Stan]                          | Unknown                          |             |
-| [yt]                            | Unknown                          |             |
+| [SymPy]                         | Unkown                           |             |
+| [Stan]                          | Applying under NumFOCUS umbrella |             |
+| [yt]                            | Applying under NumFOCUS umbrella |             |
 
 ### Affiliated Organizations GSoC Status
 
@@ -182,7 +226,7 @@ information how to work with them.
 | [Dask]               | Unknown                          |             |
 | [DyND]               | Unknown                          |             |
 | [Gensim]             | Unknown                          |             |
-| [MDAnalysis]         | Unknown                          |             |
+| [MDAnalysis]         | Applying under NumFOCUS umbrella |             |
 | [Numba]              | Unknown                          |             |
 | [Orange]             | Unknown                          |             |
 | [PythonXY]           | Unknown                          |             |
