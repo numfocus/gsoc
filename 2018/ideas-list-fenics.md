@@ -1,7 +1,9 @@
 # FEniCS Project
 
-In all cases, we recommend that prospective students join our [Slack channel](https://fenicsproject-slack-invite.herokuapp.com/) and work with us to
-write their project proposals.
+In all cases, we recommend that prospective students join our [Slack
+channel](https://fenicsproject-slack-invite.herokuapp.com/) and work with us to
+write their project proposals. The below are just ideas; if you have your own
+idea, we are more than happy to discuss it with you!
 
 ## Complex Number support in FEniCS
 
@@ -82,7 +84,56 @@ Install [ParaView](http://www.paraview.org) and view the output from the FEniCS 
 The FEniCS tutorial at https://fenicsproject.org/tutorial/
 has an up-to-date description of using FEniCS to solve partial differential equations.
 
-## Vectorisation
+
+## Mixed-cell meshes 
+
+### Abstract
+
+Finite element methods require a discretisation of a domain into small cells
+(or elements), called a mesh. At the moment, FEniCS only supports meshes
+consisting of cells of a single type (e.g. triangles, tetrahedrons,
+quadrilaterials, or hexahedrons).  However, in many applications, it is
+important to use meshes consisting of cells of multiple types. For example, to
+effectively mesh boundary layers around complex geometries in fluid mechanics
+problems, it is optimal to use mostly hexahedral cells with a few cells of
+alternative type for tractability of the meshing problem. In this project,
+you will extend FEniCS to fully support meshes with cells of multiple types. 
+
+### Description
+
+| **Intensity** | **Priority | **Involves**  | **Mentors** |
+| ------------- | -----------| ------------- | ----------- |
+| High      | Medium     | Python, C++   | [Jack S. Hale and Chris N. Richardson](mailto:mail@jackhale.co.uk) |
+
+### Technical Details
+
+You will need to:
+
+1) Allow DOLFIN's mesh class to support cells of multiple types.
+2) Extend DOLFIN's XDMF IO functionality to read and write meshes
+   with multiple types.
+3) Extend the degree of freedom handler to correctly construct
+   degree of freedom maps for meshes with cells of multiple types.
+4) Adapt DOLFIN's assembler to choose the correct element tensor
+   construction on a per-cell basis.
+
+### Open Source Development Experience
+
+This project requires knowledge of C++ and Python. You will mainly be working
+with DOLFIN, the finite element solver of the FEniCS Project. Some knowledge of
+finite element methods would also be desirable, but not necessary. Students
+with interest in computational geometry may find this project particularly
+suitable. 
+
+### First steps
+
+Install FEniCS from https://bitbucket.org/fenics-project/dolfin and try out the demos.
+Install [ParaView](http://www.paraview.org) and view the output from the FEniCS demos.
+The FEniCS tutorial at https://fenicsproject.org/tutorial/
+has an up-to-date description of using FEniCS to solve partial differential equations.
+
+
+## Maximising performance on modern architectures with data-level parallelism 
 
 ### Abstract
 
