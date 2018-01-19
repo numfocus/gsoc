@@ -12,4 +12,4 @@ page of each organization under NumFocus umbrella at this page.
 - yt https://github.com/yt-project/gsoc-2018
 - PyMC3 https://github.com/pymc-devs/pymc3/wiki/GSoC-2018-projects
 
-See the [README](https://github.com/numfocus/gsoc/blob/master/READMD.md) for contact information of each org.
+See the [README](https://github.com/numfocus/gsoc/blob/master/README.md) for contact information of each org.
