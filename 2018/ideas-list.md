@@ -11,5 +11,6 @@ page of each organization under NumFocus umbrella at this page.
 - MDAnalysis https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2018-Project-Ideas
 - yt https://github.com/yt-project/gsoc-2018
 - PyMC3 https://github.com/pymc-devs/pymc3/wiki/GSoC-2018-projects
+- gensim  https://github.com/RaRe-Technologies/gensim/wiki/GSoC-2018-project-ideas
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md) for contact information of each org.
