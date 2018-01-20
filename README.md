@@ -155,13 +155,13 @@ In alphabetic order.
 
  <tr>
    <td>
-     <img width="300px" src="img/stan-logo.png">
+     <img width="300px" src="img/https://raw.githubusercontent.com/tmylk/image_gensim/master/logo-gensim_large.png">
    </td>
    <td>
-      <h1>Stan</h1>
-      <p>Stan is a probabilistic programming language for data analysis, enabling automatic inference for a large class of statistical models. It features full Bayesian inference with Markov chain Monte Carlo sampling, approximate Bayesian inference with variational inference and the Laplace approximation, and penalized maximum likelihood estimation with optimization. The language integrates a Math Library written in C++, which can act as a stand-alone, and features derivatives for arithmetic, special functions, probability functions, and linear algebra.</p>
+      <h1>Gensim</h1>
+      <p>"Topic Modelling for Humans." Gensim is an open-source Python library for topic modelling, document indexing and similarity retrieval with large corpora. Target audience is the natural language processing (NLP) and information retrieval (IR) community. Memory-independent and distributed algorithms.</p>
       <p>
-        <a href="http://mc-stan.org/">Website</a> | <a href="http://discourse.mc-stan.org/c/google-summer-of-code">discourse</a> 
+        <a href="https://github.com/RaRe-Technologies/gensim">Website</a>  | <a href="https://github.com/RaRe-Technologies/gensim/wiki/GSOC-2018-project-ideas">Ideas Page</a> | <a href="mailto:student-projects@rare-technologies.com">Mailing List</a>
       </p>
    </td>
  </tr>
@@ -178,6 +178,20 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+ 
+  <tr>
+   <td>
+     <img width="300px" src="img/yt-logo.png">
+   </td>
+   <td>
+      <h1>yt</h1>
+      <p>yt is a community-developed analysis and visualization toolkit for examining datasets in a variety of scientific disciplines. yt aims to provide a simple uniform way of handling volumetric data, regardless of where it is generated. yt is developed in Python under the open-source model.</p>
+      <p>
+        <a href="http://yt-project.org/">Website</a> | <a href="http://yt-project.org/community.html">community-page</a> | <a href="https://mail.python.org/mm3/mailman3/lists/yt-dev.python.org/">mailing-list </a>
+      </p>
+   </td>
+ </tr>
+ 
 </table>
 
 ## NumFOCUS Organizations
