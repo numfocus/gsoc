@@ -155,7 +155,7 @@ In alphabetic order.
 
  <tr>
    <td>
-     <img width="300px" src="img/https://raw.githubusercontent.com/tmylk/image_gensim/master/logo-gensim_large.png">
+     <img width="300px" src="img/logo-gensim_large.png">
    </td>
    <td>
       <h1>Gensim</h1>
