@@ -112,6 +112,19 @@ In alphabetic order.
    </td>
  </tr>
   
+ <tr>
+   <td>
+     <img width="300px" src="img/logo-gensim_large.png">
+   </td>
+   <td>
+      <h1>Gensim</h1>
+      <p>"Topic Modelling for Humans." Gensim is an open-source Python library for topic modelling, document indexing and similarity retrieval with large corpora. Target audience is the natural language processing (NLP) and information retrieval (IR) community. Memory-independent and distributed algorithms.</p>
+      <p>
+        <a href="https://github.com/RaRe-Technologies/gensim">Website</a>  | <a href="https://github.com/RaRe-Technologies/gensim/wiki/GSOC-2018-project-ideas">Ideas Page</a> | <a href="mailto:student-projects@rare-technologies.com">Mailing List</a>
+      </p>
+   </td>
+ </tr>
+
   <tr>
     <td>
       <img width="300px" src="http://matplotlib.org/_static/logo2.png" />
@@ -153,33 +166,8 @@ In alphabetic order.
     </td>
   </tr>
 
- <tr>
-   <td>
-     <img width="300px" src="img/logo-gensim_large.png">
-   </td>
-   <td>
-      <h1>Gensim</h1>
-      <p>"Topic Modelling for Humans." Gensim is an open-source Python library for topic modelling, document indexing and similarity retrieval with large corpora. Target audience is the natural language processing (NLP) and information retrieval (IR) community. Memory-independent and distributed algorithms.</p>
-      <p>
-        <a href="https://github.com/RaRe-Technologies/gensim">Website</a>  | <a href="https://github.com/RaRe-Technologies/gensim/wiki/GSOC-2018-project-ideas">Ideas Page</a> | <a href="mailto:student-projects@rare-technologies.com">Mailing List</a>
-      </p>
-   </td>
- </tr>
 
  <tr>
-   <td>
-     <img width="300px" src="img/yt-logo.png">
-   </td>
-   <td>
-      <h1>yt</h1>
-      <p>yt is a community-developed analysis and visualization toolkit for examining datasets in a variety of scientific disciplines. yt aims to provide a simple uniform way of handling volumetric data, regardless of where it is generated. yt is developed in Python under the open-source model.</p>
-      <p>
-        <a href="http://yt-project.org/">Website</a> | <a href="http://yt-project.org/community.html">community-page</a> | <a href="https://mail.python.org/mm3/mailman3/lists/yt-dev.python.org/">mailing-list </a>
-      </p>
-   </td>
- </tr>
- 
-  <tr>
    <td>
      <img width="300px" src="img/yt-logo.png">
    </td>
@@ -224,7 +212,7 @@ information how to work with them.
 | [rOpenSci]                      | Unknown                          |             |
 | [Shogun]                        | Unknown                          |             |
 | [SunPy]                         | Unknown                          |             |
-| [SymPy]                         | Unkown                           |             |
+| [SymPy]                         | Unknown                          |             |
 | [Stan]                          | Applying under NumFOCUS umbrella |             |
 | [yt]                            | Applying under NumFOCUS umbrella |             |
 
@@ -239,7 +227,7 @@ information how to work with them.
 | [Data Retriever][DR] | Applying under NumFOCUS umbrella |             |
 | [Dask]               | Unknown                          |             |
 | [DyND]               | Unknown                          |             |
-| [Gensim]             | Unknown                          |             |
+| [Gensim]             | Applying under NumFOCUS umbrella |             |
 | [MDAnalysis]         | Applying under NumFOCUS umbrella |             |
 | [Numba]              | Unknown                          |             |
 | [Orange]             | Unknown                          |             |
