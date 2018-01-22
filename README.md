@@ -127,21 +127,6 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="http://matplotlib.org/_static/logo2.png" />
-    </td>
-    <td>
-       <h1>matplotlib</h1>
-       <p>matplotlib is a Python 2D plotting library which produces publication
-       quality figures in a variety of hardcopy formats and interactive
-       environments across platforms.</p>
-       <p>
-         <a href="https://matplotlib.org/">Website</a> | <a href="https://gitter.im/matplotlib/matplotlib">Gitter</a>  | <a href="https://mail.python.org/mailman/listinfo/matplotlib-users">Mailing list</a>
-       </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
       <img width="300px" src="img/mdanalysis.png" />
     </td>
     <td>
@@ -200,7 +185,7 @@ information how to work with them.
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |             |
 | [IPython]                       | Unknown                          |             |
 | [Julia]                         | Unknown                          |             |
-| [Matplotlib]                    | Applying under NumFOCUS umbrella |             |
+| [Matplotlib]                    | Unknown                          |             |
 | [nteract]                       | Unknown                          |             |
 | [NumPy]                         | Unknown                          |             |
 | [Open Journals][theoj]          | Unknown                          |             |
