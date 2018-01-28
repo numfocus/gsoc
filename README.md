@@ -124,6 +124,19 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+ 
+  <tr>
+   <td>
+     <img width="300px" src="https://github.com/JuliaLang/julialang.github.com/blob/master/images/logo.png">
+   </td>
+   <td>
+      <h1>Julia</h1>
+      <p>Julia is a high-level, high-performance dynamic programming language for numerical computing. It provides a sophisticated compiler, distributed parallel execution, numerical accuracy, and an extensive mathematical function library. Julia’s Base library, largely written in Julia itself, also integrates mature, best-of-breed open source C and Fortran libraries for linear algebra, random number generation, signal processing, and string processing. </p>
+      <p>
+        <a href="https://julialang.org/">Website</a>  | <a href="https://julialang.org/soc/ideas-page.html">Ideas Page</a>
+      </p>
+   </td>
+ </tr>
 
   <tr>
     <td>
@@ -198,7 +211,7 @@ information how to work with them.
 | [Econ-ARK][Econ-ARK]            | Unknown                          |             |
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |             |
 | [IPython]                       | Unknown                          |             |
-| [Julia]                         | Unknown                          |             |
+| [Julia]                         | Applying under NumFOCUS umbrella |             |
 | [Matplotlib]                    | Unknown                          |             |
 | [nteract]                       | Unknown                          |             |
 | [NumPy]                         | Unknown                          |             |
