@@ -215,30 +215,29 @@ information how to work with them.
 ### Fiscally Sponsored Organizations GSoC Status
 
 
-| Project                         | Status                           | Ideas Pages |
-| -------                         | ------                           | ----------- |
-| [AstroPy]                       | Unknown                          |             |
-| [Data Carpentry][DataCarpentry] | Unknown                          |             |
-| [Software Carpentry][SCF]       | Unknown                          |             |
-| [Econ-ARK][Econ-ARK]            | Unknown                          |             |
-| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |             |
-| [IPython]                       | Unknown                          |             |
-| [Julia]                         | Applying under NumFOCUS umbrella |             |
-| [Matplotlib]                    | Unknown                          |             |
-| [nteract]                       | Unknown                          |             |
-| [NumPy]                         | Unknown                          |             |
-| [Open Journals][theoj]          | Unknown                          |             |
-| [Project Jupyter][Jupyter]      | Unknown                          |             |
-| [pandas]                        | Unknown                          |             |
-| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella |             |
-| [PyTables]                      | Unknown                          |             |
-| [QuantEcon]                     | Unknown                          |             |
-| [rOpenSci]                      | Unknown                          |             |
-| [Shogun]                        | Applying under NumFOCUS umbrella |             |
-| [SunPy]                         | Unknown                          |             |
-| [SymPy]                         | Unknown                          |             |
-| [Stan]                          | Applying under NumFOCUS umbrella |             |
-| [yt]                            | Applying under NumFOCUS umbrella |             |
+| Project                         | Status                           | Ideas Pages                                         |
+| -------                         | ------                           | -----------                                         |
+| [AstroPy]                       | Unknown                          |                                                     |
+| [Econ-ARK][Econ-ARK]            | Not Participating                |                                                     |
+| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |                                                     |
+| [IPython]                       | Unknown                          |                                                     |
+| [Julia]                         | Applying under NumFOCUS umbrella |                                                     |
+| [Matplotlib]                    | Unknown                          |                                                     |
+| [nteract]                       | Unknown                          |                                                     |
+| [NumPy]                         | Not Participating                |                                                     |
+| [Open Journals][theoj]          | Unknown                          |                                                     |
+| [Project Jupyter][Jupyter]      | Unknown                          |                                                     |
+| [pandas]                        | Unknown                          |                                                     |
+| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella |                                                     |
+| [PyTables]                      | Unknown                          |                                                     |
+| [QuantEcon]                     | Unknown                          |                                                     |
+| [rOpenSci]                      | Not Participating                |                                                     |
+| [Shogun]                        | Applying under NumFOCUS umbrella |                                                     |
+| [SunPy]                         | Unknown                          |                                                     |
+| [SymPy]                         | Applying as SymPy                | https://github.com/sympy/sympy/wiki/GSoC-2018-Ideas |
+| [Stan]                          | Applying under NumFOCUS umbrella |                                                     |
+| [yt]                            | Applying under NumFOCUS umbrella |                                                     |
+| [cantera]                       | Unkown                           |                                                     |
 
 ### Affiliated Organizations GSoC Status
 
@@ -248,6 +247,7 @@ information how to work with them.
 | [Conda]              | Unknown                          |             |
 | [conda-forge]        | Applying under NumFOCUS umbrella |             |
 | [Cython]             | Unknown                          |             |
+| [Dash]               | Unknown                          |             |
 | [Data Retriever][DR] | Applying under NumFOCUS umbrella |             |
 | [Dask]               | Unknown                          |             |
 | [DyND]               | Unknown                          |             |
@@ -255,6 +255,7 @@ information how to work with them.
 | [MDAnalysis]         | Applying under NumFOCUS umbrella |             |
 | [Numba]              | Unknown                          |             |
 | [Orange]             | Unknown                          |             |
+| [Pomegranate]        | Unknown                          |             |
 | [PythonXY]           | Unknown                          |             |
 | [SciPy]              | Unknown                          |             |
 | [scikit-image]       | Unknown                          |             |
@@ -270,13 +271,14 @@ information how to work with them.
 
 [AstroPy]: http://www.astropy.org/
 [Bokeh]: http://bokeh.pydata.org/
+[cantera]:  http://cantera.org/docs/sphinx/html/index.html
 [CONTRIBUTING]: CONTRIBUTING-students.md
 [Conda]: https://github.com/conda/conda
 [conda-forge]: https://conda-forge.org
 [Cython]: http://cython.org/
 [CF]: https://conda-forge.github.io/
+[Dash]: https://plot.ly/dash/
 [Dask]: http://dask.pydata.org/
-[DataCarpentry]: http://datacarpentry.org/
 [DR]: http://www.data-retriever.org/
 [DyND]: http://libdynd.org/
 [Econ-ARK]: https://econ-ark.github.io/HARK/
@@ -298,6 +300,7 @@ information how to work with them.
 [theoj]: http://www.theoj.org
 [Orange]: http://orange.biolab.si/
 [pandas]: http://pandas.pydata.org/
+[Pomegranate]: https://pomegranate.readthedocs.io/en/latest/
 [PyTables]: http://pytables.github.com/
 [PythonXY]: http://code.google.com/p/pythonxy/wiki/Welcome
 [rOpenSci]: http://ropensci.org/
@@ -307,7 +310,6 @@ information how to work with them.
 [scikit-image]: http://scikit-image.org/
 [scikit-learn]: http://scikit-learn.org/stable/
 [SciPy]: http://www.scipy.org/
-[SoftwareCarpentry]: http://software-carpentry.org/
 [Spack]: https://spack.io
 [Spyder]: http://code.google.com/p/spyderlib/
 [Statmodels]: http://statsmodels.sourceforge.net/
