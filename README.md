@@ -217,7 +217,7 @@ information how to work with them.
 
 | Project                         | Status                           | Ideas Pages                                         |
 | -------                         | ------                           | -----------                                         |
-| [AstroPy]                       | Unknown                          |                                                     |
+| [AstroPy]                       | Applying with Open Astronomy     | http://openastronomy.org/gsoc/gsoc2018/#/projects   |
 | [Econ-ARK][Econ-ARK]            | Not Participating                |                                                     |
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |                                                     |
 | [IPython]                       | Unknown                          |                                                     |
@@ -233,7 +233,7 @@ information how to work with them.
 | [QuantEcon]                     | Unknown                          |                                                     |
 | [rOpenSci]                      | Not Participating                |                                                     |
 | [Shogun]                        | Applying under NumFOCUS umbrella |                                                     |
-| [SunPy]                         | Unknown                          |                                                     |
+| [SunPy]                         | Applying with Open Astronomy     | http://openastronomy.org/gsoc/gsoc2018/#/projects   |
 | [SymPy]                         | Applying as SymPy                | https://github.com/sympy/sympy/wiki/GSoC-2018-Ideas |
 | [Stan]                          | Applying under NumFOCUS umbrella |                                                     |
 | [yt]                            | Applying under NumFOCUS umbrella |                                                     |
