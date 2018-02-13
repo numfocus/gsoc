@@ -179,7 +179,7 @@ In alphabetic order.
 
 <tr>
    <td>
-     <img width="300px" src="img/img/shogun-logo.png">
+     <img width="300px" src="img/shogun-logo.png">
    </td>
    <td>
       <h1>Shogun</h1>
