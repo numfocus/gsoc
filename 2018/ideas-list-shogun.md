@@ -5,6 +5,16 @@ For information regarding how to get started and submit a successful GSoC applic
 
 # Projects
 
+
+- [Fundamental Machine Learning Algorithms III: Finding the bad guys](#fundamental-machine-learning-algorithms-iii-finding-the-bad-guys)
+- [Continuous detoxification](#continuous-detoxification)
+- [Distributing Shogun](#distributing-shogun)
+- [Improving the user experience](#improving-the-user-experience)
+- [Inside that black box](#inside-that-black-box)
+- [Flexible modelselection](#flexible-modelselection)
+
+
+
 ## Fundamental Machine Learning Algorithms III: Finding the bad guys
 We are continuing the highly popular project of the last years: the aim is to improve our implementations of fundamental ML algorithms.
 As this year's focus is on user experiences with Shogun, we focus on ***finding the bad guys***.
@@ -118,16 +128,6 @@ You need know
  * Design patterns and software engineering principles
 
 
-### First steps
-For every sub-project:
-
-* Write down a list of classes/methods/concepts that will need change (there are comments below)
-* Think (and discuss) how every sub-project's problems could be solved efficiently
-* Write down pseudo-code of how the API should look like
-* Write down pseudo-code of how the internals would look like
-* Draft minimal a prototype of how you want to implement your change
-* Work on a one-by-one basis
-
 ### Details
 Here are some sub-projects. We are open for more:
 
@@ -207,6 +207,16 @@ More topics that one could work on include: serialization, smart pointers, using
 Let us know if something in particular is of interest for you.
 We might also change things around while the project is running ;)
 
+### First steps
+For every sub-project:
+
+* Write down a list of classes/methods/concepts that will need change (there are comments below)
+* Think (and discuss) how every sub-project's problems could be solved efficiently
+* Write down pseudo-code of how the API should look like
+* Write down pseudo-code of how the internals would look like
+* Draft minimal a prototype of how you want to implement your change
+* Work on a one-by-one basis
+
 ### Why this is cool
 Cleaning up the interal APIs of Shogun will lead to a huge exposure to advanced software concept, and you can be sure to learn a lot about API design, algorithms, and good practices in software development.
 The project will make it much easier to develop clean code within Shogun, and as such make the project more attractive for scientists to implement their work in.
@@ -277,13 +287,6 @@ You need know
  * Machine Learning basics
  * Other ML libraries (with good APIs)
 
-### First steps
-Write user stories!
-Those are pseudo-code examples of how the user interacts with the library, and how that should look like.
-Your application needs to contain a couple of those (and ideas how to make them happen inside Shogun).
-Cover all the topics you want to address (see below), and try to be as precise as possible.
-See also below for more details.
-
 ### Details
 Here are some sub-projects. We are open for more:
 
@@ -325,6 +328,13 @@ gmm.as_distribution().predict(features_test) # returns the log-probability for e
 gmm.as_distribution().as_mixture().get_component(idx) # returns a Gaussian component
 gmm.as_distribution().sample(100) # returns 100 samples from the mixture
 ```
+
+### First steps
+Write user stories!
+Those are pseudo-code examples of how the user interacts with the library, and how that should look like.
+Your application needs to contain a couple of those (and ideas how to make them happen inside Shogun).
+Cover all the topics you want to address (see below), and try to be as precise as possible.
+See also below for more details.
 
 ### Exception handling
 Currently, Shogun's exception handling is not ideal. It is just the same `ShogunException` that is thrown and in some languages it causes the program to exit. Our error messages are sometimes good (if the developer was motivated), and sometimes quite bad -- they don't tell the user what she did wrong.
@@ -523,10 +533,6 @@ Be ready to learn a lot.
  ## Arrow Buffer as CFeatures memory backend
  Now that more and more data science project starts to use [Apache Arrow](https://arrow.apache.org/) as a memory backend
 or at least has the support to export the data into an Arrow Buffer (see for example [SPARK-13534](https://issues.apache.org/jira/browse/SPARK-13534)) it would be great that some of the Shogun's `CFeatures` classes could use Arrow Buffer as a memory backend.
-
-### Mentors
- * [Viktor](Viktor%20Gal) (github: [vigsterkr](https://github.com/vigsterkr), IRC: wiking)
- * [Sergey](Sergey%20Lisitsyn) (github: [lisitsyn](https://github.com/lisitsyn), IRC: lisitsyn)
 
 ### Difficulty & Requirements
 **Medium.**
