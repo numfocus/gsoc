@@ -177,6 +177,18 @@ In alphabetic order.
     </td>
   </tr>
 
+<tr>
+   <td>
+     <img width="300px" src="img/img/shogun-logo.png">
+   </td>
+   <td>
+      <h1>Shogun</h1>
+      <p>Shogun is and open-source machine learning library that offers a wide range of efficient and unified machine learning methods.</p>
+      <p>
+        <a href="http://shogun.ml/">Website</a> | <a href="https://github.com/shogun-toolbox/shogun/wiki/Google-Summer-of-Code-2018-Projects">Ideas Page</a> | <a href="https://gitter.im/shogun-toolbox/shogun">Gitter</a>
+      </p>
+   </td>
+ </tr>
 
 
  <tr>
@@ -222,7 +234,7 @@ information how to work with them.
 | [PyTables]                      | Unknown                          |             |
 | [QuantEcon]                     | Unknown                          |             |
 | [rOpenSci]                      | Unknown                          |             |
-| [Shogun]                        | Unknown                          |             |
+| [Shogun]                        | Applying under NumFOCUS umbrella |             |
 | [SunPy]                         | Unknown                          |             |
 | [SymPy]                         | Unknown                          |             |
 | [Stan]                          | Applying under NumFOCUS umbrella |             |
