@@ -67,7 +67,7 @@ and we will help you.
 - 1pts Added a link to ALL your application files to a cloud hoster like github or dropbox? (easy points! 😉 )
 - 0pts Be honest! Only universal Karma points. 🙂
 - 5pts Did you do push code to the existing code? Or did a bugfix?
-- 5pts Communication until accepted students are announced. 
+- 5pts Communication until accepted students are announced.
 
 
 ### During the summer
@@ -97,7 +97,7 @@ and we will help you.
   project at the end of the summer to pass the final evaluation.
 - The last point is a hard requirement. Make sure that your time plan includes
   time for the review process.
-  
+
 **Blog**
 
 - keep a regular journal of your experience as a student and blog at least once
@@ -183,11 +183,8 @@ before into PDF you can use [Pandoc][Pandoc].
 $ pandoc -f markdown -t pdf YYYY/proposals/your-name.md
 ~~~
 
-[IL]: 2015/ideas-list.md
+[IL]: 2018/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
 [GSoC]: http://summerofcode.withgoogle.com/
 [ML]: organization/team.md
 [Pandoc]: http://pandoc.org/
-
-
-
