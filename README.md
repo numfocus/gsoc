@@ -133,7 +133,7 @@ In alphabetic order.
       <h1>Julia</h1>
       <p>Julia is a high-level, high-performance dynamic programming language for numerical computing. It provides a sophisticated compiler, distributed parallel execution, numerical accuracy, and an extensive mathematical function library. Julia’s Base library, largely written in Julia itself, also integrates mature, best-of-breed open source C and Fortran libraries for linear algebra, random number generation, signal processing, and string processing. </p>
       <p>
-        <a href="https://julialang.org/">Website</a>  | <a href="https://julialang.org/soc/ideas-page.html">Ideas Page</a>
+        <a href="https://julialang.org/">Website</a>  | <a href="https://julialang.org/soc/ideas-page.html">Ideas Page</a> | <a href="https://discourse.julialang.org/">discourse</a>
       </p>
    </td>
  </tr>
