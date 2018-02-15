@@ -2,9 +2,9 @@
 
 | [Sub organizations](https://github.com/numfocus/gsoc/tree/update-docs#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
-[NumFOCUS][] is applying to be a umbrella mentoring organization
-for [Google Summer of Code 2018][GSoC]. [NumFOCUS][], an umbrella organization,
-supports and promotes world-class, innovative, open source scientific software.
+[NumFOCUS][] will be an umbrella mentoring organization
+for [Google Summer of Code 2018][GSoC]. [NumFOCUS][] supports and 
+promotes world-class, innovative, open source scientific software.
 
 <!--
 This Git repository stores information about NumFOCUS' participation in
@@ -31,14 +31,16 @@ application for Google Summer of Code in the current and previous years.
 
 ## Students 
 
-NumFOCUS is participating as a umbrella organization. This means that 
+NumFOCUS is participating as a umbrella organization. This means that
+you will need to identify a specific project to apply to under the
+NumFOCUS umbrella. (Projects are listed below.)
 
-Read [this document][CONTRIBUTING] to know how you can apply for the
-GSoC program. Please also check our [ideas list][IL].
+Read [this document][CONTRIBUTING] to learn how to apply for the
+GSoC program with NumFOCUS. Please also check out our [ideas list][IL].
 
-For any questions please open an issue in our [issue tracker][issues].
-Or send a email to gsoc@numfocus.org, our mailing list address, and
-please consider subscribing to the mailing list at
+For any questions, please open an issue in our [issue tracker][issues]
+or send a email to gsoc@numfocus.org, our mailing list address.
+Please also consider subscribing to the mailing list at
 https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc.
 
 ## Sub Organizations
