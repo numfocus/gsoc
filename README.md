@@ -3,7 +3,7 @@
 | [Sub organizations](https://github.com/numfocus/gsoc/tree/update-docs#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
 [NumFOCUS][] will be an umbrella mentoring organization
-for [Google Summer of Code 2018][GSoC]. [NumFOCUS][] supports and 
+for [Google Summer of Code 2018][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
 <!--
@@ -29,7 +29,7 @@ application for Google Summer of Code in the current and previous years.
 
 <!-- markdown-toc end -->
 
-## Students 
+## Students
 
 NumFOCUS is participating as a umbrella organization. This means that
 you will need to identify a specific project to apply to under the
@@ -50,9 +50,9 @@ this [guide](CONTRIBUTING-mentors.md).
 
 ## Organizations Confirmed Under NumFOCUS Umbrella
 
-<!-- 
+<!--
 The list should contain for each project.
- - A short description 
+ - A short description
  - link to their website
  - link to ideas page
  - link how to best contact them
@@ -62,6 +62,22 @@ The list should contain for each project.
 In alphabetic order.
 
 <table>
+
+  <tr>
+    <td>
+      <img width="300px" src="img/cantera-logo.png"/>
+    </td>
+    <td>
+       <h1>Cantera</h1>
+       <p>
+        Cantera is a library to solve problems involving thermodynamics, chemical kinetics, and
+        transport.
+       </p>
+       <p>
+         <a href="http://cantera.org/">Website</a>  | <a href="https://github.com/Cantera/cantera/wiki/GSoC-2018-Ideas">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cantera-users">Mailing List</a>
+       </p>
+    </td>
+  </tr>
 
   <tr>
     <td>
@@ -77,7 +93,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-  
+
   <tr>
    <td>
      <img width="300px" src="img/ecodata-retriever.png"/>
@@ -113,7 +129,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-  
+
  <tr>
    <td>
      <img width="300px" src="img/logo-gensim_large.png">
@@ -126,7 +142,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
- 
+
   <tr>
    <td>
      <img width="300px" src="https://github.com/JuliaLang/julialang.github.com/blob/master/images/logo.png">
@@ -161,11 +177,11 @@ In alphabetic order.
        <h1>PyMC3</h1>
        <p>PyMC3 is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> 
+         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a>
        </p>
     </td>
   </tr>
-  
+
   <tr>
     <td>
       <img width="300px" src="https://github.com/stan-dev/logos/blob/master/logo_tm.png">
@@ -205,7 +221,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
- 
+
 </table>
 
 ## NumFOCUS Organizations
@@ -220,6 +236,7 @@ information how to work with them.
 | Project                         | Status                           | Ideas Pages                                         |
 | -------                         | ------                           | -----------                                         |
 | [AstroPy]                       | Applying with Open Astronomy     | http://openastronomy.org/gsoc/gsoc2018/#/projects   |
+| [Cantera]                       | Applying under NumFOCUS umbrella |                                                     |
 | [Econ-ARK][Econ-ARK]            | Not Participating                |                                                     |
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |                                                     |
 | [IPython]                       | Unknown                          |                                                     |
@@ -239,7 +256,6 @@ information how to work with them.
 | [SymPy]                         | Applying as SymPy                | https://github.com/sympy/sympy/wiki/GSoC-2018-Ideas |
 | [Stan]                          | Applying under NumFOCUS umbrella |                                                     |
 | [yt]                            | Applying under NumFOCUS umbrella |                                                     |
-| [cantera]                       | Unkown                           |                                                     |
 
 ### Affiliated Organizations GSoC Status
 
