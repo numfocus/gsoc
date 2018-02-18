@@ -125,7 +125,7 @@ In alphabetic order.
         no analytical (exact) solution numerically.
       </p>
       <p>
-        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a>
+        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a> | <a href ="https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-fenics.md"> Ideas Page 
       </p>
    </td>
  </tr>
@@ -236,11 +236,11 @@ information how to work with them.
 | Project                         | Status                           | Ideas Pages                                         |
 | -------                         | ------                           | -----------                                         |
 | [AstroPy]                       | Applying with Open Astronomy     | http://openastronomy.org/gsoc/gsoc2018/#/projects   |
-| [Cantera]                       | Applying under NumFOCUS umbrella |                                                     |
+| [Cantera]                       | Applying under NumFOCUS umbrella | https://github.com/Cantera/cantera/wiki/GSoC-2018-Ideas                                                |
 | [Econ-ARK][Econ-ARK]            | Not Participating                |                                                     |
-| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |                                                     |
+| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |   https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-fenics.md                                                  |
 | [IPython]                       | Unknown                          |                                                     |
-| [Julia]                         | Applying under NumFOCUS umbrella |                                                     |
+| [Julia]                         | Applying under NumFOCUS umbrella |https://julialang.org/soc/ideas-page.html            |
 | [Matplotlib]                    | Unknown                          |                                                     |
 | [nteract]                       | Unknown                          |                                                     |
 | [NumPy]                         | Not Participating                |                                                     |
@@ -251,10 +251,10 @@ information how to work with them.
 | [PyTables]                      | Unknown                          |                                                     |
 | [QuantEcon]                     | Unknown                          |                                                     |
 | [rOpenSci]                      | Not Participating                |                                                     |
-| [Shogun]                        | Applying under NumFOCUS umbrella |                                                     |
+| [Shogun]                        | Applying under NumFOCUS umbrella | https://github.com/shogun-toolbox/shogun/wiki/Google-Summer-of-Code-2018-Projects                                                    |
 | [SunPy]                         | Applying with Open Astronomy     | http://openastronomy.org/gsoc/gsoc2018/#/projects   |
 | [SymPy]                         | Applying as SymPy                | https://github.com/sympy/sympy/wiki/GSoC-2018-Ideas |
-| [Stan]                          | Applying under NumFOCUS umbrella |                                                     |
+| [Stan]                          | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-stan.md                                                    |
 | [yt]                            | Applying under NumFOCUS umbrella |                                                     |
 
 ### Affiliated Organizations GSoC Status
