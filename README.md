@@ -177,7 +177,7 @@ In alphabetic order.
        <h1>PyMC3</h1>
        <p>PyMC3 is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a>
+         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc3/wiki/GSoC-2018-projects">Ideas Page</a>
        </p>
     </td>
   </tr>
@@ -247,7 +247,7 @@ information how to work with them.
 | [Open Journals][theoj]          | Unknown                          |                                                     |
 | [Project Jupyter][Jupyter]      | Unknown                          |                                                     |
 | [pandas]                        | Unknown                          |                                                     |
-| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella |                                                     |
+| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | https://github.com/pymc-devs/pymc3/wiki/GSoC-2018-projects |
 | [PyTables]                      | Unknown                          |                                                     |
 | [QuantEcon]                     | Unknown                          |                                                     |
 | [rOpenSci]                      | Not Participating                |                                                     |
