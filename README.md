@@ -217,7 +217,7 @@ In alphabetic order.
       <h1>yt</h1>
       <p>yt is a community-developed analysis and visualization toolkit for examining datasets in a variety of scientific disciplines. yt aims to provide a simple uniform way of handling volumetric data, regardless of where it is generated. yt is developed in Python under the open-source model.</p>
       <p>
-        <a href="http://yt-project.org/">Website</a> | <a href="http://yt-project.org/community.html">community-page</a> | <a href="https://mail.python.org/mm3/mailman3/lists/yt-dev.python.org/">mailing-list </a>
+        <a href="http://yt-project.org/">Website</a> | <a href="https://github.com/yt-project/gsoc-2018">Ideas Page</a> | <a href="http://yt-project.org/community.html">community-page</a> | <a href="https://mail.python.org/mm3/mailman3/lists/yt-dev.python.org/">mailing-list </a>
       </p>
    </td>
  </tr>
