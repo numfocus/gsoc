@@ -17,7 +17,7 @@
 
 ## Abstract
 + Organizing and managing data sets is a time-consuming task in many programming processes.  We often spend lot of time in finding and sorting out data sets which we needs in programming. The Data-Retriever is a automated tool for developer to standardize data sets they want to use in programming.
-+ The goal of the project is to make Data-Retriever more efficient when deal with large data sets by using Python. It could have faster speed and use less memory. Perhaps some parallel algorithm or using of image processing unit like CUDA coding of Python(like PyCUDA, based on C/C++) can accelerate the speed of codes. After that, an efficient databases should have strong-directional indexes to make finding and using data more easily.
++ The goal of the project is to make Data-Retriever more efficient when dealing with large data sets by using Python. It could have faster speed and use less memory. Perhaps some parallel algorithm or using of image processing unit like CUDA coding of Python(like PyCUDA, based on C/C++) can accelerate the speed of codes. After that, an efficient databases should have strong-directional indexes to make finding and using data more easily.
 
 
 ## Technical Details
@@ -26,9 +26,7 @@
    * We can use image processing unit to achieve code acceleration, like PyCUDA,PyOpenGL. And these are accelerated from the hardware level. If there is a powerful GPU, we can use it to calculate, thereby reducing the valuable resources of the CPU and memory.
    * We can use Cython, Numba. These projects are dedicated to translating Python code into C, C++, and some other code which run faster.
    * Ctypes and can help us to achieve the operation of the Python underlying object. It can be used to build compiled C objects in memory. And call the function of C in the shared library. However, ctypes are already included in Python's standard library.
-   * After that, Julia also provides us with high code running speed and good compatibility with python. 
-* Speed and memory footprint are often not been optimized simultaneously, and we always look for their balance in program development. Through these ideas above we can make code more efficient both in speed and in weight.
-
+* Speed and memory footprint are often not optimized simultaneously, and we always look for their balance in program development. Through these ideas above we can make code more efficient both in speed and in weight.
 
 ## Schedule
 + ### March 28 - May 14 **Community Bonding**
@@ -52,6 +50,7 @@
     * Submit the code before the end of GSoC.
     * Merge the PRs.
 ## Future works
- After the GSoC I can provides correspondingly processed data sets with a high degree of precision according to my profession. And I can implement the availability of the R packages, through my knowledge of the R language.
+* My contributions' link is https://github.com/weecology/retriever/commits?author=CoronaeW
+* After the GSoC I could provides correspondingly processed data sets with a high degree of precision according to my profession which can enrich the database of Data Retriever. 
 ## Why me
 The GSoC provides me with the opportunity to contact with open-source python project which I am interested in. I have relevant programming skills and experience, so it is possible for me to succeed in this project.  In the past I have been involved in many projects which need lots of data sets.The Retrieval of Land Surface Characteristic Parameters Based on Landsat-7 ETM+ in the Pan Third Pole Region Which is a project I have done. It used lots of satellite datasets when programming in Python so I had to consider to increase the speed of code. It may provide ideas to how to improve Data Retriever efficiency for large scale datasets. After that I am going to continue my study in my school as a postgraduate, and I should have enough time to finish this work.
