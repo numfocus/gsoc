@@ -287,100 +287,74 @@ Free datasets for Similarity Learning will also be added to [gensim-data](https:
 
 # Deliverables
 
-The whole project can be broken down into 4 milestones
-1. Benchmark and Evaluation of existing models
-2. Get one model working end-to-end
-3. Repeat the same for remaining models
-4. Disseminate models
+The whole project can be broken down into the following phases:
+1. Setup of evaluation scheme for all the models which will be introduced
+2. Collect/Implement models for comparisons, benchmarking and parameter tuning
+3. Choose the best models and integrate them into gensim
+4. Work on improving model
 
 ### Community Bonding Period (April 23 to May 14)
-* Design the api for the models in gensim (Basically what goes where and how the user calls it)
-* Discuss and update the list of models to be implemented.
-* Start verifying and benchmarking all the mentioned models using [MatchZoo](https://github.com/faneshion/MatchZoo)
-* Publish results and comparisons as a blog
+* Read papers relating to Similarity Learning
+* Work on ongoing PRs
+* Address existing issues and doubts on gitter and stack overflow
 
-**Milestone 1 complete!**
+(It's possible that the list of models may change at this point and accomodations will be made for the same.)
 
 ### Week 1 (May 14 to May 20)
-* Find and understand existing data preprocessing code in gensim
-* Develop the code for similarity learning specific data preprocessing
-* Add data streaming wherever possible
+* Discuss and create an evaluation pipeline for possible models to be included
+* Evaluate current list of models to be implemented and make possible additions/deletions
 
 ### Week 2 (May 21 to May 27)
-* Stitch existing and new code together into a module for Similarity Learning related Preprocessing
-* Write Test cases for Data Preprocessing module
-* Write Documentation for the module-
-
-I will first make a concrete and full implementation of DSSM and then apply the same process to the remaining models
+* Develop or use existing implementation of DSSM, CDSSM, MV-LSTM
+* Tune parameters and establish performance benchmark
 
 ### Week 3 (May 28 to June 3)
-* Evaluate and take feedback on existing DSSM code for possible improvements
-* Make improvements to code(if required)
-* Add dependencies for installation and continuous integration
-* Add model serializability and other such gensim supports
+* Develop or use existing implementation of aNMM, ARC-I, ARC-II
+* Tune parameters and establish performance benchmark
 
 ### Week 4 (June 4 to June 10)
-* Add test cases
-* Add documentation
-* Write a blog describing the new model
-* Merge my code into `gensim/develop`
-
-**Milestone 2 complete!** <br/>
-At this point, a full end-to-end DSSM model will be ready which will set the precedent for further models.
+* Develop or use existing implementation of DRMM, K-NRM, Match Pyramid
+* Tune parameters and establish performance benchmark
 
 ### Midterm Evaluation 1 (June 11 to June 15)
 * Work on feedback
 * Catch up on any unseen work
 
-The final list on models might have changed by the time I reach this point.
-This week onwards, I will work on 2/3 models per week. If the number of models is more, I will increase the rate.
-Assuming the list remains the same, here is what I'll do:
-
 ### Week 5 (June 16 to June 24)
-* Evaluate and take feedback on CDSSM and MV-LSTM
-* Make improvements (if any)
-* Add test cases and documentation
+* Develop or use existing implementation of DUET
+* Write a detailed blog with the benchmarks and process
+* Make a final list of models to be integrated into gensim
 
 ### Week 6 (June 25 to July 1)
-* Evaluate and take feedback on  ARC-I and ARC-II
-* Make improvements (if any)
-* Add test cases and documentation
-* Write a blog about the models so far
+* Design an API for the new models to be integrated
+* Start integrating models into gensim (make similar API, add streaming support, tests, documentation)
 
 ### Week 7 (July 2 to July 8)
-* Evaluate and take feedback on aNNM and DRRM
-* Make improvements (if any)
-* Add test cases and documentation
+* Continue integrating models into gensim (make similar API, add streaming support, tests, documentation)
 
 ### MidTerm Evaluation 2 (July 9 to July 13)
-* Work on feeback
-* Catch up on any pending work
+* Work on feedback
 
 ### Week 8 (July 14 to July 22)
-* Evaluate and take feedback on K-NRM and DRMM
-* Make improvements (if any)
-* Add test cases and documentation
+* Finish up all model integrations
+* Make code merge ready
 
 ### Week 9 (July 23 to July 29)
-* Evaluate and take feedback on Match Pyramid and DUET
-* Make improvements (if any)
-* Add test cases and documentation
-* Write a blog about the models so far
-
-**Milestone 3 Complete!**
-All the proposed models have been developed
+* Start working towards making models tuned to get SOTA performance
+* Discuss and evaluate current models for possible improvements
+* Write blog about all the new models
 
 ### Week 10 (July 30 to August 5)
-* add datasets to [gensim-data](https://github.com/RaRe-Technologies/gensim-data)
-* merge all changes into `gensim/develop`
-* Release blogs with demonstrations of usage
+* Clean up code and merge it into gensim/develop
+* Add datasets into gensim-data
+* Release benchmark results comparing all models and all datasets
+* Release code and tutorial showing demonstrations
 
 ### Final Submission (August 6 to August 14)
-* Release baselines with newer models
-* Write blogs with further demonstrations and use cases
-* Catch up on work (if any)
+* Get changes merged
+* Work on any feedback
 
-**Milestone 4 (Dissemination) and GSOC Complete!**
+**GSOC Complete!**
 
 ## About me
 I am a 4th year Computer Science and Engineering student at Manipal Institute of Technology, Manipal, India. Before I got interested in training deep neural networks, I used to develop games. I spent a good deal of time developing [bearmomentum](https://drive.google.com/open?id=1SDXLPdGqfFJ86O8UhN-mHQAsU4sAAJ4i), a game about exploiting conservation of momentum to get a mama bear to meet her long lost child (using guns!). When I first learnt of word2vec, it felt like magic and my interests moved to Deep Learning. Several LSTMs, CNNs and GANs later, I am a big Deep Learning fan. I am also a student of the Udacity Self Driving Car Nanodegree where I made some awesome projects like a [Traffic Sign Classifier](https://github.com/aneesh-joshi/Traffic_Signs_Classifier), a [Behavioural Clone](https://github.com/aneesh-joshi/SelfDrivingCarBehaviouralClone) and a [Vehicle Detection system](https://github.com/aneesh-joshi/VehicleDetectionSystem). I am a big open source fan and have contributed to gensim and [OpenMined](https://github.com/OpenMined). Apart from all this technical stuff, I like making [digital art](https://www.instagram.com/aneesh._.joshi/) :)
