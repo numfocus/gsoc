@@ -298,11 +298,12 @@ The whole project can be broken down into the following phases:
 * Work on ongoing PRs
 * Address existing issues and doubts on gitter and stack overflow
 
-(It's possible that the list of models may change at this point and accomodations will be made for the same.)
 
 ### Week 1 (May 14 to May 20)
 * Discuss and create an evaluation pipeline for possible models to be included
 * Evaluate current list of models to be implemented and make possible additions/deletions
+
+(It's possible that the list of models may change at this point and accomodations will be made for the same.)
 
 ### Week 2 (May 21 to May 27)
 * Develop or use existing implementation of DSSM, CDSSM, MV-LSTM
