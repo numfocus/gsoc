@@ -338,7 +338,7 @@ The whole project can be broken down into the following phases:
 
 ### Week 8 (July 14 to July 22)
 * Finish up all model integrations
-* Make code merge ready
+* Make code merge-ready
 
 ### Week 9 (July 23 to July 29)
 * Start working towards making models tuned to get SOTA performance
@@ -346,14 +346,14 @@ The whole project can be broken down into the following phases:
 * Write blog about all the new models
 
 ### Week 10 (July 30 to August 5)
-* Clean up code and merge it into gensim/develop
-* Add datasets into gensim-data
+* Clean up code and merge it into `gensim/develop`
+* Add datasets into `gensim-data`
 * Release benchmark results comparing all models and all datasets
 * Release code and tutorial showing demonstrations
 
 ### Final Submission (August 6 to August 14)
-* Get changes merged
 * Work on any feedback
+* Get changes merged
 
 **GSOC Complete!**
 
