@@ -125,7 +125,7 @@ In alphabetic order.
         no analytical (exact) solution numerically.
       </p>
       <p>
-        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a> | <a href ="https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-fenics.md"> Ideas Page 
+        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a> | <a href ="https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-fenics.md"> Ideas Page
       </p>
    </td>
  </tr>
