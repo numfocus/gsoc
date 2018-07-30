@@ -329,7 +329,7 @@ information how to work with them.
 [scikit-learn]: http://scikit-learn.org/stable/
 [SciPy]: http://www.scipy.org/
 [Spack]: https://spack.io
-[Spyder]: http://code.google.com/p/spyderlib/
+[Spyder]: https://www.spyder-ide.org/
 [Statmodels]: http://statsmodels.sourceforge.net/
 [Stan]: http://mc-stan.org/
 [Shogun]: http://www.shogun-toolbox.org
