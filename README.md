@@ -125,7 +125,7 @@ In alphabetic order.
         no analytical (exact) solution numerically.
       </p>
       <p>
-        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a> | <a href ="https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-fenics.md"> Ideas Page 
+        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a> | <a href ="https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-fenics.md"> Ideas Page
       </p>
    </td>
  </tr>
@@ -329,7 +329,7 @@ information how to work with them.
 [scikit-learn]: http://scikit-learn.org/stable/
 [SciPy]: http://www.scipy.org/
 [Spack]: https://spack.io
-[Spyder]: http://code.google.com/p/spyderlib/
+[Spyder]: https://www.spyder-ide.org/
 [Statmodels]: http://statsmodels.sourceforge.net/
 [Stan]: http://mc-stan.org/
 [Shogun]: http://www.shogun-toolbox.org
