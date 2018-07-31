@@ -39,7 +39,7 @@ The **sub-org admins** are responsible for the following:
 
 ## Mentors
 
-To be a mentor please tell your sub-org administrator so he can give you all the
+To be a mentor please tell your sub-org administrator so they can give you all the
 information you need to sign up.
 
 ## Projects
@@ -56,7 +56,7 @@ and have to acquire a huge amount of domain knowledge.
 
 There has to be at least one primary mentor and one backup mentor per project.
 This means you should have at least 2 mentors available. A mentor can only be
-'primary' for one student but a backup for as many as he likes. The sub org
+'primary' for one student but a backup for as many as they like. The sub org
 admin can also be a mentor.
 
 If you have a proposal you can use our [proposal templates][template] and
