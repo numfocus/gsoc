@@ -258,7 +258,7 @@ Through my previous experiences, I have gained  proficiency in common Python Lib
 - Simple Twitter Sentiment Analysis using TextBlob Python library[\[31\]](https://github.com/ajinkyaT/twitter_sentiment_analysis)
 - Web crawler written for scraping amazon.in data[\[32\]](https://github.com/ajinkyaT/ori/blob/master/ama.py)
 
-I am also attaching my [CV](https://drive.google.com/open?id=0Byqx076qBK7jcGtsVFc1dVpUWmc) for a more detailed explanation of my previous experiences.
+I am also attaching my [CV](nada) for a more detailed explanation of my previous experiences.
 
 I have opened a pull request for this project here [#1976](https://github.com/RaRe-Technologies/gensim/pull/1976) 
 
