@@ -2,13 +2,13 @@
 
 | [Sub organizations](https://github.com/numfocus/gsoc/tree/update-docs#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
-[NumFOCUS][] will be an umbrella mentoring organization
-for [Google Summer of Code 2018][GSoC]. [NumFOCUS][] supports and
+[NumFOCUS][] will be applying again as an umbrella mentoring organization
+for [Google Summer of Code 2019][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
 <!--
 This Git repository stores information about NumFOCUS' participation in
-Google Summer of Code 2018 program and previous editions.
+Google Summer of Code 2019 program and previous editions.
 -->
 
 This Git repository stores information about NumFOCUS'
@@ -79,7 +79,7 @@ In alphabetic order.
     </td>
   </tr>
 
-  <tr>
+ <!--  <tr>
     <td>
       <img width="300px" src="https://avatars2.githubusercontent.com/u/11897326?v=3&s=200"/>
     </td>
@@ -221,7 +221,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-
+ -->
 </table>
 
 ## NumFOCUS Organizations
@@ -235,27 +235,27 @@ information how to work with them.
 
 | Project                         | Status                           | Ideas Pages                                         |
 | -------                         | ------                           | -----------                                         |
-| [AstroPy]                       | Applying with Open Astronomy     | http://openastronomy.org/gsoc/gsoc2018/#/projects   |
-| [Cantera]                       | Applying under NumFOCUS umbrella | https://github.com/Cantera/cantera/wiki/GSoC-2018-Ideas                                                |
-| [Econ-ARK][Econ-ARK]            | Not Participating                |                                                     |
-| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |   https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-fenics.md                                                  |
+| [AstroPy]                       | Unknown     |    |
+| [Cantera]                       | Applying under NumFOCUS umbrella | https://github.com/Cantera/cantera/wiki/GSoC-2019-Ideas                                                |
+| [Econ-ARK][Econ-ARK]            | Unknown                |                                                     |
+| [FEniCS Project][FEniCSproject] | Unknown |                                                     |
 | [IPython]                       | Unknown                          |                                                     |
-| [Julia]                         | Applying under NumFOCUS umbrella |https://julialang.org/soc/ideas-page.html            |
+| [Julia]                         | Unknown |           |
 | [Matplotlib]                    | Unknown                          |                                                     |
 | [nteract]                       | Unknown                          |                                                     |
-| [NumPy]                         | Not Participating                |                                                     |
+| [NumPy]                         | Unknown                |                                                     |
 | [Open Journals][theoj]          | Unknown                          |                                                     |
 | [Project Jupyter][Jupyter]      | Unknown                          |                                                     |
 | [pandas]                        | Unknown                          |                                                     |
-| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | https://github.com/pymc-devs/pymc3/wiki/GSoC-2018-projects |
+| [PyMC3](pymc3)                  | Unknown |  |
 | [PyTables]                      | Unknown                          |                                                     |
 | [QuantEcon]                     | Unknown                          |                                                     |
-| [rOpenSci]                      | Not Participating                |                                                     |
-| [Shogun]                        | Applying under NumFOCUS umbrella | https://github.com/shogun-toolbox/shogun/wiki/Google-Summer-of-Code-2018-Projects                                                    |
-| [SunPy]                         | Applying with Open Astronomy     | http://openastronomy.org/gsoc/gsoc2018/#/projects   |
-| [SymPy]                         | Applying as SymPy                | https://github.com/sympy/sympy/wiki/GSoC-2018-Ideas |
-| [Stan]                          | Applying under NumFOCUS umbrella | https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-stan.md                                                    |
-| [yt]                            | Applying under NumFOCUS umbrella |                                                     |
+| [rOpenSci]                      | Unknown                |                                                     |
+| [Shogun]                        | Unknown |                                                    |
+| [SunPy]                         | Unknown |  |
+| [SymPy]                         | Unknown |  |
+| [Stan]                          | Unknown |                                                     |
+| [yt]                            | Unknown |                                                     |
 
 ### Affiliated Organizations GSoC Status
 
@@ -263,14 +263,14 @@ information how to work with them.
 | -------              | ------                           | ----------- |
 | [Bokeh]              | Unknown                          |             |
 | [Conda]              | Unknown                          |             |
-| [conda-forge]        | Applying under NumFOCUS umbrella |             |
+| [conda-forge]        | Unknown |             |
 | [Cython]             | Unknown                          |             |
 | [Dash]               | Unknown                          |             |
-| [Data Retriever][DR] | Applying under NumFOCUS umbrella |             |
+| [Data Retriever][DR] | Unknown |             |
 | [Dask]               | Unknown                          |             |
 | [DyND]               | Unknown                          |             |
-| [Gensim]             | Applying under NumFOCUS umbrella |             |
-| [MDAnalysis]         | Applying under NumFOCUS umbrella |             |
+| [Gensim]             | Unknown |             |
+| [MDAnalysis]         | Unknown |             |
 | [Numba]              | Unknown                          |             |
 | [Orange]             | Unknown                          |             |
 | [Pomegranate]        | Unknown                          |             |
