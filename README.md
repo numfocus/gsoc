@@ -93,7 +93,21 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+-->
 
+ <tr>
+   <td>
+     <img width="300px" src="img/dask.png">
+   </td>
+   <td>
+      <h1>Dask</h1>
+      <p>Dask enables parallel computing through task scheduling and blocked algorithms.This allows developers to write complex parallel algorithms and execute them in parallel either on a modern multi-core machine or on a distributed cluster.</p>
+      <p>
+        <a href="http://dask.pydata.org/en/latest/">Website</a>
+      </p>
+   </td>
+ </tr>
+<!--
   <tr>
    <td>
      <img width="300px" src="img/ecodata-retriever.png"/>
@@ -110,6 +124,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+-->
 
   <tr>
    <td>
@@ -129,7 +144,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-
+<!-- 
  <tr>
    <td>
      <img width="300px" src="img/logo-gensim_large.png">
@@ -168,7 +183,20 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+-->
 
+ <tr>
+   <td>
+     <img width="300px" src="img/nteract.png">
+   </td>
+   <td>
+      <h1>nteract</h1>
+      <p>nteract is a stand-alone desktop application for developing computational notebooks. nteract allows users to craft narratives involving text, code, images, and data on the desktop rather than through a web application. This enables users to use their native system for file search as well as clicking to open notebook files.</p>
+      <p>
+        <a href="https://nteract.io/">Website</a>
+      </p>
+   </td>
+ </tr>
   <tr>
     <td>
       <img width="300px" src="img/pymc3-logo.png">
@@ -182,6 +210,19 @@ In alphabetic order.
     </td>
   </tr>
 
+  <tr>
+    <td>
+      <img width="300px" src="img/qutip.png">
+    </td>
+    <td>
+       <h1>QuTiP</h1>
+       <p>QuTiP is a software for simulating quantum systems. QuTiP aims to provide tools for user-friendly and efficient numerical simulations of open quantum systems. It can be used to simulate a wide range of physical phenomenon in areas such as quantum optics, trapped ions, superconducting circuits and quantum nanomechanical resonators. In addition, it contains a number of other modules to simplify the numerical simulation and study of many topics in quantum physics such as quantum optimal control, quantum information, and computing.</p>
+       <p>
+         <a href="http://qutip.org">Website</a>
+       </p>
+    </td>
+  </tr>
+<!-- 
   <tr>
     <td>
       <img width="300px" src="https://github.com/stan-dev/logos/blob/master/logo_tm.png">
@@ -207,8 +248,22 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+-->
 
+ <tr>
+   <td>
+     <img width="300px" src="img/yellowbrick.png">
+   </td>
+   <td>
+      <h1>Yellowbrick</h1>
+      <p>Yellowbrick is a Python package that visualizes the data science workflow, allowing users to visually steer the feature, algorithm, and hyperparameter selection process by directly extending the Scikit-Learn API.</p>
+      <p>
+        <a href="http://www.scikit-yb.org/en/latest/">Website</a>
+      </p>
+   </td>
+ </tr>
 
+<!--
  <tr>
    <td>
      <img width="300px" src="img/yt-logo.png">
@@ -238,16 +293,16 @@ information how to work with them.
 | [AstroPy]                       | Unknown     |    |
 | [Cantera]                       | Applying under NumFOCUS umbrella | https://github.com/Cantera/cantera/wiki/GSoC-2019-Ideas                                                |
 | [Econ-ARK][Econ-ARK]            | Unknown                |                                                     |
-| [FEniCS Project][FEniCSproject] | Unknown |                                                     |
+| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |                                                     |
 | [IPython]                       | Unknown                          |                                                     |
 | [Julia]                         | Unknown |           |
 | [Matplotlib]                    | Unknown                          |                                                     |
-| [nteract]                       | Unknown                          |                                                     |
+| [nteract]                       | Applying under NumFOCUS umbrella                          |                                                     |
 | [NumPy]                         | Unknown                |                                                     |
 | [Open Journals][theoj]          | Unknown                          |                                                     |
 | [Project Jupyter][Jupyter]      | Unknown                          |                                                     |
 | [pandas]                        | Unknown                          |                                                     |
-| [PyMC3](pymc3)                  | Unknown |  |
+| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella |  |
 | [PyTables]                      | Unknown                          |                                                     |
 | [QuantEcon]                     | Unknown                          |                                                     |
 | [rOpenSci]                      | Unknown                |                                                     |
@@ -267,7 +322,7 @@ information how to work with them.
 | [Cython]             | Unknown                          |             |
 | [Dash]               | Unknown                          |             |
 | [Data Retriever][DR] | Unknown |             |
-| [Dask]               | Unknown                          |             |
+| [Dask]               | Applying under NumFOCUS umbrella                          |             |
 | [DyND]               | Unknown                          |             |
 | [Gensim]             | Unknown |             |
 | [MDAnalysis]         | Unknown |             |
@@ -275,6 +330,7 @@ information how to work with them.
 | [Orange]             | Unknown                          |             |
 | [Pomegranate]        | Unknown                          |             |
 | [PythonXY]           | Unknown                          |             |
+| [QuTiP]              | Applying under NumFOCUS umbrella |             |
 | [SciPy]              | Unknown                          |             |
 | [scikit-image]       | Unknown                          |             |
 | [scikit-bio]         | Unknown                          |             |
@@ -284,6 +340,7 @@ information how to work with them.
 | [Spyder]             | Unknown                          |             |
 | [Theano]             | Unknown                          |             |
 | [xarray]             | Unknown                          |             |
+| [Yellowbrick]        | Applying under NumFOCUS umbrella |             |
 
 
 
@@ -321,6 +378,7 @@ information how to work with them.
 [Pomegranate]: https://pomegranate.readthedocs.io/en/latest/
 [PyTables]: http://pytables.github.com/
 [PythonXY]: http://code.google.com/p/pythonxy/wiki/Welcome
+[QuTiP]: https://qutip.org
 [rOpenSci]: http://ropensci.org/
 [quantecon]: http://quantecon.org/
 [SCF]: http://software-carpentry.org/scf/index.html
@@ -337,4 +395,5 @@ information how to work with them.
 [SymPy]: http://sympy.org
 [Theano]: http://deeplearning.net/software/theano/
 [xarray]: http://xarray.pydata.org/
+[Yellowbrick]: http://www.scikit-yb.org/en/latest/
 [yt]: http://yt-project.org/
