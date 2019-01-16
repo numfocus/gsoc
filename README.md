@@ -185,7 +185,20 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-
+-->
+   <tr>
+   <td>
+     <img width="300px" src="img/jump.png">
+   </td>
+   <td>
+      <h1>JuMP</h1>
+      <p>JuMP is a modeling interface and a collection of supporting packages for mathematical optimization that is embedded in Julia. With JuMP, users formulate various classes of optimization problems with easy-to-read code, and then solve these problems using state-of-the-art open-source and commercial solvers. JuMP also makes advanced optimization techniques easily accessible from a high-level language. </p>
+      <p>
+        <a href="http://www.juliaopt.org">Website</a> 
+      </p>
+   </td>
+ </tr>
+<!--
   <tr>
     <td>
       <img width="300px" src="img/mdanalysis.png" />
