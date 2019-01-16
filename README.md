@@ -111,6 +111,19 @@ In alphabetic order.
   </tr>
 -->
 
+
+ <tr>
+   <td>
+     <img width="300px" src="img/dash.png">
+   </td>
+   <td>
+      <h1>Dash</h1>
+      <p>Dash is a Python framework for building analytical web applications. No JavaScript required. Built on top of Plotly.js, React, and Flask, Dash ties modern UI elements like dropdowns, sliders, and graphs to your analytical Python code.</p>
+      <p>
+        <a href="https://dash.plot.ly">Website</a> | <a href="https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md">Ideas List</a> | <a href="mailto:jobs@plot.ly?subject=GSOC">Contact</a>
+      </p>
+   </td>
+ </tr>
  <tr>
    <td>
      <img width="300px" src="img/dask.png">
@@ -337,6 +350,7 @@ information how to work with them.
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |                                                     |
 | [IPython]                       | Unknown                          |                                                     |
 | [Julia]                         | Unknown |           |
+| [JuMP]                          | Applying under NumFOCUS umbrella |                                                     |
 | [Matplotlib]                    | Unknown                          |                                                     |
 | [nteract]                       | Applying under NumFOCUS umbrella                          |                                                     |
 | [NumPy]                         | Unknown                |                                                     |
@@ -357,12 +371,13 @@ information how to work with them.
 
 | Project              | Status                           | Ideas Pages |
 | -------              | ------                           | ----------- |
+| [ArviZ]              | Applying under NumFOCUS umbrella |             |
 | [Bokeh]              | Unknown                          |             |
 | [Conda]              | Unknown                          |             |
 | [conda-forge]        | Unknown |             |
 | [Cython]             | Unknown                          |             |
-| [Dash]               | Unknown                          |             |
-| [Data Retriever][DR] | Unknown |             |
+| [Dash]               | Applying under NumFOCUS umbrella                          |             |
+| [Data Retriever][DR] | Applying under NumFOCUS umbrella |             |
 | [Dask]               | Applying under NumFOCUS umbrella                          |             |
 | [DyND]               | Unknown                          |             |
 | [Gensim]             | Unknown |             |
@@ -378,13 +393,13 @@ information how to work with them.
 | [scikit-learn]       | Unknown                          |             |
 | [Statmodels]         | Unknown                          |             |
 | [Spack]              | Unknown                          |             |
-| [Spyder]             | Unknown                          |             |
+| [Spyder]             | Applying under NumFOCUS umbrella |             |
 | [Theano]             | Unknown                          |             |
 | [xarray]             | Unknown                          |             |
 | [Yellowbrick]        | Applying under NumFOCUS umbrella |             |
 
 
-
+[ArviZ]: https://arviz-devs.github.io/arviz/
 [AstroPy]: http://www.astropy.org/
 [Bokeh]: http://bokeh.pydata.org/
 [cantera]:  http://cantera.org/docs/sphinx/html/index.html
@@ -405,6 +420,7 @@ information how to work with them.
 [IPython]: http://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: http://julialang.org/
+[JuMP]: http://www.juliaopt.org
 [Jupyter]: http://jupyter.org/
 [Matplotlib]: http://matplotlib.sourceforge.net/
 [MDAnalysis]: http://mdanalysis.org
