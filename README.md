@@ -63,6 +63,22 @@ In alphabetic order.
 
 <table>
 
+
+  <tr>
+    <td>
+      <img width="300px" src="img/arviz.png"/>
+    </td>
+    <td>
+       <h1>ArviZ</h1>
+       <p>
+        ArviZ is a Python package for exploratory analysis of Bayesian models. Includes functions for posterior analysis, sample diagnostics, model checking, and comparison. The goal is to provide backend-agnostic tools for diagnostics and visualizations of Bayesian inference in Python, by first converting inference data into xarray objects. 
+       </p>
+       <p>
+         <a href="https://arviz-devs.github.io/arviz/">Website</a> 
+       </p>
+    </td>
+  </tr>  
+
   <tr>
     <td>
       <img width="300px" src="img/cantera-logo.png"/>
@@ -107,7 +123,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-<!--
+
   <tr>
    <td>
      <img width="300px" src="img/ecodata-retriever.png"/>
@@ -124,7 +140,6 @@ In alphabetic order.
       </p>
    </td>
  </tr>
--->
 
   <tr>
    <td>
@@ -219,6 +234,19 @@ In alphabetic order.
        <p>QuTiP is a software for simulating quantum systems. QuTiP aims to provide tools for user-friendly and efficient numerical simulations of open quantum systems. It can be used to simulate a wide range of physical phenomenon in areas such as quantum optics, trapped ions, superconducting circuits and quantum nanomechanical resonators. In addition, it contains a number of other modules to simplify the numerical simulation and study of many topics in quantum physics such as quantum optimal control, quantum information, and computing.</p>
        <p>
          <a href="http://qutip.org">Website</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img width="300px" src="img/spyder.png">
+    </td>
+    <td>
+       <h1>Spyder</h1>
+       <p>Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package. Furthermore, Spyder offers built-in integration with many popular scientific packages, including NumPy, SciPy, Pandas, IPython, QtConsole, Matplotlib, SymPy and more.</p>
+       <p>
+         <a href="https://www.spyder-ide.org">Website</a>
        </p>
     </td>
   </tr>
