@@ -6,7 +6,7 @@ Since NumFOCUS is an umbrella organization you will only find links to the ideas
 page of each organization under the NumFocus umbrella at this page.
 
 
-- ArviZ
+- ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2019-projects
 - Cantera
 - Dash https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md
 - Dask
