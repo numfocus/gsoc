@@ -10,7 +10,7 @@ page of each organization under the NumFocus umbrella at this page.
 - Cantera
 - Dash https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md
 - Dask
-- Data Retriever
+- Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas
 - FEniCS
 - JuMP
 - nteract
