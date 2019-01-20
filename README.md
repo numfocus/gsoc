@@ -149,7 +149,7 @@ In alphabetic order.
         cleaning and managing data, and more time analyzing it.
       </p>
       <p>
-        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/issues">Issues</a>
+        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter)
       </p>
    </td>
  </tr>
