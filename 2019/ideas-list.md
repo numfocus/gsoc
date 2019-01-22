@@ -13,7 +13,8 @@ page of each organization under the NumFocus umbrella at this page.
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas
 - FEniCS
 - JuMP
-- nteract
+- MDAnalysis https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas
+- nteract https://github.com/nteract/nteract/wiki/GSoC-2019-Ideas
 - PyMC3
 - Sypder 
 - QuTiP
