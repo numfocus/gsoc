@@ -211,21 +211,18 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-<!--
   <tr>
     <td>
       <img width="300px" src="img/mdanalysis.png" />
     </td>
     <td>
        <h1>MDAnalysis</h1>
-       <p>MDAnalysis is a Python library to analyze trajectories from molecular dynamics (MD) simulations.</p>
+       <p>MDAnalysis is a Python library to analyze trajectories from molecular dynamics (MD) simulations in many popular formats</p>
        <p>
-         <a href="https://www.mdanalysis.org/">Website</a> | <a href="https://groups.google.com/forum/#!forum/mdnalysis-devel">Mailing list</a>
+         <a href="https://www.mdanalysis.org/">Website</a> | <a href="https://groups.google.com/forum/#!forum/mdnalysis-devel">Mailing list</a> | <a href="https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas">Ideas List</a>
        </p>
     </td>
   </tr>
--->
-
  <tr>
    <td>
      <img width="300px" src="img/nteract.png">
@@ -381,7 +378,7 @@ information how to work with them.
 | [Dask]               | Applying under NumFOCUS umbrella                          |             |
 | [DyND]               | Unknown                          |             |
 | [Gensim]             | Unknown |             |
-| [MDAnalysis]         | Unknown |             |
+| [MDAnalysis]         | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas            |
 | [Numba]              | Unknown                          |             |
 | [Orange]             | Unknown                          |             |
 | [Pomegranate]        | Unknown                          |             |
@@ -416,7 +413,7 @@ information how to work with them.
 [FEniCSproject]: https://fenicsproject.org/
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
-[IL]: 2018/ideas-list.md
+[IL]: 2019/ideas-list.md
 [IPython]: http://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: http://julialang.org/
