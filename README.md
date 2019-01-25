@@ -399,15 +399,17 @@ information how to work with them.
 | -------              | ------                           | ----------- |
 | [ArviZ]              | Applying under NumFOCUS umbrella |             |
 | [Bokeh]              | Unknown                          |             |
+| [Chainer]            | Applying under NumFOCUS umbrella |             |
 | [Conda]              | Unknown                          |             |
-| [conda-forge]        | Unknown |             |
+| [conda-forge]        | Unknown                          |             |
+| [CuPy]               | Applying under NumFOCUS umbrella |             |
 | [Cython]             | Unknown                          |             |
-| [Dash]               | Applying under NumFOCUS umbrella                          |             |
+| [Dash]               | Applying under NumFOCUS umbrella |             |
 | [Data Retriever][DR] | Applying under NumFOCUS umbrella |             |
-| [Dask]               | Applying under NumFOCUS umbrella                          |             |
+| [Dask]               | Applying under NumFOCUS umbrella |             |
 | [DyND]               | Unknown                          |             |
-| [Gensim]             | Unknown |             |
-| [MDAnalysis]         | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas            |
+| [Gensim]             | Unknown                          |             |
+| [MDAnalysis]         | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas |
 | [Numba]              | Unknown                          |             |
 | [Orange]             | Unknown                          |             |
 | [Pomegranate]        | Unknown                          |             |
@@ -429,9 +431,11 @@ information how to work with them.
 [AstroPy]: http://www.astropy.org/
 [Bokeh]: http://bokeh.pydata.org/
 [cantera]:  http://cantera.org/docs/sphinx/html/index.html
+[Chainer]: http://chainer.org
 [CONTRIBUTING]: CONTRIBUTING-students.md
 [Conda]: https://github.com/conda/conda
 [conda-forge]: https://conda-forge.org
+[CuPy]: http://cupy.chainer.org
 [Cython]: http://cython.org/
 [CF]: https://conda-forge.github.io/
 [Dash]: https://plot.ly/dash/
