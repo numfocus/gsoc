@@ -95,6 +95,35 @@ In alphabetic order.
     </td>
   </tr>
 
+  <tr>
+    <td>
+      <img width="300px" src="img/chainer-logo.png"/>
+    </td>
+    <td>
+       <h1>Chainer</h1>
+       <p>
+        Chainer is a powerful, flexible and intuitive deep learning framework. Chainer supports CUDA computation. It only requires a few lines of code to leverage a GPU. It also runs on multiple GPUs with little effort. Chainer supports various network architectures including feed-forward nets, convnets, recurrent nets and recursive nets. It also supports per-batch architectures. Forward computation can include any control flow statements of Python without lacking the ability of backpropagation. It makes code intuitive and easy to debug. </p>
+       <p>
+         <a href="https://chainer.org">Website</a>
+       </p>
+    </td>
+  </tr>
+
+    <tr>
+    <td>
+      <img width="300px" src="img/cupy-logo.png"/>
+    </td>
+    <td>
+       <h1>CuPy</h1>
+       <p>
+        CuPy is an open-source matrix library accelerated with NVIDIA CUDA. It also uses CUDA-related libraries including cuBLAS, cuDNN, cuRand, cuSolver, cuSPARSE, cuFFT and NCCL to make full use of the GPU architecture. CuPy’s interface is highly compatible with NumPy; in most cases it can be used as a drop-in replacement. All you need to do is just replace numpy with cupy in your Python code. It supports various methods, indexing, data types, broadcasting and more.
+       </p>
+       <p>
+         <a href="https://cupy.chainer.org">Website</a>
+       </p>
+    </td>
+  </tr>
+
  <!--  <tr>
     <td>
       <img width="300px" src="https://avatars2.githubusercontent.com/u/11897326?v=3&s=200"/>
