@@ -109,7 +109,7 @@ In alphabetic order.
     </td>
   </tr>
 
-    <tr>
+  <tr>
     <td>
       <img width="300px" src="img/cupy-logo.png"/>
     </td>
