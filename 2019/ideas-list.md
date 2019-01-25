@@ -17,7 +17,7 @@ page of each organization under the NumFocus umbrella at this page.
 - JuMP
 - MDAnalysis https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas
 - nteract https://github.com/nteract/nteract/wiki/GSoC-2019-Ideas
-- PyMC3
+- PyMC3 https://github.com/pymc-devs/pymc3/wiki/GSoC-2019-projects
 - Sypder 
 - QuTiP
 - Yellowbrick
