@@ -19,7 +19,7 @@ page of each organization under the NumFocus umbrella at this page.
 - nteract https://github.com/nteract/nteract/wiki/GSoC-2019-Ideas
 - PyMC3 https://github.com/pymc-devs/pymc3/wiki/GSoC-2019-projects
 - Sypder 
-- QuTiP
+- QuTiP https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2019
 - Yellowbrick
 
 
