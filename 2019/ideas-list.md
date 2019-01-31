@@ -13,7 +13,7 @@ page of each organization under the NumFocus umbrella at this page.
 - Dash https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md
 - Dask
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas
-- FEniCS
+- FEniCS https://github.com/FEniCS/gsoc/blob/fenics/ideas-2019/2019/ideas-list-fenics.md
 - JuMP
 - MDAnalysis https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas
 - nteract https://github.com/nteract/nteract/wiki/GSoC-2019-Ideas
