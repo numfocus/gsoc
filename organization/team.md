@@ -3,6 +3,16 @@
 This is the list of people helping
 organizing Google Summer of Code for NumFOCUS.
 
+## 2018
+
+### Admin
+
+| Name          |  GitHub Profile 							|
+|---------------|-------------------------------------------|
+| Max Linke     | [kain88-de](https://github.com/kain88-de) |
+| Mridul Seth   | [MridulS](https://github.com/MridulS)     |
+| Alex Arslan   | [ararslan](https://github.com/ararslan)   |
+
 ## 2017
 
 ### Admin
