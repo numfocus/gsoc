@@ -14,7 +14,7 @@ page of each organization under the NumFocus umbrella at this page.
 - Dask
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas
 - FEniCS https://github.com/FEniCS/gsoc/blob/fenics/ideas-2019/2019/ideas-list-fenics.md
-- JuMP
+- JuMP https://github.com/JuliaOpt/GSOC2019/blob/master/ideas-list.md
 - MDAnalysis https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas
 - nteract https://github.com/nteract/nteract/wiki/GSoC-2019-Ideas
 - PyMC3 https://github.com/pymc-devs/pymc3/wiki/GSoC-2019-projects
