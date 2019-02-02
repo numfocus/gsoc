@@ -20,7 +20,7 @@ page of each organization under the NumFocus umbrella at this page.
 - PyMC3 https://github.com/pymc-devs/pymc3/wiki/GSoC-2019-projects
 - Spyder 
 - QuTiP https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2019
-- Yellowbrick
+- Yellowbrick https://github.com/wagner2010/gsoc/blob/wagner2010-patch-1/templates/ideas-page-prema.md
 
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md) for contact information of each org.
