@@ -7,7 +7,7 @@ page of each organization under the NumFocus umbrella at this page.
 
 
 - ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2019-projects
-- Cantera
+- Cantera https://github.com/Cantera/cantera/wiki/GSoC-2019-Ideas
 - Chainer https://github.com/chainer/chainer/wiki/GSoC-2019-Project-Ideas
 - CuPy https://github.com/cupy/cupy/wiki/GSoC-2019-Ideas--CuPy
 - Dash https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md
