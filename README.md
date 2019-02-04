@@ -161,7 +161,7 @@ In alphabetic order.
       <h1>Dask</h1>
       <p>Dask enables parallel computing through task scheduling and blocked algorithms.This allows developers to write complex parallel algorithms and execute them in parallel either on a modern multi-core machine or on a distributed cluster.</p>
       <p>
-        <a href="http://dask.pydata.org/en/latest/">Website</a>
+        <a href="https://dask.org/">Website</a>
       </p>
    </td>
  </tr>
@@ -438,7 +438,7 @@ information how to work with them.
 [Cython]: http://cython.org/
 [CF]: https://conda-forge.github.io/
 [Dash]: https://plot.ly/dash/
-[Dask]: http://dask.pydata.org/
+[Dask]: https://dask.org/
 [DR]: http://www.data-retriever.org/
 [DyND]: http://libdynd.org/
 [Econ-ARK]: https://econ-ark.github.io/HARK/
