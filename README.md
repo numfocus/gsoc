@@ -74,7 +74,7 @@ In alphabetic order.
         ArviZ is a Python package for exploratory analysis of Bayesian models. Includes functions for posterior analysis, sample diagnostics, model checking, and comparison. The goal is to provide backend-agnostic tools for diagnostics and visualizations of Bayesian inference in Python, by first converting inference data into xarray objects. 
        </p>
        <p>
-         <a href="https://arviz-devs.github.io/arviz/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2019-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a>
+         <a href="https://arviz-devs.github.io/arviz/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2019-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs/arviz">Source Code</a>
        </p>
     </td>
   </tr>  
@@ -90,7 +90,7 @@ In alphabetic order.
         transport.
        </p>
        <p>
-         <a href="http://cantera.org/">Website</a>  | <a href="https://github.com/Cantera/cantera/wiki/GSoC-2018-Ideas">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cantera-users">Mailing List</a>
+         <a href="http://cantera.org/">Website</a>  | <a href="https://github.com/Cantera/cantera/wiki/GSoC-2019-Ideas">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cantera-users">Mailing List</a> | <a href="https://github.com/Cantera/cantera">Source Code</a>
        </p>
     </td>
   </tr>
@@ -104,7 +104,7 @@ In alphabetic order.
        <p>
         Chainer is a powerful, flexible and intuitive deep learning framework. Chainer supports CUDA computation. It only requires a few lines of code to leverage a GPU. It also runs on multiple GPUs with little effort. Chainer supports various network architectures including feed-forward nets, convnets, recurrent nets and recursive nets. It also supports per-batch architectures. Forward computation can include any control flow statements of Python without lacking the ability of backpropagation. It makes code intuitive and easy to debug. </p>
        <p>
-         <a href="https://chainer.org">Website</a>
+         <a href="https://chainer.org">Website</a> | <a href="https://github.com/chainer/chainer/wiki/GSoC-2019-Project-Ideas">Ideas List</a> |  <a href="https://github.com/chainer/chainer">Source Code</a>
        </p>
     </td>
   </tr>
@@ -119,7 +119,7 @@ In alphabetic order.
         CuPy is an open-source matrix library accelerated with NVIDIA CUDA. It also uses CUDA-related libraries including cuBLAS, cuDNN, cuRand, cuSolver, cuSPARSE, cuFFT and NCCL to make full use of the GPU architecture. CuPy’s interface is highly compatible with NumPy; in most cases it can be used as a drop-in replacement. All you need to do is just replace numpy with cupy in your Python code. It supports various methods, indexing, data types, broadcasting and more.
        </p>
        <p>
-         <a href="https://cupy.chainer.org">Website</a>
+         <a href="https://cupy.chainer.org">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2019-Ideas--CuPy">Ideas List</a> |  <a href="https://github.com/cupy/cupy">Source Code</a>
        </p>
     </td>
   </tr>
@@ -149,7 +149,7 @@ In alphabetic order.
       <h1>Dash</h1>
       <p>Dash is a Python framework for building analytical web applications. No JavaScript required. Built on top of Plotly.js, React, and Flask, Dash ties modern UI elements like dropdowns, sliders, and graphs to your analytical Python code.</p>
       <p>
-        <a href="https://dash.plot.ly">Website</a> | <a href="https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md">Ideas List</a> | <a href="mailto:jobs@plot.ly?subject=GSOC">Contact</a>
+        <a href="https://dash.plot.ly">Website</a> | <a href="https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md">Ideas List</a> | <a href="mailto:jobs@plot.ly?subject=GSOC">Contact</a> | <a href="https://github.com/plotly/dash">Source Code</a>
       </p>
    </td>
  </tr>
@@ -161,7 +161,7 @@ In alphabetic order.
       <h1>Dask</h1>
       <p>Dask enables parallel computing through task scheduling and blocked algorithms.This allows developers to write complex parallel algorithms and execute them in parallel either on a modern multi-core machine or on a distributed cluster.</p>
       <p>
-        <a href="https://dask.org/">Website</a>
+        <a href="https://dask.org/">Website</a> | <a href="https://github.com/dask/dask/wiki/GSOC-2019-Project-Ideas">Ideas List</a> | <a href="https://github.com/dask/dask">Source Code</a>
       </p>
    </td>
  </tr>
@@ -178,7 +178,7 @@ In alphabetic order.
         cleaning and managing data, and more time analyzing it.
       </p>
       <p>
-        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter)
+        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) | <a href="https://github.com/weecology/retriever">Source Code</a>
       </p>
    </td>
  </tr>
@@ -197,7 +197,7 @@ In alphabetic order.
         no analytical (exact) solution numerically.
       </p>
       <p>
-        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a> | <a href ="https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-fenics.md"> Ideas Page
+        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a> | <a href ="https://github.com/FEniCS/gsoc/blob/fenics/ideas-2019/2019/ideas-list-fenics.md"> Ideas Page | <a href="https://github.com/FEniCS">Source Code</a>
       </p>
    </td>
  </tr>
@@ -236,7 +236,7 @@ In alphabetic order.
       <h1>JuMP</h1>
       <p>JuMP is a modeling interface and a collection of supporting packages for mathematical optimization that is embedded in Julia. With JuMP, users formulate various classes of optimization problems with easy-to-read code, and then solve these problems using state-of-the-art open-source and commercial solvers. JuMP also makes advanced optimization techniques easily accessible from a high-level language. </p>
       <p>
-        <a href="http://www.juliaopt.org">Website</a> 
+        <a href="http://www.juliaopt.org">Website</a> | <a href ="https://github.com/JuliaOpt/GSOC2019/blob/master/ideas-list.md"> Ideas Page | <a href="https://github.com/JuliaOpt/JuMP.jl">Source Code</a>
       </p>
    </td>
  </tr>
@@ -248,7 +248,7 @@ In alphabetic order.
        <h1>MDAnalysis</h1>
        <p>MDAnalysis is a Python library to analyze trajectories from molecular dynamics (MD) simulations in many popular formats</p>
        <p>
-         <a href="https://www.mdanalysis.org/">Website</a> | <a href="https://groups.google.com/forum/#!forum/mdnalysis-devel">Mailing list</a> | <a href="https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas">Ideas List</a>
+         <a href="https://www.mdanalysis.org/">Website</a> | <a href="https://groups.google.com/forum/#!forum/mdnalysis-devel">Mailing list</a> | <a href="https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas">Ideas List</a> | <a href="https://github.com/MDAnalysis/mdanalysis">Source Code</a>
        </p>
     </td>
   </tr>
@@ -260,7 +260,7 @@ In alphabetic order.
       <h1>nteract</h1>
       <p>nteract is a stand-alone desktop application for developing computational notebooks. nteract allows users to craft narratives involving text, code, images, and data on the desktop rather than through a web application. This enables users to use their native system for file search as well as clicking to open notebook files.</p>
       <p>
-        <a href="https://nteract.io/">Website</a>
+        <a href="https://nteract.io/">Website</a> | <a href="https://github.com/nteract/nteract/wiki/GSoC-2019-Ideas">Ideas List</a> | <a href="https://github.com/nteract/nteract">Source Code</a>
       </p>
    </td>
  </tr>
@@ -272,7 +272,7 @@ In alphabetic order.
        <h1>PyMC3</h1>
        <p>PyMC3 is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc3/wiki/GSoC-2019-projects">Ideas Page</a>
+         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc3/wiki/GSoC-2019-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
        </p>
     </td>
   </tr>
@@ -284,7 +284,7 @@ In alphabetic order.
     <td>
        <h1>QuTiP</h1>
        <p>QuTiP is a software for simulating quantum systems. QuTiP aims to provide tools for user-friendly and efficient numerical simulations of open quantum systems. It can be used to simulate a wide range of physical phenomenon in areas such as quantum optics, trapped ions, superconducting circuits and quantum nanomechanical resonators. In addition, it contains a number of other modules to simplify the numerical simulation and study of many topics in quantum physics such as quantum optimal control, quantum information, and computing.</p>
-       <p> <a href="http://qutip.org">Website</a> |  <a href="https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2019">Ideas Page</a> | <a href="https://gitter.im/qutip">Gitter</a>
+       <p> <a href="http://qutip.org">Website</a> | <a href="https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2019">Ideas Page</a> | <a href="https://gitter.im/qutip">Gitter</a>  | <a href="https://github.com/qutip/qutip"> Source Code</a>
        </p>
     </td>
   </tr>
@@ -297,7 +297,7 @@ In alphabetic order.
        <h1>Spyder</h1>
        <p>Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package. Furthermore, Spyder offers built-in integration with many popular scientific packages, including NumPy, SciPy, Pandas, IPython, QtConsole, Matplotlib, SymPy and more.</p>
        <p>
-         <a href="https://www.spyder-ide.org">Website</a>
+         <a href="https://www.spyder-ide.org">Website</a> | <a href="https://github.com/spyder-ide/spyder/wiki/GSoC-2019-Ideas">Ideas Page</a> | <a href="https://github.com/spyder-ide/spyder"> Source Code</a>
        </p>
     </td>
   </tr>
@@ -337,7 +337,7 @@ In alphabetic order.
       <h1>Yellowbrick</h1>
       <p>Yellowbrick is a Python package that visualizes the data science workflow, allowing users to visually steer the feature, algorithm, and hyperparameter selection process by directly extending the Scikit-Learn API.</p>
       <p>
-        <a href="http://www.scikit-yb.org/en/latest/">Website</a>
+        <a href="http://www.scikit-yb.org/en/latest/">Website</a> | <a href="https://github.com/wagner2010/gsoc/blob/wagner2010-patch-1/templates/ideas-page-prema.md">Ideas Page</a> | <a href="https://github.com/DistrictDataLabs/yellowbrick"> Source Code</a>
       </p>
    </td>
  </tr>
