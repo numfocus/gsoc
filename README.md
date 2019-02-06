@@ -372,12 +372,12 @@ information how to work with them.
 | [AstroPy]                       | Unknown     |    |
 | [Cantera]                       | Applying under NumFOCUS umbrella | https://github.com/Cantera/cantera/wiki/GSoC-2019-Ideas                                                |
 | [Econ-ARK][Econ-ARK]            | Unknown                |                                                     |
-| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |                                                     |
+| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |   https://github.com/FEniCS/gsoc/blob/fenics/ideas-2019/2019/ideas-list-fenics.md                                                  |
 | [IPython]                       | Unknown                          |                                                     |
 | [Julia]                         | Unknown |           |
-| [JuMP]                          | Applying under NumFOCUS umbrella |                                                     |
+| [JuMP]                          | Applying under NumFOCUS umbrella |   https://github.com/JuliaOpt/GSOC2019/blob/master/ideas-list.md                                                  |
 | [Matplotlib]                    | Unknown                          |                                                     |
-| [nteract]                       | Applying under NumFOCUS umbrella                          |                                                     |
+| [nteract]                       | Applying under NumFOCUS umbrella                          |  https://github.com/nteract/nteract/wiki/GSoC-2019-Ideas                                                   |
 | [NumPy]                         | Unknown                |                                                     |
 | [Open Journals][theoj]          | Unknown                          |                                                     |
 | [Project Jupyter][Jupyter]      | Unknown                          |                                                     |
@@ -396,16 +396,16 @@ information how to work with them.
 
 | Project              | Status                           | Ideas Pages |
 | -------              | ------                           | ----------- |
-| [ArviZ]              | Applying under NumFOCUS umbrella |             |
+| [ArviZ]              | Applying under NumFOCUS umbrella |  https://github.com/arviz-devs/arviz/wiki/GSoC-2019-projects           |
 | [Bokeh]              | Unknown                          |             |
-| [Chainer]            | Applying under NumFOCUS umbrella |             |
+| [Chainer]            | Applying under NumFOCUS umbrella |   https://github.com/chainer/chainer/wiki/GSoC-2019-Project-Ideas          |
 | [Conda]              | Unknown                          |             |
 | [conda-forge]        | Unknown                          |             |
-| [CuPy]               | Applying under NumFOCUS umbrella |             |
+| [CuPy]               | Applying under NumFOCUS umbrella |     https://github.com/cupy/cupy/wiki/GSoC-2019-Ideas--CuPy        |
 | [Cython]             | Unknown                          |             |
-| [Dash]               | Applying under NumFOCUS umbrella |             |
-| [Data Retriever][DR] | Applying under NumFOCUS umbrella |             |
-| [Dask]               | Applying under NumFOCUS umbrella |             |
+| [Dash]               | Applying under NumFOCUS umbrella |     https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md        |
+| [Data Retriever][DR] | Applying under NumFOCUS umbrella |  https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas           |
+| [Dask]               | Applying under NumFOCUS umbrella |  https://github.com/dask/dask/wiki/GSOC-2019-Project-Ideas           |
 | [DyND]               | Unknown                          |             |
 | [Gensim]             | Unknown                          |             |
 | [MDAnalysis]         | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas |
@@ -413,17 +413,17 @@ information how to work with them.
 | [Orange]             | Unknown                          |             |
 | [Pomegranate]        | Unknown                          |             |
 | [PythonXY]           | Unknown                          |             |
-| [QuTiP]              | Applying under NumFOCUS umbrella |             |
+| [QuTiP]              | Applying under NumFOCUS umbrella |  https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2019          |
 | [SciPy]              | Unknown                          |             |
 | [scikit-image]       | Unknown                          |             |
 | [scikit-bio]         | Unknown                          |             |
 | [scikit-learn]       | Unknown                          |             |
 | [Statmodels]         | Unknown                          |             |
 | [Spack]              | Unknown                          |             |
-| [Spyder]             | Applying under NumFOCUS umbrella |             |
+| [Spyder]             | Applying under NumFOCUS umbrella |  https://github.com/spyder-ide/spyder/wiki/GSoC-2019-Ideas           |
 | [Theano]             | Unknown                          |             |
 | [xarray]             | Unknown                          |             |
-| [Yellowbrick]        | Applying under NumFOCUS umbrella |             |
+| [Yellowbrick]        | Applying under NumFOCUS umbrella |    https://github.com/wagner2010/gsoc/blob/wagner2010-patch-1/templates/ideas-page-prema.md         |
 
 
 [ArviZ]: https://arviz-devs.github.io/arviz/
