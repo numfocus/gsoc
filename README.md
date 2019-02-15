@@ -149,7 +149,7 @@ In alphabetic order.
       <h1>Dash</h1>
       <p>Dash is a Python framework for building analytical web applications. No JavaScript required. Built on top of Plotly.js, React, and Flask, Dash ties modern UI elements like dropdowns, sliders, and graphs to your analytical Python code.</p>
       <p>
-        <a href="https://dash.plot.ly">Website</a> | <a href="https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md">Ideas List</a> | <a href="mailto:jobs@plot.ly?subject=GSOC">Contact</a> | <a href="https://github.com/plotly/dash">Source Code</a>
+        <a href="https://dash.plot.ly">Website</a> | <a href="https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md">Ideas List</a> | <a href="https://github.com/plotly/dash">Source Code</a>
       </p>
    </td>
  </tr>
