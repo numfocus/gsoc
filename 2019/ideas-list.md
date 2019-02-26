@@ -10,7 +10,6 @@ page of each organization under the NumFocus umbrella at this page.
 - Cantera https://github.com/Cantera/cantera/wiki/GSoC-2019-Ideas
 - Chainer https://github.com/chainer/chainer/wiki/GSoC-2019-Project-Ideas
 - CuPy https://github.com/cupy/cupy/wiki/GSoC-2019-Ideas--CuPy
-- Dash https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md
 - Dask https://github.com/dask/dask/wiki/GSOC-2019-Project-Ideas
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas
 - FEniCS https://github.com/FEniCS/gsoc/blob/fenics/ideas-2019/2019/ideas-list-fenics.md
