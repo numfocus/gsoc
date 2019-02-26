@@ -140,7 +140,7 @@ In alphabetic order.
   </tr>
 -->
 
-
+<!--
  <tr>
    <td>
      <img width="300px" src="img/dash.png">
@@ -153,6 +153,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+-->
  <tr>
    <td>
      <img width="300px" src="img/dask.png">
@@ -403,7 +404,7 @@ information how to work with them.
 | [conda-forge]        | Unknown                          |             |
 | [CuPy]               | Applying under NumFOCUS umbrella |     https://github.com/cupy/cupy/wiki/GSoC-2019-Ideas--CuPy        |
 | [Cython]             | Unknown                          |             |
-| [Dash]               | Applying under NumFOCUS umbrella |     https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md        |
+| [Dash]               | Not participating |         |
 | [Data Retriever][DR] | Applying under NumFOCUS umbrella |  https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas           |
 | [Dask]               | Applying under NumFOCUS umbrella |  https://github.com/dask/dask/wiki/GSOC-2019-Project-Ideas           |
 | [DyND]               | Unknown                          |             |
