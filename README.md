@@ -297,7 +297,7 @@ In alphabetic order.
        <h1>Spyder</h1>
        <p>Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package. Furthermore, Spyder offers built-in integration with many popular scientific packages, including NumPy, SciPy, Pandas, IPython, QtConsole, Matplotlib, SymPy and more.</p>
        <p>
-         <a href="https://www.spyder-ide.org">Website</a> | <a href="https://github.com/spyder-ide/spyder/wiki/GSoC-2019-Ideas">Ideas Page</a> | <a href="https://github.com/spyder-ide/spyder"> Source Code</a>
+         <a href="https://www.spyder-ide.org">Website</a> | <a href="https://github.com/spyder-ide/spyder/wiki/GSoC-2019-Ideas">Ideas Page</a> | <a href="https://groups.google.com/group/spyderlib">Mailing list</a> | <a href="https://github.com/spyder-ide/spyder"> Source Code</a>
        </p>
     </td>
   </tr>
