@@ -237,7 +237,7 @@ In alphabetic order.
       <h1>JuMP</h1>
       <p>JuMP is a modeling interface and a collection of supporting packages for mathematical optimization that is embedded in Julia. With JuMP, users formulate various classes of optimization problems with easy-to-read code, and then solve these problems using state-of-the-art open-source and commercial solvers. JuMP also makes advanced optimization techniques easily accessible from a high-level language. </p>
       <p>
-        <a href="http://www.juliaopt.org">Website</a> | <a href ="https://github.com/JuliaOpt/GSOC2019/blob/master/ideas-list.md"> Ideas Page | <a href="https://github.com/JuliaOpt/JuMP.jl">Source Code</a>
+        <a href="http://www.juliaopt.org">Website</a> | <a href ="https://github.com/JuliaOpt/GSOC2019/blob/master/ideas-list.md"> Ideas Page | <a href="https://github.com/JuliaOpt/JuMP.jl">Source Code</a> | <a href="https://gitter.im/JuliaOpt/JuMP-dev">Contact (Gitter)</a>
       </p>
    </td>
  </tr>
