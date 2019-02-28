@@ -386,6 +386,7 @@ information how to work with them.
 | Project                         | Status                           | Ideas Pages                                         |
 | -------                         | ------                           | -----------                                         |
 | [AstroPy]                       | Unknown     |    |
+| [Blosc]                         | Applying under NumFOCUS umbrella | https://github.com/Blosc/c-blosc2/wiki/GSOC-2019-Project-Ideas |
 | [Cantera]                       | Applying under NumFOCUS umbrella | https://github.com/Cantera/cantera/wiki/GSoC-2019-Ideas                                                |
 | [Econ-ARK][Econ-ARK]            | Unknown                |                                                     |
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |   https://github.com/FEniCS/gsoc/blob/fenics/ideas-2019/2019/ideas-list-fenics.md                                                  |
@@ -444,6 +445,7 @@ information how to work with them.
 
 [ArviZ]: https://arviz-devs.github.io/arviz/
 [AstroPy]: http://www.astropy.org/
+[Blosc]: http://www.blosc.org/
 [Bokeh]: http://bokeh.pydata.org/
 [cantera]:  http://cantera.org/docs/sphinx/html/index.html
 [Chainer]: http://chainer.org
