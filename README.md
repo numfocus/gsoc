@@ -77,7 +77,22 @@ In alphabetic order.
          <a href="https://arviz-devs.github.io/arviz/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2019-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs/arviz">Source Code</a>
        </p>
     </td>
-  </tr>  
+  </tr>
+
+  <tr>
+    <td>
+      <img width="300px" src="img/blosc.png"/>
+    </td>
+    <td>
+       <h1>Blosc</h1>
+       <p>
+        Blosc is a high performance compression library written in C that uses the blocking technique to make compression operations easier, faster, and more flexible. Blosc splits the datasets into blocks, then transparently packs them into compressed containers. Blosc extends standard compression by allowing the user to condition the data in every block with filters prior to the compression operation; these filters can be selected depending on the properties of the dataset to be compressed. In addition, Blosc provides a diversity of codecs to cover different needs (better compression, faster speed or a balance between the two). Finally, Blosc runs its operations in parallel to leverage the high number of cores in modern CPUs.
+       </p>
+       <p>
+         <a href="http://www.blosc.org/">Website</a> | <a href="https://github.com/Blosc/c-blosc2/wiki/GSOC-2019-Project-Ideas">Ideas List</a> | <a href="francesc@blosc.org"> Contact (email) </a> | <a href="https://github.com/Blosc/c-blosc2">Source Code</a>
+       </p>
+    </td>
+  </tr>
 
   <tr>
     <td>
