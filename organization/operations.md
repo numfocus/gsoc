@@ -35,21 +35,36 @@ mailing list.
 
 ## Timeline for Organization Administrators
 
-*January*: Ask NumFOCUS if they want to participate. Preferably with help of NumFOCUS staff
-*Feburary*: - Check if application docs are  up to date
-            - Apply as umbrella organization to GSoC
-            - check projects ideas page
-*March*: - If accepted advertise to possible students.
-         - Accept sub-org until 5 days after Google announces participating orgs
-         - check projects ideas page is ready for students again
-*April*: - request slots numbers from sub-orgs and tell them Google (google forms are good here)
-         - select students for sub-orgs
-         - have a blog post about accepted projects
-*First Evaluation*: - Ensure that every mentor fulfills the evaluation
-*Second Evaluation*: - Ensure that every mentor fulfills the evaluation
-*Final Evaluation*: - Ensure that every mentor fulfills the evaluation
-*September/October*: - Select administrators for next year and tell information the NumFOCUS staff.
-                     - Visit Mentor Summit
+*January*:
+- Ask NumFOCUS if they want to participate. Preferably with help of NumFOCUS staff
+
+*Feburary*:
+- Check if application docs are  up to date
+- Apply as umbrella organization to GSoC
+- check projects ideas page
+            
+*March*:
+- If accepted advertise to possible students.
+- Accept sub-org until 5 days after Google announces participating orgs
+- check projects ideas page is ready for students again
+         
+*April*:
+- request slots numbers from sub-orgs and tell them Google (google forms are good here)
+- select students for sub-orgs
+- have a blog post about accepted projects
+         
+*First Evaluation*:
+- Ensure that every mentor fulfills the evaluation
+
+*Second Evaluation*:
+- Ensure that every mentor fulfills the evaluation
+
+*Final Evaluation*:
+- Ensure that every mentor fulfills the evaluation
+
+*September/October*:
+- Select administrators for next year and tell information the NumFOCUS staff.
+- Visit Mentor Summit
 
 ## Guidelines to Select Accept Students Proposals
 
