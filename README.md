@@ -17,15 +17,14 @@ application for Google Summer of Code in the current and previous years.
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 
-- [Google Summer of Code](#google-summer-of-code)
-
-    - [Students](#students)
-    - [Sub Organizations](#sub-organizations)
-    - [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
-    - [NumFOCUS Projects](#numfocus-projects)
-        - [Fiscally Sponsored Projects GSoC Status](#fiscally-sponsored-projects-gsoc-status)
-        - [Affiliated Projects GSoC Status](#affiliated-projects-gsoc-status)
-        - [Other Projects GSoC Status](#other-projects-gsoc-status)
+- [Students](#students)
+- [Sub Organizations](#sub-organizations)
+- [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
+- [About GSoC](#about-gsoc)
+- [NumFOCUS Projects](#numfocus-projects)
+    - [Fiscally Sponsored Projects GSoC Status](#fiscally-sponsored-projects-gsoc-status)
+    - [Affiliated Projects GSoC Status](#affiliated-projects-gsoc-status)
+    - [Other Projects GSoC Status](#other-projects-gsoc-status)
 
 <!-- markdown-toc end -->
 
@@ -373,6 +372,13 @@ In alphabetic order.
  </tr>
  -->
 </table>
+
+## About GSoC
+
+[Google Summer of Code][GSoC] is an annual Open Source internship program
+sponsored by Google. On this site we only collect information specific to
+NumFOCUS. You can find out more about GSoC in general on the official
+[website](https://summerofcode.withgoogle.com/how-it-works/).
 
 ## NumFOCUS Organizations
 
