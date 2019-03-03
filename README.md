@@ -71,7 +71,7 @@ In alphabetic order.
     <td>
        <h1>ArviZ</h1>
        <p>
-        ArviZ is a Python package for exploratory analysis of Bayesian models. Includes functions for posterior analysis, sample diagnostics, model checking, and comparison. The goal is to provide backend-agnostic tools for diagnostics and visualizations of Bayesian inference in Python, by first converting inference data into xarray objects. 
+        ArviZ is a Python package for exploratory analysis of Bayesian models. Includes functions for posterior analysis, sample diagnostics, model checking, and comparison. The goal is to provide backend-agnostic tools for diagnostics and visualizations of Bayesian inference in Python, by first converting inference data into xarray objects.
        </p>
        <p>
          <a href="https://arviz-devs.github.io/arviz/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2019-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs/arviz">Source Code</a>
@@ -217,7 +217,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-<!-- 
+<!--
  <tr>
    <td>
      <img width="300px" src="img/logo-gensim_large.png">
@@ -313,11 +313,11 @@ In alphabetic order.
        <h1>Spyder</h1>
        <p>Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package. Furthermore, Spyder offers built-in integration with many popular scientific packages, including NumPy, SciPy, Pandas, IPython, QtConsole, Matplotlib, SymPy and more.</p>
        <p>
-         <a href="https://www.spyder-ide.org">Website</a> | <a href="https://github.com/spyder-ide/spyder/wiki/GSoC-2019-Ideas">Ideas Page</a> | <a href="https://groups.google.com/group/spyderlib">Mailing list</a> | <a href="https://github.com/spyder-ide/spyder"> Source Code</a>
+         <a href="https://www.spyder-ide.org/">Website</a> | <a href="https://github.com/spyder-ide/spyder/wiki/GSoC-2019-Ideas">Ideas Page</a> | <a href="https://gitter.im/spyder-ide/public">Gitter Chat</a> | <a href="https://groups.google.com/group/spyderlib">Google Group</a> | <a href="https://github.com/spyder-ide/spyder"> Source Code</a>
        </p>
     </td>
   </tr>
-<!-- 
+<!--
   <tr>
     <td>
       <img width="300px" src="https://github.com/stan-dev/logos/blob/master/logo_tm.png">
