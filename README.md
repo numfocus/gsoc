@@ -6,6 +6,12 @@
 for [Google Summer of Code 2019][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
+[Google Summer of Code][GSoC] is an annual open source internship program
+sponsored by Google. This repository contains information specific to NumFOCUS'
+participation in GSoC. For general information about the competition, including
+this year's application timeline and key phases involved, please see the [GSoC
+website](https://summerofcode.withgoogle.com/how-it-works/)
+
 <!--
 This Git repository stores information about NumFOCUS' participation in
 Google Summer of Code 2019 program and previous editions.
@@ -20,11 +26,11 @@ application for Google Summer of Code in the current and previous years.
 - [Students](#students)
 - [Sub Organizations](#sub-organizations)
 - [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
-- [About GSoC](#about-gsoc)
 - [NumFOCUS Projects](#numfocus-projects)
     - [Fiscally Sponsored Projects GSoC Status](#fiscally-sponsored-projects-gsoc-status)
     - [Affiliated Projects GSoC Status](#affiliated-projects-gsoc-status)
     - [Other Projects GSoC Status](#other-projects-gsoc-status)
+- [About GSoC](#about-gsoc)
 
 <!-- markdown-toc end -->
 
@@ -373,12 +379,6 @@ In alphabetic order.
  -->
 </table>
 
-## About GSoC
-
-[Google Summer of Code][GSoC] is an annual Open Source internship program
-sponsored by Google. On this site we only collect information specific to
-NumFOCUS. You can find out more about GSoC in general on the official
-[website](https://summerofcode.withgoogle.com/how-it-works/).
 
 ## NumFOCUS Organizations
 
@@ -447,7 +447,6 @@ information how to work with them.
 | [Theano]             | Unknown                          |             |
 | [xarray]             | Unknown                          |             |
 | [Yellowbrick]        | Applying under NumFOCUS umbrella |    https://github.com/wagner2010/gsoc/blob/wagner2010-patch-1/templates/ideas-page-prema.md         |
-
 
 [ArviZ]: https://arviz-devs.github.io/arviz/
 [AstroPy]: http://www.astropy.org/
