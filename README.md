@@ -305,7 +305,7 @@ In alphabetic order.
     </td>
   </tr>
 
-  <tr>
+<!--   <tr>
     <td>
       <img width="300px" src="img/spyder.png">
     </td>
@@ -316,7 +316,7 @@ In alphabetic order.
          <a href="https://www.spyder-ide.org/">Website</a> | <a href="https://github.com/spyder-ide/spyder/wiki/GSoC-2019-Ideas">Ideas Page</a> | <a href="https://gitter.im/spyder-ide/public">Gitter Chat</a> | <a href="https://groups.google.com/group/spyderlib">Google Group</a> | <a href="https://github.com/spyder-ide/spyder"> Source Code</a>
        </p>
     </td>
-  </tr>
+  </tr> -->
 <!--
   <tr>
     <td>
@@ -437,7 +437,7 @@ information how to work with them.
 | [scikit-learn]       | Unknown                          |             |
 | [Statmodels]         | Unknown                          |             |
 | [Spack]              | Unknown                          |             |
-| [Spyder]             | Applying under NumFOCUS umbrella |  https://github.com/spyder-ide/spyder/wiki/GSoC-2019-Ideas           |
+| [Spyder]             | Not participating |    |
 | [Theano]             | Unknown                          |             |
 | [xarray]             | Unknown                          |             |
 | [Yellowbrick]        | Applying under NumFOCUS umbrella |    https://github.com/wagner2010/gsoc/blob/wagner2010-patch-1/templates/ideas-page-prema.md         |
