@@ -256,6 +256,18 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+   <tr>
+   <td>
+     <img width="300px" src="https://matplotlib.org/_static/logo2.png">
+   </td>
+   <td>
+      <h1>Matplotlib</h1>
+      <p> Matplotlib is a Python 2D plotting library which produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms. Due to its status as a foundational data visualization tool, Matplotlib is used in heavily in academia, national research labs and in industry. Matplotlib is used in cutting-edge research, from physics to chemistry, neuroscience to astronomy. It has been used on high profile projects such as Mars landers and the Hubble space telescope. Matplotlib can be used in Python scripts, the Python and IPython shell, the Jupyter notebook, web application servers, and seven graphical user interface toolkits. </p>
+      <p>
+        <a href="https://matlotlib.org/">Website</a>  | <a href="https://github.com/matplotlib/matplotlib/wiki/GSOC-2019-Ideas-Page">Ideas Page</a> 
+      </p>
+   </td>
+ </tr>
   <tr>
     <td>
       <img width="300px" src="img/mdanalysis.png" />
@@ -393,7 +405,7 @@ information how to work with them.
 | [IPython]                       | Unknown                          |                                                     |
 | [Julia]                         | Unknown |           |
 | [JuMP]                          | Applying under NumFOCUS umbrella |   https://github.com/JuliaOpt/GSOC2019/blob/master/ideas-list.md                                                  |
-| [Matplotlib]                    | Unknown                          |                                                     |
+| [Matplotlib]                    | Applying under NumFOCUS umbrella |  https://github.com/matplotlib/matplotlib/wiki/GSOC-2019-Ideas-Page                                                   |
 | [nteract]                       | Applying under NumFOCUS umbrella                          |  https://github.com/nteract/nteract/wiki/GSoC-2019-Ideas                                                   |
 | [NumPy]                         | Unknown                |                                                     |
 | [Open Journals][theoj]          | Unknown                          |                                                     |
