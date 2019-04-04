@@ -33,11 +33,11 @@ sure your blog works and send us the link.
 
 ### **Phase 1**
 
-Delieverables
+Deliverables
 
 ### **Phase 2**
 
-Delieverables
+Deliverables
 
 ### **Final Week**
 
