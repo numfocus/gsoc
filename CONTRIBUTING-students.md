@@ -132,6 +132,8 @@ Overall, your application should make us believe that you are capable of
 completing the project and delivering the functionality to our users. If you
 aren't sure about anything, get in touch with us, we're happy to advise you.
 
+You can use our [base template](https://github.com/numfocus/gsoc/blob/master/templates/proposal.md) to get an idea about how to go about writing the proposal.
+
 ### Dividing your project
 
 We require that all of our students have at least one commit in the development
@@ -181,6 +183,8 @@ before into PDF you can use [Pandoc][Pandoc].
 ~~~
 $ pandoc -f markdown -t pdf YYYY/proposals/your-name.md
 ~~~
+
+
 
 [IL]: 2019/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
