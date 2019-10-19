@@ -175,9 +175,6 @@
 
 ## Links
 
--   Google+ URL
-
-    https://plus.google.com/communities/100008130850352595608
 
 -   Twitter URL
 
