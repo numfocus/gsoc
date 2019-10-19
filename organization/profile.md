@@ -86,11 +86,11 @@
 
 -   Which years did your org participate in GSoC?
 
-    2015, 2016, 2017, 2018
+    2015, 2016, 2017, 2018, 2019
 
 -   What is your success/fail rate per year?
 
-    2015: 3/3, 2016: 7/7, 2017: 10/12 , 2018: 40/45
+    2015: 3/3, 2016: 7/7, 2017: 10/12 , 2018: 40/45, 2019: 19/23
 
 -   Are you part of a foundation/umbrella organization?
 
