@@ -3,7 +3,7 @@
 | [Sub organizations](https://github.com/numfocus/gsoc/tree/update-docs#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
 [NumFOCUS][] will be applying again as an umbrella mentoring organization
-for [Google Summer of Code 2019][GSoC]. [NumFOCUS][] supports and
+for [Google Summer of Code 2020][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
 [Google Summer of Code][GSoC] is an annual open source internship program
@@ -208,20 +208,20 @@ information how to work with them.
 | Project                         | Status                           | Ideas Pages                                         |
 | -------                         | ------                           | -----------                                         |
 | [AstroPy]                       | Unknown     |    |
-| [Blosc]                         | Applying under NumFOCUS umbrella | https://github.com/Blosc/c-blosc2/wiki/GSOC-2019-Project-Ideas |
-| [Cantera]                       | Applying under NumFOCUS umbrella | https://github.com/Cantera/cantera/wiki/GSoC-2019-Ideas                                                |
-| [Econ-ARK][Econ-ARK]            | Unknown                |                                                     |
-| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |   https://github.com/FEniCS/gsoc/blob/fenics/ideas-2019/2019/ideas-list-fenics.md                                                  |
+| [Blosc]                         | Unknown |
+| [Cantera]                       | Unknown |                          |
+| [Econ-ARK][Econ-ARK]            | Applying under NumFOCUS umbrella |                                                     |
+| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |  |
 | [IPython]                       | Unknown                          |                                                     |
 | [Julia]                         | Unknown |           |
-| [JuMP]                          | Applying under NumFOCUS umbrella |   https://github.com/JuliaOpt/GSOC2019/blob/master/ideas-list.md                                                  |
-| [Matplotlib]                    | Applying under NumFOCUS umbrella |  https://github.com/matplotlib/matplotlib/wiki/GSOC-2019-Ideas-Page                                                   |
-| [nteract]                       | Applying under NumFOCUS umbrella                          |  https://github.com/nteract/nteract/wiki/GSoC-2019-Ideas                                                   |
+| [JuMP]                          | Unknown |                                         |
+| [Matplotlib]                    | Unknown |                                                 |
+| [nteract]                       | Unknown |                                                |
 | [NumPy]                         | Unknown                |                                                     |
 | [Open Journals][theoj]          | Unknown                          |                                                     |
 | [Project Jupyter][Jupyter]      | Unknown                          |                                                     |
 | [pandas]                        | Unknown                          |                                                     |
-| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | https://github.com/pymc-devs/pymc3/wiki/GSoC-2019-projects |
+| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | |
 | [PyTables]                      | Unknown                          |                                                     |
 | [QuantEcon]                     | Unknown                          |                                                     |
 | [rOpenSci]                      | Unknown                |                                                     |
@@ -235,34 +235,36 @@ information how to work with them.
 
 | Project              | Status                           | Ideas Pages |
 | -------              | ------                           | ----------- |
-| [ArviZ]              | Applying under NumFOCUS umbrella |  https://github.com/arviz-devs/arviz/wiki/GSoC-2019-projects           |
-| [Bokeh]              | Unknown                          |             |
-| [Chainer]            | Applying under NumFOCUS umbrella |   https://github.com/chainer/chainer/wiki/GSoC-2019-Project-Ideas          |
+| [ArviZ]              | Applying under NumFOCUS umbrella |  https://github.com/arviz-devs/arviz/wiki/GSoC-2020-projects           |
+| [Bokeh]              | Unknown  |             |
+| [Chainer]            | Unknown  |            |
+| [Clawpack]           | Applying under NumFOCUS umbrella |           |
 | [Conda]              | Unknown                          |             |
-| [conda-forge]        | Unknown                          |             |
-| [CuPy]               | Applying under NumFOCUS umbrella |     https://github.com/cupy/cupy/wiki/GSoC-2019-Ideas--CuPy        |
+| [conda-forge]        |  Applying under NumFOCUS umbrella |             |
+| [CuPy]               | Unknown  |           |
 | [Cython]             | Unknown                          |             |
-| [Dash]               | Not participating |         |
-| [Data Retriever][DR] | Applying under NumFOCUS umbrella |  https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas           |
-| [Dask]               | Applying under NumFOCUS umbrella |  https://github.com/dask/dask/wiki/GSOC-2019-Project-Ideas           |
+| [Dash]               | Unknown |         |
+| [Data Retriever][DR] | Applying under NumFOCUS umbrella | |
+| [Dask]               | Unknown |     |
 | [DyND]               | Unknown                          |             |
 | [Gensim]             | Unknown                          |             |
-| [MDAnalysis]         | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas |
+| [MDAnalysis]         | Unknown |  |
 | [Numba]              | Unknown                          |             |
 | [Orange]             | Unknown                          |             |
 | [Pomegranate]        | Unknown                          |             |
+| [pvlib]              | Applying under NumFOCUS umbrella |             |
 | [PythonXY]           | Unknown                          |             |
-| [QuTiP]              | Applying under NumFOCUS umbrella |  https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2019          |
+| [QuTiP]              | Unknown |        |
 | [SciPy]              | Unknown                          |             |
 | [scikit-image]       | Unknown                          |             |
 | [scikit-bio]         | Unknown                          |             |
 | [scikit-learn]       | Unknown                          |             |
 | [Statmodels]         | Unknown                          |             |
 | [Spack]              | Unknown                          |             |
-| [Spyder]             | Not participating |    |
+| [Spyder]             | Unknown |    |
 | [Theano]             | Unknown                          |             |
 | [xarray]             | Unknown                          |             |
-| [Yellowbrick]        | Applying under NumFOCUS umbrella |    https://github.com/wagner2010/gsoc/blob/wagner2010-patch-1/templates/ideas-page-prema.md         |
+| [Yellowbrick]        | Unknown |       |
 
 [ArviZ]: https://arviz-devs.github.io/arviz/
 [AstroPy]: http://www.astropy.org/
@@ -270,6 +272,7 @@ information how to work with them.
 [Bokeh]: http://bokeh.pydata.org/
 [cantera]:  http://cantera.org/docs/sphinx/html/index.html
 [Chainer]: http://chainer.org
+[Clawpack]: https://www.clawpack.org
 [CONTRIBUTING]: CONTRIBUTING-students.md
 [Conda]: https://github.com/conda/conda
 [conda-forge]: https://conda-forge.org
@@ -301,6 +304,7 @@ information how to work with them.
 [Orange]: http://orange.biolab.si/
 [pandas]: http://pandas.pydata.org/
 [Pomegranate]: https://pomegranate.readthedocs.io/en/latest/
+[pvlib]: http://pvlib-python.readthedocs.io 
 [PyTables]: http://pytables.github.com/
 [PythonXY]: http://code.google.com/p/pythonxy/wiki/Welcome
 [QuTiP]: https://qutip.org
