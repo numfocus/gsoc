@@ -13,7 +13,7 @@ page of each organization under the NumFocus umbrella at this page.
 - Econ-Ark
 - FEniCS
 - pvlib
-- PyMC3
+- PyMC3 https://github.com/pymc-devs/pymc3/wiki/GSoC-2020-projects
 
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md) for contact information of each org.
