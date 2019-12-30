@@ -221,7 +221,7 @@ information how to work with them.
 | [Open Journals][theoj]          | Unknown                          |                                                     |
 | [Project Jupyter][Jupyter]      | Unknown                          |                                                     |
 | [pandas]                        | Unknown                          |                                                     |
-| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | |
+| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | https://github.com/pymc-devs/pymc3/wiki/GSoC-2020-projects |
 | [PyTables]                      | Unknown                          |                                                     |
 | [QuantEcon]                     | Unknown                          |                                                     |
 | [rOpenSci]                      | Unknown                |                                                     |
@@ -252,7 +252,7 @@ information how to work with them.
 | [Numba]              | Unknown                          |             |
 | [Orange]             | Unknown                          |             |
 | [Pomegranate]        | Unknown                          |             |
-| [pvlib]              | Applying under NumFOCUS umbrella |             |
+| [pvlib]              | Applying under NumFOCUS umbrella | https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project           |
 | [PythonXY]           | Unknown                          |             |
 | [QuTiP]              | Unknown |        |
 | [SciPy]              | Unknown                          |             |
