@@ -192,6 +192,18 @@ In alphabetic order.
     </td>
   </tr>
 
+  <tr>
+    <td>
+      <img width="300px" src="img/signac.png">
+    </td>
+    <td>
+       <h1>signac</h1>
+       <p> The signac framework is a complete solution for managing workflows operating on file-based data designed to scale to HPC systems. </p>
+       <p>
+         <a href="https://signac.io">Website</a> | <a href="https://gitter.im/signac/Lobby">Gitter</a> | <a href="">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
+       </p>
+    </td>
+  </tr>
   
 </table>
 
@@ -259,6 +271,7 @@ information how to work with them.
 | [scikit-image]       | Unknown                          |             |
 | [scikit-bio]         | Unknown                          |             |
 | [scikit-learn]       | Unknown                          |             |
+| [signac]             | Applying under NumFOCUS umbrella |  |
 | [Statmodels]         | Unknown                          |             |
 | [Spack]              | Unknown                          |             |
 | [Spyder]             | Unknown |    |
@@ -315,6 +328,7 @@ information how to work with them.
 [scikit-image]: http://scikit-image.org/
 [scikit-learn]: http://scikit-learn.org/stable/
 [SciPy]: http://www.scipy.org/
+[signac]: https://signac.io
 [Spack]: https://spack.io
 [Spyder]: https://www.spyder-ide.org/
 [Statmodels]: http://statsmodels.sourceforge.net/
