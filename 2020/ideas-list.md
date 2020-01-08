@@ -14,6 +14,6 @@ page of each organization under the NumFocus umbrella at this page.
 - FEniCS
 - pvlib     https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project
 - PyMC3     https://github.com/pymc-devs/pymc3/wiki/GSoC-2020-projects
-- signac
+- signac    https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md) for contact information of each org.
