@@ -14,7 +14,7 @@ website](https://summerofcode.withgoogle.com/how-it-works/)
 
 <!--
 This Git repository stores information about NumFOCUS' participation in
-Google Summer of Code 2019 program and previous editions.
+Google Summer of Code 2020 program and previous editions.
 -->
 
 This Git repository stores information about NumFOCUS'
@@ -300,7 +300,7 @@ information how to work with them.
 [FEniCSproject]: https://fenicsproject.org/
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
-[IL]: 2019/ideas-list.md
+[IL]: 2020/ideas-list.md
 [IPython]: http://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: http://julialang.org/
