@@ -7,11 +7,16 @@ page of each organization under the NumFocus umbrella at this page.
 
 
 - ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2020-projects
+- Bokeh
 - Clawpack
+- Colour
 - conda-forge
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2020-Project-Ideas
 - Econ-Ark
+- Effective Quadratures
 - FEniCS
+- matplotlib
+- nteract
 - pvlib     https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project
 - PyMC3     https://github.com/pymc-devs/pymc3/wiki/GSoC-2020-projects
 - signac    https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects
