@@ -13,7 +13,7 @@ page of each organization under the NumFocus umbrella at this page.
 - Colour
 - conda-forge
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2020-Project-Ideas
-- Econ-Ark
+- Econ-Ark https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas
 - Effective Quadratures
 - FEniCS
 - matplotlib
