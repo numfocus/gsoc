@@ -8,6 +8,7 @@ page of each organization under the NumFocus umbrella at this page.
 
 - ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2020-projects
 - Bokeh
+- Cantera https://github.com/Cantera/cantera/wiki/GSoC-2020-Ideas
 - Clawpack
 - Colour
 - conda-forge
