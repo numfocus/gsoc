@@ -1,12 +1,12 @@
 # Google Summer of Code
 
-| [Sub organizations](https://github.com/numfocus/gsoc/tree/update-docs#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
+| [Sub organizations](https://github.com/numfocus/gsoc/tree/update-docs#sub-organizations) | [IDEAS LIST][il] | [Student guides][contributing] |
 
 [NumFOCUS][] will be applying again as an umbrella mentoring organization
-for [Google Summer of Code 2020][GSoC]. [NumFOCUS][] supports and
+for [Google Summer of Code 2020][gsoc]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
-[Google Summer of Code][GSoC] is an annual open source internship program
+[Google Summer of Code][gsoc] is an annual open source internship program
 sponsored by Google. This repository contains information specific to NumFOCUS'
 participation in GSoC. For general information about the competition, including
 this year's application timeline and key phases involved, please see the [GSoC
@@ -21,15 +21,16 @@ This Git repository stores information about NumFOCUS'
 application for Google Summer of Code in the current and previous years.
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+
 **Table of Contents**
 
 - [Students](#students)
 - [Sub Organizations](#sub-organizations)
 - [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
 - [NumFOCUS Projects](#numfocus-projects)
-    - [Fiscally Sponsored Projects GSoC Status](#fiscally-sponsored-projects-gsoc-status)
-    - [Affiliated Projects GSoC Status](#affiliated-projects-gsoc-status)
-    - [Other Projects GSoC Status](#other-projects-gsoc-status)
+  - [Fiscally Sponsored Projects GSoC Status](#fiscally-sponsored-projects-gsoc-status)
+  - [Affiliated Projects GSoC Status](#affiliated-projects-gsoc-status)
+  - [Other Projects GSoC Status](#other-projects-gsoc-status)
 - [About GSoC](#about-gsoc)
 
 <!-- markdown-toc end -->
@@ -40,8 +41,8 @@ NumFOCUS is participating as a umbrella organization. This means that
 you will need to identify a specific project to apply to under the
 NumFOCUS umbrella. (Projects are listed below.)
 
-Read [this document][CONTRIBUTING] to learn how to apply for the
-GSoC program with NumFOCUS. Please also check out our [ideas list][IL].
+Read [this document][contributing] to learn how to apply for the
+GSoC program with NumFOCUS. Please also check out our [ideas list][il].
 
 For any questions, please open an issue in our [issue tracker][issues]
 or send a email to gsoc@numfocus.org, our mailing list address.
@@ -67,7 +68,6 @@ The list should contain for each project.
 In alphabetic order.
 
 <table>
-
 
   <tr>
     <td>
@@ -98,7 +98,6 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-
 
 <tr>
     <td>
@@ -166,6 +165,25 @@ In alphabetic order.
    </td>
  </tr>
 
+ <tr>
+  <td>
+    <img width="300px" src="img/nteract.png">
+  </td>
+  <td>
+     <h1>nteract</h1>
+     <p>The nteract open source organization is committed to building the future of interactive computing. We are committed to:</p>
+     <ul>
+     <li>Creating fantastic interactive computing experiences that allow people to collaborate with ease.</li>
+     <li>Emphasizing simplicity and composability as core design principles to provide users ideal building blocks for their unique data applications.</li>
+     <li>Valuing our contributors and users and cooperating to produce solutions that delight others.</li>
+     </ul>
+     <p>To fulfill our mission, the nteract open source organization produces SDKs, applications, libraries, and CLIs to help individuals leverage the full power of Jupyter and other interactive computing environments.</p>
+     <p>
+       <a href="https://nteract.io/">Website</a> | <a href="https://slack.nteract.io/">Contact (Slack Community)</a> | <a href="https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas">Ideas Page</a> | <a href="https://github.com/nteract/nteract"> Source Code (Core SDK and Applications)</a>
+     </p>
+  </td>
+</tr>
+
 <tr>
   <td>
     <img width="300px" src="img/pvlib.png">
@@ -207,7 +225,6 @@ In alphabetic order.
 
 </table>
 
-
 ## NumFOCUS Organizations
 
 Not all NumFOCUS organizations participate under our umbrella. These lists show
@@ -216,127 +233,126 @@ information how to work with them.
 
 ### Fiscally Sponsored Organizations GSoC Status
 
-
-| Project                         | Status                           | Ideas Pages                                         |
-| -------                         | ------                           | -----------                                         |
-| [AstroPy]                       | Unknown     |    |
-| [Blosc]                         | Unknown |
-| [Cantera]                       | Unknown |                          |
-| [Econ-ARK][Econ-ARK]            | Applying under NumFOCUS umbrella |                                                     |
-| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |  |
-| [IPython]                       | Unknown                          |                                                     |
-| [Julia]                         | Unknown |           |
-| [JuMP]                          | Unknown |                                         |
-| [Matplotlib]                    | Unknown |                                                 |
-| [nteract]                       | Unknown |                                                |
-| [NumPy]                         | Unknown                |                                                     |
-| [Open Journals][theoj]          | Unknown                          |                                                     |
-| [Project Jupyter][Jupyter]      | Unknown                          |                                                     |
-| [pandas]                        | Unknown                          |                                                     |
+| Project                         | Status                           | Ideas Pages                                                |
+| ------------------------------- | -------------------------------- | ---------------------------------------------------------- |
+| [AstroPy]                       | Unknown                          |                                                            |
+| [Blosc]                         | Unknown                          |
+| [Cantera]                       | Unknown                          |                                                            |
+| [Econ-ARK][econ-ark]            | Applying under NumFOCUS umbrella |                                                            |
+| [FEniCS Project][fenicsproject] | Applying under NumFOCUS umbrella |                                                            |
+| [IPython]                       | Unknown                          |                                                            |
+| [Julia]                         | Unknown                          |                                                            |
+| [JuMP]                          | Unknown                          |                                                            |
+| [Matplotlib]                    | Unknown                          |                                                            |
+| [nteract]                       | Unknown                          |                                                            |
+| [NumPy]                         | Unknown                          |                                                            |
+| [Open Journals][theoj]          | Unknown                          |                                                            |
+| [Project Jupyter][jupyter]      | Unknown                          |                                                            |
+| [pandas]                        | Unknown                          |                                                            |
 | [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | https://github.com/pymc-devs/pymc3/wiki/GSoC-2020-projects |
-| [PyTables]                      | Unknown                          |                                                     |
-| [QuantEcon]                     | Unknown                          |                                                     |
-| [rOpenSci]                      | Unknown                |                                                     |
-| [Shogun]                        | Unknown |                                                    |
-| [SunPy]                         | Unknown |  |
-| [SymPy]                         | Unknown |  |
-| [Stan]                          | Unknown |                                                     |
-| [yt]                            | Unknown |                                                     |
+| [PyTables]                      | Unknown                          |                                                            |
+| [QuantEcon]                     | Unknown                          |                                                            |
+| [rOpenSci]                      | Unknown                          |                                                            |
+| [Shogun]                        | Unknown                          |                                                            |
+| [SunPy]                         | Unknown                          |                                                            |
+| [SymPy]                         | Unknown                          |                                                            |
+| [Stan]                          | Unknown                          |                                                            |
+| [yt]                            | Unknown                          |                                                            |
 
 ### Affiliated Organizations GSoC Status
 
-| Project              | Status                           | Ideas Pages |
-| -------              | ------                           | ----------- |
-| [ArviZ]              | Applying under NumFOCUS umbrella |  https://github.com/arviz-devs/arviz/wiki/GSoC-2020-projects           |
-| [Bokeh]              | Unknown  |             |
-| [Chainer]            | Unknown  |            |
-| [Clawpack]           | Applying under NumFOCUS umbrella |           |
-| [Conda]              | Unknown                          |             |
-| [conda-forge]        |  Applying under NumFOCUS umbrella |             |
-| [CuPy]               | Unknown  |           |
-| [Cython]             | Unknown                          |             |
-| [Dash]               | Unknown |         |
-| [Data Retriever][DR] | Applying under NumFOCUS umbrella | |
-| [Dask]               | Unknown |     |
-| [DyND]               | Unknown                          |             |
-| [Gensim]             | Unknown                          |             |
-| [MDAnalysis]         | Unknown |  |
-| [Numba]              | Unknown                          |             |
-| [Orange]             | Unknown                          |             |
-| [Pomegranate]        | Unknown                          |             |
-| [pvlib]              | Applying under NumFOCUS umbrella | https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project           |
-| [PythonXY]           | Unknown                          |             |
-| [QuTiP]              | Unknown |        |
-| [SciPy]              | Unknown                          |             |
-| [scikit-image]       | Unknown                          |             |
-| [scikit-bio]         | Unknown                          |             |
-| [scikit-learn]       | Unknown                          |             |
-| [signac]             | Applying under NumFOCUS umbrella |  |
-| [Statmodels]         | Unknown                          |             |
-| [Spack]              | Unknown                          |             |
-| [Spyder]             | Unknown |    |
-| [Theano]             | Unknown                          |             |
-| [xarray]             | Unknown                          |             |
-| [Yellowbrick]        | Unknown |       |
+| Project              | Status                           | Ideas Pages                                                  |
+| -------------------- | -------------------------------- | ------------------------------------------------------------ |
+| [ArviZ]              | Applying under NumFOCUS umbrella | https://github.com/arviz-devs/arviz/wiki/GSoC-2020-projects  |
+| [Bokeh]              | Unknown                          |                                                              |
+| [Chainer]            | Unknown                          |                                                              |
+| [Clawpack]           | Applying under NumFOCUS umbrella |                                                              |
+| [Conda]              | Unknown                          |                                                              |
+| [conda-forge]        | Applying under NumFOCUS umbrella |                                                              |
+| [CuPy]               | Unknown                          |                                                              |
+| [Cython]             | Unknown                          |                                                              |
+| [Dash]               | Unknown                          |                                                              |
+| [Data Retriever][dr] | Applying under NumFOCUS umbrella |                                                              |
+| [Dask]               | Unknown                          |                                                              |
+| [DyND]               | Unknown                          |                                                              |
+| [Gensim]             | Unknown                          |                                                              |
+| [MDAnalysis]         | Unknown                          |                                                              |
+| [Numba]              | Unknown                          |                                                              |
+| [Orange]             | Unknown                          |                                                              |
+| [Pomegranate]        | Unknown                          |                                                              |
+| [pvlib]              | Applying under NumFOCUS umbrella | https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project |
+| [PythonXY]           | Unknown                          |                                                              |
+| [QuTiP]              | Unknown                          |                                                              |
+| [SciPy]              | Unknown                          |                                                              |
+| [scikit-image]       | Unknown                          |                                                              |
+| [scikit-bio]         | Unknown                          |                                                              |
+| [scikit-learn]       | Unknown                          |                                                              |
+| [signac]             | Applying under NumFOCUS umbrella |                                                              |
+| [Statmodels]         | Unknown                          |                                                              |
+| [Spack]              | Unknown                          |                                                              |
+| [Spyder]             | Unknown                          |                                                              |
+| [Theano]             | Unknown                          |                                                              |
+| [xarray]             | Unknown                          |                                                              |
+| [Yellowbrick]        | Unknown                          |                                                              |
 
-[ArviZ]: https://arviz-devs.github.io/arviz/
-[AstroPy]: http://www.astropy.org/
-[Blosc]: http://www.blosc.org/
-[Bokeh]: http://bokeh.pydata.org/
-[cantera]:  http://cantera.org/docs/sphinx/html/index.html
-[Chainer]: http://chainer.org
-[Clawpack]: https://www.clawpack.org
-[CONTRIBUTING]: CONTRIBUTING-students.md
-[Conda]: https://github.com/conda/conda
+[arviz]: https://arviz-devs.github.io/arviz/
+[astropy]: http://www.astropy.org/
+[blosc]: http://www.blosc.org/
+[bokeh]: http://bokeh.pydata.org/
+[cantera]: http://cantera.org/docs/sphinx/html/index.html
+[chainer]: http://chainer.org
+[clawpack]: https://www.clawpack.org
+[contributing]: CONTRIBUTING-students.md
+[conda]: https://github.com/conda/conda
 [conda-forge]: https://conda-forge.org
-[CuPy]: http://cupy.chainer.org
-[Cython]: http://cython.org/
-[CF]: https://conda-forge.github.io/
-[Dash]: https://plot.ly/dash/
-[Dask]: https://dask.org/
-[DR]: http://www.data-retriever.org/
-[DyND]: http://libdynd.org/
-[Econ-ARK]: https://econ-ark.github.io/HARK/
-[FEniCSproject]: https://fenicsproject.org/
-[Gensim]: https://radimrehurek.com/gensim/
-[GSoC]: https://summerofcode.withgoogle.com/
-[IL]: 2020/ideas-list.md
-[IPython]: http://ipython.org/
+[cupy]: http://cupy.chainer.org
+[cython]: http://cython.org/
+[cf]: https://conda-forge.github.io/
+[dash]: https://plot.ly/dash/
+[dask]: https://dask.org/
+[dr]: http://www.data-retriever.org/
+[dynd]: http://libdynd.org/
+[econ-ark]: https://econ-ark.github.io/HARK/
+[fenicsproject]: https://fenicsproject.org/
+[gensim]: https://radimrehurek.com/gensim/
+[gsoc]: https://summerofcode.withgoogle.com/
+[il]: 2020/ideas-list.md
+[ipython]: http://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
-[Julia]: http://julialang.org/
-[JuMP]: http://www.juliaopt.org
-[Jupyter]: http://jupyter.org/
-[Matplotlib]: http://matplotlib.sourceforge.net/
-[MDAnalysis]: http://mdanalysis.org
-[Numba]: http://numba.pydata.org/
-[NumFOCUS-Projects]: http://numfocus.org/projects/index.html
-[NumFOCUS]: http://numfocus.org/
-[NumPy]: http://numpy.scipy.org/
+[julia]: http://julialang.org/
+[jump]: http://www.juliaopt.org
+[jupyter]: http://jupyter.org/
+[matplotlib]: http://matplotlib.sourceforge.net/
+[mdanalysis]: http://mdanalysis.org
+[numba]: http://numba.pydata.org/
+[numfocus-projects]: http://numfocus.org/projects/index.html
+[numfocus]: http://numfocus.org/
+[numpy]: http://numpy.scipy.org/
 [nteract]: https://nteract.io/
 [theoj]: http://www.theoj.org
-[Orange]: http://orange.biolab.si/
+[orange]: http://orange.biolab.si/
 [pandas]: http://pandas.pydata.org/
-[Pomegranate]: https://pomegranate.readthedocs.io/en/latest/
-[pvlib]: http://pvlib-python.readthedocs.io 
-[PyTables]: http://pytables.github.com/
-[PythonXY]: http://code.google.com/p/pythonxy/wiki/Welcome
-[QuTiP]: https://qutip.org
-[rOpenSci]: http://ropensci.org/
+[pomegranate]: https://pomegranate.readthedocs.io/en/latest/
+[pvlib]: http://pvlib-python.readthedocs.io
+[pytables]: http://pytables.github.com/
+[pythonxy]: http://code.google.com/p/pythonxy/wiki/Welcome
+[qutip]: https://qutip.org
+[ropensci]: http://ropensci.org/
 [quantecon]: http://quantecon.org/
-[SCF]: http://software-carpentry.org/scf/index.html
+[scf]: http://software-carpentry.org/scf/index.html
 [scikit-bio]: http://scikit-bio.org/
 [scikit-image]: http://scikit-image.org/
 [scikit-learn]: http://scikit-learn.org/stable/
-[SciPy]: http://www.scipy.org/
+[scipy]: http://www.scipy.org/
 [signac]: https://signac.io
-[Spack]: https://spack.io
-[Spyder]: https://www.spyder-ide.org/
-[Statmodels]: http://statsmodels.sourceforge.net/
-[Stan]: http://mc-stan.org/
-[Shogun]: http://www.shogun-toolbox.org
-[SunPy]: http://sunpy.org
-[SymPy]: http://sympy.org
-[Theano]: http://deeplearning.net/software/theano/
+[spack]: https://spack.io
+[spyder]: https://www.spyder-ide.org/
+[statmodels]: http://statsmodels.sourceforge.net/
+[stan]: http://mc-stan.org/
+[shogun]: http://www.shogun-toolbox.org
+[sunpy]: http://sunpy.org
+[sympy]: http://sympy.org
+[theano]: http://deeplearning.net/software/theano/
 [xarray]: http://xarray.pydata.org/
-[Yellowbrick]: http://www.scikit-yb.org/en/latest/
+[yellowbrick]: http://www.scikit-yb.org/en/latest/
 [yt]: http://yt-project.org/
