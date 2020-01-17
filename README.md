@@ -165,6 +165,25 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+ 
+ <tr>
+  <td>
+    <img width="300px" src="img/nteract.png">
+  </td>
+  <td>
+     <h1>nteract</h1>
+     <p>The nteract open source organization is committed to building the future of interactive computing. We are committed to:</p>
+     <ul>
+     <li>Creating fantastic interactive computing experiences that allow people to collaborate with ease.</li>
+     <li>Emphasizing simplicity and composability as core design principles to provide users ideal building blocks for their unique data applications.</li>
+     <li>Valuing our contributors and users and cooperating to produce solutions that delight others.</li>
+     </ul>
+     <p>To fulfill our mission, the nteract open source organization produces SDKs, applications, libraries, and CLIs to help individuals leverage the full power of Jupyter and other interactive computing environments.</p>
+     <p>
+       <a href="https://nteract.io/">Website</a> | <a href="https://slack.nteract.io/">Contact (Slack Community)</a> | <a href="https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas">Ideas Page</a> | <a href="https://github.com/nteract/nteract"> Source Code (Core SDK and Applications)</a>
+     </p>
+  </td>
+</tr>
 
 <tr>
   <td>
@@ -228,7 +247,7 @@ information how to work with them.
 | [Julia]                         | Unknown |           |
 | [JuMP]                          | Unknown |                                         |
 | [Matplotlib]                    | Unknown |                                                 |
-| [nteract]                       | Unknown |                                                |
+| [nteract]                       | Applying under NumFOCUS umbrella | https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas |
 | [NumPy]                         | Unknown                |                                                     |
 | [Open Journals][theoj]          | Unknown                          |                                                     |
 | [Project Jupyter][Jupyter]      | Unknown                          |                                                     |
