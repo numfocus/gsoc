@@ -17,7 +17,7 @@ page of each organization under the NumFocus umbrella at this page.
 - Effective Quadratures
 - FEniCS
 - matplotlib
-- nteract
+- nteract   https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas
 - pvlib     https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project
 - PyMC3     https://github.com/pymc-devs/pymc3/wiki/GSoC-2020-projects
 - signac    https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects
