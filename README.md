@@ -127,7 +127,7 @@ In alphabetic order.
         cleaning and managing data, and more time analyzing it.
       </p>
       <p>
-        <a href="http://www.data-retriever.org/">Website</a>  | <a href=""> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) | <a href="https://github.com/weecology/retriever">Source Code</a>
+        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2020-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) | <a href="https://github.com/weecology/retriever">Source Code</a>
       </p>
    </td>
  </tr>
@@ -142,7 +142,7 @@ In alphabetic order.
         The aim of the Econ-ARK project is to make it easier for social scientists to do ‘structural modeling’ of economic choice behavior by providing a well-documented, open source codebase containing the core techniques in a way that can be relatively easily adapted to address many different questions in both macro- and microeconomics. ‘Structural’ modeling of economic choices aims to identify the logic or reasons behind observed behavior, rather than just describing that behavior statistically.
       </p>
       <p>
-        <a href="https://econ-ark.org">Website</a>  | <a href=""> Ideas List</a> | <a href=""> Contact | <a href="https://github.com/econ-ark/HARK">Source Code</a>
+        <a href="https://econ-ark.org">Website</a>  | <a href="https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas"> Ideas List</a> | <a href=""> Contact | <a href="https://github.com/econ-ark/HARK">Source Code</a>
       </p>
    </td>
  </tr>
@@ -193,7 +193,7 @@ In alphabetic order.
      <h1>pvlib</h1>
      <p>pvlib python provides a set of functions and classes for simulating the performance of photovoltaic energy systems.</p>
      <p>
-       <a href="https://pvlib-python.readthedocs.io/en/stable/">Website</a> | <a href="">Contact</a> | <a href="">Ideas Page</a> | <a href="https://github.com/pvlib/pvlib-python"> Source Code</a>
+       <a href="https://pvlib-python.readthedocs.io/en/stable/">Website</a> | <a href="">Contact</a> | <a href="https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project">Ideas Page</a> | <a href="https://github.com/pvlib/pvlib-python"> Source Code</a>
      </p>
   </td>
 </tr>
@@ -240,8 +240,8 @@ information how to work with them.
 | -------                         | ------                           | -----------                                         |
 | [AstroPy]                       | Unknown     |    |
 | [Blosc]                         | Unknown |
-| [Cantera]                       | Unknown |                          |
-| [Econ-ARK][Econ-ARK]            | Applying under NumFOCUS umbrella |                                                     |
+| [Cantera]                       | Applying under NumFOCUS umbrella | https://github.com/Cantera/cantera/wiki/GSoC-2020-Ideas |
+| [Econ-ARK][Econ-ARK]            | Unknown | https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas |
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |  |
 | [IPython]                       | Unknown                          |                                                     |
 | [Julia]                         | Unknown |           |
@@ -266,16 +266,16 @@ information how to work with them.
 
 | Project              | Status                           | Ideas Pages |
 | -------              | ------                           | ----------- |
-| [ArviZ]              | Applying under NumFOCUS umbrella |  https://github.com/arviz-devs/arviz/wiki/GSoC-2020-projects           |
+| [ArviZ]              | Applying under NumFOCUS umbrella |  https://github.com/arviz-devs/arviz/wiki/GSoC-2020-projects |
 | [Bokeh]              | Unknown  |             |
 | [Chainer]            | Unknown  |            |
 | [Clawpack]           | Applying under NumFOCUS umbrella |           |
 | [Conda]              | Unknown                          |             |
-| [conda-forge]        |  Applying under NumFOCUS umbrella |             |
+| [conda-forge]        | Applying under NumFOCUS umbrella |             |
 | [CuPy]               | Unknown  |           |
 | [Cython]             | Unknown                          |             |
 | [Dash]               | Unknown |         |
-| [Data Retriever][DR] | Applying under NumFOCUS umbrella | |
+| [Data Retriever][DR] | Applying under NumFOCUS umbrella |  https://github.com/weecology/retriever/wiki/GSoC-2020-Project-Ideas |
 | [Dask]               | Unknown |     |
 | [DyND]               | Unknown                          |             |
 | [Gensim]             | Unknown                          |             |
@@ -283,14 +283,14 @@ information how to work with them.
 | [Numba]              | Unknown                          |             |
 | [Orange]             | Unknown                          |             |
 | [Pomegranate]        | Unknown                          |             |
-| [pvlib]              | Applying under NumFOCUS umbrella | https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project           |
+| [pvlib]              | Applying under NumFOCUS umbrella |  https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project |
 | [PythonXY]           | Unknown                          |             |
 | [QuTiP]              | Unknown |        |
 | [SciPy]              | Unknown                          |             |
 | [scikit-image]       | Unknown                          |             |
 | [scikit-bio]         | Unknown                          |             |
 | [scikit-learn]       | Unknown                          |             |
-| [signac]             | Applying under NumFOCUS umbrella |  |
+| [signac]             | Applying under NumFOCUS umbrella |  https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects |
 | [Statmodels]         | Unknown                          |             |
 | [Spack]              | Unknown                          |             |
 | [Spyder]             | Unknown |    |
