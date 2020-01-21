@@ -147,6 +147,29 @@ In alphabetic order.
   </tr>
 
   <tr>
+    <td>
+      <img width="300px" src="img/colour.png"/>
+    </td>
+    <td>
+       <h1>Colour</h1>
+       <p>
+          <a href="https://github.com/colour-science/colour">Colour</a> is an
+          open-source <a href="https://www.python.org/">Python</a> package
+          providing a comprehensive number of algorithms and datasets for
+          colour science.
+       </p>
+        <p>
+          It is freely available under the
+          <a href="https://opensource.org/licenses/BSD-3-Clause">New BSD License</a>
+          terms.
+       </p>
+       <p>
+       <a href="https://www.colour-science.org/">Website</a> | <a href="https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md">Ideas List</a> | <a href="mailto:colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
    <td>
      <img width="300px" src="img/ecodata-retriever.png"/>
    </td>
@@ -303,6 +326,7 @@ information how to work with them.
 | [Clawpack]           | Applying under NumFOCUS umbrella |           |
 | [Conda]              | Unknown                          |             |
 | [conda-forge]        | Applying under NumFOCUS umbrella |             |
+| [Colour]             | Applying under NumFOCUS umbrella | https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md |
 | [CuPy]               | Unknown  |           |
 | [Cython]             | Unknown                          |             |
 | [Dash]               | Unknown |         |
@@ -339,6 +363,7 @@ information how to work with them.
 [CONTRIBUTING]: CONTRIBUTING-students.md
 [Conda]: https://github.com/conda/conda
 [conda-forge]: https://conda-forge.org
+[Colour]: https://www.colour-science.org/
 [CuPy]: https://cupy.chainer.org/
 [Cython]: https://cython.org/
 [CF]: https://conda-forge.github.io/
