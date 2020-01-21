@@ -62,7 +62,7 @@ and we will help you.
 - 5pts Did you reference projects you coded WITH links to repos or provided code?
 - 5pts Did you provide several methods to contact you? (email, skype, mobile/phone, twitter, chat, and/or tumblr if available)
 - 3pts Did you include a preliminary project plan (before, during, after GSoC)?
-- 3pts Did you state which project you are applying for and why you think you complete the project?
+- 3pts Did you state which project you are applying for and why you think you will end up completing the project?
 - 3pts Do you have time for GSoC? This is a paid job! State that you have time in your motivation letter, and list other commitments!
 - 1pts Did you add a link to ALL your application files to a cloud hoster like GitHub or Dropbox? (easy points! 😉)
 - 0pts Be honest! Only universal Karma points. 🙂
@@ -83,8 +83,8 @@ and we will help you.
 - Communicate every working day with your mentor, preferably in public using the
   standard channels of your project.
 - If there is a reason why you can't work or can't contact us on a regular basis
-  please make us aware of this.
-- If you don't communicate with us regularly we will fail you.
+  please make us aware of this in advance.
+- If you don't communicate with us regularly, we will fail you.
 
 **Evaluations**
 
