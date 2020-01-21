@@ -10,7 +10,7 @@ page of each organization under the NumFocus umbrella at this page.
 - Bokeh https://github.com/bokeh/bokeh/wiki/GSOC-2020-Ideas-Page
 - Cantera https://github.com/Cantera/cantera/wiki/GSoC-2020-Ideas
 - Clawpack
-- Colour
+- Colour https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md
 - conda-forge
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2020-Project-Ideas
 - Econ-Ark https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas
