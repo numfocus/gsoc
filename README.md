@@ -85,7 +85,7 @@ In alphabetic order.
   </tr>
   
   <tr>
-    <td>
+  <td>
       <img width="300px" src="https://static.bokeh.org/logos/logo.png"/>
     </td>
     <td>
@@ -95,6 +95,22 @@ In alphabetic order.
        </p>
        <p>
          <a href="https://docs.bokeh.org/en/latest/">Website (docs)</a> | <a href="https://github.com/bokeh/bokeh/wiki/GSOC-2020-Ideas-Page">Ideas List</a> | <a href="https://discourse.bokeh.org/c/development/7"> Contact (Discourse) </a> | <a href="https://github.com/bokeh/bokeh">Source Code</a>
+       </p>
+    </td>
+  </tr>
+  
+   <tr>
+    <td>
+      <img width="300px" src="img/cantera-logo.png"/>
+    </td>
+    <td>
+       <h1>Cantera</h1>
+       <p>
+        Cantera is a library to solve problems involving thermodynamics, chemical kinetics, and
+        transport.
+       </p>
+       <p>
+         <a href="https://cantera.org/">Website</a>  | <a href="https://github.com/Cantera/cantera/wiki/GSoC-2020-Ideas">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cantera-users">Mailing List</a> | <a href="https://github.com/Cantera/cantera">Source Code</a>
        </p>
     </td>
   </tr>
