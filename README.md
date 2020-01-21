@@ -85,6 +85,21 @@ In alphabetic order.
   </tr>
   
   <tr>
+  <td>
+      <img width="300px" src="https://static.bokeh.org/logos/logo.png"/>
+    </td>
+    <td>
+       <h1>Bokeh</h1>
+       <p>
+        [Bokeh](https://bokeh.org) is an interactive visualization library for modern web browsers. It provides elegant, concise construction of versatile graphics, and affords high-performance interactivity over large or streaming datasets. Bokeh can help anyone who would like to quickly and easily make interactive plots, dashboards, and data applications.
+       </p>
+       <p>
+         <a href="https://docs.bokeh.org/en/latest/">Website (docs)</a> | <a href="https://github.com/bokeh/bokeh/wiki/GSOC-2020-Ideas-Page">Ideas List</a> | <a href="https://discourse.bokeh.org/c/development/7"> Contact (Discourse) </a> | <a href="https://github.com/bokeh/bokeh">Source Code</a>
+       </p>
+    </td>
+  </tr>
+  
+   <tr>
     <td>
       <img width="300px" src="img/cantera-logo.png"/>
     </td>
@@ -99,6 +114,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+  
   <tr>
     <td>
       <img width="300px" src="img/clawpack.png"/>
@@ -254,6 +270,7 @@ information how to work with them.
 | Project                         | Status                           | Ideas Pages                                         |
 | -------                         | ------                           | -----------                                         |
 | [AstroPy]                       | Unknown     |    |
+| [Bokeh]                         | Applying under NumFOCUS umbrella | https://github.com/bokeh/bokeh/wiki/GSOC-2020-Ideas-Page
 | [Blosc]                         | Unknown |
 | [Cantera]                       | Applying under NumFOCUS umbrella | https://github.com/Cantera/cantera/wiki/GSoC-2020-Ideas |
 | [Econ-ARK][Econ-ARK]            | Unknown | https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas |
@@ -282,7 +299,6 @@ information how to work with them.
 | Project              | Status                           | Ideas Pages |
 | -------              | ------                           | ----------- |
 | [ArviZ]              | Applying under NumFOCUS umbrella |  https://github.com/arviz-devs/arviz/wiki/GSoC-2020-projects |
-| [Bokeh]              | Unknown  |             |
 | [Chainer]            | Unknown  |            |
 | [Clawpack]           | Applying under NumFOCUS umbrella |           |
 | [Conda]              | Unknown                          |             |
