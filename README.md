@@ -86,6 +86,21 @@ In alphabetic order.
   
   <tr>
     <td>
+      <img width="300px" src="img/cantera-logo.png"/>
+    </td>
+    <td>
+       <h1>Cantera</h1>
+       <p>
+        Cantera is a library to solve problems involving thermodynamics, chemical kinetics, and
+        transport.
+       </p>
+       <p>
+         <a href="https://cantera.org/">Website</a>  | <a href="https://github.com/Cantera/cantera/wiki/GSoC-2020-Ideas">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cantera-users">Mailing List</a> | <a href="https://github.com/Cantera/cantera">Source Code</a>
+       </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
       <img width="300px" src="img/clawpack.png"/>
     </td>
     <td>
