@@ -1,6 +1,6 @@
 # Google Summer of Code
 
-| [Sub organizations](https://github.com/numfocus/gsoc/tree/update-docs#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
+| [Sub organizations](#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
 [NumFOCUS][] will be applying again as an umbrella mentoring organization
 for [Google Summer of Code 2020][GSoC]. [NumFOCUS][] supports and
