@@ -6,6 +6,8 @@
 for [Google Summer of Code 2020][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
+[NumFOCUS][]  is committed to promoting and sustaining a professional and ethical community. Our [Code of Conduct](https://numfocus.org/code-of-conduct) is our effort to uphold these values and it provides a guideline and some of the tools and resources necessary to achieve this.
+
 [Google Summer of Code][GSoC] is an annual open source internship program
 sponsored by Google. This repository contains information specific to NumFOCUS'
 participation in GSoC. For general information about the competition, including
