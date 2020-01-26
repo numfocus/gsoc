@@ -9,7 +9,7 @@ page of each organization under the NumFocus umbrella at this page.
 - ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2020-projects
 - Bokeh https://github.com/bokeh/bokeh/wiki/GSOC-2020-Ideas-Page
 - Cantera https://github.com/Cantera/cantera/wiki/GSoC-2020-Ideas
-- Clawpack
+- Clawpack https://github.com/clawpack/clawpack/wiki/Google-Summer-of-Code-2020
 - Colour https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md
 - conda-forge
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2020-Project-Ideas
