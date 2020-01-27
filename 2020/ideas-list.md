@@ -14,7 +14,7 @@ page of each organization under the NumFocus umbrella at this page.
 - conda-forge
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2020-Project-Ideas
 - Econ-Ark https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas
-- Effective Quadratures
+- Effective Quadratures https://github.com/Effective-Quadratures/Effective-Quadratures/wiki/GSoC-2020-Projects
 - FEniCS
 - matplotlib
 - nteract   https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas
