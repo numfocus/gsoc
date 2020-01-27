@@ -203,6 +203,22 @@ In alphabetic order.
    </td>
  </tr>
 
+
+  <tr>
+   <td>
+     <img width="300px" src="img/effective.png"/>
+   </td>
+   <td>
+      <h1>Effective Quadratures</h1>
+      <p>
+        Effective Quadratures is an open-source library for uncertainty quantification, machine learning, optimisation, numerical integration and dimension reduction – all using orthogonal polynomials.
+      </p>
+      <p>
+        <a href="www.effective-quadratures.org">Website</a>  | <a href="https://github.com/Effective-Quadratures/Effective-Quadratures/wiki/GSoC-2020-Projects"> Ideas List</a> | <a href="contact@effective-quadratures.org"> Contact | <a href="https://github.com/Effective-Quadratures/Effective-Quadratures">Source Code</a>
+      </p>
+   </td>
+ </tr>
+
   <tr>
    <td>
      <img width="300px" src="img/fenics.png"/>
