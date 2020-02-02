@@ -20,7 +20,8 @@ page of each organization under the NumFocus umbrella at this page.
 - nteract   https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas
 - pvlib     https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project
 - PyMC3     https://github.com/pymc-devs/pymc3/wiki/GSoC-2020-projects
-- PySAL     https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2020 
+- PySAL     https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2020
+- QuTiP https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2020
 - signac    https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.
