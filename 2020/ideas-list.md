@@ -12,6 +12,7 @@ page of each organization under the NumFocus umbrella at this page.
 - Clawpack https://github.com/clawpack/clawpack/wiki/Google-Summer-of-Code-2020
 - Colour https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md
 - conda-forge
+- CuPy https://github.com/cupy/cupy/wiki/GSoC-2020-Project-Ideas
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2020-Project-Ideas
 - Econ-Ark https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas
 - Effective Quadratures https://github.com/Effective-Quadratures/Effective-Quadratures/wiki/GSoC-2020-Projects
