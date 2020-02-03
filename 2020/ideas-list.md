@@ -19,6 +19,7 @@ page of each organization under the NumFocus umbrella at this page.
 - JuMP      https://github.com/jump-dev/GSOC2020/blob/master/ideas-list.md
 - matplotlib
 - nteract   https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas
+- Optuna    https://github.com/optuna/optuna/wiki/Optuna-GSoC-2020
 - pvlib     https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project
 - PyMC3     https://github.com/pymc-devs/pymc3/wiki/GSoC-2020-projects
 - PySAL     https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2020
