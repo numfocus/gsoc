@@ -238,6 +238,24 @@ In alphabetic order.
    </td>
  </tr>
  
+   <tr>
+   <td>
+     <img width="300px" src="img/jump.png"/>
+   </td>
+   <td>
+      <h1>JuMP</h1>
+      <p>
+        JuMP is a modeling language and supporting packages for mathematical optimization in Julia.
+        JuMP makes it easy to formulate and solve linear programming, semidefinite programming, integer
+        programming, convex optimization, constrained nonlinear optimization, and related classes of
+        optimization problems.
+      </p>
+      <p>
+        <a href="https://jump.dev/">Website</a> | <a href="https://gitter.im/JuliaOpt/JuMP-dev">Developers chat on Gitter</a> | <a href ="https://github.com/jump-dev/GSOC2020/blob/master/ideas-list.md">Ideas Page</a> | <a href="https://github.com/FEniCS">Source Code</a>
+      </p>
+   </td>
+ </tr>
+ 
  <tr>
   <td>
     <img width="300px" src="img/nteract.png">
@@ -343,7 +361,7 @@ information how to work with them.
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |  |
 | [IPython]                       | Unknown                          |                                                     |
 | [Julia]                         | Unknown |           |
-| [JuMP]                          | Unknown |                                         |
+| [JuMP]                          | Applying under NumFOCUS umbrella | https://github.com/jump-dev/GSOC2020/blob/master/ideas-list.md |
 | [Matplotlib]                    | Unknown |                                                 |
 | [nteract]                       | Applying under NumFOCUS umbrella | https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas |
 | [NumPy]                         | Unknown                |                                                     |
@@ -423,7 +441,7 @@ information how to work with them.
 [IPython]: https://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: https://julialang.org/
-[JuMP]: https://www.juliaopt.org/
+[JuMP]: https://jump.dev/
 [Jupyter]: https://jupyter.org/
 [Matplotlib]: https://matplotlib.org/
 [MDAnalysis]: https://www.mdanalysis.org/

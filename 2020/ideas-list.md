@@ -16,6 +16,7 @@ page of each organization under the NumFocus umbrella at this page.
 - Econ-Ark https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas
 - Effective Quadratures https://github.com/Effective-Quadratures/Effective-Quadratures/wiki/GSoC-2020-Projects
 - FEniCS
+- JuMP      https://github.com/jump-dev/GSOC2020/blob/master/ideas-list.md
 - matplotlib
 - nteract   https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas
 - pvlib     https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project
