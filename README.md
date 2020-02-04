@@ -69,7 +69,20 @@ The list should contain for each project.
 In alphabetic order.
 
 <table>
-
+  <tr>
+    <td>
+      <img width="300px" src="img/aiida.png"/>
+    </td>
+    <td>
+       <h1>AiiDA</h1>
+       <p>
+        AiiDA is a python framework for managing computational science workflows, with roots in computational materials science. It helps researchers manage large numbers of simulations (1k, 10k, 100k, ...) and complex workflows involving multiple executables. At the same time, it records the provenance of the entire simulation pipeline with the aim to make it fully reproducible.
+       </p>
+       <p>
+         <a href="http://www.aiida.net">Website</a> | <a href="https://github.com/aiidateam/aiida-core/wiki/GSoC-2020-Projects">Ideas List</a> | <a href="https://aiidateam.slack.com/"> Contact (Slack) </a> | <a href="https://github.com/aiidateam/aiida-core">Source Code</a>
+       </p>
+    </td>
+  </tr>
 
   <tr>
     <td>
@@ -93,7 +106,7 @@ In alphabetic order.
     <td>
        <h1>Bokeh</h1>
        <p>
-        [Bokeh](https://bokeh.org) is an interactive visualization library for modern web browsers. It provides elegant, concise construction of versatile graphics, and affords high-performance interactivity over large or streaming datasets. Bokeh can help anyone who would like to quickly and easily make interactive plots, dashboards, and data applications.
+        Bokeh is an interactive visualization library for modern web browsers. It provides elegant, concise construction of versatile graphics, and affords high-performance interactivity over large or streaming datasets. Bokeh can help anyone who would like to quickly and easily make interactive plots, dashboards, and data applications.
        </p>
        <p>
          <a href="https://docs.bokeh.org/en/latest/">Website (docs)</a> | <a href="https://github.com/bokeh/bokeh/wiki/GSOC-2020-Ideas-Page">Ideas List</a> | <a href="https://discourse.bokeh.org/c/development/7"> Contact (Discourse) </a> | <a href="https://github.com/bokeh/bokeh">Source Code</a>
@@ -132,7 +145,6 @@ In alphabetic order.
     </td>
   </tr>
 
-
 <tr>
     <td>
       <img width="300px" src="https://avatars2.githubusercontent.com/u/11897326?v=3&s=200"/>
@@ -166,10 +178,25 @@ In alphabetic order.
           terms.
        </p>
        <p>
-       <a href="https://www.colour-science.org/">Website</a> | <a href="https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md">Ideas List</a> | <a href="mailto:colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
+       <a href="https://www.colour-science.org/">Website</a> | <a href="https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md">Ideas List</a> | <a href="colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
        </p>
     </td>
   </tr>
+
+  <tr>
+    <td>
+      <img width="300px" src="img/cupy.png"/>
+    </td>
+    <td>
+       <h1>CuPy</h1>
+       <p>
+         CuPy is an open-source matrix library accelerated with NVIDIA CUDA. It also uses CUDA-related libraries including cuBLAS, cuDNN, cuRand, cuSolver, cuSPARSE, cuFFT and NCCL to make full use of the GPU architecture.
+       </p>
+       <a href="https://cupy.chainer.org">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2020-Project-Ideas">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
 
   <tr>
    <td>
@@ -274,6 +301,21 @@ In alphabetic order.
      </p>
   </td>
 </tr>
+
+   <tr>
+   <td>
+     <img width="300px" src="img/optuna.png"/>
+   </td>
+   <td>
+      <h1>Optuna</h1>
+      <p>
+        Optuna is an open source hyperparameter optimization framework to automate hyperparameter search. Optuna provides eager search spaces for automated search for optimal hyperparameters using Python conditionals, loops, and syntax, state-of-the-art algorithms to efficiently search large spaces and prune unpromising trials for faster results, and easy parallelization for hyperparameter searches over multiple threads or processes without modifying code.
+      </p>
+      <p>
+        <a href="https://optuna.org">Website</a> | <a href="https://gitter.im/optuna/optuna">Developers chat on Gitter</a> | <a href ="https://github.com/optuna/optuna/wiki/Optuna-GSoC-2020">Ideas Page</a> | <a href="https://github.com/optuna/optuna">Source Code</a>
+      </p>
+   </td>
+ </tr>
 
 <tr>
   <td>
@@ -388,7 +430,7 @@ information how to work with them.
 | [Conda]              | Unknown                          |             |
 | [conda-forge]        | Applying under NumFOCUS umbrella |             |
 | [Colour]             | Applying under NumFOCUS umbrella | https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md |
-| [CuPy]               | Unknown  |           |
+| [CuPy]               | Applying under NumFOCUS umbrella  | https://github.com/cupy/cupy/wiki/GSoC-2020-Project-Ideas          |
 | [Cython]             | Unknown                          |             |
 | [Dash]               | Unknown |         |
 | [Data Retriever][DR] | Applying under NumFOCUS umbrella |  https://github.com/weecology/retriever/wiki/GSoC-2020-Project-Ideas |
