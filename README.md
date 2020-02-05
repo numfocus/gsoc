@@ -185,7 +185,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="img/cupy.png"/>
+      <img width="300px" src="img/cupy-logo.png"/>
     </td>
     <td>
        <h1>CuPy</h1>
