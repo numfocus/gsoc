@@ -11,7 +11,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - Cantera https://github.com/Cantera/cantera/wiki/GSoC-2020-Ideas
 - Clawpack https://github.com/clawpack/clawpack/wiki/Google-Summer-of-Code-2020
 - Colour https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md
-- conda-forge
+- conda-forge https://github.com/conda-forge/blog/blob/gh-pages/_posts/2020-02-04-GSoC.md
 - CuPy https://github.com/cupy/cupy/wiki/GSoC-2020-Project-Ideas
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2020-Project-Ideas
 - Econ-Ark https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas
