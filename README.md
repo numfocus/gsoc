@@ -245,27 +245,8 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-
-  <tr>
-   <td>
-     <img width="300px" src="img/fenics.png"/>
-   </td>
-   <td>
-      <h1>FEniCS</h1>
-      <p>
-        FEniCS is an automated finite element library used to solve equations used in
-        modeling, featuring a domain-specific language and automated code generation.
-        Users input a problem that looks very much like mathematical notation; FEniCS
-        then translates that into computer code. It solves problems for which there is
-        no analytical (exact) solution numerically.
-      </p>
-      <p>
-        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a> | <a href =""> Ideas Page | <a href="https://github.com/FEniCS">Source Code</a>
-      </p>
-   </td>
- </tr>
  
-   <tr>
+ <tr>
    <td>
      <img width="300px" src="img/jump.png"/>
    </td>
