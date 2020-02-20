@@ -69,7 +69,20 @@ The list should contain for each project.
 In alphabetic order.
 
 <table>
-
+  <tr>
+    <td>
+      <img width="300px" src="img/aiida.png"/>
+    </td>
+    <td>
+       <h1>AiiDA</h1>
+       <p>
+        AiiDA is a python framework for managing computational science workflows, with roots in computational materials science. It helps researchers manage large numbers of simulations (1k, 10k, 100k, ...) and complex workflows involving multiple executables. At the same time, it records the provenance of the entire simulation pipeline with the aim to make it fully reproducible.
+       </p>
+       <p>
+         <a href="http://www.aiida.net">Website</a> | <a href="https://github.com/aiidateam/aiida-core/wiki/GSoC-2020-Projects">Ideas List</a> | <a href="https://aiidateam.slack.com/"> Contact (Slack) </a> | <a href="https://github.com/aiidateam/aiida-core">Source Code</a>
+       </p>
+    </td>
+  </tr>
 
   <tr>
     <td>
@@ -93,7 +106,7 @@ In alphabetic order.
     <td>
        <h1>Bokeh</h1>
        <p>
-        [Bokeh](https://bokeh.org) is an interactive visualization library for modern web browsers. It provides elegant, concise construction of versatile graphics, and affords high-performance interactivity over large or streaming datasets. Bokeh can help anyone who would like to quickly and easily make interactive plots, dashboards, and data applications.
+        Bokeh is an interactive visualization library for modern web browsers. It provides elegant, concise construction of versatile graphics, and affords high-performance interactivity over large or streaming datasets. Bokeh can help anyone who would like to quickly and easily make interactive plots, dashboards, and data applications.
        </p>
        <p>
          <a href="https://docs.bokeh.org/en/latest/">Website (docs)</a> | <a href="https://github.com/bokeh/bokeh/wiki/GSOC-2020-Ideas-Page">Ideas List</a> | <a href="https://discourse.bokeh.org/c/development/7"> Contact (Discourse) </a> | <a href="https://github.com/bokeh/bokeh">Source Code</a>
@@ -132,7 +145,6 @@ In alphabetic order.
     </td>
   </tr>
 
-
 <tr>
     <td>
       <img width="300px" src="https://avatars2.githubusercontent.com/u/11897326?v=3&s=200"/>
@@ -143,7 +155,7 @@ In alphabetic order.
         A community led collection of recipes, build infrastructure and distributions for the conda package manager.
        </p>
        <p>
-         <a href="https://conda-forge.org">Website</a>  | <a href="">Ideas List</a> | <a href="https://gitter.im/conda-forge/conda-forge.github.io"> Gitter </a> | <a href="https://github.com/conda-forge">Source Code</a>
+         <a href="https://conda-forge.org">Website</a>  | <a href="https://github.com/conda-forge/blog/blob/gh-pages/_posts/2020-02-04-GSoC.md">Ideas List</a> | <a href="https://gitter.im/conda-forge/conda-forge.github.io"> Gitter </a> | <a href="https://github.com/conda-forge">Source Code</a>
        </p>
     </td>
   </tr>
@@ -166,10 +178,25 @@ In alphabetic order.
           terms.
        </p>
        <p>
-       <a href="https://www.colour-science.org/">Website</a> | <a href="https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md">Ideas List</a> | <a href="mailto:colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
+       <a href="https://www.colour-science.org/">Website</a> | <a href="https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md">Ideas List</a> | <a href="colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
        </p>
     </td>
   </tr>
+
+  <tr>
+    <td>
+      <img width="300px" src="img/cupy-logo.png"/>
+    </td>
+    <td>
+       <h1>CuPy</h1>
+       <p>
+         CuPy is an open-source matrix library accelerated with NVIDIA CUDA. It also uses CUDA-related libraries including cuBLAS, cuDNN, cuRand, cuSolver, cuSPARSE, cuFFT and NCCL to make full use of the GPU architecture.
+       </p>
+       <a href="https://cupy.chainer.org">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2020-Project-Ideas">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
 
   <tr>
    <td>
@@ -218,22 +245,21 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-
-  <tr>
+ 
+ <tr>
    <td>
-     <img width="300px" src="img/fenics.png"/>
+     <img width="300px" src="img/jump.png"/>
    </td>
    <td>
-      <h1>FEniCS</h1>
+      <h1>JuMP</h1>
       <p>
-        FEniCS is an automated finite element library used to solve equations used in
-        modeling, featuring a domain-specific language and automated code generation.
-        Users input a problem that looks very much like mathematical notation; FEniCS
-        then translates that into computer code. It solves problems for which there is
-        no analytical (exact) solution numerically.
+        JuMP is a modeling language and supporting packages for mathematical optimization in Julia.
+        JuMP makes it easy to formulate and solve linear programming, semidefinite programming, integer
+        programming, convex optimization, constrained nonlinear optimization, and related classes of
+        optimization problems.
       </p>
       <p>
-        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a> | <a href =""> Ideas Page | <a href="https://github.com/FEniCS">Source Code</a>
+        <a href="https://jump.dev/">Website</a> | <a href="https://gitter.im/JuliaOpt/JuMP-dev">Developers chat on Gitter</a> | <a href ="https://github.com/jump-dev/GSOC2020/blob/master/ideas-list.md">Ideas Page</a> | <a href="https://github.com/FEniCS">Source Code</a>
       </p>
    </td>
  </tr>
@@ -257,6 +283,21 @@ In alphabetic order.
   </td>
 </tr>
 
+   <tr>
+   <td>
+     <img width="300px" src="img/optuna.png"/>
+   </td>
+   <td>
+      <h1>Optuna</h1>
+      <p>
+        Optuna is an open source hyperparameter optimization framework to automate hyperparameter search. Optuna provides eager search spaces for automated search for optimal hyperparameters using Python conditionals, loops, and syntax, state-of-the-art algorithms to efficiently search large spaces and prune unpromising trials for faster results, and easy parallelization for hyperparameter searches over multiple threads or processes without modifying code.
+      </p>
+      <p>
+        <a href="https://optuna.org">Website</a> | <a href="https://gitter.im/optuna/optuna">Developers chat on Gitter</a> | <a href ="https://github.com/optuna/optuna/wiki/Optuna-GSoC-2020">Ideas Page</a> | <a href="https://github.com/optuna/optuna">Source Code</a>
+      </p>
+   </td>
+ </tr>
+
 <tr>
   <td>
     <img width="300px" src="img/pvlib.png">
@@ -265,7 +306,7 @@ In alphabetic order.
      <h1>pvlib</h1>
      <p>pvlib python provides a set of functions and classes for simulating the performance of photovoltaic energy systems.</p>
      <p>
-       <a href="https://pvlib-python.readthedocs.io/en/stable/">Website</a> | <a href="">Contact</a> | <a href="https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project">Ideas Page</a> | <a href="https://github.com/pvlib/pvlib-python"> Source Code</a>
+       <a href="https://pvlib-python.readthedocs.io/en/stable/">Website</a> | <a href="https://groups.google.com/forum/#!forum/pvlib-python">Google Group Forum</a> | <a href="https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project">Ideas Page</a> | <a href="https://github.com/pvlib/pvlib-python"> Source Code</a>
      </p>
   </td>
 </tr>
@@ -292,6 +333,18 @@ In alphabetic order.
        <p>PySAL is an open source cross-platform library for geospatial data science. It supports many different areas of statistics and geographical analyses, such as the detection of spatial clusters, hotspots, and outliers; the construction of graphs from geographic data; Bayesian and Maximum Likelihood spatial regression and statistical modelling for geographical networks; spatial econometrics; space-time Markov modelling; and distribution dynamics for segregation and inequality. </p>
        <p>
          <a href="https://pysal.org/pysal/">Website</a> | <a href="https://gitter.im/pysal/pysal">Contact (Gitter chat room)</a> | <a href="https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2020">Ideas Page</a> | <a href="https://github.com/pysal/pysal"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+   <tr>
+    <td>
+      <img width="300px" src="img/qutip.png">
+    </td>
+    <td>
+       <h1>QuTiP</h1>
+       <p> QuTiP is a software for simulating quantum systems. QuTiP aims to provide tools for user-friendly and efficient numerical simulations of open quantum systems. It can be used to simulate a wide range of physical phenomenon in areas such as quantum optics, trapped ions, superconducting circuits and quantum nanomechanical resonators. In addition, it contains a number of other modules to simplify the numerical simulation and study of many topics in quantum physics such as quantum optimal control, quantum information, and computing. </p>
+       <p>
+         <a href="http://qutip.org">Website</a> | <a href="https://groups.google.com/forum/#!forum/qutip">Gitter</a> | <a href="https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2020">Ideas Page</a> | <a href="https://github.com/qutip/qutip"> Source Code</a>
        </p>
     </td>
   </tr>
@@ -331,7 +384,7 @@ information how to work with them.
 | [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |  |
 | [IPython]                       | Unknown                          |                                                     |
 | [Julia]                         | Unknown |           |
-| [JuMP]                          | Unknown |                                         |
+| [JuMP]                          | Applying under NumFOCUS umbrella | https://github.com/jump-dev/GSOC2020/blob/master/ideas-list.md |
 | [Matplotlib]                    | Unknown |                                                 |
 | [nteract]                       | Applying under NumFOCUS umbrella | https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas |
 | [NumPy]                         | Unknown                |                                                     |
@@ -358,7 +411,7 @@ information how to work with them.
 | [Conda]              | Unknown                          |             |
 | [conda-forge]        | Applying under NumFOCUS umbrella |             |
 | [Colour]             | Applying under NumFOCUS umbrella | https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md |
-| [CuPy]               | Unknown  |           |
+| [CuPy]               | Applying under NumFOCUS umbrella  | https://github.com/cupy/cupy/wiki/GSoC-2020-Project-Ideas          |
 | [Cython]             | Unknown                          |             |
 | [Dash]               | Unknown |         |
 | [Data Retriever][DR] | Applying under NumFOCUS umbrella |  https://github.com/weecology/retriever/wiki/GSoC-2020-Project-Ideas |
@@ -411,7 +464,7 @@ information how to work with them.
 [IPython]: https://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: https://julialang.org/
-[JuMP]: https://www.juliaopt.org/
+[JuMP]: https://jump.dev/
 [Jupyter]: https://jupyter.org/
 [Matplotlib]: https://matplotlib.org/
 [MDAnalysis]: https://www.mdanalysis.org/
