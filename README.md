@@ -140,7 +140,7 @@ In alphabetic order.
         Clawpack (“Conservation Laws Package”) is a collection of finite volume methods for linear and nonlinear hyperbolic systems of conservation laws.
        </p>
        <p>
-       <a href="https://www.clawpack.org">Website</a> | <ahref="https://github.com/clawpack/clawpack/wiki/Google-Summer-of-Code-2020">Ideas List</a> | <a href="https://groups.google.com/d/forum/claw-dev">Mailing List</a> | <a href="https://github.com/clawpack">Source Code</a>
+       <a href="https://www.clawpack.org">Website</a> | <a href="https://github.com/clawpack/clawpack/wiki/Google-Summer-of-Code-2020">Ideas List</a> | <a href="https://join.slack.com/t/clawpack/shared_invite/enQtNTAwMjQxNTk5NjY5LTJjMzJkMzhjZTQ0NzQ2Y2JkZTg3YWFhN2M4ZjIwMDA3YWNiNDM5NTA2NGNlZDA2YzlmNDkwMzA5ZGFkODgyMzc"> Slack </a> | <a href="https://github.com/clawpack">Source Code</a>
        </p>
     </td>
   </tr>
