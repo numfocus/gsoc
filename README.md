@@ -263,7 +263,29 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+
+   <td>
+     <img width="300px" src="img/matplotlib.png"/>
+   </td>
+   <td>
+      <h1>Matplotlib</h1>
+      <p>
+        Matplotlib is a comprehensive library for creating static, animated, and interactive
+       visualizations in Python.
+      <ul>
+      <li>Develop publication quality plots with just a few lines of code & use interactive figures that can zoom, pan, update...</li>
+      <li>Take full control of line styles, font properties, axes properties... & export and embed to a number of file formats and interactive environments</li>
+      <li> Explore tailored functionality provided by third party packages & learn more about Matplotlib through the many external learning resources</li>
+      </ul>
+      Matplotlib makes easy things easy and hard things possible.
+      </p>
+      <p>
+        <a href="https://matplotlib.org/devdocs/">Website</a> | <a href="https://gitter.im/matplotlib/">Gitter</a> | <a href="https://discourse.matplotlib.org">Discourse</a> | <a href ="https://github.com/matplotlib/matplotlib/projects/12">Ideas Page</a> | <a href="https://github.com/matplotlib">Source Code</a> 
+      </p>
+   </td>
+ </tr>
  
+
  <tr>
   <td>
     <img width="300px" src="img/nteract.png">
@@ -385,7 +407,7 @@ information how to work with them.
 | [IPython]                       | Unknown                          |                                                     |
 | [Julia]                         | Unknown |           |
 | [JuMP]                          | Applying under NumFOCUS umbrella | https://github.com/jump-dev/GSOC2020/blob/master/ideas-list.md |
-| [Matplotlib]                    | Unknown |                                                 |
+| [Matplotlib]                    | Applying under NumFOCUS umbrella | https://github.com/matplotlib/matplotlib/projects/12                                                 |
 | [nteract]                       | Applying under NumFOCUS umbrella | https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas |
 | [NumPy]                         | Unknown                |                                                     |
 | [Open Journals][theoj]          | Unknown                          |                                                     |
