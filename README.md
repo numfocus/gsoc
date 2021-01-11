@@ -332,7 +332,7 @@ In alphabetic order.
      </p>
   </td>
 </tr>
-
+-->
   <tr>
     <td>
       <img width="300px" src="img/pymc3-logo.png">
@@ -341,11 +341,11 @@ In alphabetic order.
        <h1>PyMC3</h1>
        <p>PyMC3 is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc3/wiki/GSoC-2020-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
+         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc3/wiki/GSoC-2021-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
        </p>
     </td>
   </tr>
-  
+  <!--
   <tr>
     <td>
       <img width="300px" src="img/pysal_logo.png">
@@ -398,6 +398,7 @@ information how to work with them.
 
 | Project                         | Status                           | Ideas Pages                                         |
 | -------                         | ------                           | -----------                                         |
+| [ArviZ]              | Applying under NumFOCUS umbrella |  https://github.com/arviz-devs/arviz/wiki/GSoC-2021-projects |
 | [AstroPy]                       | Unknown |                                                                               |
 | [Bokeh]                         | Unknown | |
 | [Blosc]                         | Unknown | |
@@ -413,7 +414,7 @@ information how to work with them.
 | [Open Journals][theoj]          | Unknown                          |                                                     |
 | [Project Jupyter][Jupyter]      | Unknown                          |                                                     |
 | [pandas]                        | Unknown                          |                                                     |
-| [PyMC3](pymc3)                  | Unknown |  |
+| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | https://github.com/pymc-devs/pymc3/wiki/GSoC-2021-projects  |
 | [PyTables]                      | Unknown                          |                                                     |
 | [QuantEcon]                     | Unknown                          |                                                     |
 | [rOpenSci]                      | Unknown                |                                                     |
@@ -427,7 +428,6 @@ information how to work with them.
 
 | Project              | Status                           | Ideas Pages |
 | -------              | ------                           | ----------- |
-| [ArviZ]              | Applying under NumFOCUS umbrella |  https://github.com/arviz-devs/arviz/wiki/GSoC-2021-projects |
 | [Chainer]            | Unknown  |            |
 | [Clawpack]           | Unknown |           |
 | [Conda]              | Unknown                          |             |
