@@ -444,7 +444,7 @@ information how to work with them.
 | [Clawpack]           | Unknown |           |
 | [Conda]              | Unknown                          |             |
 | [conda-forge]        | Unknown |             |
-| [Colour]             | Unknown | |
+| [Colour]             | Applying under NumFOCUS umbrella | |
 | [CuPy]               | Unknown  |         |
 | [Cython]             | Unknown                          |             |
 | [Dash]               | Unknown |         |
@@ -454,11 +454,13 @@ information how to work with them.
 | [Gensim]             | Unknown                          |             |
 | [MDAnalysis]         | Unknown |  |
 | [Numba]              | Unknown                          |             |
+| [Optuna]             | Applying under NumFOCUS umbrella |             |
 | [Orange]             | Unknown                          |             |
 | [Pomegranate]        | Unknown                          |             |
 | [pvlib]              | Unknown |    |
 | [PythonXY]           | Unknown                          |             |
 | [PySAL]              | Unknown |  |
+| [PyTorch-Ignite]    | Applying under NumFOCUS umbrella |             |
 | [QuTiP]              | Unknown |        |
 | [SciPy]              | Unknown                          |             |
 | [scikit-image]       | Unknown                          |             |
@@ -508,6 +510,7 @@ information how to work with them.
 [NumPy]: https://numpy.org/
 [nteract]: https://nteract.io/
 [theoj]: http://www.theoj.org
+[Optuna]: https://optuna.org
 [Orange]: http://orange.biolab.si/
 [pandas]: https://pandas.pydata.org/
 [Pomegranate]: https://pomegranate.readthedocs.io/en/latest/
@@ -515,6 +518,7 @@ information how to work with them.
 [PySAL]: https://pysal.org/pysal
 [PyTables]: http://pytables.github.com/
 [PythonXY]: http://python-xy.github.io/
+[PyTorch-Ignite]: https://pytorch.org/ignite/
 [QuTiP]: http://qutip.org/
 [rOpenSci]: https://ropensci.org/
 [quantecon]: https://quantecon.org/
