@@ -159,7 +159,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-
+-->
   <tr>
     <td>
       <img width="300px" src="img/colour.png"/>
@@ -182,7 +182,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-
+<!--
   <tr>
     <td>
       <img width="300px" src="img/cupy-logo.png"/>
@@ -304,7 +304,7 @@ In alphabetic order.
      </p>
   </td>
 </tr>
-
+-->
    <tr>
    <td>
      <img width="300px" src="img/optuna.png"/>
@@ -319,7 +319,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-
+<!--
 <tr>
   <td>
     <img width="300px" src="img/pvlib.png">
@@ -342,6 +342,18 @@ In alphabetic order.
        <p>PyMC3 is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
          <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc3/wiki/GSoC-2021-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img width="300px" src="img/pytorchignite-logo.png">
+    </td>
+    <td>
+       <h1>PyTorch-Ignite</h1>
+       <p>PyTorch-Ignite is a high-level library to help with training neural networks in PyTorch</p>
+       <p>
+         <a href="https://pytorch.org/ignite/">Website</a> | <a href="https://discuss.pytorch.org">discourse</a> | <a href="">Ideas Page</a> | <a href="https://github.com/pytorch/ignite"> Source Code</a>
        </p>
     </td>
   </tr>
