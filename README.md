@@ -69,7 +69,7 @@ The list should contain for each project.
 In alphabetic order.
 
 <table>
-<!--   <tr>
+  <tr>
     <td>
       <img width="300px" src="img/aiida.png"/>
     </td>
@@ -79,10 +79,10 @@ In alphabetic order.
         AiiDA is a python framework for managing computational science workflows, with roots in computational materials science. It helps researchers manage large numbers of simulations (1k, 10k, 100k, ...) and complex workflows involving multiple executables. At the same time, it records the provenance of the entire simulation pipeline with the aim to make it fully reproducible.
        </p>
        <p>
-         <a href="http://www.aiida.net">Website</a> | <a href="https://github.com/aiidateam/aiida-core/wiki/GSoC-2020-Projects">Ideas List</a> | <a href="https://aiidateam.slack.com/"> Contact (Slack) </a> | <a href="https://github.com/aiidateam/aiida-core">Source Code</a>
+         <a href="http://www.aiida.net">Website</a> | <a href="">Ideas List</a> | <a href="https://aiidateam.slack.com/"> Contact (Slack) </a> | <a href="https://github.com/aiidateam/aiida-core">Source Code</a>
        </p>
     </td>
-  </tr> -->
+  </tr>
 
   <tr>
     <td>
@@ -160,6 +160,7 @@ In alphabetic order.
     </td>
   </tr>
 -->
+
   <tr>
     <td>
       <img width="300px" src="img/colour.png"/>
@@ -182,7 +183,6 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-<!--
   <tr>
     <td>
       <img width="300px" src="img/cupy-logo.png"/>
@@ -196,7 +196,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-
+<!--
 
   <tr>
    <td>
@@ -284,8 +284,23 @@ In alphabetic order.
       </p>
    </td>
  </tr>
- 
+-->
 
+ <tr>
+   <td>
+     <img width="300px" src="img/networkx.png"/>
+   </td>
+   <td>
+      <h1>NetworkX</h1>
+      <p>
+        NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+      </p>
+      <p>
+        <a href="https://networkx.org/">Website</a> | <a href ="">Ideas Page</a> | <a href="https://github.com/networkx/networkx">Source Code</a>
+      </p>
+   </td>
+ </tr>
+<!--
  <tr>
   <td>
     <img width="300px" src="img/nteract.png">
@@ -382,7 +397,20 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-
+-->
+  <tr>
+    <td>
+      <img width="300px" src="img/sciml.png">
+    </td>
+    <td>
+       <h1>SciML</h1>
+       <p> SciML is an open source software organization created to unify the packages for scientific machine learning. This includes the development of modular scientific simulation support software, such as differential equation solvers, along with the methodologies for inverse problems and automated model discovery. By providing a diverse set of tools with a common interface, we provide a modular, easily-extendable, and highly performant ecosystem for handling a wide variety of scientific simulations. </p>
+       <p>
+         <a href="https://sciml.ai">Website</a> | <a href="https://sciml.ai/community/#discourse">Discourse</a> | <a href="">Ideas Page</a> | <a href="https://github.com/SciML"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+  <!--
   <tr>
     <td>
       <img width="300px" src="img/signac.png">
