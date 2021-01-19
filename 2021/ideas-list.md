@@ -12,6 +12,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - Gridap.jl
 - NetworkX
 - Optuna
+- PyBaMM
 - PyMC3 https://github.com/pymc-devs/pymc3/wiki/GSoC-2021-projects
 - PyTorch-Ignite https://github.com/pytorch/ignite/wiki/GSoC-2021-project
 - SciML 
