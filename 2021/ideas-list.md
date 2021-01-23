@@ -7,9 +7,11 @@ page of each organization under the NumFOCUS umbrella at this page.
 - AiiDA
 - ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2021-projects
 - Colour
+- CB-Geo MPM
 - CuPy
 - GeoPandas
 - Gridap.jl
+- matplotlib
 - NetworkX
 - Optuna
 - PyBaMM https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2021-Projects
