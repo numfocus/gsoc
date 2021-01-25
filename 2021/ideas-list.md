@@ -10,7 +10,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - CB-Geo MPM
 - CuPy
 - GeoPandas
-- Gridap.jl
+- Gridap https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md
 - matplotlib
 - NetworkX
 - Optuna
