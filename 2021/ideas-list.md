@@ -7,7 +7,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - AiiDA
 - ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2021-projects
 - Colour
-- CB-Geo MPM
+- CB-Geo MPM https://github.com/cb-geo/mpm/issues/704#issue-796189505
 - CuPy
 - GeoPandas
 - Gridap https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md
@@ -17,6 +17,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - PyBaMM https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2021-Projects
 - PyMC3 https://github.com/pymc-devs/pymc3/wiki/GSoC-2021-projects
 - PyTorch-Ignite https://github.com/pytorch/ignite/wiki/GSoC-2021-project
+- QuTiP
 - SciML 
   - Numerical Differential Equations  https://sciml.ai/gsoc/gsoc_diffeq/
   - Scientific Machine Learning  https://sciml.ai/gsoc/gsoc_sciml/
