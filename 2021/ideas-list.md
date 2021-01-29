@@ -4,7 +4,7 @@ This is the home page of projects ideas of NumFOCUS for Google Summer of Code 20
 Since NumFOCUS is an umbrella organization you will only find links to the ideas
 page of each organization under the NumFOCUS umbrella at this page.
 
-- AiiDA
+- AiiDA https://github.com/aiidateam/aiida-core/wiki/GSoC-2021-Projects
 - ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2021-projects
 - Colour
 - CB-Geo MPM https://github.com/cb-geo/mpm/issues/704#issue-796189505
