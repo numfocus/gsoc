@@ -330,7 +330,7 @@ In alphabetic order.
         Optuna is an open source hyperparameter optimization framework to automate hyperparameter search. Optuna provides eager search spaces for automated search for optimal hyperparameters using Python conditionals, loops, and syntax, state-of-the-art algorithms to efficiently search large spaces and prune unpromising trials for faster results, and easy parallelization for hyperparameter searches over multiple threads or processes without modifying code.
       </p>
       <p>
-        <a href="https://optuna.org">Website</a> | <a href="https://gitter.im/optuna/optuna">Developers chat on Gitter</a> | <a href ="https://github.com/optuna/optuna/wiki/Optuna-GSoC-2020">Ideas Page</a> | <a href="https://github.com/optuna/optuna">Source Code</a>
+        <a href="https://optuna.org">Website</a> | <a href="https://gitter.im/optuna/optuna">Developers chat on Gitter</a> | <a href ="https://github.com/optuna/optuna/wiki/Optuna-GSoC-2021">Ideas Page</a> | <a href="https://github.com/optuna/optuna">Source Code</a>
       </p>
    </td>
  </tr>
