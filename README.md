@@ -52,7 +52,7 @@ https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc.
 
 ## Sub Organizations
 
-If you want to participate as a sub organization of NumFOCUS please read
+ you want to participate as a sub organization of NumFOCUS please read
 this [guide](CONTRIBUTING-mentors.md).
 
 ## Organizations Confirmed Under NumFOCUS Umbrella
