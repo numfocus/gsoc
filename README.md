@@ -163,6 +163,21 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="300px" src="img/mpm.png"/>
+    </td>
+    <td>
+       <h1>CB-Geo MPM</h1>
+       <p>
+          CB-Geo MPM is an HPC-enabled Material Point Method solver for large-deformation modeling. It supports isoparametric elements to model complex geometries and creates photo-realistic rendering.
+       </p>
+       <p>
+       <a href="https://www.cb-geo.com/research/mpm/">Website</a> | <a href="https://github.com/cb-geo/mpm/issues/704#issue-796189505">Ideas List</a> | <a href="https://cb-geo.discourse.group">Discourse</a> | <a href="https://github.com/cb-geo/mpm">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+<tr>
+    <td>
       <img width="300px" src="img/colour.png"/>
     </td>
     <td>
@@ -179,10 +194,12 @@ In alphabetic order.
           terms.
        </p>
        <p>
-       <a href="https://www.colour-science.org/">Website</a> | <a href="https://github.com/colour-science/GSoC/blob/master/2020/GSoC-2020-Project-Ideas.md">Ideas List</a> | <a href="colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
+       <a href="https://www.colour-science.org/">Website</a> | <a href="">Ideas List</a> | <a href="colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
        </p>
     </td>
   </tr>
+
+
   <tr>
     <td>
       <img width="300px" src="img/cupy-logo.png"/>
@@ -192,7 +209,7 @@ In alphabetic order.
        <p>
          CuPy is an open-source matrix library accelerated with NVIDIA CUDA. It also uses CUDA-related libraries including cuBLAS, cuDNN, cuRand, cuSolver, cuSPARSE, cuFFT and NCCL to make full use of the GPU architecture.
        </p>
-       <a href="https://cupy.chainer.org">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2020-Project-Ideas">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
+       <a href="https://cupy.chainer.org">Website</a> | <a href="">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
        </p>
     </td>
   </tr>
@@ -230,6 +247,7 @@ In alphabetic order.
    </td>
  </tr>
 
+-->
 
   <tr>
    <td>
@@ -241,11 +259,12 @@ In alphabetic order.
         Effective Quadratures is an open-source library for uncertainty quantification, machine learning, optimisation, numerical integration and dimension reduction – all using orthogonal polynomials.
       </p>
       <p>
-        <a href="www.effective-quadratures.org">Website</a>  | <a href="https://github.com/Effective-Quadratures/Effective-Quadratures/wiki/GSoC-2020-Projects"> Ideas List</a> | <a href="contact@effective-quadratures.org"> Contact | <a href="https://github.com/Effective-Quadratures/Effective-Quadratures">Source Code</a>
+        <a href="www.effective-quadratures.org">Website</a>  | <a href=""> Ideas List</a> | <a href="contact@effective-quadratures.org"> Contact | <a href="https://github.com/Effective-Quadratures/Effective-Quadratures">Source Code</a>
       </p>
    </td>
  </tr>
- 
+
+ <!--
  <tr>
    <td>
      <img width="300px" src="img/jump.png"/>
@@ -263,7 +282,38 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+-->
 
+  <tr>
+   <td>
+     <img width="300px" src="img/geopandas.png"/>
+   </td>
+   <td>
+      <h1>GeoPandas</h1>
+      <p>
+        GeoPandas is an open source project to make working with geospatial data in Python easier, focusing on tabular vector data.
+      </p>
+      <p>
+        <a href="https://geopandas.org">Website</a>  | <a href=""> Ideas List</a> | <a href="https://geopandas.org/#get-in-touch"> Contact | <a href="https://github.com/geopandas/geopandas">Source Code</a>
+      </p>
+   </td>
+ </tr>
+
+
+   <tr>
+   <td>
+     <img width="300px" src="img/gridap.png"/>
+   </td>
+   <td>
+      <h1>Gridap</h1>
+      <p>
+        Gridap provides a rich set of tools for the grid-based approximation of partial differential equations (PDEs) written 100% in the Julia programming language.
+      </p>
+      <p>
+        <a href="https://gridap.github.io/Gridap.jl/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
+      </p>
+   </td>
+ </tr>
    <td>
      <img width="300px" src="img/matplotlib.png"/>
    </td>
@@ -280,11 +330,10 @@ In alphabetic order.
       Matplotlib makes easy things easy and hard things possible.
       </p>
       <p>
-        <a href="https://matplotlib.org/devdocs/">Website</a> | <a href="https://gitter.im/matplotlib/">Gitter</a> | <a href="https://discourse.matplotlib.org">Discourse</a> | <a href ="https://github.com/matplotlib/matplotlib/projects/12">Ideas Page</a> | <a href="https://github.com/matplotlib">Source Code</a> 
+        <a href="https://matplotlib.org/devdocs/">Website</a> | <a href="https://gitter.im/matplotlib/">Gitter</a> | <a href="https://discourse.matplotlib.org">Discourse</a> | <a href ="">Ideas Page</a> | <a href="https://github.com/matplotlib">Source Code</a> 
       </p>
    </td>
  </tr>
--->
 
  <tr>
    <td>
@@ -296,7 +345,7 @@ In alphabetic order.
         NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
       </p>
       <p>
-        <a href="https://networkx.org/">Website</a> | <a href ="">Ideas Page</a> | <a href="https://github.com/networkx/networkx">Source Code</a>
+        <a href="https://networkx.org/">Website</a> | <a href ="http://networkx.org/documentation/latest/developer/projects.html#mentored-projects">Ideas Page</a> | <a href="https://github.com/networkx/networkx/discussions"> Contact (GitHub Discussions) </a>| <a href="https://github.com/networkx/networkx">Source Code</a>
       </p>
    </td>
  </tr>
@@ -348,6 +397,20 @@ In alphabetic order.
   </td>
 </tr>
 -->
+ <tr>
+    <td>
+      <img width="300px" src="img/PyBaMM.png">
+    </td>
+    <td>
+       <h1>PyBaMM</h1>
+       <p>PyBaMM (Python Battery Mathematical Modelling) solves physics-based electrochemical DAE models by using state-of-the-art automatic differentiation and numerical solvers.</p>
+       <p>
+         <a href="https://www.pybamm.org">Website</a> | <a href="https://www.pybamm.org/contact"> Contact </a> | <a href="https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2021-Projects">Ideas Page</a> | <a href="https://github.com/pybamm-team/PyBaMM"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+
   <tr>
     <td>
       <img width="300px" src="img/pymc3-logo.png">
@@ -360,6 +423,8 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+
+
   <tr>
     <td>
       <img width="300px" src="img/pytorchignite-logo.png">
@@ -368,7 +433,7 @@ In alphabetic order.
        <h1>PyTorch-Ignite</h1>
        <p>PyTorch-Ignite is a high-level library to help with training neural networks in PyTorch</p>
        <p>
-         <a href="https://pytorch.org/ignite/">Website</a> | <a href="https://discuss.pytorch.org">discourse</a> | <a href="">Ideas Page</a> | <a href="https://github.com/pytorch/ignite"> Source Code</a>
+         <a href="https://pytorch.org/ignite/">Website</a> | <a href="https://discuss.pytorch.org">discourse</a> | <a href="https://github.com/pytorch/ignite/wiki/GSoC-2021-project">Ideas Page</a> | <a href="https://github.com/pytorch/ignite"> Source Code</a>
        </p>
     </td>
   </tr>
@@ -406,7 +471,7 @@ In alphabetic order.
        <h1>SciML</h1>
        <p> SciML is an open source software organization created to unify the packages for scientific machine learning. This includes the development of modular scientific simulation support software, such as differential equation solvers, along with the methodologies for inverse problems and automated model discovery. By providing a diverse set of tools with a common interface, we provide a modular, easily-extendable, and highly performant ecosystem for handling a wide variety of scientific simulations. </p>
        <p>
-         <a href="https://sciml.ai">Website</a> | <a href="https://sciml.ai/community/#discourse">Discourse</a> | <a href="">Ideas Page</a> | <a href="https://github.com/SciML"> Source Code</a>
+         <a href="https://sciml.ai">Website</a> | <a href="https://sciml.ai/community/#discourse">Discourse</a> | <a href="https://sciml.ai/dev/#projects_lists">Ideas Page</a> | <a href="https://github.com/SciML"> Source Code</a>
        </p>
     </td>
   </tr>
