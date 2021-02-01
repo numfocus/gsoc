@@ -10,7 +10,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - CB-Geo MPM https://github.com/cb-geo/mpm/issues/704#issue-796189505
 - CuPy
 - Effective Quadratures
-- GeoPandas
+- GeoPandas https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2021
 - Gridap https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md
 - matplotlib
 - NetworkX https://networkx.org/documentation/latest/developer/projects.html#mentored-projects
