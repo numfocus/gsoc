@@ -291,7 +291,7 @@ In alphabetic order.
         GeoPandas is an open source project to make working with geospatial data in Python easier, focusing on tabular vector data.
       </p>
       <p>
-        <a href="https://geopandas.org">Website</a>  | <a href=""> Ideas List</a> | <a href="https://geopandas.org/#get-in-touch"> Contact | <a href="https://github.com/geopandas/geopandas">Source Code</a>
+        <a href="https://geopandas.org">Website</a>  | <a href="https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2021"> Ideas List</a> | <a href="https://geopandas.org/#get-in-touch"> Contact | <a href="https://github.com/geopandas/geopandas">Source Code</a>
       </p>
    </td>
  </tr>
