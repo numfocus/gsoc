@@ -267,15 +267,15 @@ In alphabetic order.
 -->
   <tr>
    <td>
-     <img width="300px" src="img/effective.png"/>
+     <img width="300px" src="img/equadratures.png"/>
    </td>
    <td>
-      <h1>Effective Quadratures</h1>
+      <h1>equadratures</h1>
       <p>
-        Effective Quadratures is an open-source library for uncertainty quantification, machine learning, optimisation, numerical integration and dimension reduction – all using orthogonal polynomials.
+        equadratures is an open-source library for uncertainty quantification, machine learning, optimisation, numerical integration and dimension reduction – all using orthogonal polynomials.
       </p>
       <p>
-        <a href="www.effective-quadratures.org">Website</a>  | <a href=""> Ideas List</a> | <a href="contact@effective-quadratures.org"> Contact | <a href="https://github.com/Effective-Quadratures/Effective-Quadratures">Source Code</a>
+        <a href="https://equadratures.org">Website</a>  | <a href="https://github.com/Effective-Quadratures/equadratures/wiki/GSoC-2021-Projects"> Ideas List</a> | <a href="https://discourse.equadratures.org/"> Discourse</a> | <a href="mailto:contact@equadratures.org"> Contact | <a href="https://github.com/Effective-Quadratures/equadratures">Source Code</a>
       </p>
    </td>
  </tr>
@@ -541,6 +541,7 @@ information how to work with them.
 | [Data Retriever][DR] | Unknown |   |
 | [Dask]               | Unknown |     |
 | [DyND]               | Unknown                          |             |
+| [equadratures]       | Applying under NumFOCUS umbrella | https://github.com/Effective-Quadratures/equadratures/wiki/GSoC-2021-Projects |
 | [Gensim]             | Unknown                          |             |
 | [MDAnalysis]         | Unknown |  |
 | [Numba]              | Unknown                          |             |
@@ -583,6 +584,7 @@ information how to work with them.
 [DR]: https://www.data-retriever.org/
 [DyND]: http://libdynd.org/
 [Econ-ARK]: https://econ-ark.github.io/HARK/
+[equadratures]: https://equadratures.org/
 [FEniCSproject]: https://fenicsproject.org/
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
