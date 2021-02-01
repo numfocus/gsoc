@@ -247,24 +247,6 @@ In alphabetic order.
    </td>
  </tr>
 
--->
-
-  <tr>
-   <td>
-     <img width="300px" src="img/effective.png"/>
-   </td>
-   <td>
-      <h1>Effective Quadratures</h1>
-      <p>
-        Effective Quadratures is an open-source library for uncertainty quantification, machine learning, optimisation, numerical integration and dimension reduction – all using orthogonal polynomials.
-      </p>
-      <p>
-        <a href="www.effective-quadratures.org">Website</a>  | <a href=""> Ideas List</a> | <a href="contact@effective-quadratures.org"> Contact | <a href="https://github.com/Effective-Quadratures/Effective-Quadratures">Source Code</a>
-      </p>
-   </td>
- </tr>
-
- <!--
  <tr>
    <td>
      <img width="300px" src="img/jump.png"/>
@@ -283,6 +265,21 @@ In alphabetic order.
    </td>
  </tr>
 -->
+  <tr>
+   <td>
+     <img width="300px" src="img/effective.png"/>
+   </td>
+   <td>
+      <h1>Effective Quadratures</h1>
+      <p>
+        Effective Quadratures is an open-source library for uncertainty quantification, machine learning, optimisation, numerical integration and dimension reduction – all using orthogonal polynomials.
+      </p>
+      <p>
+        <a href="www.effective-quadratures.org">Website</a>  | <a href=""> Ideas List</a> | <a href="contact@effective-quadratures.org"> Contact | <a href="https://github.com/Effective-Quadratures/Effective-Quadratures">Source Code</a>
+      </p>
+   </td>
+ </tr>
+
 
   <tr>
    <td>
@@ -450,6 +447,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+-->
    <tr>
     <td>
       <img width="300px" src="img/qutip.png">
@@ -458,11 +456,10 @@ In alphabetic order.
        <h1>QuTiP</h1>
        <p> QuTiP is a software for simulating quantum systems. QuTiP aims to provide tools for user-friendly and efficient numerical simulations of open quantum systems. It can be used to simulate a wide range of physical phenomenon in areas such as quantum optics, trapped ions, superconducting circuits and quantum nanomechanical resonators. In addition, it contains a number of other modules to simplify the numerical simulation and study of many topics in quantum physics such as quantum optimal control, quantum information, and computing. </p>
        <p>
-         <a href="http://qutip.org">Website</a> | <a href="https://groups.google.com/forum/#!forum/qutip">Gitter</a> | <a href="https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2020">Ideas Page</a> | <a href="https://github.com/qutip/qutip"> Source Code</a>
+         <a href="http://qutip.org">Website</a> | <a href="http://groups.google.com/group/qutip"> Contact </a> | <a href="">Ideas Page</a> | <a href="https://github.com/qutip/qutip"> Source Code</a>
        </p>
     </td>
   </tr>
--->
   <tr>
     <td>
       <img width="300px" src="img/sciml.png">
