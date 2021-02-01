@@ -9,6 +9,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - Colour
 - CB-Geo MPM https://github.com/cb-geo/mpm/issues/704#issue-796189505
 - CuPy
+- Effective Quadratures
 - GeoPandas
 - Gridap https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md
 - matplotlib
