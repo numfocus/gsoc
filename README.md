@@ -541,6 +541,7 @@ information how to work with them.
 | [Data Retriever][DR] | Unknown |   |
 | [Dask]               | Unknown |     |
 | [DyND]               | Unknown                          |             |
+| [equadratures]       | Applying under NumFOCUS umbrella | https://github.com/Effective-Quadratures/equadratures/wiki/GSoC-2021-Projects |
 | [Gensim]             | Unknown                          |             |
 | [MDAnalysis]         | Unknown |  |
 | [Numba]              | Unknown                          |             |
@@ -583,6 +584,7 @@ information how to work with them.
 [DR]: https://www.data-retriever.org/
 [DyND]: http://libdynd.org/
 [Econ-ARK]: https://econ-ark.github.io/HARK/
+[equadratures]: https://equadratures.org/
 [FEniCSproject]: https://fenicsproject.org/
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
