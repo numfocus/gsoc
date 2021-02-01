@@ -18,7 +18,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - PyBaMM https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2021-Projects
 - PyMC3 https://github.com/pymc-devs/pymc3/wiki/GSoC-2021-projects
 - PyTorch-Ignite https://github.com/pytorch/ignite/wiki/GSoC-2021-project
-- QuTiP
+- QuTiP https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2021
 - SciML 
   - Numerical Differential Equations  https://sciml.ai/gsoc/gsoc_diffeq/
   - Scientific Machine Learning  https://sciml.ai/gsoc/gsoc_sciml/
