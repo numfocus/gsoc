@@ -8,7 +8,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2021-projects
 - Colour
 - CB-Geo MPM https://github.com/cb-geo/mpm/issues/704#issue-796189505
-- CuPy
+- CuPy https://github.com/cupy/cupy/wiki/GSoC-2021-Project-Ideas
 - Effective Quadratures
 - GeoPandas https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2021
 - Gridap https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md
