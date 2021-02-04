@@ -472,6 +472,19 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+  <tr>
+    <td>
+      <img width="300px" src="img/stan-logo.png">
+    </td>
+    <td>
+       <h1>Stan </h1>
+       <p> Stan is a state-of-the-art platform for statistical modeling and high-performance statistical computation. Thousands of users rely on Stan for statistical modeling, data analysis, and prediction in the social, biological, and physical sciences, engineering, and business. Users specify log density functions in Stan’s probabilistic programming language and get: 1) full Bayesian statistical inference with MCMC sampling (NUTS, HMC). 2) approximate Bayesian inference with variational inference (ADVI) 3) penalized maximum likelihood estimation with optimization (L-BFGS). Stan’s math library provides differentiable probability functions & linear algebra (C++ autodiff). Additional R packages provide expression-based linear modeling, posterior visualization, and leave-one-out cross-validation.
+ </p>
+       <p>
+         <a href="https://mc-stan.org/">Website</a> | <a href="https://discourse.mc-stan.org/">Discourse</a> | <a href="https://github.com/stan-dev/design-docs/blob/master/gsoc_proposals/2021/proposal_main.md">Ideas Page</a> | <a href="https://github.com/stan-dev"> Source Code</a>
+       </p>
+    </td>
+  </tr>
   <!--
   <tr>
     <td>
@@ -523,7 +536,7 @@ information how to work with them.
 | [Shogun]                        | Unknown |                                                    |
 | [SunPy]                         | Unknown |  |
 | [SymPy]                         | Unknown |  |
-| [Stan]                          | Unknown |                                                     |
+| [Stan]                          | Applying under NumFOCUS umbrella | https://github.com/stan-dev/design-docs/blob/master/gsoc_proposals/2021/proposal_main.md  |
 | [yt]                            | Unknown |                                                     |
 
 ### Affiliated Organizations GSoC Status
