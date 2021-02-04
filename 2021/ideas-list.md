@@ -19,6 +19,7 @@ page of each organization under the NumFOCUS umbrella at this page.
   - Numerical Differential Equations  https://sciml.ai/gsoc/gsoc_diffeq/
   - Scientific Machine Learning  https://sciml.ai/gsoc/gsoc_sciml/
   - Symbolic-Numeric Computing  https://sciml.ai/gsoc/gsoc_symbolic/
+- Stan https://github.com/stan-dev/design-docs/blob/master/gsoc_proposals/2021/proposal_main.md
   
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.
