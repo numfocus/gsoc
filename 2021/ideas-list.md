@@ -9,9 +9,10 @@ page of each organization under the NumFOCUS umbrella at this page.
 - Colour
 - CB-Geo MPM https://github.com/cb-geo/mpm/issues/704#issue-796189505
 - CuPy https://github.com/cupy/cupy/wiki/GSoC-2021-Project-Ideas
-- Effective Quadratures
+- Effective Quadratures https://github.com/Effective-Quadratures/equadratures/wiki/GSoC-2021-Projects
 - GeoPandas https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2021
 - Gridap https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md
+- JuMP https://github.com/jump-dev/GSOC2021
 - matplotlib
 - NetworkX https://networkx.org/documentation/latest/developer/projects.html#mentored-projects
 - Optuna https://github.com/optuna/optuna/wiki/Optuna-GSoC-2021
