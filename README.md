@@ -71,7 +71,7 @@ In alphabetic order.
 <table>
   <tr>
     <td>
-      <img width="300px" src="img/aiida.png"/>
+      <img width="800px" src="img/aiida.png"/>
     </td>
     <td>
        <h1>AiiDA</h1>
@@ -86,7 +86,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="img/arviz.png"/>
+      <img width="800px" src="img/arviz.png"/>
     </td>
     <td>
        <h1>ArviZ</h1>
@@ -101,7 +101,7 @@ In alphabetic order.
   <!--
   <tr>
   <td>
-      <img width="300px" src="https://static.bokeh.org/logos/logo.png"/>
+      <img width="800px" src="https://static.bokeh.org/logos/logo.png"/>
     </td>
     <td>
        <h1>Bokeh</h1>
@@ -116,7 +116,7 @@ In alphabetic order.
   
    <tr>
     <td>
-      <img width="300px" src="img/cantera-logo.png"/>
+      <img width="800px" src="img/cantera-logo.png"/>
     </td>
     <td>
        <h1>Cantera</h1>
@@ -132,7 +132,7 @@ In alphabetic order.
   
   <tr>
     <td>
-      <img width="300px" src="img/clawpack.png"/>
+      <img width="800px" src="img/clawpack.png"/>
     </td>
     <td>
        <h1>Clawpack</h1>
@@ -147,7 +147,7 @@ In alphabetic order.
 
 <tr>
     <td>
-      <img width="300px" src="https://avatars2.githubusercontent.com/u/11897326?v=3&s=200"/>
+      <img width="800px" src="https://avatars2.githubusercontent.com/u/11897326?v=3&s=200"/>
     </td>
     <td>
        <h1>Conda Forge</h1>
@@ -163,7 +163,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="img/mpm.png"/>
+      <img width="800px" src="img/mpm.png"/>
     </td>
     <td>
        <h1>CB-Geo MPM</h1>
@@ -178,7 +178,7 @@ In alphabetic order.
 
 <tr>
     <td>
-      <img width="300px" src="img/colour.png"/>
+      <img width="800px" src="img/colour.png"/>
     </td>
     <td>
        <h1>Colour</h1>
@@ -202,7 +202,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="img/cupy-logo.png"/>
+      <img width="800px" src="img/cupy-logo.png"/>
     </td>
     <td>
        <h1>CuPy</h1>
@@ -217,7 +217,7 @@ In alphabetic order.
 
   <tr>
    <td>
-     <img width="300px" src="img/ecodata-retriever.png"/>
+     <img width="800px" src="img/ecodata-retriever.png"/>
    </td>
    <td>
       <h1>Data Retriever</h1>
@@ -234,7 +234,7 @@ In alphabetic order.
  
   <tr>
    <td>
-     <img width="300px" src="img/econark.png"/>
+     <img width="800px" src="img/econark.png"/>
    </td>
    <td>
       <h1>Econ-Ark</h1>
@@ -251,7 +251,7 @@ In alphabetic order.
 
   <tr>
    <td>
-     <img width="300px" src="img/equadratures.png"/>
+     <img width="800px" src="img/equadratures.png"/>
    </td>
    <td>
       <h1>equadratures</h1>
@@ -267,7 +267,7 @@ In alphabetic order.
 
   <tr>
    <td>
-     <img width="300px" src="img/geopandas.png"/>
+     <img width="800px" src="img/geopandas.png"/>
    </td>
    <td>
       <h1>GeoPandas</h1>
@@ -283,7 +283,7 @@ In alphabetic order.
 
    <tr>
    <td>
-     <img width="300px" src="img/gridap.png"/>
+     <img width="800px" src="img/gridap.png"/>
    </td>
    <td>
       <h1>Gridap</h1>
@@ -298,7 +298,7 @@ In alphabetic order.
  
   <tr>
    <td>
-     <img width="300px" src="img/jump.png"/>
+     <img width="800px" src="img/jump.png"/>
    </td>
    <td>
       <h1>JuMP</h1>
@@ -316,7 +316,7 @@ In alphabetic order.
  
  <tr>
    <td>
-     <img width="300px" src="img/matplotlib.png"/>
+     <img width="800px" src="img/matplotlib.png"/>
    </td>
    <td>
       <h1>Matplotlib</h1>
@@ -338,7 +338,7 @@ In alphabetic order.
 
  <tr>
    <td>
-     <img width="300px" src="img/networkx.png"/>
+     <img width="800px" src="img/networkx.png"/>
    </td>
    <td>
       <h1>NetworkX</h1>
@@ -353,7 +353,7 @@ In alphabetic order.
 <!--
  <tr>
   <td>
-    <img width="300px" src="img/nteract.png">
+    <img width="800px" src="img/nteract.png">
   </td>
   <td>
      <h1>nteract</h1>
@@ -372,7 +372,7 @@ In alphabetic order.
 -->
    <tr>
    <td>
-     <img width="300px" src="img/optuna.png"/>
+     <img width="800px" src="img/optuna.png"/>
    </td>
    <td>
       <h1>Optuna</h1>
@@ -387,7 +387,7 @@ In alphabetic order.
 <!--
 <tr>
   <td>
-    <img width="300px" src="img/pvlib.png">
+    <img width="800px" src="img/pvlib.png">
   </td>
   <td>
      <h1>pvlib</h1>
@@ -400,7 +400,7 @@ In alphabetic order.
 -->
  <tr>
     <td>
-      <img width="300px" src="img/PyBaMM.png">
+      <img width="800px" src="img/PyBaMM.png">
     </td>
     <td>
        <h1>PyBaMM</h1>
@@ -414,7 +414,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="300px" src="img/pymc3-logo.png">
+      <img width="800px" src="img/pymc3-logo.png">
     </td>
     <td>
        <h1>PyMC3</h1>
@@ -426,7 +426,7 @@ In alphabetic order.
   </tr>
   <tr>
     <td>
-      <img width="300px" src="img/pysal_logo.png">
+      <img width="800px" src="img/pysal_logo.png">
     </td>
     <td>
        <h1>PySAL</h1>
@@ -438,7 +438,7 @@ In alphabetic order.
   </tr>
   <tr>
     <td>
-      <img width="300px" src="img/pytorchignite-logo.png">
+      <img width="800px" src="img/pytorchignite-logo.png">
     </td>
     <td>
        <h1>PyTorch-Ignite</h1>
@@ -450,7 +450,7 @@ In alphabetic order.
   </tr>
    <tr>
     <td>
-      <img width="300px" src="img/qutip.png">
+      <img width="800px" src="img/qutip.png">
     </td>
     <td>
        <h1>QuTiP</h1>
@@ -462,7 +462,7 @@ In alphabetic order.
   </tr>
   <tr>
     <td>
-      <img width="300px" src="img/sciml.png">
+      <img width="800px" src="img/sciml.png">
     </td>
     <td>
        <h1>SciML</h1>
@@ -474,7 +474,7 @@ In alphabetic order.
   </tr>
   <tr>
     <td>
-      <img width="300px" src="img/stan-logo.png">
+      <img width="800px" src="img/stan-logo.png">
     </td>
     <td>
        <h1>Stan </h1>
@@ -488,7 +488,7 @@ In alphabetic order.
   <!--
   <tr>
     <td>
-      <img width="300px" src="img/signac.png">
+      <img width="800px" src="img/signac.png">
     </td>
     <td>
        <h1>signac</h1>
