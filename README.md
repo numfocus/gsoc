@@ -557,6 +557,7 @@ information how to work with them.
 | [DyND]               | Unknown                          |             |
 | [equadratures]       | Applying under NumFOCUS umbrella | https://github.com/Effective-Quadratures/equadratures/wiki/GSoC-2021-Projects |
 | [Gensim]             | Unknown                          |             |
+| [NetworkX]           | Applying under NumFOCUS umbrella | https://networkx.org/documentation/latest/developer/projects.html#mentored-projects |
 | [Numba]              | Unknown                          |             |
 | [Optuna]             | Applying under NumFOCUS umbrella |             |
 | [Orange]             | Unknown                          |             |
@@ -601,7 +602,7 @@ information how to work with them.
 [FEniCSproject]: https://fenicsproject.org/
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
-[IL]: 2020/ideas-list.md
+[IL]: 2021/ideas-list.md
 [IPython]: https://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: https://julialang.org/
@@ -609,6 +610,7 @@ information how to work with them.
 [Jupyter]: https://jupyter.org/
 [Matplotlib]: https://matplotlib.org/
 [MDAnalysis]: https://www.mdanalysis.org/
+[NetworkX]: http://networkx.org/
 [Numba]: http://numba.pydata.org/
 [NumFOCUS-Projects]: https://numfocus.org/sponsored-projects
 [NumFOCUS]: https://numfocus.org/
