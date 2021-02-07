@@ -524,6 +524,7 @@ information how to work with them.
 | [Julia]                         | Unknown |           |
 | [JuMP]                          | Unknown | |
 | [Matplotlib]                    | Unknown |         |
+| [MDAnalysis]                    | Applying by themselves |   https://github.com/MDAnalysis/mdanalysis/wiki/Project-Ideas-2021      |
 | [nteract]                       | Unknown | |
 | [NumPy]                         | Unknown                |                                                     |
 | [Open Journals][theoj]          | Unknown                          |                                                     |
@@ -556,7 +557,6 @@ information how to work with them.
 | [DyND]               | Unknown                          |             |
 | [equadratures]       | Applying under NumFOCUS umbrella | https://github.com/Effective-Quadratures/equadratures/wiki/GSoC-2021-Projects |
 | [Gensim]             | Unknown                          |             |
-| [MDAnalysis]         | Unknown |  |
 | [Numba]              | Unknown                          |             |
 | [Optuna]             | Applying under NumFOCUS umbrella |             |
 | [Orange]             | Unknown                          |             |
