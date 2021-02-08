@@ -6,7 +6,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 
 - AiiDA https://github.com/aiidateam/aiida-core/wiki/GSoC-2021-Projects
 - ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2021-projects
-- Colour
+- Colour https://github.com/colour-science/GSoC/blob/master/2021/GSoC-2021-Project-Ideas.md
 - CB-Geo MPM https://github.com/cb-geo/mpm/issues/704#issue-796189505
 - CuPy https://github.com/cupy/cupy/wiki/GSoC-2021-Project-Ideas
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2021-Project-Ideas
