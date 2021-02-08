@@ -194,7 +194,7 @@ In alphabetic order.
           terms.
        </p>
        <p>
-       <a href="https://www.colour-science.org/">Website</a> | <a href="">Ideas List</a> | <a href="colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
+       <a href="https://www.colour-science.org/">Website</a> | <a href="https://github.com/colour-science/GSoC/blob/master/2021/GSoC-2021-Project-Ideas.md">Ideas List</a> | <a href="mailto:colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
        </p>
     </td>
   </tr>
