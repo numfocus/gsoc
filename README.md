@@ -283,15 +283,15 @@ In alphabetic order.
 
    <tr>
    <td>
-     <img width="800px" src="img/gridap.png"/>
+     <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
    </td>
    <td>
       <h1>Gridap</h1>
       <p>
-        Gridap provides a rich set of tools for the grid-based approximation of partial differential equations (PDEs) written 100% in the Julia programming language.
+        Gridap is a new generation, open-source, finite element (FE) library implemented in the Julia programming language. Gridap aims at adopting a more modern programming style than existing FE applications written in C/C++ or Fortran.
       </p>
       <p>
-        <a href="https://gridap.github.io/Gridap.jl/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
+        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
       </p>
    </td>
  </tr>
