@@ -17,6 +17,15 @@
     to help develop critical pieces of the open-source data science and
     numeric computing ecosystem.
 
+-   What would your org consider to be a successful summer?
+
+    As an umbrella organisation for open source scientific tools, it's
+    important for the projects to not just get new features implemented
+    but develop a sustainable welcoming community for new contributors.
+    A successful summer for us is more active new contributors to our projects.
+    Previous GSoC students with NumFOCUS have ended up becoming
+    core developers and maintainers of the projects.
+    
 -   How many potential mentors have agreed to mentor this year?
 
     11-15
