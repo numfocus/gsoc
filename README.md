@@ -113,7 +113,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-  
+
    <tr>
     <td>
       <img width="800px" src="img/cantera-logo.png"/>
@@ -129,7 +129,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-  
+
   <tr>
     <td>
       <img width="800px" src="img/clawpack.png"/>
@@ -231,7 +231,7 @@ In alphabetic order.
    </td>
  </tr>
 <!--
- 
+
   <tr>
    <td>
      <img width="800px" src="img/econark.png"/>
@@ -295,7 +295,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
- 
+
   <tr>
    <td>
      <img width="800px" src="img/jump.png"/>
@@ -313,7 +313,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
- 
+
  <tr>
    <td>
      <img width="800px" src="img/matplotlib.png"/>
@@ -331,7 +331,7 @@ In alphabetic order.
       Matplotlib makes easy things easy and hard things possible.
       </p>
       <p>
-        <a href="https://matplotlib.org/devdocs/">Website</a> | <a href="https://gitter.im/matplotlib/">Gitter</a> | <a href="https://discourse.matplotlib.org">Discourse</a> | <a href ="">Ideas Page</a> | <a href="https://github.com/matplotlib">Source Code</a> 
+        <a href="https://matplotlib.org/devdocs/">Website</a> | <a href="https://gitter.im/matplotlib/">Gitter</a> | <a href="https://discourse.matplotlib.org">Discourse</a> | <a href ="https://github.com/matplotlib/matplotlib/wiki/GSOC-2021-ideas">Ideas Page</a> | <a href="https://github.com/matplotlib">Source Code</a>
       </p>
    </td>
  </tr>

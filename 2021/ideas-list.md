@@ -14,7 +14,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - GeoPandas https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2021
 - Gridap https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md
 - JuMP https://github.com/jump-dev/GSOC2021
-- matplotlib
+- matplotlib https://github.com/matplotlib/matplotlib/wiki/GSOC-2021-ideas
 - NetworkX https://networkx.org/documentation/latest/developer/projects.html#mentored-projects
 - Optuna https://github.com/optuna/optuna/wiki/Optuna-GSoC-2021
 - PyBaMM https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2021-Projects
