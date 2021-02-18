@@ -384,7 +384,6 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-<!--
 <tr>
   <td>
     <img width="800px" src="img/pvlib.png">
@@ -393,11 +392,10 @@ In alphabetic order.
      <h1>pvlib</h1>
      <p>pvlib python provides a set of functions and classes for simulating the performance of photovoltaic energy systems.</p>
      <p>
-       <a href="https://pvlib-python.readthedocs.io/en/stable/">Website</a> | <a href="https://groups.google.com/forum/#!forum/pvlib-python">Google Group Forum</a> | <a href="https://github.com/pvlib/pvlib-python/wiki/GSoC-2020-Project">Ideas Page</a> | <a href="https://github.com/pvlib/pvlib-python"> Source Code</a>
+       <a href="https://pvlib-python.readthedocs.io/en/stable/">Website</a> | <a href="https://groups.google.com/forum/#!forum/pvlib-python">Google Group Forum</a> | <a href="https://github.com/pvlib/pvlib-python/wiki/GSoC-2021-Projects">Ideas Page</a> | <a href="https://github.com/pvlib/pvlib-python"> Source Code</a>
      </p>
   </td>
 </tr>
--->
  <tr>
     <td>
       <img width="800px" src="img/PyBaMM.png">
@@ -562,7 +560,7 @@ information how to work with them.
 | [Optuna]             | Applying under NumFOCUS umbrella |             |
 | [Orange]             | Unknown                          |             |
 | [Pomegranate]        | Unknown                          |             |
-| [pvlib]              | Unknown |    |
+| [pvlib]              | Applying under NumFOCUS umbrella | https://github.com/pvlib/pvlib-python/wiki/GSoC-2021-Projects |
 | [PythonXY]           | Unknown                          |             |
 | [PySAL]              | Unknown |  |
 | [PyTorch-Ignite]    | Applying under NumFOCUS umbrella |             |
