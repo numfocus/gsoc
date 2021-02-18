@@ -314,6 +314,21 @@ In alphabetic order.
    </td>
  </tr>
 
+  <tr>
+   <td>
+     <img width="800px" src="img/lfortran.png"/>
+   </td>
+   <td>
+      <h1>LFortran</h1>
+      <p>
+        LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user’s code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user’s code on modern architectures such as multi-core CPUs and GPUs.
+      </p>
+      <p>
+        <a href="https://lfortran.org/">Website</a> | <a href="https://lfortran.zulipchat.com/">Developers chat on Zulip</a> | <a href ="https://gitlab.com/lfortran/lfortran/-/wikis/GSoC-2021-Ideas">Ideas Page</a> | <a href="https://gitlab.com/lfortran/lfortran">Source Code</a>
+      </p>
+   </td>
+ </tr>
+
  <tr>
    <td>
      <img width="800px" src="img/matplotlib.png"/>
