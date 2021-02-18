@@ -13,6 +13,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - Effective Quadratures https://github.com/Effective-Quadratures/equadratures/wiki/GSoC-2021-Projects
 - GeoPandas https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2021
 - Gridap https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md
+- LFortran https://gitlab.com/lfortran/lfortran/-/wikis/GSoC-2021-Ideas
 - JuMP https://github.com/jump-dev/GSOC2021
 - matplotlib https://github.com/matplotlib/matplotlib/wiki/GSOC-2021-ideas
 - NetworkX https://networkx.org/documentation/latest/developer/projects.html#mentored-projects
