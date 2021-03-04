@@ -9,6 +9,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - Colour https://github.com/colour-science/GSoC/blob/master/2021/GSoC-2021-Project-Ideas.md
 - CB-Geo MPM https://github.com/cb-geo/mpm/issues/704#issue-796189505
 - CuPy https://github.com/cupy/cupy/wiki/GSoC-2021-Project-Ideas
+- Dask https://github.com/dask/dask/wiki/GSOC-2021-Project-Ideas
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2021-Project-Ideas
 - Effective Quadratures https://github.com/Effective-Quadratures/equadratures/wiki/GSoC-2021-Projects
 - GeoPandas https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2021
