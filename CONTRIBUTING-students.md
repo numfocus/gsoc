@@ -186,7 +186,7 @@ $ pandoc -f markdown -t pdf YYYY/proposals/your-name.md
 
 
 
-[IL]: 2020/ideas-list.md
+[IL]: 2021/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
 [GSoC]: http://summerofcode.withgoogle.com/
 [ML]: organization/team.md
