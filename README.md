@@ -215,6 +215,20 @@ In alphabetic order.
   </tr>
 
   <tr>
+    <td>
+      <img width="800px" src="img/dask.png"/>
+    </td>
+    <td>
+       <h1>Dask</h1>
+       <p>
+         Dask is a flexible parallel computing library for analytics.
+       </p>
+       <a href="https://dask.org/">Website</a> | <a href="https://github.com/dask/dask/wiki/GSOC-2021-Project-Ideas">Ideas List</a> | <a href="https://github.com/dask/dask/issues/7250">Contact</a> | <a href="https://github.com/dask/dask/wiki/GSOC-2021-Project-Ideas">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
    <td>
      <img width="800px" src="img/ecodata-retriever.png"/>
    </td>
@@ -566,7 +580,7 @@ information how to work with them.
 | [Cython]             | Unknown                          |             |
 | [Dash]               | Unknown |         |
 | [Data Retriever][DR] | Unknown |   |
-| [Dask]               | Unknown |     |
+| [Dask]               | Applying under NumFOCUS umbrella | https://github.com/dask/dask/wiki/GSOC-2021-Project-Ideas |
 | [DyND]               | Unknown                          |             |
 | [equadratures]       | Applying under NumFOCUS umbrella | https://github.com/Effective-Quadratures/equadratures/wiki/GSoC-2021-Projects |
 | [Gensim]             | Unknown                          |             |
