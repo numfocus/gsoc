@@ -223,7 +223,7 @@ In alphabetic order.
        <p>
          Dask is a flexible parallel computing library for analytics.
        </p>
-       <a href="https://dask.org/">Website</a> | <a href="https://github.com/dask/dask/wiki/GSOC-2021-Project-Ideas">Ideas List</a> | <a href="https://github.com/dask/dask/issues/7250">Contact</a> | <a href="https://github.com/dask/dask/wiki/GSOC-2021-Project-Ideas">Source Code</a>
+       <a href="https://dask.org/">Website</a> | <a href="https://github.com/dask/dask/wiki/GSOC-2021-Project-Ideas">Ideas List</a> | <a href="https://join.slack.com/t/dask/shared_invite/zt-mfmh7quc-nIrXL6ocgiUH2haLYA914g">Contact</a> | <a href="https://github.com/dask/dask">Source Code</a>
        </p>
     </td>
   </tr>
