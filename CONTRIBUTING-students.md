@@ -181,7 +181,7 @@ identification easier for the mentors. To convert a draft that you have written
 before into PDF you can use [Pandoc][Pandoc].
 
 ~~~
-$ pandoc -f markdown -t pdf YYYY/proposals/your-name.md
+$ pandoc -f markdown -t pdf YYYY/proposals/sub-org-name-your-name.md
 ~~~
 
 
