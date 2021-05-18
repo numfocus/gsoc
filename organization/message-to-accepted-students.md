@@ -13,7 +13,7 @@ information about working on your project soon.
     please contact one of the [administrators][admin]. We are here to
     help you.
 
-2.  The coding period only starts on 14 May. From now until then we
+2.  The coding period only starts on 7 June. From now until then we
     are in the "Community Bonding Period". During this period you
     should
 
