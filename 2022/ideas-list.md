@@ -13,7 +13,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - Econ-ARK
 - Gridap
 - CuPy
-- QuTiP
+- QuTiP https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2022
 - Optuna
 - CB-Geo MPM
 - NetworkX
