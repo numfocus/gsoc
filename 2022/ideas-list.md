@@ -17,5 +17,6 @@ page of each organization under the NumFOCUS umbrella at this page.
 - Optuna https://github.com/optuna/optuna/wiki/Optuna-GSoC-2022
 - CB-Geo MPM
 - NetworkX
+- ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2022-projects
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.
