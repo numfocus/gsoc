@@ -12,7 +12,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - CVXPY 
 - Econ-ARK
 - Gridap
-- CuPy
+- CuPy https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas
 - QuTiP https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2022
 - Optuna https://github.com/optuna/optuna/wiki/Optuna-GSoC-2022
 - CB-Geo MPM
