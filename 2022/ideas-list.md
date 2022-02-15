@@ -9,7 +9,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - SciML 
 - Taskflow
 - PyBaMM https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2022-Projects
-- CVXPY 
+- CVXPY https://github.com/cvxpy/GSOC2022
 - Econ-ARK
 - Gridap
 - CuPy https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas
