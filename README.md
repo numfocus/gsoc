@@ -71,21 +71,6 @@ In alphabetic order.
 <table>
   <tr>
     <td>
-      <img width="800px" src="img/aiida.png"/>
-    </td>
-    <td>
-       <h1>AiiDA</h1>
-       <p>
-        AiiDA is a python framework for managing computational science workflows, with roots in computational materials science. It helps researchers manage large numbers of simulations (1k, 10k, 100k, ...) and complex workflows involving multiple executables. At the same time, it records the provenance of the entire simulation pipeline with the aim to make it fully reproducible.
-       </p>
-       <p>
-         <a href="http://www.aiida.net">Website</a> | <a href="https://github.com/aiidateam/aiida-core/wiki/GSoC-2021-Projects">Ideas List</a> | <a href="https://github.com/aiidateam/aiida-core/discussions/4702"> Contact </a> | <a href="https://github.com/aiidateam/aiida-core">Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
       <img width="800px" src="img/arviz.png"/>
     </td>
     <td>
@@ -98,68 +83,6 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-  <!--
-  <tr>
-  <td>
-      <img width="800px" src="https://static.bokeh.org/logos/logo.png"/>
-    </td>
-    <td>
-       <h1>Bokeh</h1>
-       <p>
-        Bokeh is an interactive visualization library for modern web browsers. It provides elegant, concise construction of versatile graphics, and affords high-performance interactivity over large or streaming datasets. Bokeh can help anyone who would like to quickly and easily make interactive plots, dashboards, and data applications.
-       </p>
-       <p>
-         <a href="https://docs.bokeh.org/en/latest/">Website (docs)</a> | <a href="https://github.com/bokeh/bokeh/wiki/GSOC-2020-Ideas-Page">Ideas List</a> | <a href="https://discourse.bokeh.org/c/development/7"> Contact (Discourse) </a> | <a href="https://github.com/bokeh/bokeh">Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-   <tr>
-    <td>
-      <img width="800px" src="img/cantera-logo.png"/>
-    </td>
-    <td>
-       <h1>Cantera</h1>
-       <p>
-        Cantera is a library to solve problems involving thermodynamics, chemical kinetics, and
-        transport.
-       </p>
-       <p>
-         <a href="https://cantera.org/">Website</a>  | <a href="https://github.com/Cantera/cantera/wiki/GSoC-2020-Ideas">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cantera-users">Mailing List</a> | <a href="https://github.com/Cantera/cantera">Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <img width="800px" src="img/clawpack.png"/>
-    </td>
-    <td>
-       <h1>Clawpack</h1>
-       <p>
-        Clawpack (“Conservation Laws Package”) is a collection of finite volume methods for linear and nonlinear hyperbolic systems of conservation laws.
-       </p>
-       <p>
-       <a href="https://www.clawpack.org">Website</a> | <a href="https://github.com/clawpack/clawpack/wiki/Google-Summer-of-Code-2020">Ideas List</a> | <a href="https://join.slack.com/t/clawpack/shared_invite/enQtNTAwMjQxNTk5NjY5LTJjMzJkMzhjZTQ0NzQ2Y2JkZTg3YWFhN2M4ZjIwMDA3YWNiNDM5NTA2NGNlZDA2YzlmNDkwMzA5ZGFkODgyMzc"> Slack </a> | <a href="https://github.com/clawpack">Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-<tr>
-    <td>
-      <img width="800px" src="https://avatars2.githubusercontent.com/u/11897326?v=3&s=200"/>
-    </td>
-    <td>
-       <h1>Conda Forge</h1>
-       <p>
-        A community led collection of recipes, build infrastructure and distributions for the conda package manager.
-       </p>
-       <p>
-         <a href="https://conda-forge.org">Website</a>  | <a href="https://github.com/conda-forge/blog/blob/gh-pages/_posts/2020-02-04-GSoC.md">Ideas List</a> | <a href="https://gitter.im/conda-forge/conda-forge.github.io"> Gitter </a> | <a href="https://github.com/conda-forge">Source Code</a>
-       </p>
-    </td>
-  </tr>
--->
 
   <tr>
     <td>
@@ -175,30 +98,6 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-
-<tr>
-    <td>
-      <img width="800px" src="img/colour.png"/>
-    </td>
-    <td>
-       <h1>Colour</h1>
-       <p>
-          <a href="https://github.com/colour-science/colour">Colour</a> is an
-          open-source <a href="https://www.python.org/">Python</a> package
-          providing a comprehensive number of algorithms and datasets for
-          colour science.
-       </p>
-        <p>
-          It is freely available under the
-          <a href="https://opensource.org/licenses/BSD-3-Clause">New BSD License</a>
-          terms.
-       </p>
-       <p>
-       <a href="https://www.colour-science.org/">Website</a> | <a href="https://github.com/colour-science/GSoC/blob/master/2021/GSoC-2021-Project-Ideas.md">Ideas List</a> | <a href="mailto:colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
-       </p>
-    </td>
-  </tr>
-
 
   <tr>
     <td>
@@ -216,35 +115,18 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="img/dask.png"/>
+      <img width="800px" src="img/cupy-logo.png"/>
     </td>
     <td>
-       <h1>Dask</h1>
+       <h1>CVXPY</h1>
        <p>
-         Dask is a flexible parallel computing library for analytics.
+         CVXPY is an open source Python-embedded modeling language for convex optimization problems. It lets you express your problem in a natural way that follows the math, rather than in the restrictive standard form required by solvers.
        </p>
-       <a href="https://dask.org/">Website</a> | <a href="https://github.com/dask/dask/wiki/GSOC-2021-Project-Ideas">Ideas List</a> | <a href="https://join.slack.com/t/dask/shared_invite/zt-mfmh7quc-nIrXL6ocgiUH2haLYA914g">Contact</a> | <a href="https://github.com/dask/dask">Source Code</a>
+       <a href="https://www.cvxpy.org/">Website</a> | <a href="">Ideas List</a> | <a href="">Contact</a> | <a href="https://github.com/cvxpy/cvxpy">Source Code</a>
        </p>
     </td>
   </tr>
 
-  <tr>
-   <td>
-     <img width="800px" src="img/ecodata-retriever.png"/>
-   </td>
-   <td>
-      <h1>Data Retriever</h1>
-      <p>
-        The Data Retriever is a package manager for data. It downloads, cleans,
-        and stores publicly available data, so that analysts spend less time
-        cleaning and managing data, and more time analyzing it.
-      </p>
-      <p>
-        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2021-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) | <a href="https://github.com/weecology/retriever">Source Code</a>
-      </p>
-   </td>
- </tr>
-<!--
 
   <tr>
    <td>
@@ -260,36 +142,18 @@ In alphabetic order.
       </p>
    </td>
  </tr>
--->
 
-
-  <tr>
+   <tr>
    <td>
-     <img width="800px" src="img/equadratures.png"/>
+     <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
    </td>
    <td>
-      <h1>equadratures</h1>
+      <h1>FEniCS</h1>
       <p>
-        equadratures is an open-source library for uncertainty quantification, machine learning, optimisation, numerical integration and dimension reduction – all using orthogonal polynomials.
+       FEniCS is an automated finite element library used to solve equations used in modeling, featuring a domain-specific language and automated code generation. Users input a problem that looks very much like mathematical notation; FEniCS then translates that into computer code. It solves problems for which there is no analytical (exact) solution numerically.
       </p>
       <p>
-        <a href="https://equadratures.org">Website</a>  | <a href="https://github.com/Effective-Quadratures/equadratures/wiki/GSoC-2021-Projects"> Ideas List</a> | <a href="https://discourse.equadratures.org/"> Discourse</a> | <a href="mailto:contact@equadratures.org"> Contact | <a href="https://github.com/Effective-Quadratures/equadratures">Source Code</a>
-      </p>
-   </td>
- </tr>
-
-
-  <tr>
-   <td>
-     <img width="800px" src="img/geopandas.png"/>
-   </td>
-   <td>
-      <h1>GeoPandas</h1>
-      <p>
-        GeoPandas is an open source project to make working with geospatial data in Python easier, focusing on tabular vector data.
-      </p>
-      <p>
-        <a href="https://geopandas.org">Website</a>  | <a href="https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2021"> Ideas List</a> | <a href="https://geopandas.org/#get-in-touch"> Contact | <a href="https://github.com/geopandas/geopandas">Source Code</a>
+        <a href="https://fenicsproject.org/">Website</a>  | <a href=""> Ideas List</a> | <a href="https://fenicsproject.org/community/"> Contact | <a href="https://github.com/FEniCS">Source Code</a>
       </p>
    </td>
  </tr>
@@ -310,60 +174,6 @@ In alphabetic order.
    </td>
  </tr>
 
-  <tr>
-   <td>
-     <img width="800px" src="img/jump.png"/>
-   </td>
-   <td>
-      <h1>JuMP</h1>
-      <p>
-        JuMP is a modeling language and supporting packages for mathematical optimization in Julia.
-        JuMP makes it easy to formulate and solve linear programming, semidefinite programming, integer
-        programming, convex optimization, constrained nonlinear optimization, and related classes of
-        optimization problems.
-      </p>
-      <p>
-        <a href="https://jump.dev/">Website</a> | <a href="https://gitter.im/JuliaOpt/JuMP-dev">Developers chat on Gitter</a> | <a href ="https://github.com/jump-dev/GSOC2021">Ideas Page</a> | <a href="https://github.com/jump-dev">Source Code</a>
-      </p>
-   </td>
- </tr>
-
-  <tr>
-   <td>
-     <img width="800px" src="img/lfortran.png"/>
-   </td>
-   <td>
-      <h1>LFortran</h1>
-      <p>
-        LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user’s code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user’s code on modern architectures such as multi-core CPUs and GPUs.
-      </p>
-      <p>
-        <a href="https://lfortran.org/">Website</a> | <a href="https://lfortran.zulipchat.com/">Developers chat on Zulip</a> | <a href ="https://gitlab.com/lfortran/lfortran/-/wikis/GSoC-2021-Ideas">Ideas Page</a> | <a href="https://gitlab.com/lfortran/lfortran">Source Code</a>
-      </p>
-   </td>
- </tr>
-
- <tr>
-   <td>
-     <img width="800px" src="img/matplotlib.png"/>
-   </td>
-   <td>
-      <h1>Matplotlib</h1>
-      <p>
-        Matplotlib is a comprehensive library for creating static, animated, and interactive
-       visualizations in Python.
-      <ul>
-      <li>Develop publication quality plots with just a few lines of code & use interactive figures that can zoom, pan, update...</li>
-      <li>Take full control of line styles, font properties, axes properties... & export and embed to a number of file formats and interactive environments</li>
-      <li> Explore tailored functionality provided by third party packages & learn more about Matplotlib through the many external learning resources</li>
-      </ul>
-      Matplotlib makes easy things easy and hard things possible.
-      </p>
-      <p>
-        <a href="https://matplotlib.org/devdocs/">Website</a> | <a href="https://gitter.im/matplotlib/">Gitter</a> | <a href="https://discourse.matplotlib.org">Discourse</a> | <a href ="https://github.com/matplotlib/matplotlib/wiki/GSOC-2021-ideas">Ideas Page</a> | <a href="https://github.com/matplotlib">Source Code</a>
-      </p>
-   </td>
- </tr>
 
  <tr>
    <td>
@@ -379,26 +189,6 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-<!--
- <tr>
-  <td>
-    <img width="800px" src="img/nteract.png">
-  </td>
-  <td>
-     <h1>nteract</h1>
-     <p>The nteract open source organization is committed to building the future of interactive computing. We are committed to:</p>
-     <ul>
-     <li>Creating fantastic interactive computing experiences that allow people to collaborate with ease.</li>
-     <li>Emphasizing simplicity and composability as core design principles to provide users ideal building blocks for their unique data applications.</li>
-     <li>Valuing our contributors and users and cooperating to produce solutions that delight others.</li>
-     </ul>
-     <p>To fulfill our mission, the nteract open source organization produces SDKs, applications, libraries, and CLIs to help individuals leverage the full power of Jupyter and other interactive computing environments.</p>
-     <p>
-       <a href="https://nteract.io/">Website</a> | <a href="https://slack.nteract.io/">Contact (Slack Community)</a> | <a href="https://github.com/nteract/nteract/wiki/GSoC-2020-Ideas">Ideas Page</a> | <a href="https://github.com/nteract/nteract"> Source Code (Core SDK and Applications)</a>
-     </p>
-  </td>
-</tr>
--->
    <tr>
    <td>
      <img width="800px" src="img/optuna.png"/>
@@ -413,18 +203,7 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-<tr>
-  <td>
-    <img width="800px" src="img/pvlib.png">
-  </td>
-  <td>
-     <h1>pvlib</h1>
-     <p>pvlib python provides a set of functions and classes for simulating the performance of photovoltaic energy systems.</p>
-     <p>
-       <a href="https://pvlib-python.readthedocs.io/en/stable/">Website</a> | <a href="https://groups.google.com/forum/#!forum/pvlib-python">Google Group Forum</a> | <a href="https://github.com/pvlib/pvlib-python/wiki/GSoC-2021-Projects">Ideas Page</a> | <a href="https://github.com/pvlib/pvlib-python"> Source Code</a>
-     </p>
-  </td>
-</tr>
+
  <tr>
     <td>
       <img width="800px" src="img/PyBaMM.png">
@@ -444,25 +223,14 @@ In alphabetic order.
       <img width="800px" src="img/pymc3-logo.png">
     </td>
     <td>
-       <h1>PyMC3</h1>
+       <h1>PyMC</h1>
        <p>PyMC3 is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
          <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc3/wiki/GSoC-2021-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
        </p>
     </td>
   </tr>
-  <tr>
-    <td>
-      <img width="800px" src="img/pysal_logo.png">
-    </td>
-    <td>
-       <h1>PySAL</h1>
-       <p>PySAL is an open source cross-platform library for geospatial data science. It supports many different areas of statistics and geographical analyses, such as the detection of spatial clusters, hotspots, and outliers; the construction of graphs from geographic data; Bayesian and Maximum Likelihood spatial regression and statistical modelling for geographical networks; spatial econometrics; space-time Markov modelling; and distribution dynamics for segregation and inequality. </p>
-       <p>
-         <a href="https://pysal.org/pysal/">Website</a> | <a href="https://gitter.im/pysal/pysal">Contact (Gitter chat room)</a> | <a href="https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2021">Ideas Page</a> | <a href="https://github.com/pysal/pysal"> Source Code</a>
-       </p>
-    </td>
-  </tr>
+
   <tr>
     <td>
       <img width="800px" src="img/pytorchignite-logo.png">
@@ -475,6 +243,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+
    <tr>
     <td>
       <img width="800px" src="img/qutip.png">
@@ -487,6 +256,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+
   <tr>
     <td>
       <img width="800px" src="img/sciml.png">
@@ -499,20 +269,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-  <tr>
-    <td>
-      <img width="800px" src="img/stan-logo.png">
-    </td>
-    <td>
-       <h1>Stan </h1>
-       <p> Stan is a state-of-the-art platform for statistical modeling and high-performance statistical computation. Thousands of users rely on Stan for statistical modeling, data analysis, and prediction in the social, biological, and physical sciences, engineering, and business. Users specify log density functions in Stan’s probabilistic programming language and get: 1) full Bayesian statistical inference with MCMC sampling (NUTS, HMC). 2) approximate Bayesian inference with variational inference (ADVI) 3) penalized maximum likelihood estimation with optimization (L-BFGS). Stan’s math library provides differentiable probability functions & linear algebra (C++ autodiff). Additional R packages provide expression-based linear modeling, posterior visualization, and leave-one-out cross-validation.
- </p>
-       <p>
-         <a href="https://mc-stan.org/">Website</a> | <a href="https://discourse.mc-stan.org/">Discourse</a> | <a href="https://github.com/stan-dev/design-docs/blob/master/gsoc_proposals/2021/proposal_main.md">Ideas Page</a> | <a href="https://github.com/stan-dev"> Source Code</a>
-       </p>
-    </td>
-  </tr>
-  <!--
+
   <tr>
     <td>
       <img width="800px" src="img/signac.png">
@@ -525,7 +282,32 @@ In alphabetic order.
        </p>
     </td>
   </tr>
--->
+
+  <tr>
+    <td>
+      <img width="800px" src="img/signac.png">
+    </td>
+    <td>
+       <h1>Taskflow</h1>
+       <p> Parallel and heterogeneous programming with high performance and simultaneous high productivity </p>
+       <p>
+         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img width="800px" src="img/signac.png">
+    </td>
+    <td>
+       <h1>Zarr</h1>
+       <p> Zarr is a format for the storage of chunked, compressed, N-dimensional arrays. These documents describe the Zarr format and its Python implementation. </p>
+       <p>
+         <a href="https://zarr.readthedocs.io/en/stable/">Website</a> | <a href="https://gitter.im/signac/Lobby">Gitter</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
 </table>
 
 
