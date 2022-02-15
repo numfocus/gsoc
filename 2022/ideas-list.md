@@ -15,7 +15,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - Optuna https://github.com/optuna/optuna/wiki/Optuna-GSoC-2022
 - PyBaMM https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2022-Projects
 - PyMC
-- PyTorch-Ignite
+- PyTorch-Ignite https://github.com/pytorch/ignite/wiki/GSoC-2022-project
 - QuTiP https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2022
 - SciML
 - signac
