@@ -76,10 +76,10 @@ In alphabetic order.
     <td>
        <h1>ArviZ</h1>
        <p>
-        ArviZ is a Python package for exploratory analysis of Bayesian models. Includes functions for posterior analysis, sample diagnostics, model checking, and comparison. The goal is to provide backend-agnostic tools for diagnostics and visualizations of Bayesian inference in Python, by first converting inference data into xarray objects.
+        ArviZ, is a project dedicated to promote and build tools for exploratory analysis of Bayesian models. It currently has a Python and a Julia interface. ArviZ aims to integrate seamlessly with established probabilistic programming languages like PyStan, PyMC (3 and 4), Turing, Soss, emcee or Pyro. Where the aim of the probabilistic programming languages is to make it easy to build and solve Bayesian models, the aim of the ArviZ libraries is to make it easy to process and analyze the results from those Bayesian models.
        </p>
        <p>
-         <a href="https://arviz-devs.github.io/arviz/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2021-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs/arviz">Source Code</a>
+         <a href="https://arviz-devs.github.io/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2021-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs">Source Code</a>
        </p>
     </td>
   </tr>
