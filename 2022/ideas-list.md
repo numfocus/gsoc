@@ -9,7 +9,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - CuPy https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas
 - CVXPY https://github.com/cvxpy/GSOC2022
 - Econ-ARK
-- FEniCS
+- FEniCS https://github.com/FEniCS/gsoc/blob/fenics/ideas-2022/2022/ideas-list-fenics.md
 - Gridap
 - NetworkX
 - Optuna https://github.com/optuna/optuna/wiki/Optuna-GSoC-2022
