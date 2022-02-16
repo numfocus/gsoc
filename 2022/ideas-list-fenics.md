@@ -1,3 +1,0 @@
-# FEniCS
-
-TODO
