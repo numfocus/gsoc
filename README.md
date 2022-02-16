@@ -106,9 +106,9 @@ In alphabetic order.
     <td>
        <h1>CuPy</h1>
        <p>
-         CuPy is an open-source matrix library accelerated with NVIDIA CUDA. It also uses CUDA-related libraries including cuBLAS, cuDNN, cuRand, cuSolver, cuSPARSE, cuFFT and NCCL to make full use of the GPU architecture.
+         CuPy is a NumPy/SciPy-compatible array library for GPU-accelerated computing with Python. CuPy acts as a drop-in replacement to run existing NumPy/SciPy code on NVIDIA CUDA or AMD ROCm platforms.
        </p>
-       <a href="https://cupy.dev">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2021-Project-Ideas">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
+       <a href="https://cupy.dev">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas">Ideas List</a> | <a href="https://gitter.im/cupy/community">Chat on Gitter</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
        </p>
     </td>
   </tr>
@@ -323,7 +323,7 @@ In alphabetic order.
 [Conda]: https://github.com/conda/conda
 [conda-forge]: https://conda-forge.org
 [Colour]: https://www.colour-science.org/
-[CuPy]: https://cupy.chainer.org/
+[CuPy]: https://cupy.dev/
 [Cython]: https://cython.org/
 [CF]: https://conda-forge.github.io/
 [Dash]: https://plot.ly/dash/
