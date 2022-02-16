@@ -17,6 +17,15 @@
     to help develop critical pieces of the open-source data science and
     numeric computing ecosystem.
 
+-   What would your org consider to be a successful summer?
+
+    As an umbrella organisation for open source scientific tools, it's
+    important for the projects to not just get new features implemented
+    but develop a sustainable welcoming community for new contributors.
+    A successful summer for us is more active new contributors to our projects.
+    Previous GSoC students with NumFOCUS have ended up becoming
+    core developers and maintainers of the projects.
+    
 -   How many potential mentors have agreed to mentor this year?
 
     11-15
@@ -86,11 +95,11 @@
 
 -   Which years did your org participate in GSoC?
 
-    2015, 2016
+    2015, 2016, 2017, 2018, 2019, 2020
 
 -   What is your success/fail rate per year?
 
-    2015: 3/3, 2016: 7/7
+    2015: 3/3, 2016: 7/7, 2017: 10/12 , 2018: 40/45, 2019: 19/23, 2020: 28/30
 
 -   Are you part of a foundation/umbrella organization?
 
@@ -175,9 +184,6 @@
 
 ## Links
 
--   Google+ URL
-
-    https://plus.google.com/communities/100008130850352595608
 
 -   Twitter URL
 

@@ -1,14 +1,22 @@
 # Google Summer of Code
 
-| [Sub organizations](https://github.com/numfocus/gsoc/tree/update-docs#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
+| [Sub organizations](#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
 [NumFOCUS][] will be applying again as an umbrella mentoring organization
-for [Google Summer of Code 2019][GSoC]. [NumFOCUS][] supports and
+for [Google Summer of Code 2021][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
+
+[NumFOCUS][]  is committed to promoting and sustaining a professional and ethical community. Our [Code of Conduct](https://numfocus.org/code-of-conduct) is our effort to uphold these values and it provides a guideline and some of the tools and resources necessary to achieve this.
+
+[Google Summer of Code][GSoC] is an annual open source internship program
+sponsored by Google. This repository contains information specific to NumFOCUS'
+participation in GSoC. For general information about the competition, including
+this year's application timeline and key phases involved, please see the [GSoC
+website](https://summerofcode.withgoogle.com/how-it-works/)
 
 <!--
 This Git repository stores information about NumFOCUS' participation in
-Google Summer of Code 2019 program and previous editions.
+Google Summer of Code 2021 program and previous editions.
 -->
 
 This Git repository stores information about NumFOCUS'
@@ -17,15 +25,14 @@ application for Google Summer of Code in the current and previous years.
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 
-- [Google Summer of Code](#google-summer-of-code)
-
-    - [Students](#students)
-    - [Sub Organizations](#sub-organizations)
-    - [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
-    - [NumFOCUS Projects](#numfocus-projects)
-        - [Fiscally Sponsored Projects GSoC Status](#fiscally-sponsored-projects-gsoc-status)
-        - [Affiliated Projects GSoC Status](#affiliated-projects-gsoc-status)
-        - [Other Projects GSoC Status](#other-projects-gsoc-status)
+- [Students](#students)
+- [Sub Organizations](#sub-organizations)
+- [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
+- [NumFOCUS Projects](#numfocus-projects)
+    - [Fiscally Sponsored Projects GSoC Status](#fiscally-sponsored-projects-gsoc-status)
+    - [Affiliated Projects GSoC Status](#affiliated-projects-gsoc-status)
+    - [Other Projects GSoC Status](#other-projects-gsoc-status)
+- [About GSoC](#about-gsoc)
 
 <!-- markdown-toc end -->
 
@@ -62,424 +69,313 @@ The list should contain for each project.
 In alphabetic order.
 
 <table>
-
-
   <tr>
     <td>
-      <img width="300px" src="img/arviz.png"/>
+      <img width="800px" src="img/arviz.png"/>
     </td>
     <td>
        <h1>ArviZ</h1>
        <p>
-        ArviZ is a Python package for exploratory analysis of Bayesian models. Includes functions for posterior analysis, sample diagnostics, model checking, and comparison. The goal is to provide backend-agnostic tools for diagnostics and visualizations of Bayesian inference in Python, by first converting inference data into xarray objects. 
+        ArviZ is a Python package for exploratory analysis of Bayesian models. Includes functions for posterior analysis, sample diagnostics, model checking, and comparison. The goal is to provide backend-agnostic tools for diagnostics and visualizations of Bayesian inference in Python, by first converting inference data into xarray objects.
        </p>
        <p>
-         <a href="https://arviz-devs.github.io/arviz/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2019-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a>
-       </p>
-    </td>
-  </tr>  
-
-  <tr>
-    <td>
-      <img width="300px" src="img/cantera-logo.png"/>
-    </td>
-    <td>
-       <h1>Cantera</h1>
-       <p>
-        Cantera is a library to solve problems involving thermodynamics, chemical kinetics, and
-        transport.
-       </p>
-       <p>
-         <a href="http://cantera.org/">Website</a>  | <a href="https://github.com/Cantera/cantera/wiki/GSoC-2018-Ideas">Ideas List</a> | <a href="https://groups.google.com/forum/#!forum/cantera-users">Mailing List</a>
+         <a href="https://arviz-devs.github.io/arviz/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2021-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs/arviz">Source Code</a>
        </p>
     </td>
   </tr>
 
   <tr>
     <td>
-      <img width="300px" src="img/chainer-logo.png"/>
+      <img width="800px" src="img/mpm.png"/>
     </td>
     <td>
-       <h1>Chainer</h1>
+       <h1>CB-Geo MPM</h1>
        <p>
-        Chainer is a powerful, flexible and intuitive deep learning framework. Chainer supports CUDA computation. It only requires a few lines of code to leverage a GPU. It also runs on multiple GPUs with little effort. Chainer supports various network architectures including feed-forward nets, convnets, recurrent nets and recursive nets. It also supports per-batch architectures. Forward computation can include any control flow statements of Python without lacking the ability of backpropagation. It makes code intuitive and easy to debug. </p>
+          CB-Geo MPM is an HPC-enabled Material Point Method solver for large-deformation modeling. It supports isoparametric elements to model complex geometries and creates photo-realistic rendering.
+       </p>
        <p>
-         <a href="https://chainer.org">Website</a>
+       <a href="https://www.cb-geo.com/research/mpm/">Website</a> | <a href="https://github.com/cb-geo/mpm/issues/704#issue-796189505">Ideas List</a> | <a href="https://cb-geo.discourse.group">Discourse</a> | <a href="https://github.com/cb-geo/mpm">Source Code</a>
        </p>
     </td>
   </tr>
 
   <tr>
     <td>
-      <img width="300px" src="img/cupy-logo.png"/>
+      <img width="800px" src="img/cupy-logo.png"/>
     </td>
     <td>
        <h1>CuPy</h1>
        <p>
-        CuPy is an open-source matrix library accelerated with NVIDIA CUDA. It also uses CUDA-related libraries including cuBLAS, cuDNN, cuRand, cuSolver, cuSPARSE, cuFFT and NCCL to make full use of the GPU architecture. CuPy’s interface is highly compatible with NumPy; in most cases it can be used as a drop-in replacement. All you need to do is just replace numpy with cupy in your Python code. It supports various methods, indexing, data types, broadcasting and more.
+         CuPy is a NumPy/SciPy-compatible array library for GPU-accelerated computing with Python. CuPy acts as a drop-in replacement to run existing NumPy/SciPy code on NVIDIA CUDA or AMD ROCm platforms.
        </p>
+       <a href="https://cupy.dev">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas">Ideas List</a> | <a href="https://gitter.im/cupy/community">Chat on Gitter</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img width="800px" src="img/cupy-logo.png"/>
+    </td>
+    <td>
+       <h1>CVXPY</h1>
        <p>
-         <a href="https://cupy.chainer.org">Website</a>
+         CVXPY is an open source Python-embedded modeling language for convex optimization problems. It lets you express your problem in a natural way that follows the math, rather than in the restrictive standard form required by solvers.
+       </p>
+       <a href="https://www.cvxpy.org/">Website</a> | <a href="">Ideas List</a> | <a href="">Contact</a> | <a href="https://github.com/cvxpy/cvxpy">Source Code</a>
        </p>
     </td>
   </tr>
 
- <!--  <tr>
-    <td>
-      <img width="300px" src="https://avatars2.githubusercontent.com/u/11897326?v=3&s=200"/>
-    </td>
-    <td>
-       <h1>Conda Forge</h1>
-       <p>
-        A community led collection of recipes, build infrastructure and distributions for the conda package manager.
-       </p>
-       <p>
-         <a href="https://conda-forge.github.io/">Website</a>  | <a href="https://gitter.im/conda-forge/conda-forge.github.io">Gitter</a>
-       </p>
-    </td>
-  </tr>
--->
-
-
- <tr>
-   <td>
-     <img width="300px" src="img/dash.png">
-   </td>
-   <td>
-      <h1>Dash</h1>
-      <p>Dash is a Python framework for building analytical web applications. No JavaScript required. Built on top of Plotly.js, React, and Flask, Dash ties modern UI elements like dropdowns, sliders, and graphs to your analytical Python code.</p>
-      <p>
-        <a href="https://dash.plot.ly">Website</a> | <a href="https://github.com/plotly/googleSOC/blob/master/plotly-ideas-list.md">Ideas List</a> | <a href="mailto:jobs@plot.ly?subject=GSOC">Contact</a>
-      </p>
-   </td>
- </tr>
- <tr>
-   <td>
-     <img width="300px" src="img/dask.png">
-   </td>
-   <td>
-      <h1>Dask</h1>
-      <p>Dask enables parallel computing through task scheduling and blocked algorithms.This allows developers to write complex parallel algorithms and execute them in parallel either on a modern multi-core machine or on a distributed cluster.</p>
-      <p>
-        <a href="http://dask.pydata.org/en/latest/">Website</a>
-      </p>
-   </td>
- </tr>
 
   <tr>
    <td>
-     <img width="300px" src="img/ecodata-retriever.png"/>
+     <img width="800px" src="img/econark.png"/>
    </td>
    <td>
-      <h1>Data Retriever</h1>
+      <h1>Econ-Ark</h1>
       <p>
-        The Data Retriever is a package manager for data. It downloads, cleans,
-        and stores publicly available data, so that analysts spend less time
-        cleaning and managing data, and more time analyzing it.
+        The aim of the Econ-ARK project is to make it easier for social scientists to do ‘structural modeling’ of economic choice behavior by providing a well-documented, open source codebase containing the core techniques in a way that can be relatively easily adapted to address many different questions in both macro- and microeconomics. ‘Structural’ modeling of economic choices aims to identify the logic or reasons behind observed behavior, rather than just describing that behavior statistically.
       </p>
       <p>
-        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2019-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter)
+        <a href="https://econ-ark.org">Website</a>  | <a href="https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas"> Ideas List</a> | <a href=""> Contact | <a href="https://github.com/econ-ark/HARK">Source Code</a>
       </p>
    </td>
  </tr>
 
-  <tr>
+   <tr>
    <td>
-     <img width="300px" src="img/fenics.png"/>
+     <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
    </td>
    <td>
       <h1>FEniCS</h1>
       <p>
-        FEniCS is an automated finite element library used to solve equations used in
-        modeling, featuring a domain-specific language and automated code generation.
-        Users input a problem that looks very much like mathematical notation; FEniCS
-        then translates that into computer code. It solves problems for which there is
-        no analytical (exact) solution numerically.
+       FEniCS is an automated finite element library used to solve equations used in modeling, featuring a domain-specific language and automated code generation. Users input a problem that looks very much like mathematical notation; FEniCS then translates that into computer code. It solves problems for which there is no analytical (exact) solution numerically.
       </p>
       <p>
-        <a href="https://fenicsproject.org/">Website</a> | <a href="https://fenicsproject.org/community/">Community Page With Access to Slack</a> | <a href ="https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-fenics.md"> Ideas Page
-      </p>
-   </td>
- </tr>
-<!-- 
- <tr>
-   <td>
-     <img width="300px" src="img/logo-gensim_large.png">
-   </td>
-   <td>
-      <h1>Gensim</h1>
-      <p>"Topic Modelling for Humans." Gensim is an open-source Python library for topic modelling, document indexing and similarity retrieval with large corpora. Target audience is the natural language processing (NLP) and information retrieval (IR) community. Memory-independent and distributed algorithms.</p>
-      <p>
-        <a href="https://github.com/RaRe-Technologies/gensim">Website</a>  | <a href="https://github.com/RaRe-Technologies/gensim/wiki/GSOC-2018-project-ideas">Ideas Page</a> | <a href="mailto:student-projects@rare-technologies.com">Mailing List</a>
+        <a href="https://fenicsproject.org/">Website</a>  | <a href=""> Ideas List</a> | <a href="https://fenicsproject.org/community/"> Contact | <a href="https://github.com/FEniCS">Source Code</a>
       </p>
    </td>
  </tr>
 
-  <tr>
-   <td>
-     <img width="300px" src="https://github.com/JuliaLang/julialang.github.com/blob/master/images/logo.png">
-   </td>
-   <td>
-      <h1>Julia</h1>
-      <p>Julia is a high-level, high-performance dynamic programming language for numerical computing. It provides a sophisticated compiler, distributed parallel execution, numerical accuracy, and an extensive mathematical function library. Julia’s Base library, largely written in Julia itself, also integrates mature, best-of-breed open source C and Fortran libraries for linear algebra, random number generation, signal processing, and string processing. </p>
-      <p>
-        <a href="https://julialang.org/">Website</a>  | <a href="https://julialang.org/soc/ideas-page.html">Ideas Page</a> | <a href="https://discourse.julialang.org/">discourse</a>
-      </p>
-   </td>
- </tr>
--->
+
    <tr>
    <td>
-     <img width="300px" src="img/jump.png">
+     <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
    </td>
    <td>
-      <h1>JuMP</h1>
-      <p>JuMP is a modeling interface and a collection of supporting packages for mathematical optimization that is embedded in Julia. With JuMP, users formulate various classes of optimization problems with easy-to-read code, and then solve these problems using state-of-the-art open-source and commercial solvers. JuMP also makes advanced optimization techniques easily accessible from a high-level language. </p>
+      <h1>Gridap</h1>
       <p>
-        <a href="http://www.juliaopt.org">Website</a> 
+        Gridap is a new generation, open-source, finite element (FE) library implemented in the Julia programming language. Gridap aims at adopting a more modern programming style than existing FE applications written in C/C++ or Fortran.
+      </p>
+      <p>
+        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
       </p>
    </td>
  </tr>
-  <tr>
+
+
+ <tr>
+   <td>
+     <img width="800px" src="img/networkx.png"/>
+   </td>
+   <td>
+      <h1>NetworkX</h1>
+      <p>
+        NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+      </p>
+      <p>
+        <a href="https://networkx.org/">Website</a> | <a href ="http://networkx.org/documentation/latest/developer/projects.html#mentored-projects">Ideas Page</a> | <a href="https://github.com/networkx/networkx/discussions"> Contact (GitHub Discussions) </a>| <a href="https://github.com/networkx/networkx">Source Code</a>
+      </p>
+   </td>
+ </tr>
+   <tr>
+   <td>
+     <img width="800px" src="img/optuna.png"/>
+   </td>
+   <td>
+      <h1>Optuna</h1>
+      <p>
+        Optuna is an open source hyperparameter optimization framework to automate hyperparameter search. Optuna provides eager search spaces for automated search for optimal hyperparameters using Python conditionals, loops, and syntax, state-of-the-art algorithms to efficiently search large spaces and prune unpromising trials for faster results, and easy parallelization for hyperparameter searches over multiple threads or processes without modifying code.
+      </p>
+      <p>
+        <a href="https://optuna.org">Website</a> | <a href="https://gitter.im/optuna/optuna">Developers chat on Gitter</a> | <a href ="https://github.com/optuna/optuna/wiki/Optuna-GSoC-2022">Ideas Page</a> | <a href="https://github.com/optuna/optuna">Source Code</a>
+      </p>
+   </td>
+ </tr>
+
+ <tr>
     <td>
-      <img width="300px" src="img/mdanalysis.png" />
+      <img width="800px" src="img/PyBaMM.png">
     </td>
     <td>
-       <h1>MDAnalysis</h1>
-       <p>MDAnalysis is a Python library to analyze trajectories from molecular dynamics (MD) simulations in many popular formats</p>
+       <h1>PyBaMM</h1>
+       <p>PyBaMM (Python Battery Mathematical Modelling) solves physics-based electrochemical DAE models by using state-of-the-art automatic differentiation and numerical solvers.</p>
        <p>
-         <a href="https://www.mdanalysis.org/">Website</a> | <a href="https://groups.google.com/forum/#!forum/mdnalysis-devel">Mailing list</a> | <a href="https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas">Ideas List</a>
+         <a href="https://www.pybamm.org">Website</a> | <a href="https://www.pybamm.org/contact"> Contact </a> | <a href="https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2021-Projects">Ideas Page</a> | <a href="https://github.com/pybamm-team/PyBaMM"> Source Code</a>
        </p>
     </td>
   </tr>
- <tr>
-   <td>
-     <img width="300px" src="img/nteract.png">
-   </td>
-   <td>
-      <h1>nteract</h1>
-      <p>nteract is a stand-alone desktop application for developing computational notebooks. nteract allows users to craft narratives involving text, code, images, and data on the desktop rather than through a web application. This enables users to use their native system for file search as well as clicking to open notebook files.</p>
-      <p>
-        <a href="https://nteract.io/">Website</a>
-      </p>
-   </td>
- </tr>
+
+
   <tr>
     <td>
-      <img width="300px" src="img/pymc3-logo.png">
+      <img width="800px" src="img/pymc3-logo.png">
     </td>
     <td>
-       <h1>PyMC3</h1>
+       <h1>PyMC</h1>
        <p>PyMC3 is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc3/wiki/GSoC-2019-projects">Ideas Page</a>
+         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc3/wiki/GSoC-2021-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
        </p>
     </td>
   </tr>
 
   <tr>
     <td>
-      <img width="300px" src="img/qutip.png">
+      <img width="800px" src="img/pytorchignite-logo.png">
+    </td>
+    <td>
+       <h1>PyTorch-Ignite</h1>
+       <p>PyTorch-Ignite is a high-level library to help with training neural networks in PyTorch</p>
+       <p>
+         <a href="https://pytorch-ignite.ai/">Website</a> | <a href="https://pytorch-ignite.ai/chat/">Discord</a> | <a href="https://github.com/pytorch/ignite/discussions">GitHub Discussions</a> | <a href="https://github.com/pytorch/ignite/wiki/GSoC-2022-project">Ideas Page</a> | <a href="https://github.com/pytorch/ignite"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+   <tr>
+    <td>
+      <img width="800px" src="img/qutip.png">
     </td>
     <td>
        <h1>QuTiP</h1>
-       <p>QuTiP is a software for simulating quantum systems. QuTiP aims to provide tools for user-friendly and efficient numerical simulations of open quantum systems. It can be used to simulate a wide range of physical phenomenon in areas such as quantum optics, trapped ions, superconducting circuits and quantum nanomechanical resonators. In addition, it contains a number of other modules to simplify the numerical simulation and study of many topics in quantum physics such as quantum optimal control, quantum information, and computing.</p>
-       <p> <a href="http://qutip.org">Website</a> |  <a href="https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2019">Ideas Page</a> | <a href="https://gitter.im/qutip">Gitter</a>
+       <p> QuTiP is a software for simulating quantum systems. QuTiP aims to provide tools for user-friendly and efficient numerical simulations of open quantum systems. It can be used to simulate a wide range of physical phenomenon in areas such as quantum optics, trapped ions, superconducting circuits and quantum nanomechanical resonators. In addition, it contains a number of other modules to simplify the numerical simulation and study of many topics in quantum physics such as quantum optimal control, quantum information, and computing. </p>
+       <p>
+         <a href="http://qutip.org">Website</a> | <a href="http://groups.google.com/group/qutip"> Contact </a> | <a href="https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2021">Ideas Page</a> | <a href="https://github.com/qutip/qutip"> Source Code</a>
        </p>
     </td>
   </tr>
 
   <tr>
     <td>
-      <img width="300px" src="img/spyder.png">
+      <img width="800px" src="img/sciml.png">
     </td>
     <td>
-       <h1>Spyder</h1>
-       <p>Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package. Furthermore, Spyder offers built-in integration with many popular scientific packages, including NumPy, SciPy, Pandas, IPython, QtConsole, Matplotlib, SymPy and more.</p>
+       <h1>SciML</h1>
+       <p> SciML is an open source software organization created to unify the packages for scientific machine learning. This includes the development of modular scientific simulation support software, such as differential equation solvers, along with the methodologies for inverse problems and automated model discovery. By providing a diverse set of tools with a common interface, we provide a modular, easily-extendable, and highly performant ecosystem for handling a wide variety of scientific simulations. </p>
        <p>
-         <a href="https://www.spyder-ide.org">Website</a>
+         <a href="https://sciml.ai">Website</a> | <a href="https://sciml.ai/community/#discourse">Discourse</a> | <a href="https://sciml.ai/dev/#projects_lists">Ideas Page</a> | <a href="https://github.com/SciML"> Source Code</a>
        </p>
     </td>
   </tr>
-<!-- 
+
   <tr>
     <td>
-      <img width="300px" src="https://github.com/stan-dev/logos/blob/master/logo_tm.png">
+      <img width="800px" src="img/signac.png">
     </td>
     <td>
-       <h1>Stan</h1>
-       <p>Stan is a probabilistic programming language for data analysis, enabling automatic inference for a large class of statistical models. It features full Bayesian inference with Markov chain Monte Carlo sampling, approximate Bayesian inference with variational inference and the Laplace approximation, and penalized maximum likelihood estimation with optimization. The language integrates a Math Library written in C++, which can act as a stand-alone, and features derivatives for arithmetic, special functions, probability functions, and linear algebra.</p>
+       <h1>signac</h1>
+       <p> The signac framework is a complete solution for managing workflows operating on file-based data designed to scale to HPC systems. </p>
        <p>
-         <a href="http://mc-stan.org/">Website</a> | <a href="http://discourse.mc-stan.org">Mailing List</a> | <a href="https://github.com/numfocus/gsoc/blob/master/2018/ideas-list-stan.md">Ideas Page</a>
+         <a href="https://signac.io">Website</a> | <a href="https://gitter.im/signac/Lobby">Gitter</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
        </p>
     </td>
   </tr>
 
-<tr>
-   <td>
-     <img width="300px" src="img/shogun-logo.png">
-   </td>
-   <td>
-      <h1>Shogun</h1>
-      <p>Shogun is and open-source machine learning library that offers a wide range of efficient and unified machine learning methods.</p>
-      <p>
-        <a href="http://shogun.ml/">Website</a> | <a href="https://github.com/shogun-toolbox/shogun/wiki/Google-Summer-of-Code-2018-Projects">Ideas Page</a> | <a href="https://gitter.im/shogun-toolbox/shogun">Gitter</a>
-      </p>
-   </td>
- </tr>
--->
+  <tr>
+    <td>
+      <img width="800px" src="img/signac.png">
+    </td>
+    <td>
+       <h1>Taskflow</h1>
+       <p> Parallel and heterogeneous programming with high performance and simultaneous high productivity </p>
+       <p>
+         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img width="800px" src="img/signac.png">
+    </td>
+    <td>
+       <h1>Zarr</h1>
+       <p> Zarr is a format for the storage of chunked, compressed, N-dimensional arrays. These documents describe the Zarr format and its Python implementation. </p>
+       <p>
+         <a href="https://zarr.readthedocs.io/en/stable/">Website</a> | <a href="https://gitter.im/signac/Lobby">Gitter</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
+       </p>
+    </td>
+  </tr>
 
- <tr>
-   <td>
-     <img width="300px" src="img/yellowbrick.png">
-   </td>
-   <td>
-      <h1>Yellowbrick</h1>
-      <p>Yellowbrick is a Python package that visualizes the data science workflow, allowing users to visually steer the feature, algorithm, and hyperparameter selection process by directly extending the Scikit-Learn API.</p>
-      <p>
-        <a href="http://www.scikit-yb.org/en/latest/">Website</a>
-      </p>
-   </td>
- </tr>
-
-<!--
- <tr>
-   <td>
-     <img width="300px" src="img/yt-logo.png">
-   </td>
-   <td>
-      <h1>yt</h1>
-      <p>yt is a community-developed analysis and visualization toolkit for examining datasets in a variety of scientific disciplines. yt aims to provide a simple uniform way of handling volumetric data, regardless of where it is generated. yt is developed in Python under the open-source model.</p>
-      <p>
-        <a href="http://yt-project.org/">Website</a> | <a href="https://github.com/yt-project/gsoc-2018">Ideas Page</a> | <a href="http://yt-project.org/community.html">community-page</a> | <a href="https://mail.python.org/mm3/mailman3/lists/yt-dev.python.org/">mailing-list </a>
-      </p>
-   </td>
- </tr>
- -->
 </table>
 
-## NumFOCUS Organizations
-
-Not all NumFOCUS organizations participate under our umbrella. These lists show
-which organizations are participating with GSoC and where you can find
-information how to work with them.
-
-### Fiscally Sponsored Organizations GSoC Status
-
-
-| Project                         | Status                           | Ideas Pages                                         |
-| -------                         | ------                           | -----------                                         |
-| [AstroPy]                       | Unknown     |    |
-| [Cantera]                       | Applying under NumFOCUS umbrella | https://github.com/Cantera/cantera/wiki/GSoC-2019-Ideas                                                |
-| [Econ-ARK][Econ-ARK]            | Unknown                |                                                     |
-| [FEniCS Project][FEniCSproject] | Applying under NumFOCUS umbrella |                                                     |
-| [IPython]                       | Unknown                          |                                                     |
-| [Julia]                         | Unknown |           |
-| [JuMP]                          | Applying under NumFOCUS umbrella |                                                     |
-| [Matplotlib]                    | Unknown                          |                                                     |
-| [nteract]                       | Applying under NumFOCUS umbrella                          |                                                     |
-| [NumPy]                         | Unknown                |                                                     |
-| [Open Journals][theoj]          | Unknown                          |                                                     |
-| [Project Jupyter][Jupyter]      | Unknown                          |                                                     |
-| [pandas]                        | Unknown                          |                                                     |
-| [PyMC3](pymc3)                  | Applying under NumFOCUS umbrella | https://github.com/pymc-devs/pymc3/wiki/GSoC-2019-projects |
-| [PyTables]                      | Unknown                          |                                                     |
-| [QuantEcon]                     | Unknown                          |                                                     |
-| [rOpenSci]                      | Unknown                |                                                     |
-| [Shogun]                        | Unknown |                                                    |
-| [SunPy]                         | Unknown |  |
-| [SymPy]                         | Unknown |  |
-| [Stan]                          | Unknown |                                                     |
-| [yt]                            | Unknown |                                                     |
-
-### Affiliated Organizations GSoC Status
-
-| Project              | Status                           | Ideas Pages |
-| -------              | ------                           | ----------- |
-| [ArviZ]              | Applying under NumFOCUS umbrella |             |
-| [Bokeh]              | Unknown                          |             |
-| [Chainer]            | Applying under NumFOCUS umbrella |             |
-| [Conda]              | Unknown                          |             |
-| [conda-forge]        | Unknown                          |             |
-| [CuPy]               | Applying under NumFOCUS umbrella |             |
-| [Cython]             | Unknown                          |             |
-| [Dash]               | Applying under NumFOCUS umbrella |             |
-| [Data Retriever][DR] | Applying under NumFOCUS umbrella |             |
-| [Dask]               | Applying under NumFOCUS umbrella |             |
-| [DyND]               | Unknown                          |             |
-| [Gensim]             | Unknown                          |             |
-| [MDAnalysis]         | Applying under NumFOCUS umbrella | https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2019-Project-Ideas |
-| [Numba]              | Unknown                          |             |
-| [Orange]             | Unknown                          |             |
-| [Pomegranate]        | Unknown                          |             |
-| [PythonXY]           | Unknown                          |             |
-| [QuTiP]              | Applying under NumFOCUS umbrella |             |
-| [SciPy]              | Unknown                          |             |
-| [scikit-image]       | Unknown                          |             |
-| [scikit-bio]         | Unknown                          |             |
-| [scikit-learn]       | Unknown                          |             |
-| [Statmodels]         | Unknown                          |             |
-| [Spack]              | Unknown                          |             |
-| [Spyder]             | Applying under NumFOCUS umbrella |             |
-| [Theano]             | Unknown                          |             |
-| [xarray]             | Unknown                          |             |
-| [Yellowbrick]        | Applying under NumFOCUS umbrella |             |
 
 
 [ArviZ]: https://arviz-devs.github.io/arviz/
-[AstroPy]: http://www.astropy.org/
-[Bokeh]: http://bokeh.pydata.org/
-[cantera]:  http://cantera.org/docs/sphinx/html/index.html
-[Chainer]: http://chainer.org
+[AstroPy]: https://www.astropy.org/
+[Blosc]: https://www.blosc.org/
+[Bokeh]: https://docs.bokeh.org/en/latest/
+[cantera]:  https://cantera.org/index.html
+[Chainer]: https://chainer.org/
+[Clawpack]: https://www.clawpack.org/
 [CONTRIBUTING]: CONTRIBUTING-students.md
 [Conda]: https://github.com/conda/conda
 [conda-forge]: https://conda-forge.org
-[CuPy]: http://cupy.chainer.org
-[Cython]: http://cython.org/
+[Colour]: https://www.colour-science.org/
+[CuPy]: https://cupy.dev/
+[Cython]: https://cython.org/
 [CF]: https://conda-forge.github.io/
 [Dash]: https://plot.ly/dash/
-[Dask]: http://dask.pydata.org/
-[DR]: http://www.data-retriever.org/
+[Dask]: https://dask.org/
+[DR]: https://www.data-retriever.org/
 [DyND]: http://libdynd.org/
 [Econ-ARK]: https://econ-ark.github.io/HARK/
+[equadratures]: https://equadratures.org/
 [FEniCSproject]: https://fenicsproject.org/
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
-[IL]: 2019/ideas-list.md
-[IPython]: http://ipython.org/
+[IL]: 2021/ideas-list.md
+[IPython]: https://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
-[Julia]: http://julialang.org/
-[JuMP]: http://www.juliaopt.org
-[Jupyter]: http://jupyter.org/
-[Matplotlib]: http://matplotlib.sourceforge.net/
-[MDAnalysis]: http://mdanalysis.org
+[Julia]: https://julialang.org/
+[JuMP]: https://jump.dev/
+[Jupyter]: https://jupyter.org/
+[Matplotlib]: https://matplotlib.org/
+[MDAnalysis]: https://www.mdanalysis.org/
+[NetworkX]: http://networkx.org/
 [Numba]: http://numba.pydata.org/
-[NumFOCUS-Projects]: http://numfocus.org/projects/index.html
-[NumFOCUS]: http://numfocus.org/
-[NumPy]: http://numpy.scipy.org/
+[NumFOCUS-Projects]: https://numfocus.org/sponsored-projects
+[NumFOCUS]: https://numfocus.org/
+[NumPy]: https://numpy.org/
 [nteract]: https://nteract.io/
 [theoj]: http://www.theoj.org
+[Optuna]: https://optuna.org
 [Orange]: http://orange.biolab.si/
-[pandas]: http://pandas.pydata.org/
+[pandas]: https://pandas.pydata.org/
 [Pomegranate]: https://pomegranate.readthedocs.io/en/latest/
+[pvlib]: https://pvlib-python.readthedocs.io/en/stable/
+[PySAL]: https://pysal.org/pysal
 [PyTables]: http://pytables.github.com/
-[PythonXY]: http://code.google.com/p/pythonxy/wiki/Welcome
-[QuTiP]: https://qutip.org
-[rOpenSci]: http://ropensci.org/
-[quantecon]: http://quantecon.org/
-[SCF]: http://software-carpentry.org/scf/index.html
+[PythonXY]: http://python-xy.github.io/
+[PyTorch-Ignite]: https://pytorch-ignite.ai/
+[QuTiP]: http://qutip.org/
+[rOpenSci]: https://ropensci.org/
+[quantecon]: https://quantecon.org/
+[SCF]: https://carpentries.org/
 [scikit-bio]: http://scikit-bio.org/
-[scikit-image]: http://scikit-image.org/
-[scikit-learn]: http://scikit-learn.org/stable/
-[SciPy]: http://www.scipy.org/
+[scikit-image]: https://scikit-image.org/
+[scikit-learn]: https://scikit-learn.org/stable/
+[SciPy]: https://www.scipy.org/
+[signac]: https://signac.io
 [Spack]: https://spack.io
 [Spyder]: https://www.spyder-ide.org/
-[Statmodels]: http://statsmodels.sourceforge.net/
-[Stan]: http://mc-stan.org/
-[Shogun]: http://www.shogun-toolbox.org
-[SunPy]: http://sunpy.org
-[SymPy]: http://sympy.org
+[Statmodels]: http://www.statsmodels.org/stable/index.html
+[Stan]: https://mc-stan.org/
+[Shogun]: https://www.shogun-toolbox.org/
+[SunPy]: https://sunpy.org/
+[SymPy]: https://www.sympy.org/
 [Theano]: http://deeplearning.net/software/theano/
 [xarray]: http://xarray.pydata.org/
 [Yellowbrick]: http://www.scikit-yb.org/en/latest/
-[yt]: http://yt-project.org/
+[yt]: https://yt-project.org/
