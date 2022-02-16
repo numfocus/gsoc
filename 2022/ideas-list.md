@@ -5,7 +5,7 @@ Since NumFOCUS is an umbrella organization you will only find links to the ideas
 page of each organization under the NumFOCUS umbrella at this page.
 
 - ArviZ https://github.com/arviz-devs/arviz/wiki/GSoC-2022-projects
-- CB-Geo MPM
+- CB-Geo MPM https://github.com/cb-geo/mpm/discussions/724
 - CuPy https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas
 - CVXPY https://github.com/cvxpy/GSOC2022
 - Econ-ARK
