@@ -3,7 +3,7 @@
 | [Sub organizations](#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
 [NumFOCUS][] will be applying again as an umbrella mentoring organization
-for [Google Summer of Code 2021][GSoC]. [NumFOCUS][] supports and
+for [Google Summer of Code 2022][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
 [NumFOCUS][]  is committed to promoting and sustaining a professional and ethical community. Our [Code of Conduct](https://numfocus.org/code-of-conduct) is our effort to uphold these values and it provides a guideline and some of the tools and resources necessary to achieve this.
@@ -16,7 +16,7 @@ website](https://summerofcode.withgoogle.com/how-it-works/)
 
 <!--
 This Git repository stores information about NumFOCUS' participation in
-Google Summer of Code 2021 program and previous editions.
+Google Summer of Code 2022 program and previous editions.
 -->
 
 This Git repository stores information about NumFOCUS'
