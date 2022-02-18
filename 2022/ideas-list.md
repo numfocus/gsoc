@@ -13,6 +13,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - Gridap https://github.com/gridap/GSoC/blob/main/2022/ideas-list.md
 - NetworkX
 - Optuna https://github.com/optuna/optuna/wiki/Optuna-GSoC-2022
+- pvlib https://github.com/pvlib/pvlib-python/wiki/GSoC-2022-Projects
 - PyBaMM https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2022-Projects
 - PyMC
 - PyTorch-Ignite https://github.com/pytorch/ignite/wiki/GSoC-2022-project
