@@ -158,7 +158,21 @@ In alphabetic order.
    </td>
  </tr>
 
-<tr>
+  <tr>
+    <td>
+      <img width="800px" src="img/flux.png"/>
+    </td>
+    <td>
+      <h1>FluxML</h1>
+      <p>
+        FluxML is a 100%-pure Julia machine learning stack built on top of Julia's native automatic differentiation and GPU support. Our organization maintains packages for building and training neural networks, data pre-processing pipelines, standard deep learning models, automatic differentiation, and more. By writing our complete toolchain in Julia, we aim to make machine learning simple, extensible, and performant.
+      </p>
+      <p>
+        <a href="https://fluxml.ai">Website</a> | <a href="https://julialang.org/jsoc/gsoc/flux/">Ideas List</a> | <a href="https://julialang.org/community/#community_channels"> Contact (Slack or Zulip) | <a href="https://github.com/FluxML">Source Code</a>
+      </p>
+</tr>
+
+  <tr>
    <td>
      <img width="300px" src="img/geopandas.png"/>
    </td>
@@ -374,6 +388,7 @@ In alphabetic order.
 [Econ-ARK]: https://econ-ark.github.io/HARK/
 [equadratures]: https://equadratures.org/
 [FEniCSproject]: https://fenicsproject.org/
+[FluxML]: https://fluxml.ai
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
 [IL]: 2021/ideas-list.md
