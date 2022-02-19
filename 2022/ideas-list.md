@@ -10,6 +10,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - CVXPY https://github.com/cvxpy/GSOC2022
 - Econ-ARK
 - FEniCS https://github.com/FEniCS/gsoc/blob/fenics/ideas-2022/2022/ideas-list-fenics.md
+- GeoPandas https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2022
 - Gridap https://github.com/gridap/GSoC/blob/main/2022/ideas-list.md
 - NetworkX
 - Optuna https://github.com/optuna/optuna/wiki/Optuna-GSoC-2022
