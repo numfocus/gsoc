@@ -392,3 +392,4 @@ In alphabetic order.
 [xarray]: http://xarray.pydata.org/
 [Yellowbrick]: http://www.scikit-yb.org/en/latest/
 [yt]: https://yt-project.org/
+[Zarr]: https://zarr.dev/
