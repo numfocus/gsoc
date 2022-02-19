@@ -158,6 +158,21 @@ In alphabetic order.
    </td>
  </tr>
 
+<tr>
+   <td>
+     <img width="300px" src="img/geopandas.png"/>
+   </td>
+   <td>
+      <h1>GeoPandas</h1>
+      <p>
+         GeoPandas is an open-source project that makes it easier to work with geospatial data in Python. GeoPandas combines the capabilities of pandas and shapely (python interface to the GEOS library), providing geospatial operations in pandas and a high-level and performant interface to multiple geometries to shapely. GeoPandas enables you to easily do operations in Python that would otherwise require desktop applications like ArcGIS or QGIS or a spatial database such as PostGIS.
+       </p>
+       <p>
+         <a href="https://geopandas.org">Website</a>  | <a href="https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2022"> Ideas List</a> | <a href="https://gitter.im/geopandas/geopandas"> Contact | <a href="https://github.com/geopandas">Source Code</a>
+
+       </p>
+    </td>
+  </tr>
 
    <tr>
    <td>
