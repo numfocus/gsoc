@@ -298,13 +298,13 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="img/signac.png">
+      <img width="800px" src="https://taskflow.github.io/images/logo.png">
     </td>
     <td>
        <h1>Taskflow</h1>
        <p> Parallel and heterogeneous programming with high performance and simultaneous high productivity </p>
        <p>
-         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
+         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/taskflow/GSoC2022">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
        </p>
     </td>
   </tr>
