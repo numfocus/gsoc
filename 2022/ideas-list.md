@@ -16,6 +16,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - pvlib https://github.com/pvlib/pvlib-python/wiki/GSoC-2022-Projects
 - PyBaMM https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2022-Projects
 - PyMC
+- PySAL https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2022
 - PyTorch-Ignite https://github.com/pytorch/ignite/wiki/GSoC-2022-project
 - QuTiP https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2022
 - SciML https://sciml.ai/dev/#google_summer_of_code
