@@ -11,18 +11,21 @@ page of each organization under the NumFOCUS umbrella at this page.
 - Econ-ARK
 - FEniCS https://github.com/FEniCS/gsoc/blob/fenics/ideas-2022/2022/ideas-list-fenics.md
 - FluxML https://julialang.org/jsoc/gsoc/flux/
+- GeoPandas https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2022
 - Gridap https://github.com/gridap/GSoC/blob/main/2022/ideas-list.md
 - NetworkX
 - Optuna https://github.com/optuna/optuna/wiki/Optuna-GSoC-2022
 - pvlib https://github.com/pvlib/pvlib-python/wiki/GSoC-2022-Projects
 - PyBaMM https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2022-Projects
 - PyMC
+- PySAL https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2022
 - PyTorch-Ignite https://github.com/pytorch/ignite/wiki/GSoC-2022-project
 - QuTiP https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2022
 - SciML https://sciml.ai/dev/#google_summer_of_code
 - signac
-- Taskflow
-- Zarr
+- Zarr https://github.com/zarr-developers/gsoc/blob/main/2022/ideas-list.md
+- Taskflow https://github.com/taskflow/GSoC2022
+- Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2022-Project-Ideas
 
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.

@@ -3,7 +3,7 @@
 | [Sub organizations](#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
 [NumFOCUS][] will be applying again as an umbrella mentoring organization
-for [Google Summer of Code 2021][GSoC]. [NumFOCUS][] supports and
+for [Google Summer of Code 2022][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
 [NumFOCUS][]  is committed to promoting and sustaining a professional and ethical community. Our [Code of Conduct](https://numfocus.org/code-of-conduct) is our effort to uphold these values and it provides a guideline and some of the tools and resources necessary to achieve this.
@@ -16,7 +16,7 @@ website](https://summerofcode.withgoogle.com/how-it-works/)
 
 <!--
 This Git repository stores information about NumFOCUS' participation in
-Google Summer of Code 2021 program and previous editions.
+Google Summer of Code 2022 program and previous editions.
 -->
 
 This Git repository stores information about NumFOCUS'
@@ -170,6 +170,21 @@ In alphabetic order.
       <p>
         <a href="https://fluxml.ai">Website</a> | <a href="https://julialang.org/jsoc/gsoc/flux/">Ideas List</a> | <a href="https://julialang.org/community/#community_channels"> Contact (Slack or Zulip) | <a href="https://github.com/FluxML">Source Code</a>
       </p>
+</tr>
+
+  <tr>
+   <td>
+     <img width="300px" src="img/geopandas.png"/>
+   </td>
+   <td>
+      <h1>GeoPandas</h1>
+      <p>
+         GeoPandas is an open-source project that makes it easier to work with geospatial data in Python. GeoPandas combines the capabilities of pandas and shapely (python interface to the GEOS library), providing geospatial operations in pandas and a high-level and performant interface to multiple geometries to shapely. GeoPandas enables you to easily do operations in Python that would otherwise require desktop applications like ArcGIS or QGIS or a spatial database such as PostGIS.
+       </p>
+       <p>
+         <a href="https://geopandas.org">Website</a>  | <a href="https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2022"> Ideas List</a> | <a href="https://gitter.im/geopandas/geopandas"> Contact | <a href="https://github.com/geopandas">Source Code</a>
+
+       </p>
     </td>
   </tr>
 
@@ -260,6 +275,19 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="300px" src="img/pysal_logo.png">
+    </td>
+    <td>
+       <h1>PySAL</h1>
+       <p>PySAL is an open source cross-platform library for geospatial data science. It supports many different areas of statistics and geographical analyses, such as the detection of spatial clusters, hotspots, and outliers; the construction of graphs from geographic data; Bayesian and Maximum Likelihood spatial regression and statistical modelling for geographical networks; spatial econometrics; space-time Markov modelling; and distribution dynamics for segregation and inequality. </p>
+       <p>
+         <a href="https://pysal.org/pysal/">Website</a> | <a href="https://gitter.im/pysal/pysal">Contact (Gitter chat room)</a> | <a href="https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2022">Ideas Page</a> | <a href="https://github.com/pysal/pysal"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="800px" src="img/pytorchignite-logo.png">
     </td>
     <td>
@@ -312,25 +340,25 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="img/signac.png">
+      <img width="800px" src="https://taskflow.github.io/images/logo.png">
     </td>
     <td>
        <h1>Taskflow</h1>
        <p> Parallel and heterogeneous programming with high performance and simultaneous high productivity </p>
        <p>
-         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
+         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/taskflow/GSoC2022">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
        </p>
     </td>
   </tr>
   <tr>
     <td>
-      <img width="800px" src="img/signac.png">
+      <img width="800px" src="img/zarr.png">
     </td>
     <td>
        <h1>Zarr</h1>
        <p> Zarr is a format for the storage of chunked, compressed, N-dimensional arrays. These documents describe the Zarr format and its Python implementation. </p>
        <p>
-         <a href="https://zarr.readthedocs.io/en/stable/">Website</a> | <a href="https://gitter.im/signac/Lobby">Gitter</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
+         <a href="https://zarr.dev/">Website</a> | <a href="https://gitter.im/zarr-developers/community">Gitter</a> | <a href="https://github.com/zarr-developers/gsoc/blob/main/2022/ideas-list.md">Ideas Page</a> | <a href="https://github.com/zarr-developers/zarr-python"> Source Code</a>
        </p>
     </td>
   </tr>
@@ -407,3 +435,4 @@ In alphabetic order.
 [xarray]: http://xarray.pydata.org/
 [Yellowbrick]: http://www.scikit-yb.org/en/latest/
 [yt]: https://yt-project.org/
+[Zarr]: https://zarr.dev/
