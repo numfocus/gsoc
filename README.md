@@ -261,6 +261,19 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="300px" src="img/pysal_logo.png">
+    </td>
+    <td>
+       <h1>PySAL</h1>
+       <p>PySAL is an open source cross-platform library for geospatial data science. It supports many different areas of statistics and geographical analyses, such as the detection of spatial clusters, hotspots, and outliers; the construction of graphs from geographic data; Bayesian and Maximum Likelihood spatial regression and statistical modelling for geographical networks; spatial econometrics; space-time Markov modelling; and distribution dynamics for segregation and inequality. </p>
+       <p>
+         <a href="https://pysal.org/pysal/">Website</a> | <a href="https://gitter.im/pysal/pysal">Contact (Gitter chat room)</a> | <a href="https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2022">Ideas Page</a> | <a href="https://github.com/pysal/pysal"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="800px" src="img/pytorchignite-logo.png">
     </td>
     <td>
