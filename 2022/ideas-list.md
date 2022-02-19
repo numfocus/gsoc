@@ -20,7 +20,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - QuTiP https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2022
 - SciML https://sciml.ai/dev/#google_summer_of_code
 - signac
-- Taskflow
+- Taskflow https://github.com/taskflow/GSoC2022
 - Zarr
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2022-Project-Ideas
 
