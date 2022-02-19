@@ -310,13 +310,13 @@ In alphabetic order.
   </tr>
   <tr>
     <td>
-      <img width="800px" src="img/signac.png">
+      <img width="800px" src="img/zarr.png">
     </td>
     <td>
        <h1>Zarr</h1>
        <p> Zarr is a format for the storage of chunked, compressed, N-dimensional arrays. These documents describe the Zarr format and its Python implementation. </p>
        <p>
-         <a href="https://zarr.readthedocs.io/en/stable/">Website</a> | <a href="https://gitter.im/signac/Lobby">Gitter</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
+         <a href="https://zarr.dev/">Website</a> | <a href="https://gitter.im/zarr-developers/community">Gitter</a> | <a href="https://github.com/zarr-developers/gsoc/blob/main/2022/ideas-list.md">Ideas Page</a> | <a href="https://github.com/zarr-developers/zarr-python"> Source Code</a>
        </p>
     </td>
   </tr>

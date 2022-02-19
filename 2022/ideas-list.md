@@ -21,7 +21,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - SciML https://sciml.ai/dev/#google_summer_of_code
 - signac
 - Taskflow
-- Zarr
+- Zarr https://github.com/zarr-developers/gsoc/blob/main/2022/ideas-list.md
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2022-Project-Ideas
 
 
