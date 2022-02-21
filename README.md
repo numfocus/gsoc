@@ -333,7 +333,7 @@ In alphabetic order.
        <h1>signac</h1>
        <p> The signac framework is a complete solution for managing workflows operating on file-based data designed to scale to HPC systems. </p>
        <p>
-         <a href="https://signac.io">Website</a> | <a href="https://gitter.im/signac/Lobby">Gitter</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
+         <a href="https://signac.io">Website</a> | <a href="https://gitter.im/signac/Lobby">Gitter</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2022-Projects">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
        </p>
     </td>
   </tr>
