@@ -116,7 +116,7 @@ In alphabetic order.
 
 <tr>
    <td>
-      <!-- <img width="800px" src="img/cupy-logo.png"/> -->
+      <img width="800px" src="img/CVXPY-logo.png"/>
     </td>
     <td>
        <h1>CVXPY</h1>
