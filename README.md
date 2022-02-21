@@ -116,7 +116,7 @@ In alphabetic order.
 
 <tr>
    <td>
-      <img width="800px" src="img/cupy-logo.png"/>
+      <!-- <img width="800px" src="img/cupy-logo.png"/> -->
     </td>
     <td>
        <h1>CVXPY</h1>
@@ -144,20 +144,6 @@ In alphabetic order.
    </td>
  </tr>
 
-  <tr>
-   <td>
-     <img width="800px" src="img/econark.png"/>
-   </td>
-   <td>
-      <h1>Econ-Ark</h1>
-      <p>
-        The aim of the Econ-ARK project is to make it easier for social scientists to do ‘structural modeling’ of economic choice behavior by providing a well-documented, open source codebase containing the core techniques in a way that can be relatively easily adapted to address many different questions in both macro- and microeconomics. ‘Structural’ modeling of economic choices aims to identify the logic or reasons behind observed behavior, rather than just describing that behavior statistically.
-      </p>
-      <p>
-        <a href="https://econ-ark.org">Website</a>  | <a href="https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas"> Ideas List</a> | <a href=""> Contact | <a href="https://github.com/econ-ark/HARK">Source Code</a>
-      </p>
-   </td>
- </tr>
 
 <tr>
    <td>
@@ -200,8 +186,6 @@ In alphabetic order.
        </p>
        <p>
          <a href="https://geopandas.org">Website</a>  | <a href="https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2022"> Ideas List</a> | <a href="https://gitter.im/geopandas/geopandas"> Contact | <a href="https://github.com/geopandas">Source Code</a>
-
-       </p>
     </td>
   </tr>
 
@@ -283,8 +267,8 @@ In alphabetic order.
       <img width="800px" src="img/pymc3-logo.png">
     </td>
     <td>
-       <h1>PyMC3</h1>
-       <p>PyMC3 is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
+       <h1>PyMC</h1>
+       <p>PyMC is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
          <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2022-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
        </p>
