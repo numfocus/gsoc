@@ -8,7 +8,6 @@ page of each organization under the NumFOCUS umbrella at this page.
 - CB-Geo MPM https://github.com/cb-geo/mpm/discussions/724
 - CuPy https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas
 - CVXPY https://github.com/cvxpy/GSOC2022
-- Econ-Ark https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas
 - Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2022-Project-Ideas
 - FEniCS https://github.com/FEniCS/gsoc/blob/fenics/ideas-2022/2022/ideas-list-fenics.md
 - FluxML https://julialang.org/jsoc/gsoc/flux/
