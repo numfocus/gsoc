@@ -115,7 +115,7 @@ In alphabetic order.
 </tr>
 
 <tr>
-   <td>
+    <td>
       <img width="800px" src="img/CVXPY-logo.png"/>
     </td>
     <td>
