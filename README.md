@@ -108,13 +108,14 @@ In alphabetic order.
        <p>
          CuPy is a NumPy/SciPy-compatible array library for GPU-accelerated computing with Python. CuPy acts as a drop-in replacement to run existing NumPy/SciPy code on NVIDIA CUDA or AMD ROCm platforms.
        </p>
+       <p>
        <a href="https://cupy.dev">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas">Ideas List</a> | <a href="https://gitter.im/cupy/community">Chat on Gitter</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
        </p>
     </td>
-  </tr>
+</tr>
 
-  <tr>
-    <td>
+<tr>
+   <td>
       <img width="800px" src="img/cupy-logo.png"/>
     </td>
     <td>
@@ -122,11 +123,26 @@ In alphabetic order.
        <p>
          CVXPY is an open source Python-embedded modeling language for convex optimization problems. It lets you express your problem in a natural way that follows the math, rather than in the restrictive standard form required by solvers.
        </p>
+       <p>
        <a href="https://www.cvxpy.org/">Website</a> | <a href="https://github.com/cvxpy/GSOC2022">Ideas List</a> | <a href="">Contact</a> | <a href="https://github.com/cvxpy/cvxpy">Source Code</a>
        </p>
     </td>
   </tr>
 
+  <tr>
+   <td>
+     <img width="800px" src="img/ecodata-retriever.png"/>
+   </td>
+   <td>
+      <h1>Data Retriever</h1>
+      <p>
+        The Data Retriever ecosystem improves reproducible research through data product management. The platform takes advantage of freely available data sources in a variety of formats, standardizes them, and makes them available to scientists in a form that is ready to analyze. Data sources range from tabular data, spatial data packages and APIs. Several data packages use the ecosystems, and many projects support or rely on the ecosystem.     
+      </p>
+      <p>
+        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2022-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) | <a href="https://github.com/weecology/retriever">Source Code</a> 
+      </p>
+   </td>
+ </tr>
 
   <tr>
    <td>
@@ -143,7 +159,7 @@ In alphabetic order.
    </td>
  </tr>
 
-   <tr>
+<tr>
    <td>
      <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
    </td>
@@ -170,7 +186,8 @@ In alphabetic order.
       <p>
         <a href="https://fluxml.ai">Website</a> | <a href="https://julialang.org/jsoc/gsoc/flux/">Ideas List</a> | <a href="https://julialang.org/community/#community_channels"> Contact (Slack or Zulip) | <a href="https://github.com/FluxML">Source Code</a>
       </p>
-</tr>
+    </td>
+  </tr>
 
   <tr>
    <td>
@@ -188,9 +205,9 @@ In alphabetic order.
     </td>
   </tr>
 
-   <tr>
+  <tr>
    <td>
-     <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
+      <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
    </td>
    <td>
       <h1>Gridap</h1>
@@ -218,7 +235,8 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-   <tr>
+
+<tr>
    <td>
      <img width="800px" src="img/optuna.png"/>
    </td>
@@ -260,7 +278,7 @@ In alphabetic order.
   </tr>
 
 
-  <tr>
+<tr>
     <td>
       <img width="800px" src="img/pymc3-logo.png">
     </td>
@@ -271,9 +289,9 @@ In alphabetic order.
          <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2022-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
        </p>
     </td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>
       <img width="300px" src="img/pysal_logo.png">
     </td>
@@ -284,7 +302,7 @@ In alphabetic order.
          <a href="https://pysal.org/pysal/">Website</a> | <a href="https://gitter.im/pysal/pysal">Contact (Gitter chat room)</a> | <a href="https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2022">Ideas Page</a> | <a href="https://github.com/pysal/pysal"> Source Code</a>
        </p>
     </td>
-  </tr>
+</tr>
 
   <tr>
     <td>
@@ -299,7 +317,7 @@ In alphabetic order.
     </td>
   </tr>
 
-   <tr>
+  <tr>
     <td>
       <img width="800px" src="img/qutip.png">
     </td>
@@ -350,6 +368,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+
   <tr>
     <td>
       <img width="800px" src="img/zarr.png">
@@ -362,21 +381,6 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-
-  <tr>
-   <td>
-     <img width="800px" src="img/ecodata-retriever.png"/>
-   </td>
-   <td>
-      <h1>Data Retriever</h1>
-      <p>
-        The Data Retriever ecosystem improves reproducible research through data product management. The platform takes advantage of freely available data sources in a variety of formats, standardizes them, and makes them available to scientists in a form that is ready to analyze. Data sources range from tabular data, spatial data packages and APIs. Several data packages use the ecosystems, and many projects support or rely on the ecosystem.     
-      </p>
-      <p>
-        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2022-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) | <a href="https://github.com/weecology/retriever">Source Code</a> 
-      </p>
-   </td>
- </tr>
  
 </table>
 
