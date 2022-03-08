@@ -13,6 +13,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - FluxML https://julialang.org/jsoc/gsoc/flux/
 - GeoPandas https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2022
 - Gridap https://github.com/gridap/GSoC/blob/main/2022/ideas-list.md
+- LFortran https://gitlab.com/lfortran/lfortran/-/wikis/GSoC%202022%20Ideas
 - NetworkX https://networkx.org/documentation/latest/developer/projects.html
 - Optuna https://github.com/optuna/optuna/wiki/Optuna-GSoC-2022
 - pvlib https://github.com/pvlib/pvlib-python/wiki/GSoC-2022-Projects
