@@ -204,6 +204,23 @@ In alphabetic order.
    </td>
  </tr>
 
+<tr>
+   <td>
+     <img width="800px" src="img/jump.png"/>
+   </td>
+   <td>
+      <h1>JuMP</h1>
+      <p>
+        JuMP is a modeling language and supporting packages for mathematical optimization in Julia.
+        JuMP makes it easy to formulate and solve linear programming, semidefinite programming, integer
+        programming, convex optimization, constrained nonlinear optimization, and related classes of
+        optimization problems.
+      </p>
+      <p>
+        <a href="https://jump.dev/">Website</a> | <a href="https://gitter.im/JuliaOpt/JuMP-dev">Developers chat on Gitter</a> | <a href ="https://github.com/jump-dev/GSOC2022">Ideas Page</a> | <a href="https://github.com/jump-dev">Source Code</a>
+      </p>
+   </td>
+ </tr>
     
  <tr>
    <td>
