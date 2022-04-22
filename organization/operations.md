@@ -79,3 +79,57 @@ mailing list.
 **If** NumFOCUS received less slots than then requested the **organization
 administrators** solve conflicts in slots allocation for each sub org. We will
 try to assign at least one slot to each sub org.
+
+**Changes for 2022**
+
+GSoC changed the rules for slot requests in 2022 and now we need to provide them
+with a strict ranking of our proposals with the number of slot requests.
+
+Each sub organisation will submit a tiered ranked list of student proposals they
+want to accept. The tiers are divided into 3 categories:
+- 1: We absolutely want to mentor this contributor, this is the whole reason we want to participate in GSoC!
+- 2: We would love to have them contribute and provide mentorship.
+- 3: If there are enough slots we would love to take them on too!
+
+Please do remember you still need to have enough mentors for all the contributors, you don't need
+to rank every submitted application. Just the ones you have the bandwidth to mentor over the summer.
+This system adds a new level to the minimum and maximum number of slots we used to do till 2021.
+
+Please do keep in mind this system doesn't work if all the suborgs put all of the contributors in tier 1.
+So if you requesting more than 3 slots please try to put them in different tiers.
+
+Once all the suborgs have contributed the tiered ranking the NumFOCUS org admins will run a script
+to randomise all the applicants in their respective tier and then create the final rank list. The
+final ranked list will be shared with everyone.
+
+
+The script will look something like this:
+``` python
+>>> sub_org_1 = {1: ["Contributor_1"], 2: ["Contributor_2", "Contributor_3"], 3: []}
+>>> sub_org_2 = {1: ["Contributor_4"], 2: [], 3: []}
+>>> sub_org_3 = {1: ["Contributor_5"], 2: [], 3: []}
+...
+...
+...
+>>> all_sub_orgs = [sub_org_1, sub_org_2, ... ]
+
+>>> from collections import defaultdict
+>>> import random
+>>> contributor_tiers = defaultdict(list)
+>>> for sub in all_sub_orgs:
+>>>     for tier in sub:
+>>>         contributor_tiers[tier].extend(sub[tier])
+
+>>> rank = 1
+>>> for n in contributor_tiers:
+>>>     random.shuffle(contributor_tiers[n])
+>>>     for i in contributor_tiers[n]:
+>>>         print(f'Rank {rank}: {i}')
+>>>         rank += 1
+Rank 1: Contributor_5
+Rank 2: Contributor_4
+Rank 3: Contributor_1
+Rank 4: Contributor_2
+Rank 5: Contributor_3
+
+```
