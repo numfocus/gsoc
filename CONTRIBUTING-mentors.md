@@ -62,18 +62,3 @@ admin can also be a mentor.
 If you have a proposal you can use our [proposal templates][template] and
 publish the ideas list here or you can link to an ideas list on one of your own
 websites/repositories.
-
-To publish your project ideas here follow this guide.
-
-1.  copy `YYYY/ideas/skeleton.md` to `YYYY/ideas/title-of-my-proposal.md`
-    where `YYYY` is the currently year
-    and `title-of-my-proposal` is a sort version of the title of your proposal.
-2.  add a link to `YYYY/ideas/title-of-my-proposal.md` at `YYYY/ideas-list.md`.
-3.  send a pull request with the changes at `YYYY`.
-4.  [create an issue](https://github.com/numfocus/gsoc/issues/new)
-    where students can ask questions.
-
-[CS]: CONTRIBUTING-students.md
-[template]: templates/ideas-page.md
-[sponsored]: https://www.numfocus.org/sponsored-projects/
-[affiliated]: https://www.numfocus.org/sponsored-projects/affiliated-projects/
