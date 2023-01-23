@@ -4,9 +4,13 @@ This is the home page of projects ideas of NumFOCUS for Google Summer of Code 20
 Since NumFOCUS is an umbrella organization you will only find links to the ideas
 page of each organization under the NumFOCUS umbrella at this page.
 
+- ArviZ
+- conda-forge
 - CuPy
+- Gridap
 - matplotlib
 - Mesa
+- OpenFHE
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2023-Projects)
 - [PyBaMM](https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2023-Projects)
 - [PyLops](https://github.com/PyLops/pylops/wiki/GSoC-2023-Project-Ideas)
@@ -14,5 +18,6 @@ page of each organization under the NumFOCUS umbrella at this page.
 - QuTiP
 - SciML
 - Taskflow
+- TNL
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.
