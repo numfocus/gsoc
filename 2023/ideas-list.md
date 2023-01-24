@@ -8,7 +8,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - conda-forge
 - CuPy
 - Gridap
-- matplotlib
+- [matplotlib](https://github.com/matplotlib/matplotlib/wiki/GSoC-2023-Ideas)
 - Mesa
 - OpenFHE
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2023-Projects)
