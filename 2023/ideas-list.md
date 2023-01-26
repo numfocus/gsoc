@@ -6,6 +6,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 
 - AiiDA
 - ArviZ
+- Colour Science
 - conda-forge
 - CuPy
 - Gridap
