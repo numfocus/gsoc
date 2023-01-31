@@ -6,6 +6,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 
 - [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2023-Projects)
 - ArviZ
+- CB-Geo MPM
 - Colour Science
 - conda-forge
 - CuPy
