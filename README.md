@@ -346,6 +346,18 @@ In alphabetic order.
     </td>
   </tr>
 
+<tr>
+    <td>
+      <img width="800px" src="https://pylops.readthedocs.io/en/stable/_static/pylops.png">
+    </td>
+    <td>
+       <h1>PyLops</h1>
+       <p> PyLops is an open-source Python library focused on providing a backend-agnostic, idiomatic, matrix-free library of linear operators and related computations. It is inspired by the iconic MATLAB Spot – A Linear-Operator Toolbox project.</p>
+       <p>
+         <a href="https://pylops.readthedocs.io/">Website</a> | <a href="https://pylops.slack.com/">Slack</a> | <a href="https://github.com/PyLops/pylops/wiki/GSoC-2023-Project-Ideas">Ideas Page</a> | <a href="https://github.com/PyLops/pylops"> Source Code</a>
+       </p>
+    </td>
+</tr>
 
 <tr>
     <td>
