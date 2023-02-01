@@ -275,7 +275,20 @@ In alphabetic order.
    </td>
  </tr>
 
-
+  <tr>
+    <td>
+      <img width="800px" src="https://matplotlib.org/stable/_static/images/logo2.svg"/>
+    </td>
+    <td>
+       <h1>Matplotlib</h1>
+       <p>
+         Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible.
+       </p>
+       <p>
+       <a href="https://matplotlib.org">Website</a> | <a href="https://github.com/matplotlib/matplotlib/wiki/GSoC-2023-Ideas">Ideas List</a> | <a href="https://gitter.im/matplotlib/matplotlib">Gitter</a> | <a href="https://github.com/matplotlib/matplotlib">Source Code</a>
+       </p>
+    </td>
+  </tr>
 
  <tr>
    <td>
