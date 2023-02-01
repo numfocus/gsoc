@@ -10,6 +10,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [Colour Science](https://github.com/colour-science/GSoC/blob/master/2023/GSoC-2023-Project-Ideas.md)
 - conda-forge
 - CuPy
+- [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2023-Project-Ideas)
 - Gridap
 - [matplotlib](https://github.com/matplotlib/matplotlib/wiki/GSoC-2023-Ideas)
 - Mesa
