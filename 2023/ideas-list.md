@@ -18,6 +18,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [PyBaMM](https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2023-Projects)
 - [PyLops](https://github.com/PyLops/pylops/wiki/GSoC-2023-Project-Ideas)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2023-projects)
+- [PyTorch-Ignite](https://github.com/pytorch/ignite/wiki/GSoC-2023-project-ideas)
 - QuTiP
 - SciML
 - Taskflow
