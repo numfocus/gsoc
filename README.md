@@ -71,6 +71,21 @@ In alphabetic order.
 <table>
   <tr>
     <td>
+      <img width="800px" src="https://www.aiida.net/_static/logo-light.svg"/>
+    </td>
+    <td>
+       <h1>AiiDA</h1>
+       <p>
+          AiiDA is a python framework for managing computational science workflows, with roots in computational materials science. It helps researchers manage large numbers of simulations (10k, 100k, 1M, ...) and complex workflows involving multiple executables. At the same time, it records the provenance of the entire simulation pipeline with the aim to make it fully reproducible.
+       </p>
+       <p>
+       <a href="https://www.aiida.net/">Website</a> | <a href="https://github.com/aiidateam/aiida-core/wiki/GSoC-2023-Projects">Ideas List</a> | <a href="https://groups.google.com/g/aiidausers">Google Groups</a> | <a href="https://github.com/aiidateam/aiida-core">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="800px" src="img/arviz.png"/>
     </td>
     <td>
