@@ -71,6 +71,21 @@ In alphabetic order.
 <table>
   <tr>
     <td>
+      <img width="800px" src="https://www.aiida.net/_static/logo-light.svg"/>
+    </td>
+    <td>
+       <h1>AiiDA</h1>
+       <p>
+          AiiDA is a python framework for managing computational science workflows, with roots in computational materials science. It helps researchers manage large numbers of simulations (10k, 100k, 1M, ...) and complex workflows involving multiple executables. At the same time, it records the provenance of the entire simulation pipeline with the aim to make it fully reproducible.
+       </p>
+       <p>
+       <a href="https://www.aiida.net/">Website</a> | <a href="https://github.com/aiidateam/aiida-core/wiki/GSoC-2023-Projects">Ideas List</a> | <a href="https://groups.google.com/g/aiidausers">Google Groups</a> | <a href="https://github.com/aiidateam/aiida-core">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="800px" src="img/arviz.png"/>
     </td>
     <td>
@@ -260,7 +275,20 @@ In alphabetic order.
    </td>
  </tr>
 
-
+  <tr>
+    <td>
+      <img width="800px" src="https://matplotlib.org/stable/_static/images/logo2.svg"/>
+    </td>
+    <td>
+       <h1>Matplotlib</h1>
+       <p>
+         Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible.
+       </p>
+       <p>
+       <a href="https://matplotlib.org">Website</a> | <a href="https://github.com/matplotlib/matplotlib/wiki/GSoC-2023-Ideas">Ideas List</a> | <a href="https://gitter.im/matplotlib/matplotlib">Gitter</a> | <a href="https://github.com/matplotlib/matplotlib">Source Code</a>
+       </p>
+    </td>
+  </tr>
 
  <tr>
    <td>
@@ -318,6 +346,18 @@ In alphabetic order.
     </td>
   </tr>
 
+<tr>
+    <td>
+      <img width="800px" src="https://pylops.readthedocs.io/en/stable/_static/pylops.png">
+    </td>
+    <td>
+       <h1>PyLops</h1>
+       <p> PyLops is an open-source Python library focused on providing a backend-agnostic, idiomatic, matrix-free library of linear operators and related computations. It is inspired by the iconic MATLAB Spot – A Linear-Operator Toolbox project.</p>
+       <p>
+         <a href="https://pylops.readthedocs.io/">Website</a> | <a href="https://pylops.slack.com/">Slack</a> | <a href="https://github.com/PyLops/pylops/wiki/GSoC-2023-Project-Ideas">Ideas Page</a> | <a href="https://github.com/PyLops/pylops"> Source Code</a>
+       </p>
+    </td>
+</tr>
 
 <tr>
     <td>
@@ -327,7 +367,7 @@ In alphabetic order.
        <h1>PyMC</h1>
        <p>PyMC is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://docs.pymc.io/en/v3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2022-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
+         <a href="https://docs.pymc.io/en/v3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2023-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
        </p>
     </td>
 </tr>
@@ -353,7 +393,7 @@ In alphabetic order.
        <h1>PyTorch-Ignite</h1>
        <p>PyTorch-Ignite is a high-level library to help with training neural networks in PyTorch</p>
        <p>
-         <a href="https://pytorch-ignite.ai/">Website</a> | <a href="https://pytorch-ignite.ai/chat/">Discord</a> | <a href="https://github.com/pytorch/ignite/discussions">GitHub Discussions</a> | <a href="https://github.com/pytorch/ignite/wiki/GSoC-2022-project">Ideas Page</a> | <a href="https://github.com/pytorch/ignite"> Source Code</a>
+         <a href="https://pytorch-ignite.ai/">Website</a> | <a href="https://pytorch-ignite.ai/chat/">Discord</a> | <a href="https://github.com/pytorch/ignite/discussions">GitHub Discussions</a> | <a href="https://github.com/pytorch/ignite/wiki/GSoC-2023-project-ideas">Ideas Page</a> | <a href="https://github.com/pytorch/ignite"> Source Code</a>
        </p>
     </td>
   </tr>
