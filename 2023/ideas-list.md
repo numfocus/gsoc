@@ -23,6 +23,6 @@ page of each organization under the NumFOCUS umbrella at this page.
 - QuTiP
 - SciML
 - Taskflow
-- [TNL](https://gitlab.com/tnl-project/tnl/-/blob/main/GSoC_2023.md)
+- [TNL](https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2023)
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.
