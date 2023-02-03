@@ -11,6 +11,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - conda-forge
 - CuPy
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2023-Project-Ideas)
+- [FEniCS](https://github.com/FEniCS/gsoc/blob/fenics/gsoc-2023/2023/ideas-list-fenics.md)
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2023/ideas-list.md)
 - [matplotlib](https://github.com/matplotlib/matplotlib/wiki/GSoC-2023-Ideas)
 - Mesa
