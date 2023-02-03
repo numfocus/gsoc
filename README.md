@@ -452,6 +452,19 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="800px" src="https://tnl-project.org/wp-content/uploads/2018/10/logo-sketches-05.png">
+    </td>
+    <td>
+       <h1>TNL</h1>
+       <p> TNL is a collection of building blocks that facilitate the development of efficient numerical solvers and HPC algorithms. It is implemented in C++ using modern programming paradigms in order to provide a flexible and user-friendly interface such as the STL library, for example. TNL provides native support for modern hardware architectures such as multicore CPUs, GPUs, and distributed systems, which can be managed via a unified interface. </p>
+       <p>
+         <a href="https://tnl-project.org">Website</a> | <a href="https://gitter.im/TNL-Project/community">Gitter</a> | <a href="https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2023">Ideas Page</a> | <a href="https://gitlab.com/tnl-project/tnl/-/tree/main"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="800px" src="img/zarr.png">
     </td>
     <td>
