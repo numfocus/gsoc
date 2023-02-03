@@ -3,7 +3,7 @@
 | [Sub organizations](#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
 [NumFOCUS][] will be applying again as an umbrella mentoring organization
-for [Google Summer of Code 2021][GSoC]. [NumFOCUS][] supports and
+for [Google Summer of Code 2022][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
 [NumFOCUS][]  is committed to promoting and sustaining a professional and ethical community. Our [Code of Conduct](https://numfocus.org/code-of-conduct) is our effort to uphold these values and it provides a guideline and some of the tools and resources necessary to achieve this.
@@ -16,7 +16,7 @@ website](https://summerofcode.withgoogle.com/how-it-works/)
 
 <!--
 This Git repository stores information about NumFOCUS' participation in
-Google Summer of Code 2021 program and previous editions.
+Google Summer of Code 2022 program and previous editions.
 -->
 
 This Git repository stores information about NumFOCUS'
@@ -71,15 +71,30 @@ In alphabetic order.
 <table>
   <tr>
     <td>
+      <img width="800px" src="https://www.aiida.net/_static/logo-light.svg"/>
+    </td>
+    <td>
+       <h1>AiiDA</h1>
+       <p>
+          AiiDA is a python framework for managing computational science workflows, with roots in computational materials science. It helps researchers manage large numbers of simulations (10k, 100k, 1M, ...) and complex workflows involving multiple executables. At the same time, it records the provenance of the entire simulation pipeline with the aim to make it fully reproducible.
+       </p>
+       <p>
+       <a href="https://www.aiida.net/">Website</a> | <a href="https://github.com/aiidateam/aiida-core/wiki/GSoC-2023-Projects">Ideas List</a> | <a href="https://groups.google.com/g/aiidausers">Google Groups</a> | <a href="https://github.com/aiidateam/aiida-core">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="800px" src="img/arviz.png"/>
     </td>
     <td>
        <h1>ArviZ</h1>
        <p>
-        ArviZ is a Python package for exploratory analysis of Bayesian models. Includes functions for posterior analysis, sample diagnostics, model checking, and comparison. The goal is to provide backend-agnostic tools for diagnostics and visualizations of Bayesian inference in Python, by first converting inference data into xarray objects.
+        ArviZ, is a project dedicated to promote and build tools for exploratory analysis of Bayesian models. It currently has a Python and a Julia interface. ArviZ aims to integrate seamlessly with established probabilistic programming languages like PyStan, PyMC (3 and 4), Turing, Soss, emcee or Pyro. Where the aim of the probabilistic programming languages is to make it easy to build and solve Bayesian models, the aim of the ArviZ libraries is to make it easy to process and analyze the results from those Bayesian models.
        </p>
        <p>
-         <a href="https://arviz-devs.github.io/arviz/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2021-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs/arviz">Source Code</a>
+         <a href="https://arviz-devs.github.io/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2022-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs">Source Code</a>
        </p>
     </td>
   </tr>
@@ -101,6 +116,29 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="800px" src="img/colour.png"/>
+    </td>
+    <td>
+       <h1>Colour</h1>
+       <p>
+          <a href="https://github.com/colour-science/colour">Colour</a> is an
+          open-source <a href="https://www.python.org/">Python</a> package
+          providing a comprehensive number of algorithms and datasets for
+          colour science.
+       </p>
+       <p>
+          It is freely available under the
+          <a href="https://opensource.org/licenses/BSD-3-Clause">New BSD License</a>
+          terms.
+       </p>
+       <p>
+          <a href="https://www.colour-science.org/">Website</a> | <a href="https://github.com/colour-science/GSoC/blob/master/2023/GSoC-2023-Project-Ideas.md">Ideas List</a> | <a href="mailto:colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
+       </p>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
       <img width="800px" src="img/cupy-logo.png"/>
     </td>
     <td>
@@ -108,42 +146,44 @@ In alphabetic order.
        <p>
          CuPy is a NumPy/SciPy-compatible array library for GPU-accelerated computing with Python. CuPy acts as a drop-in replacement to run existing NumPy/SciPy code on NVIDIA CUDA or AMD ROCm platforms.
        </p>
+       <p>
        <a href="https://cupy.dev">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas">Ideas List</a> | <a href="https://gitter.im/cupy/community">Chat on Gitter</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
        </p>
     </td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>
-      <img width="800px" src="img/cupy-logo.png"/>
+      <img width="800px" src="img/CVXPY-logo.png"/>
     </td>
     <td>
        <h1>CVXPY</h1>
        <p>
          CVXPY is an open source Python-embedded modeling language for convex optimization problems. It lets you express your problem in a natural way that follows the math, rather than in the restrictive standard form required by solvers.
        </p>
-       <a href="https://www.cvxpy.org/">Website</a> | <a href="">Ideas List</a> | <a href="">Contact</a> | <a href="https://github.com/cvxpy/cvxpy">Source Code</a>
+       <p>
+       <a href="https://www.cvxpy.org/">Website</a> | <a href="https://github.com/cvxpy/GSOC2022">Ideas List</a> | <a href="https://discord.com/invite/4urRQeGBCr">Contact (Discord)</a> | <a href="https://github.com/cvxpy/cvxpy">Source Code</a>
        </p>
     </td>
   </tr>
 
-
   <tr>
    <td>
-     <img width="800px" src="img/econark.png"/>
+     <img width="800px" src="img/ecodata-retriever.png"/>
    </td>
    <td>
-      <h1>Econ-Ark</h1>
+      <h1>Data Retriever</h1>
       <p>
-        The aim of the Econ-ARK project is to make it easier for social scientists to do ‘structural modeling’ of economic choice behavior by providing a well-documented, open source codebase containing the core techniques in a way that can be relatively easily adapted to address many different questions in both macro- and microeconomics. ‘Structural’ modeling of economic choices aims to identify the logic or reasons behind observed behavior, rather than just describing that behavior statistically.
+        The Data Retriever ecosystem improves reproducible research through data product management. The platform takes advantage of freely available data sources in a variety of formats, standardizes them, and makes them available to scientists in a form that is ready to analyze. Data sources range from tabular data, spatial data packages and APIs. Several data packages use the ecosystems, and many projects support or rely on the ecosystem.     
       </p>
       <p>
-        <a href="https://econ-ark.org">Website</a>  | <a href="https://github.com/econ-ark/OverARK/wiki/GSoC-2020-Project-Ideas"> Ideas List</a> | <a href=""> Contact | <a href="https://github.com/econ-ark/HARK">Source Code</a>
+        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2022-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) | <a href="https://github.com/weecology/retriever">Source Code</a> 
       </p>
    </td>
  </tr>
 
-   <tr>
+
+<tr>
    <td>
      <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
    </td>
@@ -153,15 +193,43 @@ In alphabetic order.
        FEniCS is an automated finite element library used to solve equations used in modeling, featuring a domain-specific language and automated code generation. Users input a problem that looks very much like mathematical notation; FEniCS then translates that into computer code. It solves problems for which there is no analytical (exact) solution numerically.
       </p>
       <p>
-        <a href="https://fenicsproject.org/">Website</a>  | <a href=""> Ideas List</a> | <a href="https://fenicsproject.org/community/"> Contact | <a href="https://github.com/FEniCS">Source Code</a>
+        <a href="https://fenicsproject.org/">Website</a>  | <a href="https://github.com/FEniCS/gsoc/blob/fenics/ideas-2022/2022/ideas-list-fenics.md"> Ideas List</a> | <a href="https://fenicsproject.org/community/"> Contact | <a href="https://github.com/FEniCS">Source Code</a>
       </p>
    </td>
  </tr>
 
+  <tr>
+    <td>
+      <img width="800px" src="img/flux.png"/>
+    </td>
+    <td>
+      <h1>FluxML</h1>
+      <p>
+        FluxML is a 100%-pure Julia machine learning stack built on top of Julia's native automatic differentiation and GPU support. Our organization maintains packages for building and training neural networks, data pre-processing pipelines, standard deep learning models, automatic differentiation, and more. By writing our complete toolchain in Julia, we aim to make machine learning simple, extensible, and performant.
+      </p>
+      <p>
+        <a href="https://fluxml.ai">Website</a> | <a href="https://julialang.org/jsoc/gsoc/flux/">Ideas List</a> | <a href="https://julialang.org/community/#community_channels"> Contact (Slack or Zulip) | <a href="https://github.com/FluxML">Source Code</a>
+      </p>
+    </td>
+  </tr>
 
-   <tr>
+  <tr>
    <td>
-     <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
+     <img width="300px" src="img/geopandas.png"/>
+   </td>
+   <td>
+      <h1>GeoPandas</h1>
+      <p>
+         GeoPandas is an open-source project that makes it easier to work with geospatial data in Python. GeoPandas combines the capabilities of pandas and shapely (python interface to the GEOS library), providing geospatial operations in pandas and a high-level and performant interface to multiple geometries to shapely. GeoPandas enables you to easily do operations in Python that would otherwise require desktop applications like ArcGIS or QGIS or a spatial database such as PostGIS.
+       </p>
+       <p>
+         <a href="https://geopandas.org">Website</a>  | <a href="https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2022"> Ideas List</a> | <a href="https://gitter.im/geopandas/geopandas"> Contact | <a href="https://github.com/geopandas">Source Code</a>
+    </td>
+  </tr>
+
+  <tr>
+   <td>
+      <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
    </td>
    <td>
       <h1>Gridap</h1>
@@ -169,11 +237,58 @@ In alphabetic order.
         Gridap is a new generation, open-source, finite element (FE) library implemented in the Julia programming language. Gridap aims at adopting a more modern programming style than existing FE applications written in C/C++ or Fortran.
       </p>
       <p>
-        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2021/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
+        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2023/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
       </p>
    </td>
  </tr>
 
+<tr>
+   <td>
+     <img width="800px" src="img/jump.png"/>
+   </td>
+   <td>
+      <h1>JuMP</h1>
+      <p>
+        JuMP is a modeling language and supporting packages for mathematical optimization in Julia.
+        JuMP makes it easy to formulate and solve linear programming, semidefinite programming, integer
+        programming, convex optimization, constrained nonlinear optimization, and related classes of
+        optimization problems.
+      </p>
+      <p>
+        <a href="https://jump.dev/">Website</a> | <a href="https://gitter.im/JuliaOpt/JuMP-dev">Developers chat on Gitter</a> | <a href ="https://github.com/jump-dev/GSOC2022">Ideas Page</a> | <a href="https://github.com/jump-dev">Source Code</a>
+      </p>
+   </td>
+ </tr>
+    
+ <tr>
+   <td>
+     <img width="800px" src="img/lfortran.png"/>
+   </td>
+   <td>
+      <h1>LFortran</h1>
+      <p>
+        LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user’s code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user’s code on modern architectures such as multi-core CPUs and GPUs.
+      </p>
+      <p>
+        <a href="https://lfortran.org/">Website</a> | <a href="https://lfortran.zulipchat.com/">Developers chat on Zulip</a> | <a href ="https://gitlab.com/lfortran/lfortran/-/wikis/GSoC-2022-Ideas">Ideas Page</a> | <a href="https://gitlab.com/lfortran/lfortran">Source Code</a>
+      </p>
+   </td>
+ </tr>
+
+  <tr>
+    <td>
+      <img width="800px" src="https://matplotlib.org/stable/_static/images/logo2.svg"/>
+    </td>
+    <td>
+       <h1>Matplotlib</h1>
+       <p>
+         Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible.
+       </p>
+       <p>
+       <a href="https://matplotlib.org">Website</a> | <a href="https://github.com/matplotlib/matplotlib/wiki/GSoC-2023-Ideas">Ideas List</a> | <a href="https://gitter.im/matplotlib/matplotlib">Gitter</a> | <a href="https://github.com/matplotlib/matplotlib">Source Code</a>
+       </p>
+    </td>
+  </tr>
 
  <tr>
    <td>
@@ -189,7 +304,8 @@ In alphabetic order.
       </p>
    </td>
  </tr>
-   <tr>
+
+<tr>
    <td>
      <img width="800px" src="img/optuna.png"/>
    </td>
@@ -204,6 +320,19 @@ In alphabetic order.
    </td>
  </tr>
 
+  <tr>
+    <td>
+      <img width="800px" src="img/pvlib.png">
+    </td>
+    <td>
+       <h1>pvlib</h1>
+       <p> pvlib python provides a set of functions and classes for simulating the performance of photovoltaic energy systems. </p>
+       <p>
+       <a href="https://pvlib-python.readthedocs.io/en/stable/">Website</a> | <a href="https://groups.google.com/forum/#!forum/pvlib-python">Google Group Forum</a> | <a href="https://github.com/pvlib/pvlib-python/wiki/GSoC-2023-Projects">Ideas Page</a> | <a href="https://github.com/pvlib/pvlib-python"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
  <tr>
     <td>
       <img width="800px" src="img/PyBaMM.png">
@@ -212,24 +341,49 @@ In alphabetic order.
        <h1>PyBaMM</h1>
        <p>PyBaMM (Python Battery Mathematical Modelling) solves physics-based electrochemical DAE models by using state-of-the-art automatic differentiation and numerical solvers.</p>
        <p>
-         <a href="https://www.pybamm.org">Website</a> | <a href="https://www.pybamm.org/contact"> Contact </a> | <a href="https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2021-Projects">Ideas Page</a> | <a href="https://github.com/pybamm-team/PyBaMM"> Source Code</a>
+         <a href="https://www.pybamm.org">Website</a> | <a href="https://www.pybamm.org/contact"> Contact </a> | <a href="https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2023-Projects">Ideas Page</a> | <a href="https://github.com/pybamm-team/PyBaMM"> Source Code</a>
        </p>
     </td>
   </tr>
 
+<tr>
+    <td>
+      <img width="800px" src="https://pylops.readthedocs.io/en/stable/_static/pylops.png">
+    </td>
+    <td>
+       <h1>PyLops</h1>
+       <p> PyLops is an open-source Python library focused on providing a backend-agnostic, idiomatic, matrix-free library of linear operators and related computations. It is inspired by the iconic MATLAB Spot – A Linear-Operator Toolbox project.</p>
+       <p>
+         <a href="https://pylops.readthedocs.io/">Website</a> | <a href="https://pylops.slack.com/">Slack</a> | <a href="https://github.com/PyLops/pylops/wiki/GSoC-2023-Project-Ideas">Ideas Page</a> | <a href="https://github.com/PyLops/pylops"> Source Code</a>
+       </p>
+    </td>
+</tr>
 
-  <tr>
+<tr>
     <td>
       <img width="800px" src="img/pymc3-logo.png">
     </td>
     <td>
        <h1>PyMC</h1>
-       <p>PyMC3 is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
+       <p>PyMC is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://pymc-devs.github.io/pymc3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc3/wiki/GSoC-2021-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
+         <a href="https://docs.pymc.io/en/v3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2023-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
        </p>
     </td>
-  </tr>
+</tr>
+
+<tr>
+    <td>
+      <img width="300px" src="img/pysal_logo.png">
+    </td>
+    <td>
+       <h1>PySAL</h1>
+       <p>PySAL is an open source cross-platform library for geospatial data science. It supports many different areas of statistics and geographical analyses, such as the detection of spatial clusters, hotspots, and outliers; the construction of graphs from geographic data; Bayesian and Maximum Likelihood spatial regression and statistical modelling for geographical networks; spatial econometrics; space-time Markov modelling; and distribution dynamics for segregation and inequality. </p>
+       <p>
+         <a href="https://pysal.org/pysal/">Website</a> | <a href="https://gitter.im/pysal/pysal">Contact (Gitter chat room)</a> | <a href="https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2022">Ideas Page</a> | <a href="https://github.com/pysal/pysal"> Source Code</a>
+       </p>
+    </td>
+</tr>
 
   <tr>
     <td>
@@ -239,12 +393,12 @@ In alphabetic order.
        <h1>PyTorch-Ignite</h1>
        <p>PyTorch-Ignite is a high-level library to help with training neural networks in PyTorch</p>
        <p>
-         <a href="https://pytorch-ignite.ai/">Website</a> | <a href="https://pytorch-ignite.ai/chat/">Discord</a> | <a href="https://github.com/pytorch/ignite/discussions">GitHub Discussions</a> | <a href="https://github.com/pytorch/ignite/wiki/GSoC-2022-project">Ideas Page</a> | <a href="https://github.com/pytorch/ignite"> Source Code</a>
+         <a href="https://pytorch-ignite.ai/">Website</a> | <a href="https://pytorch-ignite.ai/chat/">Discord</a> | <a href="https://github.com/pytorch/ignite/discussions">GitHub Discussions</a> | <a href="https://github.com/pytorch/ignite/wiki/GSoC-2023-project-ideas">Ideas Page</a> | <a href="https://github.com/pytorch/ignite"> Source Code</a>
        </p>
     </td>
   </tr>
 
-   <tr>
+  <tr>
     <td>
       <img width="800px" src="img/qutip.png">
     </td>
@@ -252,7 +406,7 @@ In alphabetic order.
        <h1>QuTiP</h1>
        <p> QuTiP is a software for simulating quantum systems. QuTiP aims to provide tools for user-friendly and efficient numerical simulations of open quantum systems. It can be used to simulate a wide range of physical phenomenon in areas such as quantum optics, trapped ions, superconducting circuits and quantum nanomechanical resonators. In addition, it contains a number of other modules to simplify the numerical simulation and study of many topics in quantum physics such as quantum optimal control, quantum information, and computing. </p>
        <p>
-         <a href="http://qutip.org">Website</a> | <a href="http://groups.google.com/group/qutip"> Contact </a> | <a href="https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2021">Ideas Page</a> | <a href="https://github.com/qutip/qutip"> Source Code</a>
+         <a href="http://qutip.org">Website</a> | <a href="http://groups.google.com/group/qutip"> Contact </a> | <a href="https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2022">Ideas Page</a> | <a href="https://github.com/qutip/qutip"> Source Code</a>
        </p>
     </td>
   </tr>
@@ -265,7 +419,7 @@ In alphabetic order.
        <h1>SciML</h1>
        <p> SciML is an open source software organization created to unify the packages for scientific machine learning. This includes the development of modular scientific simulation support software, such as differential equation solvers, along with the methodologies for inverse problems and automated model discovery. By providing a diverse set of tools with a common interface, we provide a modular, easily-extendable, and highly performant ecosystem for handling a wide variety of scientific simulations. </p>
        <p>
-         <a href="https://sciml.ai">Website</a> | <a href="https://sciml.ai/community/#discourse">Discourse</a> | <a href="https://sciml.ai/dev/#projects_lists">Ideas Page</a> | <a href="https://github.com/SciML"> Source Code</a>
+         <a href="https://sciml.ai">Website</a> | <a href="https://sciml.ai/community/#discourse">Discourse</a> | <a href="https://sciml.ai/dev/#google_summer_of_code">Ideas Page</a> | <a href="https://github.com/SciML"> Source Code</a>
        </p>
     </td>
   </tr>
@@ -278,36 +432,37 @@ In alphabetic order.
        <h1>signac</h1>
        <p> The signac framework is a complete solution for managing workflows operating on file-based data designed to scale to HPC systems. </p>
        <p>
-         <a href="https://signac.io">Website</a> | <a href="https://gitter.im/signac/Lobby">Gitter</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
+         <a href="https://signac.io">Website</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2022-Projects">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
        </p>
     </td>
   </tr>
 
   <tr>
     <td>
-      <img width="800px" src="img/signac.png">
+      <img width="800px" src="https://taskflow.github.io/images/logo.png">
     </td>
     <td>
        <h1>Taskflow</h1>
        <p> Parallel and heterogeneous programming with high performance and simultaneous high productivity </p>
        <p>
-         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
+         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/taskflow/GSoC2022">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
        </p>
     </td>
   </tr>
+
   <tr>
     <td>
-      <img width="800px" src="img/signac.png">
+      <img width="800px" src="img/zarr.png">
     </td>
     <td>
        <h1>Zarr</h1>
        <p> Zarr is a format for the storage of chunked, compressed, N-dimensional arrays. These documents describe the Zarr format and its Python implementation. </p>
        <p>
-         <a href="https://zarr.readthedocs.io/en/stable/">Website</a> | <a href="https://gitter.im/signac/Lobby">Gitter</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2020-Projects">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
+         <a href="https://zarr.dev/">Website</a> | <a href="https://gitter.im/zarr-developers/community">Gitter</a> | <a href="https://github.com/zarr-developers/gsoc/blob/main/2022/ideas-list.md">Ideas Page</a> | <a href="https://github.com/zarr-developers/zarr-python"> Source Code</a>
        </p>
     </td>
   </tr>
-
+ 
 </table>
 
 
@@ -333,6 +488,7 @@ In alphabetic order.
 [Econ-ARK]: https://econ-ark.github.io/HARK/
 [equadratures]: https://equadratures.org/
 [FEniCSproject]: https://fenicsproject.org/
+[FluxML]: https://fluxml.ai
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
 [IL]: 2021/ideas-list.md
@@ -379,3 +535,4 @@ In alphabetic order.
 [xarray]: http://xarray.pydata.org/
 [Yellowbrick]: http://www.scikit-yb.org/en/latest/
 [yt]: https://yt-project.org/
+[Zarr]: https://zarr.dev/
