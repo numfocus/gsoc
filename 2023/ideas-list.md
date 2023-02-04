@@ -13,7 +13,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2023-Project-Ideas)
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2023/ideas-list.md)
 - [matplotlib](https://github.com/matplotlib/matplotlib/wiki/GSoC-2023-Ideas)
-- Mesa
+- [Mesa](https://github.com/projectmesa/mesa/wiki/Projects-for-Google-Summer-of-Code-2023)
 - OpenFHE
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2023-Projects)
 - [PyBaMM](https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2023-Projects)
