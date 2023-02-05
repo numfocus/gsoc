@@ -5,7 +5,7 @@ Since NumFOCUS is an umbrella organization you will only find links to the ideas
 page of each organization under the NumFOCUS umbrella at this page.
 
 - [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2023-Projects)
-- ArviZ
+- [ArviZ](https://github.com/arviz-devs/arviz/wiki/GSoC-2023-projects)
 - CB-Geo MPM
 - [Colour Science](https://github.com/colour-science/GSoC/blob/master/2023/GSoC-2023-Project-Ideas.md)
 - [conda-forge](https://hackmd.io/@conda-forge/ryxecoj2j)
