@@ -9,7 +9,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - CB-Geo MPM
 - [Colour Science](https://github.com/colour-science/GSoC/blob/master/2023/GSoC-2023-Project-Ideas.md)
 - [conda-forge](https://hackmd.io/@conda-forge/ryxecoj2j)
-- CuPy
+- [CuPy](https://github.com/cupy/cupy/wiki/GSoC-2023-Project-Ideas)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2023-Project-Ideas)
 - [FEniCS](https://github.com/FEniCS/gsoc/blob/fenics/gsoc-2023/2023/ideas-list-fenics.md)
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2023/ideas-list.md)
