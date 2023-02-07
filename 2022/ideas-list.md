@@ -8,19 +8,26 @@ page of each organization under the NumFOCUS umbrella at this page.
 - CB-Geo MPM https://github.com/cb-geo/mpm/discussions/724
 - CuPy https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas
 - CVXPY https://github.com/cvxpy/GSOC2022
-- Econ-ARK
-- FEniCS
-- Gridap
-- NetworkX
+- Data Retriever https://github.com/weecology/retriever/wiki/GSoC-2022-Project-Ideas
+- Econ-ARK https://github.com/econ-ark/OverARK/wiki/GSoC-2022-Project-Ideas
+- FEniCS https://github.com/FEniCS/gsoc/blob/fenics/ideas-2022/2022/ideas-list-fenics.md
+- FluxML https://julialang.org/jsoc/gsoc/flux/
+- GeoPandas https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2022
+- Gridap https://github.com/gridap/GSoC/blob/main/2022/ideas-list.md
+- JuMP https://github.com/jump-dev/GSOC2022
+- LFortran https://gitlab.com/lfortran/lfortran/-/wikis/GSoC%202022%20Ideas
+- NetworkX https://networkx.org/documentation/latest/developer/projects.html
 - Optuna https://github.com/optuna/optuna/wiki/Optuna-GSoC-2022
+- pvlib https://github.com/pvlib/pvlib-python/wiki/GSoC-2022-Projects
 - PyBaMM https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2022-Projects
-- PyMC
+- PyMC https://github.com/pymc-devs/pymc/wiki/GSoC-2022-projects
+- PySAL https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2022
 - PyTorch-Ignite https://github.com/pytorch/ignite/wiki/GSoC-2022-project
 - QuTiP https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2022
 - SciML https://sciml.ai/dev/#google_summer_of_code
-- signac
-- Taskflow
-- Zarr
+- signac https://github.com/glotzerlab/signac/wiki/GSoC-2022-Projects
+- Taskflow https://github.com/taskflow/GSoC2022
+- Zarr https://github.com/zarr-developers/gsoc/blob/main/2022/ideas-list.md
 
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.
