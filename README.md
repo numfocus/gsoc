@@ -94,7 +94,7 @@ In alphabetic order.
         ArviZ, is a project dedicated to promote and build tools for exploratory analysis of Bayesian models. It currently has a Python and a Julia interface. ArviZ aims to integrate seamlessly with established probabilistic programming languages like PyStan, PyMC (3 and 4), Turing, Soss, emcee or Pyro. Where the aim of the probabilistic programming languages is to make it easy to build and solve Bayesian models, the aim of the ArviZ libraries is to make it easy to process and analyze the results from those Bayesian models.
        </p>
        <p>
-         <a href="https://arviz-devs.github.io/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2022-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs">Source Code</a>
+         <a href="https://arviz-devs.github.io/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2023-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs">Source Code</a>
        </p>
     </td>
   </tr>
@@ -147,25 +147,11 @@ In alphabetic order.
          CuPy is a NumPy/SciPy-compatible array library for GPU-accelerated computing with Python. CuPy acts as a drop-in replacement to run existing NumPy/SciPy code on NVIDIA CUDA or AMD ROCm platforms.
        </p>
        <p>
-       <a href="https://cupy.dev">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2022-Project-Ideas">Ideas List</a> | <a href="https://gitter.im/cupy/community">Chat on Gitter</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
+       <a href="https://cupy.dev">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2023-Project-Ideas">Ideas List</a> | <a href="https://gitter.im/cupy/community">Chat on Gitter</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
        </p>
     </td>
 </tr>
 
-<tr>
-    <td>
-      <img width="800px" src="img/CVXPY-logo.png"/>
-    </td>
-    <td>
-       <h1>CVXPY</h1>
-       <p>
-         CVXPY is an open source Python-embedded modeling language for convex optimization problems. It lets you express your problem in a natural way that follows the math, rather than in the restrictive standard form required by solvers.
-       </p>
-       <p>
-       <a href="https://www.cvxpy.org/">Website</a> | <a href="https://github.com/cvxpy/GSOC2022">Ideas List</a> | <a href="https://discord.com/invite/4urRQeGBCr">Contact (Discord)</a> | <a href="https://github.com/cvxpy/cvxpy">Source Code</a>
-       </p>
-    </td>
-  </tr>
 
   <tr>
    <td>
@@ -199,35 +185,6 @@ In alphabetic order.
  </tr>
 
   <tr>
-    <td>
-      <img width="800px" src="img/flux.png"/>
-    </td>
-    <td>
-      <h1>FluxML</h1>
-      <p>
-        FluxML is a 100%-pure Julia machine learning stack built on top of Julia's native automatic differentiation and GPU support. Our organization maintains packages for building and training neural networks, data pre-processing pipelines, standard deep learning models, automatic differentiation, and more. By writing our complete toolchain in Julia, we aim to make machine learning simple, extensible, and performant.
-      </p>
-      <p>
-        <a href="https://fluxml.ai">Website</a> | <a href="https://julialang.org/jsoc/gsoc/flux/">Ideas List</a> | <a href="https://julialang.org/community/#community_channels"> Contact (Slack or Zulip) | <a href="https://github.com/FluxML">Source Code</a>
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-   <td>
-     <img width="300px" src="img/geopandas.png"/>
-   </td>
-   <td>
-      <h1>GeoPandas</h1>
-      <p>
-         GeoPandas is an open-source project that makes it easier to work with geospatial data in Python. GeoPandas combines the capabilities of pandas and shapely (python interface to the GEOS library), providing geospatial operations in pandas and a high-level and performant interface to multiple geometries to shapely. GeoPandas enables you to easily do operations in Python that would otherwise require desktop applications like ArcGIS or QGIS or a spatial database such as PostGIS.
-       </p>
-       <p>
-         <a href="https://geopandas.org">Website</a>  | <a href="https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2022"> Ideas List</a> | <a href="https://gitter.im/geopandas/geopandas"> Contact | <a href="https://github.com/geopandas">Source Code</a>
-    </td>
-  </tr>
-
-  <tr>
    <td>
       <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
    </td>
@@ -242,38 +199,6 @@ In alphabetic order.
    </td>
  </tr>
 
-<tr>
-   <td>
-     <img width="800px" src="img/jump.png"/>
-   </td>
-   <td>
-      <h1>JuMP</h1>
-      <p>
-        JuMP is a modeling language and supporting packages for mathematical optimization in Julia.
-        JuMP makes it easy to formulate and solve linear programming, semidefinite programming, integer
-        programming, convex optimization, constrained nonlinear optimization, and related classes of
-        optimization problems.
-      </p>
-      <p>
-        <a href="https://jump.dev/">Website</a> | <a href="https://gitter.im/JuliaOpt/JuMP-dev">Developers chat on Gitter</a> | <a href ="https://github.com/jump-dev/GSOC2022">Ideas Page</a> | <a href="https://github.com/jump-dev">Source Code</a>
-      </p>
-   </td>
- </tr>
-    
- <tr>
-   <td>
-     <img width="800px" src="img/lfortran.png"/>
-   </td>
-   <td>
-      <h1>LFortran</h1>
-      <p>
-        LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user’s code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user’s code on modern architectures such as multi-core CPUs and GPUs.
-      </p>
-      <p>
-        <a href="https://lfortran.org/">Website</a> | <a href="https://lfortran.zulipchat.com/">Developers chat on Zulip</a> | <a href ="https://gitlab.com/lfortran/lfortran/-/wikis/GSoC-2022-Ideas">Ideas Page</a> | <a href="https://gitlab.com/lfortran/lfortran">Source Code</a>
-      </p>
-   </td>
- </tr>
 
   <tr>
     <td>
@@ -290,35 +215,7 @@ In alphabetic order.
     </td>
   </tr>
 
- <tr>
-   <td>
-     <img width="800px" src="img/networkx.png"/>
-   </td>
-   <td>
-      <h1>NetworkX</h1>
-      <p>
-        NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
-      </p>
-      <p>
-        <a href="https://networkx.org/">Website</a> | <a href ="http://networkx.org/documentation/latest/developer/projects.html#mentored-projects">Ideas Page</a> | <a href="https://github.com/networkx/networkx/discussions"> Contact (GitHub Discussions) </a>| <a href="https://github.com/networkx/networkx">Source Code</a>
-      </p>
-   </td>
- </tr>
 
-<tr>
-   <td>
-     <img width="800px" src="img/optuna.png"/>
-   </td>
-   <td>
-      <h1>Optuna</h1>
-      <p>
-        Optuna is an open source hyperparameter optimization framework to automate hyperparameter search. Optuna provides eager search spaces for automated search for optimal hyperparameters using Python conditionals, loops, and syntax, state-of-the-art algorithms to efficiently search large spaces and prune unpromising trials for faster results, and easy parallelization for hyperparameter searches over multiple threads or processes without modifying code.
-      </p>
-      <p>
-        <a href="https://optuna.org">Website</a> | <a href="https://gitter.im/optuna/optuna">Developers chat on Gitter</a> | <a href ="https://github.com/optuna/optuna/wiki/Optuna-GSoC-2022">Ideas Page</a> | <a href="https://github.com/optuna/optuna">Source Code</a>
-      </p>
-   </td>
- </tr>
 
   <tr>
     <td>
@@ -372,19 +269,6 @@ In alphabetic order.
     </td>
 </tr>
 
-<tr>
-    <td>
-      <img width="300px" src="img/pysal_logo.png">
-    </td>
-    <td>
-       <h1>PySAL</h1>
-       <p>PySAL is an open source cross-platform library for geospatial data science. It supports many different areas of statistics and geographical analyses, such as the detection of spatial clusters, hotspots, and outliers; the construction of graphs from geographic data; Bayesian and Maximum Likelihood spatial regression and statistical modelling for geographical networks; spatial econometrics; space-time Markov modelling; and distribution dynamics for segregation and inequality. </p>
-       <p>
-         <a href="https://pysal.org/pysal/">Website</a> | <a href="https://gitter.im/pysal/pysal">Contact (Gitter chat room)</a> | <a href="https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2022">Ideas Page</a> | <a href="https://github.com/pysal/pysal"> Source Code</a>
-       </p>
-    </td>
-</tr>
-
   <tr>
     <td>
       <img width="800px" src="img/pytorchignite-logo.png">
@@ -411,31 +295,6 @@ In alphabetic order.
     </td>
   </tr>
 
-  <tr>
-    <td>
-      <img width="800px" src="img/sciml.png">
-    </td>
-    <td>
-       <h1>SciML</h1>
-       <p> SciML is an open source software organization created to unify the packages for scientific machine learning. This includes the development of modular scientific simulation support software, such as differential equation solvers, along with the methodologies for inverse problems and automated model discovery. By providing a diverse set of tools with a common interface, we provide a modular, easily-extendable, and highly performant ecosystem for handling a wide variety of scientific simulations. </p>
-       <p>
-         <a href="https://sciml.ai">Website</a> | <a href="https://sciml.ai/community/#discourse">Discourse</a> | <a href="https://sciml.ai/dev/#google_summer_of_code">Ideas Page</a> | <a href="https://github.com/SciML"> Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <img width="800px" src="img/signac.png">
-    </td>
-    <td>
-       <h1>signac</h1>
-       <p> The signac framework is a complete solution for managing workflows operating on file-based data designed to scale to HPC systems. </p>
-       <p>
-         <a href="https://signac.io">Website</a> | <a href="https://github.com/glotzerlab/signac/wiki/GSoC-2022-Projects">Ideas Page</a> | <a href="https://github.com/glotzerlab/signac"> Source Code</a>
-       </p>
-    </td>
-  </tr>
 
   <tr>
     <td>
@@ -445,7 +304,7 @@ In alphabetic order.
        <h1>Taskflow</h1>
        <p> Parallel and heterogeneous programming with high performance and simultaneous high productivity </p>
        <p>
-         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/taskflow/GSoC2022">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
+         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/taskflow/GSoC2023">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
        </p>
     </td>
   </tr>
@@ -463,19 +322,6 @@ In alphabetic order.
     </td>
   </tr>
 
-  <tr>
-    <td>
-      <img width="800px" src="img/zarr.png">
-    </td>
-    <td>
-       <h1>Zarr</h1>
-       <p> Zarr is a format for the storage of chunked, compressed, N-dimensional arrays. These documents describe the Zarr format and its Python implementation. </p>
-       <p>
-         <a href="https://zarr.dev/">Website</a> | <a href="https://gitter.im/zarr-developers/community">Gitter</a> | <a href="https://github.com/zarr-developers/gsoc/blob/main/2022/ideas-list.md">Ideas Page</a> | <a href="https://github.com/zarr-developers/zarr-python"> Source Code</a>
-       </p>
-    </td>
-  </tr>
- 
 </table>
 
 
