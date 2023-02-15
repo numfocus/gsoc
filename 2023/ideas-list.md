@@ -20,6 +20,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [PyLops](https://github.com/PyLops/pylops/wiki/GSoC-2023-Project-Ideas)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2023-projects)
 - [PyTorch-Ignite](https://github.com/pytorch/ignite/wiki/GSoC-2023-project-ideas)
+- [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [QuTiP](https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-2023)
 - [Taskflow](https://github.com/taskflow/GSoC2023)
 - [TNL](https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2023)
