@@ -150,8 +150,22 @@ In alphabetic order.
        <a href="https://cupy.dev">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2023-Project-Ideas">Ideas List</a> | <a href="https://gitter.im/cupy/community">Chat on Gitter</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
        </p>
     </td>
-</tr>
+  </tr>
 
+  <tr>
+    <td>
+      <img width="800px" src="img/conda_forge.png"/>
+    </td>
+    <td>
+       <h1>Conda Forge</h1>
+       <p>
+        A community led collection of recipes, build infrastructure and distributions for the conda package manager.
+       </p>
+       <p>
+         <a href="https://conda-forge.org">Website</a>  | <a href="https://hackmd.io/@conda-forge/ryxecoj2j">Ideas List</a> | <a href="https://gitter.im/conda-forge/conda-forge.github.io"> Gitter </a> | <a href="https://github.com/conda-forge">Source Code</a>
+       </p>
+    </td>
+  </tr>
 
   <tr>
    <td>
@@ -171,7 +185,7 @@ In alphabetic order.
 
 <tr>
    <td>
-     <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
+     <img width="800px" src="fenics.png"/>
    </td>
    <td>
       <h1>FEniCS</h1>
@@ -183,6 +197,22 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+
+  <tr>
+    <td>
+      <img width="800px" src="img/flux.png"/>
+    </td>
+    <td>
+      <h1>FluxML</h1>
+      <p>
+        FluxML is a 100%-pure Julia machine learning stack built on top of Julia's native automatic differentiation and GPU support. Our organization maintains packages for building and training neural networks, data pre-processing pipelines, standard deep learning models, automatic differentiation, and more. By writing our complete toolchain in Julia, we aim to make machine learning simple, extensible, and performant.
+      </p>
+      <p>
+        <a href="https://fluxml.ai">Website</a> | <a href="https://fluxml.ai/gsoc">Ideas List</a> | <a href="https://julialang.org/community/#community_channels"> Contact (Slack or Zulip) | <a href="https://github.com/FluxML">Source Code</a>
+      </p>
+    </td>
+  </tr>
+
 
   <tr>
    <td>
@@ -215,7 +245,36 @@ In alphabetic order.
     </td>
   </tr>
 
+ <tr>
+   <td>
+     <img width="800px" src="img/mesa.png"/>
+   </td>
+   <td>
+      <h1>Mesa</h1>
+      <p>
+        Mesa allows users to quickly create agent-based models using built-in core components (such as spatial grids and agent schedulers) or customized implementations; visualize them using a browser-based interface; and analyze their results using Python’s data analysis tools. Its goal is to be the Python 3-based counterpart to NetLogo, Repast, or MASON.
+      </p>
+      <p>
+        <a href="https://mesa.readthedocs.io/en/main/">Website</a> | <a href ="https://github.com/projectmesa/mesa/wiki/Projects-for-Google-Summer-of-Code-2023">Ideas Page</a> | <a href="https://groups.google.com/g/projectmesa"> Contact (Mailing List) </a>| <a href="https://github.com/projectmesa/mesa">Source Code</a>
+      </p>
+   </td>
+ </tr>
 
+
+ <tr>
+   <td>
+     <img width="800px" src="img/networkx.png"/>
+   </td>
+   <td>
+      <h1>NetworkX</h1>
+      <p>
+        NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+      </p>
+      <p>
+        <a href="https://networkx.org/">Website</a> | <a href ="http://networkx.org/documentation/latest/developer/projects.html#mentored-projects">Ideas Page</a> | <a href="https://github.com/networkx/networkx/discussions"> Contact (GitHub Discussions) </a>| <a href="https://github.com/networkx/networkx">Source Code</a>
+      </p>
+   </td>
+ </tr>
 
   <tr>
     <td>
