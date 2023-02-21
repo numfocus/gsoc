@@ -185,7 +185,7 @@ In alphabetic order.
 
 <tr>
    <td>
-     <img width="800px" src="fenics.png"/>
+     <img width="800px" src="img/fenics.png"/>
    </td>
    <td>
       <h1>FEniCS</h1>
