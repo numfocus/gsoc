@@ -18,6 +18,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [matplotlib](https://github.com/matplotlib/matplotlib/wiki/GSoC-2023-Ideas)
 - [Mesa](https://github.com/projectmesa/mesa/wiki/Projects-for-Google-Summer-of-Code-2023)
 - [NetworkX](https://networkx.org/documentation/latest/developer/projects.html#mentored-projects)
+- [Open Science Labs](https://hackmd.io/@GvoPVECJQAmNl6JmM2UPMQ/BJEITVBAj)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2023-Projects)
 - [PyBaMM](https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2023-Projects)
 - [PyLops](https://github.com/PyLops/pylops/wiki/GSoC-2023-Project-Ideas)
@@ -27,6 +28,5 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [Taskflow](https://github.com/taskflow/GSoC2023)
 - [TNL](https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2023)
-- [Open Science Labs](https://hackmd.io/@GvoPVECJQAmNl6JmM2UPMQ/BJEITVBAj)
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.

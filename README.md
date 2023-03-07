@@ -279,21 +279,6 @@ In alphabetic order.
      <img width="800px" src="img/networkx.png"/>
    </td>
    <td>
-      <h1>Open Science Labs</h1>
-      <p>
-        Open Science Labs is a global community dedicated to creating an open space for teaching, learning, and sharing information about open science and computational tools. Our community develops tools that address real-world problems and collaborates with other projects and workgroups to improve technology and create international opportunities for our community. Although our focus may seem broad, we initially prioritize supporting Research Software Engineers (RSEs) who often face computational challenges in their work.
-      </p>
-      <p>
-        <a href="https://opensciencelabs.org/">Website</a> | <a href ="https://hackmd.io/@GvoPVECJQAmNl6JmM2UPMQ/BJEITVBAj">Ideas Page</a> | <a href="https://github.com/orgs/OpenScienceLabs/discussions"> Contact (GitHub Discussions) </a>| <a href="https://github.com/osl-incubator">Source Code</a>
-     </p>
-   </td>
- </tr>
-
- <tr>
-   <td>
-     <img width="800px" src="img/networkx.png"/>
-   </td>
-   <td>
       <h1>NetworkX</h1>
       <p>
         NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
@@ -303,6 +288,21 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+
+ <tr>
+   <td>
+     <img width="800px" src="img/networkx.png"/>
+   </td>
+   <td>
+      <h1>Open Science Labs</h1>
+      <p>
+        Open Science Labs is a global community dedicated to creating an open space for teaching, learning, and sharing information about open science and computational tools. Our community develops tools that address real-world problems and collaborates with other projects and workgroups to improve technology and create international opportunities for our community. Although our focus may seem broad, we initially prioritize supporting Research Software Engineers (RSEs) who often face computational challenges in their work.
+      </p>
+      <p>
+        <a href="https://opensciencelabs.org/">Website</a> | <a href ="https://hackmd.io/@GvoPVECJQAmNl6JmM2UPMQ/BJEITVBAj">Ideas Page</a> | <a href="https://github.com/orgs/OpenScienceLabs/discussions"> Contact (GitHub Discussions) </a>| <a href="https://github.com/osl-incubator">Source Code</a>
+     </p>
+   </td>
+  </tr>
 
   <tr>
     <td>
