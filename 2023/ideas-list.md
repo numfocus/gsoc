@@ -27,5 +27,6 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [Taskflow](https://github.com/taskflow/GSoC2023)
 - [TNL](https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2023)
+- [Open Science Labs](https://hackmd.io/@GvoPVECJQAmNl6JmM2UPMQ/BJEITVBAj)
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.

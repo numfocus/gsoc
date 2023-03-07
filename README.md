@@ -25,14 +25,10 @@ application for Google Summer of Code in the current and previous years.
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 
-- [Students](#students)
-- [Sub Organizations](#sub-organizations)
-- [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
-- [NumFOCUS Projects](#numfocus-projects)
-    - [Fiscally Sponsored Projects GSoC Status](#fiscally-sponsored-projects-gsoc-status)
-    - [Affiliated Projects GSoC Status](#affiliated-projects-gsoc-status)
-    - [Other Projects GSoC Status](#other-projects-gsoc-status)
-- [About GSoC](#about-gsoc)
+- [Google Summer of Code](#google-summer-of-code)
+  - [Students](#students)
+  - [Sub Organizations](#sub-organizations)
+  - [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
 
 <!-- markdown-toc end -->
 
@@ -136,7 +132,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-  
+
   <tr>
     <td>
       <img width="800px" src="img/cupy-logo.png"/>
@@ -174,10 +170,10 @@ In alphabetic order.
    <td>
       <h1>Data Retriever</h1>
       <p>
-        The Data Retriever ecosystem improves reproducible research through data product management. The platform takes advantage of freely available data sources in a variety of formats, standardizes them, and makes them available to scientists in a form that is ready to analyze. Data sources range from tabular data, spatial data packages and APIs. Several data packages use the ecosystems, and many projects support or rely on the ecosystem.     
+        The Data Retriever ecosystem improves reproducible research through data product management. The platform takes advantage of freely available data sources in a variety of formats, standardizes them, and makes them available to scientists in a form that is ready to analyze. Data sources range from tabular data, spatial data packages and APIs. Several data packages use the ecosystems, and many projects support or rely on the ecosystem.
       </p>
       <p>
-        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2023-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) | <a href="https://github.com/weecology/retriever">Source Code</a> 
+        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2023-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) | <a href="https://github.com/weecology/retriever">Source Code</a>
       </p>
    </td>
  </tr>
@@ -274,6 +270,20 @@ In alphabetic order.
    </td>
  </tr>
 
+ <tr>
+   <td>
+     <img width="800px" src="img/networkx.png"/>
+   </td>
+   <td>
+      <h1>Open Science Labs</h1>
+      <p>
+        Open Science Labs is a global community dedicated to creating an open space for teaching, learning, and sharing information about open science and computational tools. Our community develops tools that address real-world problems and collaborates with other projects and workgroups to improve technology and create international opportunities for our community. Although our focus may seem broad, we initially prioritize supporting Research Software Engineers (RSEs) who often face computational challenges in their work.
+      </p>
+      <p>
+        <a href="https://opensciencelabs.org/">Website</a> | <a href ="https://hackmd.io/@GvoPVECJQAmNl6JmM2UPMQ/BJEITVBAj">Ideas Page</a> | <a href="https://github.com/orgs/OpenScienceLabs/discussions"> Contact (GitHub Discussions) </a>| <a href="https://github.com/osl-incubator">Source Code</a>
+     </p>
+   </td>
+ </tr>
 
  <tr>
    <td>
