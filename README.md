@@ -25,10 +25,14 @@ application for Google Summer of Code in the current and previous years.
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 
-- [Google Summer of Code](#google-summer-of-code)
-  - [Students](#students)
-  - [Sub Organizations](#sub-organizations)
-  - [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
+- [Students](#students)
+- [Sub Organizations](#sub-organizations)
+- [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
+- [NumFOCUS Projects](#numfocus-projects)
+    - [Fiscally Sponsored Projects GSoC Status](#fiscally-sponsored-projects-gsoc-status)
+    - [Affiliated Projects GSoC Status](#affiliated-projects-gsoc-status)
+    - [Other Projects GSoC Status](#other-projects-gsoc-status)
+- [About GSoC](#about-gsoc)
 
 <!-- markdown-toc end -->
 
