@@ -289,10 +289,25 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+ 
+   <tr>
+    <td>
+     <img width="800px" src="img/openfhe_logo.png"/>
+   </td>
+   <td>
+      <h1>OpenFHE</h1>
+      <p>
+        OpenFHE is an open-source Fully Homomorphic Encryption (FHE) library that includes efficient implementations of all common FHE schemes: BFV, BGV, CKKS, DM and CGGI.
+      </p>
+      <p>
+        <a href="https://www.openfhe.org//">Website</a> | <a href ="https://github.com/openfheorg/openfhe-development/wiki/GSOC-2023">Ideas Page</a> | <a href="https://openfhe.discourse.group/"> Contact Us (Discourse)</a>| <a href="https://github.com/openfheorg/openfhe-development">Source Code</a>
+      </p>
+   </td>
+ </tr>
 
  <tr>
    <td>
-     <img width="800px" src="img/networkx.png"/>
+     <img width="800px" src="https://opensciencelabs.org/icons/logo-osl.svg"/>
    </td>
    <td>
       <h1>Open Science Labs</h1>
@@ -303,7 +318,9 @@ In alphabetic order.
         <a href="https://opensciencelabs.org/">Website</a> | <a href ="https://hackmd.io/@GvoPVECJQAmNl6JmM2UPMQ/BJEITVBAj">Ideas Page</a> | <a href="https://github.com/orgs/OpenScienceLabs/discussions"> Contact (GitHub Discussions) </a>| <a href="https://github.com/osl-incubator">Source Code</a>
      </p>
    </td>
-  </tr>
+ </tr>
+  
+ 
 
   <tr>
     <td>

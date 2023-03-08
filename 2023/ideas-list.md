@@ -18,6 +18,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [matplotlib](https://github.com/matplotlib/matplotlib/wiki/GSoC-2023-Ideas)
 - [Mesa](https://github.com/projectmesa/mesa/wiki/Projects-for-Google-Summer-of-Code-2023)
 - [NetworkX](https://networkx.org/documentation/latest/developer/projects.html#mentored-projects)
+- [OpenFHE](https://github.com/openfheorg/openfhe-development/wiki/GSOC-2023)
 - [Open Science Labs](https://hackmd.io/@GvoPVECJQAmNl6JmM2UPMQ/BJEITVBAj)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2023-Projects)
 - [PyBaMM](https://github.com/pybamm-team/PyBaMM/wiki/GSoC-2023-Projects)
