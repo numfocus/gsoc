@@ -386,11 +386,11 @@ In alphabetic order.
     </td>
 </tr>
 
+
   <tr>
     <td>
       <img width="800px" src="img/pytorchignite-logo.png">
     </td>
-
     <td>
        <h1>PyTorch-Ignite</h1>
        <p>PyTorch-Ignite is a high-level library to help with training neural networks in PyTorch</p>
