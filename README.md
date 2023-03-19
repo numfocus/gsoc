@@ -374,10 +374,23 @@ In alphabetic order.
     </td>
 </tr>
 
+<tr>
+    <td>
+      <img width="800px" src="https://user-images.githubusercontent.com/8590583/89052459-bad41a00-d323-11ea-9be2-beb7d0d1b7ea.png">
+    </td>
+    <td>
+       <h1>PySAL</h1>
+       <p>PySAL is a python library for geographical data science. It consists of 18 subpackages that cover a wide range of spatial analytical methods from exploratory spatial data analysis, spatial interaction modeling, spatial optimization, spatial econometrics, segregation, and spatial interpolation, among others.</p>
+       <p>
+       <a href="https://pysal.org">Website</a> | <a href="https://app.gitter.im/#/room/#pysal_pysal:gitter.im">gitter</a> | <a href="https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2023">Ideas Page</a> | <a href="https://github.com/pysal/pysal"> Source Code</a> </p>
+    </td>
+</tr>
+
   <tr>
     <td>
       <img width="800px" src="img/pytorchignite-logo.png">
     </td>
+
     <td>
        <h1>PyTorch-Ignite</h1>
        <p>PyTorch-Ignite is a high-level library to help with training neural networks in PyTorch</p>
@@ -386,6 +399,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
+
 
   <tr>
     <td>
