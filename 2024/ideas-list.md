@@ -21,7 +21,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [OpenFHE]()
 - [Open Science Labs]()
 - [pvlib]()
-- [PyBaMM]()
+- [PyBaMM](https://pybamm.org/gsoc/2024/)
 - [PyLops]()
 - [PyMC]()
 - [PySAL]()
