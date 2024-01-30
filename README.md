@@ -70,6 +70,21 @@ In alphabetic order.
 
 <table>
   <tr>
+     <td>
+       <img width="800px" src="img/aeon.png"/>
+     </td>
+     <td>
+        <h1>aeon</h1>
+        <p>
+          <a href="https://pypi.org/project/aeon/">aeon</a> is an open-source Python package for time series machine learning. It is built on the <a href="https://pypi.org/project/scikit-learn/">scikit-learn</a> interface, and provides a range of modules for time series learning tasks, data transformation and evaluation.
+        </p>
+        <p>
+          <a href="https://www.aeon-toolkit.org">Website</a> | <a href ="https://github.com/aeon-toolkit/aeon-admin/blob/main/gsoc/gsoc-2024-projects.md">Ideas Page</a> | <a href="https://join.slack.com/t/aeon-toolkit/shared_invite/zt-22vwvut29-HDpCu~7VBUozyfL_8j3dLA"> Slack</a> | <a href="https://github.com/aeon-toolkit/aeon">Source Code</a>
+        </p>
+     </td>
+   </tr>
+
+  <tr>
     <td>
       <img width="800px" src="https://www.aiida.net/_static/logo-light.svg"/>
     </td>
