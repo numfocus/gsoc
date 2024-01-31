@@ -15,6 +15,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [FluxML]
 - [Gridap]
 - [JuMP]
+- [JupyterLab](https://github.com/orgs/jupyterlab/projects/8/views/1?pane=info) by Jupyter
 - [matplotlib]
 - [Mesa]
 - [NetworkX]
