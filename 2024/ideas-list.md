@@ -5,7 +5,7 @@ Since NumFOCUS is an umbrella organization you will only find links to the ideas
 page of each organization under the NumFOCUS umbrella at this page.
 
 - [aeon](https://github.com/aeon-toolkit/aeon-admin/blob/main/gsoc/gsoc-2024-projects.md)
-- [AiiDA]
+- [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2024-Projects)
 - [ArviZ]
 - [CB-Geo MPM]
 - [Colour Science]
