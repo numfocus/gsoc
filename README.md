@@ -192,7 +192,7 @@ In alphabetic order.
         The Data Retriever ecosystem improves reproducible research through data product management. The platform takes advantage of freely available data sources in a variety of formats, standardizes them, and makes them available to scientists in a form that is ready to analyze. Data sources range from tabular data, spatial data packages and APIs. Several data packages use the ecosystems, and many projects support or rely on the ecosystem.
       </p>
       <p>
-        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2023-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) | <a href="https://github.com/weecology/retriever">Source Code</a>
+        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2023-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) </a> | <a href="https://github.com/weecology/retriever">Source Code</a>
       </p>
    </td>
  </tr>
@@ -208,7 +208,7 @@ In alphabetic order.
        FEniCS is an automated finite element library used to solve equations used in modeling, featuring a domain-specific language and automated code generation. Users input a problem that looks very much like mathematical notation; FEniCS then translates that into computer code. It solves problems for which there is no analytical (exact) solution numerically.
       </p>
       <p>
-        <a href="https://fenicsproject.org/">Website</a>  | <a href="https://github.com/FEniCS/gsoc/blob/fenics/gsoc-2023/2023/ideas-list-fenics.md"> Ideas List</a> | <a href="https://fenicsproject.org/community/"> Contact | <a href="https://github.com/FEniCS">Source Code</a>
+        <a href="https://fenicsproject.org/">Website</a>  | <a href="https://github.com/FEniCS/gsoc/blob/fenics/gsoc-2023/2023/ideas-list-fenics.md"> Ideas List</a> | <a href="https://fenicsproject.org/community/"> Contact </a> | <a href="https://github.com/FEniCS">Source Code</a>
       </p>
    </td>
  </tr>
@@ -223,7 +223,7 @@ In alphabetic order.
         FluxML is a 100%-pure Julia machine learning stack built on top of Julia's native automatic differentiation and GPU support. Our organization maintains packages for building and training neural networks, data pre-processing pipelines, standard deep learning models, automatic differentiation, and more. By writing our complete toolchain in Julia, we aim to make machine learning simple, extensible, and performant.
       </p>
       <p>
-        <a href="https://fluxml.ai">Website</a> | <a href="https://fluxml.ai/gsoc">Ideas List</a> | <a href="https://julialang.org/community/#community_channels"> Contact (Slack or Zulip) | <a href="https://github.com/FluxML">Source Code</a>
+        <a href="https://fluxml.ai">Website</a> | <a href="https://fluxml.ai/gsoc">Ideas List</a> | <a href="https://julialang.org/community/#community_channels"> Contact (Slack or Zulip) </a> | <a href="https://github.com/FluxML">Source Code</a>
       </p>
     </td>
   </tr>
@@ -239,7 +239,7 @@ In alphabetic order.
         Gridap is a new generation, open-source, finite element (FE) library implemented in the Julia programming language. Gridap aims at adopting a more modern programming style than existing FE applications written in C/C++ or Fortran.
       </p>
       <p>
-        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2023/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
+        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2023/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) </a> | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
       </p>
    </td>
  </tr>
@@ -254,7 +254,25 @@ In alphabetic order.
         JuMP is a modeling language and collection of supporting packages for mathematical optimization in Julia. JuMP makes it easy to formulate and solve a range of problem classes, including linear programs, integer programs, conic programs, semidefinite programs, and constrained nonlinear programs.
       </p>
       <p>
-        <a href="https://jump.dev">Website</a> | <a href="https://github.com/jump-dev/GSOC2023">Ideas List</a> | <a href="https://app.gitter.im/#/room/#JuliaOpt_JuMP-dev:gitter.im"> Contact | <a href="https://github.com/jump-dev">Source Code</a>
+        <a href="https://jump.dev">Website</a> | <a href="https://github.com/jump-dev/GSOC2023">Ideas List</a> | <a href="https://app.gitter.im/#/room/#JuliaOpt_JuMP-dev:gitter.im"> Contact </a> | <a href="https://github.com/jump-dev">Source Code</a>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img width="800px" src="img/jupyter.png"/>
+    </td>
+    <td>
+      <h1>JupyterLab</h1>
+      <p>
+        JupyterLab is a web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.
+      </p>
+      <p>
+        JupyterLab is a project of the Jupyter organization: free software, open standards, and web services for interactive computing across all programming languages.
+      </p>
+      <p>
+        <a href="https://jupyterlab.readthedocs.io/en/latest/">JupyterLab Website</a> | <a href="https://jupyter.org/">Jupyter Website</a> | <a href="https://github.com/orgs/jupyterlab/projects/8/views/1?pane=info">Ideas List</a> | <a href="https://app.gitter.im/#/room/#jupyterlab_jupyterlab:gitter.im">Contact</a> | <a href="https://github.com/jupyterlab/jupyterlab">Source Code</a>
       </p>
     </td>
   </tr>
@@ -502,6 +520,7 @@ In alphabetic order.
 [Julia]: https://julialang.org/
 [JuMP]: https://jump.dev/
 [Jupyter]: https://jupyter.org/
+[JupyterLab]: https://jupyterlab.readthedocs.io/en/latest/
 [Matplotlib]: https://matplotlib.org/
 [MDAnalysis]: https://www.mdanalysis.org/
 [NetworkX]: http://networkx.org/
