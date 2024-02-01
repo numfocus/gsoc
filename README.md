@@ -116,6 +116,21 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="800px" src="img/biocommons.png"/>
+    </td>
+    <td>
+       <h1>biocommons</h1>
+       <p>
+        The biocommons is a community that fosters collaboration on pre-competitive, interoperable, and high-quality bioinformatics open source software and data, primarily for biological sequence analysis and interpretation.  Our software is used by clinical genetics/diagnostics companies, computational biologists and scientists, and tool and database developers.
+       </p>
+       <p>
+         <a href="https://biocommons.org/">Website</a> | <a href="https://github.com/orgs/biocommons/projects/8">Project Ideas</a> | <a href="https://biocommons.org/en/latest/community/getting-connected/">Getting Connected</a> | <a href="https://github.com/biocommons/">GitHub</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="800px" src="img/mpm.png"/>
     </td>
     <td>
@@ -279,7 +294,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="https://matplotlib.org/stable/_static/images/logo2.svg"/>
+      <img width="800px" src="https://matplotlib.org/_static/logo_light.svg"/>
     </td>
     <td>
        <h1>Matplotlib</h1>
@@ -475,7 +490,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="https://tnl-project.org/wp-content/uploads/2018/10/logo-sketches-05.png">
+      <img width="800px" src="https://tnl-project.org/files/logos/tnl/logo-text-white.png">
     </td>
     <td>
        <h1>TNL</h1>
