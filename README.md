@@ -294,7 +294,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="https://matplotlib.org/stable/_static/images/logo2.svg"/>
+      <img width="800px" src="https://matplotlib.org/_static/logo_light.svg"/>
     </td>
     <td>
        <h1>Matplotlib</h1>
@@ -490,7 +490,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="https://tnl-project.org/wp-content/uploads/2018/10/logo-sketches-05.png">
+      <img width="800px" src="https://tnl-project.org/files/logos/tnl/logo-text-white.png">
     </td>
     <td>
        <h1>TNL</h1>
