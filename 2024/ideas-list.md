@@ -12,7 +12,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [conda-forge]
 - [CuPy]
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2024-Project-Ideas)
-- [FEniCS]
+- [FEniCS](https://github.com/fenics/gsoc/blob/gsoc-2024/2024/fenics-ideas-list.md)
 - [FluxML]
 - [Gridap]
 - [JuMP]
