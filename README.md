@@ -101,6 +101,21 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="800px" src="img/biocommons.png"/>
+    </td>
+    <td>
+       <h1>biocommons</h1>
+       <p>
+        The biocommons is a community that fosters collaboration on pre-competitive, interoperable, and high-quality bioinformatics open source software and data, primarily for biological sequence analysis and interpretation.  Our software is used by clinical genetics/diagnostics companies, computational biologists and scientists, and tool and database developers.
+       </p>
+       <p>
+         <a href="https://biocommons.org/">Website</a> | <a href="https://github.com/orgs/biocommons/projects/8">Project Ideas</a> | <a href="https://biocommons.org/en/latest/community/getting-connected/">Getting Connected</a> | <a href="https://github.com/biocommons/">GitHub</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="800px" src="img/arviz.png"/>
     </td>
     <td>
