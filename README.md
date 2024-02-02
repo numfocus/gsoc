@@ -116,6 +116,21 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="800px" src="img/biocommons.png"/>
+    </td>
+    <td>
+       <h1>biocommons</h1>
+       <p>
+        The biocommons is a community that fosters collaboration on pre-competitive, interoperable, and high-quality bioinformatics open source software and data, primarily for biological sequence analysis and interpretation.  Our software is used by clinical genetics/diagnostics companies, computational biologists and scientists, and tool and database developers.
+       </p>
+       <p>
+         <a href="https://biocommons.org/">Website</a> | <a href="https://github.com/orgs/biocommons/projects/8">Project Ideas</a> | <a href="https://biocommons.org/en/latest/community/getting-connected/">Getting Connected</a> | <a href="https://github.com/biocommons/">GitHub</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="800px" src="img/mpm.png"/>
     </td>
     <td>
@@ -208,7 +223,7 @@ In alphabetic order.
        FEniCS is an automated finite element library used to solve equations used in modeling, featuring a domain-specific language and automated code generation. Users input a problem that looks very much like mathematical notation; FEniCS then translates that into computer code. It solves problems for which there is no analytical (exact) solution numerically.
       </p>
       <p>
-        <a href="https://fenicsproject.org/">Website</a>  | <a href="https://github.com/FEniCS/gsoc/blob/gsoc-2024/2024/fenics-ideas-list.md"> Ideas List</a> | <a href="https://fenicsproject.org/community/"> Contact | <a href="https://github.com/FEniCS">Source Code</a>
+        <a href="https://fenicsproject.org/">Website</a>  | <a href="https://github.com/FEniCS/gsoc/blob/gsoc-2024/2024/fenics-ideas-list.md"> Ideas List</a> | <a href="https://fenicsproject.org/community/">Contact</a> | <a href="https://github.com/FEniCS">Source Code</a>
       </p>
    </td>
  </tr>
@@ -279,7 +294,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="https://matplotlib.org/stable/_static/images/logo2.svg"/>
+      <img width="800px" src="https://matplotlib.org/_static/logo_light.svg"/>
     </td>
     <td>
        <h1>Matplotlib</h1>
@@ -475,7 +490,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="https://tnl-project.org/wp-content/uploads/2018/10/logo-sketches-05.png">
+      <img width="800px" src="https://tnl-project.org/files/logos/tnl/logo-text-white.png">
     </td>
     <td>
        <h1>TNL</h1>
