@@ -11,7 +11,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [CB-Geo MPM]
 - [Colour Science]
 - [conda-forge]
-- [CuPy]
+- [CuPy](https://github.com/cupy/cupy/wiki/GSoC-2024-Project-Ideas)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2024-Project-Ideas)
 - [FEniCS]
 - [FluxML](https://fluxml.ai/gsoc)
