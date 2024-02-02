@@ -23,7 +23,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [NetworkX]
 - [OpenFHE]
 - [Open Science Labs]
-- [pvlib]
+- [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2024-Projects)
 - [PyBaMM](https://pybamm.org/gsoc/2024/)
 - [PyLops]
 - [PyMC]
