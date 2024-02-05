@@ -368,7 +368,21 @@ In alphabetic order.
    </td>
  </tr>
   
- 
+
+ <tr>
+   <td>
+    <img width="800px" src="https://github.com/contramundum53/gsoc/assets/24619922/c60fcb93-079c-4498-9a6d-21b92554dd47"/>
+   </td>
+   <td>
+      <h1>Optuna</h1>
+      <p>
+        <a href="https://github.com/optuna/optuna">Optuna</a> is an open source hyperparameter optimization framework to automate hyperparameter search. Optuna features 1. define-by-run interface for defining search spaces, 2. state-of-the-art algorithms to efficiently search large spaces and prune unpromising trials for faster results, and 3. easy parallelization for hyperparameter searches over multiple threads or processes without modifying code.
+      </p>
+      <p>
+        <a href="https://optuna.org/">Website</a> | <a href ="https://github.com/optuna/optuna/wiki/Optuna-GSoC-2024">Ideas Page</a> | <a href="mailto:optuna@preferred.jp">Contact</a> (optuna@preferred.jp)| <a href="https://github.com/optuna/optuna">Source Code</a>
+     </p>
+   </td>
+ </tr>
 
   <tr>
     <td>

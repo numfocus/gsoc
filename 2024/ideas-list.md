@@ -23,6 +23,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [NetworkX]
 - [OpenFHE]
 - [Open Science Labs]
+- [Optuna](https://github.com/optuna/optuna/wiki/Optuna-GSoC-2024)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2024-Projects)
 - [PyBaMM](https://pybamm.org/gsoc/2024/)
 - [PyLops]
