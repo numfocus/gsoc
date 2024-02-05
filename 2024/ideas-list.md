@@ -30,7 +30,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [PyMC]
 - [PySAL]
 - [PyTorch-Ignite]
-- [QuTiP]
+- [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2024)
 - [SciML]
 - [Taskflow]
 - [TNL]
