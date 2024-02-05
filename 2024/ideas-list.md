@@ -6,7 +6,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 
 - [aeon](https://github.com/aeon-toolkit/aeon-admin/blob/main/gsoc/gsoc-2024-projects.md)
 - [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2024-Projects)
-- [ArviZ]
+- [ArviZ](https://github.com/arviz-devs/arviz/wiki/GSoC-2024-projects)
 - [biocommons](https://github.com/orgs/biocommons/projects/8/views/1)
 - [CB-Geo MPM]
 - [Colour Science]
