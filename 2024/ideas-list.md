@@ -19,7 +19,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [JuMP]
 - [JupyterLab](https://github.com/orgs/jupyterlab/projects/8/views/1?pane=info) by Jupyter
 - [matplotlib]
-- [Mesa]
+- [Mesa](https://github.com/projectmesa/mesa/wiki/Projects-for-Google-Summer-of-Code-2024)
 - [NetworkX]
 - [OpenFHE]
 - [Open Science Labs]
