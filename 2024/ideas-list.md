@@ -34,5 +34,6 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [SciML]
 - [Taskflow]
 - [TNL]
+- [Zarr](https://github.com/zarr-developers/gsoc/blob/main/2024/ideas-list.md)
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.
