@@ -314,10 +314,10 @@ In alphabetic order.
    <td>
       <h1>Mesa</h1>
       <p>
-        Mesa allows users to quickly create agent-based models using built-in core components (such as spatial grids and agent schedulers) or customized implementations; visualize them using a browser-based interface; and analyze their results using Python’s data analysis tools. Its goal is to be the Python 3-based counterpart to NetLogo, Repast, or MASON.
+        Mesa allows users to quickly create agent-based models using built-in core components (such as spatial grids and agent schedulers) or customized implementations; visualize them using a browser-based interface; and analyze their results using Python’s data analysis tools. Its goal is to be the Python-based counterpart to NetLogo, Repast, or MASON.
       </p>
       <p>
-        <a href="https://mesa.readthedocs.io/en/main/">Website</a> | <a href ="https://github.com/projectmesa/mesa/wiki/Projects-for-Google-Summer-of-Code-2023">Ideas Page</a> | <a href="https://groups.google.com/g/projectmesa"> Contact (Mailing List) </a>| <a href="https://github.com/projectmesa/mesa">Source Code</a>
+        <a href="https://mesa.readthedocs.io/en/main/">Website</a> | <a href ="https://github.com/projectmesa/mesa/wiki/Projects-for-Google-Summer-of-Code-2024">Ideas Page</a> | <a href="https://github.com/projectmesa/mesa/discussions"> Contact (GitHub Discussions) </a>| <a href="https://github.com/projectmesa/mesa">Source Code</a>
       </p>
    </td>
  </tr>
