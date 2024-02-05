@@ -11,9 +11,9 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [CB-Geo MPM]
 - [Colour Science]
 - [conda-forge]
-- [CuPy]
+- [CuPy](https://github.com/cupy/cupy/wiki/GSoC-2024-Project-Ideas)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2024-Project-Ideas)
-- [FEniCS]
+- [FEniCS](https://github.com/fenics/gsoc/blob/gsoc-2024/2024/fenics-ideas-list.md)
 - [FluxML](https://fluxml.ai/gsoc)
 - [Gridap]
 - [JuMP]
@@ -24,7 +24,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [OpenFHE]
 - [Open Science Labs]
 - [Optuna](https://github.com/optuna/optuna/wiki/Optuna-GSoC-2024)
-- [pvlib]
+- [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2024-Projects)
 - [PyBaMM](https://pybamm.org/gsoc/2024/)
 - [PyLops]
 - [PyMC]
