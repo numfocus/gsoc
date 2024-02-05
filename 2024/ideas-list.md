@@ -15,7 +15,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2024-Project-Ideas)
 - [FEniCS](https://github.com/fenics/gsoc/blob/gsoc-2024/2024/fenics-ideas-list.md)
 - [FluxML](https://fluxml.ai/gsoc)
-- [Gridap]
+- [Gridap](https://github.com/gridap/GSoC/blob/main/2024/ideas-list.md)
 - [JuMP]
 - [JupyterLab](https://github.com/orgs/jupyterlab/projects/8/views/1?pane=info) by Jupyter
 - [matplotlib]
