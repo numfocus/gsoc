@@ -34,7 +34,7 @@ with different backgrounds. At the same time if you have experience using your
 project of choice or one of it's dependencies (e.g., language) make sure to let
 us know about that as
 well.
-The [FLOSS manual](http://write.flossmanuals.net/gsocstudentguide/am-i-good-enough/)
+The [GSoC Guide](https://google.github.io/gsocguides/student/am-i-good-enough#)
 gives a good overview of this part for GSoC.
 
 ## Our Expectations From Students
