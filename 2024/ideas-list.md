@@ -18,7 +18,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2024/ideas-list.md)
 - [JuMP]
 - [JupyterLab](https://github.com/orgs/jupyterlab/projects/8/views/1?pane=info) by Jupyter
-- [matplotlib]
+- [matplotlib](https://github.com/matplotlib/matplotlib/wiki/Matplotlib-GSoC-2024-Ideas)
 - [Mesa]
 - [NetworkX]
 - [OpenFHE]
