@@ -515,6 +515,19 @@ In alphabetic order.
     </td>
   </tr>
 
+<tr>
+    <td>
+      <img width="800px" src="https://github.com/numfocus/gsoc/blob/master/img/zarr.png">
+    </td>
+    <td>
+       <h1>Zarr</h1>
+       <p> Zarr is a file storage format for chunked, compressed, N-dimensional arrays based on an open-source specification. </p>
+       <p>
+         <a href="https://zarr.dev/">Website</a> | <a href="https://gitter.im/zarr-developers/community">Gitter</a> | <a href="https://github.com/zarr-developers/gsoc/blob/main/2024/ideas-list.md">Ideas Page</a> | <a href="https://github.com/zarr-developers/zarr-python"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
 </table>
 
 
