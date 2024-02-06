@@ -497,7 +497,7 @@ In alphabetic order.
        <h1>Taskflow</h1>
        <p> Parallel and heterogeneous programming with high performance and simultaneous high productivity </p>
        <p>
-         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/taskflow/GSoC2023">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
+         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/taskflow/GSoC2024">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
        </p>
     </td>
   </tr>

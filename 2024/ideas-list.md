@@ -32,7 +32,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [PyTorch-Ignite]
 - [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2024)
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
-- [Taskflow]
+- [Taskflow](https://github.com/taskflow/GSoC2024)
 - [TNL]
 - [Zarr](https://github.com/zarr-developers/gsoc/blob/main/2024/ideas-list.md)
 
