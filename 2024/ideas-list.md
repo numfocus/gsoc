@@ -8,7 +8,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2024-Projects)
 - [ArviZ](https://github.com/arviz-devs/arviz/wiki/GSoC-2024-projects)
 - [biocommons](https://github.com/orgs/biocommons/projects/8/views/1)
-- [CB-Geo MPM]
+- [CB-Geo MPM](https://github.com/cb-geo/mpm/issues/744)
 - [Colour Science]
 - [conda-forge]
 - [CuPy](https://github.com/cupy/cupy/wiki/GSoC-2024-Project-Ideas)
@@ -31,7 +31,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [PySAL]
 - [PyTorch-Ignite]
 - [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2024)
-- [SciML]
+- [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [Taskflow](https://github.com/taskflow/GSoC2024)
 - [TNL]
 - [Zarr](https://github.com/zarr-developers/gsoc/blob/main/2024/ideas-list.md)
