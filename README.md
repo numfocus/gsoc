@@ -139,7 +139,7 @@ In alphabetic order.
           CB-Geo MPM is an HPC-enabled Material Point Method solver for large-deformation modeling. It supports isoparametric elements to model complex geometries and creates photo-realistic rendering.
        </p>
        <p>
-       <a href="https://www.cb-geo.com/research/mpm/">Website</a> | <a href="https://github.com/cb-geo/mpm/discussions/740">Ideas List</a> | <a href="https://cb-geo.discourse.group">Discourse</a> | <a href="https://github.com/cb-geo/mpm">Source Code</a>
+       <a href="https://www.cb-geo.com/research/mpm/">Website</a> | <a href="https://github.com/cb-geo/mpm/discussions/744">Ideas List</a> | <a href="https://github.com/cb-geo/mpm/discussions">Discussions</a> | <a href="https://github.com/cb-geo/mpm">Source Code</a>
        </p>
     </td>
   </tr>
