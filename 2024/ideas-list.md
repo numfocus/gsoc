@@ -19,6 +19,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [Optuna](https://github.com/optuna/optuna/wiki/Optuna-GSoC-2024)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2024-Projects)
 - [PyBaMM](https://pybamm.org/gsoc/2024/)
+- [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2024-projects)
 - [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2024)
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [Taskflow](https://github.com/taskflow/GSoC2024)

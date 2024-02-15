@@ -431,7 +431,7 @@ In alphabetic order.
        <h1>PyMC</h1>
        <p>PyMC is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://docs.pymc.io/en/v3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2023-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc3"> Source Code</a>
+         <a href="https://docs.pymc.io/en/v3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2024-projectsGSoC-2023-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc"> Source Code</a>
        </p>
     </td>
 </tr>
