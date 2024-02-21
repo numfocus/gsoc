@@ -180,7 +180,7 @@ a PDF file. Your proposal name should start with *[sub-org-name]* to make
 identification easier for the mentors.
 
 
-[IL]: 2022/ideas-list.md
+[IL]: 2024/ideas-list.md
 [issues]: https://github.com/numfocus/gsoc/issues
 [GSoC]: http://summerofcode.withgoogle.com/
 [ML]: organization/team.md
