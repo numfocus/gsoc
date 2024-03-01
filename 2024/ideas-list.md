@@ -17,6 +17,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [JupyterLab](https://github.com/orgs/jupyterlab/projects/8/views/1?pane=info) by Jupyter
 - [matplotlib](https://github.com/matplotlib/matplotlib/wiki/Matplotlib-GSoC-2024-Ideas)
 - [NetworkX](https://networkx.org/documentation/latest/developer/projects.html)
+- [Open Science Labs](https://github.com/OpenScienceLabs/gsoc/blob/main/project-ideas/gsoc2024.md)
 - [Optuna](https://github.com/optuna/optuna/wiki/Optuna-GSoC-2024)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2024-Projects)
 - [PyBaMM](https://pybamm.org/gsoc/2024/)
