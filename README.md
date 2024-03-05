@@ -76,7 +76,7 @@ In alphabetic order.
      <td>
         <h1>aeon</h1>
         <p>
-          <a href="https://pypi.org/project/aeon/">aeon</a> is an open-source Python package for time series machine learning. It is built on the <a href="https://pypi.org/project/scikit-learn/">scikit-learn</a> interface, and provides a range of modules for time series learning tasks, data transformation and evaluation.
+          <a href="https://www.aeon-toolkit.org/">aeon</a> is an open-source scikit-learn compatible toolkit for time series tasks such as forecasting, classification, regression, clustering, anomaly detection and segmentation. It provides a broad library of time series algorithms, including efficient implementations of the latest advances in research.
         </p>
         <p>
           <a href="https://www.aeon-toolkit.org">Website</a> | <a href ="https://github.com/aeon-toolkit/aeon-admin/blob/main/gsoc/gsoc-2024-projects.md">Ideas Page</a> | <a href="https://join.slack.com/t/aeon-toolkit/shared_invite/zt-22vwvut29-HDpCu~7VBUozyfL_8j3dLA"> Slack</a> | <a href="https://github.com/aeon-toolkit/aeon">Source Code</a>
