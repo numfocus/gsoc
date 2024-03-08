@@ -425,13 +425,13 @@ In alphabetic order.
 
 <tr>
     <td>
-      <img width="800px" src="img/pymc3-logo.png">
+      <img width="800px" src="img/pymc_logo.png">
     </td>
     <td>
        <h1>PyMC</h1>
        <p>PyMC is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://docs.pymc.io/en/v3/">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2024-projectsGSoC-2023-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc"> Source Code</a>
+         <a href="https://www.pymc.io/welcome.html">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2024-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc"> Source Code</a>
        </p>
     </td>
 </tr>
@@ -532,7 +532,7 @@ In alphabetic order.
 
 
 
-[ArviZ]: https://arviz-devs.github.io/arviz/
+[ArviZ]: https://www.arviz.org
 [AstroPy]: https://www.astropy.org/
 [Blosc]: https://www.blosc.org/
 [Bokeh]: https://docs.bokeh.org/en/latest/
@@ -577,6 +577,7 @@ In alphabetic order.
 [pandas]: https://pandas.pydata.org/
 [Pomegranate]: https://pomegranate.readthedocs.io/en/latest/
 [pvlib]: https://pvlib-python.readthedocs.io/en/stable/
+[PyMC]: https://www.pymc.io
 [PySAL]: https://pysal.org/pysal
 [PyTables]: http://pytables.github.com/
 [PythonXY]: http://python-xy.github.io/
