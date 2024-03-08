@@ -3,7 +3,7 @@
 | [Sub organizations](#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
 [NumFOCUS][] will be applying again as an umbrella mentoring organization
-for [Google Summer of Code 2022][GSoC]. [NumFOCUS][] supports and
+for [Google Summer of Code 2024][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
 [NumFOCUS][]  is committed to promoting and sustaining a professional and ethical community. Our [Code of Conduct](https://numfocus.org/code-of-conduct) is our effort to uphold these values and it provides a guideline and some of the tools and resources necessary to achieve this.
@@ -76,7 +76,7 @@ In alphabetic order.
      <td>
         <h1>aeon</h1>
         <p>
-          <a href="https://pypi.org/project/aeon/">aeon</a> is an open-source Python package for time series machine learning. It is built on the <a href="https://pypi.org/project/scikit-learn/">scikit-learn</a> interface, and provides a range of modules for time series learning tasks, data transformation and evaluation.
+          <a href="https://www.aeon-toolkit.org/">aeon</a> is an open-source scikit-learn compatible toolkit for time series tasks such as forecasting, classification, regression, clustering, anomaly detection and segmentation. It provides a broad library of time series algorithms, including efficient implementations of the latest advances in research.
         </p>
         <p>
           <a href="https://www.aeon-toolkit.org">Website</a> | <a href ="https://github.com/aeon-toolkit/aeon-admin/blob/main/gsoc/gsoc-2024-projects.md">Ideas Page</a> | <a href="https://join.slack.com/t/aeon-toolkit/shared_invite/zt-22vwvut29-HDpCu~7VBUozyfL_8j3dLA"> Slack</a> | <a href="https://github.com/aeon-toolkit/aeon">Source Code</a>
@@ -139,7 +139,7 @@ In alphabetic order.
           CB-Geo MPM is an HPC-enabled Material Point Method solver for large-deformation modeling. It supports isoparametric elements to model complex geometries and creates photo-realistic rendering.
        </p>
        <p>
-       <a href="https://www.cb-geo.com/research/mpm/">Website</a> | <a href="https://github.com/cb-geo/mpm/discussions/740">Ideas List</a> | <a href="https://cb-geo.discourse.group">Discourse</a> | <a href="https://github.com/cb-geo/mpm">Source Code</a>
+       <a href="https://www.cb-geo.com/research/mpm/">Website</a> | <a href="https://github.com/cb-geo/mpm/discussions/744">Ideas List</a> | <a href="https://github.com/cb-geo/mpm/discussions">Discussions</a> | <a href="https://github.com/cb-geo/mpm">Source Code</a>
        </p>
     </td>
   </tr>
@@ -207,7 +207,7 @@ In alphabetic order.
         The Data Retriever ecosystem improves reproducible research through data product management. The platform takes advantage of freely available data sources in a variety of formats, standardizes them, and makes them available to scientists in a form that is ready to analyze. Data sources range from tabular data, spatial data packages and APIs. Several data packages use the ecosystems, and many projects support or rely on the ecosystem.
       </p>
       <p>
-        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2023-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) </a> | <a href="https://github.com/weecology/retriever">Source Code</a>
+        <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2024-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) </a> | <a href="https://github.com/weecology/retriever">Source Code</a>
       </p>
    </td>
  </tr>
@@ -254,7 +254,7 @@ In alphabetic order.
         Gridap is a new generation, open-source, finite element (FE) library implemented in the Julia programming language. Gridap aims at adopting a more modern programming style than existing FE applications written in C/C++ or Fortran.
       </p>
       <p>
-        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2023/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) </a> | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
+        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2024/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) </a> | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
       </p>
    </td>
  </tr>
@@ -302,7 +302,7 @@ In alphabetic order.
          Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible.
        </p>
        <p>
-       <a href="https://matplotlib.org">Website</a> | <a href="https://github.com/matplotlib/matplotlib/wiki/GSoC-2023-Ideas">Ideas List</a> | <a href="https://gitter.im/matplotlib/matplotlib">Gitter</a> | <a href="https://github.com/matplotlib/matplotlib">Source Code</a>
+       <a href="https://matplotlib.org">Website</a> | <a href="https://github.com/matplotlib/matplotlib/wiki/Matplotlib-GSoC-2024-Ideas">Ideas List</a> | <a href="https://gitter.im/matplotlib/matplotlib">Gitter</a> | <a href="https://github.com/matplotlib/matplotlib">Source Code</a>
        </p>
     </td>
   </tr>
@@ -497,7 +497,7 @@ In alphabetic order.
        <h1>Taskflow</h1>
        <p> Parallel and heterogeneous programming with high performance and simultaneous high productivity </p>
        <p>
-         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/taskflow/GSoC2023">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
+         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/taskflow/GSoC2024">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
        </p>
     </td>
   </tr>
@@ -511,6 +511,19 @@ In alphabetic order.
        <p> TNL is a collection of building blocks that facilitate the development of efficient numerical solvers and HPC algorithms. It is implemented in C++ using modern programming paradigms in order to provide a flexible and user-friendly interface such as the STL library, for example. TNL provides native support for modern hardware architectures such as multicore CPUs, GPUs, and distributed systems, which can be managed via a unified interface. </p>
        <p>
          <a href="https://tnl-project.org">Website</a> | <a href="https://gitter.im/TNL-Project/community">Gitter</a> | <a href="https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2023">Ideas Page</a> | <a href="https://gitlab.com/tnl-project/tnl/-/tree/main"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+<tr>
+    <td>
+      <img width="800px" src="https://github.com/numfocus/gsoc/blob/master/img/zarr.png">
+    </td>
+    <td>
+       <h1>Zarr</h1>
+       <p> Zarr is a file storage format for chunked, compressed, N-dimensional arrays based on an open-source specification. </p>
+       <p>
+         <a href="https://zarr.dev/">Website</a> | <a href="https://gitter.im/zarr-developers/community">Gitter</a> | <a href="https://github.com/zarr-developers/gsoc/blob/main/2024/ideas-list.md">Ideas Page</a> | <a href="https://github.com/zarr-developers/zarr-python"> Source Code</a>
        </p>
     </td>
   </tr>
