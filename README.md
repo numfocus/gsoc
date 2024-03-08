@@ -368,7 +368,6 @@ In alphabetic order.
    </td>
  </tr>
 
-
  <tr>
    <td>
     <img width="800px" src="https://github.com/contramundum53/gsoc/assets/24619922/c60fcb93-079c-4498-9a6d-21b92554dd47"/>
