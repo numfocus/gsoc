@@ -114,6 +114,22 @@ In alphabetic order.
     </td>
   </tr>
 
+
+  <tr>
+    <td>
+      <img width="800px" src="img/bambi.png"/>
+    </td>
+    <td>
+       <h1>Bambi</h1>
+       <p>
+      Bambi (BAyesian Model Building Interface) is an open source Python package designed to make it easier for practitioners to build statistical models from a wide range of families using a formula notation similar to those found in R. It is built on top of the PyMC probabilistic programming framework and the ArviZ package for exploratory analysis of Bayesian models. 
+       </p>
+       <p>
+         <a href="https://bambinos.github.io/bambi/">Website</a> | <a href="https://github.com/bambinos/bambi/wiki/GSoC-2024-projects">Ideas List</a> | <a href="https://github.com/bambinos/bambi/discussions"> Discussions </a> | <a href="https://github.com/bambinos">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
   <tr>
     <td>
       <img width="800px" src="img/biocommons.png"/>
