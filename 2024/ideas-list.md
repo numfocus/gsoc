@@ -10,6 +10,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [Bambi](https://github.com/bambinos/bambi/wiki/GSoC-2024-projects)
 - [biocommons](https://github.com/orgs/biocommons/projects/8/views/1)
 - [CB-Geo MPM](https://github.com/cb-geo/mpm/issues/744)
+- [conda](https://hackmd.io/@conda-community/conda-gsoc-ideas-2024)
 - [CuPy](https://github.com/cupy/cupy/wiki/GSoC-2024-Project-Ideas)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2024-Project-Ideas)
 - [FEniCS](https://github.com/fenics/gsoc/blob/gsoc-2024/2024/fenics-ideas-list.md)
