@@ -192,7 +192,7 @@ In alphabetic order.
         A community led collection of recipes, build infrastructure and distributions for the conda package manager.
        </p>
        <p>
-         <a href="https://conda-forge.org">Website</a>  | <a href="https://hackmd.io/@conda-forge/ryxecoj2j">Ideas List</a> | <a href="https://gitter.im/conda-forge/conda-forge.github.io"> Gitter </a> | <a href="https://github.com/conda-forge">Source Code</a>
+         <a href="https://conda-forge.org">Website</a>  | <a href="https://hackmd.io/@conda-community/conda-gsoc-ideas-2024">Ideas List</a> | <a href="https://gitter.im/conda-forge/conda-forge.github.io"> Gitter </a> | <a href="https://github.com/conda-forge">Source Code</a>
        </p>
     </td>
   </tr>
