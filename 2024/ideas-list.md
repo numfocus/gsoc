@@ -16,7 +16,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [FEniCS](https://github.com/fenics/gsoc/blob/gsoc-2024/2024/fenics-ideas-list.md)
 - [FluxML](https://fluxml.ai/gsoc)
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2024/ideas-list.md)
-- [GOSST](https://github.com/numfocus/gsoc/wiki/GSoC-2024-GOSST) by NumdFOCUS and Google Open Source 
+- [GOSST](https://github.com/numfocus/gsoc/wiki/GSoC-2024-GOSST) by NumFOCUS and Google Open Source 
 - [JupyterLab](https://github.com/orgs/jupyterlab/projects/8/views/1?pane=info) by Jupyter
 - [matplotlib](https://github.com/matplotlib/matplotlib/wiki/Matplotlib-GSoC-2024-Ideas)
 - [NetworkX](https://networkx.org/documentation/latest/developer/projects.html)
