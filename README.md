@@ -122,7 +122,7 @@ In alphabetic order.
     <td>
        <h1>Bambi</h1>
        <p>
-      Bambi (BAyesian Model Building Interface) is an open source Python package designed to make it easier for practitioners to build statistical models from a wide range of families using a formula notation similar to those found in R. It is built on top of the PyMC probabilistic programming framework and the ArviZ package for exploratory analysis of Bayesian models. 
+      Bambi (BAyesian Model Building Interface) is an open source Python package designed to make it easier for practitioners to build statistical models from a wide range of families using a formula notation similar to those found in R. It is built on top of the PyMC probabilistic programming framework and the ArviZ package for exploratory analysis of Bayesian models.
        </p>
        <p>
          <a href="https://bambinos.github.io/bambi/">Website</a> | <a href="https://github.com/bambinos/bambi/wiki/GSoC-2024-projects">Ideas List</a> | <a href="https://github.com/bambinos/bambi/discussions"> Discussions </a> | <a href="https://github.com/bambinos">Source Code</a>
@@ -446,7 +446,7 @@ In alphabetic order.
        <h1>PyMC</h1>
        <p>PyMC is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
-         <a href="https://www.pymc.io/welcome.html">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2024-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc"> Source Code</a>
+         <a href="https://www.pymc.io/welcome.html">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2025-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc"> Source Code</a>
        </p>
     </td>
 </tr>
