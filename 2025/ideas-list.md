@@ -5,6 +5,7 @@ Since NumFOCUS is an umbrella organization you will only find links to the ideas
 page of each organization under the NumFOCUS umbrella at this page.
 
 - [aeon](https://github.com/aeon-toolkit/aeon-admin/blob/main/gsoc/gsoc-2025-projects.md)
+- [ArviZ](https://github.com/arviz-devs/arviz/wiki/GsoC-2025-projects)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2025-Project-Ideas)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2025-Projects)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2025-projects)
