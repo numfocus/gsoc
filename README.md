@@ -538,7 +538,7 @@ In alphabetic order.
        <h1>Zarr</h1>
        <p> Zarr is a file storage format for chunked, compressed, N-dimensional arrays based on an open-source specification. </p>
        <p>
-         <a href="https://zarr.dev/">Website</a> | <a href="https://gitter.im/zarr-developers/community">Gitter</a> | <a href="https://github.com/zarr-developers/gsoc/blob/main/2024/ideas-list.md">Ideas Page</a> | <a href="https://github.com/zarr-developers/zarr-python"> Source Code</a>
+         <a href="https://zarr.dev/">Website</a> | <a href="https://ossci.zulipchat.com/">ZulipChat</a> | <a href="https://github.com/zarr-developers/gsoc/blob/main/2025/ideas-list.md">Ideas Page</a> | <a href="https://github.com/zarr-developers/zarr-python"> Source Code</a>
        </p>
     </td>
   </tr>
