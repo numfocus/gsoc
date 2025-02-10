@@ -14,6 +14,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [Qutip](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2025)
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [Zarr](https://github.com/zarr-developers/gsoc/blob/main/2025/ideas-list.md)
+- [conda / rattler](https://github.com/conda/rattler/issues/1058)
 
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.
