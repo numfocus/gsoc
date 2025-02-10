@@ -528,7 +528,7 @@ In alphabetic order.
 
 <tr>
     <td>
-      <img width="800px" src="https://github.com/numfocus/gsoc/blob/master/img/zarr.png">
+      <img width="800px" src="https://github.com/zarr-developers.png">
     </td>
     <td>
        <h1>Zarr</h1>
@@ -546,7 +546,7 @@ In alphabetic order.
        <h1>Conda</h1>
        <p> Conda is a community governing the Conda package format and tools around it. </p>
        <p>
-         <a href="https://conda.org">Website</a> | <a href="https://conda.zulipchat.com/">ZulipChat</a> | <a href="https://github.com/conda/rattler/issues/1058">Ideas Page</a> | <a href="https://github.com/conda/rattler/"> Rattler / Conda in Rust / Source Code</a>
+         <a href="https://conda.org">Website</a> | <a href="https://conda.zulipchat.com/">ZulipChat</a> | <a href="https://github.com/conda/rattler/issues/1058">Ideas Page</a> | <a href="https://github.com/conda/rattler/"> Rattler (Conda in Rust) / Source Code</a>
        </p>
     </td>
   </tr>
