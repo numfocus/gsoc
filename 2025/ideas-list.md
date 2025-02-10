@@ -11,6 +11,8 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2025-Projects)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2025-projects)
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2025)
+- [Qutip](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2025)
+- [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [Zarr](https://github.com/zarr-developers/gsoc/blob/main/2025/ideas-list.md)
 
 
