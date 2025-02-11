@@ -7,6 +7,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [aeon](https://github.com/aeon-toolkit/aeon-admin/blob/main/gsoc/gsoc-2025-projects.md)
 - [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2025-Projects)
 - [ArviZ](https://github.com/arviz-devs/arviz/wiki/GsoC-2025-projects)
+- [conda / rattler](https://github.com/conda/rattler/issues/1058)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2025-Project-Ideas)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2025-Projects)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2025-projects)
@@ -14,7 +15,6 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [Qutip](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2025)
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [Zarr](https://github.com/zarr-developers/gsoc/blob/main/2025/ideas-list.md)
-- [conda / rattler](https://github.com/conda/rattler/issues/1058)
 
 
 See the [README](https://github.com/numfocus/gsoc/blob/master/README.md#organizations-confirmed-under-numfocus-umbrella) for contact information of each org.

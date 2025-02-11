@@ -528,7 +528,7 @@ In alphabetic order.
 
 <tr>
     <td>
-      <img width="800px" src="https://github.com/zarr-developers.png">
+      <img width="800px" src="https://github.com/numfocus/gsoc/blob/master/img/zarr.png">
     </td>
     <td>
        <h1>Zarr</h1>
