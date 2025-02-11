@@ -7,6 +7,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [aeon](https://github.com/aeon-toolkit/aeon-admin/blob/main/gsoc/gsoc-2025-projects.md)
 - [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2025-Projects)
 - [ArviZ](https://github.com/arviz-devs/arviz/wiki/GsoC-2025-projects)
+- [conda / rattler](https://github.com/conda/rattler/issues/1058)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2025-Project-Ideas)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2025-Projects)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2025-projects)

@@ -25,14 +25,10 @@ application for Google Summer of Code in the current and previous years.
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 
-- [Students](#students)
-- [Sub Organizations](#sub-organizations)
-- [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
-- [NumFOCUS Projects](#numfocus-projects)
-    - [Fiscally Sponsored Projects GSoC Status](#fiscally-sponsored-projects-gsoc-status)
-    - [Affiliated Projects GSoC Status](#affiliated-projects-gsoc-status)
-    - [Other Projects GSoC Status](#other-projects-gsoc-status)
-- [About GSoC](#about-gsoc)
+- [Google Summer of Code](#google-summer-of-code)
+  - [Students](#students)
+  - [Sub Organizations](#sub-organizations)
+  - [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
 
 <!-- markdown-toc end -->
 
@@ -539,6 +535,18 @@ In alphabetic order.
        <p> Zarr is a file storage format for chunked, compressed, N-dimensional arrays based on an open-source specification. </p>
        <p>
          <a href="https://zarr.dev/">Website</a> | <a href="https://ossci.zulipchat.com/">ZulipChat</a> | <a href="https://github.com/zarr-developers/gsoc/blob/main/2025/ideas-list.md">Ideas Page</a> | <a href="https://github.com/zarr-developers/zarr-python"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+<tr>
+    <td>
+      <img width="800px" src="https://github.com/conda.png">
+    </td>
+    <td>
+       <h1>Conda</h1>
+       <p> Conda is a community governing the Conda package format and tools around it. </p>
+       <p>
+         <a href="https://conda.org">Website</a> | <a href="https://conda.zulipchat.com/">ZulipChat</a> | <a href="https://github.com/conda/rattler/issues/1058">Ideas Page</a> | <a href="https://github.com/conda/rattler/"> Rattler (Conda in Rust) / Source Code</a>
        </p>
     </td>
   </tr>
