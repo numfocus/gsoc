@@ -416,7 +416,7 @@ In alphabetic order.
        <h1>PyBaMM</h1>
        <p>PyBaMM (Python Battery Mathematical Modelling) solves physics-based electrochemical DAE models by using state-of-the-art automatic differentiation and numerical solvers.</p>
        <p>
-         <a href="https://www.pybamm.org">Website</a> | <a href="https://pybamm.org/community/"> Contact </a> | <a href="https://pybamm.org/gsoc/2024/">Ideas Page</a> | <a href="https://github.com/pybamm-team/PyBaMM"> Source Code</a>
+         <a href="https://www.pybamm.org">Website</a> | <a href="https://pybamm.org/community/"> Contact </a> | <a href="https://pybamm.org/gsoc/2025/">Ideas Page</a> | <a href="https://github.com/pybamm-team/PyBaMM"> Source Code</a>
        </p>
     </td>
   </tr>
