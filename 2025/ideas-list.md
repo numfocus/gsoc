@@ -10,6 +10,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [conda / rattler](https://github.com/conda/rattler/issues/1058)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2025-Project-Ideas)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2025-Projects)
+- [PyBaMM](https://pybamm.org/gsoc/2025/)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2025-projects)
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2025)
 - [Qutip](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2025)
