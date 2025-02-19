@@ -3,7 +3,7 @@
 | [Sub organizations](#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
 
 [NumFOCUS][] will be applying again as an umbrella mentoring organization
-for [Google Summer of Code 2024][GSoC]. [NumFOCUS][] supports and
+for [Google Summer of Code 2025][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
 [NumFOCUS][]  is committed to promoting and sustaining a professional and ethical community. Our [Code of Conduct](https://numfocus.org/code-of-conduct) is our effort to uphold these values and it provides a guideline and some of the tools and resources necessary to achieve this.
@@ -16,7 +16,7 @@ website](https://summerofcode.withgoogle.com/how-it-works/)
 
 <!--
 This Git repository stores information about NumFOCUS' participation in
-Google Summer of Code 2022 program and previous editions.
+Google Summer of Code 2025 program and previous editions.
 -->
 
 This Git repository stores information about NumFOCUS'
@@ -496,6 +496,19 @@ In alphabetic order.
        <p> SciML is an open source software organization created to unify the packages for scientific machine learning. This includes the development of modular scientific simulation support software, such as differential equation solvers, along with the methodologies for inverse problems and automated model discovery. By providing a diverse set of tools with a common interface, we provide a modular, easily-extendable, and highly performant ecosystem for handling a wide variety of scientific simulations. </p>
        <p>
          <a href="http://sciml.ai">Website</a> | <a href=https://julialang.zulipchat.com/#narrow/stream/279055-sciml-bridged"> Contact </a> | <a href="https://sciml.ai/dev/#google_summer_of_code">Ideas Page</a> | <a href="https://github.com/SciML/"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img width="800px" src="https://github.com/stan-dev/docs/blob/master/src/img/logo_tm.png?raw=true">
+    </td>
+    <td>
+       <h1>Stan</h1>
+       <p> Software for Bayesian Data Analysis.  Stan combines a probabilistic programming language,  written in OCaml, with a collection of inference algorithms, written in C++, and interfaces for Python, Julia, and R.   Stan's probabilistic programming language is suitable for a wide range of applications, from simple linear regression to multi-level models and time-series analysis.  The Stan ecosystem of tools for validation and visualization facilitates decision-making and communication.  </p>
+       <p>
+         <a href="https://mc-stan.org">Website</a> | <a href="https://discourse.mc-stan.org/t/google-summer-of-code-2025/38823">Contact</a> | <a href="https://github.com/stan-dev/stan/wiki/GSOC-2025-Proposed-Projects">Ideas Page</a> | <a href="https://github.com/stan-dev"> Source Code</a>
        </p>
     </td>
   </tr>
