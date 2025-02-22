@@ -224,6 +224,21 @@ In alphabetic order.
    </td>
  </tr>
 
+  <tr>
+   <td>
+     <img width="800px" src="img/discover-cookbook.png"/>
+   </td>
+   <td>
+      <h1>DISCOVER Cookbook</h1>
+      <p>
+        The DISCOVER cookbook is a resource for organizers of conferences to produce and manage more diverse and inclusive events. It focuses specifically on plans, decisions, and actions organizers can take.
+      </p>
+      <p>
+        <a href="https://discover-cookbook.numfocus.org/">Website</a>  | <a href="https://github.com/numfocus/DISCOVER-Cookbook/discussions/208"> Ideas List</a> | <a href="https://github.com/numfocus/DISCOVER-Cookbook/discussions"> Contact (Github Discussions) </a> | <a href="https://github.com/numfocus/DISCOVER-Cookbook">Source Code</a>
+      </p>
+   </td>
+ </tr>
+
 
 <tr>
    <td>
