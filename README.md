@@ -526,6 +526,19 @@ In alphabetic order.
     </td>
   </tr>
 
+  <tr>
+    <td>
+      <img width="800px" src="https://raw.githubusercontent.com/vprusso/toqito/refs/heads/master/docs/figures/logo.svg">
+    </td>
+    <td>
+       <h1>toqito</h1>
+       <p>The toqito package is an open source library for studying various objects in quantum information, namely, states, channels, and measurements. toqito focuses on providing numerical tools to study problems pertaining to entanglement theory, nonlocal games, and other aspects of quantum information that are often associated with computer science. </p>
+       <p>
+         <a href="https://toqito.readthedocs.io/en/latest/">Website</a> |  <a href="https://discord.gg/eNmfDMGk">Discord</a> | <a href="https://github.com/vprusso/toqito/wiki/GSoC-2025-Projects">Ideas Page</a> | <a href="https://github.com/vprusso/toqito"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
 <tr>
     <td>
       <img width="800px" src="https://github.com/numfocus/gsoc/blob/master/img/zarr.png">
