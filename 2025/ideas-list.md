@@ -9,6 +9,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [ArviZ](https://github.com/arviz-devs/arviz/wiki/GsoC-2025-projects)
 - [conda / rattler](https://github.com/conda/rattler/issues/1058)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2025-Project-Ideas)
+- [DISCOVER Cookbook](https://github.com/numfocus/DISCOVER-Cookbook/discussions/208)
 - [NetworkX](https://networkx.org/documentation/latest/developer/projects.html)
 - [Open2C](https://github.com/open2c/open2c.github.io/wiki/GSoC-2025)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2025-Projects)
