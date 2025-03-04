@@ -350,6 +350,21 @@ In alphabetic order.
    </td>
  </tr>
 
+ <tr>
+    <td>
+      <img width="800px" src="https://avatars.githubusercontent.com/u/70977326"/>
+    </td>
+    <td>
+       <h1>Open2C</h1>
+       <p>
+          Open2C develops open-source software for the analysis of spatial genome organization, particularly chromosome conformation capture (3C) and Hi-C data. Our tools are designed to be easy to use, flexible for novel analytical approaches, and scalable for large datasets. We welcome Google Summer of Code contributors!
+       </p>
+       <p>
+       <a href="https://open2c.github.io/">Website</a> | <a href="https://github.com/open2c/open2c.github.io/wiki/GSoC-2025">Ideas List</a> | <a href="https://discord.com/invite/qVfSbDYHNG">Discord</a> | <a href="https://github.com/open2c">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
    <tr>
     <td>
      <img width="800px" src="img/openfhe_logo.png"/>
