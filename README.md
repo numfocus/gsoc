@@ -224,6 +224,21 @@ In alphabetic order.
    </td>
  </tr>
 
+  <tr>
+   <td>
+     <img width="800px" src="img/discover-cookbook.png"/>
+   </td>
+   <td>
+      <h1>DISCOVER Cookbook</h1>
+      <p>
+        The DISCOVER cookbook is a resource for organizers of conferences to produce and manage more diverse and inclusive events. It focuses specifically on plans, decisions, and actions organizers can take.
+      </p>
+      <p>
+        <a href="https://discover-cookbook.numfocus.org/">Website</a>  | <a href="https://github.com/numfocus/DISCOVER-Cookbook/discussions/208"> Ideas List</a> | <a href="https://github.com/numfocus/DISCOVER-Cookbook/discussions"> Contact (Github Discussions) </a> | <a href="https://github.com/numfocus/DISCOVER-Cookbook">Source Code</a>
+      </p>
+   </td>
+ </tr>
+
 
 <tr>
    <td>
@@ -349,6 +364,21 @@ In alphabetic order.
       </p>
    </td>
  </tr>
+
+ <tr>
+    <td>
+      <img width="800px" src="https://avatars.githubusercontent.com/u/70977326"/>
+    </td>
+    <td>
+       <h1>Open2C</h1>
+       <p>
+          Open2C develops open-source software for the analysis of spatial genome organization, particularly chromosome conformation capture (3C) and Hi-C data. Our tools are designed to be easy to use, flexible for novel analytical approaches, and scalable for large datasets. We welcome Google Summer of Code contributors!
+       </p>
+       <p>
+       <a href="https://open2c.github.io/">Website</a> | <a href="https://github.com/open2c/open2c.github.io/wiki/GSoC-2025">Ideas List</a> | <a href="https://discord.com/invite/qVfSbDYHNG">Discord</a> | <a href="https://github.com/open2c">Source Code</a>
+       </p>
+    </td>
+  </tr>
 
    <tr>
     <td>
@@ -535,6 +565,19 @@ In alphabetic order.
        <p> TNL is a collection of building blocks that facilitate the development of efficient numerical solvers and HPC algorithms. It is implemented in C++ using modern programming paradigms in order to provide a flexible and user-friendly interface such as the STL library, for example. TNL provides native support for modern hardware architectures such as multicore CPUs, GPUs, and distributed systems, which can be managed via a unified interface. </p>
        <p>
          <a href="https://tnl-project.org">Website</a> | <a href="https://gitter.im/TNL-Project/community">Gitter</a> | <a href="https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2023">Ideas Page</a> | <a href="https://gitlab.com/tnl-project/tnl/-/tree/main"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img width="800px" src="https://raw.githubusercontent.com/vprusso/toqito/refs/heads/master/docs/figures/logo.svg">
+    </td>
+    <td>
+       <h1>toqito</h1>
+       <p>The toqito package is an open source library for studying various objects in quantum information, namely, states, channels, and measurements. toqito focuses on providing numerical tools to study problems pertaining to entanglement theory, nonlocal games, and other aspects of quantum information that are often associated with computer science. </p>
+       <p>
+         <a href="https://toqito.readthedocs.io/en/latest/">Website</a> |  <a href="https://discord.gg/eNmfDMGk">Discord</a> | <a href="https://github.com/vprusso/toqito/wiki/GSoC-2025-Projects">Ideas Page</a> | <a href="https://github.com/vprusso/toqito"> Source Code</a>
        </p>
     </td>
   </tr>
