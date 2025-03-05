@@ -517,6 +517,18 @@ In alphabetic order.
     </td>
   </tr>
 
+  <tr>
+    <td>
+      <img width="800px" src="https://github.com/sbi-dev/sbi/blob/logo/docs/logo/logo.png">  </td>
+    <td>
+       <h1>sbi</h1>
+       <p>sbi (simulation-based inference) is a Python package for performing Bayesian inference on complex, simulator-defined models, where the likelihood function is intractable.  It leverages the simulator directly, using modern probabilistic machine learning methods like normalizing flows and neural posterior estimation. sbi is built on PyTorch and is designed for both research and application.</p>
+       <p>
+         <a href="https://sbi-dev.github.io/sbi/latest/">Website</a> | <a href="https://github.com/sbi-dev/sbi/discussions/1318">Discord</a> | <a href="https://github.com/sbi-dev/sbi/wiki/GSoC_2025_Projects">Ideas Page</a> | <a href="https://github.com/sbi-dev/sbi">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
    <tr>
     <td>
       <img width="800px" src="https://github.com/SciML/SciMLDocs/raw/main/docs/src/assets/logo.png">
