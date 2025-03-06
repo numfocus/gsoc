@@ -410,6 +410,18 @@ In alphabetic order.
    </td>
  </tr>
 
+<tr>
+    <td>
+      <img width="800px" src="img/optimagic_logo.png"> </td>
+    <td>
+       <h1>optimagic</h1>
+       <p>optimagic is a Python package for numerical optimization. It is a unified interface to optimizers from SciPy, NlOpt and other packages. optimagic's minimize function works just like SciPy's, so you don't have to adjust your code. You simply get more optimizers for free. On top you get diagnostic tools, parallel numerical derivatives and more.</p>
+       <p>
+         <a href="https://optimagic.readthedocs.io/en/latest/">Website</a> | <a href="https://ose.zulipchat.com/#narrow/channel/221432-optimagic">Zulip</a> | <a href="https://github.com/optimagic-dev/optimagic/discussions/559">Ideas Page</a> | <a href="https://github.com/optimagic-dev/optimagic">Source Code</a>
+       </p>
+    </td>
+</tr>
+
  <tr>
    <td>
     <img width="800px" src="https://github.com/contramundum53/gsoc/assets/24619922/c60fcb93-079c-4498-9a6d-21b92554dd47"/>
