@@ -20,6 +20,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [sbi](https://github.com/sbi-dev/sbi/wiki/GSoC_2025_Projects)
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [Stan](https://github.com/stan-dev/stan/wiki/GSOC-2025-Proposed-Projects)
+- [TNL](https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2025)
 - [toqito](https://github.com/vprusso/toqito/wiki/GSoC-2025-Projects)
 - [Zarr](https://github.com/zarr-developers/gsoc/blob/main/2025/ideas-list.md)
 
