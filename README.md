@@ -588,7 +588,7 @@ In alphabetic order.
        <h1>TNL</h1>
        <p> TNL is a collection of building blocks that facilitate the development of efficient numerical solvers and HPC algorithms. It is implemented in C++ using modern programming paradigms in order to provide a flexible and user-friendly interface such as the STL library, for example. TNL provides native support for modern hardware architectures such as multicore CPUs, GPUs, and distributed systems, which can be managed via a unified interface. </p>
        <p>
-         <a href="https://tnl-project.org">Website</a> | <a href="https://gitter.im/TNL-Project/community">Gitter</a> | <a href="https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2023">Ideas Page</a> | <a href="https://gitlab.com/tnl-project/tnl/-/tree/main"> Source Code</a>
+         <a href="https://tnl-project.org">Website</a> | <a href="https://matrix.to/#/#tnl:matrix.org">Matrix</a> | <a href="https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2025">Ideas Page</a> | <a href="https://gitlab.com/tnl-project/tnl/-/tree/main"> Source Code</a>
        </p>
     </td>
   </tr>
@@ -702,6 +702,7 @@ In alphabetic order.
 [SunPy]: https://sunpy.org/
 [SymPy]: https://www.sympy.org/
 [Theano]: http://deeplearning.net/software/theano/
+[TNL] : https://tnl-project.org/
 [xarray]: http://xarray.pydata.org/
 [Yellowbrick]: http://www.scikit-yb.org/en/latest/
 [yt]: https://yt-project.org/
