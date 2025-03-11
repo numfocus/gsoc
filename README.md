@@ -288,6 +288,21 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="800px" src="img/igraph.png"/>
+    </td>
+    <td>
+      <h1>igraph</h1>
+      <p>
+        igraph is a collection of tools for the analysis of complex network. It emphasizes efficiency, portability and easy of use. igraph can be programmed in R, Python, Mathematica and C/C++.
+      </p>
+      <p>
+        <a href="https://igraph.org">Website</a> | <a href="https://github.com/igraph/igraph/wiki/Mentored-Projects">Ideas Page</a> | <a href="https://igraph.discourse.group/"> Contact (Discourse) </a> | <a href="https://github.com/igraph/">Source Code</a>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="800px" src="img/jump.png"/>
     </td>
     <td>
