@@ -364,6 +364,20 @@ In alphabetic order.
    </td>
  </tr>
 
+ <tr>
+   <td>
+     <img width="800px" src="img/mlpack.png"/>
+   </td>
+   <td>
+      <h1>mlpack</h1>
+      <p>
+        mlpack is an intuitive, fast, and flexible C++ machine learning library with bindings to other languages. It is meant to be a machine learning analog to LAPACK, and aims to implement a wide array of machine learning methods and functions as a "swiss army knife" for machine learning researchers. In addition to its powerful C++ interface, mlpack also provides command-line programs and Python bindings, as well as bindings to other languages.
+      </p>
+      <p>
+        <a href="https://www.mlpack.org/">Website</a> | <a href ="https://github.com/mlpack/mlpack/wiki/SummerOfCodeIdeas">Ideas Page</a> | <a href="https://www.mlpack.org/doc/developer/community.html">Contact (Matrix chat)</a>| <a href="https://github.com/mlpack/mlpack">Source Code</a>
+      </p>
+   </td>
+ </tr>
 
  <tr>
    <td>
