@@ -5,6 +5,9 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 - [aeon](https://github.com/aeon-toolkit/aeon-admin/blob/main/gsoc/gsoc-2025-projects.md)
 - [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2025-Projects)
 - [ArviZ](https://github.com/arviz-devs/arviz/wiki/GsoC-2025-projects)
+  
+    Shreyansh [Refactoring and Extending arviz-plots to Achieve Feature Parity and Introduce Enhanced Bayesian Visualization Tools](https://the-broken-keyboard.github.io/posts/gsoc/)
+  
 - [conda / rattler](https://github.com/conda/rattler/issues/1058)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2025-Project-Ideas)
 
