@@ -17,6 +17,9 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 
 - [mlpack](https://github.com/mlpack/mlpack/wiki/SummerOfCodeIdeas)
 - [NetworkX](https://networkx.org/documentation/latest/developer/projects.html)
+
+    Akshita Sure [Adding embarrassingly parallel graph algorithms in nx-parallel](https://github.com/akshitasure12/networkx-blogs)
+    
 - [Open2C](https://github.com/open2c/open2c.github.io/wiki/GSoC-2025)
 - [optimagic](https://github.com/optimagic-dev/optimagic/discussions/559)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2025-Projects)
