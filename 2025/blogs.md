@@ -18,6 +18,9 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 - [optimagic](https://github.com/optimagic-dev/optimagic/discussions/559)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2025-Projects)
 - [PyBaMM](https://pybamm.org/gsoc/2025/)
+  
+    Rishab Kumar Jha [Adding support for 3D thermal simulations](https://rishab-pi.vercel.app/blog)
+
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2025-projects)
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2025)
 - [Qutip](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2025)
