@@ -12,6 +12,9 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 
 - [DISCOVER Cookbook](https://github.com/numfocus/DISCOVER-Cookbook/discussions/208)
 - [igraph](https://github.com/igraph/igraph/wiki/Mentored-Projects)
+  
+    Zara Zong [Degree-Constrained Null Models](https://minifinity.github.io/writing/)
+
 - [mlpack](https://github.com/mlpack/mlpack/wiki/SummerOfCodeIdeas)
 - [NetworkX](https://networkx.org/documentation/latest/developer/projects.html)
 - [Open2C](https://github.com/open2c/open2c.github.io/wiki/GSoC-2025)
