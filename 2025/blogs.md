@@ -14,6 +14,8 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 - [igraph](https://github.com/igraph/igraph/wiki/Mentored-Projects)
   
     Zara Zong [Degree-Constrained Null Models](https://minifinity.github.io/writing/)
+  
+    Ildikó-Beáta Márton [Community detection guide with igraph](https://medium.com/@marton.ildikobeata/my-first-experience-with-gsoc2025-numfocus-6d1d2c9787d0)
 
 - [mlpack](https://github.com/mlpack/mlpack/wiki/SummerOfCodeIdeas)
 - [NetworkX](https://networkx.org/documentation/latest/developer/projects.html)
