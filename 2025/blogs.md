@@ -49,4 +49,5 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
   
 - [TNL](https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2025)
 - [toqito](https://github.com/vprusso/toqito/wiki/GSoC-2025-Projects)
+    Nafisa Shamim Rafa [Create and add to an example gallery for toqito](https://creativebinbag.github.io/Google-Summer-of-Code-Blog/)
 - [Zarr](https://github.com/zarr-developers/gsoc/blob/main/2025/ideas-list.md)
