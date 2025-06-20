@@ -39,6 +39,9 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2025)
 - [Qutip](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2025)
 - [sbi](https://github.com/sbi-dev/sbi/wiki/GSoC_2025_Projects)
+
+    Massimiliano Carli [Implementing the Simformer, a Transformer-based solution for simulation based inference](https://medium.com/@nmaax)
+  
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [Stan](https://github.com/stan-dev/stan/wiki/GSOC-2025-Proposed-Projects)
 
