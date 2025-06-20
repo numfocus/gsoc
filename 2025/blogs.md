@@ -21,6 +21,8 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
     Ildikó-Beáta Márton [Community detection guide with igraph](https://medium.com/@marton.ildikobeata/my-first-experience-with-gsoc2025-numfocus-6d1d2c9787d0)
 
 - [mlpack](https://github.com/mlpack/mlpack/wiki/SummerOfCodeIdeas)
+    Kumar Utkarsh [ONNX-mlpack Converter](https://medium.com/@nvnukumarutkarsh)
+    
 - [NetworkX](https://networkx.org/documentation/latest/developer/projects.html)
 
     Akshita Sure [Adding embarrassingly parallel graph algorithms in nx-parallel](https://github.com/akshitasure12/networkx-blogs)
