@@ -3,6 +3,9 @@
 This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 
 - [aeon](https://github.com/aeon-toolkit/aeon-admin/blob/main/gsoc/gsoc-2025-projects.md)
+
+    Tina Jin [Implementing and Evaluating Machine Learning Forecasters](https://medium.com/@jintina48/list/gsoc25-blog-11a0081fc6e2)
+  
 - [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2025-Projects)
 - [ArviZ](https://github.com/arviz-devs/arviz/wiki/GsoC-2025-projects)
   
