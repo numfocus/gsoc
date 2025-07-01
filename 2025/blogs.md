@@ -48,6 +48,8 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
     Michal Novomestsky [Implementing Integrated Nested Laplace Approximations (INLA)](https://michal-novomestsky.github.io/tags/#gsoc)
 
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2025)
+
+    Dylan Skrah [Building a Routing Engine for `spopt`](https://fiendskrah.github.io/gsoc-2025-blog/)
 - [Qutip](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2025)
 - [sbi](https://github.com/sbi-dev/sbi/wiki/GSoC_2025_Projects)
 
