@@ -19,8 +19,10 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
     Nakshatra Piplad [Developing an Active Learning Module for DeepForest](https://nakshatra.hashnode.dev/newsletter)
 
 - [DISCOVER Cookbook](https://github.com/numfocus/DISCOVER-Cookbook/discussions/208)
-   - Ashish Mahajan [ Versioning System for DISCOVER Cookbook ](https://github.com/numfocus/DISCOVER-Cookbook/discussions/315)
-   - Diya Singh [Adding Translation System to DISCOVER-Cookbook](https://medium.com/@sdiya5556/my-experience-with-gsocc25-numfocus-886d223a26d5)
+  
+     Ashish Mahajan [ Versioning System for DISCOVER Cookbook ](https://github.com/numfocus/DISCOVER-Cookbook/discussions/315)
+  
+     Diya Singh [Adding Translation System to DISCOVER-Cookbook](https://medium.com/@sdiya5556/my-experience-with-gsocc25-numfocus-886d223a26d5)
 
 - [igraph](https://github.com/igraph/igraph/wiki/Mentored-Projects)
   
