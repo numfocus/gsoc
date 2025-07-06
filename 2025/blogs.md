@@ -48,6 +48,7 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2025-projects)
 
     Michal Novomestsky [Implementing Integrated Nested Laplace Approximations (INLA)](https://michal-novomestsky.github.io/tags/#gsoc)
+    Andrea Catelli [Implementing Dynamic Factor Model (DFM)] (https://andreacate.github.io/gsoc/)
 
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2025)
 
