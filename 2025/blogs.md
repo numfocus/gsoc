@@ -62,6 +62,8 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
     Abel Abate [From "Stringly Typed" to "Strongly Typed" Arguments in sbi](https://portfolio-abelaba.vercel.app/blog/tag/gsoc)
   
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
+    Mattia Micheletta Merlin [Implementing symbolic integration in Julia](https://mmm3.it/gsoc_en.html)
+
 - [Stan](https://github.com/stan-dev/stan/wiki/GSOC-2025-Proposed-Projects)
 
     Behram Ulukır [Creating New Plots with Bayesplot](https://behramulukir.github.io/journal/)
