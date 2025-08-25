@@ -54,6 +54,9 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2025)
 
     Dylan Skrah [Building a Routing Engine for `spopt`](https://fiendskrah.github.io/gsoc-2025-blog/)
+  
+    Zixin Feng [Developing Flow Refueling Models for 'spopt'](https://fengzixin0617.github.io/gsoc2025/)
+  
 - [Qutip](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2025)
 - [sbi](https://github.com/sbi-dev/sbi/wiki/GSoC_2025_Projects)
 
