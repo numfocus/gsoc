@@ -18,6 +18,8 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 
     Nakshatra Piplad [Developing an Active Learning Module for DeepForest](https://nakshatra.hashnode.dev/newsletter)
 
+    Samia Haque [Integrating DeepForest Object Detection with LLM for Automated Ecological Image Analysis](https://opensourcewithsamia.hashnode.dev/series/gsoc-blogs)
+
 - [DISCOVER Cookbook](https://github.com/numfocus/DISCOVER-Cookbook/discussions/208)
   
      Ashish Mahajan [ Versioning System for DISCOVER Cookbook ](https://github.com/numfocus/DISCOVER-Cookbook/discussions/315)
