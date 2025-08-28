@@ -54,7 +54,11 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2025)
 
     Dylan Skrah [Building a Routing Engine for `spopt`](https://fiendskrah.github.io/gsoc-2025-blog/)
+  
 - [Qutip](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2025)
+
+    Vanshaj Bindal [Hamiltonian Library for QuTiP](https://vanshaj0429.github.io/qutip-gsoc-blog/blog.html)
+  
 - [sbi](https://github.com/sbi-dev/sbi/wiki/GSoC_2025_Projects)
 
     Massimiliano Carli [Implementing the Simformer, a Transformer-based solution for simulation based inference](https://medium.com/@nmaax)
