@@ -55,6 +55,8 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 
     Dylan Skrah [Building a Routing Engine for `spopt`](https://fiendskrah.github.io/gsoc-2025-blog/)
   
+    Zixin Feng [Developing Flow Refueling Models for 'spopt'](https://fengzixin0617.github.io/gsoc2025/)
+  
 - [Qutip](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2025)
 
     Vanshaj Bindal [Hamiltonian Library for QuTiP](https://vanshaj0429.github.io/qutip-gsoc-blog/blog.html)
