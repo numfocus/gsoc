@@ -46,6 +46,7 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 - [PyBaMM](https://pybamm.org/gsoc/2025/)
   
     Rishab Kumar Jha [Adding support for 3D thermal simulations](https://rishab-pi.vercel.app/blog)
+  
     Medha Bhardwaj [Dispatching Mechanism for Third Party Models](https://medium.com/@medha140904/list/gsoc-2025-22bba1b0c42f)
 
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2025-projects)
@@ -86,4 +87,5 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
     Nafisa Shamim Rafa [Create and add to an example gallery for toqito](https://creativebinbag.github.io/Google-Summer-of-Code-Blog/)
 
     Rajdeep Aher [Benchmarking and Profiling in toqito](https://rajdeepaher.github.io/)
+  
 - [Zarr](https://github.com/zarr-developers/gsoc/blob/main/2025/ideas-list.md)
