@@ -42,6 +42,8 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
     
 - [Open2C](https://github.com/open2c/open2c.github.io/wiki/GSoC-2025)
 - [optimagic](https://github.com/optimagic-dev/optimagic/discussions/559)
+
+    Gaurav Manmode [Adding More Optimizer Interfaces to Optimagic](https://gauravmanmode.github.io/gsoc_2025_blog/blog.html)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2025-Projects)
 - [PyBaMM](https://pybamm.org/gsoc/2025/)
   
