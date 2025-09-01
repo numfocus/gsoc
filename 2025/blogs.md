@@ -45,6 +45,8 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
 
     madman [Adding More Optimizer Interfaces to optimagic](https://madmann.bearblog.dev/summarizing-my-gsoc-2025-work-adding-more-optimizer-interfaces-to-optimagic/)
 
+    Gaurav Manmode [Adding More Optimizer Interfaces to Optimagic](https://gauravmanmode.github.io/gsoc_2025_blog/blog.html)
+
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2025-Projects)
 - [PyBaMM](https://pybamm.org/gsoc/2025/)
   
@@ -85,6 +87,9 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
     Visruth Srimath Kandali [Extending the `loo` Package](https://www.visruth.com/tags/gsoc/)
      
 - [TNL](https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2025)
+
+    Petr Sokol [Finite Volume Method Implementation for TNL](https://github.com/petrsokol/Blog-Posts-for-GSoC-2025/tree/main)
+  
 - [toqito](https://github.com/vprusso/toqito/wiki/GSoC-2025-Projects)
 
     Nafisa Shamim Rafa [Create and add to an example gallery for toqito](https://creativebinbag.github.io/Google-Summer-of-Code-Blog/)
