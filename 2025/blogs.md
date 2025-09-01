@@ -82,6 +82,9 @@ This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2025.
     Visruth Srimath Kandali [Extending the `loo` Package](https://www.visruth.com/tags/gsoc/)
      
 - [TNL](https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2025)
+
+    Petr Sokol [Finite Volume Method Implementation for TNL](https://github.com/petrsokol/Blog-Posts-for-GSoC-2025/tree/main)
+  
 - [toqito](https://github.com/vprusso/toqito/wiki/GSoC-2025-Projects)
 
     Nafisa Shamim Rafa [Create and add to an example gallery for toqito](https://creativebinbag.github.io/Google-Summer-of-Code-Blog/)
