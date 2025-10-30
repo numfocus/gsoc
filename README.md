@@ -6,6 +6,10 @@
 for [Google Summer of Code 2025][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
+> **Archived Projects:**  
+> GSoC 2022 project ideas have been moved to the [`archive/2022`](archive/2022) folder for historical reference.  
+> Only active and upcoming projects (GSoC 2023–2025) remain listed.
+
 [NumFOCUS][]  is committed to promoting and sustaining a professional and ethical community. Our [Code of Conduct](https://numfocus.org/code-of-conduct) is our effort to uphold these values and it provides a guideline and some of the tools and resources necessary to achieve this.
 
 [Google Summer of Code][GSoC] is an annual open source internship program
