@@ -526,7 +526,7 @@ In alphabetic order.
        <h1>PySAL</h1>
        <p>PySAL is a python library for geographical data science. It consists of 18 subpackages that cover a wide range of spatial analytical methods from exploratory spatial data analysis, spatial interaction modeling, spatial optimization, spatial econometrics, segregation, and spatial interpolation, among others.</p>
        <p>
-       <a href="https://pysal.org">Website</a> | <a href="https://discord.gg/BxFTEPFFZn">Discord</a> | <a href="https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2025">Ideas Page</a> | <a href="https://github.com/pysal/pysal"> Source Code</a> </p>
+       <a href="https://pysal.org">Website</a> | <a href="https://discord.gg/BxFTEPFFZn">Discord</a> | <a href="https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026">Ideas Page</a> | <a href="https://github.com/pysal/pysal"> Source Code</a> </p>
     </td>
 </tr>
 
