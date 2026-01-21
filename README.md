@@ -1,12 +1,12 @@
 # Google Summer of Code
 
-| [Sub organizations](#sub-organizations) | [IDEAS LIST][IL] | [Student guides][CONTRIBUTING]  |
+| [Sub organizations](#sub-organizations) | [IDEAS LIST][IL] | [Contributor guides][CONTRIBUTING]  |
 
 [NumFOCUS][] will be applying again as an umbrella mentoring organization
-for [Google Summer of Code 2025][GSoC]. [NumFOCUS][] supports and
+for [Google Summer of Code 2026][GSoC]. [NumFOCUS][] supports and
 promotes world-class, innovative, open source scientific software.
 
-[NumFOCUS][]  is committed to promoting and sustaining a professional and ethical community. Our [Code of Conduct](https://numfocus.org/code-of-conduct) is our effort to uphold these values and it provides a guideline and some of the tools and resources necessary to achieve this.
+[NumFOCUS][] is committed to promoting and sustaining a professional and ethical community. Our [Code of Conduct](https://numfocus.org/code-of-conduct) is our effort to uphold these values and it provides a guideline and some of the tools and resources necessary to achieve this.
 
 [Google Summer of Code][GSoC] is an annual open source internship program
 sponsored by Google. This repository contains information specific to NumFOCUS'
@@ -16,7 +16,7 @@ website](https://summerofcode.withgoogle.com/how-it-works/)
 
 <!--
 This Git repository stores information about NumFOCUS' participation in
-Google Summer of Code 2025 program and previous editions.
+Google Summer of Code program.
 -->
 
 This Git repository stores information about NumFOCUS'
@@ -26,13 +26,13 @@ application for Google Summer of Code in the current and previous years.
 **Table of Contents**
 
 - [Google Summer of Code](#google-summer-of-code)
-  - [Students](#students)
+  - [Contributors](#contributor)
   - [Sub Organizations](#sub-organizations)
   - [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
 
 <!-- markdown-toc end -->
 
-## Students
+## Contributor
 
 NumFOCUS is participating as a umbrella organization. This means that
 you will need to identify a specific project to apply to under the
@@ -41,10 +41,19 @@ NumFOCUS umbrella. (Projects are listed below.)
 Read [this document][CONTRIBUTING] to learn how to apply for the
 GSoC program with NumFOCUS. Please also check out our [ideas list][IL].
 
-For any questions, please open an issue in our [issue tracker][issues]
-or send a email to gsoc@numfocus.org, our mailing list address.
-Please also consider subscribing to the mailing list at
-https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc.
+For project-specific questions, contact the project directly.
+Every project has a Code of Conduct and a contributing guide,
+please read these before opening an issue about getting started with GSoC.
+GSoC is hands-on: rather than sending introductory emails, begin by triaging or solving issues to get to know the team.
+For general questions, open an issue in our [issue tracker][issues] or email gsoc@numfocus.org.
+You can also subscribe to the mailing list at https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc.
+
+## AI Guidelines
+
+At the organization level, contributors must clearly cite any AI tools used.
+AI use is generally acceptable but determined by each sub-organization/project;
+verify the project’s AI acceptance and guidelines before using AI.
+Please read Google’s [Guidance for GSoC Contributors using AI tooling in GSoC 2026][AIGUIDE].
 
 ## Sub Organizations
 
@@ -666,9 +675,10 @@ In alphabetic order.
 
 [ArviZ]: https://www.arviz.org
 [AstroPy]: https://www.astropy.org/
+[AIGUIDE]: https://docs.google.com/document/d/1t9GcIBnNXPNO6klRQvU8pL8-uV6afzLo6JUAM299suA/edit?tab=t.0#heading=h.tgbr0z4x9eg5
 [Blosc]: https://www.blosc.org/
 [Bokeh]: https://docs.bokeh.org/en/latest/
-[cantera]:  https://cantera.org/index.html
+[cantera]: https://cantera.org/index.html
 [Chainer]: https://chainer.org/
 [Clawpack]: https://www.clawpack.org/
 [CONTRIBUTING]: CONTRIBUTING-students.md
@@ -688,7 +698,7 @@ In alphabetic order.
 [FluxML]: https://fluxml.ai
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
-[IL]: 2021/ideas-list.md
+[IL]: 2026/ideas-list.md
 [IPython]: https://ipython.org/
 [issues]: https://github.com/numfocus/gsoc/issues
 [Julia]: https://julialang.org/
@@ -731,7 +741,7 @@ In alphabetic order.
 [SunPy]: https://sunpy.org/
 [SymPy]: https://www.sympy.org/
 [Theano]: http://deeplearning.net/software/theano/
-[TNL] : https://tnl-project.org/
+[TNL]: https://tnl-project.org/
 [xarray]: http://xarray.pydata.org/
 [Yellowbrick]: http://www.scikit-yb.org/en/latest/
 [yt]: https://yt-project.org/
