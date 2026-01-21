@@ -279,6 +279,20 @@ In alphabetic order.
     </td>
   </tr>
 
+  <tr>
+    <td>
+      <img width="800px" src="img/grass_logo.png"/>
+    </td>
+    <td>
+      <h1>GRASS</h1>
+      <p>
+        GRASS is a powerful computational engine for raster, vector, and geospatial processing. It supports terrain and ecosystem modeling, hydrology, data management, and imagery processing. With a built-in temporal framework and Python API, it enables advanced time series analysis and rapid geospatial programming, optimized for large-scale analysis on various hardware configurations. GRASS provides a curated repository of contributed tools that continue to be maintained and enhanced as research and technology evolves.
+      </p>
+      <p>
+        <a href="https://grass.osgeo.org">Website</a> | <a href="https://grasswiki.osgeo.org/wiki/GRASS_GSoC_Ideas_2026">Ideas List</a> | <a href="https://discourse.osgeo.org/c/grass/developer/61"> Contact </a> | <a href="https://github.com/OSGeo/grass">Source Code</a>
+      </p>
+    </td>
+  </tr>
 
   <tr>
    <td>
@@ -696,6 +710,7 @@ In alphabetic order.
 [equadratures]: https://equadratures.org/
 [FEniCSproject]: https://fenicsproject.org/
 [FluxML]: https://fluxml.ai
+[GRASS]: https://grass.osgeo.org
 [Gensim]: https://radimrehurek.com/gensim/
 [GSoC]: https://summerofcode.withgoogle.com/
 [IL]: 2026/ideas-list.md
