@@ -164,7 +164,7 @@
 
 -   Application Instructions
 
-    [CONTRIBUTING-students.md](../CONTRIBUTING-students.md)
+    [CONTRIBUTING-contributors.md](../CONTRIBUTING-contributors.md)
 
 -   Proposal Tags
 

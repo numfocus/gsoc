@@ -681,7 +681,7 @@ In alphabetic order.
 [cantera]: https://cantera.org/index.html
 [Chainer]: https://chainer.org/
 [Clawpack]: https://www.clawpack.org/
-[CONTRIBUTING]: CONTRIBUTING-students.md
+[CONTRIBUTING]: CONTRIBUTING-contributors.md
 [Conda]: https://github.com/conda/conda
 [conda-forge]: https://conda-forge.org
 [Colour]: https://www.colour-science.org/
