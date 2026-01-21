@@ -1,10 +1,10 @@
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 
-- [Contributing Guide for Students](#contributing-guide-for-students)
+- [Contributing Guide for Contributors](#contributing-guide-for-contributors)
     - [Getting Started Early](#getting-started-early)
     - [Am I experienced enough?](#am-i-experienced-enough)
-    - [Our Expectations From Students](#our-expectations-from-students)
+    - [Our Expectations From Contributors](#our-expectations-from-contributors)
     - [Default Instructions](#default-instructions)
         - [How to write a great Proposal](#how-to-write-a-great-proposal)
         - [Dividing your project](#dividing-your-project)
@@ -14,7 +14,7 @@
 <!-- markdown-toc end -->
 
 
-# Contributing Guide for Students
+# Contributing Guide for Contributors
 
 ## Getting Started Early
 
@@ -28,31 +28,31 @@ good introduction how to start contributing to open source projects.
 
 The answer is generally: **Yes**. We value creativity, intelligence and
 enthusiasm above specific knowledge of the libraries or algorithms we use. We
-think that an interested and motivated student who is willing to learn is more
+think that an interested and motivated contributor who is willing to learn is more
 valuable than anything else. The range of available projects should suit people
 with different backgrounds. At the same time if you have experience using your
 project of choice or one of it's dependencies (e.g., language) make sure to let
 us know about that as
 well.
-The [GSoC Guide](https://google.github.io/gsocguides/student/am-i-good-enough#)
+The [GSoC Guide](https://google.github.io/gsocguides/contributor/am-i-good-enough#)
 gives a good overview of this part for GSoC.
 
-## Our Expectations From Students
+## Our Expectations From Contributors
 
 ### During the application phase
 
 *The tips listed here can help your application. They are not required*
 
-Organizations usually favor students that show regular communication with
+Organizations usually favor contributors that show regular communication with
 possible mentors / organization until Google announces the accepted projects.
 
 Establishing regular communication is good for 2 reasons. It shows that you
-are a reliable student and that you have good communication skills. Good
-communication skills are an important part of GSoC since a student and mentor
+are a reliable contributor and that you have good communication skills. Good
+communication skills are an important part of GSoC since a contributor and mentor
 can rarely meet in person.
 
 When we evaluate an application we use the following point system to get a
-baseline comparison of students. We are listing those points to help you
+baseline comparison of contributors. We are listing those points to help you
 successfully apply and not missing an obvious point. You can always do more, but
 please check those points. We will be fair, we promise. You can always ask us
 and we will help you.
@@ -67,11 +67,11 @@ and we will help you.
 - 1pts Did you add a link to ALL your application files to a cloud hoster like GitHub or Dropbox? (easy points! 😉)
 - 0pts Be honest! Only universal Karma points. 🙂
 - 5pts Did you create a pull request on the existing code?
-- 5pts Did you continue communication until accepted students are announced?
+- 5pts Did you continue communication until accepted contributors are announced?
 
 ### During the summer
 
-*The items here are a requirement for students during the summer*
+*The items here are a requirement for contributors during the summer*
 
 **Communication**
 
@@ -99,7 +99,7 @@ and we will help you.
 
 **Blog**
 
-- Keep a regular journal of your experience as a student and blog at least once
+- Keep a regular journal of your experience as a contributor and blog at least once
   every 2 weeks.
 
 ## Default Instructions
@@ -136,7 +136,7 @@ You can use our [base template](https://github.com/numfocus/gsoc/blob/master/tem
 
 ### Dividing your project
 
-We require that all of our students have at least one commit in the development
+We require that all of our contributors have at least one commit in the development
 branch of your project before the end of the summer. The best way to achieve
 this is to divide your project into small self contained subprojects and plan to
 merge at least one of them around the phase 2 evaluations. We also require you
