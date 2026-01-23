@@ -7,6 +7,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [GRASS](https://grasswiki.osgeo.org/wiki/GRASS_GSoC_Ideas_2026)
 - [JuMP](https://github.com/jump-dev/GSOC)
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026)
+- [toqito](https://github.com/vprusso/toqito/wiki/GSoC-2026-Projects)
 
 <!-- Be transparent about AI tool usage
 
@@ -30,7 +31,6 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [Stan](https://github.com/stan-dev/stan/wiki/GSOC-2025-Proposed-Projects)
 - [TNL](https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2025)
-- [toqito](https://github.com/vprusso/toqito/wiki/GSoC-2025-Projects)
 - [Zarr](https://github.com/zarr-developers/gsoc/blob/main/2025/ideas-list.md)
 
 -->
