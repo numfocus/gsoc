@@ -319,7 +319,7 @@ In alphabetic order.
         JuMP is a modeling language and collection of supporting packages for mathematical optimization in Julia. JuMP makes it easy to formulate and solve a range of problem classes, including linear programs, integer programs, conic programs, semidefinite programs, and constrained nonlinear programs.
       </p>
       <p>
-        <a href="https://jump.dev">Website</a> | <a href="https://github.com/jump-dev/GSOC2023">Ideas List</a> | <a href="https://app.gitter.im/#/room/#JuliaOpt_JuMP-dev:gitter.im"> Contact </a> | <a href="https://github.com/jump-dev">Source Code</a>
+        <a href="https://jump.dev">Website</a> | <a href="https://github.com/jump-dev/GSOC">Ideas List</a> | <a href="https://app.slack.com/client/T68168MUP/C055CQDPKLL"> Contact </a> | <a href="https://github.com/jump-dev">Source Code</a>
       </p>
     </td>
   </tr>
