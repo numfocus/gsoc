@@ -190,6 +190,21 @@ In alphabetic order.
 
   <tr>
     <td>
+      <img width="800px" src="img/CVXPY-logo.png"/>
+    </td>
+    <td>
+       <h1>CVXPY</h1>
+       <p>
+         CVXPY is an open source Python-embedded modeling language for convex optimization problems. It lets you express your problem in a natural way that follows the math, rather than in the restrictive standard form required by solvers.
+       </p>
+       <p>
+         <a href="https://www.cvxpy.org/">Website</a> | <a href="https://github.com/cvxpy/GSOC">Ideas List</a> | <a href="https://github.com/cvxpy/cvxpy/discussions">Discussions</a> | <a href="https://github.com/cvxpy/cvxpy">Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
       <img width="800px" src="img/conda_forge.png"/>
     </td>
     <td>
