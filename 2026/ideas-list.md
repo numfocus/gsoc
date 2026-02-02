@@ -4,6 +4,7 @@ This is the home page of projects ideas of NumFOCUS for Google Summer of Code 20
 Since NumFOCUS is an umbrella organization you will only find links to the ideas
 page of each organization under the NumFOCUS umbrella at this page.
 
+- [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2026-Projects)
 - [CVXPY](https://github.com/cvxpy/GSOC)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2026-Project-Ideas)
 - [GRASS](https://grasswiki.osgeo.org/wiki/GRASS_GSoC_Ideas_2026)
@@ -15,7 +16,6 @@ page of each organization under the NumFOCUS umbrella at this page.
   
 <!-- Be transparent about AI tool usage
 
-- [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2025-Projects)
 - [ArviZ](https://github.com/arviz-devs/arviz/wiki/GsoC-2025-projects)
 - [conda / rattler](https://github.com/conda/rattler/issues/1058)
 - [DISCOVER Cookbook](https://github.com/numfocus/DISCOVER-Cookbook/discussions/208)
