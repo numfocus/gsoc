@@ -295,6 +295,21 @@ In alphabetic order.
   </tr>
 
   <tr>
+    <td>
+      <img width="800px" src="img/grass_logo.png"/>
+    </td>
+    <td>
+      <h1>HoloViz</h1>
+      <p>
+        HoloViz is an open-source Python ecosystem for creating interactive visualizations and data applications with minimal code and no required JavaScript. It connects tools like Panel, HoloViews, hvPlot, Datashader, and Bokeh so data scientists can move smoothly from exploration in a notebook to full web dashboards using the same declarative workflow. HoloViz emphasizes scalability for large datasets, rich interactivity such as linked plots and widgets, and easy deployment to standalone apps or cloud services—all while keeping the focus on simple, Python-first development.
+      </p>
+      <p>
+        <a href="https://holoviz.org">Website</a> | <a href="https://github.com/holoviz/holoviz/wiki/2026-GSoC-Project-List">Ideas List</a> | <a href="https://holoviz.org/community.html"> Contact </a> | <a href="https://github.com/holoviz/">Source Code</a>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
    <td>
       <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
    </td>

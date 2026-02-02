@@ -8,6 +8,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [CVXPY](https://github.com/cvxpy/GSOC)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2026-Project-Ideas)
 - [GRASS](https://grasswiki.osgeo.org/wiki/GRASS_GSoC_Ideas_2026)
+- [HoloViz](https://github.com/holoviz/holoviz/wiki/2026-GSoC-Project-List)
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md)
 - [JuMP](https://github.com/jump-dev/GSOC)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2026-projects)
