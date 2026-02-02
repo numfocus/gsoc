@@ -99,7 +99,7 @@ In alphabetic order.
         ArviZ is a project dedicated to promoting and building tools for exploratory analysis of Bayesian models. It currently has a Python and a Julia interface. ArviZ aims to integrate seamlessly with established probabilistic programming languages like PyStan, PyMC, Turing, Soss, emcee, or Pyro. Where the probabilistic programming languages aim to make it easy to build and solve Bayesian models, the ArviZ libraries aim to make it easy to process and analyze the results from those Bayesian models.
        </p>
        <p>
-         <a href="https://python.arviz.org/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2025-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs">Source Code</a>
+         <a href="https://python.arviz.org/en/latest/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2026-projects">Ideas List</a> | <a href="https://github.com/arviz-devs/arviz/discussions/categories/general"> Contact (GH Discussions) </a> | <a href="https://github.com/arviz-devs">Source Code</a>
        </p>
     </td>
   </tr>
@@ -295,6 +295,21 @@ In alphabetic order.
   </tr>
 
   <tr>
+    <td>
+      <img width="800px" src="img/grass_logo.png"/>
+    </td>
+    <td>
+      <h1>HoloViz</h1>
+      <p>
+        HoloViz is an open-source Python ecosystem for creating interactive visualizations and data applications with minimal code and no required JavaScript. It connects tools like Panel, HoloViews, hvPlot, Datashader, and Bokeh so data scientists can move smoothly from exploration in a notebook to full web dashboards using the same declarative workflow. HoloViz emphasizes scalability for large datasets, rich interactivity such as linked plots and widgets, and easy deployment to standalone apps or cloud services—all while keeping the focus on simple, Python-first development.
+      </p>
+      <p>
+        <a href="https://holoviz.org">Website</a> | <a href="https://github.com/holoviz/holoviz/wiki/2026-GSoC-Project-List">Ideas List</a> | <a href="https://holoviz.org/community.html"> Contact </a> | <a href="https://github.com/holoviz/">Source Code</a>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
    <td>
       <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
    </td>
@@ -304,7 +319,7 @@ In alphabetic order.
         Gridap is a new generation, open-source, finite element (FE) library implemented in the Julia programming language. Gridap aims at adopting a more modern programming style than existing FE applications written in C/C++ or Fortran.
       </p>
       <p>
-        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2024/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) </a> | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
+        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) </a> | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
       </p>
    </td>
  </tr>
