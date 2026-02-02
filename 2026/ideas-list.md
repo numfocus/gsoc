@@ -7,6 +7,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [CVXPY](https://github.com/cvxpy/GSOC)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2026-Project-Ideas)
 - [GRASS](https://grasswiki.osgeo.org/wiki/GRASS_GSoC_Ideas_2026)
+- [Gridap](https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md)
 - [JuMP](https://github.com/jump-dev/GSOC)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2026-projects)
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026)
