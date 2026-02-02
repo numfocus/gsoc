@@ -99,7 +99,7 @@ In alphabetic order.
         ArviZ is a project dedicated to promoting and building tools for exploratory analysis of Bayesian models. It currently has a Python and a Julia interface. ArviZ aims to integrate seamlessly with established probabilistic programming languages like PyStan, PyMC, Turing, Soss, emcee, or Pyro. Where the probabilistic programming languages aim to make it easy to build and solve Bayesian models, the ArviZ libraries aim to make it easy to process and analyze the results from those Bayesian models.
        </p>
        <p>
-         <a href="https://python.arviz.org/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2025-projects">Ideas List</a> | <a href="https://gitter.im/arviz-devs/community"> Contact (Gitter) </a> | <a href="https://github.com/arviz-devs">Source Code</a>
+         <a href="https://python.arviz.org/en/latest/">Website</a> | <a href="https://github.com/arviz-devs/arviz/wiki/GSoC-2026-projects">Ideas List</a> | <a href="https://github.com/arviz-devs/arviz/discussions/categories/general"> Contact (GH Discussions) </a> | <a href="https://github.com/arviz-devs">Source Code</a>
        </p>
     </td>
   </tr>
@@ -319,7 +319,7 @@ In alphabetic order.
         Gridap is a new generation, open-source, finite element (FE) library implemented in the Julia programming language. Gridap aims at adopting a more modern programming style than existing FE applications written in C/C++ or Fortran.
       </p>
       <p>
-        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2024/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) </a> | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
+        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) </a> | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
       </p>
    </td>
  </tr>

@@ -4,10 +4,12 @@ This is the home page of projects ideas of NumFOCUS for Google Summer of Code 20
 Since NumFOCUS is an umbrella organization you will only find links to the ideas
 page of each organization under the NumFOCUS umbrella at this page.
 
+- [ArviZ](https://github.com/arviz-devs/arviz/wiki/GSoC-2026-projects)
 - [CVXPY](https://github.com/cvxpy/GSOC)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2026-Project-Ideas)
 - [GRASS](https://grasswiki.osgeo.org/wiki/GRASS_GSoC_Ideas_2026)
 - [HoloViz](https://github.com/holoviz/holoviz/wiki/2026-GSoC-Project-List)
+- [Gridap](https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md)
 - [JuMP](https://github.com/jump-dev/GSOC)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2026-projects)
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026)
