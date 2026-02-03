@@ -642,9 +642,9 @@ In alphabetic order.
     </td>
     <td>
        <h1>Stan</h1>
-       <p> Software for Bayesian Data Analysis.  Stan combines a probabilistic programming language,  written in OCaml, with a collection of inference algorithms, written in C++, and interfaces for Python, Julia, and R.   Stan's probabilistic programming language is suitable for a wide range of applications, from simple linear regression to multi-level models and time-series analysis.  The Stan ecosystem of tools for validation and visualization facilitates decision-making and communication.  </p>
+       <p> Software for Bayesian Data Analysis. Stan combines a probabilistic programming language,  written in OCaml, with a collection of inference algorithms, written in C++, and interfaces for Python, Julia, and R. Stan's probabilistic programming language is suitable for a wide range of applications, from simple linear regression to multi-level models and time-series analysis. The Stan ecosystem of tools for validation and visualization facilitates decision-making and communication.  </p>
        <p>
-         <a href="https://mc-stan.org">Website</a> | <a href="https://discourse.mc-stan.org/t/google-summer-of-code-2025/38823">Contact</a> | <a href="https://github.com/stan-dev/stan/wiki/GSOC-2025-Proposed-Projects">Ideas Page</a> | <a href="https://github.com/stan-dev"> Source Code</a>
+         <a href="https://mc-stan.org">Website</a> | <a href="https://github.com/stan-dev/stan/issues">Contact</a> | <a href="https://github.com/stan-dev/stan/wiki/GSOC-2026-Proposed-Projects">Ideas Page</a> | <a href="https://github.com/stan-dev"> Source Code</a>
        </p>
     </td>
   </tr>
