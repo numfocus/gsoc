@@ -36,7 +36,17 @@ If you are new to open source or contributing to NumFOCUS for the first time, th
 
 Starting small and staying consistent is often the best way to build confidence and trust within the community.
 
+## Common Beginner Mistakes to Avoid
 
+New contributors often make small mistakes that can slow down the contribution process. Being aware of them early can save time and frustration:
+
+- Making large or multiple unrelated changes in a single pull request.
+- Working directly on the main branch instead of creating a feature branch.
+- Opening a pull request without clearly describing what was changed and why.
+- Not reading the contributing guide or project-specific instructions carefully.
+- Losing communication after opening an issue or pull request.
+
+Keeping contributions small, well-documented, and maintaining regular communication greatly improves the review experience for both contributors and mentors.
 
 ## Am I experienced enough?
 
