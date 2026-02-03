@@ -71,9 +71,7 @@ Organizations usually favor contributors that show regular communication with
 possible mentors / organization until Google announces the accepted projects.
 
 Establishing regular communication is good for 2 reasons. It shows that you
-are a reliable contributor and that you have good communication skills. Good
-communication skills are an important part of GSoC since a contributor and mentor
-can rarely meet in person.
+are a reliable contributor and that you have good communication skills. Good communication skills are an important part of GSoC, since contributors and mentors can rarely meet in person.
 
 When we evaluate an application we use the following point system to get a
 baseline comparison of contributors. We are listing those points to help you
