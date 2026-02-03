@@ -608,7 +608,20 @@ In alphabetic order.
     </td>
   </tr>
 
-   <tr>
+  <tr>
+    <td>
+      <img width="800px" src="https://github.com/SciML/SciMLDocs/raw/main/docs/src/assets/logo.png">
+    </td>
+    <td>
+       <h1>scikit-bio</h1>
+       <p>Scikit-bio is an open-source Python library for bioinformatics, providing versatile data structures, algorithms and educational resources. It features a comprehensive suite of tools for biological "omics" data analysis, including the processing and analysis of high-dimensional, sparse and knowledge graph-organized data.</p>
+       <p>
+         <a href="https://scikit.bio/">Website</a> | <a href="https://github.com/scikit-bio/scikit-bio/wiki/GSOC-2026-project-ideas">Ideas Page</a> | <a href="https://scikit.bio/contribute.html">Contribution Guide</a> | <a href="https://github.com/scikit-bio/scikit-bio"> Source Code</a>
+       </p>
+    </td>
+  </tr>
+
+  <tr>
     <td>
       <img width="800px" src="https://github.com/SciML/SciMLDocs/raw/main/docs/src/assets/logo.png">
     </td>
@@ -758,7 +771,7 @@ In alphabetic order.
 [rOpenSci]: https://ropensci.org/
 [quantecon]: https://quantecon.org/
 [SCF]: https://carpentries.org/
-[scikit-bio]: http://scikit-bio.org/
+[scikit-bio]: https://scikit.bio/
 [scikit-image]: https://scikit-image.org/
 [scikit-learn]: https://scikit-learn.org/stable/
 [SciPy]: https://www.scipy.org/
