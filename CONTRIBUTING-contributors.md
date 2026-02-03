@@ -24,6 +24,20 @@ the mailing list of the organization, or perhaps fix a small
 bug. [The opensource guide](https://opensource.guide/how-to-contribute/) has a
 good introduction how to start contributing to open source projects.
 
+## Quick Start for First-Time Contributors
+
+If you are new to open source or contributing to NumFOCUS for the first time, the following steps can help you get started smoothly:
+
+1. Read this contributing guide fully before starting.
+2. Explore the issues list and look for documentation, beginner-friendly, or clarification-related tasks.
+3. Introduce yourself briefly on the relevant communication channels if available.
+4. Start with a small contribution such as documentation improvements, typo fixes, or clarifying existing instructions.
+5. Ask questions early and openly if anything is unclear — the community values communication and learning.
+
+Starting small and staying consistent is often the best way to build confidence and trust within the community.
+
+
+
 ## Am I experienced enough?
 
 The answer is generally: **Yes**. We value creativity, intelligence and
