@@ -577,7 +577,7 @@ In alphabetic order.
        <h1>PyTorch-Ignite</h1>
        <p>PyTorch-Ignite is a high-level library to help with training neural networks in PyTorch</p>
        <p>
-         <a href="https://pytorch-ignite.ai/">Website</a> | <a href="https://pytorch-ignite.ai/chat/">Discord</a> | <a href="https://github.com/pytorch/ignite/discussions">GitHub Discussions</a> | <a href="https://github.com/pytorch/ignite/wiki/GSoC-2023-project-ideas">Ideas Page</a> | <a href="https://github.com/pytorch/ignite"> Source Code</a>
+         <a href="https://pytorch-ignite.ai/">Website</a> | <a href="https://pytorch-ignite.ai/chat/">Discord</a> | <a href="https://github.com/pytorch/ignite/discussions">GitHub Discussions</a> | <a href="https://github.com/pytorch/ignite/wiki/GSoC-2026-project-idea">Ideas Page</a> | <a href="https://github.com/pytorch/ignite"> Source Code</a>
        </p>
     </td>
   </tr>
