@@ -17,6 +17,7 @@ page of each organization under the NumFOCUS umbrella at this page.
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026)
 - [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-current)
 - [scikit-bio](https://github.com/scikit-bio/scikit-bio/wiki/GSOC-2026-project-ideas)
+- [SciML](https://sciml.ai/dev/#google_summer_of_code)
 - [Stan](https://github.com/stan-dev/stan/wiki/GSOC-2026-Proposed-Projects)
 - [sbi](https://github.com/sbi-dev/sbi/wiki/GSoC%E2%80%902026%E2%80%90Projects)
 - [toqito](https://github.com/vprusso/toqito/wiki/GSoC-2026-Projects)
