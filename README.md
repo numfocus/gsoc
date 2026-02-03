@@ -279,6 +279,21 @@ In alphabetic order.
       </p>
     </td>
   </tr>
+  
+  <tr>
+   <td>
+      <img width="800px" src="https://github.com/gammapy/gammapy/blob/main/docs/_static/gammapy_logo.png"/>
+   </td>
+   <td>
+      <h1>Gridap</h1>
+      <p>
+        Gammapy is a community-developed, open-source Python package for gamma-ray astronomy built on Numpy, Scipy and Astropy. It is the core library for the CTAO Science Tools but can also be used to analyse data from existing imaging atmospheric Cherenkov telescopes (IACTs), such as H.E.S.S., MAGIC and VERITAS. It also provides some support for Fermi-LAT and HAWC data analysis..
+      </p>
+      <p>
+        <a href="https://gammapy.org/">Website</a>  | <a href="https://github.com/gammapy/gammapy/wiki/GSoC-2026-Project"> Ideas List</a> | <a href="gammapy-ld-l@in2p3.fr"> General contact </a> | <a href="https://github.com/gammapy/gammapy">Source Code</a>
+      </p>
+   </td>
+ </tr>  
 
   <tr>
     <td>
