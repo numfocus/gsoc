@@ -312,7 +312,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="img/grass_logo.png"/>
+      <img width="800px" src="‎img/holoviz.png‎"/>
     </td>
     <td>
       <h1>HoloViz</h1>
