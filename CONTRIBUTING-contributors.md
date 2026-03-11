@@ -22,7 +22,7 @@ Experience shows that the best thing to help your application is to contact the
 organization you want to work with early. For this you can introduce yourself on
 the mailing list of the organization, or perhaps fix a small
 bug. [The opensource guide](https://opensource.guide/how-to-contribute/) has a
-good introduction how to start contributing to open source projects.
+good introduction on how to start contributing to open source projects.
 
 ## Am I experienced enough?
 
@@ -31,7 +31,7 @@ enthusiasm above specific knowledge of the libraries or algorithms we use. We
 think that an interested and motivated contributor who is willing to learn is more
 valuable than anything else. The range of available projects should suit people
 with different backgrounds. At the same time if you have experience using your
-project of choice or one of it's dependencies (e.g., language) make sure to let
+project of choice or one of its dependencies (e.g., language) make sure to let
 us know about that as
 well.
 The [GSoC Guide](https://google.github.io/gsocguides/contributor/am-i-good-enough#)
@@ -82,7 +82,7 @@ and we will help you.
   community bonding period.
 - Communicate every working day with your mentor, preferably in public using the
   standard channels of your project.
-- If there is a reason why you can't work or can't contact us on a regular basis
+- If there is a reason why you cannot work or contact us on a regular basis.
   please make us aware of this in advance.
 - If you don't communicate with us regularly, we will fail you.
 
