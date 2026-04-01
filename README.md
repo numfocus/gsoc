@@ -30,7 +30,6 @@ application for Google Summer of Code in the current and previous years.
   - [AI Guidelines](#ai-guidelines)
   - [Sub Organizations](#sub-organizations)
   - [Organizations Confirmed Under NumFOCUS Umbrella](#organizations-confirmed-under-numfocus-umbrella)
-
 <!-- markdown-toc end -->
 
 ## Contributor
@@ -46,6 +45,7 @@ For project-specific questions, contact the project directly.
 Every project has a Code of Conduct and a contributing guide,
 please read these before opening an issue about getting started with GSoC.
 GSoC is hands-on: rather than sending introductory emails, begin by triaging or solving issues to get to know the team.
+
 For general questions, open an issue in our [issue tracker][issues] or email gsoc@numfocus.org.
 You can also subscribe to the mailing list at https://groups.google.com/a/numfocus.org/forum/#!forum/gsoc.
 
@@ -53,8 +53,8 @@ You can also subscribe to the mailing list at https://groups.google.com/a/numfoc
 
 At the organization level, contributors must clearly cite any AI tools used.
 AI use is generally acceptable but determined by each sub-organization/project;
-verify the project’s AI acceptance and guidelines before using AI.
-Please read Google’s [Guidance for GSoC Contributors using AI tooling in GSoC 2026][AIGUIDE].
+verify the project's AI acceptance and guidelines before using AI.
+Please read Google's [Guidance for GSoC Contributors using AI tooling in GSoC 2026][AIGUIDE].
 
 ## Sub Organizations
 
@@ -65,11 +65,11 @@ this [guide](CONTRIBUTING-mentors.md).
 
 <!--
 The list should contain for each project.
- - A short description
- - link to their website
- - link to ideas page
- - link how to best contact them
- - link to beginners guide
+- A short description
+- link to their website
+- link to ideas page
+- link how to best contact them
+- link to beginners guide
 -->
 
 In alphabetic order.
@@ -105,90 +105,6 @@ In alphabetic order.
     </td>
   </tr>
 
-
-  <tr>
-    <td>
-      <img width="800px" src="img/bambi.png"/>
-    </td>
-    <td>
-       <h1>Bambi</h1>
-       <p>
-      Bambi (BAyesian Model Building Interface) is an open source Python package designed to make it easier for practitioners to build statistical models from a wide range of families using a formula notation similar to those found in R. It is built on top of the PyMC probabilistic programming framework and the ArviZ package for exploratory analysis of Bayesian models.
-       </p>
-       <p>
-         <a href="https://bambinos.github.io/bambi/">Website</a> | <a href="https://github.com/bambinos/bambi/wiki/GSoC-2024-projects">Ideas List</a> | <a href="https://github.com/bambinos/bambi/discussions"> Discussions </a> | <a href="https://github.com/bambinos">Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <img width="800px" src="img/biocommons.png"/>
-    </td>
-    <td>
-       <h1>biocommons</h1>
-       <p>
-        The biocommons is a community that fosters collaboration on pre-competitive, interoperable, and high-quality bioinformatics open source software and data, primarily for biological sequence analysis and interpretation.  Our software is used by clinical genetics/diagnostics companies, computational biologists and scientists, and tool and database developers.
-       </p>
-       <p>
-         <a href="https://biocommons.org/">Website</a> | <a href="https://github.com/orgs/biocommons/projects/8">Project Ideas</a> | <a href="https://biocommons.org/en/latest/community/getting-connected/">Getting Connected</a> | <a href="https://github.com/biocommons/">GitHub</a>
-       </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <img width="800px" src="img/mpm.png"/>
-    </td>
-    <td>
-       <h1>CB-Geo MPM</h1>
-       <p>
-          CB-Geo MPM is an HPC-enabled Material Point Method solver for large-deformation modeling. It supports isoparametric elements to model complex geometries and creates photo-realistic rendering.
-       </p>
-       <p>
-       <a href="https://www.cb-geo.com/research/mpm/">Website</a> | <a href="https://github.com/cb-geo/mpm/discussions/744">Ideas List</a> | <a href="https://github.com/cb-geo/mpm/discussions">Discussions</a> | <a href="https://github.com/cb-geo/mpm">Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <img width="800px" src="img/colour.png"/>
-    </td>
-    <td>
-       <h1>Colour</h1>
-       <p>
-          <a href="https://github.com/colour-science/colour">Colour</a> is an
-          open-source <a href="https://www.python.org/">Python</a> package
-          providing a comprehensive number of algorithms and datasets for
-          colour science.
-       </p>
-       <p>
-          It is freely available under the
-          <a href="https://opensource.org/licenses/BSD-3-Clause">New BSD License</a>
-          terms.
-       </p>
-       <p>
-          <a href="https://www.colour-science.org/">Website</a> | <a href="https://github.com/colour-science/GSoC/blob/master/2023/GSoC-2023-Project-Ideas.md">Ideas List</a> | <a href="mailto:colour-developers@colour-science.org">Contact</a> | <a href="https://github.com/colour-science/colour">Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <img width="800px" src="img/cupy-logo.png"/>
-    </td>
-    <td>
-       <h1>CuPy</h1>
-       <p>
-         CuPy is a NumPy/SciPy-compatible array library for GPU-accelerated computing with Python. CuPy acts as a drop-in replacement to run existing NumPy/SciPy code on NVIDIA CUDA or AMD ROCm platforms.
-       </p>
-       <p>
-       <a href="https://cupy.dev">Website</a> | <a href="https://github.com/cupy/cupy/wiki/GSoC-2024-Project-Ideas">Ideas List</a> | <a href="https://gitter.im/cupy/community">Chat on Gitter</a> | <a href="https://groups.google.com/forum/#!forum/cupy">Contact</a> | <a href="https://github.com/cupy/cupy">Source Code</a>
-       </p>
-    </td>
-  </tr>
-
   <tr>
     <td>
       <img width="800px" src="img/CVXPY-logo.png"/>
@@ -205,81 +121,20 @@ In alphabetic order.
   </tr>
 
   <tr>
-    <td>
-      <img width="800px" src="img/conda_forge.png"/>
-    </td>
-    <td>
-       <h1>Conda Forge</h1>
-       <p>
-        A community led collection of recipes, build infrastructure and distributions for the conda package manager.
-       </p>
-       <p>
-         <a href="https://conda-forge.org">Website</a>  | <a href="https://hackmd.io/@conda-community/conda-gsoc-ideas-2024">Ideas List</a> | <a href="https://gitter.im/conda-forge/conda-forge.github.io"> Gitter </a> | <a href="https://github.com/conda-forge">Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-  <tr>
    <td>
      <img width="800px" src="img/ecodata-retriever.png"/>
    </td>
    <td>
       <h1>Data Retriever</h1>
       <p>
-        The Data Retriever ecosystem improves reproducible research through data product management. The platform takes advantage of freely available data sources in a variety of formats, standardizes them, and makes them available to scientists in a form that is ready to analyze. Data sources range from tabular data, spatial data packages and APIs. Several data packages use the ecosystems, and many projects support or rely on the ecosystem.
+        The Data Retriever ecosystem improves reproducible research through data product management. The platform takes advantage of freely available data sources in a variety of formats, standardizes them, and makes them available to scientists in a form that is ready to analyze. Data sources range from tabular data, spatial data packages and APIs. Several data packages use the ecosystems, and many projects support or rely on the ecosystem.
       </p>
       <p>
         <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2026-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) </a> | <a href="https://github.com/weecology/retriever">Source Code</a>
       </p>
    </td>
- </tr>
-
-  <tr>
-   <td>
-     <img width="800px" src="img/discover-cookbook.png"/>
-   </td>
-   <td>
-      <h1>DISCOVER Cookbook</h1>
-      <p>
-        The DISCOVER cookbook is a resource for organizers of conferences to produce and manage more diverse and inclusive events. It focuses specifically on plans, decisions, and actions organizers can take.
-      </p>
-      <p>
-        <a href="https://discover-cookbook.numfocus.org/">Website</a>  | <a href="https://github.com/numfocus/DISCOVER-Cookbook/discussions/208"> Ideas List</a> | <a href="https://github.com/numfocus/DISCOVER-Cookbook/discussions"> Contact (Github Discussions) </a> | <a href="https://github.com/numfocus/DISCOVER-Cookbook">Source Code</a>
-      </p>
-   </td>
- </tr>
-
-
-<tr>
-   <td>
-     <img width="800px" src="img/fenics.png"/>
-   </td>
-   <td>
-      <h1>FEniCS</h1>
-      <p>
-       FEniCS is an automated finite element library used to solve equations used in modeling, featuring a domain-specific language and automated code generation. Users input a problem that looks very much like mathematical notation; FEniCS then translates that into computer code. It solves problems for which there is no analytical (exact) solution numerically.
-      </p>
-      <p>
-        <a href="https://fenicsproject.org/">Website</a>  | <a href="https://github.com/FEniCS/gsoc/blob/gsoc-2024/2024/fenics-ideas-list.md"> Ideas List</a> | <a href="https://fenicsproject.org/community/"> Contact </a> | <a href="https://github.com/FEniCS">Source Code</a>
-      </p>
-   </td>
- </tr>
-
-  <tr>
-    <td>
-      <img width="800px" src="img/flux.png"/>
-    </td>
-    <td>
-      <h1>FluxML</h1>
-      <p>
-        FluxML is a 100%-pure Julia machine learning stack built on top of Julia's native automatic differentiation and GPU support. Our organization maintains packages for building and training neural networks, data pre-processing pipelines, standard deep learning models, automatic differentiation, and more. By writing our complete toolchain in Julia, we aim to make machine learning simple, extensible, and performant.
-      </p>
-      <p>
-        <a href="https://fluxml.ai">Website</a> | <a href="https://fluxml.ai/gsoc">Ideas List</a> | <a href="https://julialang.org/community/#community_channels"> Contact (Slack or Zulip) </a> | <a href="https://github.com/FluxML">Source Code</a>
-      </p>
-    </td>
   </tr>
-  
+
   <tr>
    <td>
       <img width="800px" src="https://github.com/gammapy/gammapy/blob/main/docs/_static/gammapy_logo.png"/>
@@ -293,7 +148,7 @@ In alphabetic order.
         <a href="https://gammapy.org/">Website</a>  | <a href="https://github.com/gammapy/gammapy/wiki/GSoC-2026-Project"> Ideas List</a> | <a href="gammapy-ld-l@in2p3.fr"> General contact </a> | <a href="https://github.com/gammapy/gammapy">Source Code</a>
       </p>
    </td>
- </tr>  
+  </tr>
 
   <tr>
     <td>
@@ -312,7 +167,22 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="‎img/holoviz.png‎"/>
+      <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
+    </td>
+    <td>
+      <h1>Gridap</h1>
+      <p>
+        Gridap is a new generation, open-source, finite element (FE) library implemented in the Julia programming language. Gridap aims at adopting a more modern programming style than existing FE applications written in C/C++ or Fortran.
+      </p>
+      <p>
+        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) </a> | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img width="800px" src="img/holoviz.png"/>
     </td>
     <td>
       <h1>HoloViz</h1>
@@ -321,36 +191,6 @@ In alphabetic order.
       </p>
       <p>
         <a href="https://holoviz.org">Website</a> | <a href="https://github.com/holoviz/holoviz/wiki/2026-GSoC-Project-List">Ideas List</a> | <a href="https://holoviz.org/community.html"> Contact </a> | <a href="https://github.com/holoviz/">Source Code</a>
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-   <td>
-      <img width="800px" src="https://github.com/gridap/Gridap.jl/raw/master/images/color-logo-only-square.png"/>
-   </td>
-   <td>
-      <h1>Gridap</h1>
-      <p>
-        Gridap is a new generation, open-source, finite element (FE) library implemented in the Julia programming language. Gridap aims at adopting a more modern programming style than existing FE applications written in C/C++ or Fortran.
-      </p>
-      <p>
-        <a href="https://gridap.github.io/Tutorials/stable/">Website</a>  | <a href="https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md"> Ideas List</a> | <a href="https://gitter.im/Gridap-jl/community"> Contact (Gitter) </a> | <a href="https://github.com/gridap/Gridap.jl">Source Code</a>
-      </p>
-   </td>
- </tr>
-
-  <tr>
-    <td>
-      <img width="800px" src="img/igraph.png"/>
-    </td>
-    <td>
-      <h1>igraph</h1>
-      <p>
-        igraph is a collection of tools for the analysis of complex network. It emphasizes efficiency, portability and easy of use. igraph can be programmed in R, Python, Mathematica and C/C++.
-      </p>
-      <p>
-        <a href="https://igraph.org">Website</a> | <a href="https://github.com/igraph/igraph/wiki/Mentored-Projects">Ideas Page</a> | <a href="https://igraph.discourse.group/"> Contact (Discourse) </a> | <a href="https://github.com/igraph/">Source Code</a>
       </p>
     </td>
   </tr>
@@ -372,24 +212,6 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="img/jupyter.png"/>
-    </td>
-    <td>
-      <h1>JupyterLab</h1>
-      <p>
-        JupyterLab is a web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.
-      </p>
-      <p>
-        JupyterLab is a project of the Jupyter organization: free software, open standards, and web services for interactive computing across all programming languages.
-      </p>
-      <p>
-        <a href="https://jupyterlab.readthedocs.io/en/latest/">JupyterLab Website</a> | <a href="https://jupyter.org/">Jupyter Website</a> | <a href="https://github.com/orgs/jupyterlab/projects/8/views/1?pane=info">Ideas List</a> | <a href="https://app.gitter.im/#/room/#jupyterlab_jupyterlab:gitter.im">Contact</a> | <a href="https://github.com/jupyterlab/jupyterlab">Source Code</a>
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
       <img width="800px" src="https://matplotlib.org/_static/logo_light.svg"/>
     </td>
     <td>
@@ -402,123 +224,6 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-
- <tr>
-   <td>
-     <img width="800px" src="img/mesa.png"/>
-   </td>
-   <td>
-      <h1>Mesa</h1>
-      <p>
-        Mesa allows users to quickly create agent-based models using built-in core components (such as spatial grids and agent schedulers) or customized implementations; visualize them using a browser-based interface; and analyze their results using Python’s data analysis tools. Its goal is to be the Python 3-based counterpart to NetLogo, Repast, or MASON.
-      </p>
-      <p>
-        <a href="https://mesa.readthedocs.io/en/main/">Website</a> | <a href ="https://github.com/projectmesa/mesa/wiki/Projects-for-Google-Summer-of-Code-2023">Ideas Page</a> | <a href="https://groups.google.com/g/projectmesa"> Contact (Mailing List) </a>| <a href="https://github.com/projectmesa/mesa">Source Code</a>
-      </p>
-   </td>
- </tr>
-
- <tr>
-   <td>
-     <img width="800px" src="img/mlpack.png"/>
-   </td>
-   <td>
-      <h1>mlpack</h1>
-      <p>
-        mlpack is an intuitive, fast, and flexible C++ machine learning library with bindings to other languages. It is meant to be a machine learning analog to LAPACK, and aims to implement a wide array of machine learning methods and functions as a "swiss army knife" for machine learning researchers. In addition to its powerful C++ interface, mlpack also provides command-line programs and Python bindings, as well as bindings to other languages.
-      </p>
-      <p>
-        <a href="https://www.mlpack.org/">Website</a> | <a href ="https://github.com/mlpack/mlpack/wiki/SummerOfCodeIdeas">Ideas Page</a> | <a href="https://www.mlpack.org/doc/developer/community.html">Contact (Matrix chat)</a>| <a href="https://github.com/mlpack/mlpack">Source Code</a>
-      </p>
-   </td>
- </tr>
-
- <tr>
-   <td>
-     <img width="800px" src="img/networkx.png"/>
-   </td>
-   <td>
-      <h1>NetworkX</h1>
-      <p>
-        NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
-      </p>
-      <p>
-        <a href="https://networkx.org/">Website</a> | <a href ="http://networkx.org/documentation/latest/developer/projects.html#mentored-projects">Ideas Page</a> | <a href="https://github.com/networkx/networkx/discussions"> Contact (GitHub Discussions) </a>| <a href="https://github.com/networkx/networkx">Source Code</a>
-      </p>
-   </td>
- </tr>
-
- <tr>
-    <td>
-      <img width="800px" src="https://avatars.githubusercontent.com/u/70977326"/>
-    </td>
-    <td>
-       <h1>Open2C</h1>
-       <p>
-          Open2C develops open-source software for the analysis of spatial genome organization, particularly chromosome conformation capture (3C) and Hi-C data. Our tools are designed to be easy to use, flexible for novel analytical approaches, and scalable for large datasets. We welcome Google Summer of Code contributors!
-       </p>
-       <p>
-       <a href="https://open2c.github.io/">Website</a> | <a href="https://github.com/open2c/open2c.github.io/wiki/GSoC-2025">Ideas List</a> | <a href="https://discord.com/invite/qVfSbDYHNG">Discord</a> | <a href="https://github.com/open2c">Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-   <tr>
-    <td>
-     <img width="800px" src="img/openfhe_logo.png"/>
-   </td>
-   <td>
-      <h1>OpenFHE</h1>
-      <p>
-        OpenFHE is an open-source Fully Homomorphic Encryption (FHE) library that includes efficient implementations of all common FHE schemes: BFV, BGV, CKKS, DM and CGGI.
-      </p>
-      <p>
-        <a href="https://www.openfhe.org//">Website</a> | <a href ="https://github.com/openfheorg/openfhe-development/wiki/GSOC-2023">Ideas Page</a> | <a href="https://openfhe.discourse.group/"> Contact Us (Discourse)</a>| <a href="https://github.com/openfheorg/openfhe-development">Source Code</a>
-      </p>
-   </td>
- </tr>
-
- <tr>
-   <td>
-     <img width="800px" src="https://opensciencelabs.org/icons/logo-osl.svg"/>
-   </td>
-   <td>
-      <h1>Open Science Labs</h1>
-      <p>
-        Open Science Labs is a global community dedicated to creating an open space for teaching, learning, and sharing information about open science and computational tools. Our community develops tools that address real-world problems and collaborates with other projects and workgroups to improve technology and create international opportunities for our community. Although our focus may seem broad, we initially prioritize supporting Research Software Engineers (RSEs) who often face computational challenges in their work.
-      </p>
-      <p>
-        <a href="https://opensciencelabs.org/">Website</a> | <a href ="https://github.com/OpenScienceLabs/gsoc/blob/main/project-ideas/gsoc2024.md">Ideas Page</a> | <a href="https://github.com/orgs/OpenScienceLabs/discussions"> Contact (GitHub Discussions) </a>| <a href="https://github.com/osl-incubator">Source Code</a>
-     </p>
-   </td>
- </tr>
-
-<tr>
-    <td>
-      <img width="800px" src="img/optimagic_logo.png"> </td>
-    <td>
-       <h1>optimagic</h1>
-       <p>optimagic is a Python package for numerical optimization. It is a unified interface to optimizers from SciPy, NlOpt and other packages. optimagic's minimize function works just like SciPy's, so you don't have to adjust your code. You simply get more optimizers for free. On top you get diagnostic tools, parallel numerical derivatives and more.</p>
-       <p>
-         <a href="https://optimagic.readthedocs.io/en/latest/">Website</a> | <a href="https://ose.zulipchat.com/#narrow/channel/221432-optimagic">Zulip</a> | <a href="https://github.com/optimagic-dev/optimagic/discussions/559">Ideas Page</a> | <a href="https://github.com/optimagic-dev/optimagic">Source Code</a>
-       </p>
-    </td>
-</tr>
-
- <tr>
-   <td>
-    <img width="800px" src="https://github.com/contramundum53/gsoc/assets/24619922/c60fcb93-079c-4498-9a6d-21b92554dd47"/>
-   </td>
-   <td>
-      <h1>Optuna</h1>
-      <p>
-        <a href="https://github.com/optuna/optuna">Optuna</a> is an open source hyperparameter optimization framework to automate hyperparameter search. Optuna features 1. define-by-run interface for defining search spaces, 2. state-of-the-art algorithms to efficiently search large spaces and prune unpromising trials for faster results, and 3. easy parallelization for hyperparameter searches over multiple threads or processes without modifying code.
-      </p>
-      <p>
-        <a href="https://optuna.org/">Website</a> | <a href ="https://github.com/optuna/optuna/wiki/Optuna-GSoC-2024">Ideas Page</a> | <a href="mailto:optuna@preferred.jp">Contact</a> (optuna@preferred.jp)| <a href="https://github.com/optuna/optuna">Source Code</a>
-     </p>
-   </td>
- </tr>
 
   <tr>
     <td>
@@ -533,33 +238,7 @@ In alphabetic order.
     </td>
   </tr>
 
- <tr>
-    <td>
-      <img width="800px" src="img/PyBaMM.png">
-    </td>
-    <td>
-       <h1>PyBaMM</h1>
-       <p>PyBaMM (Python Battery Mathematical Modelling) solves physics-based electrochemical DAE models by using state-of-the-art automatic differentiation and numerical solvers.</p>
-       <p>
-         <a href="https://www.pybamm.org">Website</a> | <a href="https://pybamm.org/community/"> Contact </a> | <a href="https://pybamm.org/gsoc/2025/">Ideas Page</a> | <a href="https://github.com/pybamm-team/PyBaMM"> Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-<tr>
-    <td>
-      <img width="800px" src="https://pylops.readthedocs.io/en/stable/_static/pylops.png">
-    </td>
-    <td>
-       <h1>PyLops</h1>
-       <p> PyLops is an open-source Python library focused on providing a backend-agnostic, idiomatic, matrix-free library of linear operators and related computations. It is inspired by the iconic MATLAB Spot – A Linear-Operator Toolbox project.</p>
-       <p>
-         <a href="https://pylops.readthedocs.io/">Website</a> | <a href="https://pylops.slack.com/">Slack</a> | <a href="https://github.com/PyLops/pylops/wiki/GSoC-2023-Project-Ideas">Ideas Page</a> | <a href="https://github.com/PyLops/pylops"> Source Code</a>
-       </p>
-    </td>
-</tr>
-
-<tr>
+  <tr>
     <td>
       <img width="800px" src="img/pymc_logo.png">
     </td>
@@ -570,9 +249,9 @@ In alphabetic order.
          <a href="https://www.pymc.io/welcome.html">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2026-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc"> Source Code</a>
        </p>
     </td>
-</tr>
+  </tr>
 
-<tr>
+  <tr>
     <td>
       <img width="800px" src="https://user-images.githubusercontent.com/8590583/89052459-bad41a00-d323-11ea-9be2-beb7d0d1b7ea.png">
     </td>
@@ -582,8 +261,7 @@ In alphabetic order.
        <p>
        <a href="https://pysal.org">Website</a> | <a href="https://discord.gg/BxFTEPFFZn">Discord</a> | <a href="https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026">Ideas Page</a> | <a href="https://github.com/pysal/pysal"> Source Code</a> </p>
     </td>
-</tr>
-
+  </tr>
 
   <tr>
     <td>
@@ -597,7 +275,6 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-
 
   <tr>
     <td>
@@ -640,7 +317,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="https://github.com/SciML/SciMLDocs/raw/main/docs/src/assets/logo.png">
+      <img width="800px" src="https://scikit.bio/_images/logo.svg"> 
     </td>
     <td>
        <h1>SciML</h1>
@@ -666,33 +343,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="https://taskflow.github.io/images/logo.png">
-    </td>
-    <td>
-       <h1>Taskflow</h1>
-       <p> Parallel and heterogeneous programming with high performance and simultaneous high productivity </p>
-       <p>
-         <a href="https://taskflow.github.io/">Website</a> | <a href="https://taskflow.github.io/#tag_contact">Contact</a> | <a href="https://github.com/taskflow/GSoC2024">Ideas Page</a> | <a href="https://github.com/taskflow/taskflow"> Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <img width="800px" src="https://tnl-project.org/files/logos/tnl/logo-text-white.png">
-    </td>
-    <td>
-       <h1>TNL</h1>
-       <p> TNL is a collection of building blocks that facilitate the development of efficient numerical solvers and HPC algorithms. It is implemented in C++ using modern programming paradigms in order to provide a flexible and user-friendly interface such as the STL library, for example. TNL provides native support for modern hardware architectures such as multicore CPUs, GPUs, and distributed systems, which can be managed via a unified interface. </p>
-       <p>
-         <a href="https://tnl-project.org">Website</a> | <a href="https://matrix.to/#/#tnl:matrix.org">Matrix</a> | <a href="https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2025">Ideas Page</a> | <a href="https://gitlab.com/tnl-project/tnl/-/tree/main"> Source Code</a>
-       </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <img width="800px" src="https://raw.githubusercontent.com/vprusso/toqito/refs/heads/master/docs/figures/logo.svg">
+      <img width="800px" src="https://raw.githubusercontent.com/vprusso/toqito/master/docs/content/figures/logo-dark.svg">
     </td>
     <td>
        <h1>toqito</h1>
@@ -702,35 +353,7 @@ In alphabetic order.
        </p>
     </td>
   </tr>
-
-<tr>
-    <td>
-      <img width="800px" src="https://github.com/numfocus/gsoc/blob/master/img/zarr.png">
-    </td>
-    <td>
-       <h1>Zarr</h1>
-       <p> Zarr is a file storage format for chunked, compressed, N-dimensional arrays based on an open-source specification. </p>
-       <p>
-         <a href="https://zarr.dev/">Website</a> | <a href="https://ossci.zulipchat.com/">ZulipChat</a> | <a href="https://github.com/zarr-developers/gsoc/blob/main/2025/ideas-list.md">Ideas Page</a> | <a href="https://github.com/zarr-developers/zarr-python"> Source Code</a>
-       </p>
-    </td>
-  </tr>
-<tr>
-    <td>
-      <img width="800px" src="https://github.com/conda.png">
-    </td>
-    <td>
-       <h1>Conda</h1>
-       <p> Conda is a community governing the Conda package format and tools around it. </p>
-       <p>
-         <a href="https://conda.org">Website</a> | <a href="https://conda.zulipchat.com/">ZulipChat</a> | <a href="https://github.com/conda/rattler/issues/1058">Ideas Page</a> | <a href="https://github.com/conda/rattler/"> Rattler (Conda in Rust) / Source Code</a>
-       </p>
-    </td>
-  </tr>
-
 </table>
-
-
 
 [ArviZ]: https://www.arviz.org
 [AstroPy]: https://www.astropy.org/
