@@ -31,6 +31,7 @@ Please fill in your project information using this format:
 - [Qutip](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-2025)
 - [sbi](https://github.com/sbi-dev/sbi/wiki/GSoC_2025_Projects)
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
+  - [@utkuyilmaz1903](https://github.com/utkuyilmaz1903), Utku Yılmaz, [Comprehensive Non-Uniform Grid Support for MethodOfLines.jl](https://utkuyilmaz1903.github.io/kickoff/)
 - [Stan](https://github.com/stan-dev/stan/wiki/GSOC-2025-Proposed-Projects)
 - [TNL](https://gitlab.com/tnl-project/tnl/-/wikis/GSoC-2025)
 - [toqito](https://github.com/vprusso/toqito/wiki/GSoC-2025-Projects)
