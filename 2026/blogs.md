@@ -20,6 +20,9 @@ Please fill in your project information using this format:
 - [CVXPY](https://github.com/cvxpy/GSOC)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2026-Project-Ideas)
 - [gammapy](https://github.com/gammapy/gammapy/wiki/GSoC-2026-Project)
+  
+   [@Basmala92](https://github.com/Basmala92), Basmala Hekal, [Serialization Of Map and Model Classes into ASDF](https://medium.com/@Basmala_Hekal/google-summer-of-code-2026-numfocus-gammapy-e341b564c57d)
+  
 - [GRASS](https://grasswiki.osgeo.org/wiki/GRASS_GSoC_Ideas_2026)
 - [HoloViz](https://github.com/holoviz/holoviz/wiki/2026-GSoC-Project-List)
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md)
