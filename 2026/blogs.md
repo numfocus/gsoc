@@ -25,7 +25,7 @@ Please fill in your project information using this format:
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md)
 - [JuMP](https://github.com/jump-dev/GSOC)
     
-    [@kofgokhan](profile_url), Gökhan Kof, [Supporting Input Convex Neural Networks in MathOptAI.jl](https://kofgokhan.github.io/gsoc26/gsoc/)
+    [@kofgokhan](https://github.com/kofgokhan), Gökhan Kof, [Supporting Input Convex Neural Networks in MathOptAI.jl](https://kofgokhan.github.io/gsoc26/gsoc/)
     
 - [matplotlib](https://github.com/matplotlib/matplotlib/wiki/Matplotlib-GSoC-2026-Ideas)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2026-Projects)
