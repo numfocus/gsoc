@@ -77,7 +77,7 @@ In alphabetic order.
 <table>
   <tr>
     <td>
-      <img width="800px" src="https://www.aiida.net/_static/logo-light.svg"/>
+      <img width="800px" src="https://aiida.net/img/aiida-logo-light.svg"/>
     </td>
     <td>
        <h1>AiiDA</h1>
