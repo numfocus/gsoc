@@ -24,6 +24,9 @@ Please fill in your project information using this format:
    [@Basmala92](https://github.com/Basmala92), Basmala Hekal, [Serialization Of Map and Model Classes into ASDF](https://medium.com/@Basmala_Hekal/google-summer-of-code-2026-numfocus-gammapy-e341b564c57d)
   
 - [GRASS](https://grasswiki.osgeo.org/wiki/GRASS_GSoC_Ideas_2026)
+
+    [@krcoder123](https://github.com/krcoder123), Kaushik Raja, [Parallelizing r.proj and Raster Processing Modules in GRASS](https://krcoder123.github.io)
+
 - [HoloViz](https://github.com/holoviz/holoviz/wiki/2026-GSoC-Project-List)
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md)
 - [JuMP](https://github.com/jump-dev/GSOC)
