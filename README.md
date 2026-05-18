@@ -145,7 +145,7 @@ In alphabetic order.
         Gammapy is a community-developed, open-source Python package for gamma-ray astronomy built on Numpy, Scipy and Astropy. It is the core library for the CTAO Science Tools but can also be used to analyse data from existing imaging atmospheric Cherenkov telescopes (IACTs), such as H.E.S.S., MAGIC and VERITAS. It also provides some support for Fermi-LAT and HAWC data analysis..
       </p>
       <p>
-        <a href="https://gammapy.org/">Website</a>  | <a href="https://github.com/gammapy/gammapy/wiki/GSoC-2026-Project"> Ideas List</a> | <a href="gammapy-ld-l@in2p3.fr"> General contact </a> | <a href="https://github.com/gammapy/gammapy">Source Code</a>
+        <a href="https://gammapy.org/">Website</a>  | <a href="https://github.com/gammapy/gammapy/wiki/GSoC-2026-Project"> Ideas List</a> | <a href="mailto:gammapy-ld-l@in2p3.fr"> General contact </a> | <a href="https://github.com/gammapy/gammapy">Source Code</a>
       </p>
    </td>
   </tr>
@@ -220,7 +220,7 @@ In alphabetic order.
          Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible.
        </p>
        <p>
-       <a href="https://matplotlib.org">Website</a> | <a href="https://github.com/matplotlib/matplotlib/wiki/Matplotlib-GSoC-2024-Ideas">Ideas List</a> | <a href="https://gitter.im/matplotlib/matplotlib">Gitter</a> | <a href="https://github.com/matplotlib/matplotlib">Source Code</a>
+       <a href="https://matplotlib.org">Website</a> | <a href="https://github.com/matplotlib/matplotlib/wiki/Matplotlib-GSoC-2026-Ideas">Ideas List</a> | <a href="https://gitter.im/matplotlib/matplotlib">Gitter</a> | <a href="https://github.com/matplotlib/matplotlib">Source Code</a>
        </p>
     </td>
   </tr>
@@ -297,7 +297,7 @@ In alphabetic order.
        <h1>sbi</h1>
        <p>sbi (simulation-based inference) is a Python package for performing Bayesian inference on complex, simulator-defined models, where the likelihood function is intractable.  It leverages the simulator directly, using modern probabilistic machine learning methods like normalizing flows and neural posterior estimation. sbi is built on PyTorch and is designed for both research and application.</p>
        <p>
-         <a href="https://sbi-dev.github.io/sbi/latest/">Website</a> | <a href="https://github.com/sbi-dev/sbi/discussions/1318">Discord</a> | <a href="https://github.com/sbi-dev/sbi/wiki/GSoC_2025_Projects">Ideas Page</a> | <a href="https://github.com/sbi-dev/sbi">Source Code</a>
+         <a href="https://sbi-dev.github.io/sbi/latest/">Website</a> | <a href="https://github.com/sbi-dev/sbi/discussions/1318">Discord</a> | <a href="https://github.com/sbi-dev/sbi/wiki/GSoC%E2%80%902026%E2%80%90Projects">Ideas Page</a> | <a href="https://github.com/sbi-dev/sbi">Source Code</a>
        </p>
     </td>
   </tr>
@@ -323,7 +323,7 @@ In alphabetic order.
        <h1>SciML</h1>
        <p> SciML is an open source software organization created to unify the packages for scientific machine learning. This includes the development of modular scientific simulation support software, such as differential equation solvers, along with the methodologies for inverse problems and automated model discovery. By providing a diverse set of tools with a common interface, we provide a modular, easily-extendable, and highly performant ecosystem for handling a wide variety of scientific simulations. </p>
        <p>
-         <a href="http://sciml.ai">Website</a> | <a href=https://julialang.zulipchat.com/#narrow/stream/279055-sciml-bridged"> Contact </a> | <a href="https://sciml.ai/dev/#google_summer_of_code">Ideas Page</a> | <a href="https://github.com/SciML/"> Source Code</a>
+         <a href="http://sciml.ai">Website</a> | <a href="https://julialang.zulipchat.com/#narrow/stream/279055-sciml-bridged"> Contact </a> | <a href="https://sciml.ai/dev/#google_summer_of_code">Ideas Page</a> | <a href="https://github.com/SciML/"> Source Code</a>
        </p>
     </td>
   </tr>
