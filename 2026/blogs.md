@@ -41,6 +41,7 @@ Please fill in your project information using this format:
 - [scikit-bio](https://github.com/scikit-bio/scikit-bio/wiki/GSOC-2026-project-ideas)
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
 
+    [@singhharsh1708](https://github.com/singhharsh1708), Harsh Singh, [Generic Tableau-Driven Solver Infrastructure for OrdinaryDiffEq.jl](https://singhharsh1708.github.io/gsoc_blog/)
     [@utkuyilmaz1903](https://github.com/utkuyilmaz1903), Utku Yılmaz, [Comprehensive Non-Uniform Grid Support for MethodOfLines.jl](https://utkuyilmaz1903.github.io/kickoff/)
 
 - [Stan](https://github.com/stan-dev/stan/wiki/GSOC-2026-Proposed-Projects)
