@@ -45,6 +45,9 @@ Please fill in your project information using this format:
     [@utkuyilmaz1903](https://github.com/utkuyilmaz1903), Utku Yılmaz, [Comprehensive Non-Uniform Grid Support for MethodOfLines.jl](https://utkuyilmaz1903.github.io/kickoff/)
 
 - [Stan](https://github.com/stan-dev/stan/wiki/GSOC-2026-Proposed-Projects)
+  
+    [@VisruthSK](https://github.com/VisruthSK), Visruth Srimath Kandali, [Parallelizing loo](https://www.visruth.com/blog/20260516-01/)
+  
 - [sbi](https://github.com/sbi-dev/sbi/wiki/GSoC%E2%80%902026%E2%80%90Projects)
 - [toqito](https://github.com/vprusso/toqito/wiki/GSoC-2026-Projects)
 - [pytorch-ignite](https://github.com/pytorch/ignite/wiki/GSoC-2026-project-idea)
