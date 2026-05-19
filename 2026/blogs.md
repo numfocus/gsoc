@@ -8,7 +8,7 @@ Please fill in your project information using this format:
 
 - [project_name](https://github.com/aeon-toolkit/aeon-admin/blob/main/gsoc/gsoc-2025-projects.md)
     [@henrykironde](https://github.com/henrykironde), Henry Senyondo, [Deep Learning Models for Short-Horizon Time Series Forecasting](https://medium.com/@lucifer4073/list/gsoc25-journey-a7cf92345f9a)
-  
+
 - [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2025-Projects)
     [@henrykironde](https://github.com/henrykironde), Henry Senyondo, [Deep Learning Models for Short-Horizon Time Series Forecasting](https://medium.com/@lucifer4073/list/gsoc25-journey-a7cf92345f9a)
 -->
@@ -19,10 +19,12 @@ Please fill in your project information using this format:
 - [ArviZ](https://github.com/arviz-devs/arviz/wiki/GSoC-2026-projects)
 - [CVXPY](https://github.com/cvxpy/GSOC)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2026-Project-Ideas)
+
+    [@musaqlain](https://github.com/musaqlain), Muhammad Saqlain, [Recovering historical image data using automated ortho-registration and image-matching](https://musaqlain.dev/blog/gsoc-2026-community-bonding/)
 - [gammapy](https://github.com/gammapy/gammapy/wiki/GSoC-2026-Project)
-  
+
    [@Basmala92](https://github.com/Basmala92), Basmala Hekal, [Serialization Of Map and Model Classes into ASDF](https://medium.com/@Basmala_Hekal/google-summer-of-code-2026-numfocus-gammapy-e341b564c57d)
-  
+
 - [GRASS](https://grasswiki.osgeo.org/wiki/GRASS_GSoC_Ideas_2026)
 
     [@krcoder123](https://github.com/krcoder123), Kaushik Raja, [Parallelizing r.proj and Raster Processing Modules in GRASS](https://krcoder123.github.io)
@@ -30,9 +32,9 @@ Please fill in your project information using this format:
 - [HoloViz](https://github.com/holoviz/holoviz/wiki/2026-GSoC-Project-List)
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md)
 - [JuMP](https://github.com/jump-dev/GSOC)
-    
+
     [@kofgokhan](https://github.com/kofgokhan), Gökhan Kof, [Supporting Input Convex Neural Networks in MathOptAI.jl](https://kofgokhan.github.io/gsoc26/gsoc/)
-    
+
 - [matplotlib](https://github.com/matplotlib/matplotlib/wiki/Matplotlib-GSoC-2026-Ideas)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2026-Projects)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2026-projects)
