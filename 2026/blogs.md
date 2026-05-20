@@ -38,6 +38,9 @@ Please fill in your project information using this format:
 - [matplotlib](https://github.com/matplotlib/matplotlib/wiki/Matplotlib-GSoC-2026-Ideas)
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2026-Projects)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2026-projects)
+
+    [@eclipse1605](https://github.com/eclipse1605), Advay Bhagwat, [Predictively Oriented Posteriors in PyMC](https://github.com/eclipse1605/gsoc-blogs)
+    
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026)
 - [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-current)
 - [scikit-bio](https://github.com/scikit-bio/scikit-bio/wiki/GSOC-2026-project-ideas)
