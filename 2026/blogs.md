@@ -39,7 +39,7 @@ Please fill in your project information using this format:
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2026-Projects)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2026-projects)
 
-    [@eclipse1605](https://github.com/eclipse1605), Advay Bhagwat, [Predictively Oriented Posteriors in PyMC](https://github.com/eclipse1605/gsoc-blogs)
+    [@eclipse1605](https://github.com/eclipse1605), Advay Bhagwat, [Predictively Oriented Posteriors in PyMC](https://eclipse1605.github.io/blogs/)
     
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026)
 - [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-current)
