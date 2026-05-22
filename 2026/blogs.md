@@ -1,4 +1,4 @@
-# Blog Pages
+ls# Blog Pages
 
 This page is for the contributor blogs of NumFOCUS, Google Summer of Code 2026.
 
@@ -44,6 +44,9 @@ Please fill in your project information using this format:
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026)
 - [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-current)
 - [scikit-bio](https://github.com/scikit-bio/scikit-bio/wiki/GSOC-2026-project-ideas)
+
+    [@monkeytim19](https://github.com/monkeytim19), Timothy Wong, [Succinct Data Structure for Efficient Operations on Trees](https://monkeytim19.github.io/)
+
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
 
     [@singhharsh1708](https://github.com/singhharsh1708), Harsh Singh, [Generic Tableau-Driven Solver Infrastructure for OrdinaryDiffEq.jl](https://singhharsh1708.github.io/gsoc_blog/)
