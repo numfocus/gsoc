@@ -16,6 +16,10 @@ Please fill in your project information using this format:
 
 
 - [AiiDA](https://github.com/aiidateam/aiida-core/wiki/GSoC-2026-Projects)
+
+    [@Jaweria-B](https://github.com/Jaweria-B), Jaweria Batool
+    [Teaching Aiida to Speak](https://aiida.net/blog/gsoc-2026-aiida-natural-language/)
+
 - [ArviZ](https://github.com/arviz-devs/arviz/wiki/GSoC-2026-projects)
 - [CVXPY](https://github.com/cvxpy/GSOC)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2026-Project-Ideas)
