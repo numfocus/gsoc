@@ -52,7 +52,7 @@ Please fill in your project information using this format:
     
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026)
 
-  - [@FirePheonix](https://github.com/FirePheonix), Shubham Singh, [Implementation of geographically weighted matrix decomposition algorithms](https://firepheonix.github.io/NUMFocus-PySal-gsoc-26-blogs/blog/gsoc-2026-kickoff/)
+  - [@FirePheonix](https://github.com/FirePheonix), Shubham Singh, [Implementation of geographically weighted matrix decomposition algorithms](https://firepheonix.github.io/NUMFocus-PySal-gsoc-26-blogs/week-1/)
 
 - [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-current)
 - [scikit-bio](https://github.com/scikit-bio/scikit-bio/wiki/GSOC-2026-project-ideas)
