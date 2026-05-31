@@ -51,7 +51,7 @@ Please fill in your project information using this format:
   - [@monkeytim19](https://github.com/monkeytim19), Timothy Wong, [Succinct Data Structure for Efficient Operations on Trees](https://monkeytim19.github.io/)
 
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
-
+  - [@AJ0070](https://github.com/AJ0070), Jash Ambaliya, [Distributed Linear Solvers in LinearSolve.jl](https://dev.to/aj0070/gsoc-2026-kickoff-distributed-linear-solvers-in-linearsolvejl-n82)
   - [@singhharsh1708](https://github.com/singhharsh1708), Harsh Singh, [Generic Tableau-Driven Solver Infrastructure for OrdinaryDiffEq.jl](https://singhharsh1708.github.io/gsoc_blog/)
   - [@utkuyilmaz1903](https://github.com/utkuyilmaz1903), Utku Yılmaz, [Comprehensive Non-Uniform Grid Support for MethodOfLines.jl](https://utkuyilmaz1903.github.io/kickoff/)
 
