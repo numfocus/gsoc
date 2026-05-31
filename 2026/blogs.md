@@ -39,6 +39,9 @@ Please fill in your project information using this format:
   - [@kofgokhan](https://github.com/kofgokhan), Gökhan Kof, [Supporting Input Convex Neural Networks in MathOptAI.jl](https://kofgokhan.github.io/gsoc26/gsoc/)
 
 - [matplotlib](https://github.com/matplotlib/matplotlib/wiki/Matplotlib-GSoC-2026-Ideas)
+
+  -  [@Vikash-Kumar-23](https://github.com/Vikash-Kumar-23), Vikash Kumar, [Overlay Layer API](https://Vikash-Kumar-23.github.io)
+      
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2026-Projects)
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2026-projects)
 
