@@ -68,6 +68,7 @@ Please fill in your project information using this format:
 - [sbi](https://github.com/sbi-dev/sbi/wiki/GSoC%E2%80%902026%E2%80%90Projects)
   - [@Jocho-Smith](https://github.com/Jocho-Smith), Johannes Schmidt, [Stateless API for Scalable and Composable Inference in sbi](https://jocho.de/gsocblog.html)
   - [@satwiksps](https://github.com/satwiksps), Satwik Sai Prakash Sahoo, [Neural Network Builder API Refactor](https://dev.to/satwiksps)
+
 - [toqito](https://github.com/vprusso/toqito/wiki/GSoC-2026-Projects)
 - [pytorch-ignite](https://github.com/pytorch/ignite/wiki/GSoC-2026-project-idea)
 
