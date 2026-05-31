@@ -55,6 +55,7 @@ Please fill in your project information using this format:
 - [scikit-bio](https://github.com/scikit-bio/scikit-bio/wiki/GSOC-2026-project-ideas)
 
   - [@monkeytim19](https://github.com/monkeytim19), Timothy Wong, [Succinct Data Structure for Efficient Operations on Trees](https://monkeytim19.github.io/)
+  - [@LarytheLord](https://github.com/LarytheLord), Abid Khan, [Numba-Optimized scikit-bio](https://abikhn.me/blog/gsoc-scikit-bio-numba.html)
 
 - [SciML](https://sciml.ai/dev/#google_summer_of_code)
   - [@AJ0070](https://github.com/AJ0070), Jash Ambaliya, [Distributed Linear Solvers in LinearSolve.jl](https://dev.to/aj0070/gsoc-2026-kickoff-distributed-linear-solvers-in-linearsolvejl-n82)
