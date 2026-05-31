@@ -51,6 +51,9 @@ Please fill in your project information using this format:
   - [@eclipse1605](https://github.com/eclipse1605), Advay Bhagwat, [Predictively Oriented Posteriors in PyMC](https://eclipse1605.github.io/blogs/)
     
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026)
+
+  - [@FirePheonix](https://github.com/FirePheonix), Shubham Singh, [Implementation of geographically weighted matrix decomposition algorithms](https://firepheonix.github.io/NUMFocus-PySal-gsoc-26-blogs/blog/gsoc-2026-kickoff/)
+
 - [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-current)
 - [scikit-bio](https://github.com/scikit-bio/scikit-bio/wiki/GSOC-2026-project-ideas)
 
