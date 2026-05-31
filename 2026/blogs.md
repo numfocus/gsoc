@@ -33,6 +33,9 @@ Please fill in your project information using this format:
   - [@krcoder123](https://github.com/krcoder123), Kaushik Raja, [Parallelizing r.proj and Raster Processing Modules in GRASS](https://krcoder123.github.io)
 
 - [HoloViz](https://github.com/holoviz/holoviz/wiki/2026-GSoC-Project-List)
+
+  - [@ghostiee-11](https://github.com/ghostiee-11), Aman Kumar, [Lumen + Xarray Integration](https://ghostiee-11.github.io/gsoc26/)
+
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md)
 - [JuMP](https://github.com/jump-dev/GSOC)
 
