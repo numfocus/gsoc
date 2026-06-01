@@ -46,6 +46,9 @@ Please fill in your project information using this format:
   -  [@Vikash-Kumar-23](https://github.com/Vikash-Kumar-23), Vikash Kumar, [Overlay Layer API](https://Vikash-Kumar-23.github.io)
       
 - [pvlib](https://github.com/pvlib/pvlib-python/wiki/GSoC-2026-Projects)
+
+  -  [@cbcrespo](https://github.com/cbcrespo), Carolina Crespo, [Standardizing Diffuse Irradiance Components and Extending ModelChain's Optical Loss Modeling](https://cbcrespo.github.io/)
+
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2026-projects)
 
   - [@eclipse1605](https://github.com/eclipse1605), Advay Bhagwat, [Predictively Oriented Posteriors in PyMC](https://eclipse1605.github.io/blogs/)
