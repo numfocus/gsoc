@@ -40,6 +40,9 @@ Please fill in your project information using this format:
   - [@ghostiee-11](https://github.com/ghostiee-11), Aman Kumar, [Lumen + Xarray Integration](https://ghostiee-11.github.io/gsoc26/)
 
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md)
+
+  - [@bitsarebits](https://github.com/bitsarebits), Isaia Zollo, [Reduced Order Modelling with Neural Operators](https://bitsarebits.github.io/gsoc2026-gridap/)
+
 - [JuMP](https://github.com/jump-dev/GSOC)
 
   - [@kofgokhan](https://github.com/kofgokhan), Gökhan Kof, [Supporting Input Convex Neural Networks in MathOptAI.jl](https://kofgokhan.github.io/gsoc26/gsoc/)
