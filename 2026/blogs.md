@@ -35,7 +35,7 @@ Please fill in your project information using this format:
 - [HoloViz](https://github.com/holoviz/holoviz/wiki/2026-GSoC-Project-List)
 
   - [@ghostiee-11](https://github.com/ghostiee-11), Aman Kumar, [Lumen + Xarray Integration](https://ghostiee-11.github.io/gsoc26/)
-  - [@SuMayaBee](https://github.com/SuMayaBee), Sumaiya Islam, [Panel / HoloViews MCP Integration](https://medium.com/@bsse1446/gsoc-2026-with-holoviz-my-journey-building-a-live-visualization-layer-for-ai-using-panel-and-mcp-c07752097090)
+  - [@SuMayaBee](https://github.com/SuMayaBee), Sumaiya Islam, [Panel / HoloViews MCP Integration](https://medium.com/@bsse1446/gsoc2026-53c151ddf233)
 
 - [Gridap](https://github.com/gridap/GSoC/blob/main/2026/ideas-list.md)
 - [JuMP](https://github.com/jump-dev/GSOC)
