@@ -83,3 +83,5 @@ Please fill in your project information using this format:
 
 - [toqito](https://github.com/vprusso/toqito/wiki/GSoC-2026-Projects)
 - [pytorch-ignite](https://github.com/pytorch/ignite/wiki/GSoC-2026-project-idea)
+  
+  - [@TahaZahid05](https://github.com/TahaZahid05), Taha Zahid, [Trainite: A Reusable Toolbox for Training Language Models](https://gist.github.com/TahaZahid05/fe1b39a2a16f2af4f4729db647c81331)
