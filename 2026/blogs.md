@@ -21,6 +21,8 @@ Please fill in your project information using this format:
 - [CVXPY](https://github.com/cvxpy/GSOC)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2026-Project-Ideas)
 
+
+  -  [@vickysharma-prog](https://github.com/vickysharma-prog), Vicky, [Recovering Computer Vision Annotations from Historical Airborne Imagery for Biodiversity Monitoring](https://vickysharma.hashnode.dev/gsoc-2026-weecology)
   - [@musaqlain](https://github.com/musaqlain), Muhammad Saqlain, [Recovering historical image data using automated ortho-registration and image-matching](https://musaqlain.dev/blog/gsoc-2026-community-bonding/)
 
 - [gammapy](https://github.com/gammapy/gammapy/wiki/GSoC-2026-Project)
