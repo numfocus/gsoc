@@ -58,6 +58,7 @@ Please fill in your project information using this format:
 
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026)
 - [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-current)
+  - [@mudit06mah](https://github.com/mudit06mah), Mudit Maheshwari, [GPU-enabled circuit simulation in qutip-qip](https://moodit.dev/blog/gsoc)
 - [scikit-bio](https://github.com/scikit-bio/scikit-bio/wiki/GSOC-2026-project-ideas)
 
   - [@monkeytim19](https://github.com/monkeytim19), Timothy Wong, [Succinct Data Structure for Efficient Operations on Trees](https://monkeytim19.github.io/)
