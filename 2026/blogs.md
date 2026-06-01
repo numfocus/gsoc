@@ -53,6 +53,7 @@ Please fill in your project information using this format:
 - [PyMC](https://github.com/pymc-devs/pymc/wiki/GSoC-2026-projects)
 
   - [@eclipse1605](https://github.com/eclipse1605), Advay Bhagwat, [Predictively Oriented Posteriors in PyMC](https://eclipse1605.github.io/blogs/)
+  - [@YichengYang-Ethan](https://github.com/YichengYang-Ethan), Yicheng Yang, [Streaming Variational Inference for Large Datasets](https://yichengyang-ethan.github.io/gsoc)
 
 - [PySAL](https://github.com/pysal/pysal/wiki/Google-Summer-of-Code-2026)
 - [QuTiP](https://github.com/qutip/qutip/wiki//Google-Summer-of-Code-current)
