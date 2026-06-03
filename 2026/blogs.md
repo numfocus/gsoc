@@ -34,6 +34,7 @@ Please fill in your project information using this format:
 - [GRASS](https://grasswiki.osgeo.org/wiki/GRASS_GSoC_Ideas_2026)
 
   - [@krcoder123](https://github.com/krcoder123), Kaushik Raja, [Parallelizing r.proj and Raster Processing Modules in GRASS](https://krcoder123.github.io)
+  - [@saket0187](https://github.com/saket0187), Saket Kumar Mall, [Add Spatio-Temporal Datasets Support to GRASS Data Catalog GUI](https://saket0187.github.io/gsoc-2026/)
 
 - [HoloViz](https://github.com/holoviz/holoviz/wiki/2026-GSoC-Project-List)
 
