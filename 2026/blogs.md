@@ -18,7 +18,7 @@ Please fill in your project information using this format:
   - [@Jaweria-B](https://github.com/Jaweria-B), Jaweria Batool, [Teaching Aiida to Speak](https://aiida.net/blog/gsoc-2026-aiida-natural-language/)
 
 - [ArviZ](https://github.com/arviz-devs/arviz/wiki/GSoC-2026-projects)
-  - [@PiyushPanwarFST](https://github.com/PiyushPanwarFST), Piyush Panwar, [Unifying the Setup Across Repositories](https://medium.com/@piyush2002panwar/arviz-gsoc-2026-blog-series-week-1-a3b5a9c3ee28)
+  - [@PiyushPanwarFST](https://github.com/PiyushPanwarFST), Piyush Panwar, [Unifying the Setup Across Repositories](https://medium.com/@piyush2002panwar/list/gsoc-2026-arviz-weekly-blogs-cd10215737fd)
 
 - [CVXPY](https://github.com/cvxpy/GSOC)
 - [Data Retriever](https://github.com/weecology/retriever/wiki/GSoC-2026-Project-Ideas)
