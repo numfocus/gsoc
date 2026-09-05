@@ -304,7 +304,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="https://github.com/SciML/SciMLDocs/raw/main/docs/src/assets/logo.png">
+      <img width="800px" src="https://scikit.bio/_images/logo.svg">
     </td>
     <td>
        <h1>scikit-bio</h1>
@@ -317,7 +317,7 @@ In alphabetic order.
 
   <tr>
     <td>
-      <img width="800px" src="https://scikit.bio/_images/logo.svg"> 
+      <img width="800px" src="https://github.com/SciML/SciMLDocs/raw/main/docs/src/assets/logo.png">  
     </td>
     <td>
        <h1>SciML</h1>
