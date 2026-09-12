@@ -82,7 +82,7 @@ In alphabetic order.
     <td>
        <h1>AiiDA</h1>
        <p>
-          AiiDA is a python framework for managing computational science workflows, with roots in computational materials science. It helps researchers manage large numbers of simulations (10k, 100k, 1M, ...) and complex workflows involving multiple executables. At the same time, it records the provenance of the entire simulation pipeline with the aim to make it fully reproducible.
+          AiiDA is a Python framework for managing computational science workflows, with roots in computational materials science. It helps researchers manage large numbers of simulations (10k, 100k, 1M, ...) and complex workflows involving multiple executables. At the same time, it records the provenance of the entire simulation pipeline with the aim to make it fully reproducible.
        </p>
        <p>
        <a href="https://www.aiida.net/">Website</a> | <a href="https://github.com/aiidateam/aiida-core/wiki/GSoC-2026-Projects">Ideas List</a> | <a href="https://aiida.discourse.group/">Discourse</a> | <a href="https://github.com/aiidateam/aiida-core">Source Code</a>
@@ -127,7 +127,7 @@ In alphabetic order.
    <td>
       <h1>Data Retriever</h1>
       <p>
-        The Data Retriever ecosystem improves reproducible research through data product management. The platform takes advantage of freely available data sources in a variety of formats, standardizes them, and makes them available to scientists in a form that is ready to analyze. Data sources range from tabular data, spatial data packages and APIs. Several data packages use the ecosystems, and many projects support or rely on the ecosystem.
+        The Data Retriever ecosystem improves reproducible research through data product management. The platform takes advantage of freely available data sources in a variety of formats, standardizes them, and makes them available to scientists in a form that is ready to analyze. Data sources range from tabular data to spatial data packages and APIs. Several data packages use the ecosystems, and many projects support or rely on the ecosystem.
       </p>
       <p>
         <a href="http://www.data-retriever.org/">Website</a>  | <a href="https://github.com/weecology/retriever/wiki/GSoC-2026-Project-Ideas"> Ideas List</a> | <a href="https://gitter.im/weecology/retriever"> Contact (Gitter) </a> | <a href="https://github.com/weecology/retriever">Source Code</a>
@@ -142,7 +142,7 @@ In alphabetic order.
    <td>
       <h1>Gammapy</h1>
       <p>
-        Gammapy is a community-developed, open-source Python package for gamma-ray astronomy built on Numpy, Scipy and Astropy. It is the core library for the CTAO Science Tools but can also be used to analyse data from existing imaging atmospheric Cherenkov telescopes (IACTs), such as H.E.S.S., MAGIC and VERITAS. It also provides some support for Fermi-LAT and HAWC data analysis..
+        Gammapy is a community-developed, open-source Python package for gamma-ray astronomy built on Numpy, Scipy and Astropy. It is the core library for the CTAO Science Tools but can also be used to analyse data from existing imaging atmospheric Cherenkov telescopes (IACTs), such as H.E.S.S., MAGIC and VERITAS. It also provides some support for Fermi-LAT and HAWC data analysis.
       </p>
       <p>
         <a href="https://gammapy.org/">Website</a>  | <a href="https://github.com/gammapy/gammapy/wiki/GSoC-2026-Project"> Ideas List</a> | <a href="mailto:gammapy-ld-l@in2p3.fr"> General contact </a> | <a href="https://github.com/gammapy/gammapy">Source Code</a>
@@ -244,7 +244,7 @@ In alphabetic order.
     </td>
     <td>
        <h1>PyMC</h1>
-       <p>PyMC is a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
+       <p>PyMC is a Python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</p>
        <p>
          <a href="https://www.pymc.io/welcome.html">Website</a> | <a href="https://discourse.pymc.io/">discourse</a> | <a href="https://github.com/pymc-devs/pymc/wiki/GSoC-2026-projects">Ideas Page</a> | <a href="https://github.com/pymc-devs/pymc"> Source Code</a>
        </p>
@@ -269,7 +269,7 @@ In alphabetic order.
     </td>
     <td>
        <h1>PyTorch-Ignite</h1>
-       <p>PyTorch-Ignite is a high-level library to help with training neural networks in PyTorch</p>
+       <p>PyTorch-Ignite is a high-level library to help with training neural networks in PyTorch.</p>
        <p>
          <a href="https://pytorch-ignite.ai/">Website</a> | <a href="https://pytorch-ignite.ai/chat/">Discord</a> | <a href="https://github.com/pytorch/ignite/discussions">GitHub Discussions</a> | <a href="https://github.com/pytorch/ignite/wiki/GSoC-2026-project-idea">Ideas Page</a> | <a href="https://github.com/pytorch/ignite"> Source Code</a>
        </p>
@@ -282,7 +282,7 @@ In alphabetic order.
     </td>
     <td>
        <h1>QuTiP</h1>
-       <p> QuTiP is a software for simulating quantum systems. QuTiP aims to provide tools for user-friendly and efficient numerical simulations of open quantum systems. It can be used to simulate a wide range of physical phenomenon in areas such as quantum optics, trapped ions, superconducting circuits and quantum nanomechanical resonators. In addition, it contains a number of other modules to simplify the numerical simulation and study of many topics in quantum physics such as quantum optimal control, quantum information, and computing. </p>
+       <p> QuTiP is a software for simulating quantum systems. QuTiP aims to provide tools for user-friendly and efficient numerical simulations of open quantum systems. It can be used to simulate a wide range of physical phenomena in areas such as quantum optics, trapped ions, superconducting circuits and quantum nanomechanical resonators. In addition, it contains a number of other modules to simplify the numerical simulation and study of many topics in quantum physics such as quantum optimal control, quantum information, and computing. </p>
        <p>
          <a href="http://qutip.org">Website</a> | <a href="http://groups.google.com/group/qutip"> Contact </a> | <a href="https://github.com/qutip/qutip/wiki/Google-Summer-of-Code-current">Ideas Page</a> | <a href="https://github.com/qutip/qutip"> Source Code</a>
        </p>
@@ -321,7 +321,7 @@ In alphabetic order.
     </td>
     <td>
        <h1>SciML</h1>
-       <p> SciML is an open source software organization created to unify the packages for scientific machine learning. This includes the development of modular scientific simulation support software, such as differential equation solvers, along with the methodologies for inverse problems and automated model discovery. By providing a diverse set of tools with a common interface, we provide a modular, easily-extendable, and highly performant ecosystem for handling a wide variety of scientific simulations. </p>
+       <p> SciML is an open source software organization created to unify the packages for scientific machine learning. This includes the development of modular scientific simulation support software, such as differential equation solvers, along with the methodologies for inverse problems and automated model discovery. By providing a diverse set of tools with a common interface, it provides a modular, easily-extendable, and highly performant ecosystem for handling a wide variety of scientific simulations. </p>
        <p>
          <a href="http://sciml.ai">Website</a> | <a href="https://julialang.zulipchat.com/#narrow/stream/279055-sciml-bridged"> Contact </a> | <a href="https://sciml.ai/dev/#google_summer_of_code">Ideas Page</a> | <a href="https://github.com/SciML/"> Source Code</a>
        </p>
